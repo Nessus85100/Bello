@@ -1285,11 +1285,11 @@
 				</control>
 	
 				<control type="group">
-					<animation type="WindowOpen">
+					<animation type="WindowOpen" tween="sine" easing="out">
 						<effect type="fade" start="0" end="100" time="1000"/>
 						<effect type="rotatey" center="0" start="0" end="-25" time="1000" delay="750"/>
 					</animation>
-					<animation type="WindowClose">
+					<animation type="WindowClose" tween="sine" easing="out">
 						<effect type="rotatey" center="0" start="-25" end="0" time="1000"/>
 						<effect type="fade" start="100" end="0" time="1000" delay="800"/>
 					</animation>
@@ -1302,23 +1302,22 @@
 			 <visible>Control.IsVisible(53)</visible>
 			 <control type="group">
 	      <include>DialogFadeInOutAnimation</include>
+				<animation effect="fade" start="0" end="100" time="400" tween="sine" easing="out">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="2000" tween="sine" easing="out">WindowClose</animation>
 				<control type="image">
 		      <include>FullscreenDimensions</include>
-					<texture background="true">views/wall/wall_mask_1.png</texture>
-					<animation effect="fade" start="0" end="100" time="400" delay="0" reversible="false">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="2000" delay="0" reversible="false">WindowClose</animation>
+					<texture>views/wall/wall_mask_1.png</texture>
+			    <fadetime>FanartCrossfadeTime</fadetime>
 				</control>
 				<control type="image">
 		      <include>FullscreenDimensions</include>
-					<texture background="true">views/wall/wall_overlay.png</texture>
-					<animation effect="fade" start="0" end="100" time="400" delay="0" reversible="false">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="2000" delay="0" reversible="false">WindowClose</animation>
+					<texture>views/wall/wall_overlay.png</texture>
+			    <fadetime>FanartCrossfadeTime</fadetime>
 				</control>
 				<control type="image">
 		      <include>FullscreenDimensions</include>
-					<texture background="true">views/wall/wall_mask_2.png</texture>
-					<animation effect="fade" start="0" end="100" time="400" delay="0" reversible="false">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="2000" delay="0" reversible="false">WindowClose</animation>
+					<texture>views/wall/wall_mask_2.png</texture>
+			    <fadetime>FanartCrossfadeTime</fadetime>
 				</control>
 			 </control>
 							
@@ -1547,6 +1546,8 @@
 	        <include>FullscreenDimensions</include>
 					<texture background="true">views/wall/plot_diffuse.png</texture>
 	        <visible>!stringcompare(ListItem.Label,..)</visible>
+					<animation effect="fade" start="0" end="100" time="600" delay="0" tween="sine" easing="out">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="2000" delay="0" tween="sine" easing="out">WindowClose</animation>
 				</control>
 			</control>
 	
@@ -1610,32 +1611,32 @@
 				</control>
 	
 				<control type="group">
-					<animation type="WindowOpen">
+					<animation type="WindowOpen" tween="sine" easing="out">
 						<effect type="fade" start="0" end="100" time="1000"/>
 					</animation>
-					<animation type="WindowClose">
+					<animation type="WindowClose" tween="sine" easing="out">
 						<effect type="fade" start="100" end="0" time="1000" delay="800"/>
 					</animation>
 					<visible>!Control.IsVisible(8013) + !Control.IsVisible(8014)</visible>
 	        <include>includes_Static</include>
 				</control>
 			</control>
-			
+
 			<control type="group">
 			 <visible>Control.IsVisible(54)</visible>
 			 <control type="group">
 	      <include>DialogFadeInOutAnimation</include>
+				<animation effect="fade" start="0" end="100" time="400" tween="sine" easing="out">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="2000" tween="sine" easing="out">WindowClose</animation>
 				<control type="image">
 		      <include>FullscreenDimensions</include>
-					<texture background="true">views/wall/wall_overlay.png</texture>
-					<animation effect="fade" start="0" end="100" time="400" delay="0" reversible="false">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="2000" delay="0" reversible="false">WindowClose</animation>
+					<texture>views/wall/wall_overlay.png</texture>
+			    <fadetime>FanartCrossfadeTime</fadetime>
 				</control>
 				<control type="image">
 		      <include>FullscreenDimensions</include>
-					<texture background="true">views/wall/wall_mask.png</texture>
-					<animation effect="fade" start="0" end="100" time="400" delay="0" reversible="false">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="2000" delay="0" reversible="false">WindowClose</animation>
+					<texture>views/wall/wall_mask.png</texture>
+			    <fadetime>FanartCrossfadeTime</fadetime>
 				</control>
 			 </control>
 							

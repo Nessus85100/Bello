@@ -9,7 +9,7 @@
 		  <fadetime>600</fadetime>
 		  <randomize>true</randomize>
 		  <loop>yes</loop>
-			<visible>Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir)) + Window.IsVisible(weather) | Container(20).HasFocus(8)</visible>
+			<visible>[Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + Window.IsVisible(weather) | Container(20).HasFocus(8)</visible>
 		</control>
 	</include>
 	
@@ -23,7 +23,6 @@
 			<visible>![Skin.HasSetting(CustomBackground) + [IsEmpty(Skin.String(CustomImageBackgroundPath)) | IsEmpty(Skin.String(CustomFolderBackgroundPath))]]</visible>
 			<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
- <!-- <visible>![[Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + [Window.IsVisible(weather) | Container(20).HasFocus(8)]]</visible> -->
 		</control>
 		<control type="image">
 			<description>Custom Background Image</description>
@@ -32,7 +31,7 @@
 			<include>BackgroundFade</include>
 			<fadetime>600</fadetime>
 			<visible>Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomImageBackgroundPath))</visible>
- <!-- <visible>![![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + Window.IsVisible(weather) + Container(20).HasFocus(8)]</visible> -->
+      <visible>![![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + Window.IsVisible(weather) + Container(20).HasFocus(8)]</visible>
 		</control>
 		<control type="multiimage">
 			<description>Custom Background Folder</description>
@@ -44,8 +43,9 @@
 			<randomize>true</randomize>
       <loop>yes</loop>
 			<visible>Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomFolderBackgroundPath))</visible>
+      <visible>![![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + Window.IsVisible(weather) + Container(20).HasFocus(8)]</visible>
 		</control>		
-	  <include>BackgroundWeather</include>
+	  <include condition="[Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">BackgroundWeather</include>
 	 </control>
 
 		<control type="videowindow">
