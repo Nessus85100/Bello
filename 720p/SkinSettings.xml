@@ -131,7 +131,7 @@
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://MusicPlaylists/)</onclick>
 						<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
 					</control>
-					<control type="radiobutton" id="8104">
+					<control type="radiobutton." id="8104">
 	          <include>SettingsRadioButton</include>
 						<label>31088</label>
 						<onclick>Skin.ToggleSetting(ShowRSSGlobal)</onclick>
