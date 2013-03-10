@@ -203,7 +203,7 @@
 				<control type="label">
 					<description>ooooo</description>
 				  <include>TopSmallLabel</include>
-          <label>$INFO[Control.GetLabel(91)]</label>
+          <label>$INFO[Control.GetLabel(92)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(92)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(92)" reversible="true">Conditional</animation>
 				</control>

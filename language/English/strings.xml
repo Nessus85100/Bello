@@ -86,6 +86,9 @@
   <string id="31114">Show Videos Button</string>
   <string id="31115">Show DVD Button</string>
   <string id="31116">Show Music Videos Button</string>
+  <string id="31117">Music Button opens...</string>
+  <string id="31118">Show Fanart Thumb</string>
+  <string id="31119">Show Episode Thumb</string>
 
   <string id="31130">Disable Fanart in all sections</string>
   <string id="31131">Show Fanart SlideShow in Home Screen</string>
@@ -182,7 +185,7 @@
   <string id="31354">Rewind</string>
   <string id="31355">Movie menu</string>
   <string id="31356">Download Subtitles</string>
-	<string id="31357">Customize Visualization Background</string>
+	<string id="31357">Customize Background</string>
 	<string id="31358">Enable Visualization</string>
 	<string id="31359">Visualization Type</string>		
 	<string id="31360">Visualization Presets</string>
@@ -190,6 +193,8 @@
 	<string id="31362">Enable Music Fanart SlideShow</string>
 	<string id="31363">Enable Artist SlideShow</string>
 	<string id="31364">Animated Backgrounds</string>
+	<string id="31365">Hide Diffuse Colors</string>
+	<string id="31366">Hide Scrolling Titles</string>
 
   <!-- Description Category Labels -->
   <string id="31401">Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings.</string>

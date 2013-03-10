@@ -8,8 +8,9 @@
 			<animation effect="fade" time="600">WindowOpen</animation>
 			<animation effect="fade" time="600">WindowClose</animation>
 			<animation effect="fade" time="400">Visible</animation>
-			<animation effect="fade" time="400">Hidden</animation>	
+			<animation effect="fade" time="400">Hidden</animation>
 			<visible>Player.HasAudio + !Window.IsActive(script-XBMC_Lyrics-main.xml)</visible>
+			<visible>!Skin.HasSetting(HideOSDScrollingTitles)</visible>
 			<control type="group" id="3333">	
 				<visible> IntegerGreaterThan(System.Time(ss),41)</visible>
 				<animation effect="fade" time="600">Visible</animation>
@@ -192,12 +193,12 @@
 				<loop>true</loop>
 				<aspectratio background="true" aligny="top">stretch</aspectratio>
 				<imagepath background="true">osd/diffuse_colors</imagepath>
-				<visible>true</visible>
 				<colordiffuse>OSDColorsDiffuse</colordiffuse>
         <animation effect="fade" start="0" end="100" time="550" delay="0" tween="sine" easing="out">WindowOpen</animation>
         <animation effect="fade" start="100" end="0" time="550" delay="200" tween="sine" easing="out">WindowClose</animation>
         <animation effect="fade" start="0" end="100" time="550" delay="0" tween="sine" easing="out">Visible</animation>
         <animation effect="fade" start="100" end="0" time="550" delay="200" tween="sine" easing="out">Hidden</animation>
+				<visible>!Skin.HasSetting(HideOSDDiffuseColors)</visible>
 			</control>
 			<control type="textbox">
 				<description>textarea</description>

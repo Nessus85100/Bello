@@ -121,6 +121,24 @@
 				<onclick>Dialog.Close(1112)</onclick>
 				<onclick>ReplaceWindow(visualisation)</onclick>
 			</control>
+			<control type="radiobutton" id="981">
+				<description>Hide Diffuse Colors</description>
+			  <width>555</width>
+				<label>31365</label>
+        <include>DialogsRadioButton</include>
+				<selected>Skin.HasSetting(HideOSDDiffuseColors)</selected>
+				<onclick>Skin.ToggleSetting(HideOSDDiffuseColors)</onclick>
+				<onclick>Dialog.Close(1112)</onclick>
+			</control>
+			<control type="radiobutton" id="982">
+				<description>Hide Scrolling Titles</description>
+			  <width>555</width>
+				<label>31366</label>
+        <include>DialogsRadioButton</include>
+				<selected>Skin.HasSetting(HideOSDScrollingTitles)</selected>
+				<onclick>Skin.ToggleSetting(HideOSDScrollingTitles)</onclick>
+				<onclick>Dialog.Close(1112)</onclick>
+			</control>
 		</control>
 	</control>
 	</controls>

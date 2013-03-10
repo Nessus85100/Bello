@@ -339,7 +339,7 @@
 			<align>left</align>
 			<aligny>top</aligny>
 			<textoffsetx>15</textoffsetx>
-			<textoffsety>10</textoffsety>
+			<textoffsety>12</textoffsety>
 			<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="SettingsRadioButton">
@@ -361,7 +361,7 @@
 			<aligny>top</aligny>
 			<radioposx>715</radioposx>
 			<textoffsetx>15</textoffsetx>
-			<textoffsety>10</textoffsety>
+			<textoffsety>12</textoffsety>
 			<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="SettingsSpincontrolex">
@@ -385,7 +385,7 @@
 			<spinheight>44</spinheight>
 			<spinposx>10</spinposx>
 			<textoffsetx>15</textoffsetx>
-			<textoffsety>10</textoffsety>
+			<textoffsety>12</textoffsety>
 			<pulseonselect>false</pulseonselect>
 			<reverse>yes</reverse>
 	</include>
@@ -1020,6 +1020,7 @@
 	</variable>
 	
 	<variable name="FanartThumbs">
+		<value condition="Container.Content(Episodes) + stringcompare(Container.ViewMode,List) + !Skin.HasSetting(ListShowFanartThumb)">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="![IsEmpty(ListItem.Art(fanart)) + [substring(Container.FolderPath,plugin,left) + Container.HasFiles]]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="[substring(Container.FolderPath,plugin,left) + Container.HasFiles]">thumbs/fallback_xbmc.png</value>
 		<value>$INFO[ListItem.Property(Fanart_Image)]</value>

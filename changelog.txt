@@ -1,2 +1,14 @@
+[B]v1.0.0 (Beta 2)[/B]
+• Fixed some fonts characters for some languages
+• Fixed Weather & Settings home buttons wrong function in skin settings 
+• Added global RSS feed (thanks to Hitcher)
+• Added an option to customize Music home button function
+• Added an option to choose between fanart and episode thumb in List & Gallery views
+• Added an option to disable diffuse colors in music OSD visualization
+• Added an option to disable scrolling titles in music OSD visualization
+• Several other small fixes and enhancements
+
+
+
 [B]v1.0.0 (Beta 1)[/B]
 • Initial Release

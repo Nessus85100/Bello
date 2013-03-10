@@ -162,19 +162,23 @@
 				<onup>-</onup>
 				<ondown>9111</ondown>
 				<onback>9111</onback>
-				<control type="button" id="90">
-					<description>oooooo</description>
-				  <label>-</label>
-					<onclick>-</onclick>
+				<control type="radiobutton" id="90">
+					<description>FanartThumb Toggle</description>
 				  <include>TopButton</include>
+					<label>-</label>
+					<onclick>Skin.ToggleSetting(ListShowFanartThumb)</onclick>
+					<selected>Skin.HasSetting(ListShowFanartThumb)</selected>
+				  <visible>stringcompare(Container.ViewMode,List) + Container.Content(Episodes)</visible>
 				</control>
-				<control type="button" id="91">
-					<description>oooooo</description>
-				  <label>-</label>
-					<onclick>-</onclick>
+				<control type="radiobutton" id="91">
+					<description>FanartThumb Toggle</description>
 				  <include>TopButton</include>
+					<label>-</label>
+					<onclick>Skin.ToggleSetting(GalleryShowFanartThumb)</onclick>
+					<selected>Skin.HasSetting(GalleryShowFanartThumb)</selected>
+				  <visible>stringcompare(Container.ViewMode,Gallery) + Container.Content(Episodes)</visible>
 				</control>
-				<control type="button" id="92">
+				<control type="button." id="92">
 					<description>oooooo</description>
 				  <label>-</label>
 					<onclick>-</onclick>
@@ -204,23 +208,45 @@
 				  <label>$LOCALIZE[31014]:</label>
 				</control>
 				<control type="label">
-					<description>ooooo</description>
+					<description>FanartThumb Toggle</description>
 				  <include>TopSmallLabel</include>
-          <label>$INFO[Control.GetLabel(90)]</label>
+          <label>31118</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(90)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(90)" reversible="true">Conditional</animation>
+          <visible>!SubString(Control.GetLabel(90),*)</visible>
+				  <visible>stringcompare(Container.ViewMode,List) + Container.Content(Episodes)</visible>
 				</control>
 				<control type="label">
-					<description>ooooo</description>
+					<description>FanartThumb Toggle</description>
 				  <include>TopSmallLabel</include>
-          <label>$INFO[Control.GetLabel(91)]</label>
+          <label>31119</label>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(90)" reversible="true">Conditional</animation>
+          <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(90)" reversible="true">Conditional</animation>
+          <visible>SubString(Control.GetLabel(90),*)</visible>
+				  <visible>stringcompare(Container.ViewMode,List) + Container.Content(Episodes)</visible>
+				</control>
+				<control type="label">
+					<description>FanartThumb Toggle</description>
+				  <include>TopSmallLabel</include>
+          <label>31118</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(91)" reversible="true">Conditional</animation>
-          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(91)" reversible="true">Conditional</animation>
+          <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(91)" reversible="true">Conditional</animation>
+          <visible>!SubString(Control.GetLabel(91),*)</visible>
+				  <visible>stringcompare(Container.ViewMode,Gallery) + Container.Content(Episodes)</visible>
 				</control>
 				<control type="label">
+					<description>FanartThumb Toggle</description>
+				  <include>TopSmallLabel</include>
+          <label>31119</label>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(91)" reversible="true">Conditional</animation>
+          <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(91)" reversible="true">Conditional</animation>
+          <visible>SubString(Control.GetLabel(91),*)</visible>
+				  <visible>stringcompare(Container.ViewMode,Gallery) + Container.Content(Episodes)</visible>
+				</control>
+				<control type="label.">
 					<description>ooooo</description>
 				  <include>TopSmallLabel</include>
-          <label>$INFO[Control.GetLabel(91)]</label>
+          <label>$INFO[Control.GetLabel(92)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(92)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(92)" reversible="true">Conditional</animation>
 				</control>

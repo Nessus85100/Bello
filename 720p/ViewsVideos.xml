@@ -1127,9 +1127,19 @@
 							<width>675</width>
 							<height>380</height>
 							<aspectratio align="center">stretch</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_fanart.png">$VAR[FanartThumbs]</texture>
+						  <texture background="true" fallback="thumbs/fallback_fanart.png">$INFO[ListItem.Art(fanart)]</texture>
 							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>
+							<visible>Skin.HasSetting(GalleryShowFanartThumb)</visible>
+						</control>
+						<control type="image">
+							<width>675</width>
+							<height>380</height>
+							<aspectratio align="center">stretch</aspectratio>
+						  <texture background="true" fallback="thumbs/fallback_fanart.png">$INFO[ListItem.Art(thumb)]</texture>
+							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
+							<bordersize>6</bordersize>
+							<visible>!Skin.HasSetting(GalleryShowFanartThumb)</visible>
 						</control>
 						<control type="image">
 							<width>675</width>
