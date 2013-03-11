@@ -239,7 +239,7 @@
 		<control type="group">
 			<include>ListViewAnimationsRight</include>
 			<control type="group">
-        <visible>Container.HasFiles + !Container.Content(addons)</visible>
+        <visible>Container.HasFiles + !Container.Content(addons) + !IsEmpty(ListItem.FileName)</visible>
 			  <include>ListViewAnimationsRight</include>
 				<control type="image">
 					<posx>555</posx>
@@ -491,7 +491,7 @@
 
 			<control type="group">
 			  <include>ListViewAnimationsRight</include>
-        <visible>!Container.HasFiles + !Container.Content(addons)</visible>
+        <visible>IsEmpty(ListItem.FileName) | !Container.HasFiles + !Container.Content(addons)</visible>
 				<control type="image">
 					<posx>360</posx>
 					<posy>-60</posy>
@@ -828,6 +828,7 @@
 	      <preloaditems>2</preloaditems>
 	      <focusposition>5</focusposition>
 			  <pagecontrol>60</pagecontrol>
+        <visible>!Container.Content(addons)</visible>
 				<itemlayout width="58" height="380">
 					<control type="image">
 						<posx>35</posx>
@@ -866,9 +867,25 @@
 						<control type="image">
 							<width>675</width>
 							<height>380</height>
+							<aspectratio align="center" aligny="center">stretch</aspectratio>
+						  <texture background="true">empty_icon.png</texture>
+							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
+							<bordersize>6</bordersize>
+						</control>
+						<control type="image">
+							<width>675</width>
+							<height>380</height>
 							<aspectratio align="center" aligny="top">scale</aspectratio>
 						  <texture background="true" fallback="thumbs/fallback_fanart.png">$INFO[ListItem.FileNameAndPath]</texture>
-							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
+              <visible>Container.HasFiles + !IsEmpty(ListItem.FileName)</visible>
+							<bordersize>6</bordersize>
+						</control>
+						<control type="image">
+							<width>675</width>
+							<height>380</height>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+						  <texture background="true">$INFO[ListItem.Icon]</texture>
+              <visible>!Container.HasFiles | IsEmpty(ListItem.FileName)</visible>
 							<bordersize>6</bordersize>
 						</control>
 						<control type="group">
@@ -891,6 +908,7 @@
 						      <scroll>false</scroll>
 									<align>left</align>
 									<label>$INFO[ListItem.label]</label>
+	                <animation effect="slide" end="0,10" time="0" condition="IsEmpty(ListItem.FileName)">Conditional</animation>
 								</control>
 								<control type="label">
 									<posx>20</posx>
