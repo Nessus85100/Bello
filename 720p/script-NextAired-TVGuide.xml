@@ -63,7 +63,7 @@
 				<width>315</width>
 				<height>175</height>
 				<aspectratio aligny="center" align="center">strecth</aspectratio>
-				<texture background="true" fallback="thumbs/fallback_fanart.png">$VAR[TVGuidePreviewThumb]</texture>
+				<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[TVGuidePreviewThumb]</texture>
 				<bordertexture border="6">dialogs/other/iconborder_black.png</bordertexture>
 				<bordersize>6</bordersize>
         <fadetime>200</fadetime>
@@ -87,7 +87,7 @@
 				<width>291</width>
 				<height>113</height>
 				<aspectratio aligny="center" align="center">keep</aspectratio>
-				<texture background="true" fallback="thumbs/fallback_fanart.png">$VAR[TVGuidePreviewThumb]</texture>
+				<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[TVGuidePreviewThumb]</texture>
 				<visible>Stringcompare(Skin.String(PreviewThumb),3)</visible>
         <fadetime>200</fadetime>
 			</control>
