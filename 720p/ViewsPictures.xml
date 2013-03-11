@@ -239,7 +239,7 @@
 		<control type="group">
 			<include>ListViewAnimationsRight</include>
 			<control type="group">
-				<visible>!IsEmpty(ListItem.Thumb) + !Container.Content(Addons)</visible>
+        <visible>Container.HasFiles + !Container.Content(addons)</visible>
 			  <include>ListViewAnimationsRight</include>
 				<control type="image">
 					<posx>555</posx>
@@ -491,7 +491,7 @@
 
 			<control type="group">
 			  <include>ListViewAnimationsRight</include>
-        <visible>IsEmpty(ListItem.Property(Addon.Name)) + IsEmpty(ListItem.Thumb)</visible>
+        <visible>!Container.HasFiles + !Container.Content(addons)</visible>
 				<control type="image">
 					<posx>360</posx>
 					<posy>-60</posy>
