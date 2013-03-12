@@ -2,7 +2,7 @@
 	<include name="ListView_Addons">
 
 	 <control type="group">
-		<visible>Control.IsVisible(50)</visible>
+		<visible>Control.IsVisible(50) | Window.IsVisible(AddonBrowser) | Container.Content(Addons)</visible>
     <include>DialogZoomInOutAnimation</include>
 
 

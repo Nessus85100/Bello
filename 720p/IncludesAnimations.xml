@@ -311,13 +311,13 @@
         <effect type="fade" start="0" end="100" time="500" delay="0" tween="sine" easing="out"/>
         <effect type="slide" start="-360,0" end="0,0" time="600" delay="0" tween="cubic" easing="out" />
     </animation>
-    <animation type="Visible" reversible="false">
-        <effect type="fade" start="0" end="100" time="500" delay="0" tween="sine" easing="out"/>
-        <effect type="slide" start="0,-360" end="0,0" time="600" tween="cubic" easing="out" />
-    </animation>
 		<animation type="WindowClose" reversible="false">
         <effect type="slide" start="0,0" end="-360,0" time="400" delay="250" tween="sine" easing="out" />
         <effect type="fade" start="100" end="0" time="300" delay="250" tween="sine" easing="out"/>
+    </animation>
+    <animation type="Visible" reversible="false">
+        <effect type="fade" start="0" end="100" time="500" delay="0" tween="sine" easing="out"/>
+        <effect type="slide" start="0,-360" end="0,0" time="600" tween="cubic" easing="out" />
     </animation>
     <animation type="Hidden" reversible="false">
         <effect type="slide" start="0,0" end="-360,0" time="400" tween="sine" easing="out" />
@@ -330,19 +330,40 @@
         <effect type="fade" start="0" end="100" time="500" delay="0" tween="sine" easing="out"/>
         <effect type="slide" start="360,0" end="0,0" time="600" delay="0" tween="cubic" easing="out" />
     </animation>
-    <animation type="Visible" reversible="false">
-        <effect type="fade" start="0" end="100" time="500" delay="0" tween="sine" easing="out"/>
-        <effect type="slide" start="360,0" end="0,0" time="600" tween="cubic" easing="out" />
-    </animation>
 		<animation type="WindowClose" reversible="false">
         <effect type="slide" start="0,0" end="360,0" time="400" delay="250" tween="sine" easing="out" />
         <effect type="fade" start="100" end="0" time="300" delay="250" tween="sine" easing="out"/>
+    </animation>
+    <animation type="Visible" reversible="false">
+        <effect type="fade" start="0" end="100" time="500" delay="0" tween="sine" easing="out"/>
+        <effect type="slide" start="360,0" end="0,0" time="600" tween="cubic" easing="out" />
     </animation>
     <animation type="Hidden" reversible="false">
         <effect type="slide" start="0,0" end="360,0" time="400" tween="sine" easing="out" />
         <effect type="fade" start="100" end="0" time="300" delay="0" tween="sine" easing="out"/>
     </animation>
 	</include>
+
+  <include name="ThumbnailsAnimations">
+    <animation type="WindowOpen" reversible="false">
+        <effect type="slide" start="-300,0" end="0,0" tween="back" easing="out" time="900" />
+        <effect type="fade" time="300" tween="sine" easing="out" />
+    </animation>
+    <animation type="Visible" reversible="false">
+        <effect type="slide" start="-300,0" end="0,0" tween="back" easing="out" time="900" />
+        <effect type="fade" time="300" tween="sine" easing="out" />
+    </animation>
+    <animation type="Hidden" reversible="false">
+        <effect type="slide" start="0,0" end="300,0" tween="back" easing="inout" time="900" />
+        <effect type="fade" time="300" delay="200" tween="sine" easing="inout" />
+    </animation>
+    <animation type="WindowClose" reversible="false">
+        <effect type="slide" start="0,0" end="300,0" tween="back" easing="inout" time="900" />
+        <effect type="fade" time="300" delay="200" tween="sine" easing="inout" />
+    </animation>
+  </include>
+
+
 
 	<include name="ListFocusAnimation">
 	  <animation type="Focus" reversible="false" condition="Container(50).OnPrevious">
