@@ -53,14 +53,12 @@
         <include>DialogsRadioButton</include>
 				<onclick>Skin.ToggleSetting(Vis-Visualization)</onclick>
 				<selected>!Skin.HasSetting(Vis-Visualization)</selected>
-				<onclick>Dialog.Close(1112)</onclick>
 			</control>
 			<control type="button" id="992">
 				<description>Select Visualization Type Button</description>
 			  <width>555</width>
 				<label>$LOCALIZE[31359]</label>
         <include>DialogsButton</include>
-				<onclick>Dialog.Close(1112)</onclick>
 				<onclick>SendClick(120,500)</onclick>
 			</control>
 			<control type="button" id="993">
@@ -86,7 +84,6 @@
 				<onclick>Skin.Reset(Vis-ArtistSlideshow)</onclick>
 				<onclick>Skin.Reset(Vis-CustomSlideshow)</onclick>
 				<onclick>Skin.ToggleSetting(Vis-Fanart)</onclick>
-				<onclick>Dialog.Close(1112)</onclick>
 			</control>
 			<control type="radiobutton" id="996">
 				<description>Artist Slideshow Button</description>
@@ -98,7 +95,6 @@
 				<onclick>Skin.Reset(Vis-CustomSlideshow)</onclick>
 				<onclick>Skin.ToggleSetting(Vis-ArtistSlideshow)</onclick>
 				<onclick condition="IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow)</onclick>
-				<onclick>Dialog.Close(1112)</onclick>
 			</control>
 			<control type="radiobutton" id="997">
 				<description>Custom Slideshow Button</description>
@@ -118,7 +114,6 @@
         <include>DialogsRadioButton</include>
 				<selected>Skin.HasSetting(Vis-Animation)</selected>
 				<onclick>Skin.ToggleSetting(Vis-Animation)</onclick>
-				<onclick>Dialog.Close(1112)</onclick>
 				<onclick>ReplaceWindow(visualisation)</onclick>
 			</control>
 			<control type="radiobutton" id="981">
@@ -128,7 +123,6 @@
         <include>DialogsRadioButton</include>
 				<selected>Skin.HasSetting(HideOSDDiffuseColors)</selected>
 				<onclick>Skin.ToggleSetting(HideOSDDiffuseColors)</onclick>
-				<onclick>Dialog.Close(1112)</onclick>
 			</control>
 			<control type="radiobutton" id="982">
 				<description>Hide Scrolling Titles</description>
@@ -137,7 +131,6 @@
         <include>DialogsRadioButton</include>
 				<selected>Skin.HasSetting(HideOSDScrollingTitles)</selected>
 				<onclick>Skin.ToggleSetting(HideOSDScrollingTitles)</onclick>
-				<onclick>Dialog.Close(1112)</onclick>
 			</control>
 		</control>
 	</control>

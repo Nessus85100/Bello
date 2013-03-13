@@ -19,24 +19,28 @@
       <include>ListView_Music</include> <!-- id = 50 -->
       <include>SlideView_Music</include> <!-- id = 51 -->
       <include>GalleryView_Music</include> <!-- id = 52 -->
+      <include>ThumbnailsView</include> <!-- id = 56 -->
     </include>
     
     <include name="MusicFilesViews">
       <include>ListView_Music</include> <!-- id = 50 -->
+      <include>ThumbnailsView</include> <!-- id = 56 -->
     </include>
 
     <include name="PicturesViews">
       <include>ListView_Pictures</include> <!-- id = 50 -->
       <include>GalleryView_Pictures</include> <!-- id = 52 -->
-      <include>ThumbnailsView_Pictures</include> <!-- id = 56 -->
+      <include>ThumbnailsView</include> <!-- id = 56 -->
     </include>
 
     <include name="ProgramsViews">
       <include>ListView_Addons</include> <!-- id = 50 -->
+      <include>ThumbnailsView</include> <!-- id = 56 -->
     </include>
     
     <include name="AddonsViews">
       <include>ListView_Addons</include> <!-- id = 50 -->
+      <include>ThumbnailsView</include> <!-- id = 56 -->
     </include>
     
     <include name="VideoPlaylistViews">
@@ -47,6 +51,7 @@
     <include name="MusicPlaylistViews">
       <include>ListView_Music</include> <!-- id = 50 -->
       <include>SlideView_Music</include> <!-- id = 51 -->
+      <include>ThumbnailsView</include> <!-- id = 56 -->
     </include>
 
     <include name="PVRViews">

@@ -332,18 +332,17 @@
 				 <animation effect="slide" start="0,0" end="-210,0" time="450" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)">Conditional</animation>
 				 <control type="label">
 					 <description>NP label</description>
-					 <posx>125</posx>
-					 <posy>160</posy>
+					 <posx>-37</posx>
+					 <posy>157</posy>
 					 <width>300</width>
 					 <height>30</height>
 					 <label>$LOCALIZE[13350]</label>
-					 <align>right</align>
-					 <aligny>center</aligny>
+					 <align>left</align>
+					 <aligny>left</aligny>
 					 <font>FontSize_22</font>
 					 <textcolor>purple</textcolor>
 					 <shadowcolor>99000000</shadowcolor>
-					 <animation effect="rotate" start="0" end="90" center="auto" time="0">WindowOpen</animation>
-					 <animation effect="rotate" start="0" end="90" center="auto" time="0">WindowClose</animation>
+					 <angle>90</angle>
 				 </control>
 				 <control type="image">
 					 <posx>-130</posx>
@@ -517,18 +516,17 @@
 			 </control>
 			 <control type="label">
 				 <description>NP label</description>
-				 <posx>125</posx>
-				 <posy>180</posy>
+				 <posx>-37</posx>
+				 <posy>182</posy>
 				 <width>300</width>
 				 <height>30</height>
 				 <label>$LOCALIZE[13350]</label>
-				 <align>right</align>
-				 <aligny>center</aligny>
+				 <align>left</align>
+				 <aligny>left</aligny>
 				 <font>FontSize_22</font>
 				 <textcolor>purple</textcolor>
 				 <shadowcolor>99000000</shadowcolor>
-				 <animation effect="rotate" start="0" end="90" center="auto" time="0">WindowOpen</animation>
-				 <animation effect="rotate" start="0" end="90" center="auto" time="0">WindowClose</animation>
+				 <angle>90</angle>
 			 </control>
 			 <control type="image">
 					<posx>0</posx>
@@ -641,18 +639,17 @@
 			 </control>
 			 <control type="label">
 				 <description>NP label</description>
-				 <posx>125</posx>
-				 <posy>155</posy>
+				 <posx>-37</posx>
+				 <posy>157</posy>
 				 <width>300</width>
 				 <height>30</height>
 				 <label>$LOCALIZE[13350]</label>
-				 <align>right</align>
-				 <aligny>center</aligny>
+				 <align>left</align>
+				 <aligny>left</aligny>
 				 <font>FontSize_22</font>
 				 <textcolor>purple</textcolor>
 				 <shadowcolor>99000000</shadowcolor>
-				 <animation effect="rotate" start="0" end="90" center="auto" time="0">WindowOpen</animation>
-				 <animation effect="rotate" start="0" end="90" center="auto" time="0">WindowClose</animation>
+				 <angle>90</angle>
 			 </control>
 				<control type="image">
 					<posx>0</posx>
