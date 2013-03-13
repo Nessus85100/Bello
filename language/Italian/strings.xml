@@ -2,7 +2,7 @@
  <strings>
   <!-- Misc labels -->
   <string id="31000">Nuovo</string>
-  <string id="31001">Nuvo</string>
+  <string id="31001">Nuovo</string>
   <string id="31002">Serie TV</string>
   <string id="31003">Opzioni</string>
   <string id="31004">In esecuzione...</string>
@@ -10,7 +10,7 @@
   <string id="31006">Vedi Opzioni</string>
   <string id="31007">Plugins</string>
   <string id="31008">Schermo Intero</string>
-  <string id="31009">Menu' Contestuale</string>
+  <string id="31009">Menù Contestuale</string>
 	<string id="31010">TV dal Vivo</string>
 	<string id="31011">-</string>
 	<string id="31012">-</string>
@@ -34,7 +34,7 @@
   <string id="31029">Fanart</string>
   <string id="31030">Lista Piena</string>
   <string id="31031">Anteprima Foto</string>
-  <string id="31032">immagine Wrap</string>
+  <string id="31032">Immagine Wrap</string>
   <string id="31033">Informazione</string>
 
   <!-- Extra labels -->
@@ -44,10 +44,10 @@
   <string id="31043">In Pausa</string>
   <string id="31044">Riavvolgi:</string>
   <string id="31045">Porta Avanti:</string>
-  <string id="31046">Proprieta' Audio</string>
+  <string id="31046">Proprietà Audio</string>
   <string id="31047">Preset Attuale</string>
   <string id="31048">Presets Visualizzazione</string>
-  <string id="31049">Finisce A</string>
+  <string id="31049">Finisce alle</string>
   <string id="31050">Ardina: Ascendente</string>
   <string id="31051">Ordina: Descendente</string>
 	<string id="31052">Tempo Attuale:</string>
@@ -69,7 +69,7 @@
   <string id="31083">Abilita Notifiche Allarmi Meteo</string>
   <string id="31088">Mostra i feed RSS in tutto lo skin</string>
   <string id="31089">Nascondi la Lettura delle Bandiere dai nomi dei file video [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]</string>
-  <string id="31100">Bottoni Categomria Menu' Principale</string>
+  <string id="31100">Bottoni Categoria Menù Principale</string>
   <string id="31101">Mostra le Informazioni Meteo</string>
   <string id="31102">Nascondi le Informazioni dei Video in Esecuzione</string>
   <string id="31103">Nascondi le Informazioni della Musica in Esecuzione</string>
@@ -91,14 +91,14 @@
   <string id="31119">Mostra Miniature Episodi</string>
 
   <string id="31130">Disabilita le Fanart in tutte le sezioni</string>
-  <string id="31131">Mostra la Slideshow delle Fanart nel Menu' Principale</string>
+  <string id="31131">Mostra lo Slideshow delle Fanart nel Menù Principale</string>
   <string id="31132">Nascondi i Video di Sfondo</string>
   <string id="31133">Sfondo Personalizzaro</string>
   <string id="31134">Edita lo Sfondo per i Tipi di Media </string>
 
   <string id="31141">Scegli l'Add-on per i Testi</string>
   <string id="31142">Scegli l'Add-on per i Sottotitoli</string>  
-  <string id="31143">Abilita le informazioni 'NextAired' Info nelle serie TV [COLOR=55white](Richiede l'Add-on 'Next Aired')[/COLOR]</string>
+  <string id="31143">Abilita le informazioni 'NextAired' nelle serie TV [COLOR=55white](Richiede l'Add-on 'Next Aired')[/COLOR]</string>
   <string id="31144">Abilita i Temi Musicali nelle Serie TV [COLOR=55white](Richiede l'Add-on 'TV Tunes')[/COLOR]</string>
 	<string id="31145">Scarica i temi musicali per tutte le Serie TV</string>
   <string id="31146">Scarica [COLOR=selected]logo.png[/COLOR] per tutte le Serie TV</string>
@@ -108,12 +108,12 @@
   <string id="31150">Scarica [COLOR=selected]poster.jpg[/COLOR] per tutte le Serie TV</string>
 	
 
-  <string id="-">Sottomenu' Video Menu' Principale</string>
-  <string id="-">Sottomenu' Musica Menu' Principale</string>
-  <string id="-">Sottomenu' Foto Menu' Principale</string>
-  <string id="-">Il bottone "Video" va sempre ai "File" video</string>
+  <string id="-">Sottomenù Video Menù Principale</string>
+  <string id="-">Sottomenù Musica Menù Principale</string>
+  <string id="-">Sottomenù Foto Menù Principale</string>
+  <string id="-">Il bottone "Video" va sempre ai "File"</string>
   <string id="-">Nascondi la Lettura delle Bandiere dai nomi dei file video[COLOR=55white](Blu-ray, HD-DVD)[/COLOR]</string>
-  <string id="-">Esegui i Trailer in una fiestra [COLOR=55white](Video Information Dialog Only)[/COLOR]</string>
+  <string id="-">Esegui i Trailer in una finestra [COLOR=55white](Informazioni solo nella finestra di dialogo)[/COLOR]</string>
   <string id="31197">Immagine Singola</string>
   <string id="31198">Immagini Multiple</string>
   <string id="31199">Abilita Schermata Login</string>
@@ -124,14 +124,14 @@
   <string id="31202">I Miei Film</string>
   <string id="31203">Le Mie Serie TV</string>
   <string id="31204">La Mia Musica</string>
-	<string id="31205">Sfoglia i Film aggiunti piu' recentemente</string>
-	<string id="31206">Sfoglia gli Episodi aggiunti piu' recentemente</string>
-	<string id="31207">Sfoglia gli Album aggiunti piu' recentemente</string>
+	<string id="31205">Sfoglia i Film aggiunti più recentemente</string>
+	<string id="31206">Sfoglia gli Episodi aggiunti più recentemente</string>
+	<string id="31207">Sfoglia gli Album aggiunti più recentemente</string>
 	<string id="31208">Sfoglia tutti i Film in corso</string>
-	<string id="31209">Sfoglia tutti i Serie in corso</string>
-	<string id="31210">Sfoglia tutti i Musica in corso</string>
+	<string id="31209">Sfoglia tutte le Serie TV in corso</string>
+	<string id="31210">Sfoglia tutta la Musica in corso</string>
 	<string id="31211">Sfoglia tutti i Film nel tuo archivio</string>
-	<string id="31212">Sfoglia tutte le Serie nel tuo archivio</string>
+	<string id="31212">Sfoglia tutte le Serie TV nel tuo archivio</string>
 	<string id="31213">Sfoglia tutta la Musica nel tuo archivio</string>
 	<string id="31250">In Onda</string>
 	<string id="31251">Prossimamente</string>
@@ -147,7 +147,7 @@
   <!-- Extra labels -->
   <string id="31300">Tempo Attuale</string>
   <string id="31301">Ultimo Aggiornamento</string>
-  <string id="31302">Menu'</string>
+  <string id="31302">Menù</string>
   <string id="31303">Fornitore di Dati</string>
   <string id="31304">Foto</string>
   <string id="31305">Nessun Disco Rilevato</string>
@@ -176,14 +176,14 @@
   <string id="31328">Aggiunto di Recente</string>
   <string id="31329">Auto Spegnimento in</string>
   <string id="31330">Clicca per eseguire[CR][CR]il trailer del Film</string>
-  <string id="31331">Dettagli ALbum</string>
+  <string id="31331">Dettagli Album</string>
 
   <!-- Video and Music OSD Labels  -->
   <string id="31351">Pausa</string>
   <string id="31352">Stop</string>
   <string id="31353">Avanti Veloce</string>
   <string id="31354">Raccogli</string>
-  <string id="31355">Menu' Film</string>
+  <string id="31355">Menù Film</string>
   <string id="31356">Scarica Sottotitoli</string>
 	<string id="31357">Personalizza Sfondo</string>
 	<string id="31358">Abilita Visualizzazione</string>
@@ -197,22 +197,22 @@
 	<string id="31366">Nascondi Scorrimento Titoli</string>
 
   <!-- Description Category Labels -->
-  <string id="31401">Regola l'aspetto di Xbmc. Include skin, tema, suoni and caratteri, feed RSS feed ed impostazione di localizzazione.</string>
-  <string id="31402">Gestisci i tuoi contenuti video. Include opzioni del db dell'archivio, liste dei file, sottotitoli, scraper, e opzioni di esecuzione.</string>
-  <string id="31403">Configura come XBMC gestisce la musica. Imposta opzioni di esecuzione e di ascolto, sfoglia per file, per db e molto di più.</string>
-  <string id="31404">La gestione delle immagini può essere molto facile. Puoi farlo aggustando il display, gli effetti, le etichette, tempi e profili delle immagini.</string>
-  <string id="31405">Impostare il Meteo è molto semplice con XBMC. Seleziona un pulin per il meteo ed ottieni aggiornamenti dal vivo da una a tre citta'.</string>
+  <string id="31401">Regola l'aspetto di Xbmc. Include skin, temi, suoni, caratteri, feed RSS feed ed impostazioni di localizzazione.</string>
+  <string id="31402">Gestisci i tuoi contenuti video. Include opzioni db, liste di file, sottotitoli, scraper, e opzioni di esecuzione.</string>
+  <string id="31403">Configura come XBMC gestisce la musica. Imposta opzioni di esecuzione ed ascolto, sfoglia per file, per db e molto di più.</string>
+  <string id="31404">La gestione delle immagini può essere molto facile. Puoi farlo aggiustando il display, gli effetti, le etichette ed altro ancora.</string>
+  <string id="31405">Impostare il Meteo è molto semplice con XBMC. Seleziona un plugin meteo ed ottieni aggiornamenti dal vivo.</string>
   <string id="31406">Gestisci i tuoi Add-on. Sfoglia ed installa add-on da xbmc.org e modificane le impostazioni.</string>
-  <string id="31407">Gestisci le connessioni di rete di XBMC. Controlla l'IP, WWW i server FTP, i client SMB, e la configurazione UPnP.</string>
-  <string id="31408">Controlla le funzioni hardware and software, comprese le impostazioni hardware audio and video, esecuzioni automatiche e limitazioni.</string>
-  <string id="31409">Sceglie tra una serie di impostazioni avanzate ed impostazioni di personalizzazione per far si che lo skin risposnda alle tue esigenze ed ai tuoi gusti.</string>
-  <string id="31410">Con XBMC puoi avere vari profile, anche una schermata di accesso per gli accessi controllati.</string>
-  <string id="31411">Cambia le impostazioni di esecuzione, Gestisci l'EPG, registrazioni e controllo parentale.</string>
+  <string id="31407">Gestisci le connessioni di rete di XBMC. Controlla l'IP, i server FTP, i client SMB, e la configurazione UPnP.</string>
+  <string id="31408">Controlla le funzioni hardware e software, comprese le impostazioni audio e video, esecuzioni automatiche e limitazioni.</string>
+  <string id="31409">Sceglie tra una serie di impostazioni avanzate e personalizzazioni per far si che lo skin risposnda alle tue esigenze ed ai tuoi gusti.</string>
+  <string id="31410">Con XBMC puoi avere vari profili, ed una schermata di login per gli accessi controllati.</string>
+  <string id="31411">Cambia le impostazioni di esecuzione, Gestisci l'EPG, le registrazioni ed il controllo parentale.</string>
 
-  <string id="31421">Scegli il tuo profilo utente[CR]per loggarti e continuare</string>
+  <string id="31421">Scegli il tuo profilo[CR]per loggarti e continuare</string>
 
   <!-- PVR -->
-  <string id="31500">Gruppi Disponibile</string>
+  <string id="31500">Gruppi Disponibili</string>
   <string id="31501">Aggiungi Gruppo</string>
   <string id="31502">Rinomina Gruppo</string>
   <string id="31503">Elimna Grupo</string>
@@ -226,9 +226,9 @@
 	<string id="31905">a</string>
 	<string id="31906">Ultimo Aggiornamento</string>
 	<string id="31907">Fornitore Dati</string>		
-	<string id="31908">Umidita' Max</string>		
-	<string id="31909">Umidita' Min</string>
-  <string id="31910">Possibilita' di Pioggia</string>
+	<string id="31908">Umidità Max</string>		
+	<string id="31909">Umidità Min</string>
+  <string id="31910">Possibilità di Pioggia</string>
   <string id="31911">Recupero Informazioni Meteo da...</string>
   <string id="31912">Condizioni Meteo Attuali</string>
   <string id="31913">Previsione</string>
