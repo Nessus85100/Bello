@@ -2116,13 +2116,9 @@
 			<visible>Control.IsVisible(57)</visible>
 	    <include>DialogZoomInOutAnimation</include>
 	    <include>CommonSlideAnimations</include>
-			<posx>250</posx>
-			<posy>90</posy>
-			<width>750</width>
-			<height>530</height>
 			<control type="fixedlist" id="57">
-				<posx>20</posx>
-				<posy>20</posy>
+				<posx>270</posx>
+				<posy>110</posy>
 				<width>750</width>
 				<height>520</height>
 				<onleft>9000</onleft>
@@ -2130,7 +2126,9 @@
 				<onup>57</onup>
 				<ondown>57</ondown>
 	      <viewtype label="Banner List">List</viewtype>
-				<focusposition>2</focusposition>
+        <focusposition>2</focusposition>
+        <preloaditems>2</preloaditems>
+        <movement>2</movement>
 				<scrolltime tween="Cubic" easing="Out">500</scrolltime>
 	      <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
 				<itemlayout width="560" height="65">
@@ -2194,7 +2192,7 @@
 							<posy>21</posy>
 							<width>150</width>
 							<height>212</height>
-							<texture fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(thumb)]</texture>
+							<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(poster)]</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
 							<bordersize>6</bordersize>
@@ -2204,7 +2202,7 @@
 							<posy>21</posy>
 							<width>150</width>
 							<height>212</height>
-							<texture>overlays/unwatched/thumbs/UnWatched_Poster.png</texture>
+							<texture background="true">overlays/unwatched/thumbs/UnWatched_Poster.png</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordersize>6</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
@@ -2292,7 +2290,7 @@
 							<posy>22</posy>
 							<width>695</width>
 							<height>125</height>
-							<texture fallback="thumbs/fallback_banner.png">$INFO[ListItem.Art(banner)]</texture>
+							<texture background="true" fallback="thumbs/fallback_banner.png">$INFO[ListItem.Art(banner)]</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
 							<bordersize>6</bordersize>
@@ -2303,7 +2301,7 @@
 							<posy>22</posy>
 							<width>695</width>
 							<height>125</height>
-							<texture fallback="thumbs/fallback_banner.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
+							<texture background="true" fallback="thumbs/fallback_banner.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
 							<bordersize>6</bordersize>
@@ -2314,7 +2312,7 @@
 							<posy>22</posy>
 							<width>695</width>
 							<height>125</height>
-							<texture>overlays/unwatched/banners/UnWatched_Banner.png</texture>
+							<texture background="true">overlays/unwatched/banners/UnWatched_Banner.png</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordersize>6</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
@@ -2390,7 +2388,7 @@
 							<posy>22</posy>
 							<width>280</width>
 							<height>165</height>
-							<texture fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(thumb)]</texture>
+							<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio align="center" aligny="top">scale</aspectratio>
 							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
 							<bordersize>6</bordersize>
@@ -2400,7 +2398,7 @@
 							<posy>22</posy>
 							<width>280</width>
 							<height>165</height>
-							<texture>overlays/unwatched/banners/UnWatched_Episodes.png</texture>
+							<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordersize>6</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
