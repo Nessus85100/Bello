@@ -2106,4 +2106,367 @@
 		</control>
 	</include>
 
+
+	<!-- =========================== -->
+	<!-- ==== Banners View "57" ==== -->
+	<!-- =========================== -->
+	
+	<include name="BannersView_Videos">
+		<control type="group">
+			<visible>Control.IsVisible(57)</visible>
+	    <include>DialogZoomInOutAnimation</include>
+	    <include>CommonSlideAnimations</include>
+			<posx>250</posx>
+			<posy>90</posy>
+			<width>750</width>
+			<height>530</height>
+			<control type="fixedlist" id="57">
+				<posx>20</posx>
+				<posy>20</posy>
+				<width>750</width>
+				<height>520</height>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>57</onup>
+				<ondown>57</ondown>
+	      <viewtype label="Banner List">List</viewtype>
+				<focusposition>2</focusposition>
+				<scrolltime tween="Cubic" easing="Out">500</scrolltime>
+	      <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
+				<itemlayout width="560" height="65">
+					<control type="label">
+						<posx>40</posx>
+						<width>550</width>
+						<label>$INFO[ListItem.Label]</label>
+						<font>FontSize_22</font>
+						<textcolor>99white</textcolor>
+						<shadowcolor>99000000</shadowcolor>
+					</control>
+					<control type="label">
+						<posx>40</posx>
+						<posy>23</posy>
+						<width>550</width>
+						<label>$INFO[ListItem.Genre]</label>
+						<font>FontSize_18</font>
+						<textcolor>77white</textcolor>
+						<shadowcolor>99000000</shadowcolor>
+						<visible>!Container.Content(Episodes)</visible>
+					</control>
+					<control type="label">
+						<posx>40</posx>
+						<posy>23</posy>
+						<width>550</width>
+						<label>$INFO[ListItem.Premiered]</label>
+						<font>FontSize_18</font>
+						<textcolor>77white</textcolor>
+						<shadowcolor>99000000</shadowcolor>
+						<visible>Container.Content(Episodes)</visible>
+					</control>
+					<control type="image">
+						<posx>575</posx>
+						<posy>15</posy>
+						<width>128</width>
+						<height>22</height>
+						<texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
+						<aspectratio align="right">keep</aspectratio>
+						<animation effect="fade" end="80" time="0" condition="true">Conditional</animation>
+					</control>
+				</itemlayout>
+				<focusedlayout condition="![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]" width="560" height="260">
+					<control type="group">
+	          <animation type="Focus" reversible="false" condition="Container(57).OnNext">
+	            <effect type="slide" start="0,35" end="0,0" time="450" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+	          </animation>
+	          <animation type="Focus" reversible="false" condition="Container(57).OnPrevious">
+	            <effect type="slide" start="0,-35" end="0,0" time="450" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+	          </animation>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>741</width>
+							<height>252</height>
+				      <texture>dialogs/global_search/banner_panel.png</texture>
+						</control>
+						<control type="image">
+							<posx>21</posx>
+							<posy>21</posy>
+							<width>150</width>
+							<height>212</height>
+							<texture fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(thumb)]</texture>
+							<aspectratio align="center" aligny="center">stretch</aspectratio>
+							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordersize>6</bordersize>
+						</control>
+						<control type="image">
+							<posx>21</posx>
+							<posy>21</posy>
+							<width>150</width>
+							<height>212</height>
+							<texture>overlays/unwatched/thumbs/UnWatched_Poster.png</texture>
+							<aspectratio align="center" aligny="center">stretch</aspectratio>
+							<bordersize>6</bordersize>
+	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+						</control>
+						<control type="image">
+							<posx>575</posx>
+							<posy>200</posy>
+							<width>128</width>
+							<height>22</height>
+						  <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
+							<aspectratio align="right">keep</aspectratio>
+						</control>
+						<control type="label">
+							<posx>180</posx>
+							<posy>25</posy>
+							<width>530</width>
+							<label>$INFO[ListItem.Label]</label>
+							<font>FontSize_26</font>
+							<textcolor>white</textcolor>
+							<align>left</align>
+						</control>
+						<control type="label">
+							<posx>180</posx>
+							<posy>50</posy>
+							<label>$INFO[ListItem.Genre]</label>
+							<font>FontSize_18</font>
+							<textcolor>99white</textcolor>
+							<align>left</align>
+							<width>695</width>
+						</control>
+						<control type="textbox">
+							<posx>180</posx>
+							<posy>81</posy>
+							<width>520</width>
+							<height>105</height>
+						  <align>justify</align>
+							<label fallback="195">$INFO[ListItem.Plot]</label>
+						  <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+							<font>FontSize_18</font>
+							<textcolor>99white</textcolor>
+						</control>
+						<control type="image">
+							<posx>180</posx>
+							<posy>204</posy>
+							<width>28</width>
+							<height>19</height>
+							<align>left</align>
+							<aligny>center</aligny>
+					    <colordiffuse>77white</colordiffuse>
+							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
+						</control>
+						<control type="label">
+							<posx>215</posx>
+							<posy>199</posy>
+							<height>30</height>
+							<width>580</width>
+							<textcolor>99white</textcolor>
+							<font>FontSize_18</font>
+				      <scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]</label>
+			        <animation effect="slide" start="0,0" end="-36,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution)">Conditional</animation>
+						</control>
+					</control>
+				</focusedlayout>
+				<focusedlayout condition="Container.Content(TVShows) | Container.Content(Seasons)" width="560" height="260">
+					<control type="group">
+	          <animation type="Focus" reversible="false" condition="Container(57).OnNext">
+	            <effect type="slide" start="0,35" end="0,0" time="450" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+	          </animation>
+	          <animation type="Focus" reversible="false" condition="Container(57).OnPrevious">
+	            <effect type="slide" start="0,-35" end="0,0" time="450" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+	          </animation>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>741</width>
+							<height>252</height>
+				      <texture>dialogs/global_search/banner_panel.png</texture>
+						</control>
+						<control type="image">
+							<posx>23</posx>
+							<posy>22</posy>
+							<width>695</width>
+							<height>125</height>
+							<texture fallback="thumbs/fallback_banner.png">$INFO[ListItem.Art(banner)]</texture>
+							<aspectratio align="center" aligny="center">stretch</aspectratio>
+							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordersize>6</bordersize>
+							<visible>Container.Content(TVShows)</visible>
+						</control>
+						<control type="image">
+							<posx>23</posx>
+							<posy>22</posy>
+							<width>695</width>
+							<height>125</height>
+							<texture fallback="thumbs/fallback_banner.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
+							<aspectratio align="center" aligny="center">stretch</aspectratio>
+							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordersize>6</bordersize>
+							<visible>Container.Content(Seasons)</visible>
+						</control>
+						<control type="image">
+							<posx>23</posx>
+							<posy>22</posy>
+							<width>695</width>
+							<height>125</height>
+							<texture>overlays/unwatched/banners/UnWatched_Banner.png</texture>
+							<aspectratio align="center" aligny="center">stretch</aspectratio>
+							<bordersize>6</bordersize>
+	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+						</control>
+						<control type="image">
+							<posx>575</posx>
+							<posy>200</posy>
+							<width>128</width>
+							<height>22</height>
+						  <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
+							<aspectratio align="right">keep</aspectratio>
+						</control>
+						<control type="label">
+							<posx>30</posx>
+							<posy>148</posy>
+							<width>690</width>
+							<label>$INFO[ListItem.Label]</label>
+							<font>FontSize_26</font>
+							<textcolor>white</textcolor>
+							<align>left</align>
+						</control>
+						<control type="label">
+							<posx>30</posx>
+							<posy>170</posy>
+							<width>690</width>
+							<label>$INFO[ListItem.Genre]</label>
+							<font>FontSize_18</font>
+							<textcolor>99white</textcolor>
+							<align>left</align>
+						</control>
+						<control type="image">
+							<posx>30</posx>
+							<posy>205</posy>
+							<width>43</width>
+							<height>18</height>
+							<align>left</align>
+							<aligny>center</aligny>
+					    <colordiffuse>77white</colordiffuse>
+							<texture fallback="flags/mpaa/tv/tv-na.png">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
+						</control>
+						<control type="label">
+							<posx>80</posx>
+							<posy>199</posy>
+							<height>30</height>
+							<width>580</width>
+							<textcolor>99white</textcolor>
+							<font>FontSize_18</font>
+				      <scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</label>
+						</control>
+					</control>
+				</focusedlayout>
+				<focusedlayout condition="Container.Content(Episodes)" width="560" height="260">
+					<control type="group">
+	          <animation type="Focus" reversible="false" condition="Container(57).OnNext">
+	            <effect type="slide" start="0,35" end="0,0" time="450" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+	          </animation>
+	          <animation type="Focus" reversible="false" condition="Container(57).OnPrevious">
+	            <effect type="slide" start="0,-35" end="0,0" time="450" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+	          </animation>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>741</width>
+							<height>252</height>
+				      <texture>dialogs/global_search/banner_panel.png</texture>
+						</control>
+						<control type="image">
+							<posx>23</posx>
+							<posy>22</posy>
+							<width>280</width>
+							<height>165</height>
+							<texture fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(thumb)]</texture>
+							<aspectratio align="center" aligny="top">scale</aspectratio>
+							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordersize>6</bordersize>
+						</control>
+						<control type="image">
+							<posx>23</posx>
+							<posy>22</posy>
+							<width>280</width>
+							<height>165</height>
+							<texture>overlays/unwatched/banners/UnWatched_Episodes.png</texture>
+							<aspectratio align="center" aligny="center">stretch</aspectratio>
+							<bordersize>6</bordersize>
+	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+						</control>
+						<control type="image">
+							<posx>575</posx>
+							<posy>200</posy>
+							<width>128</width>
+							<height>22</height>
+						  <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
+							<aspectratio align="right">keep</aspectratio>
+						</control>
+						<control type="label">
+							<posx>310</posx>
+							<posy>25</posy>
+							<width>405</width>
+							<label>$INFO[ListItem.Title]</label>
+							<font>FontSize_26</font>
+							<textcolor>white</textcolor>
+							<align>left</align>
+						</control>
+						<control type="label">
+							<posx>310</posx>
+							<posy>50</posy>
+							<width>400</width>
+					    <label>$INFO[ListItem.TVShowTitle] $INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</label>
+							<font>FontSize_18</font>
+							<textcolor>99white</textcolor>
+							<align>left</align>
+						</control>
+						<control type="textbox">
+							<posx>310</posx>
+							<posy>80</posy>
+							<width>395</width>
+							<height>105</height>
+							<font>FontSize_18</font>
+							<textcolor>99white</textcolor>
+						  <align>justify</align>
+							<label fallback="195">$INFO[ListItem.Plot]</label>
+						  <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+						</control>
+						<control type="image">
+							<posx>30</posx>
+							<posy>203</posy>
+							<width>28</width>
+							<height>19</height>
+							<align>left</align>
+							<aligny>center</aligny>
+					    <colordiffuse>77white</colordiffuse>
+							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
+						</control>
+						<control type="label">
+							<posx>65</posx>
+							<posy>198</posy>
+							<height>30</height>
+							<width>530</width>
+							<textcolor>99white</textcolor>
+							<font>FontSize_18</font>
+				      <scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Premiered,$LOCALIZE[31322]  ]$INFO[ListItem.Duration,  •  , $LOCALIZE[12391]]</label>
+						</control>
+					</control>
+				</focusedlayout>				
+			</control>
+		</control>
+	</include>		
+
 </includes>
