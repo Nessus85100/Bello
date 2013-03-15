@@ -1047,6 +1047,24 @@
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 
+	<variable name="BannersListMusicLabel">
+		<value condition="Container.Content(Songs)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
+	
+	<variable name="BannersListMusicUnderLabel">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Album]$INFO[ListItem.Artist, - ]</value>
+		<value>$INFO[ListItem.Label2]</value>
+	</variable>
+
+	<variable name="BannersListMusicBottomLabel">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_YearsActive), $LOCALIZE[21898]  ]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Year]$INFO[ListItem.Property(Album_label), • ]</value>
+		<value condition="Container.Content(Songs) + !IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.TrackNumber,$LOCALIZE[554] #0,]$INFO[ListItem.Duration,  •  , $LOCALIZE[12391]]</value>
+		<value condition="Container.Content(Songs) + IntegerGreaterThan(ListItem.TrackNumber,9)">$INFO[ListItem.TrackNumber,$LOCALIZE[554] #,]$INFO[ListItem.Duration,  •  , $LOCALIZE[12391]]</value>
+	</variable>
+
 	<variable name="GlobalPlotDescription">
 		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Description)]</value>
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>

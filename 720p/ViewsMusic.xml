@@ -592,7 +592,7 @@
 				<onright>50</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-			  <animation effect="fade" start="100" end="0" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				<visible>Control.IsVisible(50)</visible>
 			</control>
 			<control type="image">
@@ -821,7 +821,7 @@
 				<ondown>51</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
-			  <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(60)">Conditional</animation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				<visible>Control.IsVisible(51)</visible>
 			</control>
 	  </control>
@@ -1026,7 +1026,7 @@
 				<ondown>52</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
-			  <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(60)">Conditional</animation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				<visible>Control.IsVisible(52)</visible>
 			</control>
 	  </control>
@@ -1163,7 +1163,7 @@
 				<ondown>56</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
-			  <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(60)">Conditional</animation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				<visible>Control.IsVisible(56)</visible>
 			</control>
 		</control>
@@ -1192,12 +1192,12 @@
         <focusposition>2</focusposition>
         <preloaditems>2</preloaditems>
 				<scrolltime tween="Cubic" easing="Out">500</scrolltime>
-	      <visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(Singles)</visible>
+	      <visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(Singles) | Window.IsVisible(MusicPlaylist)</visible>
 				<itemlayout width="560" height="65">
 					<control type="label">
 						<posx>40</posx>
 						<width>550</width>
-						<label>$VAR[MusicLabel]</label>
+						<label>$VAR[BannersListMusicLabel]</label>
 						<font>FontSize_22</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -1206,7 +1206,7 @@
 						<posx>40</posx>
 						<posy>23</posy>
 						<width>550</width>
-						<label>$VAR[MusicLabel2]</label>
+						<label>$VAR[BannersListMusicUnderLabel]</label>
 						<font>FontSize_18</font>
 						<textcolor>77white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -1243,9 +1243,9 @@
 							<posy>21</posy>
 							<width>212</width>
 							<height>212</height>
-							<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
@@ -1260,7 +1260,7 @@
 							<posx>240</posx>
 							<posy>25</posy>
 							<width>475</width>
-							<label>$VAR[MusicLabel]</label>
+							<label>$VAR[BannersListMusicLabel]</label>
 							<font>FontSize_26</font>
 							<textcolor>white</textcolor>
 							<align>left</align>
@@ -1269,7 +1269,7 @@
 							<posx>240</posx>
 							<posy>50</posy>
 							<width>475</width>
-							<label>$VAR[MusicLabel2]</label>
+							<label>$VAR[BannersListMusicUnderLabel]</label>
 							<font>FontSize_18</font>
 							<textcolor>99white</textcolor>
 							<align>left</align>
@@ -1287,19 +1287,35 @@
 						</control>
 						<control type="label">
 							<posx>240</posx>
-							<posy>199</posy>
+							<posy>198</posy>
 							<height>30</height>
-							<width>360</width>
+							<width>355</width>
 							<textcolor>99white</textcolor>
 							<font>FontSize_18</font>
 				      <scroll>false</scroll>
 							<align>left</align>
-              <label>$INFO[ListItem.Year]$INFO[ListItem.Property(Album_label), • ]</label>
+							<label>$VAR[BannersListMusicBottomLabel]</label>
 						</control>
 					</control>
 				</focusedlayout>
-
 			</control>
+			<control type="scrollbar" id="60">
+				<posx>1010</posx>
+				<posy>127</posy>
+				<width>11</width>
+				<height>475</height>
+				<texturesliderbackground>-</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>57</onleft>
+				<onright>9000</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+				<visible>Control.IsVisible(57)</visible>
+			</control>			
 		</control>
 	</include>	
 

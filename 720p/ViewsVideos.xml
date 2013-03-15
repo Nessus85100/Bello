@@ -781,7 +781,7 @@
 				<onright>50</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-			  <animation effect="fade" start="100" end="0" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				<visible>Control.IsVisible(50)</visible>
 			</control>
 			<control type="image">
@@ -1026,7 +1026,7 @@
 				<ondown>51</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
-			  <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(60)">Conditional</animation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				<visible>Control.IsVisible(51)</visible>
 			</control>
 	  </control>
@@ -1268,7 +1268,7 @@
 				<ondown>52</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
-			  <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(60)">Conditional</animation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				<visible>Control.IsVisible(52)</visible>
 			</control>
 	  </control>
@@ -2092,7 +2092,7 @@
 				<ondown>55</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
-			  <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(60)">Conditional</animation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				<visible>Control.IsVisible(55)</visible>
 			</control>
 	  </control>
@@ -2122,10 +2122,11 @@
 				<width>750</width>
 				<height>520</height>
 				<onleft>9000</onleft>
-				<onright>9000</onright>
+				<onright>60</onright>
 				<onup>57</onup>
 				<ondown>57</ondown>
 	      <viewtype label="Banner List">List</viewtype>
+			  <pagecontrol>60</pagecontrol>
         <focusposition>2</focusposition>
         <preloaditems>2</preloaditems>
 				<scrolltime tween="Cubic" easing="Out">500</scrolltime>
@@ -2191,9 +2192,9 @@
 							<posy>21</posy>
 							<width>150</width>
 							<height>212</height>
-							<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(poster)]</texture>
+							<texture background="true" fallback="thumbs/fallback_poster_tp.png">$INFO[ListItem.Art(poster)]</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
@@ -2289,22 +2290,22 @@
 							<posy>22</posy>
 							<width>695</width>
 							<height>125</height>
-							<texture background="true" fallback="thumbs/fallback_banner.png">$INFO[ListItem.Art(banner)]</texture>
+							<texture background="true" fallback="thumbs/fallback_banner_tp.png">$INFO[ListItem.Art(banner)]</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>
-							<visible>Container.Content(TVShows)</visible>
+							<visible>!IsEmpty(ListItem.Art(banner)</visible>
 						</control>
 						<control type="image">
 							<posx>23</posx>
 							<posy>22</posy>
 							<width>695</width>
 							<height>125</height>
-							<texture background="true" fallback="thumbs/fallback_banner.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
+							<texture background="true" fallback="thumbs/fallback_banner_tp.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>
-							<visible>Container.Content(Seasons)</visible>
+							<visible>IsEmpty(ListItem.Art(banner)</visible>
 						</control>
 						<control type="image">
 							<posx>23</posx>
@@ -2387,9 +2388,9 @@
 							<posy>22</posy>
 							<width>280</width>
 							<height>165</height>
-							<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(thumb)]</texture>
+							<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio align="center" aligny="top">scale</aspectratio>
-							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
@@ -2459,9 +2460,27 @@
 				      <scroll>false</scroll>
 							<align>left</align>
 							<label>$INFO[ListItem.Premiered,$LOCALIZE[31322]  ]$INFO[ListItem.Duration,  •  , $LOCALIZE[12391]]</label>
+			        <animation effect="slide" start="0,0" end="-36,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution)">Conditional</animation>
 						</control>
 					</control>
 				</focusedlayout>				
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>1010</posx>
+				<posy>127</posy>
+				<width>11</width>
+				<height>475</height>
+				<texturesliderbackground>-</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>57</onleft>
+				<onright>9000</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+				<visible>Control.IsVisible(57)</visible>
 			</control>
 		</control>
 	</include>		
