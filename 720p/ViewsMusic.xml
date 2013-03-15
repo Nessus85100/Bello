@@ -1169,4 +1169,138 @@
 		</control>
 	</include>
 
+
+	<!-- =========================== -->
+	<!-- ==== Banners View "57" ==== -->
+	<!-- =========================== -->
+	
+	<include name="BannersView_Music">
+		<control type="group">
+			<visible>Control.IsVisible(57)</visible>
+	    <include>DialogZoomInOutAnimation</include>
+	    <include>CommonSlideAnimations</include>
+			<control type="fixedlist" id="57">
+				<posx>270</posx>
+				<posy>110</posy>
+				<width>750</width>
+				<height>520</height>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>57</onup>
+				<ondown>57</ondown>
+	      <viewtype label="Banner List">List</viewtype>
+        <focusposition>2</focusposition>
+        <preloaditems>2</preloaditems>
+				<scrolltime tween="Cubic" easing="Out">500</scrolltime>
+	      <visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(Singles)</visible>
+				<itemlayout width="560" height="65">
+					<control type="label">
+						<posx>40</posx>
+						<width>550</width>
+						<label>$VAR[MusicLabel]</label>
+						<font>FontSize_22</font>
+						<textcolor>99white</textcolor>
+						<shadowcolor>99000000</shadowcolor>
+					</control>
+					<control type="label">
+						<posx>40</posx>
+						<posy>23</posy>
+						<width>550</width>
+						<label>$VAR[MusicLabel2]</label>
+						<font>FontSize_18</font>
+						<textcolor>77white</textcolor>
+						<shadowcolor>99000000</shadowcolor>
+					</control>
+					<control type="image">
+						<posx>575</posx>
+						<posy>15</posy>
+						<width>128</width>
+						<height>22</height>
+						<texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
+						<aspectratio align="right">keep</aspectratio>
+						<animation effect="fade" end="80" time="0" condition="true">Conditional</animation>
+					</control>
+				</itemlayout>
+				<focusedlayout width="560" height="260">
+					<control type="group">
+	          <animation type="Focus" reversible="false" condition="Container(57).OnNext">
+	            <effect type="slide" start="0,35" end="0,0" time="450" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+	          </animation>
+	          <animation type="Focus" reversible="false" condition="Container(57).OnPrevious">
+	            <effect type="slide" start="0,-35" end="0,0" time="450" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+	          </animation>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>741</width>
+							<height>252</height>
+				      <texture>dialogs/global_search/banner_panel.png</texture>
+						</control>
+						<control type="image">
+							<posx>21</posx>
+							<posy>21</posy>
+							<width>212</width>
+							<height>212</height>
+							<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio align="center" aligny="center">stretch</aspectratio>
+							<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
+							<bordersize>6</bordersize>
+						</control>
+						<control type="image">
+							<posx>575</posx>
+							<posy>200</posy>
+							<width>128</width>
+							<height>22</height>
+						  <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
+							<aspectratio align="right">keep</aspectratio>
+						</control>
+						<control type="label">
+							<posx>240</posx>
+							<posy>25</posy>
+							<width>475</width>
+							<label>$VAR[MusicLabel]</label>
+							<font>FontSize_26</font>
+							<textcolor>white</textcolor>
+							<align>left</align>
+						</control>
+						<control type="label">
+							<posx>240</posx>
+							<posy>50</posy>
+							<width>475</width>
+							<label>$VAR[MusicLabel2]</label>
+							<font>FontSize_18</font>
+							<textcolor>99white</textcolor>
+							<align>left</align>
+						</control>
+						<control type="textbox">
+							<posx>240</posx>
+							<posy>81</posy>
+							<width>470</width>
+							<height>105</height>
+						  <align>justify</align>
+							<label fallback="195">$VAR[GlobalPlotDescription]</label>
+						  <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+							<font>FontSize_18</font>
+							<textcolor>99white</textcolor>
+						</control>
+						<control type="label">
+							<posx>240</posx>
+							<posy>199</posy>
+							<height>30</height>
+							<width>360</width>
+							<textcolor>99white</textcolor>
+							<font>FontSize_18</font>
+				      <scroll>false</scroll>
+							<align>left</align>
+              <label>$INFO[ListItem.Year]$INFO[ListItem.Property(Album_label), • ]</label>
+						</control>
+					</control>
+				</focusedlayout>
+
+			</control>
+		</control>
+	</include>	
+
 </includes>
