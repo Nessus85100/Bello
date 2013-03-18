@@ -617,7 +617,7 @@
 				<onleft>Close</onleft>
 				<onright>Close</onright>
 		    <include>TopOptionsSlideAnimations</include>
-				<control type="button" id="990">
+				<control type="button." id="990">
 					<description>Library Editor Button</description>
 					<width>460</width>
 					<height>40</height>
