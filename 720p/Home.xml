@@ -26,7 +26,14 @@
 				 <width>1550</width>
 				 <height>720</height>
 			   <onup>SetFocus(21)</onup>
-				 <ondown condition="[Container(20).HasFocus(9) + !Skin.HasSetting(HideSubMenuSettings)] | [Container(20).HasFocus(1) + !Skin.HasSetting(HideSubMenuMovies)] | [Container(20).HasFocus(2) + !Skin.HasSetting(HideSubMenuTVShows)] | [Container(20).HasFocus(3) + !Skin.HasSetting(HideSubMenuMusic)]">SetFocus(23)</ondown>
+				 <ondown condition="[Container(20).HasFocus(9) + !Skin.HasSetting(HideSettingsSubMenu)]
+													| [Container(20).HasFocus(2) + !Skin.HasSetting(HideMoviesSubMenu)]
+													| [Container(20).HasFocus(1) + !Skin.HasSetting(HideTVShowsSubMenu)]
+													| [Container(20).HasFocus(3) + !Skin.HasSetting(HideMusicSubMenu)]">SetFocus(23)</ondown>
+				 
+				 <ondown condition="[Container(20).HasFocus(2) + Skin.HasSetting(HideMoviesSubMenu)]
+													| [Container(20).HasFocus(1) + Skin.HasSetting(HideTVShowsSubMenu)]
+													| [Container(20).HasFocus(3) + Skin.HasSetting(HideMusicSubMenu)]">SetFocus(81)</ondown>
 				 <onleft>20</onleft>
 				 <onright>20</onright>
 				 <itemgap>0</itemgap>
@@ -1190,10 +1197,10 @@
 		 </control>			
 	  </control>	
 
-		<include condition="!Skin.HasSetting(HideSubMenuMovies)">HomeSubMenuMovies</include>
-		<include condition="!Skin.HasSetting(HideSubMenuTVShows)">HomeSubMenuTVShows</include>
-		<include condition="!Skin.HasSetting(HideSubMenuMusic)">HomeSubMenuMusic</include>
-		<include condition="!Skin.HasSetting(HideSubMenuSettings)">HomeSubMenuSettings</include>
+		<include condition="!Skin.HasSetting(HideMoviesSubMenu)">HomeSubMenuMovies</include>
+		<include condition="!Skin.HasSetting(HideTVShowsSubMenu)">HomeSubMenuTVShows</include>
+		<include condition="!Skin.HasSetting(HideMusicSubMenu)">HomeSubMenuMusic</include>
+		<include condition="!Skin.HasSetting(HideSettingsSubMenu)">HomeSubMenuSettings</include>
 		<include>SkinWidgetsLists</include>
 		<include>HomeSubMenusArrows</include>
 		<include>CommonDialogsFadeOutBG</include>

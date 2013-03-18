@@ -12,8 +12,8 @@
   <string id="31008">Fullscreen</string>
   <string id="31009">Context Menu</string>
 	<string id="31010">Live TV</string>
-	<string id="31011">-</string>
-	<string id="31012">-</string>
+	<string id="31011">ON</string>
+	<string id="31012">OFF</string>
   <string id="31014">ViewType Options</string>
   <string id="31015">General Options</string>
   <string id="31016">File Manager</string>
@@ -89,6 +89,12 @@
   <string id="31117">Music Button opens...</string>
   <string id="31118">Show Fanart Thumb</string>
   <string id="31119">Show Episode Thumb</string>
+  <string id="31120">Hide Movies Submenu</string>
+  <string id="31121">Hide TV Shows Submenu</string>
+  <string id="31122">Hide Music Submenu</string>
+  <string id="31123">Hide Settings Submenu</string>
+  <string id="31124">Flashing Lights</string>
+  <string id="31125">Edit Info</string>
 
   <string id="31130">Disable Fanart in all sections</string>
   <string id="31131">Show Fanart SlideShow in Home Screen</string>

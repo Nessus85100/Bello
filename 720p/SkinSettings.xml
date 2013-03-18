@@ -177,32 +177,10 @@
 					<onright>8000</onright>
 					<onup>8200</onup>
 					<ondown>8200</ondown>
-					<control type="radiobutton." id="8201">
-						<description>Enable Home Weather Info</description>
-	          <include>SettingsRadioButton</include>
-						<label>31101</label>
-						<onclick>Skin.ToggleSetting(ShowHomeScreenWeatherInfo)</onclick>
-						<selected>Skin.HasSetting(ShowHomeScreenWeatherInfo)</selected>
-						<visible>!IsEmpty(Weather.Plugin)</visible>
-					</control>
-					<control type="radiobutton" id="8202">
-						<description>Hide Home NP VideoInfo</description>
-	          <include>SettingsRadioButton</include>
-						<label>31102</label>
-						<onclick>Skin.ToggleSetting(HideHomeNPVideoInfo)</onclick>
-						<selected>Skin.HasSetting(HideHomeNPVideoInfo)</selected>
-					</control>
-					<control type="radiobutton" id="8203">
-						<description>Hide Home NP MusicInfo</description>
-	          <include>SettingsRadioButton</include>
-						<label>31103</label>
-						<onclick>Skin.ToggleSetting(HideHomeNPMusicInfo)</onclick>
-						<selected>Skin.HasSetting(HideHomeNPMusicInfo)</selected>
-					</control>
-					<control type="group" id="8204">
-							<description>Fake spin control</description>
-							<width>782</width>
-							<height>50</height>
+					<control type="group" id="8201">
+						<description>Fake spin control</description>
+						<width>782</width>
+						<height>50</height>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -210,13 +188,13 @@
 							<height>50</height>
 							<texture>buttons/settings_fo.png</texture>
 							<aspectratio>stretch</aspectratio>
-							<visible>ControlGroup(8204).HasFocus</visible>
+							<visible>ControlGroup(8201).HasFocus</visible>
 						</control>
-					  <control type="button" id="82041">
+					  <control type="button" id="82011">
 								<onleft>8000</onleft>
 								<onright>8000</onright>
-								<onup>8203</onup>
-								<ondown>8250</ondown>
+								<onup>8263</onup>
+								<ondown>8203</ondown>
 						    <enable>!Skin.HasSetting(HideHomeMenuMusicButton)</enable>
 								<texturefocus>-</texturefocus>
 								<texturenofocus>-</texturenofocus>
@@ -258,7 +236,7 @@
 								<textoffsety>10</textoffsety>
 								<label>$LOCALIZE[31117]</label>
 								<label2>[COLOR=selected]$INFO[Skin.String(MusicName)][/COLOR]</label2>
-						    <visible>!ControlGroup(8204).HasFocus</visible>
+						    <visible>!ControlGroup(8201).HasFocus</visible>
 						    <enable>!Skin.HasSetting(HideHomeMenuMusicButton)</enable>
 						</control>
 						<control type="button">
@@ -272,10 +250,60 @@
 								<textoffsety>10</textoffsety>
 								<label>$LOCALIZE[31117]</label>
 								<label2>[COLOR=selected]$INFO[Skin.String(MusicName)][/COLOR]</label2>
-						    <visible>ControlGroup(8204).HasFocus</visible>
+						    <visible>ControlGroup(8201).HasFocus</visible>
 						    <enable>!Skin.HasSetting(HideHomeMenuMusicButton)</enable>
 						</control>
 				  </control>
+					<control type="radiobutton." id="8202">
+						<description>Enable Home Weather Info</description>
+	          <include>SettingsRadioButton</include>
+						<label>31101</label>
+						<onclick>Skin.ToggleSetting(ShowHomeScreenWeatherInfo)</onclick>
+						<selected>Skin.HasSetting(ShowHomeScreenWeatherInfo)</selected>
+						<visible>!IsEmpty(Weather.Plugin)</visible>
+					</control>
+					<control type="radiobutton" id="8203">
+						<description>Hide Home NP VideoInfo</description>
+	          <include>SettingsRadioButton</include>
+						<label>31102</label>
+						<onclick>Skin.ToggleSetting(HideHomeNPVideoInfo)</onclick>
+						<selected>Skin.HasSetting(HideHomeNPVideoInfo)</selected>
+					</control>
+					<control type="radiobutton" id="8204">
+						<description>Hide Home NP MusicInfo</description>
+	          <include>SettingsRadioButton</include>
+						<label>31103</label>
+						<onclick>Skin.ToggleSetting(HideHomeNPMusicInfo)</onclick>
+						<selected>Skin.HasSetting(HideHomeNPMusicInfo)</selected>
+					</control>
+					<control type="radiobutton" id="8206">
+						<description>Hide Movies SubMenu</description>
+	          <include>SettingsRadioButton</include>
+						<label>31120</label>
+						<onclick>Skin.ToggleSetting(HideMoviesSubMenu)</onclick>
+						<selected>Skin.HasSetting(HideMoviesSubMenu)</selected>
+					</control>
+					<control type="radiobutton" id="8207">
+						<description>Hide TV Shows SubMenu</description>
+	          <include>SettingsRadioButton</include>
+						<label>31121</label>
+						<onclick>Skin.ToggleSetting(HideTVShowsSubMenu)</onclick>
+						<selected>Skin.HasSetting(HideTVShowsSubMenu)</selected>
+					</control>
+					<control type="radiobutton" id="8208">
+						<description>Hide Music SubMenu</description>
+	          <include>SettingsRadioButton</include>
+						<label>31122</label>
+						<onclick>Skin.ToggleSetting(HideMusicSubMenu)</onclick>
+						<selected>Skin.HasSetting(HideMusicSubMenu)</selected>
+					</control>
+					<control type="radiobutton" id="8209">
+						<description>Hide Settings SubMenu</description>
+	          <include>SettingsRadioButton</include>
+						<label>31123</label>
+						<onclick>Skin.ToggleSetting(HideSettingsSubMenu)</onclick>
+						<selected>Skin.HasSetting(HideSettingsSubMenu)</selected>
+					</control>
 					<control type="radiobutton" id="8250">
 						<description>Home Categories Buttonn</description>
 	          <include>SettingsRadioButton</include>
@@ -497,47 +525,47 @@
 						<selected>Skin.HasSetting(NextAiredEnabled)</selected>
 						<enable>System.HasAddon(script.tv.show.next.aired)</enable>
 					</control>
-					<control type="radiobutton" id="8406">
+					<control type="button" id="8406">
+            <include>SettingsButton</include>
+						<label> • $LOCALIZE[1045]</label>
+            <onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
+            <visible>Skin.HasSetting(NextAiredEnabled)</visible>
+					</control>
+					<control type="radiobutton" id="8407">
 	          <include>SettingsRadioButton</include>
 						<label> • $LOCALIZE[31080]</label>
 						<onclick>Skin.ToggleSetting(EnableNextAiredNotifications)</onclick>
 						<selected>Skin.HasSetting(EnableNextAiredNotifications)</selected>
             <visible>Skin.HasSetting(NextAiredEnabled)</visible>
 					</control>
-					<control type="button" id="8407">
+					<control type="button" id="8408">
 	          <include>SettingsRadioButton</include>
 						<label> • $LOCALIZE[31146]</label>
             <onclick>XBMC.RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,clearlogo)</onclick>
             <visible>Skin.HasSetting(NextAiredEnabled)</visible>
 					</control>
-					<control type="button" id="8408">
+					<control type="button" id="8409">
 	          <include>SettingsRadioButton</include>
 						<label> • $LOCALIZE[31147]</label>
             <onclick>XBMC.RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,clearart)</onclick>
             <visible>Skin.HasSetting(NextAiredEnabled)</visible>
 					</control>
-					<control type="button" id="8409">
+					<control type="button" id="8410">
 	          <include>SettingsRadioButton</include>
 						<label> • $LOCALIZE[31148]</label>
             <onclick>XBMC.RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,landscape)</onclick>
             <visible>Skin.HasSetting(NextAiredEnabled)</visible>
 					</control>
-					<control type="button" id="8410">
+					<control type="button" id="8411">
 	          <include>SettingsRadioButton</include>
 						<label> • $LOCALIZE[31149]</label>
             <onclick>XBMC.RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,banner)</onclick>
             <visible>Skin.HasSetting(NextAiredEnabled)</visible>
 					</control>
-					<control type="button" id="8411">
+					<control type="button" id="8412">
 	          <include>SettingsRadioButton</include>
 						<label> • $LOCALIZE[31150]</label>
             <onclick>XBMC.RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,poster)</onclick>
-            <visible>Skin.HasSetting(NextAiredEnabled)</visible>
-					</control>
-					<control type="button" id="8412">
-            <include>SettingsButton</include>
-						<label> • $LOCALIZE[1045]</label>
-            <onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
             <visible>Skin.HasSetting(NextAiredEnabled)</visible>
 					</control>
 					<control type="radiobutton" id="8413">
@@ -549,14 +577,14 @@
 					</control>
 					<control type="button" id="8414">
             <include>SettingsButton</include>
-						<label> • $LOCALIZE[31145]</label>
-            <onclick>XBMC.RunScript(script.tvtunes)</onclick>
+						<label> • $LOCALIZE[1045]</label>
+            <onclick>Addon.OpenSettings(script.tvtunes)</onclick>
             <visible>Skin.HasSetting(TVTunesEnabled)</visible>
 					</control>
 					<control type="button" id="8415">
             <include>SettingsButton</include>
-						<label> • $LOCALIZE[1045]</label>
-            <onclick>Addon.OpenSettings(script.tvtunes)</onclick>
+						<label> • $LOCALIZE[31145]</label>
+            <onclick>XBMC.RunScript(script.tvtunes)</onclick>
             <visible>Skin.HasSetting(TVTunesEnabled)</visible>
 					</control>
 					<!--

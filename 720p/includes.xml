@@ -865,91 +865,135 @@
 	</include>	
 
 	<include name="WeatherAndClock">
-			<control type="grouplist" id="1">
-				  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar)">
-			      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-			      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
-				  </animation>
-				  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar)">
-			      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-			      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
-				  </animation>
+		<control type="grouplist" id="1">
+		  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar)">
+	      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+	      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
+		  </animation>
+		  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar)">
+	      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+	      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
+		  </animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1210</width>
+			<itemgap>0</itemgap>
+			<align>right</align>
+			<orientation>horizontal</orientation>
+		  <!-- Weather -->
+	    <control type="group"  id="1">
+				<posx>-45</posx>
+				<posy>0</posy>
+				<control type="image" id="1">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>1210</width>
-					<itemgap>0</itemgap>
-					<align>right</align>
-					<itemgap>15</itemgap>
-					<orientation>horizontal</orientation>
-		    <control type="group"  id="1">
-					<posx>-45</posx>
-					<posy>0</posy>
-					<control type="image" id="1">
-						<posx>0</posx>
-						<posy>0</posy>
-						<height>30</height>
-						<width>30</width>
-				    <align>right</align>
-						<aligny>center</aligny>
-					  <texture>$INFO[Window(Weather).Property(Current.FanartCode),weather/,.png]</texture>
-						<visible>Weather.IsFetched</visible>		
-					</control>
-					<control type="label" id="1">
-						<posx>-2</posx>
-						<posy>0</posy>
-				    <width>200</width>
-				    <height>29</height>
-				    <font>FontSize_20</font>
-						<textcolor>white</textcolor>
-					  <shadowcolor>99000000</shadowcolor>
-				    <align>right</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
-						<label>$INFO[Window(Weather).Property(Current.Temperature)]°</label>
-						<visible>Weather.IsFetched</visible>
-					</control>
-			  </control>
+					<height>30</height>
+					<width>30</width>
+			    <align>right</align>
+					<aligny>center</aligny>
+				  <texture>$INFO[Window(Weather).Property(Current.FanartCode),weather/,.png]</texture>
+					<visible>Weather.IsFetched</visible>		
+				</control>
 				<control type="label" id="1">
-			    <width min="10" max="200">auto</width>
+					<posx>-2</posx>
+					<posy>0</posy>
+			    <width>200</width>
 			    <height>29</height>
 			    <font>FontSize_20</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-			    <align>left</align>
+					<textcolor>white</textcolor>
+				  <shadowcolor>99000000</shadowcolor>
+			    <align>right</align>
 			    <aligny>center</aligny>
 					<scroll>false</scroll>
-					<label>$INFO[System.Time(hh:mm)]</label>
-				</control>
-				<control type="group" id="1">
-					<visible>substring(system.time,AM,right) | substring(system.time,PM,right)</visible>
-					<width>20</width>
-					<height>22</height>
-					<control type="label" id="1">
-						<visible>substring(system.time,AM,right)</visible>
-						<posx>2</posx>
-						<posy>0</posy>
-						<width>20</width>
-						<height>22</height>
-			      <font>ClockFont</font>
-						<textcolor>blue</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-					  <label>AM</label>
-						<colordiffuse>grey</colordiffuse>
-					</control>
-					<control type="label" id="1">
-						<visible>substring(system.time,PM,right)</visible>
-						<posx>2</posx>
-						<posy>0</posy>
-						<width>20</width>
-						<height>22</height>
-						<textcolor>blue</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-			      <font>ClockFont</font>
-					  <label>PM</label>
-						<colordiffuse>grey</colordiffuse>
-					</control>
+					<label>$INFO[Window(Weather).Property(Current.Temperature)]°</label>
+					<visible>Weather.IsFetched</visible>
 				</control>
 		  </control>
+		  <!-- Time -->
+			<control type="label" id="1">
+		    <width min="10" max="200">auto</width>
+		    <height>29</height>
+		    <font>FontSize_20</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+		    <align>left</align>
+		    <aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[System.Time(hh:mm)]</label>
+			</control>
+			<control type="group" id="1">
+				<visible>substring(system.time,AM,right) | substring(system.time,PM,right)</visible>
+				<width>20</width>
+				<height>22</height>
+				<control type="label" id="1">
+					<visible>substring(system.time,AM,right)</visible>
+					<posx>2</posx>
+					<posy>0</posy>
+					<width>20</width>
+					<height>22</height>
+		      <font>ClockFont</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>99000000</shadowcolor>
+				  <label>AM</label>
+					<colordiffuse>grey</colordiffuse>
+				</control>
+				<control type="label" id="1">
+					<visible>substring(system.time,PM,right)</visible>
+					<posx>2</posx>
+					<posy>0</posy>
+					<width>20</width>
+					<height>22</height>
+					<textcolor>blue</textcolor>
+					<shadowcolor>99000000</shadowcolor>
+		      <font>ClockFont</font>
+				  <label>PM</label>
+					<colordiffuse>grey</colordiffuse>
+				</control>
+			</control>
+		  <!-- NowPlaying Finish Time -->
+			<control type="label" id="1">
+		    <width min="10" max="200">auto</width>
+		    <height>29</height>
+		    <font>FontSize_20</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+		    <align>left</align>
+		    <aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[Player.FinishTime(hh:mm), / ]</label>
+				<visible>Player.HasVideo</visible>
+			</control>
+			<control type="group" id="1">
+				<visible>Player.HasVideo</visible>
+				<visible>substring(system.time,AM,right) | substring(system.time,PM,right)</visible>
+				<width>20</width>
+				<height>22</height>
+				<control type="label" id="1">
+					<visible>substring(system.time,AM,right)</visible>
+					<posx>2</posx>
+					<posy>0</posy>
+					<width>20</width>
+					<height>22</height>
+		      <font>ClockFont</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>99000000</shadowcolor>
+				  <label>AM</label>
+					<colordiffuse>grey</colordiffuse>
+				</control>
+				<control type="label" id="1">
+					<visible>substring(system.time,PM,right)</visible>
+					<posx>2</posx>
+					<posy>0</posy>
+					<width>20</width>
+					<height>22</height>
+					<textcolor>blue</textcolor>
+					<shadowcolor>99000000</shadowcolor>
+		      <font>ClockFont</font>
+				  <label>PM</label>
+					<colordiffuse>grey</colordiffuse>
+				</control>
+			</control>
+	  </control>
 	</include>	
 
 	<variable name="SettingsCategoryDescription">

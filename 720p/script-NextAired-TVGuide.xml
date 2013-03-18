@@ -853,7 +853,7 @@
 				<control type="label">
 					<description>Fanart Toggle</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[20445]: On</label>
+					<label>$LOCALIZE[20445]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(10)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(10)" reversible="true">Conditional</animation>
 			    <visible>!SubString(Control.GetLabel(10),*)</visible>
@@ -861,7 +861,7 @@
 				<control type="label">
 					<description>Fanart Toggle</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[20445]: Off</label>
+					<label>$LOCALIZE[20445]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(10)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(10)" reversible="true">Conditional</animation>
 			    <visible>SubString(Control.GetLabel(10),*)</visible>
@@ -869,7 +869,7 @@
 				<control type="label">
 					<description>ExtraInfo Toggle</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[31257]: On</label>
+					<label>$LOCALIZE[31257]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(11)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(11)" reversible="true">Conditional</animation>
 			    <visible>!SubString(Control.GetLabel(11),*)</visible>
@@ -877,7 +877,7 @@
 				<control type="label">
 					<description>ExtraInfo Toggle</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[31257]: Off</label>
+					<label>$LOCALIZE[31257]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(11)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(11)" reversible="true">Conditional</animation>
 			    <visible>SubString(Control.GetLabel(11),*)</visible>

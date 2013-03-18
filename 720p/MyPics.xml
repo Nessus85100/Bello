@@ -287,7 +287,7 @@
 				<control type="label">
 					<description>Randomize OFF</description>
 				  <include>TopSmallLabel</include>
-          <label>$LOCALIZE[13319]: OFF</label>
+          <label>$LOCALIZE[13319]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(9)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(9)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(9)" reversible="true">Conditional</animation>
@@ -296,7 +296,7 @@
 				<control type="label">
 					<description>Randomize ON</description>
 				  <include>TopSmallLabel</include>
-          <label>$LOCALIZE[13319]: ON</label>
+          <label>$LOCALIZE[13319]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(9)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(9)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(9)" reversible="true">Conditional</animation>

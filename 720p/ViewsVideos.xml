@@ -1990,7 +1990,7 @@
 						<width>325</width>
 						<height>430</height>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
-	          <texture>views/posters/poster_overlay.png</texture>
+	          <texture background="true">views/posters/poster_overlay.png</texture>
 						<bordersize>34</bordersize>
 					</control>
 					<control type="image">
@@ -1998,7 +1998,7 @@
 						<height>430</height>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
 	          <texture>overlays/unwatched/slide/UnWatched_Poster.png</texture>
-	          <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+	          <visible background="true">stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 						<bordersize>34</bordersize>
 					</control>
 				</itemlayout>
@@ -2018,61 +2018,50 @@
 							<aspectratio align="center">stretch</aspectratio>
 						  <texture background="true" fallback="thumbs/fallback_poster.png">$VAR[PosterThumbs]</texture>
 						  <bordertexture border="20">views/posters/panel.png</bordertexture>
+							<bordersize>35</bordersize>
+					    <visible>!Skin.HasSetting(FlashingCinemaLights)</visible>
+						</control>
+						<control type="image">
+							<width>325</width>
+							<height>430</height>
+							<aspectratio aligny="center" align="center">stretch</aspectratio>
+		          <texture background="true">views/posters/poster_overlay.png</texture>
+							<bordersize>34</bordersize>
+					    <visible>!Skin.HasSetting(FlashingCinemaLights)</visible>
+						</control>
+						<control type="image">
+							<width>325</width>
+							<height>430</height>
+							<aspectratio align="center">stretch</aspectratio>
+						  <texture background="true" fallback="thumbs/fallback_poster.png">$VAR[PosterThumbs]</texture>
+						  <bordertexture border="20">views/posters/panel.png</bordertexture>
 							<bordersize>40</bordersize>
+					    <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
 						</control>
 						<control type="image">
 							<width>325</width>
 							<height>430</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
-		          <texture>views/posters/poster_overlay.png</texture>
+		          <texture background="true">views/posters/poster_overlay.png</texture>
 							<bordersize>39</bordersize>
+					    <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
 						</control>
 						<control type="image">
 							<width>325</width>
 							<height>430</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
-		          <texture>views/posters/poster_lights.png</texture>
+		          <texture background="true">views/posters/poster_lights.png</texture>
 							<bordersize>14</bordersize>
               <animation effect="fade" start="100" end="0" delay="300" time="1150" tween="sine" easing="inout" pulse="true" condition="true">Conditional</animation>
+					    <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
 						</control>
 						<control type="image">
 							<width>325</width>
 							<height>430</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
-	            <texture>overlays/unwatched/slide/UnWatched_Poster.png</texture>
+	            <texture background="true">overlays/unwatched/slide/UnWatched_Poster.png</texture>
 							<bordersize>39</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-						</control>
-					</control>
-					<control type="group.">
-						<posx>52</posx>
-						<posy>385</posy>
-	          <animation type="Focus" reversible="false" condition="Container(55).OnNext | Container(55).OnPrevious">
-	            <effect type="slide" start="100,0" end="0,0" time="200" tween="circle" easing="out" />
-	            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
-	          </animation>
-						<control type="image">
-							<posx>2</posx>
-							<posy>41</posy>
-							<width>30</width>
-							<height>20</height>
-							<align>left</align>
-							<aligny>center</aligny>
-					    <colordiffuse>77white</colordiffuse>
-							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-						</control>
-						<control type="label">
-							<posx>40</posx>
-							<posy>35</posy>
-							<height>30</height>
-							<width>690</width>
-							<textcolor>99white</textcolor>
-				      <shadowcolor>99000000</shadowcolor>
-							<font>FontSize_22</font>
-							<scroll>false</scroll>
-							<align>left</align>
-							<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
-		          <animation effect="slide" start="0,0" end="-38,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution)">Conditional</animation>
 						</control>
 					</control>
 				</focusedlayout>

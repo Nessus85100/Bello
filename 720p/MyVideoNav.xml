@@ -178,11 +178,13 @@
 					<selected>Skin.HasSetting(GalleryShowFanartThumb)</selected>
 				  <visible>stringcompare(Container.ViewMode,Gallery) + Container.Content(Episodes)</visible>
 				</control>
-				<control type="button." id="92">
-					<description>oooooo</description>
-				  <label>-</label>
-					<onclick>-</onclick>
+				<control type="radiobutton" id="92">
+					<description>Disable Posters Flashing Cinema Lights</description>
 				  <include>TopButton</include>
+				  <label>-</label>
+					<onclick>Skin.ToggleSetting(FlashingCinemaLights)</onclick>
+					<selected>Skin.HasSetting(FlashingCinemaLights)</selected>
+				  <visible>stringcompare(Container.ViewMode,Posters) + Container.Content(Movies)</visible>
 				</control>
 			</control>
       <!-- Viewtype Options Labels -->
@@ -243,12 +245,23 @@
           <visible>SubString(Control.GetLabel(91),*)</visible>
 				  <visible>stringcompare(Container.ViewMode,Gallery) + Container.Content(Episodes)</visible>
 				</control>
-				<control type="label.">
-					<description>ooooo</description>
+				<control type="label">
+					<description>Flashing Cinema Lights On</description>
 				  <include>TopSmallLabel</include>
-          <label>$INFO[Control.GetLabel(92)]</label>
+					<label>$LOCALIZE[31124]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(92)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(92)" reversible="true">Conditional</animation>
+			    <visible>SubString(Control.GetLabel(92),*)</visible>
+				  <visible>stringcompare(Container.ViewMode,Posters) + Container.Content(Movies)</visible>
+				</control>
+				<control type="label">
+					<description>Flashing Cinema Lights Off</description>
+				  <include>TopSmallLabel</include>
+					<label>$LOCALIZE[31124]: $LOCALIZE[31012]</label>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(92)" reversible="true">Conditional</animation>
+          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(92)" reversible="true">Conditional</animation>
+			    <visible>!SubString(Control.GetLabel(92),*)</visible>
+				  <visible>stringcompare(Container.ViewMode,Posters) + Container.Content(Movies)</visible>
 				</control>
 			</control>
 			
@@ -369,7 +382,7 @@
 				<control type="label">
 					<description>Flatten No</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[20411]: Off</label>
+					<label>$LOCALIZE[20411]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(17)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(17)" reversible="true">Conditional</animation>
 			    <visible>!SubString(Control.GetLabel(17),*)</visible>
@@ -377,7 +390,7 @@
 				<control type="label">
 					<description>Flatten Yes</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[20411]: On</label>
+					<label>$LOCALIZE[20411]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(17)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(17)" reversible="true">Conditional</animation>
 			    <visible>SubString(Control.GetLabel(17),*)</visible>
@@ -385,7 +398,7 @@
 				<control type="label">
 					<description>Stack No</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[14000]: Off</label>
+					<label>$LOCALIZE[14000]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(7)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(7)" reversible="true">Conditional</animation>
 		      <visible>!SubString(Container.FolderPath,videodb://)</visible>
@@ -394,7 +407,7 @@
 				<control type="label">
 					<description>Stack Yes</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[14000]: On</label>
+					<label>$LOCALIZE[14000]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(7)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(7)" reversible="true">Conditional</animation>
 		      <visible>!SubString(Container.FolderPath,videodb://)</visible>

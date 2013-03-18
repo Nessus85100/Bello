@@ -617,6 +617,27 @@
 				<onleft>Close</onleft>
 				<onright>Close</onright>
 		    <include>TopOptionsSlideAnimations</include>
+				<control type="button" id="990">
+					<description>Library Editor Button</description>
+					<width>460</width>
+					<height>40</height>
+	        <label>31125</label>
+					<textcolor>77white</textcolor>
+					<focusedcolor>white</focusedcolor>
+				  <disabledcolor>33white</disabledcolor>
+			    <shadowcolor>99000000</shadowcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<textwidth>430</textwidth>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
+					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<font>FontSize_22</font>
+	        <onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
+	        <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + System.HasAddon(script.libraryeditor)</visible>
+				</control>
 			</control>
 			<control type="button" id="1000">
 				<description>button template</description>

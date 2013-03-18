@@ -117,7 +117,7 @@
 				<control type="label">
 					<description>Auto-Updates ON</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[24063]: ON</label>
+					<label>$LOCALIZE[24063]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
 			    <visible>SubString(Control.GetLabel(5),*)</visible>
@@ -125,7 +125,7 @@
 				<control type="label">
 					<description>Auto-Updates OFF</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[24063]: OFF</label>
+					<label>$LOCALIZE[24063]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(5)" reversible="true">Conditional</animation>
 			    <visible>!SubString(Control.GetLabel(5),*)</visible>
@@ -133,7 +133,7 @@
 				<control type="label">
 					<description>Notifications ON</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[25000]: ON</label>
+					<label>$LOCALIZE[25000]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
 			    <visible>SubString(Control.GetLabel(6),*)</visible>
@@ -141,7 +141,7 @@
 				<control type="label">
 					<description>Notifications OFF</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[25000]: OFF</label>
+					<label>$LOCALIZE[25000]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(6)" reversible="true">Conditional</animation>
 			    <visible>!SubString(Control.GetLabel(6),*)</visible>

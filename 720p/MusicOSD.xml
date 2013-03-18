@@ -118,6 +118,56 @@
 	    <include>OSDSlideAnimations</include>
 	    <visible>Window.IsActive(MusicOSD)</visible>
 		  <visible>Player.HasAudio + !Window.IsVisible(script-XBMC_Lyrics-main.xml) + !Window.IsActive(ShutdownMenu)</visible>
+			<control type="grouplist" id="1000">
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>0</height>
+				<width>0</width>
+				<itemgap>0</itemgap>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<onup>100</onup>
+				<ondown>100</ondown>
+				<align>left</align>
+        <orientation>horizontal</orientation>
+				<control type="button" id="1001">
+					<description>Settings</description>
+			    <include>TopButton</include>
+			    <onclick>ActivateWindow(1112)</onclick>
+				</control>
+				<control type="radiobutton" id="1002">
+					<description>Info</description>
+				  <include>TopButton</include>
+					<textureradiofocus>-</textureradiofocus>
+					<textureradionofocus>-</textureradionofocus>
+					<onclick>Skin.ToggleSetting(MusicInfoOSD)</onclick>
+				</control>
+				<control type="button" id="1003">
+					<description>Repeat</description>
+			    <include>TopButton</include>
+				  <onclick>XBMC.PlayerControl(Repeat)</onclick>
+				</control>
+				<control type="togglebutton" id="1004">
+					<description>Random</description>
+			    <include>TopButton</include>
+					<textureradiofocus>-</textureradiofocus>
+					<textureradionofocus>-</textureradionofocus>
+          <onclick>XBMC.PlayerControl(Random)</onclick>
+				</control>
+				<control type="togglebutton" id="1005">
+					<description>Lyrics</description>
+			    <include>TopButton</include>
+          <onclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+          <altclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</altclick>
+          <altclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
+          <usealttexture>IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
+				</control>
+				<control type="button" id="1006">
+					<description>Playlist</description>
+			    <include>TopButton</include>
+					<onclick>ActivateWindow(500)</onclick>
+				</control>
+			</control>
 			<control type="grouplist">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -177,14 +227,14 @@
 					<label>$LOCALIZE[590]: $LOCALIZE[591]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!Control.HasFocus(1004)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(1004)" reversible="true">Conditional</animation>
-          <visible>!SubString(Control.GetLabel(1004),*)</visible>
+          <visible>!Playlist.IsRandom</visible>
 				</control>
 				<control type="label">
 				  <include>TopSmallLabel</include>
 					<label>$LOCALIZE[590]: $LOCALIZE[16041]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!Control.HasFocus(1004)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(1004)" reversible="true">Conditional</animation>
-          <visible>SubString(Control.GetLabel(1004),*)</visible>
+          <visible>Playlist.IsRandom</visible>
 				</control>
 				<control type="label">
 				  <include>TopSmallLabel</include>
@@ -197,56 +247,6 @@
 					<label>$LOCALIZE[559]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!Control.HasFocus(1006)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(1006)" reversible="true">Conditional</animation>
-				</control>
-			</control>
-			<control type="grouplist" id="1000">
-				<posx>0</posx>
-				<posy>0</posy>
-				<height>0</height>
-				<width>0</width>
-				<itemgap>0</itemgap>
-				<onleft>1000</onleft>
-				<onright>1000</onright>
-				<onup>100</onup>
-				<ondown>100</ondown>
-				<align>left</align>
-        <orientation>horizontal</orientation>
-				<control type="button" id="1001">
-					<description>Settings</description>
-			    <include>TopButton</include>
-			    <onclick>ActivateWindow(1112)</onclick>
-				</control>
-				<control type="radiobutton" id="1002">
-					<description>Info</description>
-				  <include>TopButton</include>
-					<textureradiofocus>-</textureradiofocus>
-					<textureradionofocus>-</textureradionofocus>
-					<onclick>Skin.ToggleSetting(MusicInfoOSD)</onclick>
-				</control>
-				<control type="button" id="1003">
-					<description>Repeat</description>
-			    <include>TopButton</include>
-				  <onclick>XBMC.PlayerControl(Repeat)</onclick>
-				</control>
-				<control type="radiobutton" id="1004">
-					<description>Random</description>
-			    <include>TopButton</include>
-					<textureradiofocus>-</textureradiofocus>
-					<textureradionofocus>-</textureradionofocus>
-          <onclick>XBMC.PlayerControl(Random)</onclick>
-				</control>
-				<control type="togglebutton" id="1005">
-					<description>Lyrics</description>
-			    <include>TopButton</include>
-          <onclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
-          <altclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</altclick>
-          <altclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
-          <usealttexture>IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
-				</control>
-				<control type="button" id="1006">
-					<description>Playlist</description>
-			    <include>TopButton</include>
-					<onclick>ActivateWindow(500)</onclick>
 				</control>
 			</control>
 	  </control>	 

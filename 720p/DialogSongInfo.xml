@@ -3,7 +3,7 @@
 	<controls>
 
 		<control type="group">
-			<visible>!Window.IsActive(MusicInformation) + !Window.IsActive(FileBrowser)</visible>
+			<visible>!Window.IsActive(MusicInformation) + !Window.IsActive(FileBrowser) + !Window.IsActive(SelectDialog) + !Window.IsActive(DialogSelect.xml)</visible>
 	    <include>DialogAnimation</include>
 			<control type="group">
 				<posx>45</posx>
@@ -310,6 +310,13 @@
 				  <include>TopButton</include>
 					<label>10523</label>
 				</control>
+				<control type="button" id="14">
+					<description>Library Editor</description>
+					<label>31125</label>
+				  <include>TopButton</include>
+	        <onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
+	        <visible>[Container.Content(songs)] + System.HasAddon(script.libraryeditor)</visible>
+				</control>
 				<control type="button" id="13">
 					<description>Get Thumb</description>
 				  <include>TopButton</include>
@@ -358,6 +365,14 @@
 					<label>$INFO[Control.GetLabel(12)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(12)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(12)" reversible="true">Conditional</animation>
+				</control>
+				<control type="label">
+					<description>Library Editor</description>
+				  <include>TopSmallLabel</include>
+					<label>$INFO[Control.GetLabel(14)]</label>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(14)" reversible="true">Conditional</animation>
+          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(14)" reversible="true">Conditional</animation>
+	        <visible>[Container.Content(songs)] + System.HasAddon(script.libraryeditor)</visible>
 				</control>
 				<control type="label">
 					<description>Refresh</description>

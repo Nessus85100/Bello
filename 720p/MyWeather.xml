@@ -156,7 +156,7 @@
 					<control type="label">
 						<description>Fanart Toggle</description>
 					  <include>TopSmallLabel</include>
-						<label>$LOCALIZE[20445]: On</label>
+						<label>$LOCALIZE[20445]: $LOCALIZE[31011]</label>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(251)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(251)" reversible="true">Conditional</animation>
 				    <visible>!SubString(Control.GetLabel(251),*)</visible>
@@ -164,7 +164,7 @@
 					<control type="label">
 						<description>Fanart Toggle</description>
 					  <include>TopSmallLabel</include>
-						<label>$LOCALIZE[20445]: Off</label>
+						<label>$LOCALIZE[20445]: $LOCALIZE[31012]</label>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(251)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(251)" reversible="true">Conditional</animation>
 				    <visible>SubString(Control.GetLabel(251),*)</visible>
@@ -172,7 +172,7 @@
 					<control type="label">
 						<description>Alerts Toggle</description>
 					  <include>TopSmallLabel</include>
-						<label>$LOCALIZE[33050]: On</label>
+						<label>$LOCALIZE[33050]: $LOCALIZE[31011]</label>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(252)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(252)" reversible="true">Conditional</animation>
 				    <visible>SubString(Control.GetLabel(252),*)</visible>
@@ -180,7 +180,7 @@
 					<control type="label">
 						<description>Alerts Toggle</description>
 					  <include>TopSmallLabel</include>
-						<label>$LOCALIZE[33050]: Off</label>
+						<label>$LOCALIZE[33050]: $LOCALIZE[31012]</label>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(252)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(252)" reversible="true">Conditional</animation>
 				    <visible>!SubString(Control.GetLabel(252),*)</visible>
@@ -262,7 +262,7 @@
 					<control type="label">
 						<description>Fanart Toggle</description>
 					  <include>TopSmallLabel</include>
-						<label>$LOCALIZE[20445]: On</label>
+						<label>$LOCALIZE[20445]: $LOCALIZE[31011]</label>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(350)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(350)" reversible="true">Conditional</animation>
 				    <visible>!SubString(Control.GetLabel(350),*)</visible>
@@ -270,7 +270,7 @@
 					<control type="label">
 						<description>Fanart Toggle</description>
 					  <include>TopSmallLabel</include>
-						<label>$LOCALIZE[20445]: Off</label>
+						<label>$LOCALIZE[20445]: $LOCALIZE[31012]</label>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(350)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(350)" reversible="true">Conditional</animation>
 				    <visible>SubString(Control.GetLabel(350),*)</visible>

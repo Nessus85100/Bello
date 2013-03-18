@@ -321,11 +321,11 @@
 			</itemlayout>
 			<focusedlayout condition="Container(20).HasFocus(2) | Container(20).HasFocus(1)" width="200" height="280">
 				<control type="group">
-          <animation type="Focus" condition="Container(81).OnNext | Container(81).OnPrevious">
-            <effect type="fade" start="50" end="100" time="300" tween="sine" easing="inout" />
+          <animation type="Focus" reversible="false" condition="Container(81).OnNext">
+            <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
           </animation>
-          <animation type="Unfocus" condition="Container(81).OnNext | Container(81).OnPrevious">
-            <effect type="fade" start="100" end="50" time="300" tween="sine" easing="inout" />
+          <animation type="Focus" reversible="false" condition="Container(81).OnPrevious">
+            <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
           </animation>
 					<control type="image">
 						<width>200</width>
@@ -504,8 +504,11 @@
 			 <control type="group">
 				<posx>-40</posx>
 				<posy>50</posy>
-        <animation type="Focus" condition="Container(81).OnNext | Container(81).OnPrevious">
-          <effect type="fade" start="50" end="100" time="300" tween="sine" easing="inout" />
+        <animation type="Focus" reversible="false" condition="Container(81).OnNext">
+          <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+        </animation>
+        <animation type="Focus" reversible="false" condition="Container(81).OnPrevious">
+          <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
         </animation>
 				<control type="image">
 					<width>240</width>
@@ -1081,72 +1084,80 @@
 				</control>
 			</itemlayout>
 			<focusedlayout condition="Container(20).HasFocus(2) | Container(20).HasFocus(1)" width="200" height="280">
+				<control type="group">
+          <animation type="Focus" reversible="false" condition="Container(82).OnNext">
+            <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+          </animation>
+          <animation type="Focus" reversible="false" condition="Container(82).OnPrevious">
+            <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+          </animation>
 					<control type="image">
 						<width>200</width>
 						<height>280</height>
 						<aspectratio align="center">stretch</aspectratio>
 						<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Icon]</texture>
 					</control>
-				<control type="group">
-					<visible>![IsEmpty(ListItem.Property(RecommendedMovie1)) | IsEmpty(ListItem.Property(RecommendedMovie2)) | IsEmpty(ListItem.Property(RecommendedMovie3)) | IsEmpty(ListItem.Property(RecommendedMovie4))]</visible>
-					<control type="image">
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RecommendedMovie1)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
+					<control type="group">
+						<visible>![IsEmpty(ListItem.Property(RecommendedMovie1)) | IsEmpty(ListItem.Property(RecommendedMovie2)) | IsEmpty(ListItem.Property(RecommendedMovie3)) | IsEmpty(ListItem.Property(RecommendedMovie4))]</visible>
+						<control type="image">
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RecommendedMovie1)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posy>140</posy>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RecommendedMovie3)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RecommendedMovie2)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>140</posy>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RecommendedMovie4)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
 					</control>
-					<control type="image">
-						<posy>140</posy>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RecommendedMovie3)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posx>100</posx>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RecommendedMovie2)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posx>100</posx>
-						<posy>140</posy>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RecommendedMovie4)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-				</control>
-				<control type="group">
-					<visible>![IsEmpty(ListItem.Property(RecommendedEpisode1)) | IsEmpty(ListItem.Property(RecommendedEpisode2)) | IsEmpty(ListItem.Property(RecommendedEpisode3)) | IsEmpty(ListItem.Property(RecommendedEpisode4))]</visible>
-					<control type="image">
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RecommendedEpisode1)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posy>140</posy>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RecommendedEpisode3)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posx>100</posx>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RecommendedEpisode2)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posx>100</posx>
-						<posy>140</posy>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RecommendedEpisode4)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
+					<control type="group">
+						<visible>![IsEmpty(ListItem.Property(RecommendedEpisode1)) | IsEmpty(ListItem.Property(RecommendedEpisode2)) | IsEmpty(ListItem.Property(RecommendedEpisode3)) | IsEmpty(ListItem.Property(RecommendedEpisode4))]</visible>
+						<control type="image">
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RecommendedEpisode1)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posy>140</posy>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RecommendedEpisode3)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RecommendedEpisode2)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>140</posy>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RecommendedEpisode4)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
 					</control>
 				</control>
 				<control type="group">
@@ -1256,8 +1267,11 @@
 			 <control type="group">
 				<posx>-40</posx>
 				<posy>50</posy>
-        <animation type="Focus" condition="Container(82).OnNext | Container(82).OnPrevious">
-          <effect type="fade" start="50" end="100" time="300" tween="sine" easing="inout" />
+        <animation type="Focus" reversible="false" condition="Container(82).OnNext">
+          <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+        </animation>
+        <animation type="Focus" reversible="false" condition="Container(82).OnPrevious">
+          <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
         </animation>
 				<control type="image">
 					<width>240</width>
@@ -1833,72 +1847,80 @@
 				</control>
 			</itemlayout>
 			<focusedlayout condition="Container(20).HasFocus(2) | Container(20).HasFocus(1)" width="200" height="280">
+				<control type="group">
+          <animation type="Focus" reversible="false" condition="Container(83).OnNext">
+            <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+          </animation>
+          <animation type="Focus" reversible="false" condition="Container(83).OnPrevious">
+            <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+          </animation>
 					<control type="image">
 						<width>200</width>
 						<height>280</height>
 						<aspectratio align="center">stretch</aspectratio>
 						<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Icon]</texture>
 					</control>
-				<control type="group">
-					<visible>![IsEmpty(ListItem.Property(RandomMovie1)) | IsEmpty(ListItem.Property(RandomMovie2)) | IsEmpty(ListItem.Property(RandomMovie3)) | IsEmpty(ListItem.Property(RandomMovie4))]</visible>
-					<control type="image">
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RandomMovie1)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
+					<control type="group">
+						<visible>![IsEmpty(ListItem.Property(RandomMovie1)) | IsEmpty(ListItem.Property(RandomMovie2)) | IsEmpty(ListItem.Property(RandomMovie3)) | IsEmpty(ListItem.Property(RandomMovie4))]</visible>
+						<control type="image">
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RandomMovie1)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posy>140</posy>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RandomMovie3)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RandomMovie2)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>140</posy>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RandomMovie4)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
 					</control>
-					<control type="image">
-						<posy>140</posy>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RandomMovie3)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posx>100</posx>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RandomMovie2)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posx>100</posx>
-						<posy>140</posy>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RandomMovie4)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-				</control>
-				<control type="group">
-					<visible>![IsEmpty(ListItem.Property(RandomEpisode1)) | IsEmpty(ListItem.Property(RandomEpisode2)) | IsEmpty(ListItem.Property(RandomEpisode3)) | IsEmpty(ListItem.Property(RandomEpisode4))]</visible>
-					<control type="image">
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RandomEpisode1)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posy>140</posy>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RandomEpisode3)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posx>100</posx>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RandomEpisode2)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posx>100</posx>
-						<posy>140</posy>
-						<width>100</width>
-						<height>140</height>
-						<texture background="true">$INFO[ListItem.Property(RandomEpisode4)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
+					<control type="group">
+						<visible>![IsEmpty(ListItem.Property(RandomEpisode1)) | IsEmpty(ListItem.Property(RandomEpisode2)) | IsEmpty(ListItem.Property(RandomEpisode3)) | IsEmpty(ListItem.Property(RandomEpisode4))]</visible>
+						<control type="image">
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RandomEpisode1)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posy>140</posy>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RandomEpisode3)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RandomEpisode2)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>140</posy>
+							<width>100</width>
+							<height>140</height>
+							<texture background="true">$INFO[ListItem.Property(RandomEpisode4)]</texture>
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
 					</control>
 				</control>
 				<control type="group">
@@ -2008,6 +2030,12 @@
 			 <control type="group">
 				<posx>-40</posx>
 				<posy>50</posy>
+        <animation type="Focus" reversible="false" condition="Container(83).OnNext">
+          <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+        </animation>
+        <animation type="Focus" reversible="false" condition="Container(83).OnPrevious">
+          <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+        </animation>
 				<control type="image">
 					<width>240</width>
 					<height>240</height>

@@ -303,7 +303,7 @@
 				<control type="label">
 					<description>PartyMode OFF</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[589]: OFF</label>
+					<label>$LOCALIZE[589]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(16)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(16)" reversible="true">Conditional</animation>
 			    <visible>!SubString(Control.GetLabel(16),*)</visible>
@@ -311,7 +311,7 @@
 				<control type="label">
 					<description>PartyMode ON</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[589]: ON</label>
+					<label>$LOCALIZE[589]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(16)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(16)" reversible="true">Conditional</animation>
 			    <visible>SubString(Control.GetLabel(16),*)</visible>

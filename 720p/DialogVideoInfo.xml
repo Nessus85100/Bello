@@ -655,6 +655,7 @@
           <onclick condition="Container.Content(Movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
           <visible>System.HasAddon(script.artwork.downloader)</visible>
 					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+          <visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies) | [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 				</control>
 				<control type="button" id="15">
 					<description>Get TV Tune</description>
@@ -662,6 +663,13 @@
 				  <include>TopButton</include>
           <onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 					<visible>Skin.HasSetting(ActivateTVTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+				</control>
+				<control type="button" id="16">
+					<description>Library Editor</description>
+					<label>31125</label>
+				  <include>TopButton</include>
+	        <onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
+	        <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)] + System.HasAddon(script.libraryeditor)</visible>
 				</control>
 				<control type="button" id="6">
 					<description>Refresh</description>
@@ -739,6 +747,15 @@
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(15)" reversible="true">Conditional</animation>
 					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
 					<visible>Skin.HasSetting(ActivateTVTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+				</control>
+				<control type="label">
+					<description>Library Editor</description>
+				  <include>TopSmallLabel</include>
+					<label>$INFO[Control.GetLabel(16)]</label>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(16)" reversible="true">Conditional</animation>
+          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(16)" reversible="true">Conditional</animation>
+					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+	        <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)] + System.HasAddon(script.libraryeditor)</visible>
 				</control>
 				<control type="label">
 					<description>Refresh</description>

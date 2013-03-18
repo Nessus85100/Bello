@@ -1,6 +1,6 @@
 <window type="dialog" id="2000">
 	<defaultcontrol always="true">3</defaultcontrol>
-	<zorder>1</zorder>
+	<zorder>2</zorder>
 	<controls>
 
 	 <control type="group">
