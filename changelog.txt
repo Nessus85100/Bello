@@ -1,4 +1,4 @@
-[B]v1.0.0 (Beta 3)[/B]
+[B]v1.0.0 (Beta 3)[/B] 
 • License change to "Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License". 
 • Added support for Library Editor script by phil65 (requires manual install of the script atm).
 • Added "Banner List" view available in Movies, TV Shows, Seasons, Episodes, Artists, Albums and Songs.
