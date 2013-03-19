@@ -679,7 +679,7 @@
 						</control>
 	        </control>
 				</focusedlayout>
-				<itemlayout height="45" width="710" condition="![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Addons)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]">
+				<itemlayout height="45" width="710" condition="![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]">
 		      <control type="group">
 						<control type="label">
 							<posx>19</posx>
@@ -722,7 +722,7 @@
 						</control>
 	        </control>
 				</itemlayout>
-				<focusedlayout height="45" width="710" condition="![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Addons)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]">
+				<focusedlayout height="45" width="710" condition="![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]">
 		      <control type="group">
 	          <include>ListFocusAnimation</include>
 						<control type="label">
@@ -2032,6 +2032,16 @@
 						<control type="image">
 							<width>325</width>
 							<height>430</height>
+							<aspectratio aligny="center" align="center">stretch</aspectratio>
+	            <texture background="true">overlays/unwatched/slide/UnWatched_Poster.png</texture>
+							<bordersize>34</bordersize>
+	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					    <visible>!Skin.HasSetting(FlashingCinemaLights)</visible>
+						</control>
+						
+						<control type="image">
+							<width>325</width>
+							<height>430</height>
 							<aspectratio align="center">stretch</aspectratio>
 						  <texture background="true" fallback="thumbs/fallback_poster.png">$VAR[PosterThumbs]</texture>
 						  <bordertexture border="20">views/posters/panel.png</bordertexture>
@@ -2050,18 +2060,19 @@
 							<width>325</width>
 							<height>430</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
-		          <texture background="true">views/posters/poster_lights.png</texture>
-							<bordersize>14</bordersize>
-              <animation effect="fade" start="100" end="0" delay="300" time="1150" tween="sine" easing="inout" pulse="true" condition="true">Conditional</animation>
+	            <texture background="true">overlays/unwatched/slide/UnWatched_Poster.png</texture>
+							<bordersize>39</bordersize>
+	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					    <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
 						</control>
 						<control type="image">
 							<width>325</width>
 							<height>430</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
-	            <texture background="true">overlays/unwatched/slide/UnWatched_Poster.png</texture>
-							<bordersize>39</bordersize>
-	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+		          <texture background="true">views/posters/poster_lights.png</texture>
+							<bordersize>14</bordersize>
+              <animation effect="fade" start="100" end="0" delay="300" time="1150" tween="sine" easing="inout" pulse="true" condition="true">Conditional</animation>
+					    <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
 						</control>
 					</control>
 				</focusedlayout>
