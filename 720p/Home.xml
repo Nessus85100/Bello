@@ -30,7 +30,6 @@
 													| [Container(20).HasFocus(2) + !Skin.HasSetting(HideMoviesSubMenu)]
 													| [Container(20).HasFocus(1) + !Skin.HasSetting(HideTVShowsSubMenu)]
 													| [Container(20).HasFocus(3) + !Skin.HasSetting(HideMusicSubMenu)]">SetFocus(23)</ondown>
-				 
 				 <ondown condition="[Container(20).HasFocus(2) + Skin.HasSetting(HideMoviesSubMenu)]
 													| [Container(20).HasFocus(1) + Skin.HasSetting(HideTVShowsSubMenu)]
 													| [Container(20).HasFocus(3) + Skin.HasSetting(HideMusicSubMenu)]">SetFocus(81)</ondown>
@@ -40,7 +39,6 @@
 				 <orientation>horizontal</orientation>
 				 <focusposition>1</focusposition>
 			   <scrolltime tween="cubic" easing="out">500</scrolltime>
-		
 				 <itemlayout width="430">
 			    <control type="group">
 			     <animation type="Conditional" condition="true">
@@ -374,7 +372,7 @@
 						<width>160</width>
 						<height>160</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-				    <texture fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse.png">$INFO[Player.Art(thumb)]</texture>
+				    <texture fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse.png">$VAR[PlayerThumbs]</texture>
 						<fadetime>800</fadetime>
 				</control>
 				<control type="image">
@@ -392,7 +390,7 @@
 						<width>160</width>
 						<height>160</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-				    <texture fallback="thumbs/fallback_square.png" flipy="true" diffuse="thumbs/music_reflection_diffuse.png">$INFO[Player.Art(thumb)]</texture>
+				    <texture fallback="thumbs/fallback_square.png" flipy="true" diffuse="thumbs/music_reflection_diffuse.png">$VAR[PlayerThumbs]</texture>
 						<fadetime>800</fadetime>
 						<colordiffuse>a0ffffff</colordiffuse>
 				</control>
@@ -540,7 +538,7 @@
 					<posy>0</posy>
 					<width>130</width>
 					<height>185</height>
-					<texture fallback="thumbs/fallback_poster.png" diffuse="thumbs/poster_diffuse.png">$INFO[Player.Art(poster)]</texture>
+					<texture fallback="thumbs/fallback_poster.png" diffuse="thumbs/poster_diffuse.png">$VAR[PlayerThumbs]</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 					<fadetime>800</fadetime>
 			    <visible>VideoPlayer.Content(Movies)</visible>
@@ -550,7 +548,7 @@
 					<posy>0</posy>
 					<width>130</width>
 					<height>185</height>
-					<texture fallback="thumbs/fallback_poster.png" diffuse="thumbs/poster_diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
+					<texture fallback="thumbs/fallback_poster.png" diffuse="thumbs/poster_diffuse.png">$VAR[PlayerThumbs]</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 					<fadetime>800</fadetime>
 			    <visible>VideoPlayer.Content(Episodes)</visible>
@@ -569,7 +567,7 @@
 					<posy>187</posy>
 					<width>130</width>
 					<height>185</height>
-					<texture fallback="thumbs/fallback_poster.png" flipy="true" diffuse="thumbs/poster_reflection_diffuse.png">$INFO[Player.Art(poster)]</texture>
+					<texture fallback="thumbs/fallback_poster.png" flipy="true" diffuse="thumbs/poster_reflection_diffuse.png">$VAR[PlayerThumbs]</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 					<fadetime>800</fadetime>
 					<colordiffuse>A0FFFFFF</colordiffuse>
@@ -581,7 +579,7 @@
 					<posy>186</posy>
 					<width>130</width>
 					<height>185</height>
-					<texture fallback="thumbs/fallback_poster.png" flipy="true" diffuse="thumbs/poster_reflection_diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
+					<texture fallback="thumbs/fallback_poster.png" flipy="true" diffuse="thumbs/poster_reflection_diffuse.png">$VAR[PlayerThumbs]</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 					<fadetime>800</fadetime>
 					<colordiffuse>A0FFFFFF</colordiffuse>
@@ -673,7 +671,7 @@
 					<width>260</width>
 					<height>160</height>
 					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-			    <texture fallback="thumbs/fallback_fanart.png" diffuse="thumbs/video_diffuse.png">$INFO[Player.Art(thumb)]</texture>
+			    <texture fallback="thumbs/fallback_fanart.png" diffuse="thumbs/video_diffuse.png">$VAR[PlayerThumbs]</texture>
 					<fadetime>800</fadetime>
 				</control>
 				<control type="image">
@@ -691,7 +689,7 @@
 					<width>260</width>
 					<height>160</height>
 					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-			    <texture fallback="thumbs/fallback_square.png" flipy="true" diffuse="thumbs/video_reflection_diffuse.png">$INFO[Player.Art(thumb)]</texture>
+			    <texture fallback="thumbs/fallback_square.png" flipy="true" diffuse="thumbs/video_reflection_diffuse.png">$VAR[PlayerThumbs]</texture>
 					<fadetime>800</fadetime>
 					<colordiffuse>A0ffffff</colordiffuse>
 				</control>			 

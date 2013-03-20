@@ -2192,7 +2192,7 @@
 							<posy>21</posy>
 							<width>150</width>
 							<height>212</height>
-							<texture background="true" fallback="thumbs/fallback_poster_tp.png">$INFO[ListItem.Art(poster)]</texture>
+							<texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[PosterThumbs]</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>

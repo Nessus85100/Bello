@@ -33,7 +33,7 @@
 				<posy>0</posy>
 				<width>129</width>
 				<height>181</height>
-				<texture fallback="thumbs/fallback_fanart.png">$INFO[Player.Art(poster)]</texture>
+				<texture fallback="thumbs/fallback_fanart.png">$VAR[PlayerThumbs]</texture>
 				<aspectratio aligny="center" scalediffuse="false">stretch</aspectratio>
 			  <visible>VideoPlayer.Content(Movies)</visible>
 			</control>
@@ -43,7 +43,7 @@
 				<posy>0</posy>
 				<width>129</width>
 				<height>181</height>
-				<texture fallback="thumbs/fallback_fanart.png">$INFO[Player.Art(tvshow.poster)]</texture>
+				<texture fallback="thumbs/fallback_fanart.png">$VAR[PlayerThumbs]</texture>
 				<aspectratio aligny="center" scalediffuse="false">stretch</aspectratio>
 			  <visible>VideoPlayer.Content(Episodes)</visible>
 			</control>
@@ -100,7 +100,7 @@
 				<posy>0</posy>
 				<width>179</width>
 				<height>181</height>
-				<texture fallback="thumbs/fallback_square.png">$INFO[Player.Art(thumb)]</texture>
+				<texture fallback="thumbs/fallback_square.png">$VAR[PlayerThumbs]</texture>
 				<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 			  <visible>!Player.HasAudio</visible>
 			</control>
@@ -110,7 +110,7 @@
 				<posy>0</posy>
 				<width>179</width>
 				<height>181</height>
-				<texture fallback="thumbs/fallback_square.png">$INFO[Player.Art(thumb)]</texture>
+				<texture fallback="thumbs/fallback_square.png">$VAR[PlayerThumbs]</texture>
 				<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 			  <visible>Player.HasAudio</visible>
 			</control>
