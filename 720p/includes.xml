@@ -1066,7 +1066,7 @@
 	
 	<variable name="PlayerThumbs">
 		<value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
-		<value condition="Container.Content(Episodes)">$INFO[Player.Art(tvshow.poster)]</value>
+		<value condition="VideoPlayer.Content(Episodes)">$INFO[Player.Art(tvshow.poster)]</value>
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>	
 	
