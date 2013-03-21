@@ -741,7 +741,7 @@
 				<posy>270</posy>
 				<width>160</width>
 				<height>20</height>
-				<font>FontSize_16</font>
+				<font>FontSize_18</font>
 				<textcolor>osdinfo</textcolor>
 			  <shadowcolor>55000000</shadowcolor>
 				<align>left</align>
@@ -754,7 +754,7 @@
 				<posy>270</posy>
 				<width>160</width>
 				<height>20</height>
-				<font>FontSize_16</font>
+				<font>FontSize_18</font>
 				<textcolor>osdinfo</textcolor>
 			  <shadowcolor>55000000</shadowcolor>
 				<align>right</align>
@@ -765,7 +765,7 @@
 				<description>Progressbar</description>
 				<posx>-2</posx>
 				<posy>290</posy>
-				<width>333</width>
+				<width>327</width>
 				<height>25</height>
 				<info>Player.Progress</info>
         <reveal>true</reveal>
@@ -779,7 +779,7 @@
 				<description>Progressbar</description>
 				<posx>-2</posx>
 				<posy>290</posy>
-				<width>333</width>
+				<width>327</width>
 				<height>25</height>
 				<info>Player.CacheLevel</info>
 				<texturebg border="10">osd/osd_bg_progress_cache_big.png</texturebg>
@@ -793,7 +793,7 @@
 				<description>Progressbar</description>
 				<posx>-2</posx>
 				<posy>290</posy>
-				<width>333</width>
+				<width>327</width>
 				<height>25</height>
 				<info>Player.ProgressCache</info>
         <reveal>true</reveal>

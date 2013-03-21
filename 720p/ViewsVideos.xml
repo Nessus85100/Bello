@@ -2247,8 +2247,8 @@
 						<control type="image">
 							<posx>180</posx>
 							<posy>204</posy>
-							<width>28</width>
-							<height>19</height>
+							<width>29</width>
+							<height>18</height>
 							<align>left</align>
 							<aligny>center</aligny>
 					    <colordiffuse>77white</colordiffuse>
@@ -2256,7 +2256,7 @@
 						</control>
 						<control type="label">
 							<posx>215</posx>
-							<posy>199</posy>
+							<posy>198</posy>
 							<height>30</height>
 							<width>580</width>
 							<textcolor>99white</textcolor>
@@ -2442,9 +2442,9 @@
 						</control>
 						<control type="image">
 							<posx>30</posx>
-							<posy>203</posy>
-							<width>28</width>
-							<height>19</height>
+							<posy>204</posy>
+							<width>29</width>
+							<height>18</height>
 							<align>left</align>
 							<aligny>center</aligny>
 					    <colordiffuse>77white</colordiffuse>
