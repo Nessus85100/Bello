@@ -270,8 +270,6 @@
 				  </control>
 			  </control> 
 
-
-
 		    <!-- Movies Info -->
 				<control type="group" id="1">
 					<posx>205</posx>
@@ -505,7 +503,6 @@
 					</control>
 				</control>
 				
-				
 		    <!-- Progress -->
 			  <control type="group" id="1">
 					<posx>203</posx>
@@ -550,7 +547,7 @@
 						<midtexture>osd/osd_center_progress_cache.png</midtexture>
 						<righttexture>osd/osd_right_progress_cache.png</righttexture>
             <overlaytexture>-</overlaytexture>
-            <colordiffuse>11FFFFFF</colordiffuse>
+            <colordiffuse>22FFFFFF</colordiffuse>
 					</control>
 					<control type="progress" id="1">
 						<description>Progressbar</description>
@@ -568,6 +565,31 @@
             <colordiffuse>44FFFFFF</colordiffuse>
 					</control>
 				</control>				
+				<control type="grouplist" id="1">
+					<description>Media Flaggs</description>
+					<posx>617</posx>
+					<posy>110</posy>
+					<width>600</width>
+					<align>right</align>
+					<itemgap>10</itemgap>
+					<orientation>horizontal</orientation>
+					<include>VisibleFadeEffect2</include>
+					<control type="image" id="1">
+						<description>Video Resolution Image</description>
+						<include>FlagsOSDLayout</include>
+						<texture>$INFO[VideoPlayer.VideoResolution,flags/res/,.png]</texture>
+					</control>
+					<control type="image" id="1">
+						<description>Aspectratio Image</description>
+						<include>FlagsOSDLayout</include>
+						<texture>$INFO[VideoPlayer.VideoAspect,flags/aspect/,.png]</texture>
+					</control>
+					<control type="image" id="1">
+						<description>Audio Codec Image</description>
+						<include>FlagsOSDLayout</include>
+						<texture>$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
+					</control>
+				</control>
 			</control>
 		</control>
 
@@ -878,11 +900,11 @@
 	        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
 	        <effect type="slide" start="0,0" end="0,-35" time="350" tween="sine" easing="out" />
 	    </animation>
-		  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar) + !Window.IsActive(SliderDialog)">
+		  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar) + !Window.IsActive(SliderDialog) + !Player.ShowCodec">
 		      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
 		      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
 		  </animation>
-		  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar) | Window.IsActive(SliderDialog)">
+		  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar) | Window.IsActive(SliderDialog) | Player.ShowCodec">
 		      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
 		      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
 		  </animation>
