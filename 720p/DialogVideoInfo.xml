@@ -471,6 +471,41 @@
 			 </control>
 			</control>
 
+			<control type="grouplist.">
+				<description>Media Flaggs</description>
+				<posx>375</posx>
+				<posy>360</posy>
+				<width>600</width>
+				<align>left</align>
+				<itemgap>15</itemgap>
+				<orientation>horizontal</orientation>
+				<include>VisibleFadeEffect2</include>
+				<visible>!Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				<control type="image">
+							<include>VideoCodecFlagsConditions</include>
+					<texture>flags/res/480.png</texture>
+				</control>
+				<control type="image">
+							<include>VideoCodecFlagsConditions</include>
+					<texture>flags/res/540.png</texture>
+				</control>
+				<control type="image">
+							<include>VideoCodecFlagsConditions</include>
+					<texture>flags/res/576.png</texture>
+				</control>				
+				<control type="image">
+							<include>VideoCodecFlagsConditions</include>
+					<texture>flags/res/720.png</texture>
+				</control>		
+				<control type="image">
+							<include>VideoCodecFlagsConditions</include>
+					<texture>flags/res/1080.png</texture>
+				</control>		
+				<control type="image">
+							<include>VideoCodecFlagsConditions</include>
+					<texture>flags/res/ac3.png</texture>
+				</control>		
+			</control>
 
 
 

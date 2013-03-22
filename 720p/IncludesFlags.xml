@@ -20,13 +20,12 @@
 	</variable>
 
 	<include name="VideoCodecFlagsConditions">
-		<control type="image">
 			<description>Video rez Image</description>
 			<width>55</width>
-			<height>35</height>
+			<height>24</height>
+			<colordiffuse>99ffffff</colordiffuse>
 			<aspectratio align="right">keep</aspectratio>
-			<texture>$INFO[ListItem.VideoResolution,flags/video/,.png]</texture>
-		</control>
+			<!-- <texture>$INFO[ListItem.VideoResolution,flags/res/,.png]</texture> -->
 		<control type="image">
 			<description>Codec Image</description>
 			<width>80</width>
