@@ -121,7 +121,7 @@
 					 </item>
 					 <item id="5">
 							<label>$LOCALIZE[1]</label>
-							<onclick>ActivateWindow(2)</onclick>
+							<onclick>ActivateWindow(Pictures)</onclick>
 							<thumb>special://skin/backgrounds/pictures.jpg</thumb>
 							<thumb>-</thumb>
 							<icon>-</icon>
@@ -141,7 +141,7 @@
 					 </item>
 					 <item id="7">
 							<label>$LOCALIZE[24001]</label>
-							<onclick>ActivateWindow(40)</onclick>
+							<onclick>ActivateWindow(AddonBrowser)</onclick>
 							<thumb>special://skin/backgrounds/addons.jpg</thumb>
 							<icon>-</icon>
 							<visible>!Skin.HasSetting(HideHomeMenuAddonsButton)</visible>
@@ -150,7 +150,7 @@
 					 </item>
 					 <item id="8">
 							<label>$LOCALIZE[8]</label>
-							<onclick>ActivateWindow(weather)</onclick>
+							<onclick>ActivateWindow(Weather)</onclick>
 							<thumb>-</thumb>
 							<icon>-</icon>
 							<visible>!Skin.HasSetting(HideHomeMenuWeatherButton)</visible>
@@ -169,7 +169,7 @@
 					 </item>
 					 <item id="10">
 							<label>$LOCALIZE[3]</label>
-							<onclick>ActivateWindow(videos,files,return)</onclick>
+							<onclick>ActivateWindow(Videos,files,return)</onclick>
 							<thumb>special://skin/backgrounds/videos.jpg</thumb>
 							<icon>-</icon>
 							<visible>Skin.HasSetting(ShowHomeMenuVideosButton)</visible>
@@ -190,7 +190,7 @@
 							<onclick>PlayDVD</onclick>
 							<thumb>special://skin/backgrounds/videos.jpg</thumb>
 							<icon>-</icon>
-							<visible>!Skin.HasSetting(ShowHomeMenuDVDButton) + System.HasMediaDVD</visible>
+							<visible>Skin.HasSetting(ShowHomeMenuDVDButton) + System.HasMediaDVD</visible>
 							<property name="Custom-Background">$INFO[Skin.String(Media-Custom-Background)]</property>
 		          <property name="Custom-Folder">$INFO[Skin.String(Media-Custom-Folder)]</property>
 					 </item>
