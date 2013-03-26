@@ -661,7 +661,7 @@
 						<width>300</width>
 						<height>300</height>
 						<aspectratio align="center">stretch</aspectratio>
-						<texture background="true" fallback="thumbs/fallback_square.png">$INFO[ListItem.Thumb]</texture>
+						<texture background="true" diffuse="overlays/skin_widgets/poster_diffuse_nf.png" fallback="thumbs/fallback_square.png">$INFO[ListItem.Thumb]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout width="300" height="300">
@@ -678,7 +678,7 @@
 					</control>
 					<control type="group">
 						<posx>300</posx>
-						<control type="image">
+						<control type="image.">
 							<width>1250</width>
 							<height>300</height>
 							<aspectratio align="center">stretch</aspectratio>
