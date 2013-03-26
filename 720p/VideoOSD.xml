@@ -1,5 +1,6 @@
 <window id="2901">
 	<defaultcontrol always="true">100</defaultcontrol>
+    <onunload>ClearProperty(ShowPlot,VideoOSD)</onunload>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -34,8 +35,10 @@
 				<itemgap>-10</itemgap>
 				<onleft>100</onleft>
 				<onright>100</onright>
+        <onup>ClearProperty(ShowPlot,VideoOSD)</onup>
 				<onup>1000</onup>
-				<ondown>1000</ondown>
+        <ondown>SetProperty(ShowPlot,1,VideoOSD)</ondown>
+				<ondown>200</ondown>
 				<align>right</align>
 		    <orientation>horizontal</orientation>
 				<control type="button" id="108">
@@ -305,6 +308,45 @@
 				</control>
 			</control>
 	  </control>
+
+		<control type="group">
+			<posx>245</posx>
+	    <posy>445</posy>
+	    <include>VisibleFadeEffect</include>
+	    <visible>Window.IsActive(VideoOSD)</visible>
+	    <visible>!IsEmpty(VideoPlayer.Plot) + Control.HasFocus(200)</visible>
+			<control type="label" id="1">
+				<description>Title label</description>
+				<height>30</height>
+				<width>820</width>
+			  <label>$INFO[VideoPlayer.Title,, ]$INFO[VideoPlayer.Year, (,) ]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>FontSize_36</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>55000000</shadowcolor>
+			</control>
+	    <control type="textbox">
+	      <posy>30</posy>
+	      <width>540</width>
+	      <height>110</height>
+				<font>FontSize_20</font>
+				<textcolor>99white</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+				<align>justify</align>
+				<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<label fallback="195">$INFO[VideoPlayer.Plot]</label>
+	    </control>
+	  </control>
+    <control type="button" id="200">
+			<include>TopButton</include>
+			<onleft>noop</onleft>
+      <onright>noop</onright>
+      <onup>ClearProperty(ShowPlot,VideoOSD)</onup>
+      <onup>100</onup>
+      <ondown>noop</ondown>
+      <visible>!IsEmpty(VideoPlayer.Plot)</visible>
+    </control>
 
 	</controls>
  </window>

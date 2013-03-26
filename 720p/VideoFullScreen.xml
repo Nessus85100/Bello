@@ -274,6 +274,8 @@
 				<control type="group" id="1">
 					<posx>205</posx>
 					<posy>105</posy>
+	        <include>VisibleFadeEffect</include>
+	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
 			    <visible>VideoPlayer.Content(Movies)</visible>
 					<control type="label" id="1">
 						<description>Title label</description>
@@ -334,6 +336,8 @@
 				<control type="group" id="1">
 					<posx>205</posx>
 					<posy>105</posy>
+	        <include>VisibleFadeEffect</include>
+	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
 			    <visible>VideoPlayer.Content(Episodes)</visible>
 					<control type="label" id="1">
 						<description>Title label</description>
@@ -502,11 +506,12 @@
             <pauseatend>5000</pauseatend>
 					</control>
 				</control>
-				
+
 		    <!-- Progress -->
 			  <control type="group" id="1">
 					<posx>203</posx>
 					<posy>240</posy>
+	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
 				  <animation effect="slide" start="0,0" end="130,0"condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]">Conditional</animation>
 					<control type="label" id="1">
 						<posx>543</posx>
@@ -564,7 +569,9 @@
             <overlaytexture>-</overlaytexture>
             <colordiffuse>44FFFFFF</colordiffuse>
 					</control>
-				</control>				
+				</control>	
+
+		    <!-- Media Flags -->
 				<control type="grouplist" id="1">
 					<description>Media Flaggs</description>
 					<posx>617</posx>
