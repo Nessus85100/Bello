@@ -1301,6 +1301,7 @@
 		<onload>Dialog.Close(PVROSDChannels)</onload>
 		<onload>Dialog.Close(PVROSDGuide)</onload>
 		<onload>Dialog.Close(1112)</onload>
+		<onload>Dialog.Close(DialogSelect.xml)</onload>
 	</include>
 
 </includes>

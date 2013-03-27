@@ -11,7 +11,7 @@
 		<!-- Main Home List Buttons -->
 		<!-- ====================== -->
 		<control type="group">
-	    <visible allowhiddenfocus="true">!Window.IsActive(ShutdownMenu) + !Window.IsActive(BusyDialog) + !Window.IsActive(ProgressDialog) + !Window.IsActive(PlayerControls) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(VirtualKeyboard) + ![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83)]</visible>
+	    <visible allowhiddenfocus="true">!Window.IsActive(ShutdownMenu) + !Window.IsActive(BusyDialog) + !Window.IsActive(ProgressDialog) + !Window.IsActive(PlayerControls) + !Window.IsActive(script-globalsearch-main.xml) + ![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83)]</visible>
 	    <include>HomeSlideAnimations</include>
 		  <control type="group">
 	      <include>HomeSlideAnimations</include>
@@ -35,6 +35,9 @@
 													| [Container(20).HasFocus(3) + Skin.HasSetting(HideMusicSubMenu)]">SetFocus(81)</ondown>
 				 <onleft>20</onleft>
 				 <onright>20</onright>
+				 <onback condition="Container(20).HasFocus(15)">Skin.SetString(CustomFavourite1.Label)</onback>
+				 <onback condition="Container(20).HasFocus(16)">Skin.SetString(CustomFavourite2.Label)</onback>
+				 <onback condition="Container(20).HasFocus(17)">Skin.SetString(CustomFavourite3.Label)</onback>
 				 <itemgap>0</itemgap>
 				 <orientation>horizontal</orientation>
 				 <focusposition>1</focusposition>
@@ -213,33 +216,21 @@
 		          <property name="Custom-Folder">$INFO[Skin.String(Media-Custom-Folder)]</property>
 					 </item>
 		
-		
 		       <!-- Custom Panels -->
 					 <item id="15">
-							<label>[COLOR=44EEEEEA]$INFO[Skin.String(homecustompanel1.Label)][/COLOR]</label>
-							<onclick>$INFO[Skin.String(homecustompanel1.Path)]</onclick>
-							<thumb>-</thumb>
-							<icon>$INFO[Skin.String(homecustompanel1.Icon)]</icon>
-							<label2>$INFO[Skin.String(homecustompanel1.Icon-folder)]</label2>
-							<visible>Skin.HasSetting(homecustompanel1)</visible>
+							<label>$INFO[Skin.String(CustomFavourite1.Label)]</label>
+							<onclick>$INFO[Skin.String(CustomFavourite1.Path)]</onclick>
+							<visible>!IsEmpty(Skin.String(CustomFavourite1.Path))</visible>
 					 </item>
-									
 					 <item id="16">
-							<label>[COLOR=44EEEEEA]$INFO[Skin.String(homecustompanel2.Label)][/COLOR]</label>
-							<onclick>$INFO[Skin.String(homecustompanel2.Path)]</onclick>
-							<thumb>-</thumb>
-							<icon>$INFO[Skin.String(homecustompanel2.Icon)]</icon>
-							<label2>$INFO[Skin.String(homecustompanel2.Icon-folder)]</label2>
-							<visible>Skin.HasSetting(homecustompanel2)</visible>
+							<label>$INFO[Skin.String(CustomFavourite2.Label)]</label>
+							<onclick>$INFO[Skin.String(CustomFavourite2.Path)]</onclick>
+							<visible>!IsEmpty(Skin.String(CustomFavourite2.Path))</visible>
 					 </item>
-									
 					 <item id="17">
-							<label>[COLOR=44EEEEEA]$INFO[Skin.String(homecustompanel3.Label)][/COLOR]</label>
-							<onclick>$INFO[Skin.String(homecustompanel3.Path)]</onclick>
-							<thumb>-</thumb>
-							<icon>$INFO[Skin.String(homecustompanel3.Icon)]</icon>
-							<label2>$INFO[Skin.String(homecustompanel3.Icon-folder)]</label2>
-							<visible>Skin.HasSetting(homecustompanel3)</visible>
+							<label>$INFO[Skin.String(CustomFavourite3.Label)]</label>
+							<onclick>$INFO[Skin.String(CustomFavourite3.Path)]</onclick>
+							<visible>!IsEmpty(Skin.String(CustomFavourite3.Path))</visible>
 					 </item>
 									
 					 <item id="18">

@@ -1,5 +1,6 @@
 <window type="dialog" id="114">
 	<defaultcontrol always="true">100</defaultcontrol>
+  <zorder>3</zorder>
 	<include>DialogsClose</include>
 	<coordinates>
 		<system>1</system>
