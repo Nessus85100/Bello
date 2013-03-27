@@ -481,7 +481,16 @@
     </animation>
   </include>
 
-
+  <include name="OSDPlotAnimation">
+    <animation type="Visible" reversible="false">
+        <effect type="slide" start="150,0" end="0,0" time="500" tween="sine" easing="out"/>
+        <effect type="fade" time="150" delay="200" tween="sine" easing="out" />
+    </animation>
+    <animation type="Hidden" reversible="false">
+        <effect type="slide" start="0,0" end="150,0" time="500" tween="sine" easing="inout"/>
+        <effect type="fade" time="150" tween="sine" easing="inout" />
+    </animation>
+  </include>
 
 	<include name="ListFocusAnimation">
 	  <animation type="Focus" reversible="false" condition="Container(50).OnPrevious">
