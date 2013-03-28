@@ -2131,7 +2131,7 @@
 				<pagecontrol>60</pagecontrol>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 				<preloaditems>2</preloaditems>
-				<visible>![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
+        <visible>![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible> -->
 				<itemlayout height="265" width="244" condition="![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]">
 					<control type="image">
 						<width>260</width>
@@ -2237,10 +2237,52 @@
 						<posy>24</posy>
 						<width>206</width>
 						<height>121</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+					  <texture background="true">empty_icon.png</texture>
+						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>121</height>
 						<aspectratio align="center" aligny="top">stretch</aspectratio>
-					  <texture background="true">$VAR[ThumbnailsThumbs]</texture>
+					  <texture background="true">$VAR[ThumbnailsMoviesThumbs]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
+					  <visible>Container.Content(Movies) | Container.Content(Sets)</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>121</height>
+						<aspectratio align="center" aligny="top">stretch</aspectratio>
+					  <texture background="true">$VAR[ThumbnailsTVShowsThumbs]</texture>
+						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
+					  <bordersize>6</bordersize>
+					  <visible>![Skin.HasSetting(ShowClearlogoThumb) | Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>121</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+					  <texture background="true">$VAR[ThumbnailsTVShowsClearlogoThumbs]</texture>
+					  <bordersize>20</bordersize>
+					  <visible>Skin.HasSetting(ShowClearlogoThumb) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>121</height>
+						<aspectratio align="center" aligny="top">stretch</aspectratio>
+					  <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
+					  <bordersize>6</bordersize>
+					  <visible>Container.Content(Episodes)</visible>
 					</control>
 					<control type="image">
 						<posx>25</posx>
@@ -2278,10 +2320,52 @@
 						<posy>24</posy>
 						<width>206</width>
 						<height>121</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+					  <texture background="true">empty_icon.png</texture>
+						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>121</height>
 						<aspectratio align="center" aligny="top">stretch</aspectratio>
-					  <texture background="true">$VAR[ThumbnailsThumbs]</texture>
+					  <texture background="true">$VAR[ThumbnailsMoviesThumbs]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
+					  <visible>Container.Content(Movies) | Container.Content(Sets)</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>121</height>
+						<aspectratio align="center" aligny="top">stretch</aspectratio>
+					  <texture background="true">$VAR[ThumbnailsTVShowsThumbs]</texture>
+						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
+					  <bordersize>6</bordersize>
+					  <visible>![Skin.HasSetting(ShowClearlogoThumb) | Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>121</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+					  <texture background="true">$VAR[ThumbnailsTVShowsClearlogoThumbs]</texture>
+					  <bordersize>20</bordersize>
+					  <visible>Skin.HasSetting(ShowClearlogoThumb) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>121</height>
+						<aspectratio align="center" aligny="top">stretch</aspectratio>
+					  <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
+					  <bordersize>6</bordersize>
+					  <visible>Container.Content(Episodes)</visible>
 					</control>
 					<control type="image">
 						<posx>25</posx>
