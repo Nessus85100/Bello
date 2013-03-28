@@ -1063,6 +1063,13 @@
 		<value condition="IsEmpty(ListItem.Art(poster)) | IsEmpty(ListItem.Art(season.poster)) | IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(thumb)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
+
+	<variable name="ThumbnailsThumbs">
+		<value condition="!IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
+		<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="IsEmpty(ListItem.Art(clearart)) | IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(fanart)]</value>
+	</variable>
 	
 	<variable name="PlayerThumbs">
 		<value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
@@ -1075,7 +1082,7 @@
 		<value condition="![IsEmpty(ListItem.Art(fanart)) + [substring(Container.FolderPath,plugin,left) + Container.HasFiles]]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="[substring(Container.FolderPath,plugin,left) + Container.HasFiles]">thumbs/fallback_xbmc.png</value>
 		<value>$INFO[ListItem.Property(Fanart_Image)]</value>
-	</variable>	
+	</variable>
 
 <!--
 	<variable name="VideoInfoThumbs">
