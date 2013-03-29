@@ -412,7 +412,7 @@
 						<height>24</height>
 						<info>Player.Progress</info>
             <reveal>true</reveal>
-						<texturebg border="90">osd/osd_bg_progress_big.png</texturebg>
+						<texturebg border="12">osd/osd_bg_progress_big.png</texturebg>
 						<lefttexture>osd/osd_left_progress.png</lefttexture>
 						<midtexture>osd/osd_center_progress.png</midtexture>
 						<righttexture>osd/osd_right_progress.png</righttexture>

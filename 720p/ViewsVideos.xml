@@ -2131,7 +2131,6 @@
 				<pagecontrol>60</pagecontrol>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 				<preloaditems>2</preloaditems>
-        <visible>![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible> -->
 				<itemlayout height="265" width="244" condition="![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]">
 					<control type="image">
 						<width>260</width>
@@ -2225,7 +2224,7 @@
 					</control>
 				</focusedlayout>
 
-				<itemlayout height="180" width="244">
+				<itemlayout height="180" width="244" condition="Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)">
 					<control type="image">
 						<width>260</width>
 						<height>200</height>
@@ -2247,7 +2246,7 @@
 						<width>206</width>
 						<height>121</height>
 						<aspectratio align="center" aligny="top">stretch</aspectratio>
-					  <texture background="true">$VAR[ThumbnailsMoviesThumbs]</texture>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[ThumbnailsMoviesThumbs]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					  <visible>Container.Content(Movies) | Container.Content(Sets)</visible>
@@ -2258,7 +2257,7 @@
 						<width>206</width>
 						<height>121</height>
 						<aspectratio align="center" aligny="top">stretch</aspectratio>
-					  <texture background="true">$VAR[ThumbnailsTVShowsThumbs]</texture>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[ThumbnailsTVShowsThumbs]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					  <visible>![Skin.HasSetting(ShowClearlogoThumb) | Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
@@ -2269,7 +2268,7 @@
 						<width>206</width>
 						<height>121</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-					  <texture background="true">$VAR[ThumbnailsTVShowsClearlogoThumbs]</texture>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[ThumbnailsTVShowsClearlogoThumbs]</texture>
 					  <bordersize>20</bordersize>
 					  <visible>Skin.HasSetting(ShowClearlogoThumb) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
 					</control>
@@ -2279,7 +2278,7 @@
 						<width>206</width>
 						<height>121</height>
 						<aspectratio align="center" aligny="top">stretch</aspectratio>
-					  <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$INFO[ListItem.Art(thumb)]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					  <visible>Container.Content(Episodes)</visible>
@@ -2308,7 +2307,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="180" width="244">
+				<focusedlayout height="180" width="244" condition="Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)">
 					<control type="image">
 						<width>260</width>
 						<height>200</height>
@@ -2330,7 +2329,7 @@
 						<width>206</width>
 						<height>121</height>
 						<aspectratio align="center" aligny="top">stretch</aspectratio>
-					  <texture background="true">$VAR[ThumbnailsMoviesThumbs]</texture>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[ThumbnailsMoviesThumbs]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					  <visible>Container.Content(Movies) | Container.Content(Sets)</visible>
@@ -2341,7 +2340,7 @@
 						<width>206</width>
 						<height>121</height>
 						<aspectratio align="center" aligny="top">stretch</aspectratio>
-					  <texture background="true">$VAR[ThumbnailsTVShowsThumbs]</texture>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[ThumbnailsTVShowsThumbs]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					  <visible>![Skin.HasSetting(ShowClearlogoThumb) | Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
@@ -2352,7 +2351,7 @@
 						<width>206</width>
 						<height>121</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-					  <texture background="true">$VAR[ThumbnailsTVShowsClearlogoThumbs]</texture>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[ThumbnailsTVShowsClearlogoThumbs]</texture>
 					  <bordersize>20</bordersize>
 					  <visible>Skin.HasSetting(ShowClearlogoThumb) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
 					</control>
@@ -2362,7 +2361,7 @@
 						<width>206</width>
 						<height>121</height>
 						<aspectratio align="center" aligny="top">stretch</aspectratio>
-					  <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$INFO[ListItem.Art(thumb)]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					  <visible>Container.Content(Episodes)</visible>
@@ -2409,7 +2408,7 @@
 			</control>
 			<control type="scrollbar" id="60">
 				<posx>45</posx>
-				<posy>630</posy>
+				<posy>635</posy>
 				<width>1195</width>
 				<height>11</height>
 				<texturesliderbackground>-</texturesliderbackground>
@@ -2712,7 +2711,7 @@
 							<posy>22</posy>
 							<width>280</width>
 							<height>165</height>
-							<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$INFO[ListItem.Art(thumb)]</texture>
+							<texture background="true" fallback="thumbs/fallback_episode_tp.png">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio align="center" aligny="top">scale</aspectratio>
 							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>

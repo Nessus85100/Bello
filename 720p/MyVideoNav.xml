@@ -186,7 +186,7 @@
 					<selected>Skin.HasSetting(FlashingCinemaLights)</selected>
 				  <visible>stringcompare(Container.ViewMode,Posters) + Container.Content(Movies)</visible>
 				</control>
-				<control type="radiobutton." id="293">
+				<control type="radiobutton" id="293">
 					<description>Toggle Landscape Thumb</description>
 				  <include>TopButton</include>
 				  <label>-</label>
@@ -195,9 +195,9 @@
 					<onclick>Skin.Reset(ShowClearartThumb)</onclick>
 					<onclick>Skin.Reset(ShowClearlogoThumb)</onclick>
 					<selected>Skin.HasSetting(ShowLandscapeThumb)</selected>
-				  <visible>stringcompare(Container.ViewMode,Thumbnails) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+				  <visible>stringcompare(Container.ViewMode,Thumbnails) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				</control>
-				<control type="radiobutton." id="294">
+				<control type="radiobutton" id="294">
 					<description>Toggle Clearart Thumb</description>
 				  <include>TopButton</include>
 				  <label>-</label>
@@ -206,9 +206,9 @@
 					<onclick>Skin.Reset(ShowLandscapeThumb)</onclick>
 					<onclick>Skin.Reset(ShowClearlogoThumb)</onclick>
 					<selected>Skin.HasSetting(ShowClearartThumb)</selected>
-				  <visible>stringcompare(Container.ViewMode,Thumbnails) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+				  <visible>stringcompare(Container.ViewMode,Thumbnails) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				</control>
-				<control type="radiobutton." id="295">
+				<control type="radiobutton" id="295">
 					<description>Toggle Clearlogo Thumb</description>
 				  <include>TopButton</include>
 				  <label>-</label>
@@ -217,7 +217,7 @@
 					<onclick>Skin.Reset(ShowClearartThumb)</onclick>
 					<onclick>Skin.Reset(ShowLandscapeThumb)</onclick>
 					<selected>Skin.HasSetting(ShowClearlogoThumb)</selected>
-				  <visible>stringcompare(Container.ViewMode,Thumbnails) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+				  <visible>stringcompare(Container.ViewMode,Thumbnails) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				</control>
 			</control>
       <!-- Viewtype Options Labels -->
@@ -297,61 +297,61 @@
 				  <visible>stringcompare(Container.ViewMode,Posters) + Container.Content(Movies)</visible>
 				</control>
 
-				<control type="label.">
+				<control type="label">
 					<description>Landscape Thumb On</description>
 				  <include>TopSmallLabel</include>
           <label>Landscape: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(293)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(293)" reversible="true">Conditional</animation>
           <visible>SubString(Control.GetLabel(293),*)</visible>
-				  <visible>stringcompare(Container.ViewMode,Thumbnails) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+				  <visible>stringcompare(Container.ViewMode,Thumbnails) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				</control>
-				<control type="label.">
+				<control type="label">
 					<description>Landscape Thumb Off</description>
 				  <include>TopSmallLabel</include>
           <label>Landscape: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(293)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(293)" reversible="true">Conditional</animation>
           <visible>!SubString(Control.GetLabel(293),*)</visible>
-				  <visible>stringcompare(Container.ViewMode,Thumbnails) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+				  <visible>stringcompare(Container.ViewMode,Thumbnails) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				</control>
 
-				<control type="label.">
+				<control type="label">
 					<description>Clearart Thumb On</description>
 				  <include>TopSmallLabel</include>
           <label>Clearart: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(294)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(294)" reversible="true">Conditional</animation>
           <visible>SubString(Control.GetLabel(294),*)</visible>
-				  <visible>stringcompare(Container.ViewMode,Thumbnails) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+				  <visible>stringcompare(Container.ViewMode,Thumbnails) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				</control>
-				<control type="label.">
+				<control type="label">
 					<description>Clearart Thumb Off</description>
 				  <include>TopSmallLabel</include>
           <label>Clearart: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(294)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(294)" reversible="true">Conditional</animation>
           <visible>!SubString(Control.GetLabel(294),*)</visible>
-				  <visible>stringcompare(Container.ViewMode,Thumbnails) + ![Container.Content(Movies) | Container.Content(Sets)]</visible>
+				  <visible>stringcompare(Container.ViewMode,Thumbnails) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				</control>
 
-				<control type="label.">
+				<control type="label">
 					<description>Clearlogo Thumb On</description>
 				  <include>TopSmallLabel</include>
           <label>ClearLogo: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(295)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(295)" reversible="true">Conditional</animation>
           <visible>SubString(Control.GetLabel(295),*)</visible>
-				  <visible>stringcompare(Container.ViewMode,Thumbnails) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+				  <visible>stringcompare(Container.ViewMode,Thumbnails) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				</control>				
-				<control type="label.">
+				<control type="label">
 					<description>Clearlogo Thumb Off</description>
 				  <include>TopSmallLabel</include>
           <label>ClearLogo: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(295)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(295)" reversible="true">Conditional</animation>
           <visible>!SubString(Control.GetLabel(295),*)</visible>
-				  <visible>stringcompare(Container.ViewMode,Thumbnails) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
+				  <visible>stringcompare(Container.ViewMode,Thumbnails) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
 				</control>
 			</control>
 			
