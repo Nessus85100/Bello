@@ -266,7 +266,7 @@
       <ondown>82</ondown>
 			<onback>ClearProperty(Movement)</onback>
 			<onback>20</onback>
-      <viewtype label="List">List</viewtype>
+      <viewtype label="535">List</viewtype>
       <scrolltime tween="Cubic" easing="out">500</scrolltime>
       <orientation>horizontal</orientation>
       <preloaditems>2</preloaditems>
@@ -1031,7 +1031,7 @@
       <ondown>83</ondown>
 			<onback>ClearProperty(Movement)</onback>
 			<onback>20</onback>
-      <viewtype label="List">List</viewtype>
+      <viewtype label="535">List</viewtype>
       <scrolltime tween="Cubic" easing="out">500</scrolltime>
       <orientation>horizontal</orientation>
       <preloaditems>2</preloaditems>
@@ -1795,7 +1795,7 @@
       <ondown>81</ondown>
 			<onback>ClearProperty(Movement)</onback>
 			<onback>20</onback>
-      <viewtype label="List">List</viewtype>
+      <viewtype label="535">List</viewtype>
       <scrolltime tween="Cubic" easing="out">500</scrolltime>
       <orientation>horizontal</orientation>
       <preloaditems>2</preloaditems>

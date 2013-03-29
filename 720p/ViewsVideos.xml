@@ -840,7 +840,7 @@
 				<onright>51</onright>
 	      <onup>100</onup>
 	      <ondown>60</ondown>
-	      <viewtype label="Slide">List</viewtype>
+	      <viewtype label="31028">List</viewtype>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 	      <orientation>horizontal</orientation>
 	      <preloaditems>2</preloaditems>
@@ -1079,7 +1079,7 @@
 				<onright>52</onright>
 	      <onup>9000</onup>
 	      <ondown>60</ondown>
-	      <viewtype label="Gallery">List</viewtype>
+	      <viewtype label="31029">List</viewtype>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 	      <orientation>horizontal</orientation>
 	      <preloaditems>2</preloaditems>
@@ -1579,7 +1579,7 @@
 				<onright>53</onright>
 			  <ondown>9000</ondown>
 			  <onup>9000</onup>
-				<viewtype label="3DWall">Multiple Walls</viewtype>
+				<viewtype label="31030">Multiple Walls</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -1893,7 +1893,7 @@
 				<onright>54</onright>
 			  <ondown>9000</ondown>
 			  <onup>9000</onup>
-				<viewtype label="Wall">Multiple Walls</viewtype>
+				<viewtype label="31031">Multiple Walls</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -1969,7 +1969,7 @@
 				<onright>55</onright>
 	      <onup>9000</onup>
 	      <ondown>60</ondown>
-	      <viewtype label="Posters">List</viewtype>
+	      <viewtype label="31032">List</viewtype>
 	      <scrolltime tween="Cubic" easing="out">800</scrolltime>
 	      <orientation>horizontal</orientation>
 	      <preloaditems>2</preloaditems>
@@ -2127,7 +2127,7 @@
 				<onup>9000</onup>
 				<ondown>60</ondown>
 	      <orientation>horizontal</orientation>
-				<viewtype label="Thumbnails">list</viewtype>
+				<viewtype label="31033">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 				<preloaditems>2</preloaditems>
@@ -2448,7 +2448,7 @@
 				<onright>60</onright>
 				<onup>57</onup>
 				<ondown>57</ondown>
-	      <viewtype label="Banner List">List</viewtype>
+	      <viewtype label="31034">List</viewtype>
 			  <pagecontrol>60</pagecontrol>
         <focusposition>2</focusposition>
         <preloaditems>2</preloaditems>
