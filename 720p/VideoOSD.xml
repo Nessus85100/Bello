@@ -1,6 +1,7 @@
 <window id="2901">
-	<defaultcontrol always="true">100</defaultcontrol>
-    <onunload>ClearProperty(ShowPlot,VideoOSD)</onunload>
+  <onload condition="!VideoPlayer.Content(LiveTV)">SetFocus(103)</onload>
+  <onload condition="VideoPlayer.Content(LiveTV)">SetFocus(109)</onload>
+  <onunload>ClearProperty(ShowPlot,VideoOSD)</onunload>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
