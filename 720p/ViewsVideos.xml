@@ -620,6 +620,7 @@
 							<height>17</height>-->	
 	            <texture>overlays/unwatched/list/unwatched_fo.png</texture>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+							<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
 						</control>
 						<control type="label">
 							<posx>95</posx>
