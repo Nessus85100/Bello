@@ -8,7 +8,7 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
-	
+
 	  <control type="group">
 	    <visible>Player.HasVideo</visible>
 			<visible>!Window.IsActive(SliderDialog) + !Window.IsActive(OSDVideoSettings) + !Window.IsActive(OSDAudioSettings) + !Window.IsActive(VideoBookmarks) + !Window.IsActive(SelectDialog) + !Window.IsActive(script-XBMC-Subtitles-main.xml) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>

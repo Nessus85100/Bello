@@ -406,7 +406,7 @@
 					</control>
 					<control type="progress">
 						<description>Progressbar</description>
-						<posx>-2</posx>
+						<posx>-3</posx>
 						<posy>28</posy>
 						<width>555</width>
 						<height>24</height>
