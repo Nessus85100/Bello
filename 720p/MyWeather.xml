@@ -111,7 +111,7 @@
 					<control type="label">
 						<description>Current weather conditions</description>
 					  <include>TopSmallLabel</include>
-            <label>$LOCALIZE[31914]: $LOCALIZE[31912]</label>
+            <label>$LOCALIZE[31237]: $LOCALIZE[31235]</label>
 						<visible>stringcompare(Skin.String(WeatherUnderground),1)</visible>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="95" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
@@ -120,7 +120,7 @@
 					<control type="label">
 						<description>36 hours forcast button</description>
 					  <include>TopSmallLabel</include>
-            <label>$LOCALIZE[31914]: $LOCALIZE[31900]</label>
+            <label>$LOCALIZE[31237]: $LOCALIZE[31223]</label>
 						<visible>stringcompare(Skin.String(WeatherUnderground),2)</visible>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="95" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
@@ -129,7 +129,7 @@
 					<control type="label">
 						<description>Hourly forcast button</description>
 					  <include>TopSmallLabel</include>
-            <label>$LOCALIZE[31914]: $LOCALIZE[31901]</label>
+            <label>$LOCALIZE[31237]: $LOCALIZE[31224]</label>
 						<visible>stringcompare(Skin.String(WeatherUnderground),3)</visible>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="95" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
@@ -138,7 +138,7 @@
 					<control type="label">
 						<description>Weekend forcast button</description>
 					  <include>TopSmallLabel</include>
-            <label>$LOCALIZE[31914]: $LOCALIZE[31902]</label>
+            <label>$LOCALIZE[31237]: $LOCALIZE[31225]</label>
 						<visible>stringcompare(Skin.String(WeatherUnderground),4)</visible>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="95" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
@@ -147,7 +147,7 @@
 					<control type="label">
 						<description>10 days forcast button</description>
 					  <include>TopSmallLabel</include>
-            <label>$LOCALIZE[31914]: $LOCALIZE[31903]</label>
+            <label>$LOCALIZE[31237]: $LOCALIZE[31226]</label>
 						<visible>stringcompare(Skin.String(WeatherUnderground),5)</visible>
 						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
 	          <animation effect="zoom"  start="100" end="95" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(250)" reversible="true">Conditional</animation>
@@ -200,98 +200,6 @@
 	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(4)" reversible="true">Conditional</animation>
 					</control>
 				</control>
-
-	      <!-- General Options -->
-				<control type="grouplist." id="9222">
-					<posx>6</posx>
-					<posy>12</posy>
-					<width>1190</width>
-					<height>70</height>
-					<itemgap>0</itemgap>
-					<align>left</align>
-					<orientation>horizontal</orientation>
-					<onleft>9222</onleft>
-					<onright>9222</onright>
-					<onup>-</onup>
-					<ondown>9111</ondown>
-					<onback>9111</onback>
-					<control type="radiobutton" id="350">
-						<description>Fanart Toggle</description>
-						<textureradiofocus>-</textureradiofocus>
-						<textureradionofocus>-</textureradionofocus>
-					  <include>TopButton</include>
-						<label>31307</label>
-						<onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
-						<onclick condition="Skin.HasSetting(ShowWeatherFanart)">Skin.SetPath(WeatherFanartDir)</onclick>
-						<selected>!Skin.HasSetting(ShowWeatherFanart)</selected>
-					</control>
-					<control type="button" id="2">
-						<description>Refresh</description>
-					  <include>TopButton</include>
-			      <label>103</label>
-					</control>
-					<control type="button" id="4">
-						<description>Settings</description>
-					  <include>TopButton</include>
-						<label>5</label>
-				    <onclick>ActivateWindow(MyWeatherSettings)</onclick>
-					</control>
-				</control>
-	      <!-- General Options Labels -->
-				<control type="grouplist.">
-			    <visible allowhiddenfocus="true">ControlGroup(9222).HasFocus</visible>
-		      <animation type="Visible"  reversible="false">
-		          <effect type="fade" start="0" end="100" time="500" tween="sine" easing="in"  />
-		          <effect type="slide" start="0,35" end="0,0" time="550" tween="cubic" easing="out" />
-		      </animation>
-		      <animation type="Hidden" reversible="false">
-		          <effect type="fade" start="100" end="0" time="500" tween="sine" easing="out" />
-		          <effect type="slide" start="0,0" end="0,35" time="550" tween="sine" easing="out" />
-		      </animation>
-					<posx>0</posx>
-					<posy>0</posy>
-					<height>70</height>
-					<width>1190</width>
-					<itemgap>15</itemgap>
-					<align>left</align>
-					<orientation>horizontal</orientation>
-					<control type="label">
-					  <include>TopBigLabel</include>
-					  <label>$LOCALIZE[31015]:</label>
-					</control>
-					<control type="label">
-						<description>Fanart Toggle</description>
-					  <include>TopSmallLabel</include>
-						<label>$LOCALIZE[20445]: $LOCALIZE[31011]</label>
-						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(350)" reversible="true">Conditional</animation>
-	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(350)" reversible="true">Conditional</animation>
-				    <visible>!SubString(Control.GetLabel(350),*)</visible>
-					</control>
-					<control type="label">
-						<description>Fanart Toggle</description>
-					  <include>TopSmallLabel</include>
-						<label>$LOCALIZE[20445]: $LOCALIZE[31012]</label>
-						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(350)" reversible="true">Conditional</animation>
-	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(350)" reversible="true">Conditional</animation>
-				    <visible>SubString(Control.GetLabel(350),*)</visible>
-					</control>
-					<control type="label">
-						<description>Refresh</description>
-					  <include>TopSmallLabel</include>
-            <label>$INFO[Control.GetLabel(2)]</label>
-						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(2)" reversible="true">Conditional</animation>
-	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(2)" reversible="true">Conditional</animation>
-					</control>
-					<control type="label">
-						<description>Settings</description>
-					  <include>TopSmallLabel</include>
-            <label>$INFO[Control.GetLabel(4)]</label>
-						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9222).HasFocus(4)" reversible="true">Conditional</animation>
-	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9222).HasFocus(4)" reversible="true">Conditional</animation>
-					</control>
-					
-				</control>
-				
 		 </control>
 
 
@@ -325,27 +233,27 @@
 					</control>
 					<control type="label">
 					  <include>TopZoomedSmallLabel</include>
-				    <label>$LOCALIZE[31912]</label>
+				    <label>$LOCALIZE[31235]</label>
 			      <visible>![Skin.String(WeatherUnderground,2) | Skin.String(WeatherUnderground,3) | Skin.String(WeatherUnderground,4) | Skin.String(WeatherUnderground,5)]</visible>
 					</control>
 					<control type="label">
 					  <include>TopZoomedSmallLabel</include>
-						<label>$LOCALIZE[31900]</label>
+						<label>$LOCALIZE[31223]</label>
 			      <visible>Skin.String(WeatherUnderground,2)</visible>
 					</control>
 					<control type="label">
 					  <include>TopZoomedSmallLabel</include>
-						<label>$LOCALIZE[31901]</label>
+						<label>$LOCALIZE[31224]</label>
 			      <visible>Skin.String(WeatherUnderground,3)</visible>
 					</control>
 					<control type="label">
 					  <include>TopZoomedSmallLabel</include>
-						<label>$LOCALIZE[31902]</label>
+						<label>$LOCALIZE[31225]</label>
 			      <visible>Skin.String(WeatherUnderground,4)</visible>
 					</control>
 					<control type="label">
 					  <include>TopZoomedSmallLabel</include>
-						<label>$LOCALIZE[31903]</label>
+						<label>$LOCALIZE[31226]</label>
 			      <visible>Skin.String(WeatherUnderground,5)</visible>
 					</control>
 				</control>
@@ -371,7 +279,7 @@
 					</control>
 					<control type="label">
 					  <include>TopZoomedSmallLabel</include>
-				    <label>$LOCALIZE[31912]</label>
+				    <label>$LOCALIZE[31235]</label>
 					</control>
 				</control>
 		 </control>
@@ -407,7 +315,7 @@
 			<shadowcolor>99000000</shadowcolor>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>$LOCALIZE[31911][CR][COLOR=white]$INFO[Control.GetLabel(3)][/COLOR]</label>
+			<label>$LOCALIZE[31234][CR][COLOR=white]$INFO[Control.GetLabel(3)][/COLOR]</label>
 	    <visible>IsEmpty(Window.Property(Current.Condition))</visible>
 		  <include>Window_OpenClose_Animation</include>
 	  </control>		

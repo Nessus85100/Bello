@@ -156,7 +156,7 @@
 					<control type="label">
 						<height min="0" max="13">auto</height>
 						<width>180</width>
-						<label>$LOCALIZE[31316]</label>
+						<label>$LOCALIZE[31004]</label>
 						<font>FontSize_16B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -756,7 +756,7 @@
 				<onright>51</onright>
 	      <onup>100</onup>
 	      <ondown>60</ondown>
-	      <viewtype label="31028">List</viewtype>
+	      <viewtype label="31080">List</viewtype>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 	      <orientation>horizontal</orientation>
 	      <focusposition>1</focusposition>
@@ -994,7 +994,7 @@
 				<onright>52</onright>
 	      <onup>9000</onup>
 	      <ondown>60</ondown>
-	      <viewtype label="31029">List</viewtype>
+	      <viewtype label="31081">List</viewtype>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 	      <orientation>horizontal</orientation>
 	      <preloaditems>2</preloaditems>
@@ -1494,7 +1494,7 @@
 				<onright>53</onright>
 			  <ondown>9000</ondown>
 			  <onup>9000</onup>
-				<viewtype label="31030">Multiple Walls</viewtype>
+				<viewtype label="31082">Multiple Walls</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -1808,7 +1808,7 @@
 				<onright>54</onright>
 			  <ondown>9000</ondown>
 			  <onup>9000</onup>
-				<viewtype label="31031">Multiple Walls</viewtype>
+				<viewtype label="31083">Multiple Walls</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -1884,7 +1884,7 @@
 				<onright>55</onright>
 	      <onup>9000</onup>
 	      <ondown>60</ondown>
-	      <viewtype label="31032">List</viewtype>
+	      <viewtype label="31084">List</viewtype>
 	      <scrolltime tween="Cubic" easing="out">800</scrolltime>
 	      <orientation>horizontal</orientation>
 	      <preloaditems>2</preloaditems>
@@ -2042,7 +2042,7 @@
 				<onup>9000</onup>
 				<ondown>60</ondown>
 	      <orientation>horizontal</orientation>
-				<viewtype label="31033">list</viewtype>
+				<viewtype label="31085">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 				<preloaditems>2</preloaditems>
@@ -2363,7 +2363,7 @@
 				<onright>60</onright>
 				<onup>57</onup>
 				<ondown>57</ondown>
-	      <viewtype label="31034">List</viewtype>
+	      <viewtype label="31086">List</viewtype>
 			  <pagecontrol>60</pagecontrol>
         <focusposition>2</focusposition>
         <preloaditems>2</preloaditems>
@@ -2697,7 +2697,7 @@
 							<font>FontSize_18</font>
 				      <scroll>false</scroll>
 							<align>left</align>
-							<label>$INFO[ListItem.Premiered,$LOCALIZE[31322]  ]$INFO[ListItem.Duration,  •  , $LOCALIZE[12391]]</label>
+							<label>$INFO[ListItem.Premiered,$LOCALIZE[31003]  ]$INFO[ListItem.Duration,  •  , $LOCALIZE[12391]]</label>
 			        <animation effect="slide" start="0,0" end="-36,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution)">Conditional</animation>
 						</control>
 					</control>

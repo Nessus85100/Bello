@@ -254,7 +254,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<scroll>false</scroll>
-						  <label>$INFO[Window.Property(Updated),[COLOR=ddC6C6C8]$LOCALIZE[31906]: [/COLOR]]</label>
+						  <label>$INFO[Window.Property(Updated),[COLOR=ddC6C6C8]$LOCALIZE[31229]: [/COLOR]]</label>
 							<!--<shadowcolor>ff0d0d0d</shadowcolor>-->
 					</control>
 					<!-- Current Weather Provider -->	
@@ -269,7 +269,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<scroll>false</scroll>
-				      <label>$INFO[Window.Property(WeatherProvider),[COLOR=ddC6C6C8]$LOCALIZE[31907]: [/COLOR]]</label>
+				      <label>$INFO[Window.Property(WeatherProvider),[COLOR=ddC6C6C8]$LOCALIZE[31230]: [/COLOR]]</label>
 							<!--<shadowcolor>ff0d0d0d</shadowcolor>-->
 					</control>
 				</control>
@@ -831,7 +831,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<scroll>false</scroll>
-						  <label>$INFO[Window.Property(Updated),[COLOR=ddC6C6C8]$LOCALIZE[31906]: [/COLOR]]</label>
+						  <label>$INFO[Window.Property(Updated),[COLOR=ddC6C6C8]$LOCALIZE[31229]: [/COLOR]]</label>
 							<!--<shadowcolor>ff0d0d0d</shadowcolor>-->
 					</control>
 					<!-- Current Weather Provider -->	
@@ -846,7 +846,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<scroll>false</scroll>
-				      <label>$INFO[Window.Property(WeatherProvider),[COLOR=ddC6C6C8]$LOCALIZE[31907]: [/COLOR]]</label>
+				      <label>$INFO[Window.Property(WeatherProvider),[COLOR=ddC6C6C8]$LOCALIZE[31230]: [/COLOR]]</label>
 							<!--<shadowcolor>ff0d0d0d</shadowcolor>-->
 					</control>
 				</control>
@@ -941,7 +941,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>[COLOR=ddC6C6C8]$LOCALIZE[383]:[/COLOR] $LOCALIZE[31904] $INFO[Window.Property(Daily.1.ShortWindDirection)] $LOCALIZE[31905] $INFO[Window.Property(Daily.1.WindSpeed)]</label>
+					<label>[COLOR=ddC6C6C8]$LOCALIZE[383]:[/COLOR] $LOCALIZE[31227] $INFO[Window.Property(Daily.1.ShortWindDirection)] $LOCALIZE[31228] $INFO[Window.Property(Daily.1.WindSpeed)]</label>
 				</control>
 				<control type="textbox">
 					<posx>36</posx>
@@ -953,7 +953,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>justify</align>
 					<aligny>bottom</aligny>
-					<label>$INFO[Window.Property(Daily.1.LongOutlookDay),[COLOR=ddC6C6C8]$LOCALIZE[31913]: [/COLOR]]</label>
+					<label>$INFO[Window.Property(Daily.1.LongOutlookDay),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 				</control>
 				<control type="image">
 					<posx>30</posx>
@@ -1035,7 +1035,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>[COLOR=ddC6C6C8]$LOCALIZE[383]:[/COLOR] $LOCALIZE[31904] $INFO[Window.Property(Daily.2.ShortWindDirection)] $LOCALIZE[31905] $INFO[Window.Property(Daily.2.WindSpeed)]</label>
+					<label>[COLOR=ddC6C6C8]$LOCALIZE[383]:[/COLOR] $LOCALIZE[31227] $INFO[Window.Property(Daily.2.ShortWindDirection)] $LOCALIZE[31228] $INFO[Window.Property(Daily.2.WindSpeed)]</label>
 				</control>
 				<control type="textbox">
 					<posx>36</posx>
@@ -1047,7 +1047,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>justify</align>
 					<aligny>bottom</aligny>
-					<label>$INFO[Window.Property(Daily.2.LongOutlookDay),[COLOR=ddC6C6C8]$LOCALIZE[31913]: [/COLOR]]</label>
+					<label>$INFO[Window.Property(Daily.2.LongOutlookDay),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 				</control>
 				<control type="image">
 					<posx>30</posx>
@@ -1140,7 +1140,7 @@
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.1.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]: [/COLOR]]</label>
+						<label>$INFO[Window.Property(36Hour.1.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR]]</label>
 					</control>
 					<control type="textbox">
 						<posx>36</posx>
@@ -1150,7 +1150,7 @@
 						<font>FontSize_18</font>
 						<textcolor>white</textcolor>
 						<align>justify</align>
-						<label>$INFO[Window.Property(36hour.1.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31913]: [/COLOR]]</label>
+						<label>$INFO[Window.Property(36hour.1.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 					</control>
 					<control type="image">
 						<posx>40</posx>
@@ -1195,7 +1195,7 @@
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.2.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]: [/COLOR]]</label>
+						<label>$INFO[Window.Property(36Hour.2.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR]]</label>
 					</control>
 					<control type="textbox">
 						<posx>36</posx>
@@ -1205,7 +1205,7 @@
 						<font>FontSize_18</font>
 						<textcolor>white</textcolor>
 						<align>justify</align>
-						<label>$INFO[Window.Property(36hour.2.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31913]: [/COLOR]]</label>
+						<label>$INFO[Window.Property(36hour.2.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 					</control>
 					<control type="image">
 						<posx>40</posx>
@@ -1250,7 +1250,7 @@
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.3.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]: [/COLOR]]</label>
+						<label>$INFO[Window.Property(36Hour.3.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR]]</label>
 					</control>
 					<control type="textbox">
 						<posx>36</posx>
@@ -1260,7 +1260,7 @@
 						<font>FontSize_18</font>
 						<textcolor>white</textcolor>
 						<align>justify</align>
-						<label>$INFO[Window.Property(36hour.3.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31913]: [/COLOR]]</label>
+						<label>$INFO[Window.Property(36hour.3.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 					</control>
 					<control type="image">
 						<posx>40</posx>
@@ -2468,7 +2468,7 @@
 						<font>FontSize_18</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
-						<label>$INFO[Window.Property(Weekend.1.MaxHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31908]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.1.MinHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31909]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.1.ShortWindDirection),[COLOR=ddC6C6C8]$LOCALIZE[404]:[/COLOR] $LOCALIZE[31904] ,]$INFO[Window.Property(Weekend.1.WindSpeed), $LOCALIZE[31905] ][CR]$INFO[Window.Property(Weekend.1.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]: [/COLOR],]</label>
+						<label>$INFO[Window.Property(Weekend.1.MaxHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31231]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.1.MinHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31232]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.1.ShortWindDirection),[COLOR=ddC6C6C8]$LOCALIZE[404]:[/COLOR] $LOCALIZE[31227] ,]$INFO[Window.Property(Weekend.1.WindSpeed), $LOCALIZE[31228] ][CR]$INFO[Window.Property(Weekend.1.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR],]</label>
 					</control>
 					<control type="textbox">
 						<posx>36</posx>
@@ -2544,7 +2544,7 @@
 						<font>FontSize_18</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
-						<label>$INFO[Window.Property(Weekend.2.MaxHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31908]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.2.MinHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31909]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.2.ShortWindDirection),[COLOR=ddC6C6C8]$LOCALIZE[404]:[/COLOR] $LOCALIZE[31904] ,]$INFO[Window.Property(Weekend.2.WindSpeed), $LOCALIZE[31905] ][CR]$INFO[Window.Property(Weekend.2.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]: [/COLOR],]</label>
+						<label>$INFO[Window.Property(Weekend.2.MaxHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31231]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.2.MinHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31232]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.2.ShortWindDirection),[COLOR=ddC6C6C8]$LOCALIZE[404]:[/COLOR] $LOCALIZE[31227] ,]$INFO[Window.Property(Weekend.2.WindSpeed), $LOCALIZE[31228] ][CR]$INFO[Window.Property(Weekend.2.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR],]</label>
 					</control>
 					<control type="textbox">
 						<posx>36</posx>
@@ -2620,7 +2620,7 @@
 						<font>FontSize_18</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
-						<label>$INFO[Window.Property(Weekend.3.MaxHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31908]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.3.MinHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31909]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.3.ShortWindDirection),[COLOR=ddC6C6C8]$LOCALIZE[404]:[/COLOR] $LOCALIZE[31904] ,]$INFO[Window.Property(Weekend.3.WindSpeed), $LOCALIZE[31905] ][CR]$INFO[Window.Property(Weekend.3.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]: [/COLOR],]</label>
+						<label>$INFO[Window.Property(Weekend.3.MaxHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31231]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.3.MinHumidity),[COLOR=ddC6C6C8]$LOCALIZE[31232]:[/COLOR] ,][CR]$INFO[Window.Property(Weekend.3.ShortWindDirection),[COLOR=ddC6C6C8]$LOCALIZE[404]:[/COLOR] $LOCALIZE[31227] ,]$INFO[Window.Property(Weekend.3.WindSpeed), $LOCALIZE[31228] ][CR]$INFO[Window.Property(Weekend.3.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR],]</label>
 					</control>
 					<control type="textbox">
 						<posx>36</posx>
@@ -2908,7 +2908,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.1.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.1.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]: [/COLOR],]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.1.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]: [/COLOR],]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.1.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]: [/COLOR],]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.1.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR],]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.1.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -2921,7 +2921,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.2.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.2.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]: [/COLOR],]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.2.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]: [/COLOR],]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.2.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]: [/COLOR],]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.2.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR],]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.2.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -2934,7 +2934,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.3.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.3.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]: [/COLOR],]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.3.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]: [/COLOR],]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.3.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]: [/COLOR],]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.3.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR],]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.3.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -2947,7 +2947,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.4.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.4.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.4.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]:[/COLOR] ,]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.4.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]:[/COLOR] ,]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.4.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]:[/COLOR] ,]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.4.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -2960,7 +2960,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.5.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.5.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.5.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]:[/COLOR] ,]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.5.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]:[/COLOR] ,]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.5.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]:[/COLOR] ,]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.5.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -2973,7 +2973,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.6.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.6.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.6.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]:[/COLOR] ,]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.6.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]:[/COLOR] ,]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.6.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]:[/COLOR] ,]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.6.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -2986,7 +2986,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.7.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.7.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.7.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]:[/COLOR] ,]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.7.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]:[/COLOR] ,]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.7.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]:[/COLOR] ,]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.7.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -2999,7 +2999,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.8.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.8.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.8.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]:[/COLOR] ,]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.8.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]:[/COLOR] ,]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.8.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]:[/COLOR] ,]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.8.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -3012,7 +3012,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.9.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.9.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.9.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]:[/COLOR] ,]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.9.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]:[/COLOR] ,]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.9.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]:[/COLOR] ,]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.9.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -3025,7 +3025,7 @@
 						<property name="Outlook">$INFO[Window.Property(Daily.10.Outlook),]</property>
 						<property name="HighTemperature">$INFO[Window.Property(Daily.10.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</property>
 						<property name="LowTemperature">$INFO[Window.Property(Daily.10.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[418]:[/COLOR] ,]</property>
-						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.10.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31910]:[/COLOR] ,]</property>
+						<property name="ChancePrecipitation">$INFO[Window.Property(Daily.10.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]:[/COLOR] ,]</property>
 						<property name="PDAWeatherIcons">$INFO[Window(Weather).Property(Daily.10.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</property>
 						<onclick>-</onclick>
 						<visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
@@ -3047,7 +3047,7 @@
 				<shadowcolor>99000000</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[31911]</label>
+				<label>$LOCALIZE[31234]</label>
 		    <visible>IsEmpty(Window.Property(Current.Condition))</visible>
 			  <include>Window_OpenClose_Animation</include>
 	  </control>	  

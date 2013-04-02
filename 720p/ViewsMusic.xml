@@ -269,7 +269,7 @@
 					<control type="label">
 						<height min="0" max="13">auto</height>
 						<width>180</width>
-						<label>$LOCALIZE[31310]</label>
+						<label>$LOCALIZE[31005]</label>
 						<font>FontSize_16B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -649,7 +649,7 @@
 				<onright>51</onright>
 	      <onup>100</onup>
 	      <ondown>60</ondown>
-	      <viewtype label="31028">List</viewtype>
+	      <viewtype label="31080">List</viewtype>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 	      <orientation>horizontal</orientation>
 	      <preloaditems>2</preloaditems>
@@ -874,7 +874,7 @@
 				<onright>52</onright>
 	      <onup>9000</onup>
 	      <ondown>60</ondown>
-				<viewtype label="31029">List</viewtype>
+				<viewtype label="31081">List</viewtype>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 	      <orientation>horizontal</orientation>
 	      <preloaditems>2</preloaditems>
@@ -1052,7 +1052,7 @@
 				<onup>9000</onup>
 				<ondown>60</ondown>
 	      <orientation>horizontal</orientation>
-				<viewtype label="31033">list</viewtype>
+				<viewtype label="31085">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 				<preloaditems>2</preloaditems>
@@ -1189,7 +1189,7 @@
 				<onright>60</onright>
 				<onup>57</onup>
 				<ondown>57</ondown>
-	      <viewtype label="31034">List</viewtype>
+	      <viewtype label="31086">List</viewtype>
 			  <pagecontrol>60</pagecontrol>
         <focusposition>2</focusposition>
         <preloaditems>2</preloaditems>

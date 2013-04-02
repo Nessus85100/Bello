@@ -113,7 +113,7 @@
 				<height>35</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[31004]</label>
+				<label>$LOCALIZE[31026]</label>
 				<font>FontSize_48</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>99000000</shadowcolor>

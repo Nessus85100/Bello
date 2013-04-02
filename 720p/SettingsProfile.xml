@@ -107,7 +107,7 @@
 					  <textwidth>700</textwidth>
 						<textoffsetx>20</textoffsetx>
 						<pulseonselect>false</pulseonselect>
-						<label>31199</label>
+						<label>31119</label>
 					  <visible>Container(9001).Hasfocus(1)</visible>
 					  <include>CloseAnimation</include>
 					</control>

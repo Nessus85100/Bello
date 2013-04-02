@@ -47,7 +47,7 @@
 					<posy>-30</posy>
 					<width>230</width>
 					<height>29</height>
-          <label>$LOCALIZE[31041]</label>
+          <label>$LOCALIZE[31300]</label>
 					<font>FontSize_18</font>
 					<textcolor>red</textcolor>
 					<shadowcolor>99000000</shadowcolor>

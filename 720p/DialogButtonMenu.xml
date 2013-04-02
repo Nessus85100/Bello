@@ -300,7 +300,7 @@
 			</control>
 	    <control type="fadelabel">
 			  <include>TopZoomedSmallLabel</include>
-				<label>[COLOR=blue]$INFO[System.Alarmpos, $LOCALIZE[31329] ][/COLOR]</label>
+				<label>[COLOR=blue]$INFO[System.Alarmpos, $LOCALIZE[31008] ][/COLOR]</label>
 				<label>$INFO[System.Date], $INFO[System.Time]</label>
 				<label>$INFO[System.Uptime, $LOCALIZE[12390]: ]</label>
 				<label>$INFO[System.TotalUptime, $LOCALIZE[12394]: ]</label>
@@ -384,7 +384,7 @@
 			<align>center</align>
 			<textcolor>white</textcolor>
 		  <shadowcolor>55000000</shadowcolor>
-			<label>$LOCALIZE[31329] $INFO[System.Alarmpos]</label>
+			<label>$LOCALIZE[31008] $INFO[System.Alarmpos]</label>
 			<label>$INFO[System.Date], $INFO[System.Time]</label>
       <scroll>false</scroll>
       <scrollout>false</scrollout>

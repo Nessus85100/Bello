@@ -135,7 +135,7 @@
 					</control>
 					<control type="radiobutton." id="8104">
 	          <include>SettingsRadioButton</include>
-						<label>31088</label>
+						<label>31151</label>
 						<onclick>Skin.ToggleSetting(ShowRSSGlobal)</onclick>
 				    <onclick>Reloadskin</onclick>
 						<selected>Skin.HasSetting(ShowRSSGlobal)</selected>
@@ -143,19 +143,19 @@
 					</control>
 					<control type="radiobutton." id="8105">
 	          <include>SettingsRadioButton</include>
-						<label>31089</label>
+						<label>31152</label>
 						<onclick>Skin.ToggleSetting(HideFilenameFlagging)</onclick>
 						<selected>Skin.HasSetting(HideFilenameFlagging)</selected>
 					</control>
 					<control type="radiobutton" id="8106">
 	          <include>SettingsRadioButton</include>
-						<label>31082</label>
+						<label>31139</label>
 						<onclick>Skin.ToggleSetting(EnableAddonsNotifications)</onclick>
 						<selected>Skin.HasSetting(EnableAddonsNotifications)</selected>
 					</control>
 					<control type="radiobutton" id="8107">
 	          <include>SettingsRadioButton</include>
-						<label>31083</label>
+						<label>31140</label>
 						<onclick>Skin.ToggleSetting(EnableWeatherAlertsNotifications)</onclick>
 						<selected>Skin.HasSetting(EnableWeatherAlertsNotifications)</selected>
 					</control>
@@ -517,7 +517,7 @@
 					</control>
 					<control type="button" id="8305">
 	          <include>SettingsButton</include>
-						<label> • $LOCALIZE[31197]</label>
+						<label> • $LOCALIZE[31135]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(CustomImageBackgroundPath)][/COLOR]</label2>
 						<onclick>Skin.Reset(CustomFolderBackgroundPath)</onclick>
 						<onclick>Skin.SetImage(CustomImageBackgroundPath)</onclick>
@@ -525,7 +525,7 @@
 					</control>
 					<control type="button" id="8306">
 	          <include>SettingsButton</include>
-						<label> • $LOCALIZE[31198]</label>
+						<label> • $LOCALIZE[31136]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(CustomFolderBackgroundPath)][/COLOR]</label2>
 						<onclick>Skin.Reset(CustomImageBackgroundPath)</onclick>
 						<onclick>Skin.SetPath(CustomFolderBackgroundPath)</onclick>
@@ -588,7 +588,7 @@
 					</control>
 					<control type="radiobutton" id="8407">
 	          <include>SettingsRadioButton</include>
-						<label> • $LOCALIZE[31080]</label>
+						<label> • $LOCALIZE[31137]</label>
 						<onclick>Skin.ToggleSetting(EnableNextAiredNotifications)</onclick>
 						<selected>Skin.HasSetting(EnableNextAiredNotifications)</selected>
             <visible>Skin.HasSetting(NextAiredEnabled)</visible>

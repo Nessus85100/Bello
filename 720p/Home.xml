@@ -970,7 +970,7 @@
 					<textcolor>77grey</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[31909]</label>
+					<label>$LOCALIZE[31232]</label>
 					<visible>!Weather.IsFetched</visible>
 			</control>
 			<control type="label">
@@ -1079,7 +1079,7 @@
 					<textcolor>77grey</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[31909]</label>
+					<label>$LOCALIZE[31232]</label>
 					<visible>!Weather.IsFetched</visible>
 			</control>
 			<control type="label.">

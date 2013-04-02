@@ -195,7 +195,7 @@
 							<control type="label">
 								<width min="10" max="780">auto</width>
 								<height>25</height>
-								<label>$LOCALIZE[31316]:</label>
+								<label>$LOCALIZE[31004]:</label>
 								<font>FontSize_20</font>
 						    <textcolor>white</textcolor>
 						    <shadowcolor>99000000</shadowcolor>
@@ -326,7 +326,7 @@
 							<control type="label">
 								<width min="10" max="780">auto</width>
 								<height>25</height>
-								<label>$LOCALIZE[31322]:</label>
+								<label>$LOCALIZE[31003]:</label>
 								<font>FontSize_20</font>
 						    <textcolor>white</textcolor>
 						    <shadowcolor>99000000</shadowcolor>

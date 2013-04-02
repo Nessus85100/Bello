@@ -171,7 +171,7 @@
 				<control type="label">
 					<width min="10" max="650">auto</width>
 					<height>35</height>
-					<label>$LOCALIZE[31250]:</label>
+					<label>$LOCALIZE[31214]:</label>
 					<font>FontSize_18B</font>
 				  <textcolor>77white</textcolor>
 				</control>
@@ -869,7 +869,7 @@
 				<control type="label">
 					<description>ExtraInfo Toggle</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[31257]: $LOCALIZE[31011]</label>
+					<label>$LOCALIZE[31220]: $LOCALIZE[31011]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(11)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(11)" reversible="true">Conditional</animation>
 			    <visible>!SubString(Control.GetLabel(11),*)</visible>
@@ -877,7 +877,7 @@
 				<control type="label">
 					<description>ExtraInfo Toggle</description>
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[31257]: $LOCALIZE[31012]</label>
+					<label>$LOCALIZE[31220]: $LOCALIZE[31012]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(11)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(11)" reversible="true">Conditional</animation>
 			    <visible>SubString(Control.GetLabel(11),*)</visible>
@@ -885,7 +885,7 @@
 				<control type="label">
 					<description>Preview Landscape</description>
 				  <include>TopSmallLabel</include>
-          <label>$LOCALIZE[31254]: $LOCALIZE[31255]</label>
+          <label>$LOCALIZE[31217]: $LOCALIZE[31218]</label>
 					<visible>Stringcompare(Skin.String(PreviewThumb),1)</visible>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(9)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(9)" reversible="true">Conditional</animation>
@@ -894,7 +894,7 @@
 				<control type="label">
 					<description>Preview Fanart</description>
 				  <include>TopSmallLabel</include>
-          <label>$LOCALIZE[31254]: $LOCALIZE[20445]</label>
+          <label>$LOCALIZE[31217]: $LOCALIZE[20445]</label>
 					<visible>Stringcompare(Skin.String(PreviewThumb),2)</visible>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(9)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(9)" reversible="true">Conditional</animation>
@@ -903,7 +903,7 @@
 				<control type="label">
 					<description>Preview Logo</description>
 				  <include>TopSmallLabel</include>
-          <label>$LOCALIZE[31254]: $LOCALIZE[31256]</label>
+          <label>$LOCALIZE[31217]: $LOCALIZE[31219]</label>
 					<visible>Stringcompare(Skin.String(PreviewThumb),3)</visible>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(9)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(9)" reversible="true">Conditional</animation>

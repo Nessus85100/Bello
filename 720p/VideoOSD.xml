@@ -75,7 +75,7 @@
 				<control type="button" id="102">
 					<width>55</width>
 					<height>55</height>
-					<label>31354</label>
+					<label>31308</label>
 					<font>-</font>
 					<texturefocus>osd/rw_fo.png</texturefocus>
 					<texturenofocus>osd/rw_nf.png</texturenofocus>
@@ -86,7 +86,7 @@
 				<control type="togglebutton" id="103">
 					<width>55</width>
 					<height>55</height>
-					<label>31351</label>
+					<label>31305</label>
 					<altlabel>208</altlabel>
 					<font>-</font>
 					<texturefocus>osd/pause_fo.png</texturefocus>
@@ -100,7 +100,7 @@
 				<control type="togglebutton" id="111">
 					<width>55</width>
 					<height>55</height>
-					<label>31351</label>
+					<label>31305</label>
 					<altlabel>208</altlabel>
 					<font>-</font>
 					<texturefocus>osd/pause_fo.png</texturefocus>
@@ -116,7 +116,7 @@
 				<control type="button" id="104">
 					<width>55</width>
 					<height>55</height>
-					<label>31352</label>
+					<label>31306</label>
 					<font>-</font>
 					<texturefocus>osd/stop_fo.png</texturefocus>
 					<texturenofocus>osd/stop_nf.png</texturenofocus>
@@ -125,7 +125,7 @@
 				<control type="button" id="105">
 					<width>55</width>
 					<height>55</height>
-					<label>31353</label>
+					<label>31307</label>
 					<font>-</font>
 					<texturefocus>osd/ff_fo.png</texturefocus>
 					<texturenofocus>osd/ff_nf.png</texturenofocus>
