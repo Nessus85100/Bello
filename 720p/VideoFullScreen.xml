@@ -692,7 +692,7 @@
 			  <shadowcolor>55000000</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[31309] [COLOR=osdinfo]$INFO[Player.FinishTime][/COLOR]</label>
+				<label>$LOCALIZE[31305] [COLOR=osdinfo]$INFO[Player.FinishTime][/COLOR]</label>
 				<visible>!Player.Playing + !Player.Forwarding + !Player.Rewinding + !Player.Caching</visible>
 				<animation type="Conditional" reversible="false" condition="Player.Paused + ![Player.Playing | Player.Forwarding | Player.Rewinding | Player.Caching]" loop="true">
 					<effect type="fade" start="0" end="100" time="400" delay="5400" />
@@ -731,7 +731,7 @@
 			  <shadowcolor>55000000</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[31309] [COLOR=osdinfo]$INFO[Player.FinishTime][/COLOR]</label>
+				<label>$LOCALIZE[31305] [COLOR=osdinfo]$INFO[Player.FinishTime][/COLOR]</label>
 				<visible>!Player.Playing + !Player.Forwarding + !Player.Rewinding + !Player.Caching</visible>
 				<animation type="Conditional" reversible="false" condition="Player.Paused + ![Player.Playing | Player.Forwarding | Player.Rewinding | Player.Caching]" loop="true">
 					<effect type="fade" start="0" end="100" time="400" delay="5400" />

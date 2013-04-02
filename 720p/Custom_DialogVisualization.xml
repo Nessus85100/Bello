@@ -27,7 +27,7 @@
 			<posx>357</posx>
 			<posy>165</posy>
 			<width>565</width>
-			<label>$LOCALIZE[31310]</label>
+			<label>$LOCALIZE[31306]</label>
 			<font>FontSize_36</font>
 			<textcolor>white</textcolor>
 			<align>center</align>
@@ -49,7 +49,7 @@
 			<control type="radiobutton" id="991">
 				<description>Enable Visualisation Button</description>
 			  <width>555</width>
-				<label>$LOCALIZE[31311]</label>
+				<label>$LOCALIZE[31307]</label>
         <include>DialogsRadioButton</include>
 				<onclick>Skin.ToggleSetting(Vis-Visualization)</onclick>
 				<selected>!Skin.HasSetting(Vis-Visualization)</selected>
@@ -57,21 +57,21 @@
 			<control type="button" id="992">
 				<description>Select Visualization Type Button</description>
 			  <width>555</width>
-				<label>$LOCALIZE[31312]</label>
+				<label>$LOCALIZE[31308]</label>
         <include>DialogsButton</include>
 				<onclick>SendClick(120,500)</onclick>
 			</control>
 			<control type="button" id="993">
 				<description>Visualization Presets Button</description>
 			  <width>555</width>
-				<label>$LOCALIZE[31313]</label>
+				<label>$LOCALIZE[31309]</label>
         <include>DialogsButton</include>
 				<onclick>ActivateWindow(visualisationpresetlist)</onclick>
 			</control>
 			<control type="button" id="994">
 				<description>Visualization Settings Button</description>
 			  <width>555</width>
-				<label>$LOCALIZE[31314]</label>
+				<label>$LOCALIZE[31310]</label>
         <include>DialogsButton</include>
 				<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 			</control>
@@ -88,7 +88,7 @@
 			<control type="radiobutton" id="996">
 				<description>Artist Slideshow Button</description>
 			  <width>555</width>
-				<label>$LOCALIZE[31316]</label>
+				<label>$LOCALIZE[31312]</label>
         <include>DialogsRadioButton</include>
 				<selected>Skin.HasSetting(Vis-ArtistSlideshow)</selected>
 				<onclick>Skin.Reset(Vis-Fanart)</onclick>
@@ -99,7 +99,7 @@
 			<control type="radiobutton" id="997">
 				<description>Custom Slideshow Button</description>
 			  <width>555</width>
-				<label>$LOCALIZE[31315]</label>
+				<label>$LOCALIZE[31311]</label>
         <include>DialogsRadioButton</include>
 				<selected>Skin.HasSetting(Vis-CustomSlideshow)</selected>
 				<onclick>Skin.Reset(Vis-Fanart)</onclick>
@@ -110,7 +110,7 @@
 			<control type="radiobutton" id="998">
 				<description>Animation Button</description>
 			  <width>555</width>
-				<label>$LOCALIZE[31317]</label>
+				<label>$LOCALIZE[31313]</label>
         <include>DialogsRadioButton</include>
 				<selected>Skin.HasSetting(Vis-Animation)</selected>
 				<onclick>Skin.ToggleSetting(Vis-Animation)</onclick>
@@ -119,7 +119,7 @@
 			<control type="radiobutton" id="981">
 				<description>Hide Diffuse Colors</description>
 			  <width>555</width>
-				<label>31318</label>
+				<label>31314</label>
         <include>DialogsRadioButton</include>
 				<selected>Skin.HasSetting(HideOSDDiffuseColors)</selected>
 				<onclick>Skin.ToggleSetting(HideOSDDiffuseColors)</onclick>
@@ -127,7 +127,7 @@
 			<control type="radiobutton" id="982">
 				<description>Hide Scrolling Titles</description>
 			  <width>555</width>
-				<label>31319</label>
+				<label>31315</label>
         <include>DialogsRadioButton</include>
 				<selected>Skin.HasSetting(HideOSDScrollingTitles)</selected>
 				<onclick>Skin.ToggleSetting(HideOSDScrollingTitles)</onclick>
