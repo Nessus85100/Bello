@@ -667,7 +667,7 @@
 				<focusedlayout width="300" height="300">
 					<control type="group">
 	          <animation type="Focus" condition="Container(51).OnNext | Container(51).OnPrevious">
-	            <effect type="fade" start="50" end="100" time="300" tween="sine" easing="out" />
+	            <effect type="fade" start="50" end="100" time="350" tween="sine" easing="inout" />
 	          </animation>
 						<control type="image">
 							<width>300</width>
@@ -809,7 +809,7 @@
 			<control type="scrollbar" id="60">
 				<posx>355</posx>
 				<posy>495</posy>
-				<width>880</width>
+				<width>900</width>
 				<height>11</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>

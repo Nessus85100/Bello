@@ -21,10 +21,11 @@
 				</control>
 				<control type="wraplist" id="20">
 				 <description>Home Container</description>
-				 <posx>-50</posx>
+				 <posx>-95</posx>
 				 <posy>110</posy>
-				 <width>1550</width>
+				 <width>1500</width>
 				 <height>720</height>
+				 <align>center</align>
 			   <onup>SetFocus(21)</onup>
 				 <ondown condition="[Container(20).HasFocus(9) + !Skin.HasSetting(HideSettingsSubMenu)]
 													| [Container(20).HasFocus(2) + !Skin.HasSetting(HideMoviesSubMenu)]
@@ -51,9 +52,9 @@
 			       <effect type="fade" start="100" end="45" time="0" />
 			     </animation>
 					 <control type="label">
-						  <posx>260</posx>
+						  <posx>300</posx>
 							<posy>200</posy>
-							<width>520</width>
+							<width>590</width>
 		          <textcolor>white</textcolor>
 							<font>FontSize_100</font>
 							<align>center</align>
@@ -76,9 +77,9 @@
 		          <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
 				    </animation>
 						<control type="label">
-						  <posx>260</posx>
+						  <posx>300</posx>
 							<posy>200</posy>
-							<width>520</width>
+							<width>590</width>
 		          <textcolor>white</textcolor>
 							<font>FontSize_100</font>
 							<align>center</align>

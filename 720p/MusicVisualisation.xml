@@ -419,7 +419,7 @@
             <overlaytexture>-</overlaytexture>
 					</control>
 					<control type="label">
-						<posx>550</posx>
+						<posx>548</posx>
 						<posy>0</posy>
 						<width>300</width>
 						<height>40</height>

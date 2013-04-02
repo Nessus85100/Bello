@@ -759,7 +759,6 @@
 	      <viewtype label="31028">List</viewtype>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 	      <orientation>horizontal</orientation>
-	      <preloaditems>2</preloaditems>
 	      <focusposition>1</focusposition>
 			  <pagecontrol>60</pagecontrol>
 				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)</visible>
@@ -782,7 +781,7 @@
 				<focusedlayout width="238" height="340">
 					<control type="group">
 	          <animation type="Focus" condition="Container(51).OnNext | Container(51).OnPrevious">
-	            <effect type="fade" start="50" end="100" time="300" tween="sine" easing="out" />
+	            <effect type="fade" start="50" end="100" time="350" tween="sine" easing="inout" />
 	          </animation>
 						<control type="image">
 							<width>238</width>
@@ -929,7 +928,7 @@
 			<control type="scrollbar" id="60">
 				<posx>298</posx>
 				<posy>520</posy>
-				<width>920</width>
+				<width>955</width>
 				<height>11</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>

@@ -5,6 +5,7 @@
 	  <posx>40</posx>
 		<posy>645</posy>
 	  <include>NowPlaying</include>
+    <visible>!Window.IsActive(fullscreenvideo) + !Window.IsActive(visualisation) + !Window.IsVisible(startup)</visible>
 		<control type="grouplist">
 			<posx>0</posx>
 			<posy>0</posy>

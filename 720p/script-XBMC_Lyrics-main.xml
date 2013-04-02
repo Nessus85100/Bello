@@ -2,6 +2,7 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="group">
+			  <visible>!Window.IsActive(ShutdownMenu)</visible>
 				<posx>42r</posx>
 				<posy>170</posy>
 				<visible>Control.IsVisible(110)</visible>
@@ -40,6 +41,7 @@
 			<!-- ** Required ** Do not change <id> or <type> (Text box for lyrics) -->
 			<control type="textbox" id="100">
 				<description>textarea</description>
+			  <visible>!Window.IsActive(ShutdownMenu)</visible>
 				<posx>0</posx>
 				<posy>230</posy>
 				<width>1280</width>
@@ -74,6 +76,7 @@
 				<ondown>110</ondown>
 				<pagecontrol>111</pagecontrol>
 			  <scrolltime tween="cubic" easing="out">500</scrolltime>
+			  <visible>!Window.IsActive(ShutdownMenu)</visible>
 				<itemlayout height="54">
 					<control type="label">
 						<posx>640</posx>

@@ -189,14 +189,14 @@
 				</control>
 				<control type="label">
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[31033]: $LOCALIZE[591]</label>
+					<label>$LOCALIZE[31023]: $LOCALIZE[591]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!Control.HasFocus(1002)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(1002)" reversible="true">Conditional</animation>
           <visible>!Skin.HasSetting(MusicInfoOSD)</visible>
 				</control>
 				<control type="label">
 				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[31033]: $LOCALIZE[16041]</label>
+					<label>$LOCALIZE[31023]: $LOCALIZE[16041]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!Control.HasFocus(1002)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(1002)" reversible="true">Conditional</animation>
           <visible>Skin.HasSetting(MusicInfoOSD)</visible>
