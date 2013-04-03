@@ -27,7 +27,7 @@
 				</control>
 				<control type="image">
 					<posx>555</posx>
-					<posy>88</posy>
+					<posy>86</posy>
 					<width>755</width>
 					<height>404</height>
 					<aspectratio align="right" aligny="center">stretch</aspectratio>
@@ -36,10 +36,10 @@
 					<bordersize>20</bordersize>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>173</posy>
-					<width>168</width>
-					<height>235</height>
+					<posx>636</posx>
+					<posy>167</posy>
+					<width>170</width>
+					<height>242</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<fadetime>150</fadetime>
 					<texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[PosterThumbs]</texture>
@@ -47,18 +47,20 @@
 					<bordersize>6</bordersize>
 				</control>
 				<control type="image.">
-					<posx>645</posx>
-					<posy>178</posy>
-					<width>165</width>
-					<height>225</height>
+					<posx>636</posx>
+					<posy>167</posy>
+					<width>170</width>
+					<height>242</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<texture>views/list/overlay_poster.png</texture>
+			    <colordiffuse>77ffffff</colordiffuse>
+					<bordersize>6</bordersize>
 				</control>
 				<control type="image">
-					<posx>812</posx>
-					<posy>173</posy>
-					<width>413</width>
-					<height>235</height>
+					<posx>807</posx>
+					<posy>167</posy>
+					<width>422</width>
+					<height>242</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<fadetime>150</fadetime>
 			    <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[FanartThumbs]</texture>
@@ -66,12 +68,14 @@
 					<bordersize>6</bordersize>
 				</control>
 				<control type="image.">
-					<posx>815</posx>
-					<posy>178</posy>
-					<width>405</width>
-					<height>225</height>
+					<posx>807</posx>
+					<posy>167</posy>
+					<width>422</width>
+					<height>242</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<texture>views/list/overlay_fanart.png</texture>
+			    <colordiffuse>77ffffff</colordiffuse>
+					<bordersize>6</bordersize>
 				</control>
 				<control type="image">
 					<posx>670</posx>
@@ -523,7 +527,7 @@
 						<control type="label">
 							<posx>95</posx>
 							<posy>0</posy>
-							<width>455</width>
+							<width>440</width>
 							<height>44</height>
 							<font>FontSize_20</font>
 							<textcolor>77white</textcolor>
@@ -535,26 +539,49 @@
 	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="image">
-							<posx>530</posx>
-							<posy>13</posy>
-							<width>50</width>
-							<height>20</height>
+							<posx>535</posx>
+							<posy>11</posy>
+							<width>53</width>
+							<height>22</height>
 					    <colordiffuse>55ffffff</colordiffuse>
-					    <aspectratio align="right" aligny="center">keep</aspectratio>
+					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
 							<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
 						</control>
 						<control type="image">
 							<posx>555</posx>
-							<posy>13</posy>
-							<width>30</width>
-							<height>20</height>
-							<align>right</align>
-							<aligny>center</aligny>
+							<posy>11</posy>
+							<width>33</width>
+							<height>22</height>
 					    <colordiffuse>55ffffff</colordiffuse>
+					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
 							<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
 						</control>
+
+						<control type="image.">
+							<posx>550</posx>
+							<posy>11</posy>
+							<width>38</width>
+							<height>22</height>
+					    <colordiffuse>55ffffff</colordiffuse>
+					    <aspectratio align="center" aligny="center">keep</aspectratio>
+							<texture>flags/empty.png</texture>
+							<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+						</control>
+						<control type="label.">
+							<posx>569</posx>
+							<posy>0</posy>
+							<width>35</width>
+							<height>42</height>
+							<font>FontSize_16B</font>
+							<textcolor>55ffffff</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+              <label>$INFO[ListItem.Property(unWatchedEpisodes)]0</label>
+							<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+						</control>
+
 						<control type="image">
 							<posx>540</posx>
 							<posy>14</posy>
@@ -625,7 +652,7 @@
 						<control type="label">
 							<posx>95</posx>
 							<posy>0</posy>
-							<width>455</width>
+							<width>440</width>
 							<height>44</height>
 							<font>FontSize_20</font>
 							<textcolor>white</textcolor>
@@ -637,26 +664,49 @@
 	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="image">
-							<posx>530</posx>
-							<posy>13</posy>
-							<width>50</width>
-							<height>20</height>
+							<posx>535</posx>
+							<posy>11</posy>
+							<width>53</width>
+							<height>22</height>
 					    <colordiffuse>ffcccccc</colordiffuse>
-					    <aspectratio align="right" aligny="center">keep</aspectratio>
+					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
 							<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
 						</control>
 						<control type="image">
 							<posx>555</posx>
-							<posy>13</posy>
-							<width>30</width>
-							<height>20</height>
-							<align>right</align>
-							<aligny>center</aligny>
+							<posy>11</posy>
+							<width>33</width>
+							<height>22</height>
 					    <colordiffuse>ffcccccc</colordiffuse>
+					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
 							<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
 						</control>
+
+						<control type="image.">
+							<posx>550</posx>
+							<posy>11</posy>
+							<width>38</width>
+							<height>22</height>
+					    <colordiffuse>ffcccccc</colordiffuse>
+					    <aspectratio align="center" aligny="center">keep</aspectratio>
+							<texture>flags/empty.png</texture>
+							<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+						</control>
+						<control type="label.">
+							<posx>569</posx>
+							<posy>0</posy>
+							<width>35</width>
+							<height>42</height>
+							<font>FontSize_16B</font>
+							<textcolor>ffcccccc</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+              <label>$INFO[ListItem.Property(unWatchedEpisodes)]0</label>
+							<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+						</control>
+
 						<control type="image">
 							<posx>540</posx>
 							<posy>14</posy>
