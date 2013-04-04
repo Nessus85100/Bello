@@ -76,7 +76,7 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>553</width>
-					<height>74</height>
+					<height>72</height>
 					<visible>Control.HasFocus(450)</visible>
 					<texture>buttons/settings_fo.png</texture>
 				</control>
