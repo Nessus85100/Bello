@@ -20,20 +20,20 @@
 		<!-- ======================== -->
 		<!-- == Categories Buttons == -->
 		<!-- ======================== -->
-		<control type="group">
+		<control type="group" id="8000">
 				<posx>100</posx>
 				<posy>166</posy>
 	      <include>Window_OpenClose_Animation</include>
-			<control type="list" id="8000">
+			<control type="list" id="8800">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>295</width>
 				<height>414</height>
 				<itemgap>2</itemgap>
 				<onleft>9000</onleft>
-				<onright>8010</onright>
-				<onup>8000</onup>
-				<ondown>8000</ondown>
+				<onright>8900</onright>
+				<onup>8800</onup>
+				<ondown>8800</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
 				<itemlayout height="52" width="295">
@@ -63,7 +63,7 @@
 						<width>295</width>
 						<height>50</height>
 						<texture>buttons/catbullet_fo.png</texture>
-						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(8000)">Conditional</animation>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(8800)">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>40</posx>
@@ -97,21 +97,22 @@
 				</content>
 			</control>
 
-			<!-- ============= -->
-			<!-- == General == -->
-			<!-- ============= -->
-			<control type="group" id="8010">
+			<control type="group" id="8900">
+			
+				<!-- ============= -->
+				<!-- == General == -->
+				<!-- ============= -->
 				<control type="grouplist" id="8100">
 					<include>CloseAnimation</include>
-					<visible>Container(8000).Hasfocus(1)</visible>
+					<visible>Container(8800).Hasfocus(1)</visible>
 					<posx>297</posx>
 					<posy>0</posy>
 					<width>782</width>
 					<height>414</height>
 					<itemgap>2</itemgap>
 					<pagecontrol>60</pagecontrol>
-					<onleft>8000</onleft>
-					<onright>8000</onright>
+					<onleft>8800</onleft>
+					<onright>9000</onright>
 					<onup>8100</onup>
 					<ondown>8100</ondown>
 					<control type="radiobutton" id="8101">
@@ -166,15 +167,15 @@
 				<!-- ================= -->
 				<control type="grouplist" id="8200">
 					<include>CloseAnimation</include>
-					<visible>Container(8000).Hasfocus(2)</visible>
+					<visible>Container(8800).Hasfocus(2)</visible>
 					<posx>297</posx>
 					<posy>0</posy>
 					<width>782</width>
 					<height>414</height>
 					<itemgap>2</itemgap>
 					<pagecontrol>60</pagecontrol>
-					<onleft>8000</onleft>
-					<onright>8000</onright>
+					<onleft>8800</onleft>
+					<onright>9000</onright>
 					<onup>8200</onup>
 					<ondown>8200</ondown>
 				  <!-- Customize Music Button -->
@@ -192,8 +193,8 @@
 							<visible>ControlGroup(8201).HasFocus</visible>
 						</control>
 					  <control type="button" id="82011">
-								<onleft>8000</onleft>
-								<onright>8000</onright>
+								<onleft>8800</onleft>
+								<onright>9000</onright>
 								<onup>8263</onup>
 								<ondown>8203</ondown>
 						    <enable>!Skin.HasSetting(HideHomeMenuMusicButton)</enable>
@@ -473,21 +474,21 @@
 						<visible>Skin.HasSetting(HomeCategoriesSettings)</visible>
 					</control>					
 				</control>
-				
+
 				<!-- ================= -->
 				<!-- == Backgrounds == -->
 				<!-- ================= -->
 				<control type="grouplist" id="8300">
 					<include>CloseAnimation</include>
-					<visible>Container(8000).Hasfocus(3)</visible>
+					<visible>Container(8800).Hasfocus(3)</visible>
 					<posx>297</posx>
 					<posy>0</posy>
 					<width>782</width>
 					<height>414</height>
 					<itemgap>2</itemgap>
 					<pagecontrol>60</pagecontrol>
-					<onleft>8000</onleft>
-					<onright>8000</onright>
+					<onleft>8800</onleft>
+					<onright>9000</onright>
 					<onup>8300</onup>
 					<ondown>8300</ondown>
 					<control type="radiobutton" id="8301">
@@ -538,15 +539,15 @@
 				<!-- ============ -->
 				<control type="grouplist" id="8400">
 				<include>CloseAnimation</include>
-					<visible>Container(8000).Hasfocus(4)</visible>
+					<visible>Container(8800).Hasfocus(4)</visible>
 					<posx>297</posx>
 					<posy>0</posy>
 					<width>782</width>
 					<height>414</height>
 					<itemgap>2</itemgap>
 					<pagecontrol>60</pagecontrol>
-					<onleft>8000</onleft>
-					<onright>8000</onright>
+					<onleft>8800</onleft>
+					<onright>9000</onright>
 					<onup>8400</onup>
 					<ondown>8400</ondown>
 					<control type="button" id="8401">
@@ -642,123 +643,6 @@
             <onclick>XBMC.RunScript(script.tvtunes)</onclick>
             <visible>Skin.HasSetting(TVTunesEnabled)</visible>
 					</control>
-
-					<!--					
-					<control type="button" id="8406">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]2[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeVideosButton2))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeVideosButton2,xbmc.addon.video,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8407">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]3[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeVideosButton3))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeVideosButton3,xbmc.addon.video,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8408">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]4[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeVideosButton4))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeVideosButton4,xbmc.addon.video,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8409">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]5[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeVideosButton5))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeVideosButton5,xbmc.addon.video,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8410">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]1[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton1))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeMusicButton1,xbmc.addon.audio,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8411">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]2[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton2))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeMusicButton2,xbmc.addon.audio,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8412">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]3[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton3))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeMusicButton3,xbmc.addon.audio,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8413">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]4[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton4))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeMusicButton4,xbmc.addon.audio,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8414">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]5[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton5))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeMusicButton5,xbmc.addon.audio,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8415">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]1[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton1))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomePictureButton1,xbmc.addon.image,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8416">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]2[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton2))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomePictureButton2,xbmc.addon.image,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8417">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]3[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton3))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomePictureButton3,xbmc.addon.image,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8418">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]4[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton4))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomePictureButton4,xbmc.addon.image,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8419">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]5[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton5))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomePictureButton5,xbmc.addon.image,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8420">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]1[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton1))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeProgramButton1,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8421">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]2[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton2))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeProgramButton2,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8422">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]3[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton3))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeProgramButton3,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8423">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]4[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton4))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeProgramButton4,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="8424">
-            <include>SettingsButton</include>
-						<label>$LOCALIZE[24000] [B]5[/B]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton5))][/COLOR]</label2>
-						<onclick>Skin.SetAddon(HomeProgramButton5,xbmc.addon.executable)</onclick>
-					</control>
-					-->
 				</control>
 
 				<control type="scrollbar." id="60">
@@ -772,17 +656,19 @@
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>8400</onleft>
-					<onright>8000</onright>
+					<onright>8800</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 			    <animation effect="fade" start="100" end="0" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
-					<visible>Container(8000).Hasfocus(4)</visible>
+					<visible>Container(8800).Hasfocus(4)</visible>
 					<include>CloseAnimation</include>
 				</control>
 			</control>
 		</control>
-		
-    <!-- Header & Footer Labels -->
+
+		<!-- ============================ -->
+    <!-- == Header & Footer Labels == -->
+		<!-- ============================ -->
 		<control type="group">
 				<posx>120</posx>
 				<posy>163</posy>
@@ -807,12 +693,12 @@
 				<posy>425</posy>
 				<width>1050</width>
 				<height>100</height>
-				<textcolor>77white</textcolor>
+				<textcolor>44white</textcolor>
 				<shadowcolor>99000000</shadowcolor>
 				<font>FontSize_20</font>
 				<align>left</align>
 				<scroll>false</scroll>
-				<label>$INFO[Control.GetLabel(109)]</label>
+				<label>$LOCALIZE[31409]</label>
 		 </control>
 		</control>
 	 </control>

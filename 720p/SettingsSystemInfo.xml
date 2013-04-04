@@ -253,7 +253,7 @@
 				<posy>390</posy>
 				<width>1050</width>
 				<height>100</height>
-				<textcolor>77white</textcolor>
+				<textcolor>44white</textcolor>
 				<shadowcolor>99000000</shadowcolor>
 				<font>FontSize_20</font>
 			</control>

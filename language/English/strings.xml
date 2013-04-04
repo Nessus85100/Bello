@@ -168,15 +168,14 @@
 
   <!-- Description Category Labels -->
   <string id="31401">Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings.</string>
-  <string id="31402">Manage your video content. Includes library database options, files list, subtitles, scrapers, and playback options.</string>
-  <string id="31403">Configure how XBMC handles music. Setup playback and listing options, browsing for files and database and many more.</string>
-  <string id="31404">Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing.</string>
-  <string id="31405">Adjusting Weather is very easy with XBMC. Select a weather plugin and get live updates for up to three cities.</string>
-  <string id="31406">Manage your installed Add-ons. Browse and install Add-ons from xbmc.org and modify Add-ons settings.</string>
+  <string id="31402">Manage your video content. Includes library database options, subtitles, scrapers, and playback options.</string>
+  <string id="31403">Change playback settings, manage EPG data settings, recordings and parental control.</string>
+  <string id="31404">Configure how XBMC handles music. Setup playback and listing options, browsing files or database and many more.</string>
+  <string id="31405">Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing.</string>
+  <string id="31406">Adjusting Weather is very easy with XBMC. Select a weather plugin and get live updates for up to three cities.</string>
   <string id="31407">Set up XBMC's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration.</string>
   <string id="31408">Control core hardware and software functions, including audio and video hardware setup, autoplay and locking.</string>
-  <string id="31409">Choose from a variety of advanced settings and customization options to make your skin fit your needs and taste.</string>
+  <string id="31409">Choose from a variety of advanced settings and customization options to make "Bello" fit your needs and taste.</string>
   <string id="31410">With XBMC you can have several profiles, even a logon screen for controlled access.</string>
-  <string id="31411">Change playback settings, manage EPG data settings, recordings and parental control.</string>
 
  </strings>
