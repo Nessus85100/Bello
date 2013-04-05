@@ -315,7 +315,7 @@
 					<control type="fadelabel" id="1">
 						<posx>0</posx>
 						<posy>510r</posy>
-						<width>395</width>
+						<width>380</width>
 						<height>40</height>
 						<font>FontSize_20</font>
 						<align>left</align>
@@ -377,7 +377,7 @@
 					<control type="fadelabel" id="1">
 						<posx>0</posx>
 						<posy>510r</posy>
-						<width>395</width>
+						<width>380</width>
 						<height>40</height>
 						<font>FontSize_18</font>
 						<align>left</align>
@@ -470,14 +470,14 @@
 					<control type="fadelabel" id="1">
 						<posx>0</posx>
 						<posy>510r</posy>
-						<width>395</width>
+						<width>380</width>
 						<height>40</height>
 						<font>FontSize_20</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>99white</textcolor>
 					  <shadowcolor>55000000</shadowcolor>
-				    <label>$INFO[VideoPlayer.ChannelGroup,[COLOR=white]Channel Group:[/COLOR] ]</label>
+				    <label>$INFO[VideoPlayer.ChannelGroup,[COLOR=white]$LOCALIZE[31033]:[/COLOR] ]</label>
             <label>$INFO[VideoPlayer.NextTitle,[COLOR=white]$LOCALIZE[19031]:[/COLOR] ,]$INFO[VideoPlayer.NextStartTime, (,)]</label>
 					  <label>$INFO[VideoPlayer.NextStartTime,[COLOR=white]$LOCALIZE[19080][/COLOR] ,]$INFO[VideoPlayer.NextEndTime,  [COLOR=white]$LOCALIZE[19081][/COLOR] ,]</label>
             <scroll>false</scroll>
@@ -496,7 +496,7 @@
 				  <animation effect="slide" start="0,0" end="110,0"condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]">Conditional</animation>
 					<control type="label" id="1">
 						<posx>543</posx>
-						<posy>510r</posy>
+						<posy>509r</posy>
 						<width>300</width>
 						<height>40</height>
 						<font>FontSize_18</font>

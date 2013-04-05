@@ -781,7 +781,7 @@
 				<orientation>horizontal</orientation>
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
-		      <label>Scrolling...</label>
+		      <label>31026</label>
 				</control>
 				<control type="label">
 				  <include>TopBigLabel</include>
@@ -805,7 +805,7 @@
 				<orientation>horizontal</orientation>
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
-		      <label>Scrolling...</label>
+		      <label>31026</label>
 				</control>
 				<control type="label">
 				  <include>TopBigLabel</include>
@@ -920,7 +920,7 @@
 		      <font>ClockFont</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>99000000</shadowcolor>
-				  <label>AM</label>
+				  <label>31030</label>
 					<colordiffuse>grey</colordiffuse>
 				</control>
 				<control type="label" id="1">
@@ -932,7 +932,7 @@
 					<textcolor>blue</textcolor>
 					<shadowcolor>99000000</shadowcolor>
 		      <font>ClockFont</font>
-				  <label>PM</label>
+				  <label>31031</label>
 					<colordiffuse>grey</colordiffuse>
 				</control>
 			</control>
@@ -963,7 +963,7 @@
 		      <font>ClockFont</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>99000000</shadowcolor>
-				  <label>AM</label>
+				  <label>31030</label>
 					<colordiffuse>grey</colordiffuse>
 				</control>
 				<control type="label" id="1">
@@ -975,7 +975,7 @@
 					<textcolor>blue</textcolor>
 					<shadowcolor>99000000</shadowcolor>
 		      <font>ClockFont</font>
-				  <label>PM</label>
+				  <label>31031</label>
 					<colordiffuse>grey</colordiffuse>
 				</control>
 			</control>

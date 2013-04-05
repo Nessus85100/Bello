@@ -684,25 +684,113 @@
 				<onleft>Close</onleft>
 				<onright>Close</onright>
 		    <include>TopOptionsSlideAnimations</include>
+				<control type="button" id="991">
+					<description>button template</description>
+					<width>460</width>
+					<height>40</height>
+					<font>FontSize_22</font>
+					<textcolor>77white</textcolor>
+					<focusedcolor>white</focusedcolor>
+				  <disabledcolor>33white</disabledcolor>
+			    <shadowcolor>99000000</shadowcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<textwidth>430</textwidth>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
+					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+				  <onclick>SendClick(1001)</onclick>
+	        <label>31028</label>
+				</control>
+				<control type="button" id="992">
+					<description>button template</description>
+					<width>460</width>
+					<height>40</height>
+					<font>FontSize_22</font>
+					<textcolor>77white</textcolor>
+					<focusedcolor>white</focusedcolor>
+				  <disabledcolor>33white</disabledcolor>
+			    <shadowcolor>99000000</shadowcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<textwidth>430</textwidth>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
+					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+				  <onclick>SendClick(1002)</onclick>
+	        <label>31029</label>
+				</control>
+				<control type="button" id="993">
+					<description>button template</description>
+					<width>460</width>
+					<height>40</height>
+					<font>FontSize_22</font>
+					<textcolor>77white</textcolor>
+					<focusedcolor>white</focusedcolor>
+				  <disabledcolor>33white</disabledcolor>
+			    <shadowcolor>99000000</shadowcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<textwidth>430</textwidth>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
+					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+				  <onclick>SendClick(1003)</onclick>
+	        <label>15015</label>
+				</control>
+				<control type="button" id="994">
+					<description>button template</description>
+					<width>460</width>
+					<height>40</height>
+					<font>FontSize_22</font>
+					<textcolor>77white</textcolor>
+					<focusedcolor>white</focusedcolor>
+				  <disabledcolor>33white</disabledcolor>
+			    <shadowcolor>99000000</shadowcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<textwidth>430</textwidth>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
+					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+				  <onclick>SendClick(1004)</onclick>
+	        <label>118</label>
+				</control>
+				<control type="button" id="995">
+					<description>button template</description>
+					<width>460</width>
+					<height>40</height>
+					<font>FontSize_22</font>
+					<textcolor>77white</textcolor>
+					<focusedcolor>white</focusedcolor>
+				  <disabledcolor>33white</disabledcolor>
+			    <shadowcolor>99000000</shadowcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<textwidth>430</textwidth>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
+					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+				  <onclick>SendClick(1005)</onclick>
+	        <label>20019</label>
+				</control>
 			</control>
 			<control type="button" id="1000">
 				<description>button template</description>
-				<width>460</width>
-				<height>40</height>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>33white</disabledcolor>
-		    <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<font>FontSize_22</font>
-			</control>
+			  <include>TopButton</include>
+			  <label>-</label>
+        <visible>false</visible>
+			</control>			
 	</include>
 
 	<include name="ContextMenuPVRChannelManager">

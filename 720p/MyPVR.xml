@@ -87,7 +87,7 @@
 				<orientation>horizontal</orientation>
 				<control type="label">
 				  <include>TopBigLabel</include>
-				  <label>Live TV:</label>
+				  <label>$LOCALIZE[31010]:</label>
 				</control>
 				<control type="label">
 					<description>TV Channels</description>

@@ -296,14 +296,14 @@
 				<control type="button" id="1006">
 					<description>PVR Guide</description>
 			    <include>TopButton</include>
-				  <label>EPG</label>
+				  <label>19069</label>
 					<onclick>ActivateWindow(PVROSDGuide)</onclick>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="button" id="1007">
 					<description>Teletext</description>
 			    <include>TopButton</include>
-				  <label>Teletext</label>
+				  <label>31034</label>
 				  <onclick>ActivateWindow(Teletext)</onclick>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>

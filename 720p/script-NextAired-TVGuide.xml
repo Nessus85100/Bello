@@ -811,13 +811,6 @@
 				  <include>TopButton</include>
 		      <visible>!Skin.HasSetting(HideExtraInfo)</visible>
 				</control>
-				<control type="button." id="12">
-					<description>Get Extra Art</description>
-				  <label>-</label>
-				  <include>TopButton</include>
-          <onclick>XBMC.RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,landscape,clearlogo,clearart)</onclick>
-          <visible>System.HasAddon(script.artwork.downloader)</visible>
-				</control>
 				<control type="button" id="8">
 					<description>Settings</description>
 				  <label>5</label>
@@ -908,13 +901,6 @@
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(9)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(9)" reversible="true">Conditional</animation>
 		      <visible>!Skin.HasSetting(HideExtraInfo)</visible>
-				</control>
-				<control type="label.">
-					<description>Get Extra Art</description>
-				  <include>TopSmallLabel</include>
-				  <label>Get Extra Art</label>
-					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(12)" reversible="true">Conditional</animation>
-          <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(12)" reversible="true">Conditional</animation>
 				</control>
 				<control type="label">
 					<description>Settings</description>

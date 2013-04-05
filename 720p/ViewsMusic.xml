@@ -434,7 +434,6 @@
 				<pagecontrol>60</pagecontrol>
 			  <scrolltime tween="cubic" easing="out">300</scrolltime>
 				<itemlayout height="45" width="710">
-		      <control type="group">
 						<control type="label">
 							<posx>19</posx>
 							<posy>0</posy>
@@ -443,7 +442,6 @@
 							<font>FontSize_20</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>․  ․  ․</label>
@@ -457,7 +455,6 @@
 							<font>FontSize_20</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Year]</label>
@@ -471,7 +468,6 @@
 							<font>FontSize_20</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 				      <label>$VAR[MusicLabel]</label>
@@ -485,7 +481,6 @@
 							<font>FontSize_18</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$VAR[MusicLabel2]</label>
@@ -499,13 +494,11 @@
 							<font>FontSize_18</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
 			        <visible>Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)</visible>
 						</control>
-          </control>
 				</itemlayout>
 				<focusedlayout height="45" width="710">
 		      <control type="group">
@@ -518,7 +511,6 @@
 							<font>FontSize_20</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>․  ․  ․</label>
@@ -532,7 +524,6 @@
 							<font>FontSize_20</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Year]</label>
@@ -546,7 +537,6 @@
 							<font>FontSize_20</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 				      <label>$VAR[MusicLabel]</label>
@@ -560,7 +550,6 @@
 							<font>FontSize_18</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$VAR[MusicLabel2]</label>
@@ -574,7 +563,6 @@
 							<font>FontSize_18</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>

@@ -210,7 +210,7 @@
 		          <property name="Custom-Folder">$INFO[Skin.String(Programs-Custom-Folder)]</property>
 					 </item>
 					 <item id="14">
-							<label>Trailers</label>
+							<label>$LOCALIZE[31018]</label>
 							<onclick>ActivateWindow(videos,plugin://plugin.video.the.trailers/,return)</onclick>
 							<thumb>special://skin/backgrounds/videos.jpg</thumb>
 							<icon>-</icon>
@@ -1247,7 +1247,7 @@
 	      <include>HomeSlideAnimations</include>
 				<control type="label">
 				  <include>TopBigLabel</include>
-					<label>Home</label>
+					<label>10000</label>
 				</control>
 				<control type="label">
 				  <include>TopSmallLabel</include>
