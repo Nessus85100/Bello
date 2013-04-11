@@ -30,7 +30,7 @@
 			<texture background="true">$INFO[Skin.String(CustomImageBackgroundPath)]</texture>
 			<include>BackgroundFade</include>
 			<fadetime>500</fadetime>
-			<visible>!IsEmpty(Skin.String(CustomImageBackgroundPath))</visible>
+			<visible>Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomImageBackgroundPath))</visible>
       <visible>![![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + Window.IsVisible(weather) + Container(20).HasFocus(8)]</visible>
 		</control>
 		<control type="multiimage">
@@ -42,7 +42,7 @@
 			<timeperimage>30000</timeperimage>
 			<randomize>true</randomize>
       <loop>yes</loop>
-			<visible>!IsEmpty(Skin.String(CustomFolderBackgroundPath))</visible>
+			<visible>Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomFolderBackgroundPath))</visible>
       <visible>![![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + Window.IsVisible(weather) + Container(20).HasFocus(8)]</visible>
 		</control>		
 	  <include condition="[Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">BackgroundWeather</include>
@@ -175,13 +175,6 @@
 			<visible>Control.HasFocus(83)</visible>
 		  <visible>!Skin.HasSetting(HideBGFanart)</visible>
 		</control>
-		<control type="image.">
-			<include>FullscreenDimensions</include>
-			<texture background="true">windows/bg/black_content.png</texture>
-			<include>BackgroundFade</include>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83)</visible>
-	  </control>
 	</include>
 
 	<include name="BackgroundVignette">
