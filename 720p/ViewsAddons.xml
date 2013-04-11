@@ -3,7 +3,7 @@
 
 	 <control type="group">
 		<visible>Control.IsVisible(50)</visible>
-		<visible>Window.IsVisible(AddonBrowser) | Container.Content(Addons) | Window.IsVisible(Programs)</visible>
+		<visible>Window.IsVisible(AddonBrowser) | Window.IsVisible(Programs) | Container.Content(Addons)</visible>
     <include>DialogZoomInOutAnimation</include>
 
 
