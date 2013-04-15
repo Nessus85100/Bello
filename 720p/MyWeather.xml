@@ -228,7 +228,7 @@
 					<control type="label">
 					  <include>TopZoomedSmallLabel</include>
 				    <label>$LOCALIZE[31235]</label>
-			      <visible>![Skin.String(WeatherUnderground,2) | Skin.String(WeatherUnderground,3) | Skin.String(WeatherUnderground,4) | Skin.String(WeatherUnderground,5)]</visible>
+			      <visible>![Skin.String(WeatherUnderground,2) | Skin.String(WeatherUnderground,3) | Skin.String(WeatherUnderground,4)]</visible>
 					</control>
 					<control type="label">
 					  <include>TopZoomedSmallLabel</include>
@@ -282,7 +282,7 @@
 			<ondown>3</ondown>
 			<onleft>-</onleft>
 			<onright>-</onright>
-			<onfocus condition="Skin.String(WeatherUnderground,5)">SetFocus(51)</onfocus>
+			<onfocus condition="Skin.String(WeatherUnderground,4)">SetFocus(51)</onfocus>
 			<onfocus condition="!StringCompare(Weather.Plugin,weather.wunderground)">SetFocus(52)</onfocus>
 			<visible allowhiddenfocus="true">false</visible>
     </control>
