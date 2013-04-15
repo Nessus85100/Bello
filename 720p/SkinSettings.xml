@@ -319,7 +319,7 @@
 					<control type="radiobutton" id="8280">
 						<description>Custom Home Buttons</description>
 	          <include>SettingsRadioButton</include>
-						<label>Custom Home Buttons</label>
+						<label>31119</label>
 						<onclick>Skin.ToggleSetting(CustomHomeButtons)</onclick>
 						<selected>Skin.HasSetting(CustomHomeButtons)</selected>
 					</control>
