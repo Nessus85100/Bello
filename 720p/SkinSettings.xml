@@ -315,7 +315,7 @@
 						<selected>Skin.HasSetting(HideSettingsSubMenu)</selected>
 					</control>
 
-				  <!-- Custom HomeMenu Buttons -->
+				  <!-- Custom Home Buttons -->
 					<control type="radiobutton" id="8280">
 						<description>Custom Home Buttons</description>
 	          <include>SettingsRadioButton</include>
@@ -359,7 +359,7 @@
 						<visible>Skin.HasSetting(CustomHomeButtons)</visible>
 					</control>
 
-				  <!-- Hide Home Categories -->
+				  <!-- Hide Home Categories Buttons -->
 					<control type="radiobutton" id="8250">
 						<description>Home Categories Buttonn</description>
 	          <include>SettingsRadioButton</include>
@@ -449,6 +449,8 @@
 						<selected>Skin.HasSetting(HideHomeMenuTrailersButton)</selected>
 						<visible>Skin.HasSetting(HomeCategoriesSettings)</visible>
 					</control>
+
+				  <!-- Show Home Categories Buttons -->
 					<control type="radiobutton" id="8261">
 						<description>Show Videos Button</description>
 	          <include>SettingsRadioButton</include>
