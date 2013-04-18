@@ -497,26 +497,19 @@
 						<onclick>Skin.ToggleSetting(HideBGFanart)</onclick>
 						<selected>Skin.HasSetting(HideBGFanart)</selected>
 					</control>
-					<control type="radiobutton." id="8302">
-	          <include>SettingsRadioButton</include>
-						<label>31131</label>
-						<onclick>Skin.ToggleSetting(HomeFanartSlideShow)</onclick>
-						<selected>Skin.HasSetting(HomeFanartSlideShow)</selected>
-						<enable>!Skin.HasSetting(HideBGFanart)</enable>
-					</control>
-					<control type="radiobutton" id="8303">
+					<control type="radiobutton" id="8302">
 	          <include>SettingsRadioButton</include>
 						<label>31132</label>
 						<onclick>Skin.ToggleSetting(HideBGVideo)</onclick>
 						<selected>Skin.HasSetting(HideBGVideo)</selected>
 					</control>
-					<control type="radiobutton" id="8304">
+					<control type="radiobutton" id="8303">
 	          <include>SettingsRadioButton</include>
 						<label>31133</label>
 						<onclick>Skin.ToggleSetting(CustomBackground)</onclick>
 						<selected>Skin.HasSetting(CustomBackground)</selected>
 					</control>
-					<control type="button" id="8305">
+					<control type="button" id="8304">
 	          <include>SettingsButton</include>
 						<label> • $LOCALIZE[31135]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(CustomImageBackgroundPath)][/COLOR]</label2>
@@ -524,13 +517,21 @@
 						<onclick>Skin.SetImage(CustomImageBackgroundPath)</onclick>
 						<visible>Skin.HasSetting(CustomBackground)</visible>
 					</control>
-					<control type="button" id="8306">
+					<control type="button" id="8305">
 	          <include>SettingsButton</include>
 						<label> • $LOCALIZE[31136]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(CustomFolderBackgroundPath)][/COLOR]</label2>
 						<onclick>Skin.Reset(CustomImageBackgroundPath)</onclick>
 						<onclick>Skin.SetPath(CustomFolderBackgroundPath)</onclick>
 						<visible>Skin.HasSetting(CustomBackground)</visible>
+					</control>
+					<control type="radiobutton" id="8306">
+	          <include>SettingsRadioButton</include>
+						<label>    • $LOCALIZE[31131]</label>
+						<onclick>Skin.ToggleSetting(ShowCustomBackgroundOnHomeOnly)</onclick>
+						<selected>Skin.HasSetting(ShowCustomBackgroundOnHomeOnly)</selected>
+						<visible>Skin.HasSetting(CustomBackground)</visible>
+						<enable>!IsEmpty(Skin.String(CustomFolderBackgroundPath))</enable>
 					</control>
 				</control>
 

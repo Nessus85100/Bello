@@ -3,7 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>BackgroundContent</include>
-		<include>HomeFanartSlideShow</include>
+		<include>HomeBackground</include>
 		<include>RecentAndSkinWidgetsFanart</include>
 		<include>BackgroundVignette</include>
 

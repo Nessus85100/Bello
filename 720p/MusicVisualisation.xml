@@ -48,7 +48,7 @@
 					<posx>320</posx>
 					<posy>900</posy>
 					<width>1350</width>
-					<label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
+					<label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
 					<scroll>true</scroll>
 					<pauseatend>0</pauseatend>
 					<font>FontSize_48</font>
@@ -105,7 +105,7 @@
 					<posx>0</posx>
 					<posy>600</posy>
 					<width>1350</width>
-					<label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
+					<label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
 					<scroll>true</scroll>
 					<pauseatend>0</pauseatend>
 					<font>FontSize_48</font>
@@ -161,7 +161,7 @@
 					<posx>580</posx>
 					<posy>900</posy>
 					<width>1350</width>
-					<label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
+					<label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
 					<scroll>true</scroll>
 					<pauseatend>0</pauseatend>
 					<font>FontSize_48</font>

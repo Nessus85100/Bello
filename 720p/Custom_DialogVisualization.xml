@@ -60,6 +60,7 @@
 				<label>$LOCALIZE[31308]</label>
         <include>DialogsButton</include>
 				<onclick>SendClick(120,500)</onclick>
+				<visible>!Skin.HasSetting(Vis-Visualization)</visible>
 			</control>
 			<control type="button" id="993">
 				<description>Visualization Presets Button</description>
@@ -67,6 +68,7 @@
 				<label>$LOCALIZE[31309]</label>
         <include>DialogsButton</include>
 				<onclick>ActivateWindow(visualisationpresetlist)</onclick>
+				<visible>!Skin.HasSetting(Vis-Visualization)</visible>
 			</control>
 			<control type="button" id="994">
 				<description>Visualization Settings Button</description>
@@ -74,6 +76,7 @@
 				<label>$LOCALIZE[31310]</label>
         <include>DialogsButton</include>
 				<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+				<visible>!Skin.HasSetting(Vis-Visualization)</visible>
 			</control>
 			<control type="radiobutton" id="995">
 				<description>Enable Fanart Button</description>
