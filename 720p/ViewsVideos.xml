@@ -474,8 +474,8 @@
 				</control>
 			</control>	
 		</control>
-	
-	
+
+
 		<!-- ==== Main List ==== -->
 		<control type="group">
 			<include>ListViewAnimationsLeft</include>
@@ -2580,7 +2580,7 @@
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>
-							<visible>!IsEmpty(ListItem.Art(banner)</visible>
+							<visible>!IsEmpty(ListItem.Art(banner))</visible>
 						</control>
 						<control type="image">
 							<posx>23</posx>
@@ -2591,7 +2591,7 @@
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>
-							<visible>IsEmpty(ListItem.Art(banner)</visible>
+							<visible>IsEmpty(ListItem.Art(banner))</visible>
 						</control>
 						<control type="image">
 							<posx>23</posx>

@@ -316,7 +316,7 @@
 			<include>OSDPlotAnimation</include>
 	    <visible>Window.IsActive(VideoOSD)</visible>
 	    <visible>!IsEmpty(VideoPlayer.Plot) + Control.HasFocus(200)</visible>
-			<animation effect="slide" start="0,0" end="110,0"condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]">Conditional</animation>
 			<control type="label">
 				<description>Title label</description>
 				<height>30</height>

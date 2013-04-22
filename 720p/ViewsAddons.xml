@@ -7,9 +7,9 @@
     <include>DialogZoomInOutAnimation</include>
 
 
-	  <!-- =========================== -->
+		<!-- =========================== -->
 		<!-- ==== Info & Thumb Code ==== -->
-	  <!-- =========================== -->
+		<!-- =========================== -->
 		<control type="group">
 			<include>ListViewAnimationsRight</include>
 			<control type="group">

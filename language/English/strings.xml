@@ -37,6 +37,10 @@
   <string id="31033">Channel Group</string>
   <string id="31034">Teletext</string>
   <string id="31035">REC</string>
+  <string id="31036">Close</string>
+  <string id="31037">Change Rating</string>
+  <string id="31038">Esc</string>
+  <string id="31039">IP Address</string>
 
   <!-- View Type labels -->
   <string id="31080">Slide</string>
@@ -142,6 +146,7 @@
   <string id="31235">Current Weather Conditions</string>
   <string id="31236">Forecast</string>
   <string id="31237">View</string>
+  <string id="31238">No Shows Airing Today</string>
 
   <!-- Playlist Editor labels -->
   <string id="31280">Open Playlist</string>

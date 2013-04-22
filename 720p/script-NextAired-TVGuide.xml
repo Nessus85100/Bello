@@ -952,7 +952,7 @@
 					  <description>Totals</description>
 					  <include>TopZoomedSmallLabel</include>
 				    <label>$INFO[Window(Home).Property(NextAired.Total),,  Shows Listed]</label>
-				    <label>No Shows Airing Today</label>
+				    <label>31238</label>
 			      <scroll>false</scroll>
 			      <scrollout>false</scrollout>
 			      <scrollspeed>100</scrollspeed>

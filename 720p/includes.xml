@@ -761,7 +761,7 @@
 				<include>CommonSlideAnimations</include>
 				<visible>!ControlGroup(9000).HasFocus + !Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(filestackingdialog) + !Window.IsActive(MovieInformation) + !Window.IsActive(MusicInformation) + !Window.IsActive(SongInformation) + !Window.IsActive(AddonInformation) + !Window.IsActive(musicplaylisteditor) + !Window.IsActive(script-globalsearch-main.xml)</visible>
 			</control>
-		</control>		
+		</control>
 	</include>	
 
 	<include name="CommonScrollingLetters">
@@ -891,7 +891,7 @@
 			    <align>right</align>
 			    <aligny>center</aligny>
 					<scroll>false</scroll>
-					<label>$INFO[Window(Weather).Property(Current.Temperature)]°</label>
+					<label>$INFO[Window(Weather).Property(Current.Temperature)]Â°</label>
 					<visible>Weather.IsFetched</visible>
 				</control>
 		  </control>
@@ -980,6 +980,33 @@
 				</control>
 			</control>
 	  </control>
+
+		<control type="group">
+			<posx>-25</posx>
+			<posy>-43</posy>
+      <visible>PVR.IsRecording</visible>
+      <animation effect="fade" start="0" end="100" delay="500" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
+			<control type="label.">
+				<posx>10</posx>
+				<posy>3</posy>
+				<width>100</width>
+				<height>32</height>
+				<font>FontSize_22B</font>
+				<textcolor>red</textcolor>
+				<shadowcolor>AA000000</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>R</label>
+			</control>
+      <control type="image">
+      	<posx>0</posx>
+      	<posy>0</posy>
+      	<width>38</width>
+      	<height>38</height>
+				<aspectratio>keep</aspectratio>
+      	<texture>windows/pvr/rec.png</texture>
+      </control>
+		</control>
 	</include>	
 
 	<variable name="SettingsCategoryDescription">
@@ -1025,10 +1052,10 @@
 		<value condition="Window.IsActive(Programs)">$INFO[ListItem.Property(Addon.Summary)]</value>
 	</variable>
 
-  <!-- NextAired Info <--
+  <!-- NextAired Info
 	<variable name="NextAiredInfoListView-DISABLED">
-		<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$INFO[Window(Home).Property(NextAired.NextDate), • $LOCALIZE[31215] ]</value>
-		<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + [IsEmpty(Window(Home).Property(NextAired.NextDate)) | StringCompare(Window(Home).Property(NextAired.Status),canceled/ended)]">$INFO[Window(Home).Property(NextAired.Status), • ]</value>
+		<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$INFO[Window(Home).Property(NextAired.NextDate), â€¢ $LOCALIZE[31215] ]</value>
+		<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + [IsEmpty(Window(Home).Property(NextAired.NextDate)) | StringCompare(Window(Home).Property(NextAired.Status),canceled/ended)]">$INFO[Window(Home).Property(NextAired.Status), â€¢ ]</value>
 	</variable>
  -->		
 
@@ -1152,14 +1179,6 @@
 		<value condition="StringCompare(Weather.Plugin,weather.weatherplus)">$INFO[Window.Property(Alerts.Label)]</value>
 	</variable>
 
-
-
-  <variable name="PVRListIcon">
-    <value condition="ListItem.IsEncrypted + [IsEmpty(ListItem.Icon) | IsEmpty(ListItem.Thumb)]">windows/pvr/encrypted.png</value>
-		<value condition="Skin.String(PVRView,1) | Skin.String(PVRView,2)">$INFO[ListItem.Icon]</value>
-		<value condition="Skin.String(PVRView,3) | Skin.String(PVRView,4)">$INFO[ListItem.Thumb]</value>
-  </variable>
-
 	<variable name="PVRTimeProgress">
 		<value condition="!IntegerGreaterThan(ListItem.Progress,5)">windows/pvr/clock_progress/5.png</value>
 		<value condition="IntegerGreaterThan(ListItem.Progress,5) + !IntegerGreaterThan(ListItem.Progress,10)">windows/pvr/clock_progress/10.png</value>
@@ -1184,87 +1203,10 @@
 		<value condition="IntegerGreaterThan(ListItem.Progress,100)">windows/pvr/clock_progress/100.png</value>
 	</variable>
 
-
-	<variable name="PVRTimeProgress2">
-		<value condition="!IntegerGreaterThan(ListItem.Progress,10)">windows/pvr/clock_progress/5.png</value>
-		<value condition="IntegerGreaterThan(ListItem.Progress,10) + !IntegerGreaterThan(ListItem.Progress,20)">windows/pvr/clock_progress/10.png</value>
-		<value condition="IntegerGreaterThan(ListItem.Progress,20) + !IntegerGreaterThan(ListItem.Progress,30)">windows/pvr/clock_progress/15.png</value>
-		<value condition="IntegerGreaterThan(ListItem.Progress,30) + !IntegerGreaterThan(ListItem.Progress,40)">windows/pvr/clock_progress/20.png</value>
-		<value condition="IntegerGreaterThan(ListItem.Progress,40) + !IntegerGreaterThan(ListItem.Progress,50)">windows/pvr/clock_progress/25.png</value>
-		<value condition="IntegerGreaterThan(ListItem.Progress,50) + !IntegerGreaterThan(ListItem.Progress,60)">windows/pvr/clock_progress/30.png</value>
-		<value condition="IntegerGreaterThan(ListItem.Progress,60) + !IntegerGreaterThan(ListItem.Progress,70)">windows/pvr/clock_progress/35.png</value>
-		<value condition="IntegerGreaterThan(ListItem.Progress,70) + !IntegerGreaterThan(ListItem.Progress,80)">windows/pvr/clock_progress/40.png</value>
-		<value condition="IntegerGreaterThan(ListItem.Progress,80) + !IntegerGreaterThan(ListItem.Progress,90)">windows/pvr/clock_progress/45.png</value>
-		<value condition="IntegerGreaterThan(ListItem.Progress,90) + !IntegerGreaterThan(ListItem.Progress,95)">windows/pvr/clock_progress/50.png</value>		
-		<value condition="IntegerGreaterThan(ListItem.Progress,95) + !IntegerGreaterThan(ListItem.Progress,99)">windows/pvr/clock_progress/55.png</value>		
-		<value condition="IntegerGreaterThan(ListItem.Progress,99)">windows/pvr/clock_progress/0.png</value>
-	</variable>
-
-
   <variable name="PVRTimersRadioButton">
     <value condition="!StringCompare(ListItem.Comment,$LOCALIZE[305]) + !IsEmpty(ListItem.ChannelName)">buttons/radio_button_nf.png</value>
     <value condition="StringCompare(ListItem.Comment,$LOCALIZE[305]) + !IsEmpty(ListItem.ChannelName)">buttons/radio_button_fo.png</value>
   </variable>
-
-
-
-	<include name="LiveTVTimeProgressLayout.">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>55</width>
-			<height>55</height>
-			<aspectratio>stretch</aspectratio>
-	    <colordiffuse>99ffffff</colordiffuse>
-		  <animation effect="fade" end="75" condition="true">Conditional</animation>
-	</include>
-
-	<include name="LiveTVTimeProgress.">
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/5.png</texture>
-			<visible>!IntegerGreaterThan(ListItem.Progress,0)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/10.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,10) + !IntegerGreaterThan(ListItem.Progress,15)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/15.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,15) + !IntegerGreaterThan(ListItem.Progress,20)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/20.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,20) + !IntegerGreaterThan(ListItem.Progress,25)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/25.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,25) + !IntegerGreaterThan(ListItem.Progress,30)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/30.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,30) + !IntegerGreaterThan(ListItem.Progress,35)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/35.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,35) + !IntegerGreaterThan(ListItem.Progress,40)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/40.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,40) + !IntegerGreaterThan(ListItem.Progress,45)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/45.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,45) + !IntegerGreaterThan(ListItem.Progress,50)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/50.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,50) + !IntegerGreaterThan(ListItem.Progress,55)</visible>
-		</control>
-		<control type="image">
-			<texture background="true">windows/pvr/clock_progress/55.png</texture>
-			<visible>IntegerGreaterThan(ListItem.Progress,55)</visible>
-		</control>
-	</include>
-
 
 	<include name="DialogsClose">		
 		<onload>Dialog.Close(contextmenu)</onload>
