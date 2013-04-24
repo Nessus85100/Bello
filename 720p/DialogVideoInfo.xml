@@ -299,7 +299,7 @@
 							<font>FontSize_20</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
-				      <label fallback="195">$INFO[Window(Home).Property(NextAired.Status]</label>
+				      <label fallback="195">$INFO[Window(Home).Property(NextAired.Status)]</label>
 						</control>
 					</control>
 					<!-- Episodes label -->
@@ -500,39 +500,6 @@
 				<include>AspectRatioFlagsConditions</include>
 				<include>VideoCodecFlagsConditions</include>
 				<include>AudioFlagsConditions</include>
-				
-				<control type="image.">
-							<include>VideoFlagsConditions</include>
-					<texture>flags/video/dvix.png</texture>
-				</control>
-				<control type="image.">
-							<include>VideoCodecFlagsConditions</include>
-					<texture>flags/video/xvid.png</texture>
-				</control>
-				<control type="image.">
-							<include>VideoCodecFlagsConditions</include>
-					<texture>flags/video/avc1.png</texture>
-				</control>				
-				<control type="image.">
-							<include>VideoCodecFlagsConditions</include>
-					<texture>flags/video/wmv.png</texture>
-				</control>		
-				<control type="image.">
-							<include>VideoCodecFlagsConditions</include>
-					<texture>flags/video/flv.png</texture>
-				</control>		
-				<control type="image.">
-							<include>VideoCodecFlagsConditions</include>
-					<texture>flags/video/h264.png</texture>
-				</control>		
-				<control type="image.">
-							<include>VideoCodecFlagsConditions</include>
-					<texture>flags/video/mpeg.png</texture>
-				</control>
-				<control type="image.">
-							<include>VideoCodecFlagsConditions</include>
-					<texture>flags/audio/ac3.png</texture>
-				</control>		
 			</control>
 
 

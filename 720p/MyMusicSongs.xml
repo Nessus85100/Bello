@@ -24,7 +24,7 @@
 				<orientation>horizontal</orientation>
 				<onleft>9111</onleft>
 				<onright>9111</onright>
-				<onup>-</onup>
+				<onup>noop</onup>
 				<ondown>50</ondown>
 				<onback>50</onback>
 				<control type="button" id="2">
@@ -127,25 +127,25 @@
 				<orientation>horizontal</orientation>
 				<onleft>9222</onleft>
 				<onright>9222</onright>
-				<onup>-</onup>
+				<onup>noop</onup>
 				<ondown>9111</ondown>
 				<onback>9111</onback>
 				<control type="button" id="90">
 					<description>oooooo</description>
 				  <label>-</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				  <include>TopButton</include>
 				</control>
 				<control type="button" id="91">
 					<description>oooooo</description>
 				  <label>-</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				  <include>TopButton</include>
 				</control>
 				<control type="button" id="92">
 					<description>oooooo</description>
 				  <label>-</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				  <include>TopButton</include>
 				</control>
 			</control>

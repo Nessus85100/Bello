@@ -17,9 +17,9 @@
 			  </control>
 			  <control type="image">
 			    <description>background image</description>
-			    <include>FullscreenDimentions</include>
+			    <include>FullscreenDimensions</include>
 					<texture>dialogs/other/bg_filebrowser.png</texture>
-					<colordiffuse>D9FFFFFF</colordiffuse>
+					<colordiffuse>FAFFFFFF</colordiffuse>
 					<visible>Window.IsActive(musicosd) | Window.IsActive(videoosd)</visible>
 			  </control>
 				<control type="label" id="411">

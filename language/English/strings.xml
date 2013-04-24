@@ -41,6 +41,10 @@
   <string id="31037">Change Rating</string>
   <string id="31038">Esc</string>
   <string id="31039">IP Address</string>
+  <string id="31040">Created by</string>
+  <string id="31041">Shows Listed</string>
+  <string id="31042">Shows Airing Today</string>
+  <string id="31043">Creator</string>
 
   <!-- View Type labels -->
   <string id="31080">Slide</string>
@@ -143,7 +147,7 @@
 	<string id="31232">Min Humidity</string>
   <string id="31233">Chance of Precipitation</string>
   <string id="31234">Fetching Forecast Info for...</string>
-  <string id="31235">Current Weather Conditions</string>
+  <string id="31235">Current Forecast</string>
   <string id="31236">Forecast</string>
   <string id="31237">View</string>
   <string id="31238">No Shows Airing Today</string>

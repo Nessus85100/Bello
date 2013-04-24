@@ -785,7 +785,7 @@
 				<orientation>horizontal</orientation>
 				<onleft>9111</onleft>
 				<onright>9111</onright>
-				<onup>-</onup>
+				<onup>noop</onup>
 				<ondown>2000</ondown>
 				<onback>2000</onback>
 				<control type="radiobutton" id="10">
@@ -938,8 +938,8 @@
 			    <control type="fadelabel">
 					  <description>Totals</description>
 					  <include>TopZoomedSmallLabel</include>
-				    <label>$INFO[Window(Home).Property(NextAired.Total),,  Shows Listed]</label>
-				    <label>$INFO[Window(Home).Property(NextAired.TodayTotal),,  Shows Airing Today]</label>
+				    <label>$INFO[Window(Home).Property(NextAired.Total),,  $LOCALIZE[31041]]</label>
+				    <label>$INFO[Window(Home).Property(NextAired.TodayTotal),,  $LOCALIZE[31042]]</label>
 			      <scroll>false</scroll>
 			      <scrollout>false</scrollout>
 			      <scrollspeed>100</scrollspeed>
@@ -951,7 +951,7 @@
 			    <control type="fadelabel">
 					  <description>Totals</description>
 					  <include>TopZoomedSmallLabel</include>
-				    <label>$INFO[Window(Home).Property(NextAired.Total),,  Shows Listed]</label>
+				    <label>$INFO[Window(Home).Property(NextAired.Total),,  $LOCALIZE[31041]]</label>
 				    <label>31238</label>
 			      <scroll>false</scroll>
 			      <scrollout>false</scrollout>

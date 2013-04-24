@@ -32,7 +32,7 @@
 					<orientation>horizontal</orientation>
 					<onleft>9111</onleft>
 					<onright>9111</onright>
-					<onup>-</onup>
+					<onup>noop</onup>
 					<ondown>50</ondown>
 					<onback>50</onback>
 					<control type="button" id="3">
@@ -281,8 +281,8 @@
 			<description>Get Focus Fake Button</description>
 			<onup>3</onup>
 			<ondown>3</ondown>
-			<onleft>-</onleft>
-			<onright>-</onright>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
 			<onfocus condition="Skin.String(WeatherUnderground,4)">SetFocus(51)</onfocus>
 			<onfocus condition="!StringCompare(Weather.Plugin,weather.wunderground)">SetFocus(52)</onfocus>
 			<visible allowhiddenfocus="true">false</visible>

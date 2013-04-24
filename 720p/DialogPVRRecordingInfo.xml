@@ -115,8 +115,8 @@
 					<orientation>horizontal</orientation>
 					<onleft>10001</onleft>
 					<onright>10001</onright>
-					<onup>-</onup>
-					<ondown>-</ondown>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
 					<control type="button" id="10">
 						<description>Ok</description>
 					  <label>186</label>

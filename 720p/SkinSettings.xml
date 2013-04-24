@@ -80,19 +80,19 @@
 				<content>
 					<item id="1">
 						<label>128</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="2">
 						<label>513</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="3">
 						<label>33069</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="4">
 						<label>24001</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 				</content>
 			</control>

@@ -979,42 +979,42 @@
 				<content>
 					<item id="1">
 						<label>$LOCALIZE[342]</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Control.IsVisible(119)</visible>
 					</item>
 					<item id="2">
 						<label>$LOCALIZE[20343]</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Control.IsVisible(129)</visible>
 					</item>
 					<item id="3">
 						<label>$LOCALIZE[33054]</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Control.IsVisible(139)</visible>
 					</item>
 					<item id="4">
 						<label>$LOCALIZE[20360]</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Control.IsVisible(149)</visible>
 					</item>
 					<item id="5">
 						<label>$LOCALIZE[20389]</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Control.IsVisible(159)</visible>
 					</item>
 					<item id="6">
 						<label>$LOCALIZE[133]</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Control.IsVisible(169)</visible>
 					</item>
 					<item id="7">
 						<label>$LOCALIZE[132]</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Control.IsVisible(179)</visible>
 					</item>
 					<item id="8">
 						<label>$LOCALIZE[134]</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Control.IsVisible(189)</visible>
 					</item>
 					<item id="9">

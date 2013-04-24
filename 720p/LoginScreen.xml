@@ -27,8 +27,8 @@
 			<height>405</height>
 			<focusposition>1</focusposition>
 			<orientation>horizontal</orientation>
-			<onleft>-</onleft>
-			<onright>-</onright>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
 			<onup>52</onup>
 			<ondown>52</ondown>
 			<itemlayout width="135">

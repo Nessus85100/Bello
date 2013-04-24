@@ -687,10 +687,10 @@
 				<texturefocus>-</texturefocus>
 				<texturenofocus>osd/miniplayer/nodvd.png</texturenofocus>
 				<enable>!VideoPlayer.HasMenu</enable>
-				<onleft>-</onleft>
-				<onright>-</onright>
-				<onup>-</onup>
-				<ondown>-</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
 		    <visible>!VideoPlayer.HasMenu</visible>
 		    <visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
 			</control>

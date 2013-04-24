@@ -228,7 +228,7 @@
 						<textoffsety>9</textoffsety>
 						<pulseonselect>true</pulseonselect>
 						<label>19203</label>
-						<onleft>-</onleft>
+						<onleft>noop</onleft>
 						<onright>32</onright>
 						<onup>20</onup>
 						<ondown>10000</ondown>

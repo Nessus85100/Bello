@@ -154,7 +154,7 @@
       <width>2</width>
       <onleft>9000</onleft>
       <onright>9000</onright>
-      <onup>-</onup>
+      <onup>noop</onup>
       <ondown condition="Window.IsVisible(AppearanceSettings) | Window.IsVisible(VideosSettings) | Window.IsVisible(PVRSettings) | Window.IsVisible(MusicSettings) | Window.IsVisible(PicturesSettings) | Window.IsVisible(WeatherSettings) | Window.IsVisible(NetworkSettings) | Window.IsVisible(SystemSettings) | Window.IsVisible(Profiles)  | Window.IsVisible(SystemInfo) | Window.IsVisible(ProgramsSettings)">9001</ondown>
       <ondown condition="Window.IsVisible(SkinSettings)">8000</ondown>
       <orientation>horizontal</orientation>
@@ -1035,10 +1035,10 @@
 		<value condition="Substring(ListItem.Path,videodb://1/7,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[20338] $LOCALIZE[20141]</value>
 		<value condition="Container.Content(Movies) + !IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</value>
 		<value condition="Container.Content(Movies)">$INFO[ListItem.Genre]</value>
-    <value condition="Container.Content(TVShows) + !IsEmpty(Window(Home).Property(NextAired.Label))">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]$VAR[NextAiredInfoListView]</value>
+    <value condition="Container.Content(TVShows) + !IsEmpty(Window(Home).Property(NextAired.Label))">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</value>
 		<value condition="Container.Content(TVShows) + IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</value>
 		<value condition="Container.Content(TVShows) + IsEmpty(Window(Home).Property(NextAired.Label)) + IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Genre]</value>
-		<value condition="Container.Content(Seasons)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]$VAR[NextAiredInfoListView]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</value>
 		<value condition="Container.Content(Episodes) + ![IsEmpty(ListItem.Season) + IsEmpty(ListItem.Episode)]">$INFO[ListItem.Season,$LOCALIZE[20373] ,  •  ]$INFO[ListItem.Episode,$LOCALIZE[20359] ,  •  ]$INFO[ListItem.Premiered,$LOCALIZE[31003] ]</value>
 		<value condition="Container.Content(Episodes) + [IsEmpty(ListItem.Season) + IsEmpty(ListItem.Episode)]">$INFO[ListItem.Premiered]</value>
 		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Artist]$INFO[ListItem.Album , • ]</value>
@@ -1051,13 +1051,6 @@
 		<value condition="Window.IsActive(Pictures)">$INFO[ListItem.PictureDateTime,, • ]$INFO[ListItem.PictureResolution]$INFO[ListItem.PictureCamModel, • ]</value>
 		<value condition="Window.IsActive(Programs)">$INFO[ListItem.Property(Addon.Summary)]</value>
 	</variable>
-
-  <!-- NextAired Info
-	<variable name="NextAiredInfoListView-DISABLED">
-		<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$INFO[Window(Home).Property(NextAired.NextDate), • $LOCALIZE[31215] ]</value>
-		<value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + [IsEmpty(Window(Home).Property(NextAired.NextDate)) | StringCompare(Window(Home).Property(NextAired.Status),canceled/ended)]">$INFO[Window(Home).Property(NextAired.Status), • ]</value>
-	</variable>
- -->		
 
 	<variable name="DialogsInfo">
 		<value condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Artists)">$INFO[ListItem.Genre]</value>

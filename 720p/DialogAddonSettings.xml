@@ -19,7 +19,7 @@
 			<include>FullscreenDimensions</include>
 		  <texture background="true">windows/settings/bg_addon_settings.png</texture>
 			<visible>Window.IsVisible(MusicOSD) | Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
-			<colordiffuse>D9FFFFFF</colordiffuse>
+			<colordiffuse>FAFFFFFF</colordiffuse>
 		</control>		
 
 		<control type="label"  id="20">

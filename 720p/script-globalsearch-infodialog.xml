@@ -967,7 +967,7 @@
 					<aspectratio>keep</aspectratio>
 					<colordiffuse>aaffffff</colordiffuse>
 					<texture>flags/empty.png</texture>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 				</control>
 				<control type="image" id="3500">
 					<posx>19</posx>
@@ -977,7 +977,7 @@
 					<aspectratio>keep</aspectratio>
 					<colordiffuse>99ffffff</colordiffuse>
 					<texture fallback="flags/musiclabel/defaultsource.png">$INFO[Container(100).ListItem.Property(Album_label),flags/musiclabel/,.png]</texture>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 				</control>
 			</control>
 
@@ -992,7 +992,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/defs/$INFO[Container(100).ListItem.Property(VideoResolution),,.png]</texture>
 				</control>
 				<control type="image">
@@ -1001,7 +1001,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/video/$INFO[Container(100).ListItem.Property(VideoCodec),,.png]</texture>
 				</control>
 				<control type="image">
@@ -1010,7 +1010,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect),,.png]</texture>
 				</control>
 				<control type="image">
@@ -1019,7 +1019,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/audio/$INFO[Container(100).ListItem.Property(AudioCodec),,.png]</texture>
 				</control>
 				<control type="image">
@@ -1028,7 +1028,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/audio/$INFO[Container(100).ListItem.Property(AudioChannels),,.png]</texture>
 				</control>
 				<!-- Movies MPAA Ratings -->
@@ -1038,7 +1038,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/mpaa/rating-pg.png</texture>
 					<visible>[substring(Container(100).ListItem.Property(MPAA),Rated PG) | substring(Container(100).ListItem.Property(MPAA),USA:PG)] + !substring(Container(100).ListItem.Property(MPAA),13)</visible>
 				</control>
@@ -1048,7 +1048,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/mpaa/rating-g.png</texture>
 					<visible>substring(Container(100).ListItem.Property(MPAA),Rated G) | substring(Container(100).ListItem.Property(MPAA),USA:G)</visible>
 				</control>
@@ -1058,7 +1058,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/mpaa/rating-pg13.png</texture>
 					<visible>[substring(Container(100).ListItem.Property(MPAA),PG-13) | substring(Container(100).ListItem.Property(MPAA),USA:PG-13)] + [!substring(Container(100).ListItem.Property(MPAA),USA:R) + !substring(Container(100).ListItem.Property(MPAA),rated R)]</visible>
 				</control>
@@ -1068,7 +1068,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/mpaa/rating-r.png</texture>
 					<visible>substring(Container(100).ListItem.Property(MPAA),Rated R) | substring(Container(100).ListItem.Property(MPAA),USA:R)</visible>
 				</control>
@@ -1078,7 +1078,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/mpaa/rating-nc17.png</texture>
 					<visible>substring(Container(100).ListItem.Property(MPAA),NC-17) | substring(Container(100).ListItem.Property(MPAA),USA:NC-17)</visible>
 				</control>
@@ -1088,7 +1088,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/mpaa/rating-nr.png</texture>
 					<visible>IsEmpty(Container(100).ListItem.Property(MPAA),Rated Unrated) | IsEmpty(Container(100).ListItem.Property(MPAA),USA:Rated Unrated) + !Control.IsVisible(120) + !Control.IsVisible(140)</visible>
 				</control>
@@ -1099,7 +1099,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 		      <texture>flags/ratings/tv-y.png</texture>
 					<animation effect="slide" start="0,0" end="15,-15" time="0" condition="Control.IsVisible(120)">Conditional</animation>
 		      <visible>substring(Container(100).ListItem.Property(MPAA),TV-Y) + ![substring(Container(100).ListItem.Property(MPAA),TV-Y7) | substring(Container(100).ListItem.Property(MPAA),TV-Y7-FV)]</visible>
@@ -1110,7 +1110,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/ratings/tv-y7.png</texture>
 					<animation effect="slide" start="0,0" end="15,-15" time="0" condition="Control.IsVisible(120)">Conditional</animation>
 					<visible>substring(Container(100).ListItem.Property(MPAA),TV-Y7) | substring(Container(100).ListItem.Property(MPAA),TV-Y7-FV)</visible>
@@ -1121,7 +1121,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/ratings/tv-g.png</texture>
 					<animation effect="slide" start="0,0" end="15,-15" time="0" condition="Control.IsVisible(120)">Conditional</animation>
 					<visible>substring(Container(100).ListItem.Property(MPAA),TV-G)</visible>
@@ -1132,7 +1132,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/ratings/tv-pg.png</texture>
 					<animation effect="slide" start="0,0" end="15,-15" time="0" condition="Control.IsVisible(120)">Conditional</animation>
 					<visible>substring(Container(100).ListItem.Property(MPAA),TV-PG)</visible>
@@ -1143,7 +1143,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/ratings/tv-14.png</texture>
 					<animation effect="slide" start="0,0" end="15,-15" time="0" condition="Control.IsVisible(120)">Conditional</animation>
 					<visible>substring(Container(100).ListItem.Property(MPAA),TV-14)</visible>
@@ -1154,7 +1154,7 @@
 					<height>48</height>
 					<width>80</width>
 					<colordiffuse>99ffffff</colordiffuse>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 					<texture>flags/ratings/tv-ma.png</texture>
 					<animation effect="slide" start="0,0" end="15,-15" time="0" condition="Control.IsVisible(120)">Conditional</animation>
 					<visible>substring(Container(100).ListItem.Property(MPAA),TV-MA)</visible>
@@ -1174,7 +1174,7 @@
 					<height>48</height>
 					<colordiffuse>99ffffff</colordiffuse>
 					<texture>flags/empty.png</texture>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -1184,7 +1184,7 @@
 					<aspectratio>keep</aspectratio>
 					<colordiffuse>99C0C2C2</colordiffuse>
 					<texture fallback="flags/studios/fallbackstudio.png">flags/studios/$INFO[Container(100).ListItem.Property(Studio),,.png]</texture>
-					<include>visiblehidefadeflags</include>
+					<include>VisibleHideFadeFlags</include>
 				</control>			
 			</control>
 		</control>	

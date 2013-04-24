@@ -1,5 +1,5 @@
 <window id="2005">
-  <defaultcontrol>1</defaultcontrol>
+  <defaultcontrol>-</defaultcontrol>
 	<controls>
 		<control type="image" id="1">
 		  <description>Vignette</description>
@@ -506,7 +506,7 @@
 					<control type="label" id="1">
 						<posx>543</posx>
 						<posy>509r</posy>
-						<width>300</width>
+						<width>155</width>
 						<height>40</height>
 						<font>FontSize_18</font>
 						<align>right</align>
@@ -771,7 +771,7 @@
 				<description>Time Label</description>
 				<posx>0</posx>
 				<posy>270</posy>
-				<width>160</width>
+				<width>80</width>
 				<height>20</height>
 				<font>FontSize_18</font>
 				<textcolor>osdinfo</textcolor>
@@ -784,7 +784,7 @@
 				<description>Time Remaining Label</description>
 				<posx>323</posx>
 				<posy>270</posy>
-				<width>160</width>
+				<width>80</width>
 				<height>20</height>
 				<font>FontSize_18</font>
 				<textcolor>osdinfo</textcolor>

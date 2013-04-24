@@ -48,7 +48,7 @@
 					<width>624</width>
 					<height>45</height>
 					<label>467</label>
-					<onup>-</onup>
+					<onup>noop</onup>
 					<ondown>12</ondown>
 					<onright>22</onright>
 					<onleft>22</onleft>

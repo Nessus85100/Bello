@@ -24,7 +24,7 @@
 			<include>FullscreenDimensions</include>
 			<texture background="true">dialogs/selectdialog/bg_select_icon.png</texture>
 			<visible>Control.IsVisible(6)</visible>
-			<colordiffuse>D9FFFFFF</colordiffuse>
+			<colordiffuse>FAFFFFFF</colordiffuse>
 			<visible>Window.IsVisible(MusicOSD) | Window.IsVisible(VideoOSD)</visible>
 		</control>
 		<control type="label" id="1">
@@ -153,7 +153,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Addon.Creator), Created by ]</label>
+					<label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Addon.Creator), $LOCALIZE[31040] ]</label>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -210,7 +210,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Addon.Creator), Created by ]</label>
+					<label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Addon.Creator), $LOCALIZE[31040] ]</label>
 				</control>
 				<control type="image">
 					<posx>0</posx>
