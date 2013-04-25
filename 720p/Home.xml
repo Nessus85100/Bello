@@ -41,6 +41,7 @@
 				 <onback condition="Container(20).HasFocus(17)">Skin.SetString(CustomFavourite3.Label)</onback>
 				 <onback condition="Container(20).HasFocus(18)">Skin.SetString(CustomFavourite4.Label)</onback>
 				 <onback condition="Container(20).HasFocus(19)">Skin.SetString(CustomFavourite5.Label)</onback>
+				 <onback condition="Container(20).HasFocus(14)">Skin.SetAddon(TrailersAddon_Path,xbmc.addon.video)</onback>
 				 <itemgap>0</itemgap>
 				 <orientation>horizontal</orientation>
 				 <focusposition>1</focusposition>
@@ -211,7 +212,8 @@
 					 </item>
 					 <item id="14">
 							<label>$LOCALIZE[31018]</label>
-							<onclick>ActivateWindow(videos,plugin://plugin.video.the.trailers/,return)</onclick>
+							<onclick condition="IsEmpty(Skin.String(TrailersAddon_Path))">Skin.SetAddon(TrailersAddon_Path,xbmc.addon.video)</onclick>
+							<onclick condition="!IsEmpty(Skin.String(TrailersAddon_Path))">ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</onclick>
 							<thumb>special://skin/backgrounds/videos.jpg</thumb>
 							<icon>-</icon>
 							<visible>!Skin.HasSetting(HideHomeMenuTrailersButton)</visible>

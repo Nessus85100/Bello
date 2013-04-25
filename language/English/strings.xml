@@ -98,7 +98,7 @@
   <string id="31139">Enable Addons Notifications</string>
   <string id="31140">Enable Weather Alerts Notifications</string>  
   <string id="31141">Choose Lyrics Add-on</string>
-  <string id="31142">Choose Subtitles Add-on</string>  
+  <string id="31142">Choose Subtitles Add-on</string>
   <string id="31143">Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-on)[/COLOR]</string>
   <string id="31144">Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-on)[/COLOR]</string>
 	<string id="31145">Download music themes for all TV Shows</string>
@@ -110,6 +110,7 @@
   <string id="31151">Show RSS feed in whole skin</string>
   <string id="31152">Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]</string>
   <string id="31153">Enable Login Screen</string>
+  <string id="31154">Choose Trailers Add-on</string>  
 
   <!-- Scripts labels -->
   <string id="31200">TV Guide</string>
