@@ -17,14 +17,15 @@
 
 	 <control type="group">
 	  <include>HomeSlideAnimations</include>
-			<posx>450</posx>
-			<posy>285</posy>
+	  <include>DialogZoomInOutAnimation</include>
+		<posx>455</posx>
+		<posy>0</posy>
 		<control type="wraplist" id="52">
 			<description>Profiles Area</description>
-			<posx>5</posx>
-			<posy>5</posy>
+			<posx>0</posx>
+			<posy>0</posy>
 			<width>405</width>
-			<height>405</height>
+			<height>450</height>
 			<focusposition>1</focusposition>
 			<orientation>horizontal</orientation>
 			<onleft>noop</onleft>
@@ -34,7 +35,7 @@
 			<itemlayout width="135">
 				<control type="image">
 					<posx>8</posx>
-					<posy>8</posy>
+					<posy>298</posy>
 					<width>91</width>
 					<height>91</height>
 					<texture fallback="dialogs/profiles/unknown_user.png" diffuse="windows/logon/profile_icon_diffuse.png">$INFO[ListItem.Icon]</texture>
@@ -42,7 +43,7 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>0</posy>
+					<posy>290</posy>
 					<width>107</width>
 					<height>107</height>
 					<texture>windows/logon/profile_icon_overlay.png</texture>
@@ -52,7 +53,7 @@
 			<focusedlayout width="135">
 				<control type="image">
 					<posx>8</posx>
-					<posy>8</posy>
+					<posy>298</posy>
 					<width>91</width>
 					<height>91</height>
 					<texture fallback="dialogs/profiles/unknown_user.png" diffuse="windows/logon/profile_icon_diffuse.png">$INFO[ListItem.Icon]</texture>
@@ -62,7 +63,7 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>0</posy>
+					<posy>290</posy>
 					<width>107</width>
 					<height>107</height>
 					<texture>windows/logon/profile_icon_overlay.png</texture>
@@ -71,32 +72,18 @@
 					<animation reversible="false" effect="zoom" start="150" end="100" center="auto" time="200">unfocus</animation>
 				</control>
 			  <control type="label.">
-					<posx>140</posx>
-					<posy>10</posy>
-					<width>600</width>
+					<posx>55</posx>
+					<posy>220</posy>
+					<width>405</width>
 					<height>40</height>
 					<font>FontSize_38</font>
-					<align>left</align>
+					<align>center</align>
 					<aligny>center</aligny>
 			    <textcolor>white</textcolor>
 					<shadowcolor>99000000</shadowcolor>
+					<selectedcolor>white</selectedcolor>
 					<scroll>true</scroll>
 					<label>$INFO[ListItem.Label]</label>
-					<animation reversible="false" effect="fade" start="0" end="100" time="300">focus</animation>
-					<animation reversible="false" effect="fade" start="100" end="0" time="300">unfocus</animation>
-			  </control>
-			  <control type="label.">
-					<posx>140</posx>
-					<posy>40</posy>
-					<width>600</width>
-					<height>40</height>
-					<font>FontSize_22</font>
-					<align>left</align>
-					<aligny>center</aligny>
-			    <textcolor>77white</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-					<scroll>true</scroll>
-					<label>$INFO[ListItem.Label2]</label>
 					<animation reversible="false" effect="fade" start="0" end="100" time="300">focus</animation>
 					<animation reversible="false" effect="fade" start="100" end="0" time="300">unfocus</animation>
 			  </control>

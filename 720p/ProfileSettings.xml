@@ -60,7 +60,7 @@
 			<height>148</height>
 			<align>left</align>
 			<aspectratio>stretch</aspectratio>
-			<texture>dialogs/profiles/unknown_user.png</texture>
+			<texture fallback="dialogs/profiles/unknown_user.png">$INFO[System.ProfileThumb]</texture>
 		</control>
 		<control type="label.">
 			<description>profile name label</description>
