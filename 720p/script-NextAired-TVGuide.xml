@@ -178,7 +178,7 @@
 				<control type="label">
 					<width min="10" max="650">auto</width>
 					<height>35</height>
-				  <label fallback="195">$VAR[NextAiredDate]$VAR[NextAiredDay, ]$VAR[NextAiredShortTime, at ]</label>
+				  <label fallback="195">$VAR[NextAiredDate]$VAR[NextAiredDay,  ]$VAR[NextAiredShortTime, at ]</label>
 					<font>FontSize_18</font>
 				  <textcolor>77white</textcolor>
 				  <scroll>false</scroll>
@@ -187,7 +187,7 @@
 				<control type="label">
 					<width min="10" max="650">auto</width>
 					<height>35</height>
-				  <label fallback="195">$VAR[NextAiredDate]$VAR[NextAiredDay, ]$VAR[NextAiredShortTime, at ]$VAR[NextAiredStudio, on ]</label>
+				  <label fallback="195">$VAR[NextAiredDate]$VAR[NextAiredDay,  ]$VAR[NextAiredShortTime, at ]$VAR[NextAiredStudio, on ]</label>
 					<font>FontSize_18</font>
 				  <textcolor>77white</textcolor>
 				  <scroll>false</scroll>

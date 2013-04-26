@@ -527,7 +527,7 @@
 				<control type="label">
 				  <include>TopBigLabel</include>
 					<label>$LOCALIZE[3]</label>
-		      <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
+		      <visible>![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
 				</control>
 				<control type="label">
 				  <include>TopBigLabel</include>
@@ -537,18 +537,18 @@
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
 			    <label>$INFO[Container.FolderName]</label>
-		      <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
+		      <visible>![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
 				</control>
 				<!-- Movies -->
 				<control type="label">
 				  <include>TopBigLabel</include>
 					<label>$LOCALIZE[20342]</label>
-		      <visible>Container.Content(Movies)</visible>
+		      <visible>Container.Content(Movies) | Container.Content(Sets)</visible>
 				</control>
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
 			    <label>$INFO[Container.FolderName]</label>
-	        <visible>Container.Content(Movies)</visible>
+	        <visible>Container.Content(Movies) | Container.Content(Sets)</visible>
 				</control>
 				<!-- TV Shows -->
 				<control type="label">
