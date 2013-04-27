@@ -66,7 +66,7 @@
 				<control type="button" id="97">
 					<description>TVGuide</description>
 				  <include>TopButton</include>
-					<label>$LOCALIZE[31200]</label>
+					<label>$LOCALIZE[31001]</label>
 					<onclick>XBMC.RunScript(script.tv.show.next.aired)</onclick>
           <visible>[Container.Content(TVShows) | Container.Content(Seasons)| Container.Content(Episodes)] + System.HasAddon(script.tv.show.next.aired)</visible>
 				</control>

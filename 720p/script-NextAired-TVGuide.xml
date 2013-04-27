@@ -938,8 +938,8 @@
 			    <control type="fadelabel">
 					  <description>Totals</description>
 					  <include>TopZoomedSmallLabel</include>
-				    <label>$INFO[Window(Home).Property(NextAired.Total),,  $LOCALIZE[31041]]</label>
-				    <label>$INFO[Window(Home).Property(NextAired.TodayTotal),,  $LOCALIZE[31042]]</label>
+				    <label>$INFO[Window(Home).Property(NextAired.Total),,  $LOCALIZE[31239]]</label>
+				    <label>$INFO[Window(Home).Property(NextAired.TodayTotal),,  $LOCALIZE[31240]]</label>
 			      <scroll>false</scroll>
 			      <scrollout>false</scrollout>
 			      <scrollspeed>100</scrollspeed>
@@ -951,7 +951,7 @@
 			    <control type="fadelabel">
 					  <description>Totals</description>
 					  <include>TopZoomedSmallLabel</include>
-				    <label>$INFO[Window(Home).Property(NextAired.Total),,  $LOCALIZE[31041]]</label>
+				    <label>$INFO[Window(Home).Property(NextAired.Total),,  $LOCALIZE[31239]]</label>
 				    <label>31238</label>
 			      <scroll>false</scroll>
 			      <scrollout>false</scrollout>

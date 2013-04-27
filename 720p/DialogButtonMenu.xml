@@ -268,6 +268,26 @@
 				<altlabel>$LOCALIZE[20045]</altlabel>
 				<visible>System.HasLocks</visible>
 			</control>
+			<control type="button" id="13">
+				<description>Profiles button</description>
+				<width>460</width>
+				<height>40</height>
+				<font>FontSize_22</font>
+				<textcolor>77white</textcolor>
+				<focusedcolor>white</focusedcolor>
+			  <disabledcolor>44white</disabledcolor>
+			  <shadowcolor>99000000</shadowcolor>
+				<align>left</align>
+				<aligny>top</aligny>
+				<textwidth>430</textwidth>
+				<textoffsetx>23</textoffsetx>
+				<textoffsety>5</textoffsety>
+				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
+				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+				<onclick>ActivateWindow(Profiles)</onclick>
+				<label>$LOCALIZE[13200]</label>
+        <visible>System.Loggedon</visible>
+			</control>
 	  </control>
 
 	  <!-- ================ -->

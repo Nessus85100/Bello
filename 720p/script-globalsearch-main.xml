@@ -1018,7 +1018,7 @@
 						<visible>Control.IsVisible(189)</visible>
 					</item>
 					<item id="9">
-						<label>$LOCALIZE[31001] $LOCALIZE[137]</label>
+						<label>$LOCALIZE[31203]</label>
 						<onclick>SendClick(198)</onclick>
 						<onclick>Control.Setfocus(9000,0)</onclick>
 						<visible>Control.IsVisible(198)</visible>

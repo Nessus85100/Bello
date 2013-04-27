@@ -90,7 +90,7 @@
 			</focusedlayout>
 			<content>
 				<item id="0">
-					<label>$LOCALIZE[31202]</label>
+					<label>$LOCALIZE[31200]</label>
 					<onclick>SetFocus(81)</onclick>
 					<visible>Library.HasContent(Movies)</visible>
 				</item>
@@ -173,12 +173,12 @@
 			</focusedlayout>
 			<content>
 				<item id="0">
-					<label>$LOCALIZE[31203]</label>
+					<label>$LOCALIZE[31201]</label>
 					<onclick>SetFocus(81)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="1">
-					<label>$LOCALIZE[31200]</label>
+					<label>$LOCALIZE[31001]</label>
 					<onclick>XBMC.RunScript(script.tv.show.next.aired)</onclick>
 				  <visible>System.HasAddon(script.tv.show.next.aired)</visible>
 				</item>
@@ -246,7 +246,7 @@
 			</focusedlayout>
 			<content>
 				<item id="0">
-					<label>$LOCALIZE[31204]</label>
+					<label>$LOCALIZE[31202]</label>
 					<onclick>SetFocus(81)</onclick>
 			    <visible>Library.HasContent(Music)</visible>
 				</item>
@@ -361,7 +361,7 @@
 					<onclick>ActivateWindow(VideosSettings)</onclick>
 				</item>
 				<item id="7">
-					<label>$LOCALIZE[31010]</label>
+					<label>$LOCALIZE[31000]</label>
 					<onclick>ActivateWindow(PVRSettings)</onclick>
 				</item>
 				<item id="8">

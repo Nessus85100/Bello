@@ -2,8 +2,8 @@
  <strings>
  
   <!-- Misc labels -->
-  <string id="31000">New</string>
-  <string id="31001">New</string>
+  <string id="31000">Live TV</string>
+  <string id="31001">TV Guide</string>
   <string id="31002">TV Shows</string>
   <string id="31003">Aired</string>
   <string id="31004">Premiere</string>
@@ -12,7 +12,7 @@
   <string id="31007">Sort: Descending</string>
   <string id="31008">System auto shutdown in</string>
   <string id="31009">Context Menu</string>
-	<string id="31010">Live TV</string>
+	<string id="31010">-</string>
 	<string id="31011">ON</string>
 	<string id="31012">OFF</string>
   <string id="31014">ViewType Options</string>
@@ -42,9 +42,7 @@
   <string id="31038">Esc</string>
   <string id="31039">IP Address</string>
   <string id="31040">Created by</string>
-  <string id="31041">Shows Listed</string>
-  <string id="31042">Shows Airing Today</string>
-  <string id="31043">Creator</string>
+  <string id="31041">Creator</string>
 
   <!-- View Type labels -->
   <string id="31080">Slide</string>
@@ -113,11 +111,11 @@
   <string id="31154">Choose Trailers Add-on</string>  
 
   <!-- Scripts labels -->
-  <string id="31200">TV Guide</string>
-  <string id="31201">Recently Added</string>
-  <string id="31202">My Movies</string>
-  <string id="31203">My TV Shows</string>
-  <string id="31204">My Music</string>
+  <string id="31200">My Movies</string>
+  <string id="31201">My TV Shows</string>
+  <string id="31202">My Music</string>
+  <string id="31203">New Search</string>
+  <string id="31204">-</string>
 	<string id="31205">Browse the most recently added movies</string>
 	<string id="31206">Browse the most recently added episodes</string>
 	<string id="31207">Browse the most recently added albums</string>
@@ -152,6 +150,20 @@
   <string id="31236">Forecast</string>
   <string id="31237">View</string>
   <string id="31238">No Shows Airing Today</string>
+  <string id="31239">Shows Listed</string>
+  <string id="31240">Shows Airing Today</string>
+  <string id="31241">Recently Added Movies</string>
+  <string id="31242">Recently Added TV Shows</string>
+  <string id="31243">Recently Added Music</string>
+  <string id="31244">New Movies</string>
+  <string id="31245">New TV Shows</string>
+  <string id="31246">New Music</string>
+  <string id="31247">Random Movies</string>
+  <string id="31248">Random TV Shows</string>
+  <string id="31249">Random Music</string>
+  <string id="31250">All Movies</string>
+  <string id="31251">All TV Shows</string>
+  <string id="31252">All Music</string>
 
   <!-- Playlist Editor labels -->
   <string id="31280">Open Playlist</string>
@@ -185,7 +197,7 @@
   <string id="31352">Rename Group</string>
   <string id="31353">Delete Group</string>
 
-  <!-- Description Category Labels -->
+  <!-- Settings Category Description & Header Labels -->
   <string id="31401">Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings.</string>
   <string id="31402">Manage your video content. Includes library database options, subtitles, scrapers, and playback options.</string>
   <string id="31403">Change playback settings, manage EPG data settings, recordings and parental control.</string>
@@ -196,5 +208,15 @@
   <string id="31408">Control core hardware and software functions, including audio and video hardware setup, autoplay and locking.</string>
   <string id="31409">Choose from a variety of advanced settings and customization options to make "Bello" fit your needs and taste.</string>
   <string id="31410">With XBMC you can have several profiles, even a logon screen for controlled access.</string>
+  <string id="31411">Configure Appearance Settings</string>
+  <string id="31412">Configure Video Settings</string>
+  <string id="31413">Configure Live TV Settings</string>
+  <string id="31414">Configure Music Settings</string>
+  <string id="31415">Configure Pictures Settings</string>
+  <string id="31416">Configure Weather Settings</string>
+  <string id="31417">Configure Services Settings</string>
+  <string id="31418">Configure System Settings</string>
+  <string id="31419">Configure Profiles Settings</string>
+  <string id="31420">Configure Skin Settings</string>
 
  </strings>

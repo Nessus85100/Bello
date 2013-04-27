@@ -95,7 +95,7 @@
 				<width>1075</width>
 				<height>50</height>
 				<font>FontSize_36</font>
-				<label>$LOCALIZE[24020] $INFO[Control.GetLabel(2)] $LOCALIZE[5]</label>
+				<label>$VAR[SettingsCategoryHeadLabels]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>

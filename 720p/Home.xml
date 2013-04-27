@@ -184,7 +184,7 @@
 		          <property name="Custom-Folder">$INFO[Skin.String(Media-Custom-Folder)]</property>
 					 </item>
 					 <item id="11">
-							<label>$LOCALIZE[31010]</label>
+							<label>$LOCALIZE[31000]</label>
               <onclick>ActivateWindow(PVR)</onclick>
 							<thumb>special://skin/backgrounds/videos.jpg</thumb>
 							<icon>-</icon>
@@ -325,7 +325,7 @@
 	    </animation>
 			<!-- Music Cover -->
 			<control type="group">
-				 <animation effect="slide" start="0,0" end="-210,0" time="450" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(Favourites)">Conditional</animation>
+				 <animation effect="slide" start="0,0" end="-210,0" time="450" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 				 <control type="label">
 					 <description>NP label</description>
 					 <posx>-37</posx>
@@ -434,7 +434,7 @@
 				<posx>173</posx>
 	      <include>KaiToastSlideAnimations</include>
 	      <include>ScanSlideAnimations</include>
-				<animation effect="slide" start="0,0" end="-180,0" time="450" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(Favourites)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-180,0" time="450" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 				<control type="label">
 					<description>Title label</description>
 					<posx>0</posx>
@@ -503,7 +503,7 @@
 		  <control type="group">
 			 <posy>-25</posy>
 			 <visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
-			 <animation effect="slide" start="0,0" end="-180,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(Favourites)">Conditional</animation>
+			 <animation effect="slide" start="0,0" end="-180,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 			 <control type="image">
 				 <posx>-130</posx>
 				 <posy>-130</posy>
@@ -626,7 +626,7 @@
 	    <!-- Videos Cover -->
 		  <control type="group">
 			 <visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]</visible>
-			 <animation effect="slide" start="0,0" end="-310,0" time="500" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(Favourites)">Conditional</animation>
+			 <animation effect="slide" start="0,0" end="-310,0" time="500" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 			 <control type="image">
 				 <posx>-190</posx>
 				 <posy>-140</posy>
@@ -738,7 +738,7 @@
 				<visible>VideoPlayer.Content(Movies)</visible>
 	      <include>KaiToastSlideAnimations</include>
 	      <include>ScanSlideAnimations</include>
-				<animation effect="slide" start="0,0" end="-150,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(Favourites)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-150,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 				<control type="label">
 					<description>Title label</description>
 					<posx>0</posx>
@@ -787,7 +787,7 @@
 				<visible>VideoPlayer.Content(Episodes)</visible>
 	      <include>KaiToastSlideAnimations</include>
 	      <include>ScanSlideAnimations</include>
-				<animation effect="slide" start="0,0" end="-150,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(Favourites)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-150,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 				<control type="label">
 					<description>Title label</description>
 					<posx>0</posx>
@@ -836,7 +836,7 @@
 	      <include>KaiToastSlideAnimations</include>
 	      <include>ScanSlideAnimations</include>
 			  <visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]</visible>
-				<animation effect="slide" start="0,0" end="-150,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(Favourites)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-150,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 				<control type="label">
 					<description>Title label</description>
 					<posx>0</posx>
@@ -885,7 +885,7 @@
 	      <include>KaiToastSlideAnimations</include>
 	      <include>ScanSlideAnimations</include>
 			  <visible>VideoPlayer.Content(LiveTV)</visible>
-				<animation effect="slide" start="0,0" end="-280,0" time="500" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(Favourites)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-280,0" time="500" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 				<control type="grouplist" id="1">
 					<posx>0</posx>
 					<posy>53</posy>

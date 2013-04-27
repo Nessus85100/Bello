@@ -697,7 +697,7 @@
 				<width>1075</width>
 				<height>50</height>
 				<font>FontSize_36</font>
-				<label>$LOCALIZE[24020] $LOCALIZE[166] $LOCALIZE[5]</label>
+				<label>$LOCALIZE[31420]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>

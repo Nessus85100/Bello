@@ -96,7 +96,7 @@
 					<control type="label">
 						<height min="0" max="13">auto</height>
 						<width>180</width>
-						<label>$LOCALIZE[24000] $LOCALIZE[31043]</label>
+						<label>$LOCALIZE[24000] $LOCALIZE[31041]</label>
 						<font>FontSize_16B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>

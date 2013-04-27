@@ -212,7 +212,7 @@
 				<label>31408</label>
 				<onclick>ReplaceWindow(SystemSettings)</onclick>	
 			</control>
-			<control type="button" id="110">
+			<control type="button." id="110">
 				<description>Profiles</description>
 				<include>TopButton</include>
 				<onclick>ReplaceWindow(Profiles)</onclick>	
@@ -254,7 +254,7 @@
 			<control type="label">
 				<description>Live TV</description>
         <include>TopSettingsLabel</include>
-				<label>$LOCALIZE[31010]</label>
+				<label>$LOCALIZE[31000]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(103)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(103)" reversible="true">Conditional</animation>
 			</control>
@@ -300,7 +300,7 @@
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(109)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(109)" reversible="true">Conditional</animation>
 			</control>
-			<control type="label">
+			<control type="label.">
 				<description>Profiles</description>
         <include>TopSettingsLabel</include>
 				<label>$LOCALIZE[13200]</label>
@@ -1018,7 +1018,17 @@
 		<value condition="Window.IsVisible(WeatherSettings)">$INFO[Control.GetLabel(106)]</value>
 		<value condition="Window.IsVisible(NetworkSettings)">$INFO[Control.GetLabel(108)]</value>
 		<value condition="Window.IsVisible(SystemSettings)">$INFO[Control.GetLabel(109)]</value>
-	</variable>		 
+	</variable>
+	<variable name="SettingsCategoryHeadLabels">
+		<value condition="Window.IsVisible(AppearanceSettings)">$LOCALIZE[31411]</value>
+		<value condition="Window.IsVisible(VideosSettings)">$LOCALIZE[31412]</value>
+		<value condition="Window.IsVisible(PVRSettings)">$LOCALIZE[31413]</value>
+		<value condition="Window.IsVisible(MusicSettings)">$LOCALIZE[31414]</value>
+		<value condition="Window.IsVisible(PicturesSettings)">$LOCALIZE[31415]</value>
+		<value condition="Window.IsVisible(WeatherSettings)">$LOCALIZE[31416]</value>
+		<value condition="Window.IsVisible(NetworkSettings)">$LOCALIZE[31417]</value>
+		<value condition="Window.IsVisible(SystemSettings)">$LOCALIZE[31418]</value>
+	</variable>
 
 	<variable name="GlobalSearchFanart">
 		<value condition="Control.HasFocus(111)">$INFO[Container(111).ListItem.Property(Fanart)]</value>

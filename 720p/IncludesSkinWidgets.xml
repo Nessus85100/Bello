@@ -25,17 +25,17 @@
 				<orientation>horizontal</orientation>
 		    <control type="label">
 				  <include>TopBigLabel</include>
-					<label>$LOCALIZE[31201] $LOCALIZE[20342]</label>
+					<label>$LOCALIZE[31241]</label>
 					<visible>Container(20).HasFocus(2)</visible>
 				</control>
 		    <control type="label">
 				  <include>TopBigLabel</include>
-					<label>$LOCALIZE[31201] $LOCALIZE[31002]</label>
+					<label>$LOCALIZE[31242]</label>
 					<visible>Container(20).HasFocus(1)</visible>
 				</control>
 		    <control type="label">
 				  <include>TopBigLabel</include>
-					<label>$LOCALIZE[31201] $LOCALIZE[2]</label>
+					<label>$LOCALIZE[31243]</label>
 					<visible>Container(20).HasFocus(3)</visible>
 				</control>
 			</control>
@@ -70,7 +70,7 @@
 				<orientation>horizontal</orientation>
 		    <control type="label">
 				  <include>TopBigLabel</include>
-					<label>$LOCALIZE[20342] $LOCALIZE[575]</label>
+					<label>$LOCALIZE[342] $LOCALIZE[575]</label>
 					<visible>Container(20).HasFocus(2)</visible>
 				</control>
 		    <control type="label">
@@ -115,17 +115,17 @@
 				<orientation>horizontal</orientation>
 		    <control type="label">
 				  <include>TopBigLabel</include>
-					<label>$LOCALIZE[590] $LOCALIZE[20342]</label>
+					<label>$LOCALIZE[31247]</label>
 					<visible>Container(20).HasFocus(2)</visible>
 				</control>
 		    <control type="label">
 				  <include>TopBigLabel</include>
-					<label>$LOCALIZE[590] $LOCALIZE[31002]</label>
+					<label>$LOCALIZE[31248]</label>
 					<visible>Container(20).HasFocus(1)</visible>
 				</control>
 		    <control type="label">
 				  <include>TopBigLabel</include>
-					<label>$LOCALIZE[590] $LOCALIZE[2]</label>
+					<label>$LOCALIZE[31249]</label>
 					<visible>Container(20).HasFocus(3)</visible>
 				</control>
 			</control>
@@ -635,7 +635,7 @@
 			<content>
 			<!-- Movies -->
 				<item id="0">
-					<label>[COLOR=blue]$LOCALIZE[31000] $LOCALIZE[342][/COLOR]</label>
+					<label>[COLOR=blue]$LOCALIZE[31244][/COLOR]</label>
 					<property name="Label3">$LOCALIZE[31205]</property>
 				  <onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
 					<property name="LatestMovie1">$INFO[Window.Property(LatestMovie.1.Thumb)]</property>
@@ -758,7 +758,7 @@
 				
 				<!-- TV Shows -->
 				<item id="0">
-					<label>[COLOR=blue]$LOCALIZE[31000] $LOCALIZE[31002][/COLOR]</label>
+					<label>[COLOR=blue]$LOCALIZE[31245][/COLOR]</label>
 					<property name="Label3">$LOCALIZE[31206]</property>
 				  <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
 					<property name="LatestEpisode1">$INFO[Window.Property(LatestEpisode.1.ShowThumb)]</property>
@@ -880,7 +880,7 @@
 				
 			<!-- Music -->
 				<item id="0">
-					<label>[COLOR=blue]$LOCALIZE[31000] $LOCALIZE[2][/COLOR]</label>
+					<label>[COLOR=blue]$LOCALIZE[31246][/COLOR]</label>
 					<property name="Label3">$LOCALIZE[31207]</property>
 				  <onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
 					<property name="LatestAlbum1">$INFO[Window.Property(LatestAlbum.1.Thumb)]</property>
@@ -1399,7 +1399,7 @@
 			<content>
 			<!-- Movies -->
 				<item id="0">
-					<label>[COLOR=blue]$LOCALIZE[20342] $LOCALIZE[575][/COLOR]</label>
+					<label>[COLOR=blue]$LOCALIZE[342] $LOCALIZE[575][/COLOR]</label>
 					<property name="Label3">$LOCALIZE[31208]</property>
 					<onclick>ActivateWindow(VideoLibrary,special://skin/playlists/Movies In Progress.xsp,return)</onclick>
 					<property name="RecommendedMovie1">$INFO[Window.Property(RecommendedMovie.1.Art(poster))]</property>
@@ -2163,7 +2163,7 @@
 			<content>
 			<!-- Movies -->
 				<item id="0">
-					<label>[COLOR=blue]$LOCALIZE[593] $LOCALIZE[20342][/COLOR]</label>
+					<label>[COLOR=blue]$LOCALIZE[31250][/COLOR]</label>
 					<property name="Label3">$LOCALIZE[31211]</property>
 				  <onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
 					<property name="RandomMovie1">$INFO[Window.Property(RandomMovie.1.Art(poster))]</property>
@@ -2286,7 +2286,7 @@
 				
 				<!-- TV Shows -->
 				<item id="0">
-					<label>[COLOR=blue]$LOCALIZE[593] $LOCALIZE[31002][/COLOR]</label>
+					<label>[COLOR=blue]$LOCALIZE[31251][/COLOR]</label>
 					<property name="Label3">$LOCALIZE[31212]</property>
 				  <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
 					<property name="RandomEpisode1">$INFO[Window.Property(RandomEpisode.1.Art(tvshow.poster))]</property>
@@ -2408,7 +2408,7 @@
 				
 			<!-- Music -->
 				<item id="0">
-					<label>[COLOR=blue]$LOCALIZE[593] $LOCALIZE[2][/COLOR]</label>
+					<label>[COLOR=blue]$LOCALIZE[31252][/COLOR]</label>
 					<property name="Label3">$LOCALIZE[31213]</property>
 				  <onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 					<property name="RandomAlbum1">$INFO[Window.Property(RandomAlbum.1.Thumb)]</property>
