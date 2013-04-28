@@ -200,7 +200,7 @@
 		  <texture background="true">windows/bg/bg_diffuse.png</texture>
 			<include>FanartFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Window.IsVisible(script-NextAired-TVGuide.xml)]</visible>
+			<visible>[Control.IsVisible(50) | Control.IsVisible(51) | [Control.IsVisible(52) + !Window.IsVisible(SystemInfo)] | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Window.IsVisible(script-NextAired-TVGuide.xml)]</visible>
       <colordiffuse>D5FFFFFF</colordiffuse>
 	  </control>
 	</include>

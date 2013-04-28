@@ -1,6 +1,6 @@
 <window>
 	<defaultcontrol always="true">8000</defaultcontrol>
-  <onload condition="IsEmpty(Skin.String(MusicName))">Skin.SetString(MusicName,$LOCALIZE[14022])</onload>
+  <onload condition="IsEmpty(Skin.String(MusicName))">Skin.SetString(MusicName,library)</onload>
   <onload condition="IsEmpty(Skin.String(MusicPath))">Skin.SetString(MusicPath,root)</onload>
 	<controls>
 	 <include>BackgroundItems</include>
@@ -200,36 +200,36 @@
 						    <enable>!Skin.HasSetting(HideHomeMenuMusicButton)</enable>
 								<texturefocus>-</texturefocus>
 								<texturenofocus>-</texturenofocus>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[1038])">Skin.SetString(MusicName,$LOCALIZE[14022])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[1038])">Skin.SetString(MusicPath,root)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[136])">Skin.SetString(MusicName,$LOCALIZE[1038])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[136])">Skin.SetString(MusicPath,plugins)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[521])">Skin.SetString(MusicName,$LOCALIZE[136])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[521])">Skin.SetString(MusicPath,playlists)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[517])">Skin.SetString(MusicName,$LOCALIZE[521])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[517])">Skin.SetString(MusicPath,compilations)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[359])">Skin.SetString(MusicName,$LOCALIZE[517])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[359])">Skin.SetString(MusicPath,recentlyplayedalbums)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10505])">Skin.SetString(MusicName,$LOCALIZE[359])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10505])">Skin.SetString(MusicPath,recentlyaddedalbums)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10504])">Skin.SetString(MusicName,$LOCALIZE[10505])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10504])">Skin.SetString(MusicPath,top100albums)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[652])">Skin.SetString(MusicName,$LOCALIZE[10504])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[652])">Skin.SetString(MusicPath,top100songs)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[135])">Skin.SetString(MusicName,$LOCALIZE[652])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[135])">Skin.SetString(MusicPath,years)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[134])">Skin.SetString(MusicName,$LOCALIZE[135])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[134])">Skin.SetString(MusicPath,genres)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[133])">Skin.SetString(MusicName,$LOCALIZE[134])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[133])">Skin.SetString(MusicPath,songs)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[132])">Skin.SetString(MusicName,$LOCALIZE[133])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[132])">Skin.SetString(MusicPath,artists)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[744])">Skin.SetString(MusicName,$LOCALIZE[132])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[744])">Skin.SetString(MusicPath,albums)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[14022])">Skin.SetString(MusicName,$LOCALIZE[744])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[14022])">Skin.Reset(MusicPath)</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[1038])">Skin.SetString(MusicName,$LOCALIZE[14022])</onclick>
-								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[1038])">Skin.SetString(MusicPath,root)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),plugins)">Skin.SetString(MusicName,library)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),plugins)">Skin.SetString(MusicPath,root)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),playlists)">Skin.SetString(MusicName,plugins)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),playlists)">Skin.SetString(MusicPath,plugins)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),compilations)">Skin.SetString(MusicName,playlists)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),compilations)">Skin.SetString(MusicPath,playlists)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),recentlyplayedalbums)">Skin.SetString(MusicName,compilations)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),recentlyplayedalbums)">Skin.SetString(MusicPath,compilations)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),recentlyaddedalbums)">Skin.SetString(MusicName,recentlyplayedalbums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),recentlyaddedalbums)">Skin.SetString(MusicPath,recentlyplayedalbums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),top100albums)">Skin.SetString(MusicName,recentlyaddedalbums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),top100albums)">Skin.SetString(MusicPath,recentlyaddedalbums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),top100songs)">Skin.SetString(MusicName,top100albums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),top100songs)">Skin.SetString(MusicPath,top100albums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),years)">Skin.SetString(MusicName,top100songs)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),years)">Skin.SetString(MusicPath,top100songs)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),genres)">Skin.SetString(MusicName,years)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),genres)">Skin.SetString(MusicPath,years)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),songs)">Skin.SetString(MusicName,genres)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),songs)">Skin.SetString(MusicPath,genres)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),artists)">Skin.SetString(MusicName,songs)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),artists)">Skin.SetString(MusicPath,songs)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),albums)">Skin.SetString(MusicName,artists)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),albums)">Skin.SetString(MusicPath,artists)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),files)">Skin.SetString(MusicName,albums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),files)">Skin.SetString(MusicPath,albums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),library)">Skin.SetString(MusicName,files)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),library)">Skin.Reset(MusicPath)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),plugins)">Skin.SetString(MusicName,library)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),plugins)">Skin.SetString(MusicPath,root)</onclick>
 						</control>
 						<control type="button">
 								<width>780</width>
@@ -241,7 +241,7 @@
 								<textoffsetx>15</textoffsetx>
 								<textoffsety>10</textoffsety>
 								<label>$LOCALIZE[31117]</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(MusicName)][/COLOR]</label2>
+								<label2>[COLOR=selected]$VAR[HomeMusicButtonMusicName][/COLOR]</label2>
 						    <visible>!ControlGroup(8201).HasFocus</visible>
 						    <enable>!Skin.HasSetting(HideHomeMenuMusicButton)</enable>
 						</control>
@@ -255,12 +255,11 @@
 								<textoffsetx>15</textoffsetx>
 								<textoffsety>10</textoffsety>
 								<label>$LOCALIZE[31117]</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(MusicName)][/COLOR]</label2>
+								<label2>[COLOR=selected]$VAR[HomeMusicButtonMusicName][/COLOR]</label2>
 						    <visible>ControlGroup(8201).HasFocus</visible>
 						    <enable>!Skin.HasSetting(HideHomeMenuMusicButton)</enable>
 						</control>
 				  </control>
-
 					<control type="radiobutton." id="8202">
 						<description>Enable Home Weather Info</description>
 	          <include>SettingsRadioButton</include>
@@ -724,21 +723,3 @@
 		<include>SettingsMenu</include>
 	</controls>
 </window>
-
-
-<!--  
-1038">Music Add-ons
-14022">Library
-132">Albums
-133">Artists
-134">Songs
-135">Genres
-136">Playlists
-359">Recently added albums
-517">Recently played albums
-521">Compilations
-652">Years
-10504">Top 100 songs
-10505">Top 100 albums
-1050">Singles					
--->

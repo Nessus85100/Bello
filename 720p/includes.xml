@@ -1009,6 +1009,23 @@
 		</control>
 	</include>	
 
+	<variable name="HomeMusicButtonMusicName">
+		<value condition="stringcompare(Skin.String(MusicName),plugins)">$LOCALIZE[1038]</value>
+		<value condition="stringcompare(Skin.String(MusicName),library)">$LOCALIZE[14022]</value>
+		<value condition="stringcompare(Skin.String(MusicName),files)">$LOCALIZE[744]</value>
+		<value condition="stringcompare(Skin.String(MusicName),albums)">$LOCALIZE[132]</value>
+		<value condition="stringcompare(Skin.String(MusicName),artists)">$LOCALIZE[133]</value>
+		<value condition="stringcompare(Skin.String(MusicName),songs)">$LOCALIZE[134]</value>
+		<value condition="stringcompare(Skin.String(MusicName),genres)">$LOCALIZE[135]</value>
+		<value condition="stringcompare(Skin.String(MusicName),years)">$LOCALIZE[652]</value>
+		<value condition="stringcompare(Skin.String(MusicName),top100songs)">$LOCALIZE[10504]</value>
+		<value condition="stringcompare(Skin.String(MusicName),top100albums)">$LOCALIZE[10505]</value>
+		<value condition="stringcompare(Skin.String(MusicName),recentlyaddedalbums)">$LOCALIZE[359]</value>
+		<value condition="stringcompare(Skin.String(MusicName),recentlyplayedalbums)">$LOCALIZE[517]</value>
+		<value condition="stringcompare(Skin.String(MusicName),compilations)">$LOCALIZE[521]</value>
+		<value condition="stringcompare(Skin.String(MusicName),playlists)">$LOCALIZE[136]</value>
+	</variable>
+
 	<variable name="SettingsCategoryDescription">
 		<value condition="Window.IsVisible(AppearanceSettings)">$INFO[Control.GetLabel(101)]</value>
 		<value condition="Window.IsVisible(VideosSettings)">$INFO[Control.GetLabel(102)]</value>
