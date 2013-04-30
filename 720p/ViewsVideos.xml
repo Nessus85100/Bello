@@ -1276,14 +1276,14 @@
 					<animation effect="rotatey" center="0" start="0" end="-25" time="0" condition="true">Conditional</animation>
 					<animation reversible="false" effect="slide" start="0,0" end="-164,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 					<visible>Container.OnNext</visible>
-	        <include>includes_OnNext</include>
+	        <include>Includes_OnNext_3DWall</include>
 				</control>
 	
 				<control type="group" id="7014">
 					<animation effect="rotatey" center="0" start="0" end="-25" time="0" condition="true">Conditional</animation>
 					<animation reversible="false" effect="slide" start="0,0" end="164,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
-	        <include>includes_OnPrevious</include>
+	        <include>Includes_OnPrevious_3DWall</include>
 				</control>
 	
 				<control type="group">
@@ -1296,7 +1296,7 @@
 						<effect type="fade" start="100" end="0" time="1000" delay="800"/>
 					</animation>
 					<visible>!Control.IsVisible(7013) + !Control.IsVisible(7014)</visible>
-	        <include>includes_Static</include>
+	        <include>Includes_Static_3DWall</include>
 				</control>
 			</control>
 			
@@ -1603,13 +1603,13 @@
 				<control type="group" id="8013">
 					<animation reversible="false" effect="slide" start="0,0" end="-164,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 					<visible>Container.OnNext</visible>
-	        <include>includes_OnNext</include>
+	        <include>Includes_OnNext_HWall</include>
 				</control>
 	
 				<control type="group" id="8014">
 					<animation reversible="false" effect="slide" start="0,0" end="164,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 					<visible>Container.OnPrevious</visible>
-	        <include>includes_OnPrevious</include>
+	        <include>Includes_OnPrevious_HWall</include>
 				</control>
 	
 				<control type="group">
@@ -1620,7 +1620,7 @@
 						<effect type="fade" start="100" end="0" time="1000" delay="800"/>
 					</animation>
 					<visible>!Control.IsVisible(8013) + !Control.IsVisible(8014)</visible>
-	        <include>includes_Static</include>
+	        <include>Includes_Static_HWall</include>
 				</control>
 			</control>
 
