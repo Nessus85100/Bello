@@ -1771,4 +1771,1476 @@
 	</include>
 
 
+	<include name="Includes_OnPrevious_VWall">
+		<control type="image">
+			<posx>0</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-13).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-12).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-11).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-10).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>160</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-10).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>320</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>480</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>640</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>800</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>960</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>1120</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(10).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(11).Icon]</texture>
+		</control>
+	</include>
+
+	<include name="Includes_OnNext_VWall">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-14).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-13).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-12).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-11).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>160</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-11).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-10).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-8).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>320</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>480</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>640</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>800</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+		</control>		
+	
+		<control type="image">
+			<posx>960</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+		</control>		
+	
+		<control type="image">
+			<posx>1120</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(10).Icon]</texture>
+		</control>		
+	</include>
+
+
+	<include name="Includes_Static_VWall">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-13).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-12).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-11).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>160</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-10).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-8).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>320</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>480</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>640</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>800</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>960</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>1120</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(10).Icon]</texture>
+		</control>		
+	</include>
+
 </includes>
+
+<!--
+	<include name="Includes_OnPrevious_VWall">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(14).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(13).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(12).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(11).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>160</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(11).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(10).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>320</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>480</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>640</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>800</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>960</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>1120</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>720</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-10).Icon]</texture>
+		</control>
+	</include>
+
+	<include name="Includes_OnNext_VWall">
+		<control type="image">
+			<posx>0</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(13).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(12).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(11).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(10).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>160</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(10).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>320</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>480</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>640</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>800</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>960</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-8).Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>1120</posx>
+			<posy>-240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-10).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-11).Icon]</texture>
+		</control>
+
+	</include>
+
+	<include name="Includes_Static_VWall">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(13).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(12).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(11).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>160</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(10).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>160</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>320</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>320</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>480</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>480</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+		</control>
+		
+		<control type="image">
+			<posx>640</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>640</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>800</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>800</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>960</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>960</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
+		</control>
+	
+		<control type="image">
+			<posx>1120</posx>
+			<posy>0</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-8).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>240</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-9).Icon]</texture>
+		</control>
+		<control type="image">
+			<posx>1120</posx>
+			<posy>480</posy>
+			<width>162</width>
+			<height>242</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="views/wall/poster3d_diffuse.png" background="true">$INFO[ListItem(-10).Icon]</texture>
+		</control>		
+	</include>
+-->
