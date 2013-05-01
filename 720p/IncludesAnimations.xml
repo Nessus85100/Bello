@@ -493,12 +493,12 @@
   </include>
 
 	<include name="ListFocusAnimation">
-	  <animation type="Focus" reversible="false" condition="Container(50).OnPrevious">
-			  <effect type="fade" start="20" end="100" time="700"/>
+	  <animation type="Focus" reversible="false" condition="Container(50).OnPrevious | Container(58).OnPrevious">
+			  <effect type="fade" start="20" end="100" time="400"/>
 				<effect type="slide" start="0,45" end="0,0" time="400" tween="back" easing="out"/>
     </animation>
-	  <animation type="Focus" reversible="false" condition="Container(50).OnNext">
-			  <effect type="fade" start="20" end="100" time="700"/>
+	  <animation type="Focus" reversible="false" condition="Container(50).OnNext | Container(58).OnNext">
+			  <effect type="fade" start="20" end="100" time="400"/>
 				<effect type="slide" start="0,-45" end="0,0" time="400" tween="back" easing="out"/>
     </animation>
 	</include>

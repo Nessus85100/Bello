@@ -1131,7 +1131,7 @@
 	</include>
 
 
-	<include name="Includes_OnPrevious_HWall">
+	<include name="Includes_OnPrevious_Wall">
 		<control type="image">
 			<posx>-164</posx>
 			<posy>0</posy>
@@ -1352,7 +1352,7 @@
 		</control>
 	</include>
 
-	<include name="Includes_OnNext_HWall">
+	<include name="Includes_OnNext_Wall">
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -1573,7 +1573,7 @@
 		</control>
 	</include>
 
-	<include name="Includes_Static_HWall">
+	<include name="Includes_Static_Wall">
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -1771,7 +1771,7 @@
 	</include>
 
 
-	<include name="Includes_OnPrevious_VWall">
+	<include name="Includes_OnPrevious_ListWall">
 		<control type="image">
 			<posx>0</posx>
 			<posy>-240</posy>
@@ -2037,7 +2037,7 @@
 		</control>
 	</include>
 
-	<include name="Includes_OnNext_VWall">
+	<include name="Includes_OnNext_ListWall">
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -2304,7 +2304,7 @@
 	</include>
 
 
-	<include name="Includes_Static_VWall">
+	<include name="Includes_Static_ListWall">
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
