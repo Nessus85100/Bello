@@ -1333,7 +1333,7 @@
 						<posy>32</posy>
 						<width>562</width>
 						<height>673</height>
-						<texture>views/wall/poster_blue_shadow.png</texture>
+						<texture background="true">views/wall/poster_blue_shadow.png</texture>
 					  <animation type="WindowOpen">
 							<effect type="fade" start="0" end="100" time="500" delay="800"/>
 							<effect type="zoom" start="230,148,360,436" end="128,32,562,673" time="980" delay="750"/>
@@ -1365,7 +1365,7 @@
 						<width>248</width>
 						<height>366</height>
 						<aspectratio align="center" stretchdiffuse="false">stretch</aspectratio>
-						<texture>views/wall/poster_overlay.png</texture>
+						<texture background="true">views/wall/poster_overlay.png</texture>
 						<animation type="WindowOpen">
 							<effect type="fade" start="0" end="100" time="500" delay="500"/>
 							<effect type="zoom" start="328,239,164,242" end="285,176,248,366" time="980" delay="750"/>
@@ -1391,7 +1391,7 @@
 						<width>248</width>
 						<height>366</height>
 						<aspectratio align="center" stretchdiffuse="false">stretch</aspectratio>
-						<texture>views/wall/poster_overlay.png</texture>
+						<texture background="true">views/wall/poster_overlay.png</texture>
 						<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7013)">Conditional</animation>
 						<visible>Control.IsVisible(7013) + !stringcompare(ListItem(-1).Label,..)</visible>
 					</control>
@@ -1411,7 +1411,7 @@
 						<width>248</width>
 						<height>366</height>
 						<aspectratio align="center" stretchdiffuse="false">stretch</aspectratio>
-						<texture>views/wall/poster_overlay.png</texture>
+						<texture background="true">views/wall/poster_overlay.png</texture>
 						<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7014)">Conditional</animation>
 						<visible>Control.IsVisible(7014) + !stringcompare(ListItem(1).Label,..)</visible>
 					</control>
@@ -1652,7 +1652,7 @@
 						<posy>32</posy>
 						<width>562</width>
 						<height>673</height>
-						<texture>views/wall/poster_blue_shadow.png</texture>
+						<texture background="true">views/wall/poster_blue_shadow.png</texture>
 					  <animation type="WindowOpen">
 							<effect type="fade" start="0" end="100" time="500" delay="800" tween="sine" easing="out"/>
 							<effect type="zoom" start="230,148,360,436" end="128,32,562,673" time="980" delay="750" tween="sine" easing="out"/>
@@ -1684,7 +1684,7 @@
 						<width>248</width>
 						<height>366</height>
 						<aspectratio align="center" stretchdiffuse="false">stretch</aspectratio>
-						<texture>views/wall/poster_overlay.png</texture>
+						<texture background="true">views/wall/poster_overlay.png</texture>
 						<animation type="WindowOpen">
 							<effect type="fade" start="0" end="100" time="500" delay="500" tween="sine" easing="out"/>
 							<effect type="zoom" start="328,239,164,242" end="285,176,248,366" time="980" delay="750" tween="sine" easing="out"/>
@@ -1710,7 +1710,7 @@
 						<width>248</width>
 						<height>366</height>
 						<aspectratio align="center" stretchdiffuse="false">stretch</aspectratio>
-						<texture>views/wall/poster_overlay.png</texture>
+						<texture background="true">views/wall/poster_overlay.png</texture>
 						<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(8013)">Conditional</animation>
 						<visible>Control.IsVisible(8013) + !stringcompare(ListItem(-1).Label,..)</visible>
 					</control>
@@ -1730,7 +1730,7 @@
 						<width>248</width>
 						<height>366</height>
 						<aspectratio align="center" stretchdiffuse="false">stretch</aspectratio>
-						<texture>views/wall/poster_overlay.png</texture>
+						<texture background="true">views/wall/poster_overlay.png</texture>
 						<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(8014)">Conditional</animation>
 						<visible>Control.IsVisible(8014) + !stringcompare(ListItem(1).Label,..)</visible>
 					</control>
@@ -1994,6 +1994,7 @@
 							<effect type="fade" start="100" end="0" time="350" delay="0" tween="sine" easing="out"/>
 							<effect type="slide" start="0,0" end="-125,0" time="450" delay="0" tween="sine" easing="in"/>
 						</animation>
+					  <visible>!Container.Content(TVShows)</visible>
 					</control>
 					<control type="image">
 						<posx>625</posx>
@@ -2012,10 +2013,11 @@
 							<effect type="zoom" start="560,198,346,346" end="625,260,186,186" time="780" delay="0" tween="sine" easing="out"/>
 							<effect type="slide" start="65,0" end="0,0" time="780" delay="0" tween="sine" easing="out"/>
 						</animation>
-					  <animation type="Conditional" condition="IntegerGreaterThan(ListItem.VideoResolution,719)">
+					  <animation type="Conditional" condition="IntegerGreaterThan(ListItem.VideoResolution,719) | IsEmpty(ListItem.VideoResolution)">
 							<effect type="fade" start="100" end="0" time="350" delay="0" tween="sine" easing="out"/>
 							<effect type="slide" start="0,0" end="-125,0" time="450" delay="0" tween="sine" easing="in"/>
 						</animation>
+					  <visible>!Container.Content(TVShows)</visible>
 					</control>					
 					<control type="image">
 						<posx>600</posx>
@@ -2119,8 +2121,9 @@
 					<onright>9000</onright>
 					<onup>58</onup>
 					<ondown>58</ondown>
-					<preloaditems>3</preloaditems>
 					<focusposition>4</focusposition>
+					<preloaditems>2</preloaditems>
+					<movement>4</movement>
 					<viewtype label="31088">Multiple Walls</viewtype>
 					<pagecontrol>60</pagecontrol>
 				  <scrolltime>200</scrolltime>
