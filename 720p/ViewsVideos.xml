@@ -772,6 +772,7 @@
 	</include>
 
 
+
 	<!-- ========================= -->
 	<!-- ==== Slide View "51" ==== -->
 	<!-- ========================= -->
@@ -1005,6 +1006,7 @@
 			</control>
 	  </control>
 	</include>
+
 
 
 	<!-- =========================== -->
@@ -1900,6 +1902,7 @@
 	</include>
 
 
+
 	<!-- ============================= -->
 	<!-- ==== List Wall View "58" ==== -->
 	<!-- ============================= -->
@@ -1987,15 +1990,10 @@
 							<effect type="zoom" start="560,198,346,346" end="625,260,186,186" time="780" delay="0" tween="sine" easing="out"/>
 							<effect type="slide" start="65,0" end="0,0" time="780" delay="0" tween="sine" easing="out"/>
 						</animation>
-					  <animation type="Visible">
-							<effect type="fade" start="0" end="100" time="500" delay="800" tween="sine" easing="out"/>
-							<effect type="slide" start="0,0" end="65,0" time="980" delay="750" tween="sine" easing="out"/>
+					  <animation type="Conditional" condition="!IntegerGreaterThan(ListItem.VideoResolution,719)">
+							<effect type="fade" start="100" end="0" time="350" delay="0" tween="sine" easing="out"/>
+							<effect type="slide" start="0,0" end="-125,0" time="450" delay="0" tween="sine" easing="in"/>
 						</animation>
-						<animation type="Hidden">
-							<effect type="fade" start="100" end="0" time="400" delay="200" tween="sine" easing="out"/>
-							<effect type="slide" start="65,0" end="0,0" time="780" delay="0" tween="sine" easing="out"/>
-						</animation>
-						<visible>IntegerGreaterThan(ListItem.videoresolution,720)</visible>
 					</control>
 					<control type="image">
 						<posx>625</posx>
@@ -2014,16 +2012,11 @@
 							<effect type="zoom" start="560,198,346,346" end="625,260,186,186" time="780" delay="0" tween="sine" easing="out"/>
 							<effect type="slide" start="65,0" end="0,0" time="780" delay="0" tween="sine" easing="out"/>
 						</animation>
-					  <animation type="Visible">
-							<effect type="fade" start="0" end="100" time="500" delay="800" tween="sine" easing="out"/>
-							<effect type="slide" start="0,0" end="65,0" time="980" delay="750" tween="sine" easing="out"/>
+					  <animation type="Conditional" condition="IntegerGreaterThan(ListItem.VideoResolution,719)">
+							<effect type="fade" start="100" end="0" time="350" delay="0" tween="sine" easing="out"/>
+							<effect type="slide" start="0,0" end="-125,0" time="450" delay="0" tween="sine" easing="in"/>
 						</animation>
-						<animation type="Hidden">
-							<effect type="fade" start="100" end="0" time="400" delay="200" tween="sine" easing="out"/>
-							<effect type="slide" start="65,0" end="0,0" time="780" delay="0" tween="sine" easing="out"/>
-						</animation>
-						<visible>!IntegerGreaterThan(ListItem.videoresolution,720)</visible>
-					</control>
+					</control>					
 					<control type="image">
 						<posx>600</posx>
 						<posy>176</posy>
@@ -2131,7 +2124,7 @@
 					<viewtype label="31088">Multiple Walls</viewtype>
 					<pagecontrol>60</pagecontrol>
 				  <scrolltime>200</scrolltime>
-					<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
+					<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible>
 					<itemlayout height="45" width="710">
 							<control type="label">
 								<posx>19</posx>
@@ -2179,7 +2172,7 @@
 								<height>17</height>
 		            <texture>overlays/unwatched/list/unwatched_nf.png</texture>
 		            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-								<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+								<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible>
 							</control>
 					</itemlayout>
 					<focusedlayout height="45" width="710">
@@ -2782,7 +2775,6 @@
 			</control>
 		</control>
 	</include>
-
 
 
 
