@@ -362,6 +362,7 @@
 					<description>Update</description>
 				  <include>TopSmallLabel</include>
 					<label>$INFO[Control.GetLabel(9)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(9)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(9)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(9)" reversible="true">Conditional</animation>
 				</control>
@@ -369,6 +370,7 @@
 					<description>Configure</description>
 				  <include>TopSmallLabel</include>
 					<label>$INFO[Control.GetLabel(8)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(8)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(8)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(8)" reversible="true">Conditional</animation>
 				</control>
@@ -376,6 +378,7 @@
 					<description>Install/UnInstall</description>
 				  <include>TopSmallLabel</include>
 					<label>$INFO[Control.GetLabel(6)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(6)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
 				</control>
@@ -383,6 +386,7 @@
 					<description>Enable/Disable</description>
 				  <include>TopSmallLabel</include>
           <label>$INFO[Control.GetLabel(7)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(7)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(7)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(7)" reversible="true">Conditional</animation>
 				</control>
@@ -390,6 +394,7 @@
 					<description>Rollback</description>
 				  <include>TopSmallLabel</include>
 					<label>$INFO[Control.GetLabel(11)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(11)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(11)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(11)" reversible="true">Conditional</animation>
 				</control>
@@ -397,6 +402,7 @@
 					<description>Changelog</description>
 				  <include>TopSmallLabel</include>
 					<label>$INFO[Control.GetLabel(10)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(10)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(10)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(10)" reversible="true">Conditional</animation>
 				</control>
