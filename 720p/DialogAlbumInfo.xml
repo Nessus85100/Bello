@@ -15,7 +15,7 @@
 					<posy>0</posy>
 					<width>386</width>
 					<height>386</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 					<texture background="true" fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse_big.png">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="image">
@@ -28,7 +28,7 @@
 				</control>
 				<control type="label">
 					<description>Title</description>
-					<posx>410</posx>
+					<posx>408</posx>
 					<posy>5</posy>
 					<width>775</width>
 					<height>30</height>
@@ -42,7 +42,7 @@
 				</control>
 				<control type="label">
 					<description>Title</description>
-					<posx>410</posx>
+					<posx>408</posx>
 					<posy>5</posy>
 					<width>775</width>
 					<height>30</height>
