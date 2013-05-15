@@ -4,7 +4,7 @@
 	<controls>
 	
 		<control type="group">
-			<visible>!Window.IsVisible(AddonSettings) + !Window.IsVisible(TextViewer)</visible>
+			<visible>!Window.IsVisible(AddonSettings) + !Window.IsVisible(TextViewer) + !Window.IsActive(contextmenu)</visible>
 	    <include>DialogAnimation</include>
 			<control type="group">
 				<posx>45</posx>
@@ -278,17 +278,26 @@
 	  <control type="group">
 			<posx>45</posx>
 			<posy>25</posy>
+			<visible>!Window.IsActive(contextmenu)</visible>
 	    <animation type="WindowOpen" reversible="false">
-	        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-	        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
+        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
 	    </animation>
 	    <animation type="WindowClose" condition="!Window.IsActive(shutdownmenu)" reversible="false">
-	        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-	        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
 	    </animation>
 	    <animation type="WindowClose" condition="Window.IsActive(shutdownmenu)" reversible="false">
-	        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-	        <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+        <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
+	    </animation>
+	    <animation type="Visible" reversible="false">
+        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+        <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
+	    </animation>
+	    <animation type="Hidden" reversible="false">
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+        <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
 	    </animation>
       <!-- Buttons -->
 			<control type="grouplist" id="9000">
@@ -336,12 +345,12 @@
       <!-- Labels -->
 			<control type="grouplist">
 	      <animation type="Visible" reversible="false">
-	          <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out"  />
-	          <effect type="slide" start="0,35" end="0,0" time="350" tween="sine" easing="out" />
+          <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out"  />
+          <effect type="slide" start="0,35" end="0,0" time="350" tween="sine" easing="out" />
 	      </animation>
 	      <animation type="Hidden" reversible="false">
-	          <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-	          <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
+          <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+          <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
 	      </animation>
         <animation type="Conditional" condition="!stringcompare(System.Language,English (US)) + !stringcompare(System.Language,English)">
           <effect type="fade" start="0" end="100" tween="sine" easing="in" time="250" />
@@ -417,6 +426,14 @@
 			<posx>45</posx>
 			<posy>70</posy>
 			<include>TopOptionsSlideAnimations</include>
+	    <animation type="Conditional" condition="!Window.IsActive(contextmenu)" reversible="false">
+        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+        <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
+	    </animation>
+	    <animation type="Conditional" condition="Window.IsActive(contextmenu)" reversible="false">
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+        <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
+	    </animation>
 			<control type="label">
 				<width>300</width>
 				<height>20</height>

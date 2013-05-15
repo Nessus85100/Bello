@@ -273,11 +273,11 @@
 				<height>30</height>
         <aspectratio>keep</aspectratio>
 				<texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
-			  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar)">
+			  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar) + !Window.IsActive(MusicInformation)">
 		      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
 		      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
 			  </animation>
-			  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar)">
+			  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar) | Window.IsActive(MusicInformation)">
 		      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
 		      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
 			  </animation>
