@@ -1270,8 +1270,74 @@
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(212)" reversible="true">Conditional</animation>
 				</control>
 			</control>
+			<control type="group">
+				<posx>3</posx>
+				<posy>45</posy>
+	      <include>HomeSlideAnimations</include>
+				<control type="label">
+					<description>Library Totals: Movies</description>
+					<width>500</width>
+					<height>20</height>
+					<font>FontSize_18</font>
+					<textcolor>blue</textcolor>
+					<scroll>false</scroll>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[20342]: $INFO[Window(Home).Property(Movies.Count)]</label>
+					<animation type="Conditional" condition="true" loop="true" reversible="false">
+						<effect type="fade" start="0" end="100" time="300" />
+						<effect type="fade" start="100" end="0" delay="10000" time="300" />
+						<effect type="slide" end="0" time="41200" />
+					</animation>
+				</control>
+				<control type="label">
+					<description>Library Totals: TVShows</description>
+					<width>500</width>
+					<height>20</height>
+					<font>FontSize_18</font>
+					<textcolor>blue</textcolor>
+					<scroll>false</scroll>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31002]: $INFO[Window(Home).Property(TVShows.Count)]</label>
+					<animation type="Conditional" condition="true" loop="true" reversible="false">
+						<effect type="fade" start="0" end="100" delay="10300" time="300" />
+						<effect type="fade" start="100" end="0" delay="20300" time="300" />
+						<effect type="slide" end="0" time="41200" />
+					</animation>
+				</control>
+				<control type="label">
+					<description>Library Totals: Albums</description>
+					<width>500</width>
+					<height>20</height>
+					<font>FontSize_18</font>
+					<textcolor>blue</textcolor>
+					<scroll>false</scroll>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[132]: $INFO[Window(Home).Property(Music.AlbumsCount)]</label>
+					<animation type="Conditional" condition="true" loop="true" reversible="false">
+						<effect type="fade" start="0" end="100" delay="20600" time="300" />
+						<effect type="fade" start="100" end="0" delay="30600" time="300" />
+						<effect type="slide" end="0" time="41200" />
+					</animation>
+				</control>
+				<control type="label">
+					<description>Library Totals: Songs</description>
+					<width>500</width>
+					<height>20</height>
+					<font>FontSize_18</font>
+					<textcolor>blue</textcolor>
+					<scroll>false</scroll>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[134]: $INFO[Window(Home).Property(Music.SongsCount)]</label>
+					<animation type="Conditional" condition="true" loop="true" reversible="false">
+						<effect type="fade" start="0" end="100" delay="30900" time="300" />
+						<effect type="fade" start="100" end="0" delay="40900" time="300" />
+					</animation>
+				</control>
+	     </control>
 	  </control>
-
-
 	</controls>	
 </window>
