@@ -339,11 +339,20 @@
 							
 		 <!-- Albums\Tracks List -->
 		 <control type="group">
-				<posx>445</posx>
-				<posy>408</posy>
-				<animation effect="slide" start="0,0" end="0,-30" time="150" condition="Control.HasFocus(50)">Conditional</animation>
-				<animation effect="fade" start="0" end="100" time="300" reversible="false" condition="Control.IsVisible(50)">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="300" reversible="false" condition="!Control.IsVisible(50)">Conditional</animation>
+			<posx>445</posx>
+			<posy>400</posy>
+			<animation effect="slide" start="0,0" end="0,-25" time="150" condition="Control.HasFocus(50) | Control.HasFocus(150)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="300" reversible="false" condition="!Control.IsVisible(50)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="300" reversible="false" condition="Control.IsVisible(50)">Conditional</animation>
+			<control type="button" id="150">
+			  <include>TopButton</include>
+		    <onfocus condition="Container.Content(Artists)">SetFocus(50)</onfocus>
+		    <onleft condition="Container.Content(Albums)">Control.Move(50,-1)</onleft>
+		    <onright condition="Container.Content(Albums)">Control.Move(50,1)</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+		    <onclick condition="Container.Content(Albums) + System.HasAddon(script.playalbum)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID]&amp;tracknr=$INFO[Container(50).ListItem.TrackNumber])</onclick>
+			</control>
 			<control type="wraplist" id="50">
 				<description>Albums\Tracks</description>
 				<posx>0</posx>
@@ -362,7 +371,7 @@
 						<posx>10</posx>
 						<posy>10</posy>
 						<width>140</width>
-						<height>138</height>
+						<height>140</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="thumbs/music_diffuse.png">thumbs/thumb_back.png</texture>
 					</control>
@@ -370,7 +379,7 @@
 						<posx>10</posx>
 						<posy>10</posy>
 						<width>140</width>
-						<height>138</height>
+						<height>140</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<texture fallback="DefaultMusicSongs.png" diffuse="thumbs/music_diffuse.png">$INFO[ListItem.Icon]</texture>
 					</control>
@@ -378,7 +387,7 @@
 						<posx>5</posx>
 						<posy>5</posy>
 						<width>150</width>
-						<height>148</height>
+						<height>150</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="thumbs/music_diffuse.png">thumbs/music_overlay_noglass.png</texture>
 					</control>
@@ -388,49 +397,50 @@
 						<posx>10</posx>
 						<posy>10</posy>
 						<width>140</width>
-						<height>138</height>
+						<height>140</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="thumbs/music_diffuse.png">thumbs/thumb_back.png</texture>
-						<animation reversible="false" effect="zoom" start="100" end="120" center="10,10" time="150">Focus</animation>
-						<animation reversible="false" effect="zoom" start="120" end="100" center="10,10" time="150">UnFocus</animation>
 					</control>
 					<control type="image">
 						<posx>10</posx>
 						<posy>10</posy>
 						<width>140</width>
-						<height>138</height>
+						<height>140</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<texture fallback="DefaultMusicSongs.png" diffuse="thumbs/music_diffuse.png">$INFO[ListItem.Icon]</texture>
-						<animation reversible="false" effect="zoom" start="100" end="120" center="10,10" time="150">Focus</animation>
-						<animation reversible="false" effect="zoom" start="120" end="100" center="10,10" time="150">UnFocus</animation>
 					</control>
 					<control type="image">
 						<posx>5</posx>
 						<posy>5</posy>
 						<width>150</width>
-						<height>148</height>
+						<height>150</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="thumbs/music_diffuse.png">thumbs/music_overlay_noglass.png</texture>
-						<animation reversible="false" effect="zoom" start="100" end="120" center="10,10" time="150">Focus</animation>
-						<animation reversible="false" effect="zoom" start="120" end="100" center="10,10" time="150">UnFocus</animation>
+					</control>
+					<control type="image">
+						<posx>-6</posx>
+						<posy>-5</posy>
+						<width>176</width>
+						<height>176</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30" diffuse="thumbs/music_diffuse.png">views/thumbnails/focus.png</texture>
+						<visible>Control.HasFocus(50) | Control.HasFocus(150)</visible>
 					</control>
 					<control type="group">
-						<posx>190</posx>
-						<posy>144</posy>
-						<animation reversible="false" effect="fade" start="0" end="100" time="400">Focus</animation>
-						<animation reversible="false" effect="fade" start="100" end="0" time="0">Unfocus</animation>
+						<posx>12</posx>
+						<posy>150</posy>
+						<animation effect="fade" start="0" end="100" time="400" reversible="false" condition="Control.HasFocus(50) | Control.HasFocus(150)">Conditional</animation>
+						<animation effect="fade" start="100" end="0" time="0" reversible="false" condition="![Control.HasFocus(50) | Control.HasFocus(150)]">Conditional</animation>
 					  <control type="label">
 							<width>590</width>
 							<height>40</height>
 							<font>FontSize_20</font>
 							<align>left</align>
 							<aligny>center</aligny>
-					    <textcolor>white</textcolor>
+					    <textcolor>blue</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<scroll>false</scroll>
 							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,) ]</label>
-							<animation effect="fade" start="0" end="100" time="200" condition="Control.HasFocus(50)">Conditional</animation>
-							<visible>Control.HasFocus(50)</visible>
 						  <visible>Container.Content(Artists)</visible>
 					  </control>
 					  <control type="label">
@@ -439,12 +449,10 @@
 							<font>FontSize_20</font>
 							<align>left</align>
 							<aligny>center</aligny>
-					    <textcolor>white</textcolor>
+					    <textcolor>blue</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<scroll>false</scroll>
 							<label>$INFO[ListItem.TrackNumber]$INFO[ListItem.Label,. ]$INFO[ListItem.Duration, (,) ]</label>
-							<animation effect="fade" start="0" end="100" time="200" condition="Control.HasFocus(50)">Conditional</animation>
-							<visible>Control.HasFocus(50)</visible>
 						  <visible>IntegerGreaterThan(ListItem.TrackNumber,9) + Container.Content(Albums)</visible>
 					  </control>
 					  <control type="label">
@@ -453,15 +461,17 @@
 							<font>FontSize_20</font>
 							<align>left</align>
 							<aligny>center</aligny>
-					    <textcolor>white</textcolor>
+					    <textcolor>blue</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<scroll>false</scroll>
 							<label>0$INFO[ListItem.TrackNumber]$INFO[ListItem.Label,. ]$INFO[ListItem.Duration, (,) ]</label>
-							<animation effect="fade" start="0" end="100" time="200" condition="Control.HasFocus(50)">Conditional</animation>
-							<visible>Control.HasFocus(50)</visible>
 						  <visible>!IntegerGreaterThan(ListItem.TrackNumber,9) + Container.Content(Albums)</visible>
 					  </control>
 					</control>
+					<control type="button">
+				    <include>TopButton</include>
+            <onfocus condition="Container.Content(Albums)">SetFocus(150)</onfocus>
+          </control>
 				</focusedlayout>
 			</control>
 	   </control>

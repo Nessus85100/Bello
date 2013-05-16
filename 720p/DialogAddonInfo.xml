@@ -444,6 +444,50 @@
 				<aligny>center</aligny>
 				<label>$INFO[Container.Property(AddonCategory)]</label>
 			</control>
+			<control type="label">
+				<width>300</width>
+				<height>20</height>
+				<font>FontSize_18</font>
+				<textcolor>blue</textcolor>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>1037</label>
+				<visible>Window.IsVisible(Videos)</visible>
+			</control>
+			<control type="label">
+				<width>300</width>
+				<height>20</height>
+				<font>FontSize_18</font>
+				<textcolor>blue</textcolor>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>1038</label>
+				<visible>Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicFiles)</visible>
+			</control>
+			<control type="label">
+				<width>300</width>
+				<height>20</height>
+				<font>FontSize_18</font>
+				<textcolor>blue</textcolor>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>1039</label>
+				<visible>Window.IsVisible(Pictures)</visible>
+			</control>
+			<control type="label">
+				<width>300</width>
+				<height>20</height>
+				<font>FontSize_18</font>
+				<textcolor>blue</textcolor>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>1043</label>
+				<visible>Window.IsVisible(Programs)</visible>
+			</control>
 		</control>
 	</controls>
 </window>
