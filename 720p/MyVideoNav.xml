@@ -384,7 +384,6 @@
 					<description>Watched/Unwatched Toggle</description>
 					<label>20367</label>
 				  <include>TopButton</include>
-		      <visible>SubString(Container.FolderPath,videodb://)</visible>
 				</control>
 				<control type="button" id="99">
 					<description>Files</description>
@@ -456,7 +455,6 @@
 					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(10)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(10)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(10)" reversible="true">Conditional</animation>
-		      <visible>SubString(Container.FolderPath,videodb://)</visible>
 				</control>
 				<control type="label">
 					<description>Files</description>
