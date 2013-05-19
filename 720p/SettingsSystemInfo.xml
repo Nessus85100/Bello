@@ -115,6 +115,23 @@
 					<pulseonselect>false</pulseonselect>
 					<label>13281</label>
 				</control>
+				<control type="button" id="99">
+					<description>Button PVR</description>
+					<width>295</width>
+					<height>50</height>
+					<font>FontSize_20</font>
+					<textcolor>77white</textcolor>
+					<focusedcolor>white</focusedcolor>
+				  <disabledcolor>33white</disabledcolor>
+					<texturefocus>buttons/catbullet_fo.png</texturefocus>
+					<texturenofocus>buttons/catbullet_nf.png</texturenofocus>
+					<align>left</align>
+					<aligny>center</aligny>
+				  <textwidth>250</textwidth>
+					<textoffsetx>40</textoffsetx>
+					<pulseonselect>false</pulseonselect>
+					<label>19191</label>
+				</control>
 			</control>
 			<control type="grouplist">
 					<posx>317</posx>

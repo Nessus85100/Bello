@@ -98,6 +98,7 @@
 					<label>$LOCALIZE[31018]</label>
 					<onclick>ActivateWindow(10025,plugin://plugin.video.the.trailers/,return)</onclick>
 					<visible>System.HasAddon(plugin.video.the.trailers)</visible>
+					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="2">
 					<label>$LOCALIZE[135]</label>
@@ -181,6 +182,7 @@
 					<label>$LOCALIZE[31001]</label>
 					<onclick>XBMC.RunScript(script.tv.show.next.aired)</onclick>
 				  <visible>System.HasAddon(script.tv.show.next.aired)</visible>
+					<visible>Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="2">			
 					<label>$LOCALIZE[20388]</label>

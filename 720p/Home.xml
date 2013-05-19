@@ -28,12 +28,12 @@
 				 <align>center</align>
 			   <onup>SetFocus(21)</onup>
 				 <ondown condition="[Container(20).HasFocus(9) + !Skin.HasSetting(HideSettingsSubMenu)]
-													| [Container(20).HasFocus(2) + !Skin.HasSetting(HideMoviesSubMenu)]
-													| [Container(20).HasFocus(1) + !Skin.HasSetting(HideTVShowsSubMenu)]
-													| [Container(20).HasFocus(3) + !Skin.HasSetting(HideMusicSubMenu)]">SetFocus(23)</ondown>
-				 <ondown condition="[Container(20).HasFocus(2) + Skin.HasSetting(HideMoviesSubMenu)]
-													| [Container(20).HasFocus(1) + Skin.HasSetting(HideTVShowsSubMenu)]
-													| [Container(20).HasFocus(3) + Skin.HasSetting(HideMusicSubMenu)]">SetFocus(81)</ondown>
+													| [[Library.HasContent(movies) + Container(20).HasFocus(2)] + !Skin.HasSetting(HideMoviesSubMenu)]
+													| [[Library.HasContent(tvshows) + Container(20).HasFocus(1)] + !Skin.HasSetting(HideTVShowsSubMenu)]
+													| [[Library.HasContent(music) + Container(20).HasFocus(3)] + !Skin.HasSetting(HideMusicSubMenu)]">SetFocus(23)</ondown>
+				 <ondown condition="[[Library.HasContent(movies) + Container(20).HasFocus(2)] + Skin.HasSetting(HideMoviesSubMenu)]
+													| [[Library.HasContent(tvshows) + Container(20).HasFocus(1)] + Skin.HasSetting(HideTVShowsSubMenu)]
+													| [[Library.HasContent(music) + Container(20).HasFocus(3)] + Skin.HasSetting(HideMusicSubMenu)]">SetFocus(81)</ondown>
 				 <onleft>20</onleft>
 				 <onright>20</onright>
 				 <onback condition="Container(20).HasFocus(15)">Skin.SetString(CustomFavourite1.Label)</onback>
@@ -57,6 +57,7 @@
 							<posy>200</posy>
 							<width>590</width>
 		          <textcolor>white</textcolor>
+				      <shadowcolor>99000000</shadowcolor>
 							<font>FontSize_100</font>
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
@@ -82,6 +83,7 @@
 							<posy>200</posy>
 							<width>590</width>
 		          <textcolor>white</textcolor>
+				      <shadowcolor>99000000</shadowcolor>
 							<font>FontSize_100</font>
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
@@ -91,7 +93,8 @@
 				 <content>
 					 <item id="1">
 							<label>$LOCALIZE[31002]</label>
-							<onclick>ActivateWindow(videos,tvshowtitles,return)</onclick>
+              <onclick condition="!Library.HasContent(tvshows)">ActivateWindow(videos,files,return)</onclick>
+              <onclick condition="Library.HasContent(tvshows)">ActivateWindow(videos,tvshowtitles,return)</onclick>
 							<thumb>special://skin/backgrounds/videos.jpg</thumb>
 							<icon>-</icon>
 							<visible>!Skin.HasSetting(HideHomeMenuTVShowsButton)</visible>
@@ -100,7 +103,8 @@
 					 </item>
 					 <item id="2">
 							<label>$LOCALIZE[20342]</label>
-							<onclick>ActivateWindow(videos,movietitles,return)</onclick>
+							<onclick condition="Library.HasContent(movies)">ActivateWindow(videos,movietitles,return)</onclick>
+              <onclick condition="!Library.HasContent(movies)">ActivateWindow(videos,files,return)</onclick>
 							<thumb>special://skin/backgrounds/videos.jpg</thumb>
 							<icon>-</icon>
 							<visible>!Skin.HasSetting(HideHomeMenuMoviesButton)</visible>
@@ -109,8 +113,8 @@
 					 </item>
 					 <item id="3">
 							<label>$LOCALIZE[2]</label>
-							<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[744])">ActivateWindow(musicfiles)</onclick>
-							<onclick condition="!stringcompare(Skin.String(MusicName),$LOCALIZE[744])">ActivateWindow(musiclibrary,$INFO[Skin.String(MusicPath)])</onclick>
+							<onclick condition="!Library.HasContent(music) | stringcompare(Skin.String(MusicName),$LOCALIZE[744])">ActivateWindow(musicfiles)</onclick>
+							<onclick condition="Library.HasContent(music) + !stringcompare(Skin.String(MusicName),$LOCALIZE[744])">ActivateWindow(musiclibrary,$INFO[Skin.String(MusicPath)])</onclick>
 							<thumb>special://skin/backgrounds/music.jpg</thumb>
 							<icon>-</icon>
 							<visible>!Skin.HasSetting(HideHomeMenuMusicButton)</visible>
@@ -248,51 +252,6 @@
 							<label>$INFO[Skin.String(CustomFavourite5.Label)]</label>
 							<onclick>$INFO[Skin.String(CustomFavourite5.Path)]</onclick>
 							<visible>!IsEmpty(Skin.String(CustomFavourite5.Path))</visible>
-					 </item>
-							
-					 <item id="20">
-							<label>[COLOR=44EEEEEA]$INFO[Skin.String(homecustompanel6.Label)][/COLOR]</label>
-							<onclick>$INFO[Skin.String(homecustompanel6.Path)]</onclick>
-							<thumb>-</thumb>
-							<icon>$INFO[Skin.String(homecustompanel6.Icon)]</icon>
-							<label2>$INFO[Skin.String(homecustompanel6.Icon-folder)]</label2>
-							<visible>Skin.HasSetting(homecustompanel6)</visible>
-					 </item>
-							
-					 <item id="21">
-							<label>[COLOR=44EEEEEA]$INFO[Skin.String(homecustompanel7.Label)][/COLOR]</label>
-							<onclick>$INFO[Skin.String(homecustompanel7.Path)]</onclick>
-							<thumb>-</thumb>
-							<icon>$INFO[Skin.String(homecustompanel7.Icon)]</icon>
-							<label2>$INFO[Skin.String(homecustompanel7.Icon-folder)]</label2>
-							<visible>Skin.HasSetting(homecustompanel7)</visible>
-					 </item>
-							
-					 <item id="22">
-							<label>[COLOR=44EEEEEA]$INFO[Skin.String(homecustompanel8.Label)][/COLOR]</label>
-							<onclick>$INFO[Skin.String(homecustompanel8.Path)]</onclick>
-							<thumb>-</thumb>
-							<icon>$INFO[Skin.String(homecustompanel8.Icon)]</icon>
-							<label2>$INFO[Skin.String(homecustompanel8.Icon-folder)]</label2>
-							<visible>Skin.HasSetting(homecustompanel8)</visible>
-					 </item>
-							
-					 <item id="23">
-							<label>[COLOR=44EEEEEA]$INFO[Skin.String(homecustompanel9.Label)][/COLOR]</label>
-							<onclick>$INFO[Skin.String(homecustompanel9.Path)]</onclick>
-							<thumb>-</thumb>
-							<icon>$INFO[Skin.String(homecustompanel9.Icon)]</icon>
-							<label2>$INFO[Skin.String(homecustompanel9.Icon-folder)]</label2>
-							<visible>Skin.HasSetting(homecustompanel9)</visible>
-					 </item>
-							
-					 <item id="24">
-							<label>[COLOR=44EEEEEA]$INFO[Skin.String(homecustompanel10.Label)][/COLOR]</label>
-							<onclick>$INFO[Skin.String(homecustompanel10.Path)]</onclick>
-							<thumb>-</thumb>
-							<icon>$INFO[Skin.String(homecustompanel10.Icon)]</icon>
-							<label2>$INFO[Skin.String(homecustompanel10.Icon-folder)]</label2>
-							<visible>Skin.HasSetting(homecustompanel10)</visible>
 					 </item>
 				 </content>
 			  </control>
@@ -932,261 +891,8 @@
 					<shadowcolor>99000000</shadowcolor>
 				</control>
 			</control>
-			
 	  </control>
 
-
-	  <!-- ============ -->
-	  <!-- Home Weather -->
-	  <!-- ============ -->
-    <control type="group.">
-		 <posx>97</posx>
-		 <posy>340r</posy>
-     <control type="group">
-					<visible>Container(20).HasFocus(8)</visible>
-					<visible>!Skin.HasSetting(PDAWeatherPanel)</visible>
-					<visible>![Container(20).OnNext | Container(20).OnPrevious] + ![Container.Scrolling + Container(20).Scrolling]</visible>
-					<animation type="Visible" reversible="false">
-						<effect type="fade" start="0" end="100" delay="250" time="400" />
-					</animation>
-					<animation type="WindowOpen" reversible="false">
-						<effect type="fade" start="0" end="100" time="400" delay="600"/>
-					</animation>
-					<animation type="WindowClose" reversible="false">
-						<effect type="fade" start="100" end="0" delay="600" time="200" />
-					</animation>
-     	<control type="image">
-					<description>Panel</description>
-					<posx>42</posx>
-					<posy>0</posy>
-					<width>315</width>
-					<height>170</height>
-          <texture>osd/nowplaying/np-back-overlay.png</texture>
-					<aspectratio>stretch</aspectratio>
-			    <colordiffuse>99999999</colordiffuse>
-      </control>
-			<control type="label">
-					<description>fetching label</description>
-					<posx>0</posx>
-					<posy>65</posy>
-					<width>400</width>
-					<height>30</height>
-					<font>FontSize_22</font>
-					<textcolor>77grey</textcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[31232]</label>
-					<visible>!Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-					<description>Feels Like label</description>
-					<posx>333</posx>
-					<posy>118</posy>
-					<height>45</height>
-					<width>270</width>
-					<scroll>false</scroll>
-					<font>FontSize_22</font>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>[COLOR=ddC6C6C8]$LOCALIZE[402][/COLOR] $INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
-					<textcolor>grey</textcolor>
-		      <shadowcolor>99000000</shadowcolor>
-					<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="image">
-					<description>current weather icon</description>
-					<posx>60</posx>
-					<posy>27</posy>
-					<height>125</height>
-					<width>125</width>
-					<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
-			</control>
-			<control type="label">
-					<description>Big current temp value</description>
-					<posx>295</posx>
-					<posy>53</posy>
-					<width>300</width>
-					<height>30</height>
-					<font>FontSize_100B</font>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[Window(Weather).Property(Current.Temperature)]</label>
-					<textcolor>grey</textcolor>
-		      <shadowcolor>99000000</shadowcolor>
-					<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-					<description>Big current temp units value</description>
-					<posx>295</posx>
-					<posy>33</posy>
-					<width>300</width>
-					<height>30</height>
-					<font>FontSize_36B</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[System.TemperatureUnits]</label>
-					<textcolor>grey</textcolor>
-		      <shadowcolor>99000000</shadowcolor>
-					<visible>Weather.IsFetched</visible>
-			</control>
-     	<control type="image">
-					<description>Panel</description>
-					<posx>48</posx>
-					<posy>6</posy>
-					<width>303</width>
-					<height>158</height>
-          <texture>windows/weather/overlay-shadow.png</texture>
-					<aspectratio>stretch</aspectratio>
-      </control>
-		 </control>			
-     <control type="group">
-					<visible>Container(20).HasFocus(10)</visible>
-					<visible>Skin.HasSetting(PDAWeatherPanel)</visible>
-					<visible>![Container(20).OnNext | Container(20).OnPrevious] + ![Container.Scrolling + Container(20).Scrolling]</visible>
-					<animation type="Visible" reversible="false">
-						<effect type="fade" start="0" end="100" delay="250" time="400" />
-					</animation>
-					<animation type="WindowOpen" reversible="false">
-						<effect type="fade" start="0" end="100" time="400" delay="600"/>
-					</animation>
-					<animation type="WindowClose" reversible="false">
-						<effect type="fade" start="100" end="0" delay="600" time="200" />
-					</animation>
-     	<control type="image">
-					<description>Panel</description>
-					<posx>42</posx>
-					<posy>0</posy>
-					<width>315</width>
-					<height>170</height>
-          <texture>osd/nowplaying/np-back-overlay.png</texture>
-					<aspectratio>stretch</aspectratio>
-			    <colordiffuse>99999999</colordiffuse>
-      </control>
-      <control type="multiimage">
-					<posx>48</posx>
-					<posy>6</posy>
-					<width>303</width>
-					<height>158</height>
-	        <aspectratio scalediffuse="false">scale</aspectratio>
-	        <imagepath>$INFO[Window(weather).Property(Current.FanartCode),special://home/addons/weather.fanart.pda.style/media/]</imagepath>
-	        <timeperimage>100</timeperimage>
-	        <randomize>false</randomize>
-	        <fadetime>0</fadetime>
-					<visible>Weather.IsFetched</visible>
-      </control>
-			<control type="label">
-					<description>fetching label</description>
-					<posx>0</posx>
-					<posy>65</posy>
-					<width>400</width>
-					<height>30</height>
-					<font>FontSize_22</font>
-					<textcolor>77grey</textcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[31232]</label>
-					<visible>!Weather.IsFetched</visible>
-			</control>
-			<control type="label.">
-					<description>label</description>
-					<posx>340</posx>
-					<posy>0</posy>
-					<height>45</height>
-					<width>270</width>
-					<scroll>false</scroll>
-					<font>FontSize_20</font>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[System.Date(d mmm yyyy)], $INFO[System.Time]</label>
-					<textcolor>lightgrey</textcolor>
-		      <shadowcolor>99000000</shadowcolor>
-					<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-					<description>label</description>
-					<posx>45</posx>
-					<posy>-40</posy>
-					<height>45</height>
-					<width>310</width>
-					<scroll>false</scroll>
-					<font>FontSize_24</font>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[Window(Weather).Property(Location)]</label>
-					<textcolor>lightgrey</textcolor>
-		      <shadowcolor>99000000</shadowcolor>
-					<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label.">
-					<description>label</description>
-					<posx>55</posx>
-					<posy>100</posy>
-					<height>90</height>
-					<width>270</width>
-					<scroll>false</scroll>
-					<font>FontSize_24</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits] - $INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
-					<textcolor>lightgrey</textcolor>
-		      <shadowcolor>99000000</shadowcolor>
-					<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-					<description>label</description>
-					<posx>55</posx>
-					<posy>100</posy>
-					<height>90</height>
-					<width>270</width>
-					<scroll>false</scroll>
-					<font>FontSize_22</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[402] $INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
-		      <shadowcolor>99000000</shadowcolor>
-					<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="group">
-			    <posx>315</posx>
-					<posy>103</posy>
-			<control type="label">
-					<description>Big current temp value</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>30</height>
-					<font>FontSize_80</font>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
-		      <shadowcolor>99000000</shadowcolor>
-					<visible>Weather.IsFetched</visible>
-			</control>
-			<control type="label">
-					<description>Big current temp units value</description>
-					<posx>-2</posx>
-					<posy>-15</posy>
-					<width>300</width>
-					<height>30</height>
-					<font>FontSize_28B</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[System.TemperatureUnits]</label>
-		      <shadowcolor>99000000</shadowcolor>
-					<visible>Weather.IsFetched</visible>
-			</control>
-			</control>
-     	<control type="image">
-					<description>Panel</description>
-					<posx>48</posx>
-					<posy>6</posy>
-					<width>303</width>
-					<height>158</height>
-          <texture>windows/weather/overlay-shadow.png</texture>
-					<aspectratio>stretch</aspectratio>
-      </control>
-		 </control>			
-	  </control>	
 
 		<include condition="!Skin.HasSetting(HideMoviesSubMenu)">HomeSubMenuMovies</include>
 		<include condition="!Skin.HasSetting(HideTVShowsSubMenu)">HomeSubMenuTVShows</include>
