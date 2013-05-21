@@ -258,7 +258,7 @@
 				<width>1075</width>
 				<height>50</height>
 				<font>FontSize_36</font>
-				<label>$LOCALIZE[130]</label>
+				<label>$LOCALIZE[138]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>

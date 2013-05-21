@@ -6,6 +6,7 @@
 			<posy>640</posy>
 			<visible>![Container.Content(Episodes) + Substring(Container.FolderPath,plugin://)]</visible>
 	    <include>NotificationsAnimations</include>
+		  <visible>!Window.IsActive(ShutdownMenu)</visible>
 		  <animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog) | Library.IsScanningVideo]">
 	      <effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
 	      <effect type="slide" start="0,-35" end="0,0" time="450" delay="250" tween="cubic" easing="out" />
@@ -151,6 +152,7 @@
 		  <posx>55</posx>
 			<posy>640</posy>
 	    <include>NotificationsAnimations</include>
+		  <visible>!Window.IsActive(ShutdownMenu)</visible>
 		  <animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)]">
 	      <effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
 	      <effect type="slide" start="0,-35" end="0,0" time="450" delay="250" tween="cubic" easing="out" />
@@ -300,12 +302,12 @@
   </include>
 
 
-
   <include name="WeatherAlertsNotifications">
 		<control type="group">
 		  <posx>55</posx>
 			<posy>640</posy>
 	    <include>NotificationsAnimations</include>
+		  <visible>!Window.IsActive(ShutdownMenu)</visible>
 		  <animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)]">
 	      <effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
 	      <effect type="slide" start="0,-35" end="0,0" time="450" delay="250" tween="cubic" easing="out" />

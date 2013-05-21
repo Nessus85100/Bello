@@ -1,11 +1,13 @@
 <window id="151">
 	<defaultcontrol></defaultcontrol>
 	<controls>
+
 	 <control type="group">
 	  <posx>55</posx>
 		<posy>645</posy>
 	  <include>NowPlaying</include>
 	  <include>KaiToastSlideAnimations</include>
+		<visible>!Window.IsActive(ShutdownMenu)</visible>
 	  <animation type="Conditional" reversible="false" condition="![Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)]">
       <effect type="fade" start="0" end="100" time="400" delay="250" tween="sine" easing="in"  />
       <effect type="slide" start="0,55" end="0,0" time="450" delay="250" tween="cubic" easing="out" />

@@ -4,7 +4,7 @@
 	 <control type="group">
 	  <posx>40</posx>
 		<posy>645</posy>
-		<visible>!Window.IsVisible(startup)</visible>
+		<visible>!Window.IsActive(ShutdownMenu) + !Window.IsVisible(startup)</visible>
 	  <include>NowPlaying</include>
 		<control type="grouplist">
 			<posx>0</posx>

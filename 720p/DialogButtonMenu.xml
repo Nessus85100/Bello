@@ -334,5 +334,94 @@
 			</control>
 		</control>
 	 </control>
+
+
+	 <!-- ================= -->
+	 <!-- Small System Info -->
+	 <!-- ================= -->
+	 <control type="group">
+	  <posx>45</posx>
+		<posy>540</posy>
+    <animation type="WindowOpen" reversible="false">
+      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+      <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
+    </animation>
+    <animation type="WindowClose" reversible="false">
+      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+      <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
+    </animation>
+    <animation type="Visible" reversible="false">
+      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+      <effect type="slide" start="0,90" end="0,0" time="350" tween="cubic" easing="out" />
+    </animation>
+    <animation type="Hidden" reversible="false">
+      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+      <effect type="slide" start="0,0" end="0,90" time="350" tween="sine" easing="out" />
+    </animation>
+		<control type="grouplist">
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>200</height>
+			<width>1190</width>
+			<itemgap>0</itemgap>
+		  <aligny>bottom</aligny>
+			<control type="label" id="1">
+				<height>50</height>
+				<width>1190</width>
+				<font>FontSize_40</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+		    <align>right</align>
+		    <aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$LOCALIZE[13000]</label>
+			</control>
+			<control type="label" id="1">
+				<height>25</height>
+				<width>1190</width>
+				<font>FontSize_22</font>
+				<textcolor>99white</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+		    <align>right</align>
+		    <aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[System.CPUUsage, $LOCALIZE[13271] ]</label>
+			</control>
+			<control type="label" id="1">
+				<height>25</height>
+				<width>1190</width>
+				<font>FontSize_22</font>
+				<textcolor>99white</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+		    <align>right</align>
+		    <aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[System.Memory(used.percent), $LOCALIZE[31027] ]</label>
+			</control>
+			<control type="label" id="1">
+				<height>25</height>
+				<width>1190</width>
+				<font>FontSize_22</font>
+				<textcolor>99white</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+		    <align>right</align>
+		    <aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[Network.IPAddress, $LOCALIZE[150]: ]</label>
+			</control>
+			<control type="label" id="1">
+				<height>25</height>
+				<width>1190</width>
+				<font>FontSize_22</font>
+				<textcolor>99white</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+		    <align>right</align>
+		    <aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[System.ScreenResolution]</label>
+			</control>
+		</control>
+	 </control>
+
   </controls>
 </window>
