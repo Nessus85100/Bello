@@ -2,19 +2,44 @@
 # Addon Name: Bello (Beta)
 # Addon id: skin.bello
 # Addon Provider: Nessus
+# Translators:
+# peppe_sr <peppe.calvo.cc@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
+"PO-Revision-Date: 2013-05-20 08:00+0000\n"
+"Last-Translator: peppe_sr <peppe.calvo.cc@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/xbmc-skins/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "Addon Summary"
+msgid "A GUI for XBMC Media Center"
+msgstr "Un Interfaccia per XBMC Media Center"
+
+msgctxt "Addon Description"
+msgid ""
+"Bello is a GUI for XBMC Media Center. The goal of Bello is to maximize your "
+"XBMC entertainment experience with it's fast, unique and unified interface "
+"along with all the latest features of XBMC."
+msgstr "Bello è un'interfaccia per XBMC Media Center. L'obiettivo di Bello è di massimizzare la tua esperienza di intrattenimento con XBMC con la sua interfaccia veloce, unica ed unificata insieme alle nuove caratteristiche di XBMC."
+
+msgctxt "Addon Disclaimer"
+msgid "Mouse usage is not supported"
+msgstr "L'utilizzo del Mouse non è suportato"
+
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "Live TV"
+
+msgctxt "#31001"
+msgid "TV Guide"
+msgstr "Guida TV"
 
 msgctxt "#31002"
 msgid "TV Shows"
@@ -47,6 +72,10 @@ msgstr "Il sistema si spegnerà in"
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Menù Contestuale"
+
+msgctxt "#31010"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31011"
 msgid "ON"
@@ -160,6 +189,14 @@ msgctxt "#31039"
 msgid "IP Address"
 msgstr "Indirizzo IP"
 
+msgctxt "#31040"
+msgid "Created by"
+msgstr "Creato da"
+
+msgctxt "#31041"
+msgid "Creator"
+msgstr "Creatore"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Diapositiva"
@@ -187,6 +224,10 @@ msgstr "Icone"
 msgctxt "#31086"
 msgid "Banner List"
 msgstr "Striscione"
+
+msgctxt "#31088"
+msgid "List Wall"
+msgstr "Lista Muro"
 
 msgctxt "#31100"
 msgid "Home Categories Buttons"
@@ -361,11 +402,15 @@ msgid "Choose Subtitles Add-on"
 msgstr "Scegli l'Add-on per i Sottotitoli"
 
 msgctxt "#31143"
-msgid "Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-on)[/COLOR]"
+msgid ""
+"Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-"
+"on)[/COLOR]"
 msgstr "Abilita le Info Prossimi in Onda per le Serie TV [COLOR=55white](Richiede l'Add-on \"Next Aired\")[/COLOR]"
 
 msgctxt "#31144"
-msgid "Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-on)[/COLOR]"
+msgid ""
+"Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-"
+"on)[/COLOR]"
 msgstr "Abilita il Tema Musicale per le Serie TV [COLOR=55white](Richiede l'Add-on \"TV Tunes\")[/COLOR]"
 
 msgctxt "#31145"
@@ -397,12 +442,38 @@ msgid "Show RSS feed in whole skin"
 msgstr "Mostra i feed RSS in tutto lo skin"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-"
+"DVD)[/COLOR]"
 msgstr "Nascondi la lettura dei contrassegni dai nomi dei file [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
 msgstr "Abilita Schermata Accesso"
+
+msgctxt "#31154"
+msgid "Choose Trailers Add-on"
+msgstr "Scegli l'Add-on per i Trailer"
+
+msgctxt "#31200"
+msgid "My Movies"
+msgstr "I Miei Film"
+
+msgctxt "#31201"
+msgid "My TV Shows"
+msgstr "Le Mie Serie TV"
+
+msgctxt "#31202"
+msgid "My Music"
+msgstr "La Mia Musica"
+
+msgctxt "#31203"
+msgid "New Search"
+msgstr "Nuova Ricerca"
+
+msgctxt "#31204"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -524,6 +595,10 @@ msgctxt "#31234"
 msgid "Fetching Forecast Info for..."
 msgstr "Recupero Informazioni Previsioni per..."
 
+msgctxt "#31235"
+msgid "Current Forecast"
+msgstr "Previsione Attuale"
+
 msgctxt "#31236"
 msgid "Forecast"
 msgstr "Previsione"
@@ -535,6 +610,62 @@ msgstr "Vista"
 msgctxt "#31238"
 msgid "No Shows Airing Today"
 msgstr "Nessun Programma Trasmesso Oggi"
+
+msgctxt "#31239"
+msgid "Shows Listed"
+msgstr "Programmi in Lista"
+
+msgctxt "#31240"
+msgid "Shows Airing Today"
+msgstr "Programmi Trasmessi Oggi"
+
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "Film aggiunti di recente"
+
+msgctxt "#31242"
+msgid "Recently Added TV Shows"
+msgstr "Serie TV Aggiunte di Recente"
+
+msgctxt "#31243"
+msgid "Recently Added Music"
+msgstr "Musica Aggiunta di Recente"
+
+msgctxt "#31244"
+msgid "New Movies"
+msgstr "Nuovi Film"
+
+msgctxt "#31245"
+msgid "New TV Shows"
+msgstr "Nuove Serie TV"
+
+msgctxt "#31246"
+msgid "New Music"
+msgstr "Nuova Musica"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Film casuali"
+
+msgctxt "#31248"
+msgid "Random TV Shows"
+msgstr "Serie TV Casuali"
+
+msgctxt "#31249"
+msgid "Random Music"
+msgstr "Musica casuale"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Tutti i Film"
+
+msgctxt "#31251"
+msgid "All TV Shows"
+msgstr "Tutte le Serie TV"
+
+msgctxt "#31252"
+msgid "All Music"
+msgstr "Tutta la Musica"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -641,41 +772,101 @@ msgid "Delete Group"
 msgstr "Elimina Gruppo"
 
 msgctxt "#31401"
-msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
+msgid ""
+"Adjust the look and feel of XBMC. Includes skin, theme, sound and font "
+"selection, RSS feed and localisation settings."
 msgstr "Regola l'aspetto di XBMC. Include skin, temi, suoni, caratteri, feed RSS ed impostazioni della lingua."
 
 msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
+msgid ""
+"Manage your video content. Includes library database options, subtitles, "
+"scrapers, and playback options."
 msgstr "Gestisci i tuoi contenuti video. Include opzioni db, liste dei file, sottotitoli, scraper, e opzioni di esecuzione."
 
 msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
+msgid ""
+"Change playback settings, manage EPG data settings, recordings and parental "
+"control."
 msgstr "Cambia le impostazioni di riproduzione, gestisci i dati dell'EPG, le registrazioni ed il controllo genitori."
 
 msgctxt "#31404"
-msgid "Configure how XBMC handles music. Setup playback and listing options, browsing files or database and many more."
+msgid ""
+"Configure how XBMC handles music. Setup playback and listing options, "
+"browsing files or database and many more."
 msgstr "Configura come XBMC gestisce la musica. Imposta opzioni di esecuzione ed ascolto, sfoglia per file, per db e molto di più."
 
 msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
+msgid ""
+"Picture handeling can be quite easy. You can do this by adjusting display, "
+"effects, tags, timing and picture listing."
 msgstr "La gestione delle immagini può essere molto facile. Puoi farlo regolando il display, gli effetti, le etichette ed altro ancora."
 
 msgctxt "#31406"
-msgid "Adjusting Weather is very easy with XBMC. Select a weather plugin and get live updates for up to three cities."
+msgid ""
+"Adjusting Weather is very easy with XBMC. Select a weather plugin and get "
+"live updates for up to three cities."
 msgstr "Impostare il Meteo è molto semplice con XBMC. Seleziona un plugin meteo ed ottieni aggiornamenti dal vivo."
 
 msgctxt "#31407"
-msgid "Set up XBMC's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
+msgid ""
+"Set up XBMC's network interface. Controls IP assignment, WWW and FTP server,"
+" SMB client, and UPnP configuration."
 msgstr "Gestisci le connessioni di rete di XBMC. Controlla l'IP, i server FTP, i client SMB, e la configurazione UPnP."
 
 msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
+msgid ""
+"Control core hardware and software functions, including audio and video "
+"hardware setup, autoplay and locking."
 msgstr "Controlla le funzioni hardware e software, comprese le impostazioni audio e video, le esecuzioni automatiche ed i blocchi."
 
 msgctxt "#31409"
-msgid "Choose from a variety of advanced settings and customization options to make \"Bello\" fit your needs and taste."
+msgid ""
+"Choose from a variety of advanced settings and customization options to make"
+" \"Bello\" fit your needs and taste."
 msgstr "Scegli tra una serie di impostazioni avanzate e personalizzazioni per far si che lo skin risponda ai tuoi gusti."
 
 msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
+msgid ""
+"With XBMC you can have several profiles, even a logon screen for controlled "
+"access."
 msgstr "Con XBMC puoi avere vari profili ed una schermata di login per gli accessi controllati."
+
+msgctxt "#31411"
+msgid "Configure Appearance Settings"
+msgstr "Configura le Impostazioni dell'Aspetto"
+
+msgctxt "#31412"
+msgid "Configure Video Settings"
+msgstr "Configura Impostazioni Video"
+
+msgctxt "#31413"
+msgid "Configure Live TV Settings"
+msgstr "Configura Impostazioni Skin"
+
+msgctxt "#31414"
+msgid "Configure Music Settings"
+msgstr "Configura Impostazioni Musica"
+
+msgctxt "#31415"
+msgid "Configure Pictures Settings"
+msgstr "Configura Impostazioni Immagini"
+
+msgctxt "#31416"
+msgid "Configure Weather Settings"
+msgstr "Configura Impostazioni Meteo"
+
+msgctxt "#31417"
+msgid "Configure Services Settings"
+msgstr "Configura le Impostazioni dei Servizi"
+
+msgctxt "#31418"
+msgid "Configure System Settings"
+msgstr "Configura Impostazioni Sistema"
+
+msgctxt "#31419"
+msgid "Configure Profiles Settings"
+msgstr "Configura le Impostazioni dei Profili"
+
+msgctxt "#31420"
+msgid "Configure Skin Settings"
+msgstr "Configura le Impostazioni dello Skin"

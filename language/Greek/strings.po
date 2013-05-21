@@ -2,19 +2,44 @@
 # Addon Name: Bello (Beta)
 # Addon id: skin.bello
 # Addon Provider: Nessus
+# Translators:
+# CutSickAss <cutsickass@yahoo.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
+"PO-Revision-Date: 2013-05-20 22:00+0000\n"
+"Last-Translator: CutSickAss <cutsickass@yahoo.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/xbmc-skins/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "Addon Summary"
+msgid "A GUI for XBMC Media Center"
+msgstr "Ένα Γραφικό Περιβάλλον για το XBMC"
+
+msgctxt "Addon Description"
+msgid ""
+"Bello is a GUI for XBMC Media Center. The goal of Bello is to maximize your "
+"XBMC entertainment experience with it's fast, unique and unified interface "
+"along with all the latest features of XBMC."
+msgstr "Το Bello είναι ένα Γραφικό Περιβάλλον Εργασίας (GUI) για το Κέντρο Πολυμέσων XBMC. Στόχος του Bello είναι να μεγιστοποιήσει την ψυχαγωγική σας εμπειρία μέσω του γρήγορου, μοναδικού και ενοποιημένου περιβάλλοντός του, που περιλαμβάνει όλες τις νέες λειτουργίες του XBMC."
+
+msgctxt "Addon Disclaimer"
+msgid "Mouse usage is not supported"
+msgstr "Χωρίς υποστήριξη για ποντίκι"
+
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "Live TV"
+
+msgctxt "#31001"
+msgid "TV Guide"
+msgstr "Οδηγός TV"
 
 msgctxt "#31002"
 msgid "TV Shows"
@@ -47,6 +72,10 @@ msgstr "Αυτόματος τερματισμός συστήματος σε"
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Μενού Επιλογών"
+
+msgctxt "#31010"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31011"
 msgid "ON"
@@ -160,6 +189,14 @@ msgctxt "#31039"
 msgid "IP Address"
 msgstr "Διεύθυνση IP"
 
+msgctxt "#31040"
+msgid "Created by"
+msgstr "Δημιουργήθηκε από"
+
+msgctxt "#31041"
+msgid "Creator"
+msgstr "Δημιουργός"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Διαφάνεια"
@@ -187,6 +224,10 @@ msgstr "Μικρογραφίες"
 msgctxt "#31086"
 msgid "Banner List"
 msgstr "Λίστα Πανό"
+
+msgctxt "#31088"
+msgid "List Wall"
+msgstr "Τοίχος Λίστα"
 
 msgctxt "#31100"
 msgid "Home Categories Buttons"
@@ -361,11 +402,15 @@ msgid "Choose Subtitles Add-on"
 msgstr "Επιλογή Πρόσθετου Υποτίτλων"
 
 msgctxt "#31143"
-msgid "Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-on)[/COLOR]"
+msgid ""
+"Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-"
+"on)[/COLOR]"
 msgstr "Ενεργοποίηση Πληροφοριών Επόμενης Προβολής για τις Τηλ. Σειρές [COLOR=55white](Απαιτείται το πρόσθετο Next Aired)[/COLOR]"
 
 msgctxt "#31144"
-msgid "Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-on)[/COLOR]"
+msgid ""
+"Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-"
+"on)[/COLOR]"
 msgstr "Ενεργοποίηση Μουσικών Θεμάτων για τις Τηλ. Σειρές [COLOR=55white](Απαιτείται το πρόσθετο TV Tunes)[/COLOR]"
 
 msgctxt "#31145"
@@ -397,12 +442,38 @@ msgid "Show RSS feed in whole skin"
 msgstr "Εμφάνιση τροφοδοσίας RSS σε όλο το κέλυφος"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-"
+"DVD)[/COLOR]"
 msgstr "Απόκρυψη Σημαιών που προέρχονται από τα ονόματα των αρχείων βίντεο [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
 msgstr "Ενεργοποίηση Οθόνης Σύνδεσης"
+
+msgctxt "#31154"
+msgid "Choose Trailers Add-on"
+msgstr "Επιλογή Πρόσθετου Διαφημιστικών"
+
+msgctxt "#31200"
+msgid "My Movies"
+msgstr "Οι Ταινίες Μου"
+
+msgctxt "#31201"
+msgid "My TV Shows"
+msgstr "Οι Τηλ. Σειρές Μου"
+
+msgctxt "#31202"
+msgid "My Music"
+msgstr "Η Μουσική Μου"
+
+msgctxt "#31203"
+msgid "New Search"
+msgstr "Νέα Αναζήτηση"
+
+msgctxt "#31204"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -524,6 +595,10 @@ msgctxt "#31234"
 msgid "Fetching Forecast Info for..."
 msgstr "Λήψη Πρόγνωσης για..."
 
+msgctxt "#31235"
+msgid "Current Forecast"
+msgstr "Τρέχουσα Πρόγνωση"
+
 msgctxt "#31236"
 msgid "Forecast"
 msgstr "Πρόγνωση Καιρού"
@@ -535,6 +610,62 @@ msgstr "Προβολή"
 msgctxt "#31238"
 msgid "No Shows Airing Today"
 msgstr "Καμία Σειρά Δεν Προβάλλεται Σήμερα"
+
+msgctxt "#31239"
+msgid "Shows Listed"
+msgstr "Καταχωρημένες Σειρές"
+
+msgctxt "#31240"
+msgid "Shows Airing Today"
+msgstr "Σειρές που Παίζονται Σήμερα"
+
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "Ταινίες που Προστέθηκαν Πρόσφατα"
+
+msgctxt "#31242"
+msgid "Recently Added TV Shows"
+msgstr "Τηλ. Σειρές που Προστέθηκαν Πρόσφατα"
+
+msgctxt "#31243"
+msgid "Recently Added Music"
+msgstr "Μουσική που Προστέθηκε Πρόσφατα"
+
+msgctxt "#31244"
+msgid "New Movies"
+msgstr "Νέες Ταινίες"
+
+msgctxt "#31245"
+msgid "New TV Shows"
+msgstr "Νέες Τηλ. Σειρές"
+
+msgctxt "#31246"
+msgid "New Music"
+msgstr "Νέα Μουσική"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Τυχαίες Ταινίες"
+
+msgctxt "#31248"
+msgid "Random TV Shows"
+msgstr "Τυχαίες Τηλ. Σειρές"
+
+msgctxt "#31249"
+msgid "Random Music"
+msgstr "Τυχαία Μουσική"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Όλες οι Ταινίες"
+
+msgctxt "#31251"
+msgid "All TV Shows"
+msgstr "Όλες οι Τηλ. Σειρές"
+
+msgctxt "#31252"
+msgid "All Music"
+msgstr "Όλη η Μουσική"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -641,41 +772,101 @@ msgid "Delete Group"
 msgstr "Διαγραφή Γκρουπ"
 
 msgctxt "#31401"
-msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
+msgid ""
+"Adjust the look and feel of XBMC. Includes skin, theme, sound and font "
+"selection, RSS feed and localisation settings."
 msgstr "Προσαρμόστε την εμφάνιση του XBMC. Περιλαμβάνονται ρυθμίσεις για το κέλυφος, το θέμα, τον ήχο και τη γραμματοσειρά, την τροφοδοσία RSS και την τοποθεσία."
 
 msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
+msgid ""
+"Manage your video content. Includes library database options, subtitles, "
+"scrapers, and playback options."
 msgstr "Διαχειριστείτε τα βίντεο σας. Περιλαμβάνονται ρυθμίσεις για τη βάση δεδομένων της συλλογής, τους υπότιτλους, τα scraper και επιλογές αναπαραγωγής."
 
 msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
+msgid ""
+"Change playback settings, manage EPG data settings, recordings and parental "
+"control."
 msgstr "Αλλάξτε τις ρυθμίσεις αναπαραγωγής, διαχειριστείτε τις ρυθμίσεις δεδομένων EPG, τις εγγραφές και το γονικό έλεγχο."
 
 msgctxt "#31404"
-msgid "Configure how XBMC handles music. Setup playback and listing options, browsing files or database and many more."
+msgid ""
+"Configure how XBMC handles music. Setup playback and listing options, "
+"browsing files or database and many more."
 msgstr "Διαμορφώστε πως χειρίζεται τη μουσική σας το XBMC. Ρυθμίστε τις επιλογές αναπαραγωγής και καταλόγου αρχείων, της περιήγησης στα αρχεία ή τη βάση δεδομένων και πολλά άλλα."
 
 msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
+msgid ""
+"Picture handeling can be quite easy. You can do this by adjusting display, "
+"effects, tags, timing and picture listing."
 msgstr "Η διαχείριση των εικόνων σας μπορεί να γίνει πολύ εύκολα. Μπορείτε να ρυθμίσετε την προβολή τους, τα εφέ, τις ετικέτες, τους χρονισμούς και τους καταλόγους εικόνων."
 
 msgctxt "#31406"
-msgid "Adjusting Weather is very easy with XBMC. Select a weather plugin and get live updates for up to three cities."
+msgid ""
+"Adjusting Weather is very easy with XBMC. Select a weather plugin and get "
+"live updates for up to three cities."
 msgstr "Η ρύθμιση του Καιρού είναι πολύ απλή με το XBMC. Επιλέξτε ένα plugin για τον καιρό και θα έχετε άμεσες ενημερώσεις για έως και τρεις πόλεις."
 
 msgctxt "#31407"
-msgid "Set up XBMC's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
+msgid ""
+"Set up XBMC's network interface. Controls IP assignment, WWW and FTP server,"
+" SMB client, and UPnP configuration."
 msgstr "Ρυθμίστε το περιβάλλον δικτύου του XBMC. Ελέγξτε τις αναθέσεις IP, τους διακομιστές WWW και FTP, τον πελάτη SMB και τη ρύθμιση του UPnP."
 
 msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
+msgid ""
+"Control core hardware and software functions, including audio and video "
+"hardware setup, autoplay and locking."
 msgstr "Ελέγξτε βασικές λειτουργίες του υλικού και του λογισμικού, συμπεριλαμβανομένων των ρυθμίσεων υλικού βίντεο και ήχου, την αυτόματη αναπαραγωγή, και το κλείδωμα."
 
 msgctxt "#31409"
-msgid "Choose from a variety of advanced settings and customization options to make \"Bello\" fit your needs and taste."
+msgid ""
+"Choose from a variety of advanced settings and customization options to make"
+" \"Bello\" fit your needs and taste."
 msgstr "Επιλέξτε από ένα πλήθος προχωρημένων ρυθμίσεων και επιλογών προσαρμογής για να διαμορφώσετε το 'Bello' σύμφωνα με τα γούστα και τις ανάγκες σας."
 
 msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
+msgid ""
+"With XBMC you can have several profiles, even a logon screen for controlled "
+"access."
 msgstr "Με το XBMC μπορείτε να έχετε πολλαπλά προφίλ, ακόμα και οθόνη σύνδεσης για ελεγχόμενη πρόσβαση."
+
+msgctxt "#31411"
+msgid "Configure Appearance Settings"
+msgstr "Διαμόρφωση Ρυθμίσεων Εξατομίκευσης"
+
+msgctxt "#31412"
+msgid "Configure Video Settings"
+msgstr "Ρυθμίσεις Βίντεο"
+
+msgctxt "#31413"
+msgid "Configure Live TV Settings"
+msgstr "Ρυθμίσεις Live TV"
+
+msgctxt "#31414"
+msgid "Configure Music Settings"
+msgstr "Ρυθμίσεις Μουσικής"
+
+msgctxt "#31415"
+msgid "Configure Pictures Settings"
+msgstr "Ρυθμίσεις Εικόνων"
+
+msgctxt "#31416"
+msgid "Configure Weather Settings"
+msgstr "Ρυθμίσεις Καιρού"
+
+msgctxt "#31417"
+msgid "Configure Services Settings"
+msgstr "Διαμόρφωση Ρυθμίσεων Υπηρεσιών"
+
+msgctxt "#31418"
+msgid "Configure System Settings"
+msgstr "Ρυθμίσεις Συστήματος"
+
+msgctxt "#31419"
+msgid "Configure Profiles Settings"
+msgstr "Διαμόρφωση Ρυθμίσεων Προφίλ"
+
+msgctxt "#31420"
+msgid "Configure Skin Settings"
+msgstr "Διαμόρφωση Ρυθμίσεων Κελύφους"

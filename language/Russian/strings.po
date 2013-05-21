@@ -2,19 +2,44 @@
 # Addon Name: Bello (Beta)
 # Addon id: skin.bello
 # Addon Provider: Nessus
+# Translators:
+# relyter <tyler@pisem.net>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
+"PO-Revision-Date: 2013-05-20 14:50+0000\n"
+"Last-Translator: relyter <tyler@pisem.net>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/xbmc-skins/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgctxt "Addon Summary"
+msgid "A GUI for XBMC Media Center"
+msgstr "Обложка для XBMC"
+
+msgctxt "Addon Description"
+msgid ""
+"Bello is a GUI for XBMC Media Center. The goal of Bello is to maximize your "
+"XBMC entertainment experience with it's fast, unique and unified interface "
+"along with all the latest features of XBMC."
+msgstr "Bello - это обложка для XBMC. Ee быстрый, неповторимый и законченный интерфейс вместе возможностями XBMC позволят вам получить максимальное удовольствие от вашей цифровой коллекции."
+
+msgctxt "Addon Disclaimer"
+msgid "Mouse usage is not supported"
+msgstr "Использование мыши не поддерживается"
+
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "ТВ"
+
+msgctxt "#31001"
+msgid "TV Guide"
+msgstr "ТВ-гид"
 
 msgctxt "#31002"
 msgid "TV Shows"
@@ -47,6 +72,10 @@ msgstr "Выключение системы через"
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Контекстное меню"
+
+msgctxt "#31010"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31011"
 msgid "ON"
@@ -86,7 +115,7 @@ msgstr "Найдено"
 
 msgctxt "#31021"
 msgid "Music Library"
-msgstr "Медиатека музыки"
+msgstr "Музыкальная медиатека"
 
 msgctxt "#31022"
 msgid "Music Files"
@@ -160,6 +189,14 @@ msgctxt "#31039"
 msgid "IP Address"
 msgstr "Адрес IP"
 
+msgctxt "#31040"
+msgid "Created by"
+msgstr "Создано"
+
+msgctxt "#31041"
+msgid "Creator"
+msgstr "Автор"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Слайды"
@@ -187,6 +224,10 @@ msgstr "Эскизы"
 msgctxt "#31086"
 msgid "Banner List"
 msgstr "Баннеры"
+
+msgctxt "#31088"
+msgid "List Wall"
+msgstr "Стена со списком"
 
 msgctxt "#31100"
 msgid "Home Categories Buttons"
@@ -361,11 +402,15 @@ msgid "Choose Subtitles Add-on"
 msgstr "Дополнение субтитров"
 
 msgctxt "#31143"
-msgid "Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-on)[/COLOR]"
+msgid ""
+"Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-"
+"on)[/COLOR]"
 msgstr "Информация о следующей серии ТВ шоу [COLOR=55white](Требуется дополнение Next Aired)[/COLOR]"
 
 msgctxt "#31144"
-msgid "Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-on)[/COLOR]"
+msgid ""
+"Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-"
+"on)[/COLOR]"
 msgstr "Мелодии заставок ТВ шоу [COLOR=55white](Требуется дополнение TV Tunes)[/COLOR]"
 
 msgctxt "#31145"
@@ -397,12 +442,38 @@ msgid "Show RSS feed in whole skin"
 msgstr "Показывать поток RSS на всех экранах"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-"
+"DVD)[/COLOR]"
 msgstr "Не показывать флаги из имени видеофайла [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
 msgstr "Включить экран входа"
+
+msgctxt "#31154"
+msgid "Choose Trailers Add-on"
+msgstr "Дополнение трейлеров"
+
+msgctxt "#31200"
+msgid "My Movies"
+msgstr "Мои Фильмы"
+
+msgctxt "#31201"
+msgid "My TV Shows"
+msgstr "Мои ТВ шоу"
+
+msgctxt "#31202"
+msgid "My Music"
+msgstr "Моя Музыка"
+
+msgctxt "#31203"
+msgid "New Search"
+msgstr "Новый поиск"
+
+msgctxt "#31204"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -426,7 +497,7 @@ msgstr "Все не законченные ТВ шоу"
 
 msgctxt "#31210"
 msgid "Browse all music in progress"
-msgstr "Вся музыка, которую слушают"
+msgstr "Вся недавно прослушанная музыка"
 
 msgctxt "#31211"
 msgid "Browse all movies in your library"
@@ -524,6 +595,10 @@ msgctxt "#31234"
 msgid "Fetching Forecast Info for..."
 msgstr "Получение прогноза для…"
 
+msgctxt "#31235"
+msgid "Current Forecast"
+msgstr "Текущий прогноз"
+
 msgctxt "#31236"
 msgid "Forecast"
 msgstr "Прогноз"
@@ -535,6 +610,62 @@ msgstr "Вид"
 msgctxt "#31238"
 msgid "No Shows Airing Today"
 msgstr "Сегодня нет новых серий"
+
+msgctxt "#31239"
+msgid "Shows Listed"
+msgstr "ТВ шоу в списке"
+
+msgctxt "#31240"
+msgid "Shows Airing Today"
+msgstr "Шоу сегодня в эфире"
+
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "Недавно добавленные фильмы"
+
+msgctxt "#31242"
+msgid "Recently Added TV Shows"
+msgstr "Недавно добавленные ТВ шоу"
+
+msgctxt "#31243"
+msgid "Recently Added Music"
+msgstr "Недавно добавленная музыка"
+
+msgctxt "#31244"
+msgid "New Movies"
+msgstr "Новые фильмы"
+
+msgctxt "#31245"
+msgid "New TV Shows"
+msgstr "Новые ТВ шоу"
+
+msgctxt "#31246"
+msgid "New Music"
+msgstr "Новая музыка"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Случайные Фильмы"
+
+msgctxt "#31248"
+msgid "Random TV Shows"
+msgstr "Случайные ТВ шоу"
+
+msgctxt "#31249"
+msgid "Random Music"
+msgstr "Случайная музыка"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Все фильмы"
+
+msgctxt "#31251"
+msgid "All TV Shows"
+msgstr "Все ТВ шоу"
+
+msgctxt "#31252"
+msgid "All Music"
+msgstr "Вся музыка"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -641,41 +772,101 @@ msgid "Delete Group"
 msgstr "Удалить группу"
 
 msgctxt "#31401"
-msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
+msgid ""
+"Adjust the look and feel of XBMC. Includes skin, theme, sound and font "
+"selection, RSS feed and localisation settings."
 msgstr "Настройки внешнего вида XBMC. Обложки, темы, звуки, выбор шрифтов, опции потока RSS и локализации."
 
 msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
+msgid ""
+"Manage your video content. Includes library database options, subtitles, "
+"scrapers, and playback options."
 msgstr "Видео в XBMC: параметры воспроизведения, медиатеки, субтитры, инфоресурсы."
 
 msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
+msgid ""
+"Change playback settings, manage EPG data settings, recordings and parental "
+"control."
 msgstr "Настройки записи и воспроизведения телепередач, программа передач, родительский контроль."
 
 msgctxt "#31404"
-msgid "Configure how XBMC handles music. Setup playback and listing options, browsing files or database and many more."
+msgid ""
+"Configure how XBMC handles music. Setup playback and listing options, "
+"browsing files or database and many more."
 msgstr "Музыка в XBMC. Настройка параметров медиатеки, воспроизведения, визуализации и многое другое."
 
 msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
+msgid ""
+"Picture handeling can be quite easy. You can do this by adjusting display, "
+"effects, tags, timing and picture listing."
 msgstr "Просмотр фото в XBMC. Достаточно задать источник фото, эффекты и время показа."
 
 msgctxt "#31406"
-msgid "Adjusting Weather is very easy with XBMC. Select a weather plugin and get live updates for up to three cities."
+msgid ""
+"Adjusting Weather is very easy with XBMC. Select a weather plugin and get "
+"live updates for up to three cities."
 msgstr "Изменение настроек погоды в XBMC. Выберите инфоресурс погоды и задайте до 3 местоположений для прогноза."
 
 msgctxt "#31407"
-msgid "Set up XBMC's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
+msgid ""
+"Set up XBMC's network interface. Controls IP assignment, WWW and FTP server,"
+" SMB client, and UPnP configuration."
 msgstr "Настройка сети в XBMC. Адрес IP, параметры WWW и FTP сервера и клиента SMB,  конфигурация UPnP"
 
 msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
+msgid ""
+"Control core hardware and software functions, including audio and video "
+"hardware setup, autoplay and locking."
 msgstr "Настройки аудио-, видео оборудования, устройств ввода, отладка XBMC, функции блокировки."
 
 msgctxt "#31409"
-msgid "Choose from a variety of advanced settings and customization options to make \"Bello\" fit your needs and taste."
+msgid ""
+"Choose from a variety of advanced settings and customization options to make"
+" \"Bello\" fit your needs and taste."
 msgstr "Множество дополнительных настроек и возможностей персонификации позволят настроить Bello по вашему вкусу."
 
 msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
+msgid ""
+"With XBMC you can have several profiles, even a logon screen for controlled "
+"access."
 msgstr "XBMC позволяет иметь различные профили пользователей и экран входа для ограничения доступа."
+
+msgctxt "#31411"
+msgid "Configure Appearance Settings"
+msgstr "Настройки внешнего вида"
+
+msgctxt "#31412"
+msgid "Configure Video Settings"
+msgstr "Настройки видео"
+
+msgctxt "#31413"
+msgid "Configure Live TV Settings"
+msgstr "Настройки телевидения"
+
+msgctxt "#31414"
+msgid "Configure Music Settings"
+msgstr "Настройки музыки"
+
+msgctxt "#31415"
+msgid "Configure Pictures Settings"
+msgstr "Настройки фото"
+
+msgctxt "#31416"
+msgid "Configure Weather Settings"
+msgstr "Настройки погоды"
+
+msgctxt "#31417"
+msgid "Configure Services Settings"
+msgstr "Настройки служб"
+
+msgctxt "#31418"
+msgid "Configure System Settings"
+msgstr "Настройки системы"
+
+msgctxt "#31419"
+msgid "Configure Profiles Settings"
+msgstr "Настройки профайлов"
+
+msgctxt "#31420"
+msgid "Configure Skin Settings"
+msgstr "Настройки обложки"
