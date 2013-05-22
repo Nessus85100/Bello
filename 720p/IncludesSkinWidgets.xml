@@ -8,10 +8,14 @@
 	      <effect type="fade" start="100" end="0" time="250" delay="250" tween="sine" easing="out" />
 	      <effect type="slide" start="0,0" end="0,-55" time="300" delay="250" tween="sine" easing="out" />
 	    </animation>
-      <animation type="Conditional" reversible="true" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)">
-        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
-        <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="inout" />
-      </animation>
+	    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)]">
+	      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+	      <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
+	    </animation>
+	    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)">
+	      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+	      <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
+	    </animation>
 		  <!--  Recently Added  -->
 			<control type="grouplist">
 				<visible>Control.HasFocus(81)</visible>
@@ -147,6 +151,7 @@
 				</control>
 			</control>
 	 </control>
+
   </include>
   
 
@@ -157,9 +162,13 @@
       <effect type="fade" start="100" end="0" time="250" delay="250" tween="sine" easing="out" />
       <effect type="slide" start="0,0" end="0,-55" time="300" delay="250" tween="sine" easing="out" />
     </animation>
-    <animation type="Conditional" reversible="true" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog)">
-      <effect type="fade" start="100" end="0" time="380" tween="sine" easing="inout" />
-      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="inout" />
+    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog)]">
+      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+      <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
+    </animation>
+    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog)">
+      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+      <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
     </animation>
 		
 	  <control type="group.">    
@@ -2539,37 +2548,15 @@
 				</item>
 	    </content>
 		</control>
-
-
-
-<!-- ============ TEST ========================================================================== -->
-	<control type="button." id="83">
-	  <include>VisibleFadeEffectRandom</include>
-		<include>TopButton</include>
-			<onleft>83</onleft>
-			<onright>83</onright>
-                        <onup>SetProperty(Movement,1)</onup>
-                        <onup>20</onup>
-                        <ondown>ClearProperty(Movement)</ondown>
-                        <ondown>81</ondown>
-    <animation effect="fade" start="0" end="100" time="0" delay="50">Focus</animation>
-  </control>
-<!-- ============ TEST ========================================================================== -->
-
-
 	 </control>
-
 
 	</include>
 
 
-
-
 	<include name="HomeSubMenusArrows">
 	 <control type="group">
-			<posx>620</posx>
-			<posy>350r</posy>
-			
+		<posx>620</posx>
+		<posy>350r</posy>
 		<control type="group">
      <animation type="WindowOpen">
         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
@@ -2634,7 +2621,7 @@
 		 </control>		
 		</control>
 	 </control>
-  </include>
 
+  </include>
 
 </includes>

@@ -979,6 +979,7 @@
 			<control type="group">
 				<posx>3</posx>
 				<posy>45</posy>
+	      <animation effect="slide" end="-3,3" reversible="false" condition="stringcompare(System.Language,Greek) | stringcompare(System.Language,Italian)">Conditional</animation>
 	      <include>HomeSlideAnimations</include>
 				<control type="label">
 					<description>Library Totals: Movies</description>

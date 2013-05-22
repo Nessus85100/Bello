@@ -808,7 +808,7 @@ msgid "Control core hardware and software functions, including audio and video h
 msgstr ""
 
 msgctxt "#31409"
-msgid "Choose from a variety of advanced settings and customization options to make \"Bello\" fit your needs and taste."
+msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
 msgstr ""
 
 msgctxt "#31410"

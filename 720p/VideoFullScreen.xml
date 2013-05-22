@@ -6,7 +6,7 @@
 			<include>FullscreenDimensions</include>
 		  <texture background="true">windows/bg/bg_vignette.png</texture>
 			<fadetime>FanartCrossfadeTime</fadetime>
-      <visible>Window.IsActive(InfoDialog)</visible>
+      <visible>Window.IsActive(InfoDialog) + !Window.IsActive(ShutdownMenu)</visible>
 		 <animation effect="fade" time="300">Visible</animation>
 		 <animation effect="fade" time="400" delay="300">Hidden</animation>
 		</control>
@@ -17,7 +17,7 @@
 			<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
       <visible>!Window.IsActive(SliderDialog)</visible>
-      <visible>Player.ShowInfo | Window.IsActive(VideoOSD) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(script-XBMC-Subtitles-main.xml) | Window.IsActive(NumericInput)</visible>
+      <visible>Player.ShowInfo | Window.IsActive(ShutdownMenu) | Window.IsActive(VideoOSD) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(script-XBMC-Subtitles-main.xml) | Window.IsActive(NumericInput)</visible>
 		</control>
 		<control type="image" id="1">
 		  <description>Diffuse</description>
@@ -26,7 +26,7 @@
 			<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
       <visible>!Window.IsActive(SliderDialog)</visible>
-      <visible>Window.IsActive(ShutdownMenu) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)</visible>
+      <visible>Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)</visible>
 		</control>
 
 		<!-- ============================ -->

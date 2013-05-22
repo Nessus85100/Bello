@@ -703,13 +703,13 @@
 				<shadowcolor>99000000</shadowcolor>
 			</control>
 		 <control type="textbox">
-				<description>Skin Settings Description</description>
+				<description>Category Description</description>
 				<posx>0</posx>
 				<posy>425</posy>
-				<width>1050</width>
-				<height>100</height>
-				<textcolor>44white</textcolor>
-				<shadowcolor>99000000</shadowcolor>
+				<width>1045</width>
+				<height>30</height>
+				<textcolor>33white</textcolor>
+				<shadowcolor>44333333</shadowcolor>
 				<font>FontSize_20</font>
 				<align>left</align>
 				<scroll>false</scroll>
