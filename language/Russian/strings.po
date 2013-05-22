@@ -43,7 +43,7 @@ msgstr "ТВ-гид"
 
 msgctxt "#31002"
 msgid "TV Shows"
-msgstr "ТВ шоу"
+msgstr "Сериалы"
 
 msgctxt "#31003"
 msgid "Aired"
