@@ -1,3 +1,19 @@
+[B][COLOR=FF56ADDA]v1.0.0 Final - Release Date 22/5/2013[/COLOR][/B]
+• Added new ListWall view based on the original concept.
+• Added an option to choose the Trailers addon in skin settings and in Home screen (click "Backspace" on Trailers home button).
+• Added Movie Sets indicators to Slide, Gallery & Banner view.
+• Added support for script.playalbum.
+• Added Library Totals to Home screen.
+• Added some system info (CPU/RAM/IP/Res) on shutdown menu.
+• Added skin screenshots.
+• Added missing AllVideos/Watched/UnWatched option from video files.
+• Fixed the "Music Button opens..." problem when you change language.
+• Fixed misplaced Addons rollback menu.
+• Fixed wrong behaviour for Movies/TVShows/Music home buttons when library is empty.
+• Updated skin's dependencies.
+• Updated language files from Transifex. A special thanks to all translators.
+• Severall small fixes & tweeks and a little of housekeeping.
+
 [B]v1.0.0 (Beta 6)[/B]
 • Added RecentlyAddedAlbums and RecentlyPlayedAlbums to home Music button options.
 • Added time progress indicator to LiveTV channels.
