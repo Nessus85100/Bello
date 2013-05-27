@@ -299,7 +299,7 @@ msgstr "Εμφάνιση Πλήκτρου Μουσικών Βίντεο"
 
 msgctxt "#31117"
 msgid "Music Button opens..."
-msgstr "Άνοιγμα Πλήκτρου Μουσικής..."
+msgstr "Το πλήκτρο Μουσική ανοίγει..."
 
 msgctxt "#31118"
 msgid "Custom Button"
@@ -454,6 +454,12 @@ msgstr "Ενεργοποίηση Οθόνης Σύνδεσης"
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Επιλογή Πρόσθετου Διαφημιστικών"
+
+msgctxt "#31155"
+msgid "Add-ons Button opens..."
+msgstr "Το πλήκτρο Πρόσθετα ανοίγει..."
+
+
 
 msgctxt "#31200"
 msgid "My Movies"

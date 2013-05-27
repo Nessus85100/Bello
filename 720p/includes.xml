@@ -1009,6 +1009,14 @@
 		</control>
 	</include>	
 
+	<variable name="HomeAddonsButtonAddonsName">
+		<value condition="stringcompare(Skin.String(AddonsName),addonbrowser)">$LOCALIZE[10040]</value>
+		<value condition="stringcompare(Skin.String(AddonsName),videosaddons)">$LOCALIZE[1037]</value>
+		<value condition="stringcompare(Skin.String(AddonsName),musicaddons)">$LOCALIZE[1038]</value>
+		<value condition="stringcompare(Skin.String(AddonsName),picturesaddons)">$LOCALIZE[1039]</value>
+	</variable>
+
+
 	<variable name="HomeMusicButtonMusicName">
 		<value condition="stringcompare(Skin.String(MusicName),plugins)">$LOCALIZE[1038]</value>
 		<value condition="stringcompare(Skin.String(MusicName),library)">$LOCALIZE[14022]</value>

@@ -152,7 +152,8 @@
 					 </item>
 					 <item id="7">
 							<label>$LOCALIZE[24001]</label>
-							<onclick>ActivateWindow(AddonBrowser)</onclick>
+							<onclick condition="IsEmpty(Skin.String(AddonsPath))">ActivateWindow(AddonBrowser)</onclick>
+							<onclick condition="!IsEmpty(Skin.String(AddonsPath))">ActivateWindow($INFO[Skin.String(AddonsPath)],addons,return)</onclick>
 							<thumb>special://skin/backgrounds/addons.jpg</thumb>
 							<icon>-</icon>
 							<visible>!Skin.HasSetting(HideHomeMenuAddonsButton)</visible>

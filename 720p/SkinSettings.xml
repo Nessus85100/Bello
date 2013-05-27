@@ -1,5 +1,6 @@
 <window>
 	<defaultcontrol always="true">8000</defaultcontrol>
+  <onload condition="IsEmpty(Skin.String(AddonsName))">Skin.SetString(AddonsName,addonbrowser)</onload>
   <onload condition="IsEmpty(Skin.String(MusicName))">Skin.SetString(MusicName,library)</onload>
   <onload condition="IsEmpty(Skin.String(MusicPath))">Skin.SetString(MusicPath,root)</onload>
 	<controls>
@@ -134,33 +135,19 @@
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://MusicPlaylists/)</onclick>
 						<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
 					</control>
-					<control type="radiobutton." id="8104">
-	          <include>SettingsRadioButton</include>
-						<label>31151</label>
-						<onclick>Skin.ToggleSetting(ShowRSSGlobal)</onclick>
-				    <onclick>Reloadskin</onclick>
-						<selected>Skin.HasSetting(ShowRSSGlobal)</selected>
-						<enable>System.Getbool(lookandfeel.enablerssfeeds)</enable>
-					</control>
-					<control type="radiobutton." id="8105">
-	          <include>SettingsRadioButton</include>
-						<label>31152</label>
-						<onclick>Skin.ToggleSetting(HideFilenameFlagging)</onclick>
-						<selected>Skin.HasSetting(HideFilenameFlagging)</selected>
-					</control>
-					<control type="radiobutton" id="8106">
+					<control type="radiobutton" id="8104">
 	          <include>SettingsRadioButton</include>
 						<label>31139</label>
 						<onclick>Skin.ToggleSetting(EnableAddonsNotifications)</onclick>
 						<selected>Skin.HasSetting(EnableAddonsNotifications)</selected>
 					</control>
-					<control type="radiobutton" id="8107">
+					<control type="radiobutton" id="8105">
 	          <include>SettingsRadioButton</include>
 						<label>31140</label>
 						<onclick>Skin.ToggleSetting(EnableWeatherAlertsNotifications)</onclick>
 						<selected>Skin.HasSetting(EnableWeatherAlertsNotifications)</selected>
 					</control>
-					<control type="radiobutton" id="8108">
+					<control type="radiobutton" id="8106">
 	          <include>SettingsRadioButton</include>
 						<label>31151</label>
 						<onclick>Skin.ToggleSetting(EnableGlobalRSS)</onclick>
@@ -203,7 +190,7 @@
 								<onleft>8800</onleft>
 								<onright>9000</onright>
 								<onup>8263</onup>
-								<ondown>8203</ondown>
+								<ondown>8202</ondown>
 						    <enable>!Skin.HasSetting(HideHomeMenuMusicButton)</enable>
 								<texturefocus>-</texturefocus>
 								<texturenofocus>-</texturenofocus>
@@ -267,14 +254,68 @@
 						    <enable>!Skin.HasSetting(HideHomeMenuMusicButton)</enable>
 						</control>
 				  </control>
-					<control type="radiobutton." id="8202">
-						<description>Enable Home Weather Info</description>
-	          <include>SettingsRadioButton</include>
-						<label>31101</label>
-						<onclick>Skin.ToggleSetting(ShowHomeScreenWeatherInfo)</onclick>
-						<selected>Skin.HasSetting(ShowHomeScreenWeatherInfo)</selected>
-						<visible>!IsEmpty(Weather.Plugin)</visible>
-					</control>
+				  <!-- Customize Addons Button -->
+					<control type="group" id="8202">
+						<description>Fake spin control</description>
+						<width>782</width>
+						<height>50</height>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>782</width>
+							<height>50</height>
+							<texture>buttons/settings_fo.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<visible>ControlGroup(8202).HasFocus</visible>
+						</control>
+					  <control type="button" id="82012">
+								<onleft>8800</onleft>
+								<onright>9000</onright>
+								<onup>8201</onup>
+								<ondown>8203</ondown>
+						    <enable>!Skin.HasSetting(HideHomeMenuAddonsButton)</enable>
+								<texturefocus>-</texturefocus>
+								<texturenofocus>-</texturenofocus>
+								<onclick condition="stringcompare(Skin.String(AddonsName),picturesaddons)">Skin.SetString(AddonsName,addonbrowser)</onclick>
+								<onclick condition="stringcompare(Skin.String(AddonsName),picturesaddons)">Skin.SetString(AddonsPath,addonbrowser)</onclick>
+								<onclick condition="stringcompare(Skin.String(AddonsName),musicaddons)">Skin.SetString(AddonsName,picturesaddons)</onclick>
+								<onclick condition="stringcompare(Skin.String(AddonsName),musicaddons)">Skin.SetString(AddonsPath,pictures)</onclick>
+								<onclick condition="stringcompare(Skin.String(AddonsName),videosaddons)">Skin.SetString(AddonsName,musicaddons)</onclick>
+								<onclick condition="stringcompare(Skin.String(AddonsName),videosaddons)">Skin.SetString(AddonsPath,music)</onclick>
+								<onclick condition="stringcompare(Skin.String(AddonsName),addonbrowser)">Skin.SetString(AddonsName,videosaddons)</onclick>
+								<onclick condition="stringcompare(Skin.String(AddonsName),addonbrowser)">Skin.SetString(AddonsPath,videos)</onclick>
+								<onclick condition="stringcompare(Skin.String(AddonsName),picturesaddons)">Skin.SetString(AddonsName,addonbrowser)</onclick>
+								<onclick condition="stringcompare(Skin.String(AddonsName),picturesaddons)">Skin.Reset(AddonsPath)</onclick>
+						</control>
+						<control type="button">
+								<width>780</width>
+								<height>50</height>
+								<font>FontSize_20</font>
+								<textcolor>77white</textcolor>
+								<align>left</align>
+								<aligny>top</aligny>
+								<textoffsetx>15</textoffsetx>
+								<textoffsety>10</textoffsety>
+								<label>$LOCALIZE[31155]</label>
+								<label2>[COLOR=selected]$VAR[HomeAddonsButtonAddonsName][/COLOR]</label2>
+						    <visible>!ControlGroup(8202).HasFocus</visible>
+						    <enable>!Skin.HasSetting(HideHomeMenuAddonsButton)</enable>
+						</control>
+						<control type="button">
+								<width>780</width>
+								<height>50</height>
+								<font>FontSize_20</font>
+								<textcolor>white</textcolor>
+								<align>left</align>
+								<aligny>top</aligny>
+								<textoffsetx>15</textoffsetx>
+								<textoffsety>10</textoffsety>
+								<label>$LOCALIZE[31155]</label>
+								<label2>[COLOR=selected]$VAR[HomeAddonsButtonAddonsName][/COLOR]</label2>
+						    <visible>ControlGroup(8202).HasFocus</visible>
+						    <enable>!Skin.HasSetting(HideHomeMenuAddonsButton)</enable>
+						</control>
+				  </control>
 				  <!-- Hide Now Playing -->
 					<control type="radiobutton" id="8203">
 						<description>Hide Home NP VideoInfo</description>
