@@ -265,6 +265,7 @@
 	         <texture fallback="osd/cd.png">$INFO[Player.FolderPath]cdart.png</texture>
 	         <aspectratio>keep</aspectratio>
 					 <include>CDImageAnim</include>
+           <animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="![Player.ShowInfo | Window.IsActive(MusicOSD)]" reversible="true">Conditional</animation>
 	      </control>				
 				<control type="image">
 						<posx>0</posx>
@@ -447,11 +448,11 @@
 		    </animation>
 		    <animation type="Visible" reversible="false">
 		        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-		        <effect type="slide" start="0,-35" end="0,0" time="350" tween="cubic" easing="out" />
+		        <effect type="slide" start="0,-75" end="0,0" time="350" tween="cubic" easing="out" />
 		    </animation>
 		    <animation type="Hidden" reversible="false">
 		        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-		        <effect type="slide" start="0,0" end="0,-35" time="350" tween="sine" easing="out" />
+		        <effect type="slide" start="0,0" end="0,-75" time="350" tween="sine" easing="out" />
 		    </animation>
 			  <animation type="Conditional" reversible="false" condition="!Window.IsActive(volumebar)">
 			      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
