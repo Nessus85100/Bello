@@ -113,8 +113,8 @@
 					 </item>
 					 <item id="3">
 							<label>$LOCALIZE[2]</label>
-							<onclick condition="!Library.HasContent(music) | stringcompare(Skin.String(MusicName),$LOCALIZE[744])">ActivateWindow(musicfiles)</onclick>
-							<onclick condition="Library.HasContent(music) + !stringcompare(Skin.String(MusicName),$LOCALIZE[744])">ActivateWindow(musiclibrary,$INFO[Skin.String(MusicPath)])</onclick>
+							<onclick condition="!Library.HasContent(music) | stringcompare(Skin.String(MusicName),files)">ActivateWindow(musicfiles)</onclick>
+							<onclick condition="Library.HasContent(music) + !stringcompare(Skin.String(MusicName),files)">ActivateWindow(musiclibrary,$INFO[Skin.String(MusicPath)])</onclick>
 							<thumb>special://skin/backgrounds/music.jpg</thumb>
 							<icon>-</icon>
 							<visible>!Skin.HasSetting(HideHomeMenuMusicButton)</visible>
