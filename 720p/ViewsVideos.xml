@@ -1523,11 +1523,11 @@
 					  <control type="label">
 						  <posx>0</posx>
 						  <posy>0</posy>
-						  <width min="10" max="300">auto</width>
+						  <width min="10" max="350">auto</width>
 			        <font>FontSize_22</font>
 							<textcolor>aawhite</textcolor>
 							<shadowcolor>77000000</shadowcolor>
-							<label>$INFO[ListItem.Property(ReleaseDate)]</label>
+							<label>$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</label>
 							<align>left</align>
 					  </control>
 	        </control>      
@@ -1836,7 +1836,7 @@
 	        </control>
 	        <control type="grouplist">
 						<posx>0</posx>
-						<posy>33</posy>
+						<posy>325</posy>
 						<width>350</width>
 				    <align>left</align>
 				    <orientation>horizontal</orientation>
@@ -1844,11 +1844,11 @@
 					  <control type="label">
 						  <posx>0</posx>
 						  <posy>0</posy>
-						  <width min="10" max="300">auto</width>
+						  <width min="10" max="350">auto</width>
 			        <font>FontSize_22</font>
 							<textcolor>aawhite</textcolor>
 							<shadowcolor>77000000</shadowcolor>
-							<label>$INFO[ListItem.Property(ReleaseDate)]</label>
+							<label>$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</label>
 							<align>left</align>
 					  </control>
 	        </control>      
