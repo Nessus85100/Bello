@@ -420,7 +420,6 @@
 						<label> • $LOCALIZE[31106]</label>
 						<onclick>Skin.ToggleSetting(HideHomeMenuMoviesButton)</onclick>
 						<selected>Skin.HasSetting(HideHomeMenuMoviesButton)</selected>
-						<enable>Library.HasContent(Movies)</enable>
 						<visible>Skin.HasSetting(HomeCategoriesSettings)</visible>
 					</control>
 					<control type="radiobutton" id="8252">
@@ -429,7 +428,6 @@
 						<label> • $LOCALIZE[31107]</label>
 						<onclick>Skin.ToggleSetting(HideHomeMenuTVShowsButton)</onclick>
 						<selected>Skin.HasSetting(HideHomeMenuTVShowsButton)</selected>
-						<enable>Library.HasContent(TVShows)</enable>
 						<visible>Skin.HasSetting(HomeCategoriesSettings)</visible>
 					</control>
 					<control type="radiobutton" id="8253">

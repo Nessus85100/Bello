@@ -41,7 +41,7 @@
 				 <onback condition="Container(20).HasFocus(17)">Skin.SetString(CustomFavourite3.Label)</onback>
 				 <onback condition="Container(20).HasFocus(18)">Skin.SetString(CustomFavourite4.Label)</onback>
 				 <onback condition="Container(20).HasFocus(19)">Skin.SetString(CustomFavourite5.Label)</onback>
-				 <onback condition="Container(20).HasFocus(14)">Skin.SetAddon(TrailersAddon_Path,xbmc.addon.video)</onback>
+				 <onback condition="Container(20).HasFocus(13)">Skin.SetAddon(TrailersAddon_Path,xbmc.addon.video)</onback>
 				 <itemgap>0</itemgap>
 				 <orientation>horizontal</orientation>
 				 <focusposition>1</focusposition>
@@ -91,6 +91,15 @@
 					 </control>
 				 </focusedlayout>
 				 <content>
+					 <item id="0">
+							<label>$LOCALIZE[3]</label>
+							<onclick>ActivateWindow(Videos,files,return)</onclick>
+							<thumb>special://skin/backgrounds/videos.jpg</thumb>
+							<icon>-</icon>
+							<visible>Skin.HasSetting(ShowHomeMenuVideosButton)</visible>
+							<property name="Custom-Background">$INFO[Skin.String(Media-Custom-Background)]</property>
+		          <property name="Custom-Folder">$INFO[Skin.String(Media-Custom-Folder)]</property>
+					 </item>
 					 <item id="1">
 							<label>$LOCALIZE[31002]</label>
               <onclick condition="!Library.HasContent(tvshows)">ActivateWindow(videos,files,return)</onclick>
@@ -179,15 +188,6 @@
 							<property name="Custom-Background">$INFO[Skin.String(System-Custom-Background)]</property>
 		          <property name="Custom-Folder">$INFO[Skin.String(System-Custom-Folder)]</property>
 					 </item>
-					 <item id="10">
-							<label>$LOCALIZE[3]</label>
-							<onclick>ActivateWindow(Videos,files,return)</onclick>
-							<thumb>special://skin/backgrounds/videos.jpg</thumb>
-							<icon>-</icon>
-							<visible>Skin.HasSetting(ShowHomeMenuVideosButton)</visible>
-							<property name="Custom-Background">$INFO[Skin.String(Media-Custom-Background)]</property>
-		          <property name="Custom-Folder">$INFO[Skin.String(Media-Custom-Folder)]</property>
-					 </item>
 					 <item id="11">
 							<label>$LOCALIZE[31000]</label>
               <onclick>ActivateWindow(PVR)</onclick>
@@ -198,15 +198,6 @@
 		          <property name="Custom-Folder">$INFO[Skin.String(Media-Custom-Folder)]</property>
 					 </item>
 					 <item id="12">
-							<label>$INFO[System.DVDLabel]</label>
-							<onclick>PlayDVD</onclick>
-							<thumb>special://skin/backgrounds/videos.jpg</thumb>
-							<icon>-</icon>
-							<visible>Skin.HasSetting(ShowHomeMenuDVDButton) + System.HasMediaDVD</visible>
-							<property name="Custom-Background">$INFO[Skin.String(Media-Custom-Background)]</property>
-		          <property name="Custom-Folder">$INFO[Skin.String(Media-Custom-Folder)]</property>
-					 </item>
-					 <item id="13">
 							<label>$LOCALIZE[137]</label>
 						  <onclick>XBMC.RunScript(script.globalsearch)</onclick>
 							<thumb>-</thumb>
@@ -215,13 +206,22 @@
 							<property name="Custom-Background">$INFO[Skin.String(Programs-Custom-Background)]</property>
 		          <property name="Custom-Folder">$INFO[Skin.String(Programs-Custom-Folder)]</property>
 					 </item>
-					 <item id="14">
+					 <item id="13">
 							<label>$LOCALIZE[31018]</label>
 							<onclick condition="IsEmpty(Skin.String(TrailersAddon_Path))">Skin.SetAddon(TrailersAddon_Path,xbmc.addon.video)</onclick>
 							<onclick condition="!IsEmpty(Skin.String(TrailersAddon_Path))">ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</onclick>
 							<thumb>special://skin/backgrounds/videos.jpg</thumb>
 							<icon>-</icon>
 							<visible>!Skin.HasSetting(HideHomeMenuTrailersButton)</visible>
+							<property name="Custom-Background">$INFO[Skin.String(Media-Custom-Background)]</property>
+		          <property name="Custom-Folder">$INFO[Skin.String(Media-Custom-Folder)]</property>
+					 </item>
+					 <item id="14">
+							<label>$INFO[System.DVDLabel]</label>
+							<onclick>PlayDVD</onclick>
+							<thumb>special://skin/backgrounds/videos.jpg</thumb>
+							<icon>-</icon>
+							<visible>Skin.HasSetting(ShowHomeMenuDVDButton) + System.HasMediaDVD</visible>
 							<property name="Custom-Background">$INFO[Skin.String(Media-Custom-Background)]</property>
 		          <property name="Custom-Folder">$INFO[Skin.String(Media-Custom-Folder)]</property>
 					 </item>
