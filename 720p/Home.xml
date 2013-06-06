@@ -190,7 +190,7 @@
 					 </item>
 					 <item id="11">
 							<label>$LOCALIZE[31000]</label>
-              <onclick>ActivateWindow(PVR)</onclick>
+              <onclick>ActivateWindowAndFocus(PVR, 32,0, 11,0)</onclick>
 							<thumb>special://skin/backgrounds/videos.jpg</thumb>
 							<icon>-</icon>
 						  <visible>System.GetBool(pvrmanager.enabled)</visible>
