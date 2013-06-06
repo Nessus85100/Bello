@@ -87,26 +87,16 @@
 	    <aligny>center</aligny>
 			<scroll>false</scroll>
 	</include>
-  <include name="TopSettingsLabel">
-	    <width min="10" max="1280">auto</width>
-	    <height>65</height>
-	    <font>FontSize_22</font>
+	<include name="TopOptionsBigLabel">
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>43</height>
+			<width min="10" max="1280">auto</width>
+			<font>FontSize_36</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>99000000</shadowcolor>
-	    <align>left</align>
-	    <aligny>center</aligny>
 			<scroll>false</scroll>
-  </include>
-  <include name="TopSettingsBigLabel">
-	    <width min="10" max="1280">auto</width>
-	    <height>50</height>
-	    <font>FontSize_40</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>99000000</shadowcolor>
-	    <align>left</align>
-	    <aligny>center</aligny>
-			<scroll>false</scroll>
-  </include>
+	</include>
 	<include name="TopButton">
 			<font>-</font>
 			<texturefocus>-</texturefocus>
@@ -117,16 +107,6 @@
 			<texturedown>-</texturedown>
 			<textureupfocus>-</textureupfocus>
 			<texturedownfocus>-</texturedownfocus>
-	</include>
-	<include name="TopOptionsBigLabel">
-				<posx>0</posx>
-				<posy>0</posy>
-				<height>43</height>
-				<width min="10" max="1280">auto</width>
-				<font>FontSize_36</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>99000000</shadowcolor>
-				<scroll>false</scroll>
 	</include>
 	
 	<include name="SettingsMenu">
@@ -234,75 +214,75 @@
         <orientation>horizontal</orientation>
 		    <include>SettingsSlideAnimations</include>
 			<control type="label">
-        <include>TopSettingsBigLabel</include>
+        <include>TopBigLabel</include>
 				<label>$LOCALIZE[5]</label>
 			</control>
 			<control type="label">
 				<description>Appearance</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[480]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(101)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(101)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Videos</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[157]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(102)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(102)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Live TV</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[31000]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(103)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(103)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Music</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[2]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(104)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(104)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Pictures</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[1]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(105)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(105)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Weather</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[8]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(106)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(106)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Add-Ons</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[24001]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(107)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(107)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Services</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[14036]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(108)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(108)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>System</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[13000]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(109)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(109)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label.">
 				<description>Profiles</description>
-        <include>TopSettingsLabel</include>
+        <include>TopSmallLabel</include>
 				<label>$LOCALIZE[13200]</label>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(110)" reversible="true">Conditional</animation>
         <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(110)" reversible="true">Conditional</animation>
@@ -1135,6 +1115,11 @@
 		<value condition="[substring(Container.FolderPath,plugin,left) + Container.HasFiles]">thumbs/fallback_xbmc.png</value>
 		<value>$INFO[ListItem.Property(Fanart_Image)]</value>
 	</variable>
+
+  <variable name="VideoInfoStarRating">
+    <value condition="!IsEmpty(ListItem.Rating) | !Substring(Container(100).ListItem.Property(Rating),0.0)">rating/star_big_full.png</value>
+    <value condition="IsEmpty(ListItem.Rating) | Substring(Container(100).ListItem.Property(Rating),0.0)">rating/star_big_empty.png</value>
+  </variable>
 
 <!--
 	<variable name="VideoInfoThumbs">

@@ -1209,6 +1209,41 @@
 	        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
 	        <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
 	    </animation>
+			<control type="grouplist">
+				<posx>0</posx>
+				<posy>6</posy>
+				<height>0</height>
+				<width>1190</width>
+				<itemgap>5</itemgap>
+				<align>right</align>
+				<orientation>horizontal</orientation>
+				<visible>Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140)</visible>
+			  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar)">
+		      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+		      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
+			  </animation>
+			  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar)">
+		      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+		      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
+			  </animation>
+				<control type="image">
+					<width>40</width>
+					<height>38</height>
+	        <aspectratio>keep</aspectratio>
+					<texture>$VAR[VideoInfoStarRating]</texture>
+				</control>
+				<control type="label">
+					<height>40</height>
+					<width min="10" max="1280">auto</width>
+					<font>FontSize_40</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>99000000</shadowcolor>
+			    <align>left</align>
+			    <aligny>center</aligny>
+					<scroll>false</scroll>
+				  <label fallback="0.0">$INFO[Container(100).ListItem.Property(Rating)]</label>
+				</control>
+			</control>	    
 			<!-- StarRating -->
 			<control type="image">
 				<posx>1050</posx>
@@ -1216,6 +1251,7 @@
 				<width>140</width>
 				<height>30</height>
         <aspectratio>keep</aspectratio>
+				<visible>![Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140)]</visible>
 				<texture fallback="rating/rating0.png">$INFO[Container(100).ListItem.Property(StarRating),rating/,]</texture>
 			  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar)">
 		      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
