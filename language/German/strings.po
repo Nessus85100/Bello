@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello (Beta)
+# Addon Name: Bello
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -15,6 +15,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "Live TV"
+
+msgctxt "#31001"
+msgid "TV Guide"
+msgstr "TV Programm"
 
 msgctxt "#31002"
 msgid "TV Shows"
@@ -43,6 +51,10 @@ msgstr "System wird automatisch heruntergefahren in"
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Kontext-Menü"
+
+msgctxt "#31010"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31011"
 msgid "ON"
@@ -139,6 +151,10 @@ msgstr "Esc"
 msgctxt "#31039"
 msgid "IP Address"
 msgstr "IP-Adresse"
+
+msgctxt "#31041"
+msgid "Creator"
+msgstr "Fotograf"
 
 msgctxt "#31080"
 msgid "Slide"
@@ -348,6 +364,26 @@ msgctxt "#31153"
 msgid "Enable Login Screen"
 msgstr "Anmeldebildschirm aktivieren"
 
+msgctxt "#31200"
+msgid "My Movies"
+msgstr "Meine Filme"
+
+msgctxt "#31201"
+msgid "My TV Shows"
+msgstr "Meine Fernsehsendungen"
+
+msgctxt "#31202"
+msgid "My Music"
+msgstr "Meine Musik"
+
+msgctxt "#31203"
+msgid "New Search"
+msgstr "Neue Suche"
+
+msgctxt "#31204"
+msgid "-"
+msgstr "-"
+
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
 msgstr "Neu hinzugefügte Filme durchsuchen"
@@ -468,6 +504,10 @@ msgctxt "#31234"
 msgid "Fetching Forecast Info for..."
 msgstr "Lade Forecast Info für..."
 
+msgctxt "#31235"
+msgid "Current Forecast"
+msgstr "Aktuelle Wetterprognose"
+
 msgctxt "#31236"
 msgid "Forecast"
 msgstr "Prognose"
@@ -475,6 +515,54 @@ msgstr "Prognose"
 msgctxt "#31237"
 msgid "View"
 msgstr "Ansicht"
+
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "Kürzlich hinzugefügte Filme"
+
+msgctxt "#31242"
+msgid "Recently Added TV Shows"
+msgstr "Neu hinzugefügte TV-Serien"
+
+msgctxt "#31243"
+msgid "Recently Added Music"
+msgstr "Neu hinzugefügte Musik"
+
+msgctxt "#31244"
+msgid "New Movies"
+msgstr "Neue Filme"
+
+msgctxt "#31245"
+msgid "New TV Shows"
+msgstr "Neue Fernsehsendung"
+
+msgctxt "#31246"
+msgid "New Music"
+msgstr "Neue Musik"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Zufällige Filme"
+
+msgctxt "#31248"
+msgid "Random TV Shows"
+msgstr "Zufällige Fernsehsendungen"
+
+msgctxt "#31249"
+msgid "Random Music"
+msgstr "Zufällige Musik"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Alle Filme"
+
+msgctxt "#31251"
+msgid "All TV Shows"
+msgstr "Alle TV-Serien"
+
+msgctxt "#31252"
+msgid "All Music"
+msgstr "Komplette Musik"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -576,10 +664,46 @@ msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
 msgstr "Das Aussehen von XBMC ändern. Dazu gehören Skin, Design, Ton und die Auswahl der Schrift, RSS Feed und die Einstellung der verwendeten Sprache. "
 
-msgctxt "#31409"
-msgid "Choose from a variety of advanced settings and customization options to make \"Bello\" fit your needs and taste."
-msgstr "Wählen Sie aus einer Vielzahl von fortgeschrittenen Einstellungs- und Anpassungsoptionen um \"Bello\" auf Ihre Bedürfnisse und Ihren Geschmack anzupassen."
-
 msgctxt "#31410"
 msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
 msgstr "Mit XBMC ist es Ihnen möglich, verschiedene Profile zu besitzen, auch mit Login Bildschirm für kontrollierten Zugriff."
+
+msgctxt "#31411"
+msgid "Configure Appearance Settings"
+msgstr "Erscheinungsbildeinstellungen konfigurieren"
+
+msgctxt "#31412"
+msgid "Configure Video Settings"
+msgstr "Video-Einstellungen"
+
+msgctxt "#31413"
+msgid "Configure Live TV Settings"
+msgstr "Skin-Einstellungen"
+
+msgctxt "#31414"
+msgid "Configure Music Settings"
+msgstr "Musik-Einstellungen"
+
+msgctxt "#31415"
+msgid "Configure Pictures Settings"
+msgstr "Bilder-Einstellungen"
+
+msgctxt "#31416"
+msgid "Configure Weather Settings"
+msgstr "Wetter-Einstellungen"
+
+msgctxt "#31417"
+msgid "Configure Services Settings"
+msgstr "Diensteinstellungen konfigurieren"
+
+msgctxt "#31418"
+msgid "Configure System Settings"
+msgstr "System-Einstellungen"
+
+msgctxt "#31419"
+msgid "Configure Profiles Settings"
+msgstr "Profileinstellungen konfigurieren"
+
+msgctxt "#31420"
+msgid "Configure Skin Settings"
+msgstr "Skineinstellungen konfigurieren"

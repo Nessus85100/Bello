@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello (Beta)
+# Addon Name: Bello
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -15,6 +15,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: tr\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "Canlı TV"
 
 msgctxt "#31003"
 msgid "Aired"
@@ -35,6 +39,10 @@ msgstr "Sırala: Azalan"
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Kabuk Menü"
+
+msgctxt "#31010"
+msgid "-"
+msgstr "Sırala"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -108,6 +116,10 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "Çoklu Resim"
 
+msgctxt "#31204"
+msgid "-"
+msgstr "Sırala"
+
 msgctxt "#31223"
 msgid "36 Hour Forecast"
 msgstr "36 Saatlik Hava Tahmini"
@@ -139,6 +151,10 @@ msgstr "Hava Tahmini"
 msgctxt "#31237"
 msgid "View"
 msgstr "Görünüm"
+
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "Son Eklenen Filmler"
 
 msgctxt "#31285"
 msgid "Playlist Options"

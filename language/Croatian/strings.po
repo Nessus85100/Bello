@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello (Beta)
+# Addon Name: Bello
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -15,6 +15,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hr\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "TV u živo"
 
 msgctxt "#31002"
 msgid "TV Shows"
@@ -39,6 +43,10 @@ msgstr "Sortiraj: Silazno"
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Izbornik dodatka"
+
+msgctxt "#31010"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31017"
 msgid "Karaoke Song Selector"
@@ -108,6 +116,14 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "Više slika"
 
+msgctxt "#31203"
+msgid "New Search"
+msgstr "Novo pretraživanje"
+
+msgctxt "#31204"
+msgid "-"
+msgstr "-"
+
 msgctxt "#31219"
 msgid "Logo"
 msgstr "Logo"
@@ -143,6 +159,10 @@ msgstr "Prognoza"
 msgctxt "#31237"
 msgid "View"
 msgstr "Pogled"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Slučajni Odabir Filma"
 
 msgctxt "#31285"
 msgid "Playlist Options"

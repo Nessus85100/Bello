@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello (Beta)
+# Addon Name: Bello
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -447,7 +447,6 @@ msgstr ""
 msgctxt "#31155"
 msgid "Add-ons Button opens..."
 msgstr ""
-
 
 #empty strings from id 31156 to 31199
 #Scripts labels
