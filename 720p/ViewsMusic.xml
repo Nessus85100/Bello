@@ -754,7 +754,14 @@
 			</control>
 			<control type="group">
 				<posx>357</posx>
-		    <include>VisibleFadeEffect</include>
+				<animation type="Visible" tween="sine" easing="inout" reversible="false">
+					<effect type="zoom" start="100,120" end="100,100" time="220" />
+					<effect type="fade" start="0" end="100" time="220" />
+				</animation>
+				<animation type="Hidden" tween="sine" easing="inout" reversible="false">
+					<effect type="zoom" start="100,100" end="100,110" time="150" />
+					<effect type="fade" start="100" end="0" time="150" />
+				</animation>
 		    <visible>![IsEmpty(Container.ListItem.Property(Album_Description)) + IsEmpty(Container.ListItem.Property(Artist_Description))] + Control.HasFocus(100)</visible>
 				<control type="label">
 					<posy>258</posy>

@@ -127,7 +127,7 @@
 								<control type="label">
 									<posx>180</posx>
 									<posy>25</posy>
-									<width>695</width>
+									<width>540</width>
 									<label>$INFO[ListItem.Label]</label>
 									<font>FontSize_26</font>
 									<textcolor>white</textcolor>
@@ -140,7 +140,7 @@
 									<font>FontSize_18</font>
 									<textcolor>99white</textcolor>
 									<align>left</align>
-									<width>695</width>
+									<width>540</width>
 								</control>
 								<control type="textbox" id="4">
 									<posx>180</posx>
@@ -155,12 +155,12 @@
 								</control>
 								<control type="label">
 									<posx>180</posx>
-									<posy>195</posy>
-                  <label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(Rating),,]$INFO[ListItem.Property(Duration), • , $LOCALIZE[12391]]</label>
+									<posy>197</posy>
+									<width>400</width>
 									<font>FontSize_18</font>
 									<textcolor>99white</textcolor>
 									<align>left</align>
-									<width>695</width>
+                  <label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(Rating),,]$INFO[ListItem.Property(Duration), • , $LOCALIZE[12391]]</label>
 								</control>
 							</control>
 						</focusedlayout>
@@ -260,7 +260,7 @@
 								<control type="label">
 									<posx>180</posx>
 									<posy>25</posy>
-									<width>695</width>
+									<width>540</width>
 									<label>$INFO[ListItem.Label]</label>
 									<font>FontSize_26</font>
 									<textcolor>white</textcolor>
@@ -273,7 +273,7 @@
 									<font>FontSize_18</font>
 									<textcolor>99white</textcolor>
 									<align>left</align>
-									<width>695</width>
+									<width>540</width>
 								</control>
 								<control type="textbox" id="4">
 									<posx>180</posx>
@@ -288,12 +288,12 @@
 								</control>
 								<control type="label">
 									<posx>180</posx>
-									<posy>195</posy>
-                  <label>$INFO[ListItem.Property(Premiered),, • ]$INFO[ListItem.Property(Rating),,]$INFO[ListItem.Property(MPAA), • ,]</label>
+									<posy>197</posy>
+									<width>400</width>
 									<font>FontSize_18</font>
 									<textcolor>99white</textcolor>
 									<align>left</align>
-									<width>695</width>
+                  <label>$INFO[ListItem.Property(Premiered),, • ]$INFO[ListItem.Property(Rating),,]$INFO[ListItem.Property(MPAA), • ,]</label>
 								</control>
 							</control>
 						</focusedlayout>

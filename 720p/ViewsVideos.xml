@@ -15,7 +15,7 @@
 			<control type="group">
 			  <include>ListViewAnimationsRight</include>
 	      <visible>!Stringcompare(ListItem.Label,..)</visible>
-	      <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
+	      <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
 				<control type="image">
 					<posx>430</posx>
 					<posy>-50</posy>
@@ -277,7 +277,7 @@
 			<control type="group">
 			  <include>ListViewAnimationsRight</include>
 	      <visible>IsEmpty(ListItem.Property(Addon.Name))</visible>
-	      <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
+	      <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
 				<control type="image">
 					<posx>360</posx>
 					<posy>-60</posy>
@@ -304,7 +304,7 @@
 	
 		<control type="group">
 			<include>ListViewAnimationsRight</include>
-	    <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
+	    <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
 			<control type="group">
 			  <include>ListViewAnimationsRight</include>
 	      <visible>Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Name))</visible>
@@ -527,7 +527,7 @@
 							<height>17</height>-->	
 	            <texture>overlays/unwatched/list/unwatched_nf.png</texture>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-							<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+							<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
 						</control>
 						<control type="label">
 							<posx>95</posx>
@@ -560,7 +560,7 @@
 					    <colordiffuse>55ffffff</colordiffuse>
 					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-							<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+							<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
 						</control>
 						<control type="image">
 							<posx>548</posx>
@@ -607,7 +607,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
-	            <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Substring(ListItem.Path,videodb://1/7/)]</visible>
+	            <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist) | Substring(ListItem.Path,videodb://1/7/)]</visible>
 						</control>
 				</itemlayout>
 				<focusedlayout height="45" width="710">
@@ -648,7 +648,7 @@
 							<height>17</height>-->	
 	            <texture>overlays/unwatched/list/unwatched_fo.png</texture>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-							<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+							<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
 						</control>
 						<control type="label">
 							<posx>95</posx>
@@ -681,7 +681,7 @@
 					    <colordiffuse>ffcccccc</colordiffuse>
 					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-							<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+							<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
 						</control>
 						<control type="image">
 							<posx>548</posx>
@@ -728,7 +728,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
-	            <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Substring(ListItem.Path,videodb://1/7/)]</visible>
+	            <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist) | Substring(ListItem.Path,videodb://1/7/)]</visible>
 						</control>
 	        </control>
 				</focusedlayout>
@@ -953,7 +953,14 @@
 			</control>
 			<control type="group">
 				<posx>301</posx>
-		    <include>VisibleFadeEffect</include>
+				<animation type="Visible" tween="sine" easing="inout" reversible="false">
+					<effect type="zoom" start="100,120" end="100,100" time="220" />
+					<effect type="fade" start="0" end="100" time="220" />
+				</animation>
+				<animation type="Hidden" tween="sine" easing="inout" reversible="false">
+					<effect type="zoom" start="100,100" end="100,110" time="150" />
+					<effect type="fade" start="100" end="0" time="150" />
+				</animation>
 		    <visible>!IsEmpty(Container.ListItem.Plot) + Control.HasFocus(100)</visible>
 				<control type="label">
 					<posy>255</posy>
@@ -2482,7 +2489,7 @@
 				<pagecontrol>60</pagecontrol>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 				<preloaditems>2</preloaditems>
-				<itemlayout height="265" width="244" condition="![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]">
+				<itemlayout height="265" width="244" condition="![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)]">
 					<control type="image">
 						<width>260</width>
 						<height>280</height>
@@ -2521,7 +2528,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="265" width="244" condition="![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]">
+				<focusedlayout height="265" width="244" condition="![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)]">
 					<control type="image">
 						<width>260</width>
 						<height>280</height>
@@ -2575,7 +2582,7 @@
 					</control>
 				</focusedlayout>
 
-				<itemlayout height="180" width="244" condition="[Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + ![SubString(Container.Folderpath,plugin://) | IsEmpty(Container.Folderpath)]">
+				<itemlayout height="180" width="244" condition="[Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + ![SubString(Container.Folderpath,plugin://) | IsEmpty(Container.Folderpath)]">
 					<control type="image">
 						<width>260</width>
 						<height>200</height>
@@ -2658,7 +2665,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="180" width="244" condition="[Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + ![SubString(Container.Folderpath,plugin://) | IsEmpty(Container.Folderpath)]">
+				<focusedlayout height="180" width="244" condition="[Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + ![SubString(Container.Folderpath,plugin://) | IsEmpty(Container.Folderpath)]">
 					<control type="image">
 						<width>260</width>
 						<height>200</height>
@@ -2803,7 +2810,7 @@
         <focusposition>2</focusposition>
         <preloaditems>2</preloaditems>
 				<scrolltime tween="Cubic" easing="Out">500</scrolltime>
-	      <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
+	      <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
 				<itemlayout width="560" height="65">
 					<control type="label">
 						<posx>40</posx>

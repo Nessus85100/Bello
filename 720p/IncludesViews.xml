@@ -50,7 +50,8 @@
     
     <include name="VideoPlaylistViews">
       <include>ListView_Videos</include> <!-- id = 50 -->
-      <include>SlideView_Videos</include> <!-- id = 51 -->
+      <include>ThumbnailsView_Videos</include> <!-- id = 56 -->
+      <include>BannersView_Videos</include> <!-- id = 57 -->
     </include>
     
     <include name="MusicPlaylistViews">

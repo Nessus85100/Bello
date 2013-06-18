@@ -962,28 +962,36 @@
 	  </control>
 
 		<control type="group">
-			<posx>-25</posx>
-			<posy>-43</posy>
+			<posx>0</posx>
+			<posy>20</posy>
       <visible>PVR.IsRecording</visible>
+		  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar)">
+	      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+	      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
+		  </animation>
+		  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar)">
+	      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+	      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
+		  </animation>
       <animation effect="fade" start="0" end="100" delay="500" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
-			<control type="label.">
-				<posx>10</posx>
-				<posy>3</posy>
+			<control type="label">
+	      <posx>89r</posx>
+	      <posy>2</posy>
 				<width>100</width>
 				<height>32</height>
-				<font>FontSize_22B</font>
-				<textcolor>red</textcolor>
+				<font>FontSize_14B</font>
+				<textcolor>white</textcolor>
 				<shadowcolor>AA000000</shadowcolor>
-				<align>left</align>
+				<align>right</align>
 				<aligny>center</aligny>
-				<label>R</label>
+				<label>REC</label>
 			</control>
       <control type="image">
-      	<posx>0</posx>
+      	<posx>94r</posx>
       	<posy>0</posy>
-      	<width>38</width>
-      	<height>38</height>
-				<aspectratio>keep</aspectratio>
+      	<width>34</width>
+      	<height>34</height>
+		    <aspectratio align="right" aligny="center">keep</aspectratio>
       	<texture>windows/pvr/rec.png</texture>
       </control>
 		</control>

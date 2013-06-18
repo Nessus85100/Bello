@@ -1,20 +1,20 @@
 <window id="136">
-		<animation type="WindowOpen">
+		<animation type="WindowOpen" reversible="false">
 			<effect type="zoom" time="350" center="auto" start="190" end="100" tween="cubic" easing="out" />
-			<effect type="fade" time="350" center="auto" start="0" easing="out" end="100" reversible="false" />
+			<effect type="fade" time="350" start="0" easing="out" end="100" />
 		</animation>			
-		<animation type="WindowClose">
+		<animation type="WindowClose" reversible="false">
 			<effect type="zoom" time="350" center="auto" start="100" end="190" tween="cubic" easing="in" />
-			<effect type="fade" time="350" center="auto" start="100" easing="in" end="0" reversible="false"/>
-		</animation>
-		<animation type="Visible">
+			<effect type="fade" time="350" start="100" easing="in" end="0" />
+		</animation>		  
+		<animation type="Visible" reversible="false">
 			<effect type="zoom" time="350" center="auto" start="190" end="100" tween="cubic" easing="out" />
-			<effect type="fade" time="350" center="auto" start="0" easing="out" end="100" reversible="false" />
+			<effect type="fade" time="350" start="0" easing="out" end="100" />
 		</animation>			
-		<animation type="Hidden">
+		<animation type="Hidden" reversible="false">
 			<effect type="zoom" time="350" center="auto" start="100" end="190" tween="cubic" easing="in" />
-			<effect type="fade" time="350" center="auto" start="100" easing="in" end="0" reversible="false"/>
-		</animation>
+			<effect type="fade" time="350" start="100" easing="in" end="0" />
+		</animation>		  
 		<coordinates>
 			<system>1</system>
 			<posx>0</posx>
