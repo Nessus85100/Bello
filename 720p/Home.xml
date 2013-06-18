@@ -41,6 +41,11 @@
 				 <onback condition="Container(20).HasFocus(17)">Skin.SetString(CustomFavourite3.Label)</onback>
 				 <onback condition="Container(20).HasFocus(18)">Skin.SetString(CustomFavourite4.Label)</onback>
 				 <onback condition="Container(20).HasFocus(19)">Skin.SetString(CustomFavourite5.Label)</onback>
+				 <onback condition="Container(20).HasFocus(20)">Skin.SetString(CustomFavourite6.Label)</onback>
+				 <onback condition="Container(20).HasFocus(21)">Skin.SetString(CustomFavourite7.Label)</onback>
+				 <onback condition="Container(20).HasFocus(22)">Skin.SetString(CustomFavourite8.Label)</onback>
+				 <onback condition="Container(20).HasFocus(23)">Skin.SetString(CustomFavourite9.Label)</onback>
+				 <onback condition="Container(20).HasFocus(24)">Skin.SetString(CustomFavourite10.Label)</onback>
 				 <onback condition="Container(20).HasFocus(13)">Skin.SetAddon(TrailersAddon_Path,xbmc.addon.video)</onback>
 				 <itemgap>0</itemgap>
 				 <orientation>horizontal</orientation>
@@ -242,17 +247,40 @@
 							<onclick>$INFO[Skin.String(CustomFavourite3.Path)]</onclick>
 							<visible>!IsEmpty(Skin.String(CustomFavourite3.Path))</visible>
 					 </item>
-									
 					 <item id="18">
 							<label>$INFO[Skin.String(CustomFavourite4.Label)]</label>
 							<onclick>$INFO[Skin.String(CustomFavourite4.Path)]</onclick>
 							<visible>!IsEmpty(Skin.String(CustomFavourite4.Path))</visible>
 					 </item>
-							
 					 <item id="19">
 							<label>$INFO[Skin.String(CustomFavourite5.Label)]</label>
 							<onclick>$INFO[Skin.String(CustomFavourite5.Path)]</onclick>
 							<visible>!IsEmpty(Skin.String(CustomFavourite5.Path))</visible>
+					 </item>
+					 <item id="20">
+							<label>$INFO[Skin.String(CustomFavourite6.Label)]</label>
+							<onclick>$INFO[Skin.String(CustomFavourite6.Path)]</onclick>
+							<visible>!IsEmpty(Skin.String(CustomFavourite6.Path))</visible>
+					 </item>
+					 <item id="21">
+							<label>$INFO[Skin.String(CustomFavourite7.Label)]</label>
+							<onclick>$INFO[Skin.String(CustomFavourite7.Path)]</onclick>
+							<visible>!IsEmpty(Skin.String(CustomFavourite7.Path))</visible>
+					 </item>
+					 <item id="22">
+							<label>$INFO[Skin.String(CustomFavourite8.Label)]</label>
+							<onclick>$INFO[Skin.String(CustomFavourite8.Path)]</onclick>
+							<visible>!IsEmpty(Skin.String(CustomFavourite8.Path))</visible>
+					 </item>
+					 <item id="23">
+							<label>$INFO[Skin.String(CustomFavourite9.Label)]</label>
+							<onclick>$INFO[Skin.String(CustomFavourite9.Path)]</onclick>
+							<visible>!IsEmpty(Skin.String(CustomFavourite9.Path))</visible>
+					 </item>
+					 <item id="24">
+							<label>$INFO[Skin.String(CustomFavourite10.Label)]</label>
+							<onclick>$INFO[Skin.String(CustomFavourite10.Path)]</onclick>
+							<visible>!IsEmpty(Skin.String(CustomFavourite10.Path))</visible>
 					 </item>
 				 </content>
 			  </control>

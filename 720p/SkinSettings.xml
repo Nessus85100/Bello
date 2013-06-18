@@ -405,6 +405,43 @@
 						<onclick>RunScript(script.favourites,property=CustomFavourite5)</onclick>
 						<visible>Skin.HasSetting(CustomHomeButtons)</visible>
 					</control>
+					<control type="button" id="8286">
+            <include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 6</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomFavourite6.Label)][/COLOR]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite6)</onclick>
+						<visible>Skin.HasSetting(CustomHomeButtons)</visible>
+					</control>
+					<control type="button" id="8287">
+            <include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomFavourite7.Label)][/COLOR]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite7)</onclick>
+						<visible>Skin.HasSetting(CustomHomeButtons)</visible>
+					</control>
+					<control type="button" id="8288">
+            <include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomFavourite8.Label)][/COLOR]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite8)</onclick>
+						<visible>Skin.HasSetting(CustomHomeButtons)</visible>
+					</control>
+					<control type="button" id="8289">
+            <include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomFavourite9.Label)][/COLOR]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite9)</onclick>
+						<visible>Skin.HasSetting(CustomHomeButtons)</visible>
+					</control>
+					<control type="button" id="8290">
+            <include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomFavourite10.Label)][/COLOR]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite10)</onclick>
+						<visible>Skin.HasSetting(CustomHomeButtons)</visible>
+					</control>
+
+
 
 				  <!-- Hide Home Categories Buttons -->
 					<control type="radiobutton" id="8250">
