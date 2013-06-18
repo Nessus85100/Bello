@@ -46,7 +46,7 @@ msgstr "ON"
 
 msgctxt "#31015"
 msgid "General Options"
-msgstr "Ogolne opcje"
+msgstr "Ogólne opcje"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -58,7 +58,7 @@ msgstr "Wybór piosenki karaoke"
 
 msgctxt "#31018"
 msgid "Trailers"
-msgstr "Trailers"
+msgstr "Zwiastuny"
 
 msgctxt "#31020"
 msgid "Found"
@@ -74,7 +74,7 @@ msgstr "Muzyka - pliki"
 
 msgctxt "#31023"
 msgid "Info"
-msgstr "Info"
+msgstr "Informacje"
 
 msgctxt "#31024"
 msgid "Page"
@@ -114,7 +114,7 @@ msgstr "Przesuwany"
 
 msgctxt "#31081"
 msgid "Gallery"
-msgstr "Gallery"
+msgstr "Galeria"
 
 msgctxt "#31083"
 msgid "Wall"
@@ -130,7 +130,7 @@ msgstr "Edytuj informacje"
 
 msgctxt "#31127"
 msgid "Landscape"
-msgstr "LANDSCAPE"
+msgstr "Tryb poziomy""
 
 msgctxt "#31128"
 msgid "ClearArt"
@@ -158,7 +158,7 @@ msgstr "Emisja następnego odcinka"
 
 msgctxt "#31218"
 msgid "Landscape"
-msgstr "LANDSCAPE"
+msgstr "Tryb poziomy"
 
 msgctxt "#31219"
 msgid "Logo"
@@ -166,7 +166,7 @@ msgstr "Logo"
 
 msgctxt "#31221"
 msgid "Get Extra Art"
-msgstr "Pobierz Extra Art"
+msgstr "Pobierz dodatkowe grafiki"
 
 msgctxt "#31223"
 msgid "36 Hour Forecast"
@@ -206,23 +206,23 @@ msgstr "Podgląd"
 
 msgctxt "#31280"
 msgid "Open Playlist"
-msgstr "Open Playlist"
+msgstr "Otwórz playlistę"
 
 msgctxt "#31281"
 msgid "Save Playlist"
-msgstr "Save Playlist"
+msgstr "Zapisz playlistę"
 
 msgctxt "#31282"
 msgid "Close Playlist"
-msgstr "Close Playlist"
+msgstr "Zamknij playlistę"
 
 msgctxt "#31283"
 msgid "System Music Files"
-msgstr "System Music Files"
+msgstr "Systemowe pliki muzyczne"
 
 msgctxt "#31284"
 msgid "Current Playlist"
-msgstr "Current Playlist"
+msgstr "Aktualna playlista"
 
 msgctxt "#31285"
 msgid "Playlist Options"
