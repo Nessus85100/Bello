@@ -1092,6 +1092,14 @@
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 
+  <variable name="VideoInfoThumbs">
+    <value condition="Container.Content(Episodes) + !IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
+		<value condition="IsEmpty(ListItem.Art(season.poster)) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value condition="IsEmpty(ListItem.Art(poster)) | IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(thumb)]</value>
+    <value>thumbs/fallback_poster.png</value>
+  </variable>
+
 	<variable name="ThumbnailsTVShowsThumbs">
 		<value condition="Skin.HasSetting(ShowClearartThumb) + !IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
 		<value condition="Skin.HasSetting(ShowLandscapeThumb) + !IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
@@ -1128,16 +1136,6 @@
     <value condition="!IsEmpty(ListItem.Rating) | !Substring(Container(100).ListItem.Property(Rating),0.0)">rating/star_big_full.png</value>
     <value condition="IsEmpty(ListItem.Rating) | Substring(Container(100).ListItem.Property(Rating),0.0)">rating/star_big_empty.png</value>
   </variable>
-
-<!--
-	<variable name="VideoInfoThumbs">
-		<value condition="Container.Content(Movies) | Container.Content(Seasons)">$INFO[ListItem.Icon]</value>
-		<value condition="Container.Content(TVShows) + !IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-		<value condition="Container.Content(TVShows) + IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Icon]</value>
-		<value condition="Container.Content(Episodes)">$INFO[ListItem.Art(tvshow.poster)]</value>
-		<value condition="Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)">$INFO[ListItem.Icon]</value>
-	</variable>
--->
 
 	<variable name="MusicLabel">
 		<value condition="Container.Content(Songs)">$INFO[ListItem.Title]$INFO[ListItem.Artist, - ]</value>

@@ -2286,7 +2286,7 @@
 			<texture background="true">views/posters/bg_wall.png</texture>
 			<include>FanartFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
-      <visible>!Window.IsActive(movieinformation) + Control.IsVisible(55)</visible>
+      <visible>Control.IsVisible(55) + ![Window.IsActive(movieinformation) | Window.IsActive(shutdownmenu) | Window.IsActive(contextmenu)]</visible>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(55)</visible>
@@ -2460,7 +2460,7 @@
 		  <colordiffuse>CCFFFFFF</colordiffuse>
 			<include>FanartFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
-      <visible>!Window.IsActive(movieinformation) + Control.IsVisible(55)</visible>
+      <visible>Control.IsVisible(55) + ![Window.IsActive(movieinformation) | Window.IsActive(shutdownmenu) | Window.IsActive(contextmenu)]</visible>
 		</control>
 	</include>
 

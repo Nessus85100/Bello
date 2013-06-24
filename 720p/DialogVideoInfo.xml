@@ -17,7 +17,7 @@
 					<width>308</width>
 					<height>453</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true" fallback="thumbs/fallback_poster.png" diffuse="thumbs/poster_diffuse_big.png">$VAR[PosterThumbs]</texture>
+					<texture background="true" diffuse="thumbs/poster_diffuse_big.png">$VAR[VideoInfoThumbs]</texture>
 				</control>
 				<control type="image">
 					<posx>-11</posx>
