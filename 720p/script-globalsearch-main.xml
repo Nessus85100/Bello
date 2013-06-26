@@ -391,7 +391,7 @@
 									<posy>20</posy>
 									<width>210</width>
 									<height>212</height>
-									<texture>overlays/unwatched/thumbs/UnWatched_Music.png</texture>
+									<texture>overlays/unwatched/thumbs/UnWatched_Square.png</texture>
 									<aspectratio align="center" aligny="center">stretch</aspectratio>
 									<bordersize>6</bordersize>
 									<visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
@@ -515,7 +515,7 @@
 									<posy>20</posy>
 									<width>210</width>
 									<height>212</height>
-									<texture>overlays/unwatched/thumbs/UnWatched_Music.png</texture>
+									<texture>overlays/unwatched/thumbs/UnWatched_Square.png</texture>
 									<aspectratio align="center" aligny="center">stretch</aspectratio>
 									<bordersize>6</bordersize>
 									<visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>

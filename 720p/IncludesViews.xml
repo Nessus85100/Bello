@@ -24,12 +24,12 @@
       <include>GalleryView_Music</include> <!-- id = 52 -->
       <include>ThumbnailsView</include> <!-- id = 56 -->
       <include>BannersView_Music</include> <!-- id = 57 -->
+      <include>WallView_Music</include> <!-- id = 59 -->
     </include>
     
     <include name="MusicFilesViews">
       <include>ListView_Music</include> <!-- id = 50 -->
       <include>ThumbnailsView</include> <!-- id = 56 -->
-      <include>BannersView_Music</include> <!-- id = 57 -->
     </include>
 
     <include name="PicturesViews">

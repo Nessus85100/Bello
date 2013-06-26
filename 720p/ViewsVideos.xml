@@ -524,10 +524,9 @@
 							<!--<width>16</width>
 							<height>16</height>-->
 			        <width>14</width>
-							<height>17</height>-->	
+							<height>17</height>
 	            <texture>overlays/unwatched/list/unwatched_nf.png</texture>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-							<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
 						</control>
 						<control type="label">
 							<posx>95</posx>
@@ -648,7 +647,6 @@
 							<height>17</height>-->	
 	            <texture>overlays/unwatched/list/unwatched_fo.png</texture>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-							<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
 						</control>
 						<control type="label">
 							<posx>95</posx>
@@ -2514,6 +2512,16 @@
 					  <texture background="true">$INFO[ListItem.Icon]</texture>
 					  <bordersize>6</bordersize>
 					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>200</height>
+					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					</control>
 					<control type="label">
 						<posx>128</posx>
 						<posy>220</posy>
@@ -2552,6 +2560,16 @@
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true">$INFO[ListItem.Icon]</texture>
 					  <bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>200</height>
+					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 					<control type="label">
 						<posx>128</posx>
