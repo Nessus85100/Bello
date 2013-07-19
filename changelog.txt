@@ -1,3 +1,27 @@
+[B]v1.2.0[/B]
+• Added 10 custom buttons in Quick Navigation menu.
+• Added show/hide options for all Quick Navigation menu buttons.
+• Added new Quick Navigation feature accessible via PlayerControls (press "M").
+• Added new textures in Calibration screen.
+• Added new indicators arrows for "button" controls in SkinSettings screen.
+• Added new parent folder items arrows in ListViews.
+• Fixed UnWatched indicators in plain video files.
+• Updated language files from Transifex.
+• A lot of fixes/tweeks and recode in order to try to make the skin faster especially in low lever systems (check GitHub commits).
+
+[B]v1.1.0[/B]
+• Added new 3DWall Music view.
+• Fixed missing sort options from Music files mode.
+• Added five more custom Home buttons.
+• Fixed focus to Channels list when entering PVR section.
+• Changed StarRating to numbers rating in VideoInfo dialogs.
+• More fixes about when a library content is empty.
+• Fixed missing ThumbnailsView for VideoAddons.
+• Fixed Home Music Button bug when is set to open MusicFiles in other languages.
+• Added an option to choose what Add-ons home button opens.
+• Added option to show RSS globally. Default visible state is only in Home screen.
+• Updated language files from Transifex.
+
 [B][COLOR=FF56ADDA]v1.0.0 Final - Release Date 22/5/2013[/COLOR][/B]
 • Added new ListWall view based on the original concept.
 • Added an option to choose the Trailers addon in skin settings and in Home screen (click "Backspace" on Trailers home button).

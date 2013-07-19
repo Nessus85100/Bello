@@ -104,6 +104,10 @@ msgctxt "#31036"
 msgid "Close"
 msgstr "Lukk"
 
+msgctxt "#31039"
+msgid "IP Address"
+msgstr "IP-adresse"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Skli"
@@ -183,6 +187,10 @@ msgstr "Nye filmer"
 msgctxt "#31247"
 msgid "Random Movies"
 msgstr "Tilfeldige filmer"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Alle filmer"
 
 msgctxt "#31285"
 msgid "Playlist Options"

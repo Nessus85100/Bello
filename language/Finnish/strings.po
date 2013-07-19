@@ -104,6 +104,10 @@ msgctxt "#31036"
 msgid "Close"
 msgstr "Sulje"
 
+msgctxt "#31039"
+msgid "IP Address"
+msgstr "IP -osoite"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Diakuva"

@@ -8,7 +8,7 @@
 		
 		<control type="group">
 	    <include>DialogAnimation</include>
-			<visible>!Window.IsActive(virtualkeyboard)+ ![Window.IsActive(networksetup) + IsEmpty(Window.Property(ShowDialog))]</visible>
+			<visible>!Window.IsActive(virtualkeyboard) + !Window.IsVisible(busydialog) + !Window.IsActive(locksettings) + ![Window.IsActive(networksetup) + IsEmpty(Window.Property(ShowDialog))]</visible>
 		    <control type="image">
 			    <description>background image</description>
 			    <include>FullscreenDimensions</include>

@@ -1,6 +1,7 @@
 <window type="buttonMenu" id="111">
 	<defaultcontrol>9000</defaultcontrol>
-	<include>DialogsClose</include>
+	<onload>Dialog.Close(playercontrols)</onload>
+	<include>OnLoadDialogsClose</include>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>

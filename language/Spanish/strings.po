@@ -408,6 +408,10 @@ msgctxt "#31153"
 msgid "Enable Login Screen"
 msgstr "Activar pantalla de inicio de sesión"
 
+msgctxt "#31203"
+msgid "New Search"
+msgstr "Nueva Búsqueda"
+
 msgctxt "#31204"
 msgid "-"
 msgstr "-"

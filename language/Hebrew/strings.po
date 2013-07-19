@@ -108,6 +108,10 @@ msgctxt "#31036"
 msgid "Close"
 msgstr "סגור"
 
+msgctxt "#31039"
+msgid "IP Address"
+msgstr "כתובת IP"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "מצגת"
@@ -119,6 +123,10 @@ msgstr "קיר"
 msgctxt "#31084"
 msgid "Posters"
 msgstr "פוסטר"
+
+msgctxt "#31127"
+msgid "Landscape"
+msgstr "לנדסקייפ"
 
 msgctxt "#31128"
 msgid "ClearArt"
@@ -139,6 +147,10 @@ msgstr "תמונה משולבת"
 msgctxt "#31204"
 msgid "-"
 msgstr "-"
+
+msgctxt "#31218"
+msgid "Landscape"
+msgstr "לנדסקייפ"
 
 msgctxt "#31219"
 msgid "Logo"
@@ -175,6 +187,10 @@ msgstr "תחזית"
 msgctxt "#31237"
 msgid "View"
 msgstr "תצוגה"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "כל הסרטים"
 
 msgctxt "#31285"
 msgid "Playlist Options"

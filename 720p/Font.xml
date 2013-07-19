@@ -1,6 +1,11 @@
 <fonts>
 	<fontset id="Default" idloc="15109" unicode="true">
 	 	<font>
+			<name>ArrowsFont</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>40</size>
+		</font>
+	 	<font>
 			<name>ClockFont</name>
 			<filename>OpenSans-Regular.ttf</filename>
 			<size>10</size>

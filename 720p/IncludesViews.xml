@@ -24,7 +24,7 @@
       <include>GalleryView_Music</include> <!-- id = 52 -->
       <include>ThumbnailsView</include> <!-- id = 56 -->
       <include>BannersView_Music</include> <!-- id = 57 -->
-      <include>WallView_Music</include> <!-- id = 59 -->
+      <include>3DWallView_Music</include> <!-- id = 59 -->
     </include>
     
     <include name="MusicFilesViews">
@@ -65,7 +65,7 @@
      <control type="group" id="50">
 			<control type="image">
 			  <include>FullscreenDimensions</include>
-				<texture>windows/bg/bg_overlay.png</texture>
+				<texture background="true">windows/pvr/bg_overlay.png</texture>
         <colordiffuse>D9FFFFFF</colordiffuse>
 			  <include>FanartFade</include>
 			</control>

@@ -1,6 +1,7 @@
 <window id="29">
 	<defaultcontrol always="true">52</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<backgroundcolor>0</backgroundcolor>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -11,7 +12,7 @@
 	 <control type="image">
 		<description>background image</description>
 		<include>FullscreenDimensions</include>
-		<texture background="true">special://skin/backgrounds/SKINDEFAULT.jpg</texture>
+		<texture background="true">special://skin/extras/backgrounds/SKINDEFAULT.jpg</texture>
 	 </control>
 	 <include>BackgroundVignette</include>
 

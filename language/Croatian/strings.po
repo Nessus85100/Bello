@@ -20,6 +20,10 @@ msgctxt "#31000"
 msgid "Live TV"
 msgstr "TV u živo"
 
+msgctxt "#31001"
+msgid "TV Guide"
+msgstr "TV Vodič"
+
 msgctxt "#31002"
 msgid "TV Shows"
 msgstr "TV Emisija"
@@ -96,6 +100,10 @@ msgctxt "#31036"
 msgid "Close"
 msgstr "Zatvori"
 
+msgctxt "#31039"
+msgid "IP Address"
+msgstr "IP adresa"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Diapozitiv"
@@ -103,6 +111,14 @@ msgstr "Diapozitiv"
 msgctxt "#31084"
 msgid "Posters"
 msgstr "Plakat"
+
+msgctxt "#31085"
+msgid "Thumbnails"
+msgstr "Minijature"
+
+msgctxt "#31128"
+msgid "ClearArt"
+msgstr "Prazna slika omota"
 
 msgctxt "#31134"
 msgid "Edit Background for Media Type"
@@ -160,9 +176,17 @@ msgctxt "#31237"
 msgid "View"
 msgstr "Pogled"
 
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "Nedavno dodani filmovi"
+
 msgctxt "#31247"
 msgid "Random Movies"
 msgstr "Slučajni Odabir Filma"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Svi filmovi"
 
 msgctxt "#31285"
 msgid "Playlist Options"

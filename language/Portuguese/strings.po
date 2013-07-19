@@ -52,9 +52,17 @@ msgctxt "#31010"
 msgid "-"
 msgstr "-"
 
+msgctxt "#31011"
+msgid "ON"
+msgstr "LIGADO"
+
 msgctxt "#31015"
 msgid "General Options"
 msgstr "Opções Gerais"
+
+msgctxt "#31016"
+msgid "File Manager"
+msgstr "Gestor Ficheiros"
 
 msgctxt "#31017"
 msgid "Karaoke Song Selector"
@@ -63,6 +71,10 @@ msgstr "Selecção de música de karaoke"
 msgctxt "#31018"
 msgid "Trailers"
 msgstr "Trailers"
+
+msgctxt "#31019"
+msgid "Search for movies directed by"
+msgstr "Procurar por filmes realizados por"
 
 msgctxt "#31020"
 msgid "Found"
@@ -108,9 +120,17 @@ msgctxt "#31034"
 msgid "Teletext"
 msgstr "Teletexto"
 
+msgctxt "#31035"
+msgid "REC"
+msgstr "REC"
+
 msgctxt "#31036"
 msgid "Close"
 msgstr "Fechar"
+
+msgctxt "#31038"
+msgid "Esc"
+msgstr "Esc"
 
 msgctxt "#31039"
 msgid "IP Address"
@@ -124,6 +144,10 @@ msgctxt "#31080"
 msgid "Slide"
 msgstr "Slide"
 
+msgctxt "#31081"
+msgid "Gallery"
+msgstr "Galeria"
+
 msgctxt "#31083"
 msgid "Wall"
 msgstr "Parede"
@@ -135,6 +159,10 @@ msgstr "Posters"
 msgctxt "#31085"
 msgid "Thumbnails"
 msgstr "Miniaturas"
+
+msgctxt "#31125"
+msgid "Edit Info"
+msgstr "Editar Info"
 
 msgctxt "#31127"
 msgid "Landscape"
@@ -164,6 +192,10 @@ msgctxt "#31204"
 msgid "-"
 msgstr "-"
 
+msgctxt "#31214"
+msgid "Airing"
+msgstr "Emissão"
+
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Paisagem"
@@ -171,6 +203,14 @@ msgstr "Paisagem"
 msgctxt "#31219"
 msgid "Logo"
 msgstr "Logotipo"
+
+msgctxt "#31221"
+msgid "Get Extra Art"
+msgstr "Obter Artwork Extra"
+
+msgctxt "#31222"
+msgid "Get TV Tune"
+msgstr "Obter TV Tune"
 
 msgctxt "#31223"
 msgid "36 Hour Forecast"
@@ -184,6 +224,14 @@ msgctxt "#31225"
 msgid "Weekend Forecast"
 msgstr "Previsão de fim de semana"
 
+msgctxt "#31226"
+msgid "10 Days Forecast"
+msgstr "Previsão de 10 Dias"
+
+msgctxt "#31227"
+msgid "From"
+msgstr "De"
+
 msgctxt "#31228"
 msgid "at"
 msgstr "a"
@@ -195,6 +243,14 @@ msgstr "Última actualização"
 msgctxt "#31230"
 msgid "Data Provider"
 msgstr "Fornecedor de Dados"
+
+msgctxt "#31231"
+msgid "Max Humidity"
+msgstr "Humidade Máx."
+
+msgctxt "#31232"
+msgid "Min Humidity"
+msgstr "Humidade Mín."
 
 msgctxt "#31233"
 msgid "Chance of Precipitation"
@@ -212,6 +268,14 @@ msgctxt "#31241"
 msgid "Recently Added Movies"
 msgstr "Filmes Recentes"
 
+msgctxt "#31242"
+msgid "Recently Added TV Shows"
+msgstr "Séries de TV Recentes"
+
+msgctxt "#31243"
+msgid "Recently Added Music"
+msgstr "Música Recente"
+
 msgctxt "#31244"
 msgid "New Movies"
 msgstr "Novos filmes"
@@ -219,6 +283,10 @@ msgstr "Novos filmes"
 msgctxt "#31246"
 msgid "New Music"
 msgstr "Nova música"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Filmes Aleatórios"
 
 msgctxt "#31250"
 msgid "All Movies"
@@ -236,9 +304,21 @@ msgctxt "#31282"
 msgid "Close Playlist"
 msgstr "Fechar lista de reprodução"
 
+msgctxt "#31283"
+msgid "System Music Files"
+msgstr "Ficheiros de Música do Sistema"
+
+msgctxt "#31284"
+msgid "Current Playlist"
+msgstr "Lista de Reprodução Actual"
+
 msgctxt "#31285"
 msgid "Playlist Options"
 msgstr "Opções da Lista Reprodução"
+
+msgctxt "#31300"
+msgid "Muted"
+msgstr "Sem Som"
 
 msgctxt "#31301"
 msgid "Playing"
@@ -248,6 +328,26 @@ msgctxt "#31302"
 msgid "Paused"
 msgstr "Pausado"
 
+msgctxt "#31303"
+msgid "Rewinding:"
+msgstr "Retrocedendo:"
+
+msgctxt "#31304"
+msgid "Forwarding:"
+msgstr "Avançando:"
+
+msgctxt "#31305"
+msgid "Finish Time:"
+msgstr "Hora de Término:"
+
+msgctxt "#31307"
+msgid "Enable Visualization"
+msgstr "Activar Visualização"
+
+msgctxt "#31308"
+msgid "Visualization Type"
+msgstr "Tipo de Visualização"
+
 msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "Pré-selecções de visualização"
@@ -255,6 +355,14 @@ msgstr "Pré-selecções de visualização"
 msgctxt "#31310"
 msgid "Visualization Settings"
 msgstr "Opções de visualização"
+
+msgctxt "#31312"
+msgid "Enable Artist SlideShow"
+msgstr "Activar Slides de Artista"
+
+msgctxt "#31313"
+msgid "Animated Backgrounds"
+msgstr "Fundos de Ecrã Animado"
 
 msgctxt "#31350"
 msgid "Available Groups"

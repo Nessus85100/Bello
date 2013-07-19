@@ -434,7 +434,7 @@ msgstr "Välj Trailers Add-on"
 
 msgctxt "#31155"
 msgid "Add-ons Button opens..."
-msgstr "Add-on Knappen öppnar..."
+msgstr "Tillägg-knappen öppnar..."
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -786,7 +786,7 @@ msgstr "Kontrollera hårdvaru och mjukvara funktioner, inkluderat installation f
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
-msgstr "Välj från ett urval av inställningar och inställningsalternativ för att göra \"Bello\" anpassat till dina behov."
+msgstr "Välj från ett urval av inställningar och inställningsalternativ för att göra \"Bello\" anpassat till dina behov och tycken."
 
 msgctxt "#31410"
 msgid "With XBMC you can have several profiles, even a logon screen for controlled access."

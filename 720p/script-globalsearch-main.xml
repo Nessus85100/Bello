@@ -1,6 +1,7 @@
 <window type="dialog">
 	<defaultcontrol>9000</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+  <allowoverlay>no</allowoverlay>
+  <backgroundcolor>0</backgroundcolor>
 	<controls>
 
 		<control type="group">
@@ -15,13 +16,13 @@
 			<control type="image">
 			  <description>Vignette</description>
 			  <include>FullscreenDimensions</include>
-			  <texture background="true">windows/bg/bg_vignette.png</texture>
+			  <texture background="true">special://skin/extras/backgrounds/bg_vignette.png</texture>
 				<fadetime>250</fadetime>
 			</control>
 			<control type="image">
 			  <description>Vignette</description>
 			  <include>FullscreenDimensions</include>
-			  <texture background="true">windows/bg/bg_diffuse.png</texture>
+			  <texture background="true">special://skin/extras/backgrounds/bg_diffuse.png</texture>
 				<fadetime>250</fadetime>
 	      <colordiffuse>D5FFFFFF</colordiffuse>
 			  <visible>!Skin.HasSetting(HideBGFanart)</visible>

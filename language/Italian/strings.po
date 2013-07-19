@@ -434,7 +434,7 @@ msgstr "Scegli l'Add-on per i Trailer"
 
 msgctxt "#31155"
 msgid "Add-ons Button opens..."
-msgstr "Il Bottone Add-on Apre..."
+msgstr "Il Bottone Add-on apre..."
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -786,7 +786,7 @@ msgstr "Controlla le funzioni hardware e software, comprese le impostazioni audi
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
-msgstr "Scegli tra una serie di impostazioni e personalizzazioni per far si che lo skin risponda ai tuoi gusti."
+msgstr "Scegli tra una varietà di impostazioni e personalizzazioni per far diventare \"Bello\" adatto alle tue esigenze ed al tuo gusto."
 
 msgctxt "#31410"
 msgid "With XBMC you can have several profiles, even a logon screen for controlled access."

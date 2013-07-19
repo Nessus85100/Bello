@@ -2,7 +2,7 @@
 	<defaultcontrol>-</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-	  <include>BackgroundContent</include>
+	  <include>BackgroundItems</include>
 
     <control type="group">
 			<animation effect="fade" time="600">WindowOpen</animation>
@@ -191,8 +191,7 @@
 				<fadetime>4000</fadetime>
 				<pauseatend>0</pauseatend>
 				<loop>true</loop>
-				<aspectratio background="true" aligny="top">stretch</aspectratio>
-				<imagepath background="true">osd/diffuse_colors</imagepath>
+				<imagepath background="true">special://skin/extras/backgrounds/music_colors</imagepath>
 				<colordiffuse>OSDColorsDiffuse</colordiffuse>
         <animation effect="fade" start="0" end="100" time="550" delay="0" tween="sine" easing="out">WindowOpen</animation>
         <animation effect="fade" start="100" end="0" time="550" delay="200" tween="sine" easing="out">WindowClose</animation>
@@ -216,7 +215,7 @@
 				<visible>!Window.IsVisible(MusicOSD) + !Window.IsActive(ShutdownMenu)</visible>
 				<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
 				<animation effect="fade" start="100" end="0" time="1500">WindowClose</animation>
-				<animation effect="slide" start="0,0" end="0,295" time="400" condition="!Player.ShowInfo">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,295" time="400" condition="![Player.ShowInfo | Player.Paused]">Conditional</animation>
 			</control>
 		  <control type="image">
 				<visible>[Player.Paused | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsActive(MusicOSD)]</visible>

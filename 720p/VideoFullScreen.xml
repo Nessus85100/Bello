@@ -4,7 +4,7 @@
 		<control type="image" id="1">
 		  <description>Vignette</description>
 			<include>FullscreenDimensions</include>
-		  <texture background="true">windows/bg/bg_vignette.png</texture>
+		  <texture background="true">special://skin/extras/backgrounds/bg_vignette.png</texture>
 			<fadetime>FanartCrossfadeTime</fadetime>
       <visible>Window.IsActive(InfoDialog) + !Window.IsActive(ShutdownMenu)</visible>
 		 <animation effect="fade" time="300">Visible</animation>
@@ -13,7 +13,7 @@
 		<control type="image" id="1">
 		  <description>Vignette</description>
 			<include>FullscreenDimensions</include>
-		  <texture background="true">windows/bg/bg_vignette.png</texture>
+		  <texture background="true">special://skin/extras/backgrounds/bg_vignette.png</texture>
 			<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
       <visible>!Window.IsActive(SliderDialog)</visible>
@@ -22,7 +22,7 @@
 		<control type="image" id="1">
 		  <description>Diffuse</description>
 			<include>FullscreenDimensions</include>
-		  <texture background="true">windows/bg/menus_overlay.png</texture>
+		  <texture background="true">special://skin/extras/backgrounds/menus_overlay.png</texture>
 			<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
       <visible>!Window.IsActive(SliderDialog)</visible>

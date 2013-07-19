@@ -162,11 +162,11 @@
       <effect type="fade" start="100" end="0" time="250" delay="250" tween="sine" easing="out" />
       <effect type="slide" start="0,0" end="0,-55" time="300" delay="250" tween="sine" easing="out" />
     </animation>
-    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog)]">
+    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls)]">
       <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
       <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
     </animation>
-    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog)">
+    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls)">
       <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
       <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
     </animation>
@@ -1410,7 +1410,7 @@
 				<item id="0">
 					<label>[COLOR=blue]$LOCALIZE[342] $LOCALIZE[575][/COLOR]</label>
 					<property name="Label3">$LOCALIZE[31208]</property>
-					<onclick>ActivateWindow(VideoLibrary,special://skin/playlists/Movies In Progress.xsp,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,special://skin/extras/playlists/Movies In Progress.xsp,return)</onclick>
 					<property name="RecommendedMovie1">$INFO[Window.Property(RecommendedMovie.1.Art(poster))]</property>
 					<property name="RecommendedMovie2">$INFO[Window.Property(RecommendedMovie.2.Art(poster))]</property>
 					<property name="RecommendedMovie3">$INFO[Window.Property(RecommendedMovie.3.Art(poster))]</property>
@@ -1533,7 +1533,7 @@
 				<item id="0">
 					<label>[COLOR=blue]$LOCALIZE[31002] $LOCALIZE[575][/COLOR]</label>
 					<property name="Label3">$LOCALIZE[31209]</property>
-					<onclick>ActivateWindow(VideoLibrary,special://skin/playlists/TV Shows In Progress.xsp,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,special://skin/extras/playlists/TV Shows In Progress.xsp,return)</onclick>
 					<property name="RecommendedEpisode1">$INFO[Window.Property(RecommendedEpisode.1.Art(tvshow.poster))]</property>
 					<property name="RecommendedEpisode2">$INFO[Window.Property(RecommendedEpisode.2.Art(tvshow.poster))]</property>
 					<property name="RecommendedEpisode3">$INFO[Window.Property(RecommendedEpisode.3.Art(tvshow.poster))]</property>
@@ -2549,9 +2549,7 @@
 	    </content>
 		</control>
 	 </control>
-
 	</include>
-
 
 	<include name="HomeSubMenusArrows">
 	 <control type="group">
@@ -2572,7 +2570,7 @@
      </animation>
      <animation type="Hidden">
         <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" />
-        <effect type="slide" start="0,0" end="0,55" time="300" tween="sine" easing="out" />
+        <effect type="slide" start="0,0" end="0,8" time="300" tween="sine" easing="out" />
      </animation>
 		 <visible>!Window.IsActive(Favourites) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(BusyDialog) + !Window.IsActive(PlayerControls) + !Window.IsActive(VirtualKeyboard) + !Window.IsActive(script-globalsearch-main.xml) + !Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(23) + !Control.HasFocus(24) + [[[Library.HasContent(movies) + Container(20).HasFocus(2)] + !Skin.HasSetting(HideSubMenuMovies)] | [[Library.HasContent(tvshows) + Container(20).HasFocus(1)] + !Skin.HasSetting(HideSubMenuTVShows)] | [[Library.HasContent(music) + Container(20).HasFocus(3)] + !Skin.HasSetting(HideSubMenuMusic)] | [Container(20).HasFocus(9) + !Skin.HasSetting(HideSubMenuSettings)]]</visible>
 		 <control type="image">
@@ -2588,40 +2586,6 @@
       <visible>![Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling]</visible>
 		 </control>
 		</control>
-		
-		<control type="group.">
-     <animation type="WindowOpen">
-        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
-     </animation>
-     <animation type="WindowClose">
-        <effect type="fade" start="100" end="0" time="250" delay="250" tween="sine" easing="out" />
-        <effect type="slide" start="0,0" end="0,-55" time="300" delay="250" tween="sine" easing="out" />
-     </animation>
-     <animation type="Visible">
-        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
-     </animation>
-     <animation type="Hidden">
-        <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" />
-        <effect type="slide" start="0,0" end="0,55" time="300" tween="sine" easing="out" />
-     </animation>
-		 <visible>!Window.IsActive(Favourites) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(BusyDialog) + !Window.IsActive(PlayerControls) + !Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(23)  + !Control.HasFocus(24) + [[Container(20).HasFocus(2) + Skin.HasSetting(HideSubMenuMovies)] | [Container(20).HasFocus(1) + Skin.HasSetting(HideSubMenuTVShows)] | [Container(20).HasFocus(3) + Skin.HasSetting(HideSubMenuMusic)] | [Container(20).HasFocus(9) + !Skin.HasSetting(HideSubMenuSettings)]]</visible>
-		 <control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>21</width>
-			<height>18</height>
-			<texture>buttons/arrow.png</texture>
-			<animation type="Conditional" condition="!Window.IsActive(Favourites) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(BusyDialog) + !Window.IsActive(PlayerControls) + !Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(23) + !Control.HasFocus(24) + ![Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling] + [[Container(20).HasFocus(2) + Skin.HasSetting(HideSubMenuMovies)] | [Container(20).HasFocus(1) + Skin.HasSetting(HideSubMenuTVShows)] | [Container(20).HasFocus(3) + Skin.HasSetting(HideSubMenuMusic)] | [Container(20).HasFocus(9) + !Skin.HasSetting(HideSubMenuSettings)]]" pulse="true">
-			  <effect type="fade" start="0" end="100" delay="2000" time="1000"  />
-				<effect type="slide" start="0,0" end="0,4" tween="sine" easing="inout" delay="2000" time="1000" />
-			</animation>
-      <visible>![Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling]</visible>
-		 </control>		
-		</control>
 	 </control>
-
-  </include>
-
+	</include>
 </includes>

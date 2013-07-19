@@ -14,6 +14,7 @@
 			<include>ListViewAnimationsRight</include>
 			<control type="group">
 			  <include>ListViewAnimationsRight</include>
+	      <visible>!Stringcompare(ListItem.Label,..)</visible>
 				<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] | [Substring(Container.FolderPath,plugin,left) | Container.Content(Addons)] + !IsEmpty(ListItem.Property(Addon.Name))</visible>
 				<control type="image">
 					<posx>430</posx>
@@ -435,30 +436,30 @@
 			  <scrolltime tween="cubic" easing="out">300</scrolltime>
 				<itemlayout height="45" width="710">
 						<control type="label">
-							<posx>19</posx>
-							<posy>0</posy>
-							<width>100</width>
-							<height>45</height>
-							<font>FontSize_20</font>
-							<textcolor>77white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>․  ․  ․</label>
-              <visible>IsEmpty(ListItem.Year)</visible>
-						</control>
-						<control type="label">
 							<posx>20</posx>
 							<posy>0</posy>
 							<width>100</width>
 							<height>45</height>
+							<font>ArrowsFont</font>
+							<textcolor>77white</textcolor>
+							<shadowcolor>99000000</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>←</label>
+	            <visible>Stringcompare(ListItem.Label,..)</visible>
+						</control>
+						<control type="label">
+							<posx>18</posx>
+							<posy>0</posy>
+							<width>100</width>
+							<height>45</height>
 							<font>FontSize_20</font>
 							<textcolor>77white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Year]</label>
-              <visible>!IsEmpty(ListItem.Year)</visible>
+							<label fallback="․  ․  ․">$INFO[ListItem.Year]</label>
+	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
 							<posx>95</posx>
@@ -485,6 +486,7 @@
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$VAR[MusicLabel2]</label>
 			        <visible>![Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)]</visible>
+	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
 							<posx>585</posx>
@@ -498,36 +500,37 @@
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
 			        <visible>Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)</visible>
+	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 				</itemlayout>
 				<focusedlayout height="45" width="710">
 		      <control type="group">
 			      <include>ListFocusAnimation</include>
 						<control type="label">
-							<posx>19</posx>
-							<posy>0</posy>
-							<width>100</width>
-							<height>45</height>
-							<font>FontSize_20</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>․  ․  ․</label>
-              <visible>IsEmpty(ListItem.Year)</visible>
-						</control>
-						<control type="label">
 							<posx>20</posx>
 							<posy>0</posy>
 							<width>100</width>
 							<height>45</height>
+							<font>ArrowsFont</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>99000000</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>←</label>
+	            <visible>Stringcompare(ListItem.Label,..)</visible>
+						</control>
+						<control type="label">
+							<posx>18</posx>
+							<posy>0</posy>
+							<width>100</width>
+							<height>45</height>
 							<font>FontSize_20</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Year]</label>
-              <visible>!IsEmpty(ListItem.Year)</visible>
+							<label fallback="․  ․  ․">$INFO[ListItem.Year]</label>
+	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
 							<posx>95</posx>
@@ -554,6 +557,7 @@
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$VAR[MusicLabel2]</label>
 			        <visible>![Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)]</visible>
+	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
 							<posx>585</posx>
@@ -567,6 +571,7 @@
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
 			        <visible>Container.Content(Addons) | Substring(Container.FolderPath,plugin,left)</visible>
+	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
           </control>
 				</focusedlayout>
@@ -671,84 +676,67 @@
 						</control>
 					</control>
 					<control type="group">
-						<posx>300</posx>
-						<control type="image.">
-							<width>1250</width>
-							<height>300</height>
-							<aspectratio align="center">stretch</aspectratio>
-							<texture background="true">overlays/skin_widgets/title_shadow.png</texture>
-		          <include>VisibleFadeEffect</include>
+					  <posx>300</posx>
+			      <posy>225</posy>
+	          <animation type="Focus" reversible="false" condition="Container(51).OnNext">
+	            <effect type="slide" start="56,0" end="0,0" time="200" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
+	          </animation>
+	          <animation type="Focus" reversible="false" condition="Container(51).OnPrevious">
+	            <effect type="slide" start="-56,0" end="0,0" time="200" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
+	          </animation>
+						<control type="label">
+						  <posx>15</posx>
+							<height>30</height>
+							<width>640</width>
+							<textcolor>white</textcolor>
+			        <shadowcolor>99000000</shadowcolor>
+							<font>FontSize_38</font>
+				      <scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.label]</label>
+							<visible>!Container.Content(Songs)</visible>
+	            <animation effect="slide" start="0,0" end="0,-208" time="250" tween="sine" easing="inout" condition="Control.HasFocus(100)">Conditional</animation>
 						</control>
-						<control type="image">
-						  <posx>-750</posx>
-							<width>450</width>
-							<height>300</height>
-							<aspectratio align="center">stretch</aspectratio>
-							<texture background="true" flipx="true">overlays/skin_widgets/title_shadow.png</texture>
-		          <include>VisibleFadeEffect</include>
+						<control type="label">
+						  <posx>15</posx>
+							<height>30</height>
+							<width>640</width>
+							<textcolor>white</textcolor>
+			        <shadowcolor>99000000</shadowcolor>
+							<font>FontSize_38</font>
+				      <scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Title]</label>
+							<visible>Container.Content(Songs)</visible>
 						</control>
-						<control type="group">
-				      <posy>225</posy>
-		          <animation type="Focus" reversible="false" condition="Container(51).OnNext">
-		            <effect type="slide" start="56,0" end="0,0" time="200" tween="circle" easing="out" />
-		            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
-		          </animation>
-		          <animation type="Focus" reversible="false" condition="Container(51).OnPrevious">
-		            <effect type="slide" start="-56,0" end="0,0" time="200" tween="circle" easing="out" />
-		            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
-		          </animation>
-							<control type="label">
-							  <posx>15</posx>
-								<height>30</height>
-								<width>640</width>
-								<textcolor>white</textcolor>
-				        <shadowcolor>99000000</shadowcolor>
-								<font>FontSize_38</font>
-					      <scroll>false</scroll>
-								<align>left</align>
-								<label>$INFO[ListItem.label]</label>
-								<visible>!Container.Content(Songs)</visible>
-		            <animation effect="slide" start="0,0" end="0,-208" time="250" tween="sine" easing="inout" condition="Control.HasFocus(100)">Conditional</animation>
-							</control>
-							<control type="label">
-							  <posx>15</posx>
-								<height>30</height>
-								<width>640</width>
-								<textcolor>white</textcolor>
-				        <shadowcolor>99000000</shadowcolor>
-								<font>FontSize_38</font>
-					      <scroll>false</scroll>
-								<align>left</align>
-								<label>$INFO[ListItem.Title]</label>
-								<visible>Container.Content(Songs)</visible>
-							</control>
-							<control type="label">
-							  <posx>17</posx>
-								<posy>30</posy>
-								<height>30</height>
-								<width>640</width>
-								<textcolor>77white</textcolor>
-				        <shadowcolor>99000000</shadowcolor>
-								<font>FontSize_22</font>
-					      <scroll>false</scroll>
-								<align>left</align>
-								<label>$VAR[GlobalInfo]</label>
-								<visible>!Container.Content(Albums)</visible>
-							</control>
-							<control type="label">
-							  <posx>17</posx>
-								<posy>30</posy>
-								<height>30</height>
-								<width>640</width>
-								<textcolor>77white</textcolor>
-				        <shadowcolor>99000000</shadowcolor>
-								<font>FontSize_22</font>
-					      <scroll>false</scroll>
-								<align>left</align>
-								<label>$INFO[ListItem.Artist]</label>
-								<visible>Container.Content(Albums)</visible>
-							</control>
-						</control>						
+						<control type="label">
+						  <posx>17</posx>
+							<posy>30</posy>
+							<height>30</height>
+							<width>640</width>
+							<textcolor>77white</textcolor>
+			        <shadowcolor>99000000</shadowcolor>
+							<font>FontSize_22</font>
+				      <scroll>false</scroll>
+							<align>left</align>
+							<label>$VAR[GlobalInfo]</label>
+							<visible>!Container.Content(Albums)</visible>
+						</control>
+						<control type="label">
+						  <posx>17</posx>
+							<posy>30</posy>
+							<height>30</height>
+							<width>640</width>
+							<textcolor>77white</textcolor>
+			        <shadowcolor>99000000</shadowcolor>
+							<font>FontSize_22</font>
+				      <scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Artist]</label>
+							<visible>Container.Content(Albums)</visible>
+						</control>
 					</control>
 				</focusedlayout>
 			</control>
@@ -1185,7 +1173,11 @@
 	</include>	
 
 
-	<include name="WallView_Music">
+	<!-- ============================== -->
+	<!-- ==== Wall View Music "59" ==== -->
+	<!-- ============================== -->
+	
+	<include name="3DWallView_Music">
 		<control type="group">
 			<visible>Control.IsVisible(59)</visible>
 			<control type="group">
@@ -1344,7 +1336,7 @@
 					<ondown>59</ondown>
 					<focusposition>3</focusposition>
 					<preloaditems>2</preloaditems>
-					<viewtype label="31088">Multiple Walls</viewtype>
+					<viewtype label="31082">Multiple Walls</viewtype>
 					<pagecontrol>60</pagecontrol>
 				  <scrolltime>200</scrolltime>
 					<visible>Container.Content(Albums) | Container.Content(Songs)</visible>

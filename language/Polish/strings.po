@@ -208,6 +208,10 @@ msgctxt "#31086"
 msgid "Banner List"
 msgstr "Lista banerów"
 
+msgctxt "#31088"
+msgid "List Wall"
+msgstr "Lista "
+
 msgctxt "#31100"
 msgid "Home Categories Buttons"
 msgstr "Przyciski kategorii menu głównego"
@@ -320,6 +324,10 @@ msgctxt "#31128"
 msgid "ClearArt"
 msgstr "ClearArt"
 
+msgctxt "#31129"
+msgid "ClearLogo"
+msgstr "Clear Logo"
+
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
 msgstr "Wyłącz Fanart we wszystkich sekcjach"
@@ -376,6 +384,10 @@ msgctxt "#31143"
 msgid "Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-on)[/COLOR]"
 msgstr "Włącz wtyczkę NexAired o następnie ukazywanych programach  [COLOR=55white](Wymaga wtyczki Next Aired)[/COLOR]"
 
+msgctxt "#31144"
+msgid "Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-on)[/COLOR]"
+msgstr "Włącz tematy muzyczne w programach telewizyjnych [COLOR=55white](wymagany dodatek Tunes TV)[/COLOR]"
+
 msgctxt "#31145"
 msgid "Download music themes for all TV Shows"
 msgstr "Ściągnij tematy muzyczne dla wszystkich seriali"
@@ -418,7 +430,7 @@ msgstr "Wybierz rodzaj wtyczki zwiastunów"
 
 msgctxt "#31155"
 msgid "Add-ons Button opens..."
-msgstr "Przycisk add-on otwiera..."
+msgstr "Przycisk Dodatek otwiera ..."
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -507,6 +519,10 @@ msgstr "Ekstra informacje"
 msgctxt "#31221"
 msgid "Get Extra Art"
 msgstr "Pobierz Extra Art"
+
+msgctxt "#31222"
+msgid "Get TV Tune"
+msgstr "Pobierz TV Tune"
 
 msgctxt "#31223"
 msgid "36 Hour Forecast"
@@ -731,6 +747,46 @@ msgstr "Zmień nazwę grupy"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Usuń grupę"
+
+msgctxt "#31401"
+msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
+msgstr "Dostosuj wygląd XBMC. Skórkę, temat, dźwięki i wybór czcionki, kanały RSS i ustawienia lokalizacji. "
+
+msgctxt "#31402"
+msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
+msgstr "Zarządzaj swoją zawartością wideo. Opcje bazy danych, biblioteki, napisy, skrobaczek i opcje odtwarzania. "
+
+msgctxt "#31403"
+msgid "Change playback settings, manage EPG data settings, recordings and parental control."
+msgstr "Zmiana ustawień odtwarzania, zarządzanie ustawieniami EPG, nagraniami i kontrolą rodzicielską. "
+
+msgctxt "#31404"
+msgid "Configure how XBMC handles music. Setup playback and listing options, browsing files or database and many more."
+msgstr "Konfiguracja obsługi muzyki. Ustawienia i opcje odtwarzania, przeglądania plików lub bazy danych oraz wiele innych. "
+
+msgctxt "#31405"
+msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
+msgstr "Konfiguracja obsługi obrazów i zdjęć może być całkiem prosta. \nUstawienia i opcje oraz dostosowanie wyświetlacza, efekty, znaczniki czasu oraz wiele innych. "
+
+msgctxt "#31406"
+msgid "Adjusting Weather is very easy with XBMC. Select a weather plugin and get live updates for up to three cities."
+msgstr "Ustawienie pogody jest bardzo łatwe w XBMC. Wybierz plugin pogody i ustaw wybrane lokalizacje do trzech miast. "
+
+msgctxt "#31407"
+msgid "Set up XBMC's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
+msgstr "Konfiguracja interfejsu sieci. Dostępne przypisanie IP, ustawienia serwera WWW i FTP, klienta SMB oraz konfiguracja UPnP. "
+
+msgctxt "#31408"
+msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
+msgstr "Ustawienia funkcji sprzętu i oprogramowania, w tym konfiguracja oprogramowania audio, wideo, automatycznej blokady. "
+
+msgctxt "#31409"
+msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
+msgstr "Wybierz z pośród różnych ustawień i opcji, aby skórka \"Bello\" jak najbardziej odpowiadała Twoim potrzebom i upodobaniom. "
+
+msgctxt "#31410"
+msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
+msgstr "XBMC pozwala na ustawienie kilku profili, nawet ekran logowania dostępu. "
 
 msgctxt "#31411"
 msgid "Configure Appearance Settings"

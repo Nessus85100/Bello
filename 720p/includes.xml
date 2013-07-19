@@ -2,6 +2,7 @@
 	<include file="defaults.xml" />
 	<include file="IncludesAnimations.xml" />
 	<include file="IncludesBackgrounds.xml" />
+  <include file="Includes_Home.xml" />
   <include file="IncludesViews.xml" />
 	<include file="IncludesWalls.xml" />
 	<include file="IncludesFlags.xml" />
@@ -13,22 +14,12 @@
 
 	<constant name="FanartCrossfadeTime">300</constant>
 	<constant name="IconCrossfadeTime">250</constant>
+	<constant name="ButtonsLabelsFade">50</constant>
+	<constant name="ButtonsLabelsZoom">95</constant>
 
 
 	<include name="BackgroundItems">
 		<include>BackgroundContent</include>
-		<control type="image.">
-			<include>FullscreenDimensions</include>
-			<texture background="true">special://skin/backgrounds/videos.jpg</texture>
-			<include>FanartFade</include>
-			<visible>Window.IsActive(Videos)</visible>
-		</control>
-		<control type="image.">
-			<include>FullscreenDimensions</include>
-			<texture background="true">special://skin/backgrounds/music.jpg</texture>
-			<include>FanartFade</include>
-			<visible>Window.IsActive(MusicLibrary) | Window.IsActive(MusicFiles)</visible>
-		</control>
 		<include>GlobalFanart</include>
 		<include>BackgroundVignette</include>
 	</include>
@@ -51,9 +42,10 @@
 	<include name="CommonDialogsFadeOutBG">
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture>windows/bg/bg_black.png</texture>
+			<texture background="true">windows/bg/bg_black.png</texture>
 			<include>VisibleFadeEffect</include>
-			<visible>Window.IsActive(busydialog) | Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog)</visible>			
+      <colordiffuse>D5FFFFFF</colordiffuse>
+			<visible>Window.IsActive(busydialog) | Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog)</visible>	
 		</control>
 	</include>
 
@@ -115,7 +107,7 @@
 		 <posy>25</posy>
 		 <include>SettingsSlideAnimations</include>
 		 <include>SettingsWeatherAndClock</include>
-		 <visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)]</visible>
+		 <visible>!Window.IsActive(ShutdownMenu) + ![Window.IsActive(ContextMenu) + Window.IsActive(Profiles)]</visible>
 	   <animation type="Visible">
 	      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
 	      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
@@ -462,7 +454,16 @@
 		  <textoffsety>10</textoffsety>
 			<pulseonselect>true</pulseonselect>
 	</include>
-
+	<include name="DialogsButtonLabelNoFocus">
+			<height>62</height>
+			<width min="10" max="552">auto</width>
+			<font>FontSize_20</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>99000000</shadowcolor>
+	    <align>left</align>
+	    <aligny>center</aligny>
+			<scroll>false</scroll>
+	</include>
 
   <!-- ================== -->
   <!-- Common Now Playing -->
@@ -1111,7 +1112,6 @@
 	<variable name="ThumbnailsTVShowsClearlogoThumbs">
 		<value condition="Skin.HasSetting(ShowClearlogoThumb) + !IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
 		<value condition="Container.Content(Seasons) + [Skin.HasSetting(ShowClearLogoThumb) + !IsEmpty(ListItem.Art(tvshow.clearlogo))]">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-		<value condition="IsEmpty(ListItem.Art(clearlogo)) | !Skin.HasSetting(ShowClearlogoThumb)">$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 
 	<variable name="ThumbnailsMoviesThumbs">
@@ -1227,7 +1227,7 @@
     <value condition="StringCompare(ListItem.Comment,$LOCALIZE[305]) + !IsEmpty(ListItem.ChannelName)">buttons/radio_button_fo.png</value>
   </variable>
 
-	<include name="DialogsClose">		
+	<include name="OnLoadDialogsClose">		
 		<onload>Dialog.Close(contextmenu)</onload>
 		<onload>Dialog.Close(movieinformation)</onload>
 		<onload>Dialog.Close(musicinformation)</onload>
@@ -1267,6 +1267,52 @@
 		<onload>Dialog.Close(PVROSDGuide)</onload>
 		<onload>Dialog.Close(1112)</onload>
 		<onload>Dialog.Close(DialogSelect.xml)</onload>
+	</include>
+
+	<include name="OnClickDialogsClose">		
+		<onclick>Dialog.Close(yesnodialog)</onclick>
+		<onclick>Dialog.Close(okdialog)</onclick>
+		<onclick>Dialog.Close(progressdialog)</onclick>
+		<onclick>Dialog.Close(extendedprogressdialog)</onclick>
+		<onclick>Dialog.Close(virtualkeyboard)</onclick>
+		<onclick>Dialog.Close(numericinput)</onclick>
+		<onclick>Dialog.Close(volumebar)</onclick>
+		<onclick>Dialog.Close(mutebug)</onclick>
+		<onclick>Dialog.Close(contextmenu)</onclick>
+		<onclick>Dialog.Close(infodialog)</onclick>
+		<onclick>Dialog.Close(shutdownmenu)</onclick>
+		<onclick>Dialog.Close(seekbar)</onclick>
+		<onclick>Dialog.Close(musicosd)</onclick>
+		<onclick>Dialog.Close(visualisationpresetlist)</onclick>
+		<onclick>Dialog.Close(osdvideosettings)</onclick>
+		<onclick>Dialog.Close(osdaudiosettings)</onclick>
+		<onclick>Dialog.Close(videobookmarks)</onclick>
+		<onclick>Dialog.Close(filebrowser)</onclick>
+		<onclick>Dialog.Close(networksetup)</onclick>
+		<onclick>Dialog.Close(mediasource)</onclick>
+		<onclick>Dialog.Close(contentsettings)</onclick>
+		<onclick>Dialog.Close(favourites)</onclick>
+		<onclick>Dialog.Close(songinformation)</onclick>
+		<onclick>Dialog.Close(smartplaylisteditor)</onclick>
+		<onclick>Dialog.Close(smartplaylistrule)</onclick>
+		<onclick>Dialog.Close(busydialog)</onclick>
+		<onclick>Dialog.Close(pictureinfo)</onclick>
+		<onclick>Dialog.Close(addonsettings)</onclick>
+		<onclick>Dialog.Close(accesspoints)</onclick>
+		<onclick>Dialog.Close(fullscreeninfo)</onclick>
+		<onclick>Dialog.Close(karaokeselector)</onclick>
+		<onclick>Dialog.Close(karaokelargeselector)</onclick>
+		<onclick>Dialog.Close(sliderdialog)</onclick>
+		<onclick>Dialog.Close(addoninformation)</onclick>
+		<onclick>Dialog.Close(musicinformation)</onclick>
+		<onclick>Dialog.Close(movieinformation)</onclick>
+		<onclick>Dialog.Close(selectdialog)</onclick>
+		<onclick>Dialog.Close(filestackingdialog)</onclick>
+		<onclick>Dialog.Close(playercontrols)</onclick>
+		<onclick>Dialog.Close(textviewer)</onclick>
+		<onclick>Dialog.Close(peripheralsettings)</onclick>
+		<onclick>Dialog.Close(peripherals)</onclick>
+		<onclick>Dialog.Close(mediafilter)</onclick>
 	</include>
 
 </includes>
