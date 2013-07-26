@@ -31,6 +31,37 @@
 			<visible>![Skin.HasSetting(CustomBackground) + ![IsEmpty(Skin.String(CustomFolderBackgroundPath)) | Skin.HasSetting(ShowCustomBackgroundOnHomeOnly)]]</visible>
 			<fadetime>FanartCrossfadeTime</fadetime>
 		</control>
+                <control type="group">
+                        <visible>Window.IsVisible(Home) + ![Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomImageBackgroundPath))]</visible>
+			<visible>Window.IsVisible(Home) + ![Skin.HasSetting(CustomBackground) + ![IsEmpty(Skin.String(CustomFolderBackgroundPath)) | Skin.HasSetting(ShowCustomBackgroundOnHomeOnly)]]</visible>
+                        <animation type="WindowClose" reversible="false">
+		              <effect type="fade" start="100" end="0" time="350" />
+			</animation>         
+                        <animation type="WindowOpen" reversible="false">
+		              <effect type="fade" start="0" end="100" time="10350" />
+			</animation>            
+                          <control type="image">
+	                        <include>FullscreenDimensions</include>
+                                <animation type="Conditional" condition="true" pulse="true" reversible="false">
+		                   <effect type="fade" start="0" end="70" time="10350" />
+				</animation>
+				<texture>windows/bg/glitter1.png</texture>
+			   </control>
+                          <control type="image">
+	                        <include>FullscreenDimensions</include>
+                                <animation type="Conditional" condition="true" pulse="true" reversible="false">
+                                   <effect type="fade" start="0" end="70" time="10350" delay="10350"/>
+				</animation>
+				<texture>windows/bg/glitter2.png</texture>
+			   </control>
+                          <control type="image">
+	                        <include>FullscreenDimensions</include>
+                                <animation type="Conditional" condition="true" pulse="true" reversible="false">
+                                   <effect type="fade" start="0" end="70" time="10350" delay="20700"/>
+				</animation>
+				<texture>windows/bg/glitter3.png</texture>
+			   </control>
+                </control>
 		<control type="image">
 			<description>Custom Background Image</description>
 			<include>FullscreenDimensions</include>

@@ -8,10 +8,15 @@
 		    <include>HomeSlideAnimations</include>
 			  <control type="group">
 		      <include>HomeSlideAnimations</include>
-				  <control type="image">
-		        <include>FullscreenDimensions</include>
-						<texture background="true">windows/bg/colors_pulse.png</texture>
-					</control>
+	                    <control type="image">
+	                        <height>720</height>
+                                <width>4280</width>
+                                <animation type="Conditional" condition="true" loop="true" reversible="false">
+		                   <effect type="slide" start="0,0" end="-3000,0" time="100350" />
+                                   <effect type="slide" start="0,0" end="3000,0" time="100350" delay="100350"/>
+				</animation>
+				<texture>windows/bg/colors_pulse.png</texture>
+			   </control>
 					<control type="wraplist" id="20">
 					 <description>Home Container</description>
 					 <posx>-95</posx>
