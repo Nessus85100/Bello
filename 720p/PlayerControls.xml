@@ -32,7 +32,7 @@
 			<control type="image">
 				<include>FullscreenDimensions</include>
 				<texture background="true">osd/miniplayer/bg_music.png</texture>
-				<visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]</visible>
+				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 			</control>
 			<control type="image">
 				<include>FullscreenDimensions</include>
@@ -51,19 +51,8 @@
 					<posy>0</posy>
 					<width>129</width>
 					<height>181</height>
-					<texture fallback="thumbs/fallback_fanart.png">$VAR[PlayerThumbs]</texture>
+					<texture background="true" fallback="thumbs/fallback_poster.png">$VAR[PlayerThumbs]</texture>
 					<aspectratio aligny="center" scalediffuse="false">stretch</aspectratio>
-				  <visible>VideoPlayer.Content(Movies)</visible>
-				</control>
-				<control type="image">
-					<description>Cover image</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>129</width>
-					<height>181</height>
-					<texture fallback="thumbs/fallback_fanart.png">$VAR[PlayerThumbs]</texture>
-					<aspectratio aligny="center" scalediffuse="false">stretch</aspectratio>
-				  <visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="image">
 					<description>paused indicator</description>
@@ -71,7 +60,7 @@
 					<posy>0</posy>
 					<width>129</width>
 					<height>181</height>
-					<texture>osd/paused-overlay_two.png</texture>
+					<texture background="true">osd/paused-overlay_two.png</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 					<visible>Player.Paused</visible>
 					<include>VisibleFadeEffect</include>
@@ -85,7 +74,7 @@
 					<posy>0</posy>
 					<width>129</width>
 					<height>181</height>
-					<texture>osd/ff-overlay_two.png</texture>
+					<texture background="true">osd/ff-overlay_two.png</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 					<visible>Player.Forwarding</visible>
 					<include>VisibleFadeEffect</include>
@@ -99,7 +88,7 @@
 					<posy>0</posy>
 					<width>129</width>
 					<height>181</height>
-					<texture>osd/rw-overlay_two.png</texture>
+					<texture background="true">osd/rw-overlay_two.png</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 					<visible>Player.Rewinding</visible>
 					<include>VisibleFadeEffect</include>
@@ -111,16 +100,16 @@
 	
 	     <!-- Cover Videos & Music -->			
 			 <control type="group">
-				<visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]</visible>
+				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 				<control type="image">
 					<description>Cover image</description>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>179</width>
 					<height>181</height>
-					<texture fallback="thumbs/fallback_square.png">$VAR[PlayerThumbs]</texture>
+					<texture background="true" fallback="thumbs/fallback_square.png">$INFO[VideoPlayer.Cover]</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-				  <visible>!Player.HasAudio</visible>
+				  <visible>Player.HasVideo</visible>
 				</control>
 				<control type="image">
 					<description>Cover image</description>
@@ -128,7 +117,7 @@
 					<posy>0</posy>
 					<width>179</width>
 					<height>181</height>
-					<texture fallback="thumbs/fallback_square.png">$VAR[PlayerThumbs]</texture>
+					<texture background="true" fallback="thumbs/fallback_square.png">$INFO[Player.Art(thumb)]</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 				  <visible>Player.HasAudio</visible>
 				</control>
@@ -138,7 +127,7 @@
 					<posy>0</posy>
 					<width>179</width>
 					<height>181</height>
-					<texture>osd/paused-overlay_two.png</texture>
+					<texture background="true">osd/paused-overlay_two.png</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 					<visible>Player.Paused</visible>
 					<include>VisibleFadeEffect</include>
@@ -152,7 +141,7 @@
 					<posy>0</posy>
 					<width>179</width>
 					<height>181</height>
-					<texture>osd/ff-overlay_two.png</texture>
+					<texture background="true">osd/ff-overlay_two.png</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 					<visible>Player.Forwarding</visible>
 					<include>VisibleFadeEffect</include>
@@ -166,7 +155,7 @@
 					<posy>0</posy>
 					<width>179</width>
 					<height>181</height>
-					<texture>osd/rw-overlay_two.png</texture>
+					<texture background="true">osd/rw-overlay_two.png</texture>
 					<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 					<visible>Player.Rewinding</visible>
 					<include>VisibleFadeEffect</include>

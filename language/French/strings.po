@@ -172,6 +172,10 @@ msgctxt "#31039"
 msgid "IP Address"
 msgstr "Adresse IP"
 
+msgctxt "#31040"
+msgid "Created by"
+msgstr "Créé par"
+
 msgctxt "#31041"
 msgid "Creator"
 msgstr "Créateur"
@@ -204,9 +208,9 @@ msgctxt "#31086"
 msgid "Banner List"
 msgstr "Bannière"
 
-msgctxt "#31100"
-msgid "Home Categories Buttons"
-msgstr "Boutons de l'accueil"
+msgctxt "#31088"
+msgid "List Wall"
+msgstr "Mur-liste"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -420,9 +424,25 @@ msgctxt "#31153"
 msgid "Enable Login Screen"
 msgstr "Activer l'écran de connexion"
 
+msgctxt "#31154"
+msgid "Choose Trailers Add-on"
+msgstr "Choisissez une extension pour les bande-annonces"
+
 msgctxt "#31155"
 msgid "Add-ons Button opens..."
 msgstr "Le bouton Extensions ouvre..."
+
+msgctxt "#31200"
+msgid "My Movies"
+msgstr "Mes films"
+
+msgctxt "#31201"
+msgid "My TV Shows"
+msgstr "Mes séries"
+
+msgctxt "#31202"
+msgid "My Music"
+msgstr "Ma musique"
 
 msgctxt "#31203"
 msgid "New Search"
@@ -552,6 +572,10 @@ msgctxt "#31234"
 msgid "Fetching Forecast Info for..."
 msgstr "Récupération des prévisions météo de…"
 
+msgctxt "#31235"
+msgid "Current Forecast"
+msgstr "Prévisions actuelles"
+
 msgctxt "#31236"
 msgid "Forecast"
 msgstr "Prévisions"
@@ -563,6 +587,14 @@ msgstr "Vue"
 msgctxt "#31238"
 msgid "No Shows Airing Today"
 msgstr "Aucune Série diffusé aujourd'hui"
+
+msgctxt "#31239"
+msgid "Shows Listed"
+msgstr "Séries listées"
+
+msgctxt "#31240"
+msgid "Shows Airing Today"
+msgstr "Séries diffusées aujourd'hui"
 
 msgctxt "#31241"
 msgid "Recently Added Movies"
@@ -576,9 +608,29 @@ msgctxt "#31243"
 msgid "Recently Added Music"
 msgstr "Musiques Récemment Ajoutées"
 
+msgctxt "#31244"
+msgid "New Movies"
+msgstr "Nouveaux films"
+
+msgctxt "#31245"
+msgid "New TV Shows"
+msgstr "Nouvelles séries"
+
+msgctxt "#31246"
+msgid "New Music"
+msgstr "Nouvelle musique"
+
 msgctxt "#31247"
 msgid "Random Movies"
 msgstr "Films aléatoires"
+
+msgctxt "#31248"
+msgid "Random TV Shows"
+msgstr "Séries aléatoires"
+
+msgctxt "#31249"
+msgid "Random Music"
+msgstr "Musique aléatoire"
 
 msgctxt "#31250"
 msgid "All Movies"
@@ -587,6 +639,10 @@ msgstr "Tous les Films"
 msgctxt "#31251"
 msgid "All TV Shows"
 msgstr "Toutes les Séries TV"
+
+msgctxt "#31252"
+msgid "All Music"
+msgstr "Toute la musique"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -731,3 +787,43 @@ msgstr "Choisissez parmi des paramètres et des options de personnalisation afin
 msgctxt "#31410"
 msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
 msgstr "Avec XBMC vous pouvez avoir plusieurs profils. Vous pouvez même avoir un écran de connexion pour un accès sécurisé."
+
+msgctxt "#31411"
+msgid "Configure Appearance Settings"
+msgstr "Configurer les réglages d'apparance"
+
+msgctxt "#31412"
+msgid "Configure Video Settings"
+msgstr "Configurer les réglages vidéo"
+
+msgctxt "#31413"
+msgid "Configure Live TV Settings"
+msgstr "Configurer les réglages de la télévision en direct"
+
+msgctxt "#31414"
+msgid "Configure Music Settings"
+msgstr "Configurer les réglages de la musique"
+
+msgctxt "#31415"
+msgid "Configure Pictures Settings"
+msgstr "Configurer les réglages des images"
+
+msgctxt "#31416"
+msgid "Configure Weather Settings"
+msgstr "Configurer les réglages de la météo"
+
+msgctxt "#31417"
+msgid "Configure Services Settings"
+msgstr "Configurer les réglages des services"
+
+msgctxt "#31418"
+msgid "Configure System Settings"
+msgstr "Configurer les réglages systèmes"
+
+msgctxt "#31419"
+msgid "Configure Profiles Settings"
+msgstr "Configurer les réglages des profils"
+
+msgctxt "#31420"
+msgid "Configure Skin Settings"
+msgstr "Configurer les réglages des thèmes"

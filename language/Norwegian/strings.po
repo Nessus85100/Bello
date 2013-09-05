@@ -20,6 +20,10 @@ msgctxt "#31000"
 msgid "Live TV"
 msgstr "Live TV"
 
+msgctxt "#31001"
+msgid "TV Guide"
+msgstr "TV guide"
+
 msgctxt "#31002"
 msgid "TV Shows"
 msgstr "TV Serier"
@@ -100,6 +104,10 @@ msgctxt "#31033"
 msgid "Channel Group"
 msgstr "Kanalgruppe"
 
+msgctxt "#31034"
+msgid "Teletext"
+msgstr "Tekst-TV"
+
 msgctxt "#31036"
 msgid "Close"
 msgstr "Lukk"
@@ -115,6 +123,14 @@ msgstr "Skli"
 msgctxt "#31083"
 msgid "Wall"
 msgstr "Vegg"
+
+msgctxt "#31084"
+msgid "Posters"
+msgstr "Plakater"
+
+msgctxt "#31127"
+msgid "Landscape"
+msgstr "Landskap"
 
 msgctxt "#31128"
 msgid "ClearArt"
@@ -143,6 +159,10 @@ msgstr "-"
 msgctxt "#31215"
 msgid "Next Airs"
 msgstr "Neste på lufta"
+
+msgctxt "#31218"
+msgid "Landscape"
+msgstr "Landskap"
 
 msgctxt "#31219"
 msgid "Logo"

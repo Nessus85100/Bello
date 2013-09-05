@@ -212,10 +212,6 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr "Lista "
 
-msgctxt "#31100"
-msgid "Home Categories Buttons"
-msgstr "Przyciski kategorii menu głównego"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Pokazuj info o pogodzie"
@@ -307,6 +303,10 @@ msgstr "Ukryj podmenu muzyki"
 msgctxt "#31123"
 msgid "Hide Settings Submenu"
 msgstr "Ukryj podmenu ustawień"
+
+msgctxt "#31124"
+msgid "Flashing Lights"
+msgstr "Błyskające światła"
 
 msgctxt "#31125"
 msgid "Edit Info"

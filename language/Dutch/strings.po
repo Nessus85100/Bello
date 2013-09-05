@@ -160,10 +160,6 @@ msgctxt "#31085"
 msgid "Thumbnails"
 msgstr "Miniaturen"
 
-msgctxt "#31100"
-msgid "Home Categories Buttons"
-msgstr "Beginmenu categorie knoppen"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Toon weer info"
@@ -407,6 +403,10 @@ msgstr "Willekeurige Films"
 msgctxt "#31249"
 msgid "Random Music"
 msgstr "Willekeurige Muziek"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Alle Films"
 
 msgctxt "#31251"
 msgid "All TV Shows"

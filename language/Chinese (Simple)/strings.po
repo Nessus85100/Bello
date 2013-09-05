@@ -212,10 +212,6 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr "列表墙"
 
-msgctxt "#31100"
-msgid "Home Categories Buttons"
-msgstr "主菜单分类按钮"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "显示天气预报"

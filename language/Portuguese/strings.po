@@ -196,6 +196,10 @@ msgctxt "#31214"
 msgid "Airing"
 msgstr "Emissão"
 
+msgctxt "#31215"
+msgid "Next Airs"
+msgstr "Próxima Exibição"
+
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Paisagem"

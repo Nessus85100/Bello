@@ -1,9 +1,10 @@
 <fonts>
 	<fontset id="Default" idloc="15109" unicode="true">
 	 	<font>
-			<name>ArrowsFont</name>
+			<name>BackFont</name>
 			<filename>OpenSans-Regular.ttf</filename>
-			<size>40</size>
+			<size>22</size>
+			<style>bold</style>
 		</font>
 	 	<font>
 			<name>ClockFont</name>

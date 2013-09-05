@@ -31,6 +31,38 @@
 			<visible>![Skin.HasSetting(CustomBackground) + ![IsEmpty(Skin.String(CustomFolderBackgroundPath)) | Skin.HasSetting(ShowCustomBackgroundOnHomeOnly)]]</visible>
 			<fadetime>FanartCrossfadeTime</fadetime>
 		</control>
+    <control type="group">
+      <animation type="WindowOpen" reversible="false">
+        <effect type="fade" start="0" end="100" time="10350" />
+      </animation>
+      <animation type="WindowClose" reversible="false">
+        <effect type="fade" start="100" end="0" time="350" />
+      </animation>
+			<visible>Skin.HasSetting(HomeMenuAnimation)</visible>
+      <visible>Window.IsVisible(Home) + ![Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomImageBackgroundPath))]</visible>
+      <visible>Window.IsVisible(Home) + ![Skin.HasSetting(CustomBackground) + ![IsEmpty(Skin.String(CustomFolderBackgroundPath)) | Skin.HasSetting(ShowCustomBackgroundOnHomeOnly)]]</visible>
+      <control type="image">
+        <include>FullscreenDimensions</include>
+        <texture>windows/bg/bokeh1.png</texture>
+        <animation type="Conditional" condition="true" pulse="true" reversible="false">
+          <effect type="fade" start="0" end="70" time="10350" />
+        </animation>
+      </control>
+      <control type="image">
+        <include>FullscreenDimensions</include>
+				<texture>windows/bg/bokeh2.png</texture>
+        <animation type="Conditional" condition="true" pulse="true" reversible="false">
+          <effect type="fade" start="0" end="70" time="10350" delay="10350"/>
+				</animation>
+      </control>
+      <control type="image">
+        <include>FullscreenDimensions</include>
+        <texture>windows/bg/bokeh3.png</texture>
+        <animation type="Conditional" condition="true" pulse="true" reversible="false">
+          <effect type="fade" start="0" end="70" time="10350" delay="20700"/>
+        </animation>
+      </control>
+    </control>
 		<control type="image">
 			<description>Custom Background Image</description>
 			<include>FullscreenDimensions</include>
@@ -110,7 +142,7 @@
 			<include>FanartFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 		  <visible>!Skin.HasSetting(HideBGFanart)</visible>
-		  <visible>![Control.IsVisible(55) + !Window.IsActive(movieinformation)]</visible>
+		  <visible>![Control.IsVisible(55) + !Window.IsActive(movieinformation)] + !Control.IsVisible(580)</visible>
 		</control>
 		<control type="image">
 			<description>Pictures Fanart</description>
@@ -183,7 +215,7 @@
 		<control type="image">
 		  <description>Vignette</description>
 			<include>FullscreenDimensions</include>
-			<texture background="true">special://skin/extras/backgrounds/bg_vignette.png</texture>
+			<texture background="true">windows/bg/bg_vignette.png</texture>
 			<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 <!--	<colordiffuse>FFCDCDCD</colordiffuse>
@@ -191,11 +223,11 @@
 		</control>
 		<control type="image">
 			<include>FullscreenDimensions</include>
-		  <texture background="true">special://skin/extras/backgrounds/bg_diffuse.png</texture>
+			<texture background="true">windows/bg/bg_diffuse.png</texture>
 			<include>FanartFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
       <colordiffuse>D5FFFFFF</colordiffuse>
-			<visible>Control.IsVisible(50) | Control.IsVisible(57) | Window.IsActive(shutdownmenu) | Window.IsActive(contextmenu) | Window.IsActive(movieinformation) | Window.IsActive(musicinformation) | Window.IsActive(songinformation) | Window.IsActive(addoninformation)</visible>
+			<visible>[Control.IsVisible(50) + !Window.IsActive(musicplaylisteditor)] | Control.IsVisible(56) | Control.IsVisible(560) | Control.IsVisible(561) | Control.IsVisible(57) | [Window.IsActive(contextmenu) + ![Window.IsActive(favourites) | Window.IsActive(locksettings) | Window.IsActive(profiles) | Window.IsActive(musicplaylisteditor) | Window.IsActive(filemanager)]] | Window.IsActive(shutdownmenu) | Window.IsActive(movieinformation) | Window.IsActive(musicinformation) | Window.IsActive(songinformation) | Window.IsActive(addoninformation)</visible>
 	  </control>
 	</include>
 

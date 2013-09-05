@@ -17,7 +17,7 @@
 					<width>308</width>
 					<height>453</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true" diffuse="thumbs/poster_diffuse_big.png">$VAR[VideoInfoThumbs]</texture>
+					<texture background="true" fallback="thumbs/fallback_poster_big.png" diffuse="thumbs/poster_diffuse_big.png">$VAR[VideoInfoThumbs]</texture>
 				</control>
 				<control type="image">
 					<posx>-11</posx>
@@ -682,20 +682,20 @@
 					<description>Cast/Plot</description>
 					<label>-</label>
 				  <include>TopButton</include>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 				<control type="button" id="11">
 					<description>Play Trailer</description>
 					<label>20410</label>
-					<visible>!IsEmpty(ListItem.Trailer)</visible>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
 				  <include>TopButton</include>
+					<visible>!IsEmpty(ListItem.Trailer)</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 				<control type="button" id="10">
 					<description>Get Art</description>
 					<label>13511</label>
 				  <include>TopButton</include>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 				<control type="button" id="14">
 					<description>Get Extra Art</description>
@@ -704,8 +704,8 @@
           <onclick condition="Container.Content(TVShows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
           <onclick condition="Container.Content(Movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
           <visible>System.HasAddon(script.artwork.downloader)</visible>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
           <visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies) | [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 				<control type="button" id="15">
 					<description>Get TV Tune</description>
@@ -713,6 +713,7 @@
 				  <include>TopButton</include>
           <onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 					<visible>Skin.HasSetting(ActivateTVTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 				<control type="button" id="16">
 					<description>Library Editor</description>
@@ -720,12 +721,13 @@
 				  <include>TopButton</include>
 	        <onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
 	        <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)] + System.HasAddon(script.libraryeditor)</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 				<control type="button" id="6">
 					<description>Refresh</description>
 					<label>184</label>
 				  <include>TopButton</include>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 			</control>
       <!-- Labels -->
@@ -762,7 +764,7 @@
           <label>$INFO[Control.GetLabel(5)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(5)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(5)" reversible="true">Conditional</animation>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 				<control type="label">
 					<description>Play Trailer</description>
@@ -771,6 +773,7 @@
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(11)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(11)" reversible="true">Conditional</animation>
 					<visible>!IsEmpty(ListItem.Trailer)</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 				<control type="label">
 					<description>Get Art</description>
@@ -778,7 +781,7 @@
 					<label>$INFO[Control.GetLabel(10)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(10)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(10)" reversible="true">Conditional</animation>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 				<control type="label">
 					<description>Get Extra Art</description>
@@ -786,7 +789,7 @@
 					<label>$INFO[Control.GetLabel(14)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(14)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(14)" reversible="true">Conditional</animation>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
           <visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies) | [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 				</control>
 				<control type="label">
@@ -795,7 +798,7 @@
 					<label>$INFO[Control.GetLabel(15)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(15)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(15)" reversible="true">Conditional</animation>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 					<visible>Skin.HasSetting(ActivateTVTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 				</control>
 				<control type="label">
@@ -804,7 +807,7 @@
 					<label>$INFO[Control.GetLabel(16)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(16)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(16)" reversible="true">Conditional</animation>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 	        <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)] + System.HasAddon(script.libraryeditor)</visible>
 				</control>
 				<control type="label">
@@ -813,7 +816,7 @@
           <label>$INFO[Control.GetLabel(6)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
-					<visible>![stringcompare(Container.FolderPath,plugin://plugin.video.the.trailers/) | stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)]</visible>
+					<visible>!substring(Container.FolderPath,plugin://plugin.video,left)</visible>
 				</control>
 			</control>
 		</control>

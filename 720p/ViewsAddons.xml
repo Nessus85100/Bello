@@ -100,7 +100,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[24000] Creator</label>
-						<font>FontSize_16B</font>
+						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					</control>
@@ -108,7 +108,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Addon.Creator)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scrollspeed>30</scrollspeed>
@@ -124,7 +124,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[24000] $LOCALIZE[467]</label>
-						<font>FontSize_16B</font>
+						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					</control>
@@ -132,7 +132,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Addon.Type)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scrollspeed>30</scrollspeed>
@@ -148,7 +148,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label>$LOCALIZE[24000] ID</label>
-						<font>FontSize_16B</font>
+						<font>FontSize_18B</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					</control>
@@ -156,7 +156,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Addon.ID)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scrollspeed>30</scrollspeed>
@@ -166,7 +166,7 @@
 					<posx>860</posx>
 					<posy>408</posy>
 					<width>375</width>
-					<font>FontSize_18</font>
+					<font>FontSize_20</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>99000000</shadowcolor>
 					<label>$VAR[GlobalInfo]</label>
@@ -176,7 +176,7 @@
 					<posy>453</posy>
 					<width>415</width>
 					<height>133</height>
-					<font>FontSize_16</font>
+					<font>FontSize_20</font>
 					<textcolor>99white</textcolor>
 					<shadowcolor>99000000</shadowcolor>
 					<align>justify</align>
@@ -204,7 +204,7 @@
 					<aspectratio align="right" aligny="center">keep</aspectratio>
 					<fadetime>150</fadetime>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
-					<bordertexture border="20">views/list/icon_border.png</bordertexture>
+					<bordertexture border="20">views/list/panel2.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
 			</control>
@@ -229,26 +229,26 @@
 			  <scrolltime tween="cubic" easing="out">300</scrolltime>
 				<itemlayout height="45" width="710">
 					<control type="label">
-						<posx>20</posx>
+						<posx>14</posx>
 						<posy>0</posy>
 						<width>100</width>
 						<height>45</height>
-						<font>ArrowsFont</font>
+						<font>BackFont</font>
 						<textcolor>77white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>←</label>
+						<label>↚</label>
             <visible>Stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="label">
-						<posx>18</posx>
+						<posx>15</posx>
 						<posy>0</posy>
 						<width>100</width>
 						<height>45</height>
 						<font>FontSize_20</font>
 						<textcolor>77white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>․  ․  ․</label>
@@ -259,9 +259,9 @@
 						<posy>0</posy>
 						<width>455</width>
 						<height>44</height>
-						<font>FontSize_20</font>
+						<font>FontSize_22</font>
 						<textcolor>77white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -272,9 +272,9 @@
 						<posy>0</posy>
 						<width>300</width>
 						<height>45</height>
-						<font>FontSize_18</font>
+						<font>FontSize_22</font>
 						<textcolor>77white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
@@ -286,9 +286,9 @@
 						<posy>0</posy>
 						<width>300</width>
 						<height>45</height>
-						<font>FontSize_18</font>
+						<font>FontSize_22</font>
 						<textcolor>red</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
@@ -298,28 +298,28 @@
 				</itemlayout>
 				<focusedlayout height="45" width="710">
 		      <control type="group">
-			    <include>ListFocusAnimation</include>
+			      <include>ListFocusAnimation</include>
 						<control type="label">
-							<posx>20</posx>
+							<posx>14</posx>
 							<posy>0</posy>
 							<width>100</width>
 							<height>45</height>
-							<font>ArrowsFont</font>
+							<font>BackFont</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<label>←</label>
+						  <label>↚</label>
 	            <visible>Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
-							<posx>18</posx>
+							<posx>15</posx>
 							<posy>0</posy>
 							<width>100</width>
 							<height>45</height>
 							<font>FontSize_20</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>․  ․  ․</label>
@@ -330,9 +330,9 @@
 							<posy>0</posy>
 							<width>455</width>
 							<height>44</height>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -343,9 +343,9 @@
 							<posy>0</posy>
 							<width>300</width>
 							<height>45</height>
-							<font>FontSize_18</font>
+							<font>FontSize_22</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
@@ -357,9 +357,9 @@
 							<posy>0</posy>
 							<width>300</width>
 							<height>45</height>
-							<font>FontSize_18</font>
+							<font>FontSize_22</font>
 							<textcolor>red</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
@@ -387,14 +387,14 @@
 				<visible>Control.IsVisible(50)</visible>
 			</control>
 			<control type="image">
-				<posx>57</posx>
+				<posx>53</posx>
 				<posy>135</posy>
 				<width>23</width>
 				<height>20</height>
 				<texture>views/scrollbar/arrow.png</texture>
 		  </control>
 		  <control type="image">
-				<posx>57</posx>
+				<posx>53</posx>
 				<posy>598</posy>
 				<width>23</width>
 				<height>20</height>
@@ -424,9 +424,9 @@
 				<onup>9000</onup>
 				<ondown>60</ondown>
 	      <orientation>horizontal</orientation>
-				<viewtype label="31085">list</viewtype>
+				<viewtype label="31085">icon</viewtype>
 				<pagecontrol>60</pagecontrol>
-	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
+	      <scrolltime tween="Cubic" easing="out">350</scrolltime>
 				<preloaditems>2</preloaditems>
 				<itemlayout height="265" width="244">
 					<control type="image">
@@ -445,6 +445,16 @@
 					  <texture background="true">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>200</height>
+					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 					<control type="label">
 						<posx>128</posx>
@@ -477,6 +487,16 @@
 					  <texture background="true">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>24</posy>
+						<width>206</width>
+						<height>200</height>
+					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 					<control type="label">
 						<posx>128</posx>

@@ -4,14 +4,25 @@
 		<!-- ====================== -->
 		<include name="HomeMenuWraplist">
 			<control type="group">
-		    <visible allowhiddenfocus="true">!Window.IsActive(ShutdownMenu) + !Window.IsActive(Favourites) + !Window.IsActive(BusyDialog) + !Window.IsActive(ProgressDialog) + !Window.IsActive(PlayerControls) + !Window.IsActive(script-globalsearch-main.xml) + ![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83)]</visible>
+		    <visible allowhiddenfocus="true">!Window.IsActive(1110) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(Favourites) + !Window.IsActive(BusyDialog) + !Window.IsActive(ProgressDialog) + !Window.IsActive(PlayerControls) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(busy.xml) + ![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83)]</visible>
 		    <include>HomeSlideAnimations</include>
 			  <control type="group">
 		      <include>HomeSlideAnimations</include>
 				  <control type="image">
 		        <include>FullscreenDimensions</include>
 						<texture background="true">windows/bg/colors_pulse.png</texture>
+						<visible>!Skin.HasSetting(HomeMenuAnimation)</visible>
 					</control>
+          <control type="image">
+            <height>720</height>
+            <width>3280</width>
+            <texture>windows/bg/colors_pulse.png</texture>
+            <animation type="Conditional" condition="true" loop="true" reversible="false">
+	            <effect type="slide" start="0,0" end="-2000,0" time="20350" />
+	            <effect type="slide" start="0,0" end="2000,0" time="20350" delay="20350"/>
+            </animation>
+						<visible>Skin.HasSetting(HomeMenuAnimation)</visible>
+          </control>					
 					<control type="wraplist" id="20">
 					 <description>Home Container</description>
 					 <posx>-95</posx>
@@ -43,7 +54,7 @@
 					 <itemgap>0</itemgap>
 					 <orientation>horizontal</orientation>
 					 <focusposition>1</focusposition>
-				   <scrolltime tween="cubic" easing="out">500</scrolltime>
+           <scrolltime tween="Quadratic" easing="out">350</scrolltime>
 					 <itemlayout width="430">
 				    <control type="group">
 				     <animation type="Conditional" condition="true">
@@ -76,6 +87,12 @@
 			          <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
 			          <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
 					    </animation>
+			        <animation type="Conditional" reversible="false" condition="!ControlGroup(21).HasFocus">
+			         <effect type="fade" start="45" end="100" time="250" tween="sine" easing="out" />
+			        </animation>
+			        <animation type="Conditional" reversible="false" condition="ControlGroup(21).HasFocus">
+			          <effect type="fade" start="100" end="45" time="250" tween="sine" easing="out" />
+			        </animation>
 							<control type="label">
 							  <posx>300</posx>
 								<posy>200</posy>
@@ -102,8 +119,8 @@
 						 </item>
 						 <item id="2">
 								<label>$LOCALIZE[20342]</label>
-								<onclick condition="Library.HasContent(movies)">ActivateWindow(videos,movietitles,return)</onclick>
 	              <onclick condition="!Library.HasContent(movies)">ActivateWindow(videos,files,return)</onclick>
+								<onclick condition="Library.HasContent(movies)">ActivateWindow(videos,movietitles,return)</onclick>
 								<visible>!Skin.HasSetting(HideHomeMenuMoviesButton)</visible>
 						 </item>
 						 <item id="3">
@@ -163,7 +180,7 @@
 						 <item id="14">
 								<label>$INFO[System.DVDLabel]</label>
 								<onclick>PlayDVD</onclick>
-								<visible>Skin.HasSetting(ShowHomeMenuDVDButton) + System.HasMediaDVD</visible>
+								<visible>System.HasMediaDVD</visible>
 						 </item>
 			
 			       <!-- Custom Panels -->
@@ -271,7 +288,7 @@
 						 <width>450</width>
 						 <height>450</height>
 						 <aspectratio align="center" aligny="center">stretch</aspectratio>
-						 <texture>osd/shine_colors.png</texture>
+				     <texture background="true">views/list/shine.png</texture>
 					 </control>
 		       <control type="image">
 		         <posx>4</posx>
@@ -288,7 +305,7 @@
 							<width>160</width>
 							<height>160</height>
 							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-					    <texture fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse.png">$VAR[PlayerThumbs]</texture>
+					    <texture background="true" fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse.png">$INFO[Player.Art(thumb)]</texture>
 							<fadetime>800</fadetime>
 					</control>
 					<control type="image">
@@ -297,7 +314,7 @@
 							<width>174</width>
 							<height>174</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture>thumbs/music_overlay.png</texture>
+							<texture background="true">thumbs/music_overlay.png</texture>
 							<fadetime>800</fadetime>
 					</control>
 					<control type="image">
@@ -306,7 +323,7 @@
 							<width>160</width>
 							<height>160</height>
 							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-					    <texture fallback="thumbs/fallback_square.png" flipy="true" diffuse="thumbs/music_reflection_diffuse.png">$VAR[PlayerThumbs]</texture>
+					    <texture background="true" fallback="thumbs/fallback_square.png" flipy="true" diffuse="thumbs/music_reflection_diffuse.png">$INFO[Player.Art(thumb)]</texture>
 							<fadetime>800</fadetime>
 							<colordiffuse>a0ffffff</colordiffuse>
 					</control>
@@ -316,7 +333,7 @@
 							<posy>-1</posy>
 							<width>162</width>
 							<height>162</height>
-							<texture diffuse="thumbs/music_diffuse.png">osd/paused-overlay.png</texture>
+							<texture background="true" diffuse="thumbs/music_diffuse.png">osd/paused-overlay.png</texture>
 							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<visible>Player.Paused</visible>
 							<include>VisibleFadeEffect</include>
@@ -330,7 +347,7 @@
 							<posy>-1</posy>
 							<width>162</width>
 							<height>162</height>
-							<texture diffuse="thumbs/music_diffuse.png">osd/ff-overlay.png</texture>
+							<texture background="true" diffuse="thumbs/music_diffuse.png">osd/ff-overlay.png</texture>
 							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<visible>Player.Forwarding</visible>
 							<include>VisibleFadeEffect</include>
@@ -344,7 +361,7 @@
 							<posy>-1</posy>
 							<width>162</width>
 							<height>162</height>
-							<texture diffuse="thumbs/music_diffuse.png">osd/rw-overlay.png</texture>
+							<texture background="true" diffuse="thumbs/music_diffuse.png">osd/rw-overlay.png</texture>
 							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<visible>Player.Rewinding</visible>
 							<include>VisibleFadeEffect</include>
@@ -430,7 +447,7 @@
 					 <width>450</width>
 					 <height>450</height>
 					 <aspectratio align="center" aligny="center">stretch</aspectratio>
-					 <texture>osd/shine_colors.png</texture>
+				   <texture background="true">views/list/shine.png</texture>
 				 </control>
 				 <control type="label">
 					 <description>NP label</description>
@@ -446,32 +463,30 @@
 					 <shadowcolor>99000000</shadowcolor>
 					 <angle>90</angle>
 				 </control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>130</width>
+						<height>185</height>
+						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+						<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/thumb_back.png</texture>
+						<fadetime>800</fadetime>
+					</control>
 				 <control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>130</width>
 						<height>185</height>
-						<texture fallback="thumbs/fallback_poster.png" diffuse="thumbs/poster_diffuse.png">$VAR[PlayerThumbs]</texture>
-						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+						<texture background="true" fallback="thumbs/fallback_poster.png" diffuse="thumbs/poster_diffuse.png">$VAR[PlayerThumbs]</texture>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<fadetime>800</fadetime>
-				    <visible>VideoPlayer.Content(Movies)</visible>
-				 </control>
-				 <control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>130</width>
-						<height>185</height>
-						<texture fallback="thumbs/fallback_poster.png" diffuse="thumbs/poster_diffuse.png">$VAR[PlayerThumbs]</texture>
-						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<fadetime>800</fadetime>
-				    <visible>VideoPlayer.Content(Episodes)</visible>
 				 </control>
 				 <control type="image">
 						<posx>-7</posx>
 						<posy>-7</posy>
 						<width>145</width>
 						<height>200</height>
-						<texture>thumbs/poster_overlay.png</texture>
+						<texture background="true">thumbs/poster_overlay.png</texture>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<fadetime>800</fadetime>
 				 </control>
@@ -480,24 +495,11 @@
 						<posy>187</posy>
 						<width>130</width>
 						<height>185</height>
-						<texture fallback="thumbs/fallback_poster.png" flipy="true" diffuse="thumbs/poster_reflection_diffuse.png">$VAR[PlayerThumbs]</texture>
+						<texture background="true" fallback="thumbs/fallback_poster.png" flipy="true" diffuse="thumbs/poster_reflection_diffuse.png">$VAR[PlayerThumbs]</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 						<fadetime>800</fadetime>
 						<colordiffuse>A0FFFFFF</colordiffuse>
 						<!-- <colordiffuse>33FDFDFD</colordiffuse> -->
-				    <visible>VideoPlayer.Content(Movies)</visible>
-				 </control>
-				 <control type="image">
-						<posx>0</posx>
-						<posy>186</posy>
-						<width>130</width>
-						<height>185</height>
-						<texture fallback="thumbs/fallback_poster.png" flipy="true" diffuse="thumbs/poster_reflection_diffuse.png">$VAR[PlayerThumbs]</texture>
-						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<fadetime>800</fadetime>
-						<colordiffuse>A0FFFFFF</colordiffuse>
-						<!-- <colordiffuse>33FDFDFD</colordiffuse> -->
-				    <visible>VideoPlayer.Content(Episodes)</visible>
 				 </control>
 				 <control type="image">
 						<description>paused indicator</description>
@@ -505,7 +507,7 @@
 						<posy>0</posy>
 						<width>130</width>
 						<height>185</height>
-						<texture diffuse="thumbs/poster_diffuse.png">osd/paused-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/poster_diffuse.png">osd/paused-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Paused</visible>
 						<include>VisibleFadeEffect</include>
@@ -519,7 +521,7 @@
 						<posy>0</posy>
 						<width>130</width>
 						<height>185</height>
-						<texture diffuse="thumbs/poster_diffuse.png">osd/ff-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/poster_diffuse.png">osd/ff-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Forwarding</visible>
 						<include>VisibleFadeEffect</include>
@@ -533,7 +535,7 @@
 						<posy>0</posy>
 						<width>130</width>
 						<height>185</height>
-						<texture diffuse="thumbs/poster_diffuse.png">osd/rw-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/poster_diffuse.png">osd/rw-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Rewinding</visible>
 						<include>VisibleFadeEffect</include>
@@ -545,7 +547,7 @@
 	 
 		    <!-- Videos Cover -->
 			  <control type="group">
-				 <visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]</visible>
+				 <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 				 <animation effect="slide" start="0,0" end="-310,0" time="500" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 				 <control type="image">
 					 <posx>-190</posx>
@@ -553,7 +555,7 @@
 					 <width>660</width>
 					 <height>450</height>
 					 <aspectratio align="center" aligny="center">stretch</aspectratio>
-					 <texture>osd/shine_colors.png</texture>
+				   <texture background="true">views/list/shine.png</texture>
 				 </control>
 				 <control type="label">
 					 <description>NP label</description>
@@ -575,7 +577,7 @@
 						<width>260</width>
 						<height>160</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<texture diffuse="thumbs/video_diffuse.png">thumbs/thumb_back.png</texture>
+						<texture background="true" diffuse="thumbs/video_diffuse.png">thumbs/thumb_back.png</texture>
 						<fadetime>800</fadetime>
 					</control>
 					<control type="image">
@@ -584,7 +586,7 @@
 						<width>260</width>
 						<height>160</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-				    <texture fallback="thumbs/fallback_fanart.png" diffuse="thumbs/video_diffuse.png">$VAR[PlayerThumbs]</texture>
+				    <texture background="true" fallback="thumbs/fallback_episode.png" diffuse="thumbs/video_diffuse.png">$INFO[VideoPlayer.Cover]</texture>
 						<fadetime>800</fadetime>
 					</control>
 					<control type="image">
@@ -593,7 +595,7 @@
 						<width>273</width>
 						<height>173</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture>thumbs/video_overlay.png</texture>
+						<texture background="true">thumbs/video_overlay.png</texture>
 						<fadetime>800</fadetime>
 					</control>
 					<control type="image">
@@ -602,7 +604,7 @@
 						<width>260</width>
 						<height>160</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-				    <texture fallback="thumbs/fallback_square.png" flipy="true" diffuse="thumbs/video_reflection_diffuse.png">$VAR[PlayerThumbs]</texture>
+				    <texture background="true" fallback="thumbs/fallback_episode.png" flipy="true" diffuse="thumbs/video_reflection_diffuse.png">$INFO[VideoPlayer.Cover]</texture>
 						<fadetime>800</fadetime>
 						<colordiffuse>A0ffffff</colordiffuse>
 					</control>			 
@@ -612,7 +614,7 @@
 						<posy>-1</posy>
 						<width>261</width>
 						<height>161</height>
-						<texture diffuse="thumbs/video_diffuse.png">osd/paused-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/video_diffuse.png">osd/paused-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Paused</visible>
 						<include>VisibleFadeEffect</include>
@@ -626,7 +628,7 @@
 						<posy>-1</posy>
 						<width>261</width>
 						<height>161</height>
-						<texture diffuse="thumbs/video_diffuse.png">osd/ff-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/video_diffuse.png">osd/ff-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Forwarding</visible>
 						<include>VisibleFadeEffect</include>
@@ -640,7 +642,7 @@
 						<posy>-1</posy>
 						<width>261</width>
 						<height>161</height>
-						<texture diffuse="thumbs/video_diffuse.png">osd/rw-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/video_diffuse.png">osd/rw-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Rewinding</visible>
 						<include>VisibleFadeEffect</include>
@@ -912,20 +914,20 @@
 					<control type="label">
 					  <include>TopSmallLabel</include>
 						<label>$LOCALIZE[1036]</label>
-						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!Control.HasFocus(210)" reversible="true">Conditional</animation>
-	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(210)" reversible="true">Conditional</animation>
+						<animation effect="fade" start="100" end="70" time="200" tween="sine" easing="in" condition="!Control.HasFocus(210)" reversible="true">Conditional</animation>
+	          <animation effect="zoom"  start="100" end="94" time="200" tween="sine" easing="in" center="auto" condition="!Control.HasFocus(210)" reversible="true">Conditional</animation>
 					</control>
 					<control type="label">
 					  <include>TopSmallLabel</include>
 						<label>$LOCALIZE[137]</label>
-						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!Control.HasFocus(211)" reversible="true">Conditional</animation>
-	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(211)" reversible="true">Conditional</animation>
+						<animation effect="fade" start="100" end="70" time="200" tween="sine" easing="in" condition="!Control.HasFocus(211)" reversible="true">Conditional</animation>
+	          <animation effect="zoom"  start="100" end="94" time="200" tween="sine" easing="in" center="auto" condition="!Control.HasFocus(211)" reversible="true">Conditional</animation>
 					</control>
 					<control type="label">
 					  <include>TopSmallLabel</include>
 						<label>$LOCALIZE[33060]</label>
-						<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!Control.HasFocus(212)" reversible="true">Conditional</animation>
-	          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(212)" reversible="true">Conditional</animation>
+						<animation effect="fade" start="100" end="70" time="200" tween="sine" easing="in" condition="!Control.HasFocus(212)" reversible="true">Conditional</animation>
+	          <animation effect="zoom"  start="100" end="94" time="200" tween="sine" easing="in" center="auto" condition="!Control.HasFocus(212)" reversible="true">Conditional</animation>
 					</control>
 				</control>
 				<control type="group">

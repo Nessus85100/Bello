@@ -212,10 +212,6 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr "Τοίχος Λίστα"
 
-msgctxt "#31100"
-msgid "Home Categories Buttons"
-msgstr "Πλήκτρα Αρχ. Οθόνης"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Εμφάνιση Πληροφοριών για τον Καιρό"
@@ -282,7 +278,7 @@ msgstr "Εμφάνιση Πλήκτρου Μουσικών Βίντεο"
 
 msgctxt "#31117"
 msgid "Music Button opens..."
-msgstr "Το πλήκτρο Μουσική ανοίγει..."
+msgstr "Άνοιγμα Πλήκτρου Μουσικής..."
 
 msgctxt "#31118"
 msgid "Custom Button"
@@ -786,7 +782,7 @@ msgstr "Ελέγξτε βασικές λειτουργίες του υλικού
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
-msgstr "Επιλέξτε από ένα πλήθος ρυθμίσεων και επιλογών προσαρμογής για να διαμορφώσετε το \"Bello\" σύμφωνα τις ανάγκες σας."
+msgstr "Επιλέξτε από ένα πλήθος προχωρημένων ρυθμίσεων και επιλογών προσαρμογής για να διαμορφώσετε το \"Bello\" σύμφωνα με τα γούστα και τις ανάγκες σας."
 
 msgctxt "#31410"
 msgid "With XBMC you can have several profiles, even a logon screen for controlled access."

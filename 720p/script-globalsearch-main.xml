@@ -4,37 +4,37 @@
   <backgroundcolor>0</backgroundcolor>
 	<controls>
 
-		<control type="group">
-			<include>FanartFade</include>
-			<control type="image">
-				<description>GlobalSearch Fanart</description>
-			  <include>FullscreenDimensions</include>
-				<texture background="true">$VAR[GlobalSearchFanart]</texture>
-				<fadetime>250</fadetime>
-			  <visible>!Skin.HasSetting(HideBGFanart)</visible>
-			</control>
-			<control type="image">
-			  <description>Vignette</description>
-			  <include>FullscreenDimensions</include>
-			  <texture background="true">special://skin/extras/backgrounds/bg_vignette.png</texture>
-				<fadetime>250</fadetime>
-			</control>
-			<control type="image">
-			  <description>Vignette</description>
-			  <include>FullscreenDimensions</include>
-			  <texture background="true">special://skin/extras/backgrounds/bg_diffuse.png</texture>
-				<fadetime>250</fadetime>
-	      <colordiffuse>D5FFFFFF</colordiffuse>
-			  <visible>!Skin.HasSetting(HideBGFanart)</visible>
-			</control>
-		</control>
-
 		<control type="group" id="100">
+		
+			<control type="group">
+				<include>FanartFade</include>
+				<control type="image">
+					<description>GlobalSearch Fanart</description>
+				  <include>FullscreenDimensions</include>
+					<texture background="true">$VAR[GlobalSearchFanart]</texture>
+					<fadetime>250</fadetime>
+				  <visible>!Skin.HasSetting(HideBGFanart)</visible>
+				</control>
+				<control type="image">
+				  <description>Vignette</description>
+				  <include>FullscreenDimensions</include>
+			    <texture background="true">windows/bg/bg_vignette.png</texture>
+					<fadetime>250</fadetime>
+				</control>
+				<control type="image">
+				  <description>Vignette</description>
+				  <include>FullscreenDimensions</include>
+			    <texture background="true">windows/bg/bg_diffuse.png</texture>
+					<fadetime>250</fadetime>
+		      <colordiffuse>D5FFFFFF</colordiffuse>
+				  <visible>!Skin.HasSetting(HideBGFanart)</visible>
+				</control>
+			</control>
+		
+		 <control type="group">		
 				<visible>IsEmpty(Control.GetLabel(190)) + !Window.IsVisible(AddonSettings)</visible>
 				<include>ShutdownMenuAnimation</include>
         <include>DialogZoomInOutAnimation</include>
-				<posx>250</posx>
-				<posy>90</posy>
 				<!-- Movies -->
 				<control type="group" id="119">
 					<width>750</width>
@@ -47,8 +47,8 @@
 					<control type="fixedlist" id="111">
 						<visible>Container(9000).HasFocus(1)</visible>
 				    <include>GlobalSearchSlideAnimations</include>
-						<posx>20</posx>
-						<posy>20</posy>
+						<posx>270</posx>
+						<posy>110</posy>
 						<width>750</width>
 						<height>520</height>
 						<onleft>9000</onleft>
@@ -180,8 +180,8 @@
 					<control type="fixedlist" id="121">
 						<visible>Container(9000).HasFocus(2)</visible>
 				    <include>GlobalSearchSlideAnimations</include>
-						<posx>20</posx>
-						<posy>20</posy>
+						<posx>270</posx>
+						<posy>110</posy>
 						<width>750</width>
 						<height>520</height>
 						<onleft>9000</onleft>
@@ -327,8 +327,8 @@
 					<control type="fixedlist" id="141">
 						<visible>Container(9000).HasFocus(4)</visible>
 				    <include>GlobalSearchSlideAnimations</include>
-						<posx>20</posx>
-						<posy>20</posy>
+						<posx>270</posx>
+						<posy>110</posy>
 						<width>750</width>
 						<height>520</height>
 						<onleft>9000</onleft>
@@ -460,8 +460,8 @@
 					<control type="fixedlist" id="151">
 						<visible>Container(9000).HasFocus(5)</visible>
 				    <include>GlobalSearchSlideAnimations</include>
-						<posx>20</posx>
-						<posy>20</posy>
+						<posx>270</posx>
+						<posy>110</posy>
 						<width>750</width>
 						<height>520</height>
 						<onleft>9000</onleft>
@@ -576,8 +576,8 @@
 					<control type="fixedlist" id="161">
 						<visible>Container(9000).HasFocus(6)</visible>
 				    <include>GlobalSearchSlideAnimations</include>
-						<posx>20</posx>
-						<posy>20</posy>
+						<posx>270</posx>
+						<posy>110</posy>
 						<width>750</width>
 						<height>520</height>
 						<onleft>9000</onleft>
@@ -682,8 +682,8 @@
 					<control type="fixedlist" id="171">
 						<visible>Container(9000).HasFocus(7)</visible>
 				    <include>GlobalSearchSlideAnimations</include>
-						<posx>20</posx>
-						<posy>20</posy>
+						<posx>270</posx>
+						<posy>110</posy>
 						<width>750</width>
 						<height>520</height>
 						<onleft>9000</onleft>
@@ -805,8 +805,8 @@
 					<control type="fixedlist" id="181">
 						<visible>Container(9000).HasFocus(8)</visible>
 				    <include>GlobalSearchSlideAnimations</include>
-						<posx>20</posx>
-						<posy>20</posy>
+						<posx>270</posx>
+						<posy>110</posy>
 						<width>750</width>
 						<height>520</height>
 						<onleft>9000</onleft>
@@ -926,6 +926,97 @@
 						</focusedlayout>
 					</control>
 				</control>
+		 </control>
+
+
+		 <!-- ================ -->
+		 <!-- Top Content Info -->
+		 <!-- ================ -->
+		 <control type="group">
+				<posx>45</posx>
+				<posy>25</posy>
+			  <visible>![Window.IsActive(script-globalsearch-infodialog.xml) | Window.IsActive(script-globalsearch-contextmenu.xml)]</visible>
+		    <include>GlobalSearchSlideAnimations</include>
+		    <include>ShutdownMenuAnimation</include>
+				<control type="grouplist">
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>70</height>
+					<width>1000</width>
+					<align>left</align>
+					<itemgap>10</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="label">
+					  <include>TopBigLabel</include>
+					  <label>$LOCALIZE[284]</label>
+						<visible>Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+					  <include>TopBigLabel</include>
+						<label>$LOCALIZE[283]:</label>
+					  <visible>IsEmpty(Control.GetLabel(190)) + !Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+					  <include>TopBigLabel</include>
+						<label>$INFO[Container(9000).ListItem.Label]</label>
+					  <visible>IsEmpty(Control.GetLabel(190)) + !Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+						<label>$LOCALIZE[194] [COLOR=blue]$INFO[Control.GetLabel(191)][/COLOR]</label>
+					  <include>TopBigLabel</include>
+					  <visible>!IsEmpty(Control.GetLabel(190))</visible>
+					</control>
+					<control type="label">
+					  <include>TopZoomedSmallLabel</include>
+						<label>$LOCALIZE[31020] $INFO[Control.GetLabel(110)] $LOCALIZE[31025]</label>
+	          <visible>Control.HasFocus(111) | Container(9000).HasFocus(1)</visible>
+	          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+					  <include>TopZoomedSmallLabel</include>
+						<label>$LOCALIZE[31020] $INFO[Control.GetLabel(120)] $LOCALIZE[31025]</label>
+	          <visible>Control.HasFocus(121) | Container(9000).HasFocus(2)</visible>
+	          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+					  <include>TopZoomedSmallLabel</include>
+						<label>$LOCALIZE[31020] $INFO[Control.GetLabel(130)] $LOCALIZE[31025]</label>
+	          <visible>Control.HasFocus(131) | Container(9000).HasFocus(3)</visible>
+	          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+					  <include>TopZoomedSmallLabel</include>
+						<label>$LOCALIZE[31020] $INFO[Control.GetLabel(140)] $LOCALIZE[31025]</label>
+	          <visible>Control.HasFocus(141) | Container(9000).HasFocus(4)</visible>
+	          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+					  <include>TopZoomedSmallLabel</include>
+						<label>$LOCALIZE[31020] $INFO[Control.GetLabel(150)] $LOCALIZE[31025]</label>
+	          <visible>Control.HasFocus(151) | Container(9000).HasFocus(5)</visible>
+	          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+					  <include>TopZoomedSmallLabel</include>
+						<label>$LOCALIZE[31020] $INFO[Control.GetLabel(160)] $LOCALIZE[31025]</label>
+	          <visible>Control.HasFocus(161) | Container(9000).HasFocus(6)</visible>
+	          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+					  <include>TopZoomedSmallLabel</include>
+						<label>$LOCALIZE[31020] $INFO[Control.GetLabel(170)] $LOCALIZE[31025]</label>
+	          <visible>Control.HasFocus(171) | Container(9000).HasFocus(7)</visible>
+	          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
+					</control>
+					<control type="label">
+					  <include>TopZoomedSmallLabel</include>
+						<label>$LOCALIZE[31020] $INFO[Control.GetLabel(180)] $LOCALIZE[31025]</label>
+	          <visible>Control.HasFocus(181) | Container(9000).HasFocus(8)</visible>
+	          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
+					</control>
+				</control>
+		 </control>
+
 		</control>
 	
 	
@@ -1062,98 +1153,9 @@
 			</control>
 		</control>
 	
+
 	
-		<include>CommonItems</include>
-	
-	
-	  <!-- ================ -->
-	  <!-- Top Content Info -->
-	  <!-- ================ -->
-	  <control type="group">
-			<posx>45</posx>
-			<posy>25</posy>
-		  <visible>![Window.IsActive(script-globalsearch-infodialog.xml) | Window.IsActive(script-globalsearch-contextmenu.xml)]</visible>
-	    <include>GlobalSearchSlideAnimations</include>
-	    <include>CommonWeatherAndClock</include>
-	    <include>ShutdownMenuAnimation</include>
-			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
-				<height>70</height>
-				<width>1000</width>
-				<align>left</align>
-				<itemgap>10</itemgap>
-				<orientation>horizontal</orientation>
-				<control type="label">
-				  <include>TopBigLabel</include>
-				  <label>$LOCALIZE[284]</label>
-					<visible>Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-				  <include>TopBigLabel</include>
-					<label>$LOCALIZE[283]:</label>
-				  <visible>IsEmpty(Control.GetLabel(190)) + !Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-				  <include>TopBigLabel</include>
-					<label>$INFO[Container(9000).ListItem.Label]</label>
-				  <visible>IsEmpty(Control.GetLabel(190)) + !Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-					<label>$LOCALIZE[194] [COLOR=blue]$INFO[Control.GetLabel(191)][/COLOR]</label>
-				  <include>TopBigLabel</include>
-				  <visible>!IsEmpty(Control.GetLabel(190))</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-					<label>$LOCALIZE[31020] $INFO[Control.GetLabel(110)] $LOCALIZE[31025]</label>
-          <visible>Control.HasFocus(111) | Container(9000).HasFocus(1)</visible>
-          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-					<label>$LOCALIZE[31020] $INFO[Control.GetLabel(120)] $LOCALIZE[31025]</label>
-          <visible>Control.HasFocus(121) | Container(9000).HasFocus(2)</visible>
-          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-					<label>$LOCALIZE[31020] $INFO[Control.GetLabel(130)] $LOCALIZE[31025]</label>
-          <visible>Control.HasFocus(131) | Container(9000).HasFocus(3)</visible>
-          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-					<label>$LOCALIZE[31020] $INFO[Control.GetLabel(140)] $LOCALIZE[31025]</label>
-          <visible>Control.HasFocus(141) | Container(9000).HasFocus(4)</visible>
-          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-					<label>$LOCALIZE[31020] $INFO[Control.GetLabel(150)] $LOCALIZE[31025]</label>
-          <visible>Control.HasFocus(151) | Container(9000).HasFocus(5)</visible>
-          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-					<label>$LOCALIZE[31020] $INFO[Control.GetLabel(160)] $LOCALIZE[31025]</label>
-          <visible>Control.HasFocus(161) | Container(9000).HasFocus(6)</visible>
-          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-					<label>$LOCALIZE[31020] $INFO[Control.GetLabel(170)] $LOCALIZE[31025]</label>
-          <visible>Control.HasFocus(171) | Container(9000).HasFocus(7)</visible>
-          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-					<label>$LOCALIZE[31020] $INFO[Control.GetLabel(180)] $LOCALIZE[31025]</label>
-          <visible>Control.HasFocus(181) | Container(9000).HasFocus(8)</visible>
-          <visible>IsEmpty(Control.GetLabel(190))  + !Control.IsVisible(199)</visible>
-				</control>
-			</control>
-	  </control>
+
 		  
 	</controls>
 </window>

@@ -196,10 +196,6 @@ msgctxt "#31086"
 msgid "Banner List"
 msgstr "Lista de banners"
 
-msgctxt "#31100"
-msgid "Home Categories Buttons"
-msgstr "Botones de categorías de pantalla principal"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Mostrar información del tiempo"

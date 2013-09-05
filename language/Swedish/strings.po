@@ -212,10 +212,6 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr "List vägg"
 
-msgctxt "#31100"
-msgid "Home Categories Buttons"
-msgstr "Knappar för Hemkategorier"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Visa Väder Info"

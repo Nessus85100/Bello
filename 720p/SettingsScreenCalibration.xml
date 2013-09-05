@@ -10,7 +10,7 @@
 		<control type="image">
 			<description>Overlay</description>
 	    <include>FullscreenDimensions</include>
-		  <texture background="true">special://skin/extras/backgrounds/bg_diffuse.png</texture>
+			<texture background="true">windows/bg/bg_diffuse.png</texture>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>FanartFade</include>
 			<visible>Player.HasVideo</visible>

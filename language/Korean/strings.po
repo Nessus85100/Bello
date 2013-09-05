@@ -32,6 +32,10 @@ msgctxt "#31003"
 msgid "Aired"
 msgstr "방영"
 
+msgctxt "#31004"
+msgid "Premiere"
+msgstr "개봉/첫방송: "
+
 msgctxt "#31005"
 msgid "Track Number"
 msgstr "트랙 번호"
@@ -43,6 +47,10 @@ msgstr "정렬: 오름차순"
 msgctxt "#31007"
 msgid "Sort: Descending"
 msgstr "정렬: 내림차순"
+
+msgctxt "#31008"
+msgid "System auto shutdown in"
+msgstr "시스템 자동 종료"
 
 msgctxt "#31009"
 msgid "Context Menu"
@@ -187,10 +195,6 @@ msgstr "배너 목록"
 msgctxt "#31088"
 msgid "List Wall"
 msgstr "월 목록"
-
-msgctxt "#31100"
-msgid "Home Categories Buttons"
-msgstr "홈화면 카테고리 버튼"
 
 msgctxt "#31101"
 msgid "Show Weather Info"

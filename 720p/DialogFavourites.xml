@@ -1,16 +1,21 @@
 <window type="dialog" id="134">
 	<defaultcontrol always="true">450</defaultcontrol>
+	<onload condition="!IntegerGreaterThan(Container(450).NumItems,0)">ActivateWindow(1110)</onload>
 	<controls>
 
 		<control type="group">
 	    <include>GlobalSearchSlideAnimations</include>
+      <animation type="Conditional" reversible="true" condition="Window.IsActive(virtualkeyboard) | Window.IsActive(filebrowser)">
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
+        <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="inout" />
+      </animation>
       <animation type="Conditional" reversible="true" condition="Window.IsActive(ContextMenu)">
         <effect type="slide" start="0,0" end="0,75" time="350" tween="sine" easing="inout" />
       </animation>
-<!--  <animation type="Conditional" reversible="true" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(FileBrowser) | Window.IsActive(VirtualKeyboard)">
+      <animation type="Conditional" reversible="true" condition="Window.IsActive(ShutdownMenu)">
         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
         <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="inout" />
-      </animation> -->
+      </animation>
 			<control type="image">
 				<posx>-230</posx>
 				<posy>0</posy>
@@ -20,6 +25,7 @@
 				<aspectratio align="center" aligny="center">stretch</aspectratio>
 				<texture background="true">dialogs/favourites/black_shadow.png</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
+			  <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
 			</control>
 			<control type="image">
 				<posx>-230</posx>
@@ -30,6 +36,7 @@
 				<aspectratio align="center" aligny="center">stretch</aspectratio>
 				<texture background="true">views/slide/shine.png</texture>
 				<colordiffuse>77FFFFFF</colordiffuse>
+			  <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
 			</control>
 			<control type="panel" id="450">
 				<posx>25</posx>
@@ -138,17 +145,15 @@
 			</control>
 		</control>
 
-
 	 <control type="group">
 		  <posx>45</posx>
 		  <posy>25</posy>
-			<visible>Control.HasFocus(450)</visible>
 	    <include>TopOptionsSlideAnimations</include>
       <animation type="Conditional" reversible="true" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)">
         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
         <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="inout" />
       </animation>
-		  <!--  Recently Added  -->
+		  <!--  Content Info  -->
 			<control type="grouplist">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -174,6 +179,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Container(450).NumItems,, $LOCALIZE[31025]]</label>
+			  <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
 			</control>
 	 </control>
 	</controls>

@@ -250,7 +250,8 @@
 
 	<include name="DialogFadeInOutAnimation">
 		<animation type="Conditional" reversible="false" condition="
-		Window.IsActive(contextmenu) 
+		Window.IsActive(1110) 
+		| Window.IsActive(contextmenu) 
 		| Window.IsActive(shutdownmenu) 
 		| Window.IsActive(MovieInformation) 
 		| Window.IsActive(MusicInformation) 
@@ -280,7 +281,8 @@
       <effect type="fade" start="100" end="0" time="300" delay="100" tween="sine" easing="inout"/>
 		</animation>
 		<animation type="Conditional" reversible="false" condition="
-		!Window.IsActive(contextmenu) 
+		!Window.IsActive(1110) 
+		+ !Window.IsActive(contextmenu) 
 		+ !Window.IsActive(shutdownmenu) 
 		+ !Window.IsActive(MovieInformation) 
 		+ !Window.IsActive(MusicInformation) 
@@ -313,7 +315,8 @@
 
 	<include name="DialogZoomInOutAnimation">
 		<animation type="Conditional" reversible="false" condition="
-		Window.IsActive(PVRGuideInfo) 
+		Window.IsActive(1110) 
+		| Window.IsActive(PVRGuideInfo) 
 		| Window.IsActive(PVRRecordingInfo) 
 		| Window.IsActive(PVRTimerSetting) 
 		| Window.IsActive(PVRGuideSearch) 
@@ -349,7 +352,8 @@
       <effect type="zoom" start="100" end="90" time="300" delay="0" center="640,360" tween="sine" easing="inout" />
 		</animation>
 		<animation type="Conditional" reversible="false" condition="
-		!Window.IsActive(PVRGuideInfo) 
+		!Window.IsActive(1110) 
+		+ !Window.IsActive(PVRGuideInfo) 
 		+ !Window.IsActive(PVRRecordingInfo) 
 		+ !Window.IsActive(PVRTimerSetting) 
 		+ !Window.IsActive(PVRGuideSearch) 
@@ -481,6 +485,23 @@
     </animation>
   </include>
 
+	<include name="VideoWallAnimations">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="zoom" time="350" center="640,360" start="130" end="100" tween="sine" easing="out" />
+			<effect type="fade" time="350" start="0" tween="sine" easing="out" end="100" />
+		</animation>			
+		<animation type="WindowClose" reversible="false">
+			<effect type="zoom" time="350" center="640,360" start="100" end="130" tween="sine" easing="in" />
+			<effect type="fade" time="350" start="100" tween="sine" easing="in" end="0"/>
+		</animation>
+		<animation type="Visible" reversible="false">
+			<effect type="fade" time="350" start="0" tween="sine" easing="out" end="100"/>
+		</animation>			
+		<animation type="Hidden" reversible="false">
+			<effect type="fade" time="350" start="100" tween="sine" easing="in" end="0"/>
+		</animation>
+  </include>
+
   <include name="OSDPlotAnimation">
     <animation type="Visible" reversible="false">
         <effect type="slide" start="150,0" end="0,0" time="500" tween="sine" easing="out"/>
@@ -494,12 +515,12 @@
 
 	<include name="ListFocusAnimation">
 	  <animation type="Focus" reversible="false" condition="Container(50).OnPrevious | Container(58).OnPrevious">
-			  <effect type="fade" start="20" end="100" time="400"/>
-				<effect type="slide" start="0,45" end="0,0" time="400" tween="back" easing="out"/>
+			  <effect type="fade" start="20" end="100" time="250" tween="back" easing="out"/>
+				<effect type="slide" start="0,30" end="0,0" time="250" tween="back" easing="out"/>
     </animation>
 	  <animation type="Focus" reversible="false" condition="Container(50).OnNext | Container(58).OnNext">
-			  <effect type="fade" start="20" end="100" time="400"/>
-				<effect type="slide" start="0,-45" end="0,0" time="400" tween="back" easing="out"/>
+			  <effect type="fade" start="20" end="100" time="250" tween="back" easing="out"/>
+				<effect type="slide" start="0,-30" end="0,0" time="250" tween="back" easing="out"/>
     </animation>
 	</include>
 
@@ -644,18 +665,18 @@
 	</include>
 	<include name="BackgroundFade">
     <animation type="Visible" reversible="false">
-      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="inout" />
+      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
     </animation>
     <animation type="Hidden" reversible="false">
-      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
+      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" />
     </animation>
 	</include>
 	<include name="FanartFade">
-		<animation effect="fade" time="450">WindowOpen</animation>
-		<animation effect="fade" time="450" delay="250" condition="Window.Previous(Home)">WindowClose</animation>
-		<animation effect="fade" time="450" condition="!Window.Previous(Home)">WindowClose</animation>
-		<animation effect="fade" time="300" tween="sine" easing="inout">Visible</animation>
-		<animation effect="fade" time="300" tween="sine" easing="inout">Hidden</animation>
+		<animation effect="fade" time="450" tween="sine" easing="out">WindowOpen</animation>
+		<animation effect="fade" time="450" tween="sine" easing="in" condition="Window.Previous(Home)" delay="250">WindowClose</animation>
+		<animation effect="fade" time="450" tween="sine" easing="in" condition="!Window.Previous(Home)">WindowClose</animation>
+		<animation effect="fade" time="300" tween="sine" easing="out">Visible</animation>
+		<animation effect="fade" time="300" tween="sine" easing="in">Hidden</animation>	
 	</include>
 	<include name="VisibleFadeEffect">
 		<animation effect="fade" time="250">Visible</animation>

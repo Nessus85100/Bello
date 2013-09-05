@@ -291,7 +291,7 @@
 		<!-- Fetching Info  -->
 		<control type="image">
 			<include>FullscreenDimensions</include>
-		  <texture background="true">special://skin/extras/backgrounds/bg_diffuse.png</texture>
+			<texture background="true">windows/bg/bg_diffuse.png</texture>
 			<include>FanartFade</include>
 			<fadetime>300</fadetime>
       <colordiffuse>D5FFFFFF</colordiffuse>
