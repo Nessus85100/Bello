@@ -936,7 +936,7 @@
 					<width>376</width>
 					<height>366</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true"fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse_big.png">$INFO[Container(100).ListItem.Art(thumb)]</texture>
+					<texture background="true" fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse_big.png">$INFO[Container(100).ListItem.Art(thumb)]</texture>
 					<fadetime>300</fadetime>
 					<visible>Control.IsVisible(160) | Control.IsVisible(170) | Control.IsVisible(180)</visible>
 			 </control>
