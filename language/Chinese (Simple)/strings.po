@@ -284,10 +284,6 @@ msgctxt "#31118"
 msgid "Custom Button"
 msgstr "自定义按钮"
 
-msgctxt "#31119"
-msgid "Custom Home Buttons"
-msgstr "自定义主菜单按钮"
-
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
 msgstr "隐藏电影子菜单"
@@ -447,10 +443,6 @@ msgstr "我的音乐"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "新的搜索"
-
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -747,6 +739,114 @@ msgstr "更名组"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "删除组"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "更新视频资料库"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "更新音乐资料库"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "清理视频资料"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "清理音乐资料库"
+
+msgctxt "#31374"
+msgid "Quick Navigation"
+msgstr "快速浏览"
+
+msgctxt "#31375"
+msgid "Disable Quick Navigation"
+msgstr "启用快速浏览"
+
+msgctxt "#31376"
+msgid "Show Update Video Library Button"
+msgstr "显示更新视频资料库按钮"
+
+msgctxt "#31377"
+msgid "Show Update Music Library Button"
+msgstr "显示更新音乐资料库按钮"
+
+msgctxt "#31378"
+msgid "Show Clean Video Library Button"
+msgstr "显示清理视频资料库按钮"
+
+msgctxt "#31379"
+msgid "Show Clean Music Library Button"
+msgstr "显示清理音乐资料库按钮"
+
+msgctxt "#31380"
+msgid "Show Party Mode Button"
+msgstr "显示聚会模式按钮"
+
+msgctxt "#31381"
+msgid "Show Shutdown Button"
+msgstr "显示关机按钮"
+
+msgctxt "#31382"
+msgid "Show File Manager Button"
+msgstr "显示文件管理器按钮"
+
+msgctxt "#31383"
+msgid "Hide Movies Button"
+msgstr "隐藏电影按钮"
+
+msgctxt "#31384"
+msgid "Hide TV Shows Button"
+msgstr "隐藏剧集按钮"
+
+msgctxt "#31385"
+msgid "Hide Music Button"
+msgstr "隐藏音乐按钮"
+
+msgctxt "#31386"
+msgid "Hide Pictures Button"
+msgstr "隐藏图片按钮"
+
+msgctxt "#31387"
+msgid "Hide Add-ons Button"
+msgstr "隐藏扩展按钮"
+
+msgctxt "#31388"
+msgid "Hide New Movies Button"
+msgstr "隐藏新增电影按钮"
+
+msgctxt "#31389"
+msgid "Hide New TV Shows Button"
+msgstr "隐藏新增剧集按钮"
+
+msgctxt "#31390"
+msgid "Hide New Music Button"
+msgstr "隐藏新增音乐按钮"
+
+msgctxt "#31391"
+msgid "Hide Settings Button"
+msgstr "隐藏设置按钮"
+
+msgctxt "#31392"
+msgid "Show Videos Button"
+msgstr "显示视频按钮"
+
+msgctxt "#31393"
+msgid "Hide QuickNav Buttons"
+msgstr "隐藏快速浏览按钮"
+
+msgctxt "#31394"
+msgid "Show QuickNav Buttons"
+msgstr "显示快速浏览按钮"
+
+msgctxt "#31395"
+msgid "Custom QuickNav Buttons"
+msgstr "自定义快速浏览按钮"
+
+msgctxt "#31396"
+msgid "Custom Button"
+msgstr "自定义按钮"
 
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."

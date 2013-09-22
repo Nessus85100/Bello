@@ -92,6 +92,10 @@ msgctxt "#31036"
 msgid "Close"
 msgstr "閉じる"
 
+msgctxt "#31039"
+msgid "IP Address"
+msgstr "ipアドレス"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "スライド"

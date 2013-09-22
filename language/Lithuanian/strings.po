@@ -144,10 +144,6 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr "Nauja paieška"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Kraštovaizdis"
@@ -223,3 +219,19 @@ msgstr "Pervadinti grupę"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Naikinti grupę"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Atnaujinti video biblioteka"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Atnaujinti muzikos biblioteka"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Valyti video biblioteką"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Valyti muzikos biblioteką"

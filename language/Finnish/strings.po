@@ -120,6 +120,10 @@ msgctxt "#31084"
 msgid "Posters"
 msgstr "Juliste"
 
+msgctxt "#31086"
+msgid "Banner List"
+msgstr "Vaaka-ikoni"
+
 msgctxt "#31127"
 msgid "Landscape"
 msgstr "Vaakakuva"
@@ -163,6 +167,10 @@ msgstr "klo"
 msgctxt "#31229"
 msgid "Last Updated"
 msgstr "Viimeksi päivitetty"
+
+msgctxt "#31230"
+msgid "Data Provider"
+msgstr "Tietojen tarjoaja"
 
 msgctxt "#31233"
 msgid "Chance of Precipitation"

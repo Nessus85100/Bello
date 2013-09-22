@@ -284,10 +284,6 @@ msgctxt "#31118"
 msgid "Custom Button"
 msgstr "Eigener Knopf"
 
-msgctxt "#31119"
-msgid "Custom Home Buttons"
-msgstr "Eigene Home-knöpfe"
-
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
 msgstr "Film Untermenü nicht anzeigen"
@@ -447,10 +443,6 @@ msgstr "Meine Musik"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Neue Suche"
-
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -747,6 +739,22 @@ msgstr "Gruppe umbenennen"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Gruppe löschen"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Videobibliothek aktualisieren"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Musikbibliothek aktualisieren"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Videodatenbank säubern"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Musikdatenbank säubern"
 
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."

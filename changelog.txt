@@ -5,7 +5,7 @@
 • Make more text's bigger in severall parts of the skin.
 • Fixed some missing visible conditions in dialogs.
 • Fixed blue color bug in Home screen when media is playing.
-
+• Updated language files from Transifex.
 
 [B]v1.5.1[/B]
 • Added new "VideoWall Fanart" view for Movies and TV Shows.

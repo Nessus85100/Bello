@@ -284,10 +284,6 @@ msgctxt "#31118"
 msgid "Custom Button"
 msgstr "Anpassad Knapp"
 
-msgctxt "#31119"
-msgid "Custom Home Buttons"
-msgstr "Anpassade Hem Knappar"
-
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
 msgstr "Dölj undermeny för Film "
@@ -447,10 +443,6 @@ msgstr "Min Musik"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Ny sökning"
-
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -747,6 +739,22 @@ msgstr "Döp om grupp"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Ta bort grupp"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Uppdatera videobibliotek"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Uppdatera musikbibliotek"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Rensa videobibliotek"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Rensa musikbibliotek"
 
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."

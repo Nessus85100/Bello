@@ -148,10 +148,6 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "Více pozadí"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "Třídit"
-
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Na šířku"

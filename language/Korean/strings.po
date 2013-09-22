@@ -420,10 +420,6 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr "새 찾기"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
 msgstr "최근에 추가된 영화 탐색"
@@ -703,6 +699,22 @@ msgstr "그룹명 변경"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "그룹 삭제"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "비디오 라이브러리 업데이트"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "음악 라이브러리 업데이트"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "비디오 라이브러리 정리"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "음악 라이브러리 정리"
 
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."

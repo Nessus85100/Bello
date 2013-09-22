@@ -200,10 +200,6 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr "חיפוש חדש"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "לנדסקייפ"
@@ -307,3 +303,19 @@ msgstr "שנה שם קבוצה"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "מחק קבוצה"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "עדכן ספריית הוידאו"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "עדכן ספריית המוזיקה"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "נקה ספריית וידאו"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "נקה ספריית מוזיקה"

@@ -164,10 +164,6 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr "New Search"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31214"
 msgid "Airing"
 msgstr "Airing"
@@ -291,6 +287,22 @@ msgstr "Rename Group"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Delete Group"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Update Video Library"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Update Music Library"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Clean Video Library"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Clean Music Library"
 
 msgctxt "#31412"
 msgid "Configure Video Settings"

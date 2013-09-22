@@ -268,10 +268,6 @@ msgctxt "#31118"
 msgid "Custom Button"
 msgstr "Botón personalizado"
 
-msgctxt "#31119"
-msgid "Custom Home Buttons"
-msgstr "Botones de Home personalizados"
-
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
 msgstr "Ocultar submenú de Películas"
@@ -407,10 +403,6 @@ msgstr "Activar pantalla de inicio de sesión"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Nueva Búsqueda"
-
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -667,6 +659,22 @@ msgstr "Renombrar Grupo"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Borrar Grupo"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Actualizar Libreria de Video"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Actualizar Libreria de Música"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Limpiar Libreria de Video"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Limpiar Libreria de Musica"
 
 msgctxt "#31410"
 msgid "With XBMC you can have several profiles, even a logon screen for controlled access."

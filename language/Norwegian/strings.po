@@ -152,10 +152,6 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr "Nytt søk"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31215"
 msgid "Next Airs"
 msgstr "Neste på lufta"

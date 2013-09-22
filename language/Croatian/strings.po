@@ -136,10 +136,6 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr "Novo pretraživanje"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31219"
 msgid "Logo"
 msgstr "Logo"
@@ -215,3 +211,19 @@ msgstr "Preimenuj grupu"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Obriši grupu"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Ažuriraj videoteku"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Ažuriraj fonoteku"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Čisćenje videoteke"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Čisćenje fonoteke"

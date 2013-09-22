@@ -284,10 +284,6 @@ msgctxt "#31118"
 msgid "Custom Button"
 msgstr "Bottone Personalizzato"
 
-msgctxt "#31119"
-msgid "Custom Home Buttons"
-msgstr "Bottoni Schermata Principale Personalizzati"
-
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
 msgstr "Nascondi il Sottomenù Film"
@@ -447,10 +443,6 @@ msgstr "La Mia Musica"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Nuova Ricerca"
-
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -747,6 +739,114 @@ msgstr "Rinomina Gruppo"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Elimina Gruppo"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Aggiorna Libreria Video"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Aggiorna Libreria Musicale"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Pulisci Libreria Video"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Pulisci Libreria Musicale"
+
+msgctxt "#31374"
+msgid "Quick Navigation"
+msgstr "Navigazione Veloce"
+
+msgctxt "#31375"
+msgid "Disable Quick Navigation"
+msgstr "Disabilita Navigazione Veloce"
+
+msgctxt "#31376"
+msgid "Show Update Video Library Button"
+msgstr "Mostra Bottone Aggiorna Libreria Video"
+
+msgctxt "#31377"
+msgid "Show Update Music Library Button"
+msgstr "Mostra Bottone Aggiorna Libreria Musicale"
+
+msgctxt "#31378"
+msgid "Show Clean Video Library Button"
+msgstr "Mostra Bottone Pulisci Libreria Video"
+
+msgctxt "#31379"
+msgid "Show Clean Music Library Button"
+msgstr "Mostra Bottone Pulisci Libreria Audio"
+
+msgctxt "#31380"
+msgid "Show Party Mode Button"
+msgstr "Mostra Bottone Modalità Festa"
+
+msgctxt "#31381"
+msgid "Show Shutdown Button"
+msgstr "Mostra Bottone Spegnimento"
+
+msgctxt "#31382"
+msgid "Show File Manager Button"
+msgstr "Mostra Bottone Gestione File"
+
+msgctxt "#31383"
+msgid "Hide Movies Button"
+msgstr "Nascondi Bottone Film"
+
+msgctxt "#31384"
+msgid "Hide TV Shows Button"
+msgstr "Nascondi Bottone Serie TV"
+
+msgctxt "#31385"
+msgid "Hide Music Button"
+msgstr "Nascondi Bottone Musica"
+
+msgctxt "#31386"
+msgid "Hide Pictures Button"
+msgstr "Nascondi Bottone Foto"
+
+msgctxt "#31387"
+msgid "Hide Add-ons Button"
+msgstr "Nascondi Bottone Add-on"
+
+msgctxt "#31388"
+msgid "Hide New Movies Button"
+msgstr "Nascondi Bottone Nuovi Film"
+
+msgctxt "#31389"
+msgid "Hide New TV Shows Button"
+msgstr "Nascondi Bottone Nuove Serie TV"
+
+msgctxt "#31390"
+msgid "Hide New Music Button"
+msgstr "Nascondi Bottone Nuova Musica"
+
+msgctxt "#31391"
+msgid "Hide Settings Button"
+msgstr "Nascondi Bottone Impostazioni"
+
+msgctxt "#31392"
+msgid "Show Videos Button"
+msgstr "Mostra Bottone Video"
+
+msgctxt "#31393"
+msgid "Hide QuickNav Buttons"
+msgstr "Nascondi Bottone Navigazione Veloce"
+
+msgctxt "#31394"
+msgid "Show QuickNav Buttons"
+msgstr "Mostra Bottone Navigazione Veloce"
+
+msgctxt "#31395"
+msgid "Custom QuickNav Buttons"
+msgstr "Bottone Navigazione Veloce Personalizzato"
+
+msgctxt "#31396"
+msgid "Custom Button"
+msgstr "Bottone Personalizzato"
 
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."

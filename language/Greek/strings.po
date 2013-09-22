@@ -284,10 +284,6 @@ msgctxt "#31118"
 msgid "Custom Button"
 msgstr "Προσαρμοσμένο Πλήκτρο"
 
-msgctxt "#31119"
-msgid "Custom Home Buttons"
-msgstr "Προσαρμοσμένα Πλήκτρα Αρχ. Οθόνης"
-
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
 msgstr "Απόκρυψη Υπομενού Ταινιών"
@@ -447,10 +443,6 @@ msgstr "Η Μουσική Μου"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Νέα Αναζήτηση"
-
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -747,6 +739,22 @@ msgstr "Μετονομασία Γκρουπ"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Διαγραφή Γκρουπ"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Ενημέρωση Συλλογής Βίντεο"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Ενημέρωση Μουσικής Συλλογής"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Εκκαθάριση Συλλογής Βίντεο"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Εκκαθάριση Μουσικής Συλλογής"
 
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."

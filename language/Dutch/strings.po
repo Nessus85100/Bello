@@ -256,10 +256,6 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr "Nieuwe Zoekopdracht"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
 msgstr "Blader door onlangs toegevoegde speelfilms"
@@ -495,6 +491,22 @@ msgstr "Groep hernoemen"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Groep verwijderen"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Video bibliotheek bijwerken"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Muziek bibliotheek bijwerken"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Video bibliotheek opschonen"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Muziek bibliotheek opschonen"
 
 msgctxt "#31412"
 msgid "Configure Video Settings"

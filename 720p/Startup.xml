@@ -1,7 +1,5 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
-	<include>BackgroundContent</include>
-	<include>BackgroundVignette</include>
 	<allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
 	<!-- <onload>RunScript(script.grab.fanart,mode=recent,mediatype=music,refresh=5)</onload> -->
@@ -24,5 +22,7 @@
 			<texturefocus>-</texturefocus>
 			<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
 		</control>
+		<include>BackgroundContent</include>
+		<include>BackgroundVignette</include>
 	</controls>
 </window>

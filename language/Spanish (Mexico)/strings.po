@@ -199,3 +199,19 @@ msgstr "Renombrar Grupo"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Borrar Grupo"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Actualizar Biblioteca de Video"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Actualizar Biblioteca de Música"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Limpiar Biblioteca de Video"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Limpiar Biblioteca de Música"

@@ -220,10 +220,6 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr "Új keresés"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31214"
 msgid "Airing"
 msgstr "Sugárzott"
@@ -423,6 +419,22 @@ msgstr "Csoport átnevezése"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Csoport törlése"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "A videó könyvtár frissítése"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "A zene könyvtár frissítése"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Videó könyvtár tisztítása"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Zene könyvtár tisztítása"
 
 msgctxt "#31412"
 msgid "Configure Video Settings"

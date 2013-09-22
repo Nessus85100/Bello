@@ -196,10 +196,6 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr "Ný leit"
 
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
-
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Lárétt"

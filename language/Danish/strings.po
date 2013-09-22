@@ -116,6 +116,10 @@ msgctxt "#31036"
 msgid "Close"
 msgstr "Luk"
 
+msgctxt "#31039"
+msgid "IP Address"
+msgstr "IP-adresse"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Dias"
@@ -155,10 +159,6 @@ msgstr "Flere billeder"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Ny Søgning"
-
-msgctxt "#31204"
-msgid "-"
-msgstr "-"
 
 msgctxt "#31214"
 msgid "Airing"
@@ -279,6 +279,22 @@ msgstr "Omdøb Gruppe"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Slet Gruppe"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Opdater videobibliotek"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Opdater musikbibliotek"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Ryd op i videobiblioteket"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Ryd op i musikbiblioteket"
 
 msgctxt "#31412"
 msgid "Configure Video Settings"

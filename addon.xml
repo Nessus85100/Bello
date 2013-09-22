@@ -30,6 +30,7 @@
     <summary lang="ru">Обложка для XBMC</summary>
     <summary lang="sv">Ett grafiskt användargränssnitt för XBMC</summary>
     <summary lang="th">ส่วนติดต่อผู้ใช้ สำหรับศูนย์รวมสื่อ XBMC</summary>
+    <summary lang="tr">XBMC Media Center İçin Arayüz</summary>
     <summary lang="vi_VN">Giao diện cho XBMC Media Center</summary>
     <summary lang="zh">XBMC媒体中心的一个图形用户界面</summary>
     <description lang="de">Bello ist eine Benutzeroberfläche für das XBMC Media Center. Das Ziel von Bello ist es, Ihr Unterhaltungserlebnis mit seinem schnellen, einzigartigen und einheitlichen Oberfläche zusammen mit den neusten XBMC Features zu maximieren.</description>
@@ -59,6 +60,7 @@
     <disclaimer lang="ru">Использование мыши не поддерживается</disclaimer>
     <disclaimer lang="sv">Att använda musen fungerar inte</disclaimer>
     <disclaimer lang="th">ไม่รองรับการใช้งานด้วยเมาท์</disclaimer>
+    <disclaimer lang="tr">Fare kullanımı desteklenmiyor</disclaimer>
     <disclaimer lang="vi_VN">Sử dụng chuột không được hỗ trợ</disclaimer>
     <disclaimer lang="zh">不支持使用鼠标</disclaimer>
     <platform>all</platform>
