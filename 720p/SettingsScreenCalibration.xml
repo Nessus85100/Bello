@@ -11,8 +11,7 @@
 			<description>Overlay</description>
 	    <include>FullscreenDimensions</include>
 			<texture background="true">windows/bg/bg_diffuse.png</texture>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>FanartFade</include>
+			<include>OpenCloseFadeEffect</include>
 			<visible>Player.HasVideo</visible>
 		</control>
 
@@ -21,8 +20,7 @@
 	    <include>FullscreenDimensions</include>
 		  <texture background="true">dialogs/calibrate/720grid.png</texture>
 		  <colordiffuse>AA666666</colordiffuse>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>BackgroundFade</include>
+		  <include>OpenCloseFadeEffect</include>
 			<visible>!Player.HasVideo</visible>
 		</control>
 		<control type="group.">
@@ -31,7 +29,6 @@
 		</control>
 
     <control type="group">
-		  <include>OpenFadeEffect</include>
 			<control type="mover" id="8">
 				<description>top left mover</description>
 				<posx>0</posx>
@@ -40,7 +37,7 @@
 				<height>128</height>
 				<texturefocus>dialogs/calibrate/calibrate_top_fo.png</texturefocus>
 				<texturenofocus>dialogs/calibrate/calibrate_top_nf.png</texturenofocus>
-		    <include>OpenFadeEffect</include>
+		    <include>OpenCloseFadeEffect</include>
 			</control>
 			<control type="mover" id="9">
 				<description>right bottom mover</description>
@@ -50,7 +47,7 @@
 				<height>128</height>
 				<texturefocus>dialogs/calibrate/calibrate_bottom_fo.png</texturefocus>
 				<texturenofocus>dialogs/calibrate/calibrate_bottom_nf.png</texturenofocus>
-		    <include>OpenFadeEffect</include>
+		    <include>OpenCloseFadeEffect</include>
 			</control>
 			<control type="mover" id="10">
 				<description>subtitle position mover</description>
@@ -60,8 +57,7 @@
 				<height>128</height>
 				<texturefocus>dialogs/calibrate/calibrate_subtitles_fo.png</texturefocus>
 				<texturenofocus>dialogs/calibrate/calibrate_subtitles_nf.png</texturenofocus>
-				<texturenofocus>-</texturenofocus>
-		    <include>OpenFadeEffect</include>
+		    <include>OpenCloseFadeEffect</include>
 			</control>
 			<control type="resize" id="11">
 				<description>pixel aspect ratio box</description>
@@ -71,13 +67,13 @@
 				<height>256</height>
 				<texturefocus>dialogs/calibrate/calibrate_ratio_fo.png</texturefocus>
 				<texturenofocus>dialogs/calibrate/calibrate_ratio_nf.png</texturenofocus>
-		    <include>OpenFadeEffect</include>
+		    <include>OpenCloseFadeEffect</include>
 			</control>
 		</control>			
 		<control type="group">
 			<posx>20</posx>
 			<posy>80</posy>
-	    <include>OpenFadeEffect</include>
+	    <include>OpenCloseFadeEffect</include>
 			<control type="label" id="2">
 				<description>coordinates label</description>
 				<posx>0</posx>

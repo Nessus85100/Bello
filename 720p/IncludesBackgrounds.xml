@@ -15,9 +15,12 @@
 	
 	<include name="BackgroundContent">
 	 <control type="image">
-		<include>FullscreenDimensions</include>
-    <texture background="true">windows/bg/black.jpg</texture>
-		<visible>Player.HasAudio</visible>
+		 <posx>-10</posx>
+		 <posy>-10</posy>
+		 <width>1300</width>
+		 <height>740</height>
+		 <aspectratio>stretch</aspectratio>
+     <texture background="true">windows/bg/black.jpg</texture>
 	 </control>
 	 <control type="group">
 	  <include>BackgroundFade</include>
@@ -217,7 +220,6 @@
 			<include>FullscreenDimensions</include>
 			<texture background="true">windows/bg/bg_vignette.png</texture>
 			<include>BackgroundFade</include>
-			<fadetime>FanartCrossfadeTime</fadetime>
 <!--	<colordiffuse>FFCDCDCD</colordiffuse>
       <colordiffuse>D5FFFFFF</colordiffuse> -->
 		</control>
@@ -225,8 +227,7 @@
 			<include>FullscreenDimensions</include>
 			<texture background="true">windows/bg/bg_diffuse.png</texture>
 			<include>FanartFade</include>
-			<fadetime>FanartCrossfadeTime</fadetime>
-      <colordiffuse>D5FFFFFF</colordiffuse>
+      <colordiffuse>ddFFFFFF</colordiffuse>
 			<visible>[Control.IsVisible(50) + !Window.IsActive(musicplaylisteditor)] | Control.IsVisible(56) | Control.IsVisible(560) | Control.IsVisible(561) | Control.IsVisible(57) | [Window.IsActive(contextmenu) + ![Window.IsActive(favourites) | Window.IsActive(locksettings) | Window.IsActive(profiles) | Window.IsActive(musicplaylisteditor) | Window.IsActive(filemanager)]] | Window.IsActive(shutdownmenu) | Window.IsActive(movieinformation) | Window.IsActive(musicinformation) | Window.IsActive(songinformation) | Window.IsActive(addoninformation)</visible>
 	  </control>
 	</include>

@@ -59,6 +59,7 @@
 				<textoffsety>5</textoffsety>
 				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
 				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+        <include>OnClickDialogsClose</include>
 				<onclick>ActivateWindow(AppearanceSettings)</onclick>
 				<label>$LOCALIZE[5]</label>
         <visible>System.Loggedon</visible>
@@ -79,6 +80,7 @@
 				<textoffsety>5</textoffsety>
 				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
 				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+        <include>OnClickDialogsClose</include>
 				<onclick>ActivateWindow(SystemInfo)</onclick>
 				<label>$LOCALIZE[130]</label>
         <visible>System.Loggedon</visible>
@@ -99,6 +101,7 @@
 				<textoffsety>5</textoffsety>
 				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
 				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+        <include>OnClickDialogsClose</include>
 				<onclick>ActivateWindow(FileManager)</onclick>
 				<label>$LOCALIZE[31016]</label>
         <visible>System.Loggedon</visible>
@@ -118,6 +121,7 @@
 				<textoffsety>5</textoffsety>
 				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
 				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+        <include>OnClickDialogsClose</include>
 				<onclick>XBMC.Powerdown()</onclick>
 				<visible>System.CanPowerDown</visible>
 				<label>$LOCALIZE[13016]</label>
@@ -285,6 +289,7 @@
 				<textoffsety>5</textoffsety>
 				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
 				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+        <include>OnClickDialogsClose</include>
 				<onclick>ActivateWindow(Profiles)</onclick>
 				<label>$LOCALIZE[13200]</label>
         <visible>System.Loggedon</visible>

@@ -8,7 +8,7 @@
 	 <control type="group">
     <include>Window_OpenClose_Animation</include>
     <include>DialogZoomInOutAnimation</include>
-		<visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(numericinput) + !Window.IsActive(pvrchannelmanager) + !Window.IsActive(pvrgroupmanager)</visible>
+		<visible>!Window.IsActive(pvrchannelmanager) + !Window.IsActive(pvrgroupmanager)</visible>
 		
 	  <control type="group">
 	    <include>Window_OpenClose_Animation</include>

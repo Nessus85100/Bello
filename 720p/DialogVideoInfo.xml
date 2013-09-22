@@ -55,7 +55,7 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>38</posy>
+					<posy>40</posy>
 					<width>48</width>
 					<height>20</height>
 					<align>left</align>
@@ -66,7 +66,7 @@
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>38</posy>
+					<posy>40</posy>
 					<width>48</width>
 					<height>20</height>
 					<align>left</align>
@@ -78,10 +78,10 @@
 				<control type="label">
 					<description>Under Title</description>
 					<posx>55</posx>
-					<posy>32</posy>
+					<posy>34</posy>
 					<width>870</width>
 					<height>30</height>
-					<font>FontSize_20</font>
+					<font>FontSize_22</font>
 					<label>$VAR[DialogsInfo]</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -91,7 +91,7 @@
 			  <control type="group">
 					<visible>[!Container.Content(TVShows) + !Container.Content(MusicVideos)]</visible>
 				  <posx>0</posx>
-					<posy>70</posy>
+					<posy>75</posy>
 					<!-- Director label -->
 					<control type="grouplist">
 						<posx>0</posx>
@@ -102,7 +102,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[20339]: </label>
@@ -111,7 +111,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label fallback="195">$INFO[ListItem.Director]</label>
@@ -120,7 +120,7 @@
 						<control type="label">
 							<textcolor>blue</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[31019] $INFO[ListItem.Director]</label>
@@ -152,14 +152,14 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<label>$LOCALIZE[20417]: </label>
 						</control>
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label fallback="195">$INFO[ListItem.Writer]</label>
@@ -175,7 +175,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[572]: </label>
@@ -183,7 +183,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label fallback="195">$INFO[ListItem.Studio]</label>
@@ -199,7 +199,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[2050]: </label>
@@ -207,7 +207,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 						  <label>$INFO[ListItem.Duration]</label>
@@ -217,7 +217,7 @@
 			      <control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
@@ -235,7 +235,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="795">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[15311] </label>
@@ -243,7 +243,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="795">auto</width>
 							<height>30</height>
 							<label fallback="195">$INFO[ListItem.FilenameAndPath]</label>
@@ -259,7 +259,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[563]: </label>
@@ -267,7 +267,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="595">auto</width>
 							<height>30</height>
 							<label fallback="195">$INFO[ListItem.RatingAndVotes]</label>
@@ -277,7 +277,7 @@
 				<control type="group">
 					<visible>Container.Content(TVShows)</visible>
 				  <posx>0</posx>
-					<posy>70</posy>
+					<posy>75</posy>
 					<!-- Status label -->
 					<control type="grouplist">
 							<posx>0</posx>
@@ -288,7 +288,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[126]: </label>
@@ -296,7 +296,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 				      <label fallback="195">$INFO[Window(Home).Property(NextAired.Status)]</label>
@@ -312,14 +312,14 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<label>$LOCALIZE[20360]: </label>
 						</control>
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 							<label fallback="195">$INFO[ListItem.Episode] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])</label>
@@ -335,7 +335,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[31004]: </label>
@@ -343,7 +343,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 						  <label>$INFO[ListItem.Premiered]</label>
@@ -359,7 +359,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[572]: </label>
@@ -367,7 +367,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 							<label fallback="195">$INFO[ListItem.Studio]</label>
@@ -383,7 +383,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[15311] </label>
@@ -391,7 +391,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 							<label fallback="195">$INFO[ListItem.FilenameAndPath]</label>
@@ -407,7 +407,7 @@
 						<control type="label">
 							<textcolor>white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 							<label>$LOCALIZE[563]: </label>
@@ -415,7 +415,7 @@
 						<control type="label">
 							<textcolor>99white</textcolor>
 							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_20</font>
+							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
 							<label fallback="195">$INFO[ListItem.RatingAndVotes]</label>
@@ -429,10 +429,10 @@
 					<control type="textbox">
 						<description>Description Value</description>
 						<posx>0</posx>
-						<posy>210</posy>
+						<posy>215</posy>
 						<width>850</width>
-						<height>195</height>
-						<font>FontSize_20</font>
+						<height>185</height>
+						<font>FontSize_22</font>
 						<align>justify</align>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -443,10 +443,10 @@
 					<control type="textbox">
 						<description>Description Value</description>
 						<posx>0</posx>
-						<posy>240</posy>
+						<posy>250</posy>
 						<width>850</width>
-						<height>170</height>
-						<font>FontSize_20</font>
+						<height>155</height>
+						<font>FontSize_22</font>
 						<align>justify</align>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -460,8 +460,8 @@
 						<posy>410</posy>
 						<width>850</width>
 						<height>30</height>
-						<font>FontSize_20</font>
-						<label>$INFO[ListItem.mpaa,* ]</label>
+						<font>FontSize_22</font>
+						<label>$INFO[ListItem.MPAA,* ]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -474,8 +474,8 @@
 						<posy>410</posy>
 						<width>850</width>
 						<height>30</height>
-						<font>FontSize_20</font>
-						<label>$INFO[ListItem.mpaa,* Rated ]</label>
+						<font>FontSize_22</font>
+						<label>$INFO[ListItem.MPAA,* $LOCALIZE[20074]: ]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -489,7 +489,7 @@
 			<control type="grouplist">
 				<description>Media Flaggs</description>
 				<posx>375</posx>
-				<posy>358</posy>
+				<posy>367</posy>
 				<width>600</width>
 				<align>left</align>
 				<itemgap>15</itemgap>
@@ -584,7 +584,7 @@
 						<posy>185</posy>
 						<width>670</width>
 						<height>40</height>
-						<font>FontSize_20</font>
+						<font>FontSize_22</font>
 						<align>left</align>
 						<aligny>center</aligny>
 				    <textcolor>white</textcolor>

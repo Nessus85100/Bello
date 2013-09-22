@@ -415,19 +415,20 @@
 	    <include>DialogZoomInOutAnimation</include>
 	    <include>ThumbnailsAnimations</include>
 			<control type="panel" id="56">
-				<posx>25</posx>
-				<posy>100</posy>
-				<width>1228</width>
-				<height>720</height>
+				<posx>26</posx>
+				<posy>90</posy>
+				<width>1227</width>
+				<height>710</height>
 				<onleft>56</onleft>
 				<onright>56</onright>
-				<onup>9000</onup>
+				<onup>9111</onup>
 				<ondown>60</ondown>
 	      <orientation>horizontal</orientation>
-				<viewtype label="31085">icon</viewtype>
+				<viewtype label="31085">list</viewtype>
 				<pagecontrol>60</pagecontrol>
-	      <scrolltime tween="Cubic" easing="out">350</scrolltime>
+        <scrolltime tween="Quadratic" easing="out">300</scrolltime>
 				<preloaditems>2</preloaditems>
+			  <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)]</visible>
 				<itemlayout height="265" width="244">
 					<control type="image">
 						<posx>-2</posx>
@@ -437,20 +438,20 @@
 						<texture border="25">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<posx>25</posx>
-						<posy>24</posy>
-						<width>206</width>
-						<height>200</height>
+						<posx>26</posx>
+						<posy>27</posy>
+						<width>200</width>
+						<height>194</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
-						<posx>25</posx>
-						<posy>24</posy>
-						<width>206</width>
-						<height>200</height>
+						<posx>26</posx>
+						<posy>27</posy>
+						<width>200</width>
+						<height>194</height>
 					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<bordersize>6</bordersize>
@@ -479,20 +480,20 @@
 						<texture border="25">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<posx>25</posx>
-						<posy>24</posy>
-						<width>206</width>
-						<height>200</height>
+						<posx>26</posx>
+						<posy>27</posy>
+						<width>200</width>
+						<height>194</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
-						<posx>25</posx>
-						<posy>24</posy>
-						<width>206</width>
-						<height>200</height>
+						<posx>26</posx>
+						<posy>27</posy>
+						<width>200</width>
+						<height>194</height>
 					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<bordersize>6</bordersize>
@@ -518,20 +519,15 @@
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="25">views/thumbnails/focus.png</texture>
             <animation type="Focus">
-              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
-            </animation>
-            <animation type="Unfocus">
-              <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-              <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
+              <effect type="zoom" start="95" end="100" time="150" tween="sine" easing="inout" center="auto" />
             </animation>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>45</posx>
-				<posy>635</posy>
-				<width>1195</width>
+				<posx>40</posx>
+				<posy>625</posy>
+				<width>1200</width>
 				<height>11</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>

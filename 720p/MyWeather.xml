@@ -294,7 +294,7 @@
 			<texture background="true">windows/bg/bg_diffuse.png</texture>
 			<include>FanartFade</include>
 			<fadetime>300</fadetime>
-      <colordiffuse>D5FFFFFF</colordiffuse>
+      <colordiffuse>ddFFFFFF</colordiffuse>
 	    <visible>IsEmpty(Window.Property(Current.Condition))</visible>
 	  </control>
 		<control type="label">

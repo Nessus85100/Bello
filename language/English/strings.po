@@ -547,7 +547,7 @@ msgid "Last Aired"
 msgstr ""
 
 msgctxt "#31217"
-msgid "Preview Thumb"
+msgid "Wide Thumb"
 msgstr ""
 
 msgctxt "#31218"

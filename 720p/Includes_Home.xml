@@ -250,24 +250,33 @@
 				<posy>520</posy>
 				<visible>Player.HasAudio + !Skin.HasSetting(ShowHomeScreenNPMusic) + !Window.IsVisible(script-globalsearch-main.xml)</visible>
 		    <animation type="WindowOpen">
-		        <effect type="slide" start="-150,0" end="0,0" time="750" delay="0" tween="sine" easing="out" />
-		        <effect type="fade" start="0" end="100" time="550" delay="0" tween="sine" easing="out" />
+		        <effect type="slide" start="-150,0" end="0,0" time="450" delay="0" tween="cubic" easing="out" />
+		        <effect type="fade" start="0" end="100" time="250" delay="0" tween="cubic" easing="out" />
 		    </animation>
 		    <animation type="WindowClose">
-		        <effect type="slide" start="0,0" end="-200,0" time="900" delay="200" tween="sine" easing="out" />
-		        <effect type="fade" start="100" end="0" time="550" delay="200" tween="sine" easing="out" />
+		        <effect type="slide" start="0,0" end="-150,0" time="450" delay="250" tween="cubic" easing="out" />
+		        <effect type="fade" start="100" end="0" time="250" delay="250" tween="cubic" easing="out" />
 		    </animation>
 		    <animation type="Visible">
-		        <effect type="slide" start="-150,0" end="0,0" time="750" delay="500" tween="sine" easing="out" />
-		        <effect type="fade" start="0" end="100" time="550" delay="500" tween="sine" easing="out" />
+		        <effect type="slide" start="-150,0" end="0,0" time="450" delay="0" tween="cubic" easing="out" />
+		        <effect type="fade" start="0" end="100" time="250" delay="0" tween="cubic" easing="out" />
 		    </animation>
 		    <animation type="Hidden">
-		        <effect type="slide" start="0,0" end="-200,0" time="300" delay="0" tween="sine" easing="out" />
-		        <effect type="fade" start="100" end="0" time="200" delay="0" tween="sine" easing="out" />
+		        <effect type="slide" start="0,0" end="-150,0" time="450" delay="250" tween="cubic" easing="out" />
+		        <effect type="fade" start="100" end="0" time="250" delay="250" tween="cubic" easing="out" />
 		    </animation>
 				<!-- Music Cover -->
 				<control type="group">
-					 <animation effect="slide" start="0,0" end="-210,0" time="450" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
+					 <animation effect="slide" start="0,0" end="-210,0" time="300" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
+					 <control type="image">
+						 <posx>-130</posx>
+						 <posy>-130</posy>
+						 <width>400</width>
+						 <height>400</height>
+						 <aspectratio align="center" aligny="center">stretch</aspectratio>
+				     <texture background="true">views/list/shine.png</texture>
+				     <visible>![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)]</visible>
+					 </control>
 					 <control type="label">
 						 <description>NP label</description>
 						 <posx>-37</posx>
@@ -279,16 +288,8 @@
 						 <aligny>left</aligny>
 						 <font>FontSize_22</font>
 						 <textcolor>purple</textcolor>
-						 <shadowcolor>99000000</shadowcolor>
+						 <shadowcolor>77000000</shadowcolor>
 						 <angle>90</angle>
-					 </control>
-					 <control type="image">
-						 <posx>-130</posx>
-						 <posy>-130</posy>
-						 <width>450</width>
-						 <height>450</height>
-						 <aspectratio align="center" aligny="center">stretch</aspectratio>
-				     <texture background="true">views/list/shine.png</texture>
 					 </control>
 		       <control type="image">
 		         <posx>4</posx>
@@ -336,7 +337,6 @@
 							<texture background="true" diffuse="thumbs/music_diffuse.png">osd/paused-overlay.png</texture>
 							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<visible>Player.Paused</visible>
-							<include>VisibleFadeEffect</include>
 							<animation type="conditional" condition="Player.Paused" reversible="true">
 								<effect type="fade" start="0" end="50" time="300" />
 							</animation>
@@ -350,7 +350,6 @@
 							<texture background="true" diffuse="thumbs/music_diffuse.png">osd/ff-overlay.png</texture>
 							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<visible>Player.Forwarding</visible>
-							<include>VisibleFadeEffect</include>
 							<animation type="conditional" condition="Player.Forwarding" reversible="true">
 								<effect type="fade" start="0" end="50" time="300" />
 							</animation>
@@ -364,7 +363,6 @@
 							<texture background="true" diffuse="thumbs/music_diffuse.png">osd/rw-overlay.png</texture>
 							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<visible>Player.Rewinding</visible>
-							<include>VisibleFadeEffect</include>
 							<animation type="conditional" condition="Player.Rewinding" reversible="true">
 								<effect type="fade" start="0" end="50" time="300" />
 							</animation>
@@ -376,7 +374,7 @@
 					<posx>173</posx>
 		      <include>KaiToastSlideAnimations</include>
 		      <include>ScanSlideAnimations</include>
-					<animation effect="slide" start="0,0" end="-180,0" time="450" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-170,0" time="300" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 					<control type="label">
 						<description>Title label</description>
 						<posx>0</posx>
@@ -388,7 +386,7 @@
 						<aligny>center</aligny>
 						<font>FontSize_36</font>
 						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Album Label</description>
@@ -399,9 +397,9 @@
 						<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_18</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<font>NotificationsFont</font>
+						<textcolor>99white</textcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Time Label</description>
@@ -412,9 +410,9 @@
 						<label>$INFO[Player.Time(mm:ss)]$INFO[Player.Duration,[COLOR=purple] / [/COLOR]]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_18</font>
+						<font>NotificationsFont</font>
 						<textcolor>purple</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 				</control>
 		  </control>
@@ -435,19 +433,23 @@
 		        <effect type="slide" start="-150,0" end="0,0" time="450" delay="0" tween="cubic" easing="out" />
 		        <effect type="fade" start="0" end="100" time="250" delay="0" tween="cubic" easing="out" />
 		    </animation>
-	
+		    <animation type="Hidden">
+		        <effect type="slide" start="0,0" end="-150,0" time="450" delay="250" tween="cubic" easing="out" />
+		        <effect type="fade" start="100" end="0" time="250" delay="250" tween="cubic" easing="out" />
+		    </animation>
 		    <!-- Movies & Episodes Cover -->
 			  <control type="group">
 				 <posy>-25</posy>
 				 <visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
-				 <animation effect="slide" start="0,0" end="-180,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
+				 <animation effect="slide" start="0,0" end="-180,0" time="300" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 				 <control type="image">
 					 <posx>-130</posx>
 					 <posy>-130</posy>
-					 <width>450</width>
-					 <height>450</height>
+					 <width>400</width>
+					 <height>400</height>
 					 <aspectratio align="center" aligny="center">stretch</aspectratio>
 				   <texture background="true">views/list/shine.png</texture>
+				   <visible>![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)]</visible>
 				 </control>
 				 <control type="label">
 					 <description>NP label</description>
@@ -460,7 +462,7 @@
 					 <aligny>left</aligny>
 					 <font>FontSize_22</font>
 					 <textcolor>purple</textcolor>
-					 <shadowcolor>99000000</shadowcolor>
+					 <shadowcolor>77000000</shadowcolor>
 					 <angle>90</angle>
 				 </control>
 					<control type="image">
@@ -510,7 +512,6 @@
 						<texture background="true" diffuse="thumbs/poster_diffuse.png">osd/paused-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Paused</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Paused" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
@@ -524,7 +525,6 @@
 						<texture background="true" diffuse="thumbs/poster_diffuse.png">osd/ff-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Forwarding</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Forwarding" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
@@ -538,7 +538,6 @@
 						<texture background="true" diffuse="thumbs/poster_diffuse.png">osd/rw-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Rewinding</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Rewinding" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
@@ -548,14 +547,15 @@
 		    <!-- Videos Cover -->
 			  <control type="group">
 				 <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
-				 <animation effect="slide" start="0,0" end="-310,0" time="500" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
+				 <animation effect="slide" start="0,0" end="-310,0" time="320" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 				 <control type="image">
 					 <posx>-190</posx>
 					 <posy>-140</posy>
-					 <width>660</width>
-					 <height>450</height>
+					 <width>610</width>
+					 <height>400</height>
 					 <aspectratio align="center" aligny="center">stretch</aspectratio>
 				   <texture background="true">views/list/shine.png</texture>
+				   <visible>![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)]</visible>
 				 </control>
 				 <control type="label">
 					 <description>NP label</description>
@@ -568,7 +568,7 @@
 					 <aligny>left</aligny>
 					 <font>FontSize_22</font>
 					 <textcolor>purple</textcolor>
-					 <shadowcolor>99000000</shadowcolor>
+					 <shadowcolor>77000000</shadowcolor>
 					 <angle>90</angle>
 				 </control>
 					<control type="image">
@@ -617,7 +617,6 @@
 						<texture background="true" diffuse="thumbs/video_diffuse.png">osd/paused-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Paused</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Paused" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
@@ -631,7 +630,6 @@
 						<texture background="true" diffuse="thumbs/video_diffuse.png">osd/ff-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Forwarding</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Forwarding" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
@@ -645,7 +643,6 @@
 						<texture background="true" diffuse="thumbs/video_diffuse.png">osd/rw-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Rewinding</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Rewinding" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
@@ -660,7 +657,7 @@
 					<visible>VideoPlayer.Content(Movies)</visible>
 		      <include>KaiToastSlideAnimations</include>
 		      <include>ScanSlideAnimations</include>
-					<animation effect="slide" start="0,0" end="-150,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-140,0" time="300" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 					<control type="label">
 						<description>Title label</description>
 						<posx>0</posx>
@@ -672,7 +669,7 @@
 						<aligny>center</aligny>
 						<font>FontSize_36</font>
 						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Genre label</description>
@@ -683,9 +680,9 @@
 						<label>$INFO[VideoPlayer.Genre]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_20</font>
+						<font>NotificationsFont</font>
 						<textcolor>99white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Time Label</description>
@@ -696,9 +693,9 @@
 						<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_20</font>
+						<font>NotificationsFont</font>
 						<textcolor>purple</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 				</control>
 	
@@ -709,7 +706,7 @@
 					<visible>VideoPlayer.Content(Episodes)</visible>
 		      <include>KaiToastSlideAnimations</include>
 		      <include>ScanSlideAnimations</include>
-					<animation effect="slide" start="0,0" end="-150,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-140,0" time="300" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 					<control type="label">
 						<description>Title label</description>
 						<posx>0</posx>
@@ -721,7 +718,7 @@
 						<aligny>center</aligny>
 						<font>FontSize_36</font>
 						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<description>TV Show Season Ep Label</description>
@@ -732,9 +729,9 @@
 						<label>$INFO[VideoPlayer.TVShowTitle] • $LOCALIZE[20373] $INFO[VideoPlayer.Season] • $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_20</font>
+						<font>NotificationsFont</font>
 						<textcolor>99white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Time Label</description>
@@ -745,9 +742,9 @@
 						<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_20</font>
+						<font>NotificationsFont</font>
 						<textcolor>purple</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 				</control>
 	
@@ -758,7 +755,7 @@
 		      <include>KaiToastSlideAnimations</include>
 		      <include>ScanSlideAnimations</include>
 				  <visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]</visible>
-					<animation effect="slide" start="0,0" end="-150,0" time="400" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-140,0" time="300" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 					<control type="label">
 						<description>Title label</description>
 						<posx>0</posx>
@@ -770,7 +767,7 @@
 						<aligny>center</aligny>
 						<font>FontSize_36</font>
 						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Genre label</description>
@@ -781,9 +778,9 @@
 						<label>$INFO[VideoPlayer.Genre]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_20</font>
+						<font>NotificationsFont</font>
 						<textcolor>99white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Time Label</description>
@@ -794,9 +791,9 @@
 						<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_20</font>
+						<font>NotificationsFont</font>
 						<textcolor>purple</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 				</control>
 	
@@ -807,7 +804,7 @@
 		      <include>KaiToastSlideAnimations</include>
 		      <include>ScanSlideAnimations</include>
 				  <visible>VideoPlayer.Content(LiveTV)</visible>
-					<animation effect="slide" start="0,0" end="-280,0" time="500" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-270,0" time="300" reversible="true" tween="sine" easing="inout" condition="Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(Favourites)">Conditional</animation>
 					<control type="grouplist" id="1">
 						<posx>0</posx>
 						<posy>53</posy>
@@ -816,7 +813,6 @@
 						<itemgap>10</itemgap>
 						<align>left</align>
 						<orientation>horizontal</orientation>
-					  <include>OSDSlideAnimations</include>
 						<control type="label" id="1">
 						  <include>TopBigLabel</include>
 						  <label>$INFO[VideoPlayer.ChannelNumber,,. ]$INFO[VideoPlayer.ChannelName]</label>
@@ -838,7 +834,7 @@
 						<aligny>center</aligny>
 						<font>FontSize_20</font>
 						<textcolor>99white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Time Label</description>
@@ -851,7 +847,7 @@
 						<aligny>center</aligny>
 						<font>FontSize_20</font>
 						<textcolor>purple</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 				</control>
 		  </control>

@@ -55,12 +55,12 @@
         <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
      </animation>
      <animation type="WindowClose" reversible="true">
-        <effect type="fade" start="100" end="0" time="250" delay="250" tween="sine" easing="inout" />
-        <effect type="slide" start="0,0" end="0,-55" time="300" delay="250" tween="sine" easing="inout" />
+        <effect type="fade" start="100" end="0" time="300" delay="250" tween="sine" easing="inout" />
+        <effect type="slide" start="0,0" end="0,-55" time="350" delay="250" tween="sine" easing="inout" />
      </animation>
      <animation type="Visible" reversible="true">
-        <effect type="fade" start="0" end="100" time="350" delay="150" tween="sine" easing="in"  />
-        <effect type="slide" start="0,55" end="0,0" time="400" delay="150" tween="cubic" easing="out" />
+        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+        <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
      </animation>
      <animation type="Hidden" reversible="true">
         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
@@ -201,9 +201,15 @@
 	  </animation>
 	</include>
 
-  <include name="GlobalSearchFocusAnimations">
-    <animation effect="slide" start="0,75" end="0,0" time="450" reversible="false" tween="back" easing="out" condition="Container(111).OnPrevious | Container(121).OnPrevious | Container(131).OnPrevious | Container(141).OnPrevious | Container(151).OnPrevious | Container(161).OnPrevious | Container(171).OnPrevious | Container(181).OnPrevious">Focus</animation>
-    <animation effect="slide" start="0,-75" end="0,0" time="450" reversible="false" tween="back" easing="out" condition="Container(111).OnNext | Container(121).OnNext | Container(131).OnNext | Container(141).OnNext | Container(151).OnNext | Container(161).OnNext | Container(171).OnNext | Container(181).OnNext">Focus</animation>
+  <include name="BannerListFocusAnimation">
+    <animation type="Focus" reversible="false" condition="Container(57).OnNext | Container(111).OnNext | Container(121).OnNext | Container(131).OnNext | Container(141).OnNext | Container(151).OnNext | Container(161).OnNext | Container(171).OnNext | Container(181).OnNext">
+      <effect type="slide" start="0,35" end="0,0" time="450" tween="circle" easing="out" />
+      <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+    </animation>
+    <animation type="Focus" reversible="false" condition="Container(57).OnPrevious | Container(111).OnPrevious | Container(121).OnPrevious | Container(131).OnPrevious | Container(141).OnPrevious | Container(151).OnPrevious | Container(161).OnPrevious | Container(171).OnPrevious | Container(181).OnPrevious">
+      <effect type="slide" start="0,-35" end="0,0" time="450" tween="circle" easing="out" />
+      <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
+    </animation>
   </include>
 
 	<include name="SettingsSlideAnimations">
@@ -664,19 +670,14 @@
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
 	</include>
 	<include name="BackgroundFade">
-    <animation type="Visible" reversible="false">
-      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
-    </animation>
-    <animation type="Hidden" reversible="false">
-      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" />
-    </animation>
+		<animation effect="fade" time="300" tween="sine" easing="out" reversible="false">Visible</animation>
+		<animation effect="fade" time="300" tween="sine" easing="in" reversible="false">Hidden</animation>	
 	</include>
 	<include name="FanartFade">
-		<animation effect="fade" time="450" tween="sine" easing="out">WindowOpen</animation>
-		<animation effect="fade" time="450" tween="sine" easing="in" condition="Window.Previous(Home)" delay="250">WindowClose</animation>
-		<animation effect="fade" time="450" tween="sine" easing="in" condition="!Window.Previous(Home)">WindowClose</animation>
-		<animation effect="fade" time="300" tween="sine" easing="out">Visible</animation>
-		<animation effect="fade" time="300" tween="sine" easing="in">Hidden</animation>	
+		<animation effect="fade" time="450" tween="sine" easing="out" reversible="false">WindowOpen</animation>
+		<animation effect="fade" time="450" tween="sine" easing="in" reversible="false">WindowClose</animation>
+		<animation effect="fade" time="300" tween="sine" easing="out" reversible="false">Visible</animation>
+		<animation effect="fade" time="300" tween="sine" easing="in" reversible="false">Hidden</animation>	
 	</include>
 	<include name="VisibleFadeEffect">
 		<animation effect="fade" time="250">Visible</animation>
@@ -690,7 +691,7 @@
 		<animation effect="fade" time="170">Visible</animation>
 		<animation effect="fade" time="170">Hidden</animation>
 	</include>
-	<include name="OpenFadeEffect">
+	<include name="OpenCloseFadeEffect">
 		<animation effect="fade" time="300">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
 	</include>

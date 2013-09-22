@@ -106,7 +106,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Addon.Creator)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scrollspeed>30</scrollspeed>
@@ -131,7 +131,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Addon.Type)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scrollspeed>30</scrollspeed>
@@ -156,7 +156,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Addon.ID)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scrollspeed>30</scrollspeed>
@@ -183,7 +183,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Artist_Formed)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -202,7 +202,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Album_Type)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -221,7 +221,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Genre]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -248,7 +248,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Artist_YearsActive)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -267,7 +267,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Album_Mood)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -286,7 +286,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">#0$INFO[ListItem.TrackNumber]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -297,7 +297,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">#$INFO[ListItem.TrackNumber]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -325,7 +325,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Artist_Instrument)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -344,7 +344,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.Property(Album_Label)]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -363,7 +363,7 @@
 						<height min="0" max="13">auto</height>
 						<width>180</width>
 						<label fallback="195">$INFO[ListItem.FileExtension]</label>
-						<font>FontSize_16</font>
+						<font>FontSize_18</font>
 					  <textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 					  <scroll>false</scroll>
@@ -857,19 +857,16 @@
 	    <include>DialogZoomInOutAnimation</include>
 	    <include>CommonSlideAnimations</include>
 		  <control type="group">
-				<control type="image">
+				<control type="image.">
 					<posx>-230</posx>
 					<posy>-88</posy>
 					<width>1700</width>
 					<height>860</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true">views/slide/shine.png</texture>
+					<texture background="true">views/list/shine.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
+		      <include>FullscreenDimensions</include>
 					<texture>views/gallery/top_bottom_shadows.png</texture>
 				</control>
 				<control type="image">
@@ -878,7 +875,6 @@
 					<width>1380</width>
 					<height>460</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<fadetime>150</fadetime>
 					<texture border="50">views/list/panel2.png</texture>
 					<bordersize>20</bordersize>
 				</control>
@@ -943,12 +939,12 @@
 					<control type="group">
 						<posx>46</posx>
 	          <animation type="Focus" reversible="false" condition="Container(52).OnNext">
-	            <effect type="slide" start="56,0" end="0,0" time="200" tween="circle" easing="out" />
-	            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
+	            <effect type="slide" start="26,0" end="0,0" time="150" tween="Cubic" easing="out" />
+	            <effect type="fade" start="20" end="100" time="850" delay="0" tween="sine" easing="out" />
 	          </animation>
 	          <animation type="Focus" reversible="false" condition="Container(52).OnPrevious">
-	            <effect type="slide" start="-56,0" end="0,0" time="200" tween="circle" easing="out" />
-	            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
+	            <effect type="slide" start="-26,0" end="0,0" time="150" tween="Cubic" easing="out" />
+	            <effect type="fade" start="20" end="100" time="850" delay="0" tween="sine" easing="out" />
 	          </animation>
 						<control type="image">
 							<width>675</width>
@@ -958,68 +954,70 @@
 							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
-						<control type="group">
+					</control>
+					<control type="group">
+							<posx>46</posx>
 							<posy>105</posy>
-								<control type="image">
-									<posx>6</posx>
-									<posy>169</posy>
-									<width>663</width>
-									<height>100</height>
-									<texture>views/gallery/tile.png</texture>
-								</control>
-								<control type="label">
-									<posx>20</posx>
-									<posy>195</posy>
-									<height>30</height>
-									<width>640</width>
-									<textcolor>white</textcolor>
-					        <shadowcolor>99000000</shadowcolor>
-									<font>FontSize_38</font>
-						      <scroll>false</scroll>
-									<align>left</align>
-									<label>$INFO[ListItem.label]</label>
-									<visible>!Container.Content(Songs)</visible>
-								</control>
-								<control type="label">
-									<posx>20</posx>
-									<posy>195</posy>
-									<height>30</height>
-									<width>640</width>
-									<textcolor>white</textcolor>
-					        <shadowcolor>99000000</shadowcolor>
-									<font>FontSize_38</font>
-						      <scroll>false</scroll>
-									<align>left</align>
-									<label>$INFO[ListItem.Title]</label>
-									<visible>Container.Content(Songs)</visible>
-								</control>
-								<control type="label">
-									<posx>20</posx>
-									<posy>230</posy>
-									<height>30</height>
-									<width>640</width>
-									<textcolor>77white</textcolor>
-					        <shadowcolor>99000000</shadowcolor>
-									<font>FontSize_22</font>
-						      <scroll>false</scroll>
-									<align>left</align>
-									<label>$VAR[GlobalInfo]</label>
-									<visible>!Container.Content(Albums)</visible>
-								</control>
-								<control type="label">
-									<posx>20</posx>
-									<posy>230</posy>
-									<height>30</height>
-									<width>640</width>
-									<textcolor>77white</textcolor>
-					        <shadowcolor>99000000</shadowcolor>
-									<font>FontSize_22</font>
-						      <scroll>false</scroll>
-									<align>left</align>
-									<label>$INFO[ListItem.Artist]</label>
-									<visible>Container.Content(Albums)</visible>
-								</control>
-						</control>
+							<control type="image">
+								<posx>6</posx>
+								<posy>79</posy>
+								<width>663</width>
+								<height>190</height>
+							   <aspectratio>stretch</aspectratio>
+								<texture>views/gallery/title_overlay.png</texture>
+							</control>
+							<control type="label">
+								<posx>20</posx>
+								<posy>195</posy>
+								<height>30</height>
+								<width>640</width>
+								<textcolor>white</textcolor>
+				        <shadowcolor>99000000</shadowcolor>
+								<font>FontSize_38</font>
+					      <scroll>false</scroll>
+								<align>left</align>
+								<label>$INFO[ListItem.label]</label>
+								<visible>!Container.Content(Songs)</visible>
+							</control>
+							<control type="label">
+								<posx>20</posx>
+								<posy>195</posy>
+								<height>30</height>
+								<width>640</width>
+								<textcolor>white</textcolor>
+				        <shadowcolor>99000000</shadowcolor>
+								<font>FontSize_38</font>
+					      <scroll>false</scroll>
+								<align>left</align>
+								<label>$INFO[ListItem.Title]</label>
+								<visible>Container.Content(Songs)</visible>
+							</control>
+							<control type="label">
+								<posx>20</posx>
+								<posy>230</posy>
+								<height>30</height>
+								<width>640</width>
+								<textcolor>77white</textcolor>
+				        <shadowcolor>99000000</shadowcolor>
+								<font>FontSize_22</font>
+					      <scroll>false</scroll>
+								<align>left</align>
+								<label>$VAR[GlobalInfo]</label>
+								<visible>!Container.Content(Albums)</visible>
+							</control>
+							<control type="label">
+								<posx>20</posx>
+								<posy>230</posy>
+								<height>30</height>
+								<width>640</width>
+								<textcolor>77white</textcolor>
+				        <shadowcolor>99000000</shadowcolor>
+								<font>FontSize_22</font>
+					      <scroll>false</scroll>
+								<align>left</align>
+								<label>$INFO[ListItem.Artist]</label>
+								<visible>Container.Content(Albums)</visible>
+							</control>
 					</control>
 				</focusedlayout>
 			</control>

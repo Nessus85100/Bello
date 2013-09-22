@@ -1,3 +1,12 @@
+[B]v1.5.2[/B]
+• Added a viewtype option to choose between fanart/clearlogo/landscape in ListView and GalleryView for Movies.
+• Added unwatched numbers and indicators in ListView and GalleryView for TV Shows amd Movies.
+• Replaced the title black bar with a black faded in GalleryView.
+• Make more text's bigger in severall parts of the skin.
+• Fixed some missing visible conditions in dialogs.
+• Fixed blue color bug in Home screen when media is playing.
+
+
 [B]v1.5.1[/B]
 • Added new "VideoWall Fanart" view for Movies and TV Shows.
 • Added new fallbacks icons.

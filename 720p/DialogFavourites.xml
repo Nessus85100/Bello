@@ -5,39 +5,13 @@
 
 		<control type="group">
 	    <include>GlobalSearchSlideAnimations</include>
-      <animation type="Conditional" reversible="true" condition="Window.IsActive(virtualkeyboard) | Window.IsActive(filebrowser)">
-        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
-        <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="inout" />
+      <animation type="Conditional" reversible="true" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(virtualkeyboard) | Window.IsActive(filebrowser) | Window.IsActive(playercontrols)">
+        <effect type="fade" start="100" end="0" time="250" tween="sine" easing="inout" />
+        <effect type="slide" start="0,0" end="0,35" time="300" tween="sine" easing="inout" />
       </animation>
       <animation type="Conditional" reversible="true" condition="Window.IsActive(ContextMenu)">
-        <effect type="slide" start="0,0" end="0,75" time="350" tween="sine" easing="inout" />
+        <effect type="slide" start="0,0" end="0,75" time="280" tween="sine" easing="inout" />
       </animation>
-      <animation type="Conditional" reversible="true" condition="Window.IsActive(ShutdownMenu)">
-        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
-        <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="inout" />
-      </animation>
-			<control type="image">
-				<posx>-230</posx>
-				<posy>0</posy>
-				<width>1800</width>
-				<height>680</height>
-				<include>BackgroundFade</include>
-				<aspectratio align="center" aligny="center">stretch</aspectratio>
-				<texture background="true">dialogs/favourites/black_shadow.png</texture>
-				<colordiffuse>AAFFFFFF</colordiffuse>
-			  <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
-			</control>
-			<control type="image">
-				<posx>-230</posx>
-				<posy>0</posy>
-				<width>1800</width>
-				<height>680</height>
-				<include>BackgroundFade</include>
-				<aspectratio align="center" aligny="center">stretch</aspectratio>
-				<texture background="true">views/slide/shine.png</texture>
-				<colordiffuse>77FFFFFF</colordiffuse>
-			  <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
-			</control>
 			<control type="panel" id="450">
 				<posx>25</posx>
 				<posy>200</posy>

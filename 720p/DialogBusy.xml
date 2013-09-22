@@ -58,7 +58,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[Control.GetLabel(10),,%]</label>
-				<font>FontSize_32</font>
+				<font>FontSize_26</font>
 				<textcolor>99white</textcolor>
 				<visible>IntegerGreaterThan(Control.GetLabel(10),0)</visible>
 			</control>

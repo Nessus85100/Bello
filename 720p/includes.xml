@@ -42,9 +42,10 @@
 	<include name="CommonDialogsFadeOutBG">
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture background="true">windows/bg/bg_black.png</texture>
-			<include>VisibleFadeEffect</include>
-      <colordiffuse>D5FFFFFF</colordiffuse>
+			<texture background="true">windows/bg/bg_diffuse.png</texture>
+      <animation effect="fade" time="300" start="0" end="100" tween="sine" easing="out">Visible</animation>
+      <animation effect="fade" time="300" start="100" end="0" tween="sine" easing="in">Hidden</animation>
+      <colordiffuse>ddFFFFFF</colordiffuse>
 			<visible>Window.IsActive(busydialog) | Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog)</visible>	
 		</control>
 	</include>
@@ -54,7 +55,7 @@
 			<width min="10" max="1280">auto</width>
 			<font>FontSize_20</font>
 			<textcolor>99white</textcolor>
-			<shadowcolor>99000000</shadowcolor>
+			<shadowcolor>77000000</shadowcolor>
 	    <align>left</align>
 	    <aligny>center</aligny>
 			<scroll>false</scroll>
@@ -64,7 +65,7 @@
 			<width min="10" max="1280">auto</width>
 			<font>FontSize_22</font>
 			<textcolor>white</textcolor>
-			<shadowcolor>99000000</shadowcolor>
+			<shadowcolor>77000000</shadowcolor>
 	    <align>left</align>
 	    <aligny>center</aligny>
 			<scroll>false</scroll>
@@ -74,7 +75,7 @@
 			<width min="10" max="1280">auto</width>
 			<font>FontSize_40</font>
 			<textcolor>white</textcolor>
-			<shadowcolor>99000000</shadowcolor>
+			<shadowcolor>77000000</shadowcolor>
 	    <align>left</align>
 	    <aligny>center</aligny>
 			<scroll>false</scroll>
@@ -86,7 +87,7 @@
 			<width min="10" max="1280">auto</width>
 			<font>FontSize_36</font>
 			<textcolor>white</textcolor>
-			<shadowcolor>99000000</shadowcolor>
+			<shadowcolor>77000000</shadowcolor>
 			<scroll>false</scroll>
 	</include>
 	<include name="TopButton">
@@ -470,258 +471,258 @@
   <!-- ================== --> 
 	<include name="CommonNowPlaying">
 		<control type="group">
-			<posx>43</posx>
+			<posx>45</posx>
 			<posy>80r</posy>
-		<control type="grouplist">
-			<include>NowPlaying</include>
-		  <visible>Player.HasMedia + !SubString(Window(Videos).Property(TvTunesIsAlive),True)</visible>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1000</width>
-		  <height>55</height>
-			<align>left</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<control type="label">
+			<control type="grouplist">
+				<include>NowPlaying</include>
+			  <visible>Player.HasMedia + !SubString(Window(Videos).Property(TvTunesIsAlive),True)</visible>
 				<posx>0</posx>
 				<posy>0</posy>
-				<height>55</height>
-				<width min="10" max="1000">auto</width>
-				<label>$INFO[Player.Time]</label>
+				<width>1000</width>
+			  <height>55</height>
 				<align>left</align>
-				<aligny>center</aligny>
-				<font>FontSize_46</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>99000000</shadowcolor>
-			</control>
-      <!-- Music -->
-			<control type="group">
-	      <include>KaiToastSlideAnimations</include>
-	      <include>ScanSlideAnimations</include>
-				<visible>Player.HasAudio</visible>
+				<itemgap>5</itemgap>
+				<orientation>horizontal</orientation>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>55</height>
+					<width min="10" max="1000">auto</width>
+					<label>$INFO[Player.Time]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>FontSize_46</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				</control>
+	      <!-- Music -->
 				<control type="group">
-					<animation type="Conditional" reversible="false" condition="MusicPlayer.HasNext" loop="true">
-						<effect type="fade" start="0" end="100" time="500" delay="0" />
-						<effect type="fade" start="100" end="0" time="500" delay="10000" />
-						<effect type="fade" start="100" end="0" time="500" delay="20000" />
-					</animation>
+		      <include>KaiToastSlideAnimations</include>
+		      <include>ScanSlideAnimations</include>
+					<visible>Player.HasAudio</visible>
+					<control type="group">
+						<animation type="Conditional" reversible="false" condition="MusicPlayer.HasNext" loop="true">
+							<effect type="fade" start="0" end="100" time="500" delay="0" />
+							<effect type="fade" start="100" end="0" time="500" delay="10000" />
+							<effect type="fade" start="100" end="0" time="500" delay="20000" />
+						</animation>
+						<control type="label">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>300</width>
+							<height>35</height>
+							<label>$LOCALIZE[13350]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>NotificationsFont</font>
+							<textcolor>blue</textcolor>
+							<shadowcolor>77000000</shadowcolor>
+						</control>
+						<control type="label">
+							<posx>0</posx>
+							<posy>20</posy>
+							<width>740</width>
+							<height>35</height>
+							<label>$INFO[MusicPlayer.Title]$INFO[MusicPlayer.Artist, - ] $INFO[MusicPlayer.Album, (,) ]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>NotificationsFont</font>
+							<textcolor>99white</textcolor>
+							<shadowcolor>77000000</shadowcolor>
+						</control>
+					</control>
+					<control type="group">
+					  <visible>MusicPlayer.HasNext</visible>
+						<animation type="Conditional" reversible="false" condition="MusicPlayer.HasNext" loop="true">
+							<effect type="fade" start="0" end="100" time="500" delay="10500" />
+							<effect type="fade" start="100" end="0" time="500" delay="20000" />
+						</animation>
+						<control type="label">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>300</width>
+							<height>35</height>
+							<label>$LOCALIZE[209]...</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>NotificationsFont</font>
+							<textcolor>blue</textcolor>
+							<shadowcolor>77000000</shadowcolor>
+						</control>
+						<control type="label">
+							<posx>0</posx>
+							<posy>20</posy>
+							<width>740</width>
+							<height>35</height>
+							<label>$INFO[MusicPlayer.offset(1).Title]$INFO[MusicPlayer.offset(1).Artist, - ]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>NotificationsFont</font>
+							<textcolor>99white</textcolor>
+							<shadowcolor>77000000</shadowcolor>
+						</control>
+					</control>
+				</control>
+	      <!-- Movies -->
+				<control type="group">
+		      <include>KaiToastSlideAnimations</include>
+		      <include>ScanSlideAnimations</include>
+					<visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>300</width>
-						<height>37</height>
+						<height>35</height>
 						<label>$LOCALIZE[13350]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_18</font>
+						<font>NotificationsFont</font>
 						<textcolor>blue</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-					</control>
-					<control type="label">
-						<posx>0</posx>
-						<posy>20</posy>
-						<width>640</width>
-						<height>37</height>
-						<label>$INFO[MusicPlayer.Title]$INFO[MusicPlayer.Artist, - ] $INFO[MusicPlayer.Album, (,) ]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>FontSize_18</font>
-						<textcolor>grey</textcolor>
-						<shadowcolor>black</shadowcolor>
-					</control>
-				</control>
-				<control type="group">
-				  <visible>MusicPlayer.HasNext</visible>
-					<animation type="Conditional" reversible="false" condition="MusicPlayer.HasNext" loop="true">
-						<effect type="fade" start="0" end="100" time="500" delay="10500" />
-						<effect type="fade" start="100" end="0" time="500" delay="20000" />
-					</animation>
-					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>300</width>
-						<height>37</height>
-						<label>$LOCALIZE[209]...</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>FontSize_18</font>
-						<textcolor>blue</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-					</control>
-					<control type="label">
-						<posx>0</posx>
-						<posy>20</posy>
-						<width>640</width>
-						<height>37</height>
-						<label>$INFO[MusicPlayer.offset(1).Title]$INFO[MusicPlayer.offset(1).Artist, - ]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>FontSize_18</font>
-						<textcolor>grey</textcolor>
-						<shadowcolor>black</shadowcolor>
-					</control>
-				</control>
-			</control>
-      <!-- Movies -->
-			<control type="group">
-	      <include>KaiToastSlideAnimations</include>
-	      <include>ScanSlideAnimations</include>
-				<visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>37</height>
-					<label>$LOCALIZE[13350]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>FontSize_18</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>20</posy>
-					<width>640</width>
-					<height>37</height>
-			    <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,) ]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>FontSize_18</font>
-					<textcolor>99white</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-				</control>
-			</control>
-      <!-- Episodes -->
-			<control type="group">
-	      <include>KaiToastSlideAnimations</include>
-	      <include>ScanSlideAnimations</include>
-				<visible>Player.HasVideo + VideoPlayer.Content(Episodes)</visible>
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>37</height>
-					<label>$LOCALIZE[13350]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>FontSize_18</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>20</posy>
-					<width>640</width>
-					<height>37</height>
-					<label>$INFO[VideoPlayer.Title] $INFO[VideoPlayer.TVShowTitle, (,] $INFO[VideoPlayer.Season,]$INFO[VideoPlayer.Episode,x, )]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>FontSize_18</font>
-					<textcolor>99white</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-				</control>
-			</control>
-      <!-- Videos -->
-			<control type="group">
-	      <include>KaiToastSlideAnimations</include>
-	      <include>ScanSlideAnimations</include>
-				<visible>Player.HasVideo + ![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]</visible>
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>37</height>
-					<label>$LOCALIZE[13350]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>FontSize_18</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>20</posy>
-					<width>740</width>
-					<height>37</height>
-			    <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Genre, (,) ]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>FontSize_18</font>
-					<textcolor>99white</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-				</control>
-			</control>
-      <!-- LiveTV -->
-			<control type="group">
-	      <include>KaiToastSlideAnimations</include>
-	      <include>ScanSlideAnimations</include>
-				<visible>Player.HasVideo + VideoPlayer.Content(LiveTV)</visible>
-				<control type="group">
-					<animation type="Conditional" reversible="false" condition="Pvr.IsPlayingTv" loop="true">
-						<effect type="fade" start="0" end="100" time="500" delay="0" />
-						<effect type="fade" start="100" end="0" time="500" delay="10000" />
-						<effect type="fade" start="100" end="0" time="500" delay="20000" />
-					</animation>
-					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>300</width>
-						<height>37</height>
-						<label>$LOCALIZE[13350]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>FontSize_18</font>
-						<textcolor>blue</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<posx>0</posx>
 						<posy>20</posy>
 						<width>740</width>
-						<height>37</height>
-						<label>$INFO[VideoPlayer.ChannelNumber,,. ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,: ]</label>
+						<height>35</height>
+				    <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,) ]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_18</font>
+						<font>NotificationsFont</font>
 						<textcolor>99white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 				</control>
+	      <!-- Episodes -->
 				<control type="group">
-				  <visible>Pvr.IsPlayingTv</visible>
-					<animation type="Conditional" reversible="false" condition="Pvr.IsPlayingTv" loop="true">
-						<effect type="fade" start="0" end="100" time="500" delay="10500" />
-						<effect type="fade" start="100" end="0" time="500" delay="20000" />
-					</animation>
+		      <include>KaiToastSlideAnimations</include>
+		      <include>ScanSlideAnimations</include>
+					<visible>Player.HasVideo + VideoPlayer.Content(Episodes)</visible>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>300</width>
-						<height>37</height>
-						<label>$LOCALIZE[209]...</label>
+						<height>35</height>
+						<label>$LOCALIZE[13350]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_18</font>
+						<font>NotificationsFont</font>
 						<textcolor>blue</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 					</control>
 					<control type="label">
 						<posx>0</posx>
 						<posy>20</posy>
-						<width>640</width>
-						<height>37</height>
-						<label>$INFO[VideoPlayer.ChannelNumber,,. ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.NextTitle,: ]</label>
+						<width>740</width>
+						<height>35</height>
+						<label>$INFO[VideoPlayer.Title] $INFO[VideoPlayer.TVShowTitle, (,] $INFO[VideoPlayer.Season,]$INFO[VideoPlayer.Episode,x, )]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>FontSize_18</font>
-						<textcolor>grey</textcolor>
-						<shadowcolor>black</shadowcolor>
+						<font>NotificationsFont</font>
+						<textcolor>99white</textcolor>
+						<shadowcolor>77000000</shadowcolor>
+					</control>
+				</control>
+	      <!-- Videos -->
+				<control type="group">
+		      <include>KaiToastSlideAnimations</include>
+		      <include>ScanSlideAnimations</include>
+					<visible>Player.HasVideo + ![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]</visible>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>300</width>
+						<height>35</height>
+						<label>$LOCALIZE[13350]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>NotificationsFont</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>77000000</shadowcolor>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>20</posy>
+						<width>740</width>
+						<height>35</height>
+				    <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Genre, (,) ]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>NotificationsFont</font>
+						<textcolor>99white</textcolor>
+						<shadowcolor>77000000</shadowcolor>
+					</control>
+				</control>
+	      <!-- LiveTV -->
+				<control type="group">
+		      <include>KaiToastSlideAnimations</include>
+		      <include>ScanSlideAnimations</include>
+					<visible>Player.HasVideo + VideoPlayer.Content(LiveTV)</visible>
+					<control type="group">
+						<animation type="Conditional" reversible="false" condition="Pvr.IsPlayingTv" loop="true">
+							<effect type="fade" start="0" end="100" time="500" delay="0" />
+							<effect type="fade" start="100" end="0" time="500" delay="10000" />
+							<effect type="fade" start="100" end="0" time="500" delay="20000" />
+						</animation>
+						<control type="label">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>300</width>
+							<height>35</height>
+							<label>$LOCALIZE[13350]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>NotificationsFont</font>
+							<textcolor>blue</textcolor>
+							<shadowcolor>77000000</shadowcolor>
+						</control>
+						<control type="label">
+							<posx>0</posx>
+							<posy>20</posy>
+							<width>740</width>
+							<height>35</height>
+							<label>$INFO[VideoPlayer.ChannelNumber,,. ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,: ]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>NotificationsFont</font>
+							<textcolor>99white</textcolor>
+							<shadowcolor>77000000</shadowcolor>
+						</control>
+					</control>
+					<control type="group">
+					  <visible>Pvr.IsPlayingTv</visible>
+						<animation type="Conditional" reversible="false" condition="Pvr.IsPlayingTv" loop="true">
+							<effect type="fade" start="0" end="100" time="500" delay="10500" />
+							<effect type="fade" start="100" end="0" time="500" delay="20000" />
+						</animation>
+						<control type="label">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>300</width>
+							<height>35</height>
+							<label>$LOCALIZE[209]...</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>NotificationsFont</font>
+							<textcolor>blue</textcolor>
+							<shadowcolor>77000000</shadowcolor>
+						</control>
+						<control type="label">
+							<posx>0</posx>
+							<posy>20</posy>
+							<width>740</width>
+							<height>35</height>
+							<label>$INFO[VideoPlayer.ChannelNumber,,. ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.NextTitle,: ]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>NotificationsFont</font>
+							<textcolor>99white</textcolor>
+							<shadowcolor>77000000</shadowcolor>
+						</control>
 					</control>
 				</control>
 			</control>
-		</control>
- 	 </control>
+ 	  </control>
 	</include>
 
 	<include name="CommonPageCount">
@@ -1066,13 +1067,11 @@
 	<variable name="GlobalInfo">
 		<value condition="Substring(ListItem.Path,videodb://1/7,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[342] $LOCALIZE[20141]</value>
 		<value condition="Container.Content(Movies) + !IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</value>
-		<value condition="Container.Content(Movies)">$INFO[ListItem.Genre]</value>
-    <value condition="Container.Content(TVShows) + !IsEmpty(Window(Home).Property(NextAired.Label))">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</value>
-		<value condition="Container.Content(TVShows) + IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</value>
-		<value condition="Container.Content(TVShows) + IsEmpty(Window(Home).Property(NextAired.Label)) + IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Genre]</value>
-		<value condition="Container.Content(Seasons)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</value>
+    <value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)">$INFO[ListItem.MPAA,$LOCALIZE[20074]: ]</value>
+    <value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</value>
 		<value condition="Container.Content(Episodes) + ![IsEmpty(ListItem.Season) + IsEmpty(ListItem.Episode)]">$INFO[ListItem.Season,$LOCALIZE[20373] ,  •  ]$INFO[ListItem.Episode,$LOCALIZE[20359] ,  •  ]$INFO[ListItem.Premiered,$LOCALIZE[31003] ]</value>
 		<value condition="Container.Content(Episodes) + [IsEmpty(ListItem.Season) + IsEmpty(ListItem.Episode)]">$INFO[ListItem.Premiered]</value>
+		<value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons)]">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Artist]$INFO[ListItem.Album , • ]</value>
 		<value condition="Container.Content(Files) + !SubString(Container.FolderPath,plugin://)">$INFO[ListItem.Date]$INFO[ListItem.Size, • ]$INFO[ListItem.Duration, • ]</value>
 		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Style)]</value>
@@ -1088,8 +1087,8 @@
 		<value condition="Substring(ListItem.Path,videodb://1/7,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[342] $LOCALIZE[20141]</value>
 		<value condition="Container.Content(Movies) + IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Year]$INFO[ListItem.Rating, • ,]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]</value>
 		<value condition="Container.Content(Movies) + !IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</value>
-		<value condition="Container.Content(TVShows) | Container.Content(Seasons)">$INFO[ListItem.Year,, • ,]$INFO[ListItem.Rating,, • ,]$INFO[ListItem.Property(UnWatchedEpisodes] $LOCALIZE[16101]</value>
-		<value condition="Container.Content(Episodes)">$INFO[ListItem.Season,$LOCALIZE[20359] ,x,]$INFO[ListItem.Episode,, • ]$INFO[ListItem.Premiered,$LOCALIZE[31003] ]</value>
+		<value condition="Container.Content(TVShows) | Container.Content(Seasons)">$INFO[ListItem.Year,, • ,]$INFO[ListItem.Rating,, • ,]$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,$LOCALIZE[31003] ]$INFO[ListItem.Rating, • ,]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]</value>
 	</variable>
 	
 	<variable name="DialogsInfo">
@@ -1118,31 +1117,44 @@
     <value condition="Container.Content(Episodes) + !IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
 		<value condition="IsEmpty(ListItem.Art(season.poster)) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
 		<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
   </variable>
 
 	<variable name="PlayerThumbs">
 		<value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
 		<value condition="VideoPlayer.Content(Episodes)">$INFO[Player.Art(tvshow.poster)]</value>
+		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 
-	<variable name="FanartThumbsLabels">
-		<value condition="[Control.IsVisible(50) + Stringcompare(Skin.String(ListViewWideThumb),1)] | [Control.IsVisible(52) + Stringcompare(Skin.String(GalleryViewWideThumb),1)]">$LOCALIZE[20445]</value>
-		<value condition="[Control.IsVisible(50) + Stringcompare(Skin.String(ListViewWideThumb),2)] | [Control.IsVisible(52) + Stringcompare(Skin.String(GalleryViewWideThumb),2)]">$LOCALIZE[31218]</value>
-		<value condition="[Control.IsVisible(50) + Stringcompare(Skin.String(ListViewWideThumb),3)] | [Control.IsVisible(52) + Stringcompare(Skin.String(GalleryViewWideThumb),3)]">$LOCALIZE[31219]</value>
+	<variable name="FanartThumbsOptionsLabels">
+		<value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),1)">$LOCALIZE[20445]</value>
+		<value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),2)">$LOCALIZE[31218]</value>
+		<value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),3)">$LOCALIZE[31219]</value>
+		<value condition="Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(ListViewWideThumbMovies),1)">$LOCALIZE[20445]</value>
+		<value condition="Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(ListViewWideThumbMovies),2)">$LOCALIZE[31218]</value>
+		<value condition="Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(ListViewWideThumbMovies),3)">$LOCALIZE[31219]</value>
+		<value condition="Control.IsVisible(52) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(GalleryViewWideThumbTVShows),1)">$LOCALIZE[20445]</value>
+		<value condition="Control.IsVisible(52) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(GalleryViewWideThumbTVShows),2)">$LOCALIZE[31218]</value>
+		<value condition="Control.IsVisible(52) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(GalleryViewWideThumbTVShows),3)">$LOCALIZE[31219]</value>
+		<value condition="Control.IsVisible(52) + [Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(GalleryViewWideThumbMovies),1)">$LOCALIZE[20445]</value>
+		<value condition="Control.IsVisible(52) + [Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(GalleryViewWideThumbMovies),2)">$LOCALIZE[31218]</value>
+		<value condition="Control.IsVisible(52) + [Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(GalleryViewWideThumbMovies),3)">$LOCALIZE[31219]</value>
 	</variable>
 
 	<variable name="LandscapeVars">
-		<value condition="Container.Content(TVShows)">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="[Container.Content(TVShows)] | [Container.Content(Movies) | Container.Content(Sets)]">$INFO[ListItem.Art(landscape)]</value>
 		<value condition="Container.Content(Seasons)">$INFO[ListItem.Art(tvshow.landscape)]</value>
 	</variable>
 	<variable name="ClearlogoVars">
-		<value condition="Container.Content(TVShows)">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="[Container.Content(TVShows)] | [Container.Content(Movies) | Container.Content(Sets)]">$INFO[ListItem.Art(clearlogo)]</value>
 		<value condition="Container.Content(Seasons)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
 	</variable>
 	
 	<variable name="FanartThumbs">
-		<value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumb),2)">$VAR[LandscapeVars]</value>
-		<value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumb),3)">$VAR[ClearlogoVars]</value>
+		<value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),2)">$VAR[LandscapeVars]</value>
+		<value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),3)">$VAR[ClearlogoVars]</value>
+		<value condition="Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(ListViewWideThumbMovies),2)">$VAR[LandscapeVars]</value>
+		<value condition="Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(ListViewWideThumbMovies),3)">$VAR[ClearlogoVars]</value>
 		<value condition="Container.Content(Episodes)">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="![IsEmpty(ListItem.Art(fanart)) + [substring(Container.FolderPath,plugin,left) + Container.HasFiles]]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="[substring(Container.FolderPath,plugin,left) + Container.HasFiles]">thumbs/fallback_xbmc.png</value>
