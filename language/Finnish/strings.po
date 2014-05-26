@@ -140,6 +140,10 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "Vaihtuva kuva"
 
+msgctxt "#31158"
+msgid "Views"
+msgstr "katsontaa"
+
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Vaakakuva"

@@ -1,17 +1,12 @@
-<window id="2901">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="2901">
   <onload condition="!VideoPlayer.Content(LiveTV)">SetFocus(103)</onload>
   <onload condition="VideoPlayer.Content(LiveTV)">SetFocus(109)</onload>
   <onunload>ClearProperty(ShowPlot,VideoOSD)</onunload>
-	<coordinates>
-		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
-	</coordinates>
 	<controls>
-
 	  <control type="group">
 	    <visible>Player.HasVideo</visible>
-			<visible>!Window.IsActive(SliderDialog) + !Window.IsActive(OSDVideoSettings) + !Window.IsActive(OSDAudioSettings) + !Window.IsActive(VideoBookmarks) + !Window.IsActive(SelectDialog) + !Window.IsActive(script-XBMC-Subtitles-main.xml) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
+			<visible>!Window.IsActive(SliderDialog) + !Window.IsActive(OSDVideoSettings) + !Window.IsActive(OSDAudioSettings) + !Window.IsActive(VideoBookmarks) + !Window.IsActive(SelectDialog) + !Window.IsActive(SubtitleSearch) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(favourites) + !Window.IsActive(NumericInput) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
 	    <animation type="WindowOpen" reversible="false">
         <effect type="slide" start="150,0" end="0,0" time="450" delay="0" tween="sine" easing="out" />
         <effect type="fade" start="0" end="100" time="450" delay="0" tween="sine" easing="out" />
@@ -29,9 +24,9 @@
         <effect type="fade" start="100" end="0" time="450" delay="0" tween="sine" easing="out" />
 	    </animation>
 			<control type="grouplist" id="100">
-				<posx>394r</posx>
-				<posy>185r</posy>
-				<width>360</width>
+				<right>35</right>
+				<top>535</top>
+				<width>370</width>
 				<height>55</height>
 				<itemgap>-10</itemgap>
 				<onleft>100</onleft>
@@ -42,6 +37,37 @@
 				<ondown>200</ondown>
 				<align>right</align>
 		    <orientation>horizontal</orientation>
+				<control type="button" id="112">
+					<width>55</width>
+					<height>55</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>osd/3d_fo.png</texturefocus>
+					<texturenofocus>osd/3d_nf.png</texturenofocus>
+					<onclick>NextStereoMode</onclick>
+					<visible>VideoPlayer.IsStereoscopic</visible>
+				</control>
+				<control type="button" id="107">
+					<width>55</width>
+					<height>55</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>osd/dvd_fo.png</texturefocus>
+					<texturenofocus>osd/dvd_nf.png</texturenofocus>
+					<onclick>PlayerControl(ShowVideoMenu)</onclick>
+					<visible>VideoPlayer.HasMenu</visible> -->
+				</control>
+				<control type="button" id="110">
+					<width>55</width>
+					<height>55</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>osd/rec_fo.png</texturefocus>
+					<texturenofocus>osd/rec_nf.png</texturenofocus>
+					<onclick>PlayerControl(Record)</onclick>
+					<enable>Player.CanRecord</enable>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+				</control>						
 				<control type="button" id="108">
 					<width>55</width>
 					<height>55</height>
@@ -143,27 +169,6 @@
 					<onclick>PlayerControl(Next)</onclick>
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
-				<control type="button" id="107">
-					<width>55</width>
-					<height>55</height>
-					<label>-</label>
-					<font>-</font>
-					<texturefocus>osd/dvd_fo.png</texturefocus>
-					<texturenofocus>osd/dvd_nf.png</texturenofocus>
-					<onclick>PlayerControl(ShowVideoMenu)</onclick>
-					<visible>VideoPlayer.HasMenu</visible>
-				</control>
-				<control type="button" id="110">
-					<width>55</width>
-					<height>55</height>
-					<label>-</label>
-					<font>-</font>
-					<texturefocus>osd/rec_fo.png</texturefocus>
-					<texturenofocus>osd/rec_nf.png</texturenofocus>
-					<onclick>PlayerControl(Record)</onclick>
-					<enable>Player.CanRecord</enable>
-					<visible>VideoPlayer.Content(LiveTV)</visible>
-				</control>						
 			</control>
 	  </control>
 
@@ -171,14 +176,14 @@
 	  <!-- ==== OSD Options Buttons ==== -->
 	  <!-- ============================= -->
 	  <control type="group">
-			<posx>45</posx>
-			<posy>25</posy>
+			<left>45</left>
+			<top>25</top>
 			<include>OSDSlideAnimations</include>
 	    <visible>Window.IsActive(VideoOSD)</visible>
-	    <visible>Player.HasVideo + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + !Window.IsActive(SliderDialog) + !Window.IsActive(videobookmarks) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
+	    <visible>Player.HasVideo + !Window.IsActive(ShutdownMenu) + !Window.IsActive(favourites) + !Window.IsActive(NumericInput) + !Window.IsActive(SliderDialog) + !Window.IsActive(videobookmarks) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
 			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>70</height>
 				<width>1190</width>
 				<itemgap>20</itemgap>
@@ -245,8 +250,8 @@
 				</control>
 			</control>
 			<control type="grouplist" id="1000">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>0</height>
 				<width>0</width>
 				<itemgap>0</itemgap>
@@ -275,15 +280,11 @@
           <onclick>ActivateWindow(VideoBookmarks)</onclick>
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
-				<control type="togglebutton" id="1004">
+				<control type="button" id="1004">
 					<description>Subtitles</description>
 			    <include>TopButton</include>
-          <onclick>Close</onclick>
-					<onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
-					<altclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</altclick>
-					<altclick>Close</altclick>
-					<altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
-					<usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
+					<onclick>Dialog.Close(VideoOSD)</onclick>
+					<onclick>ActivateWindow(SubtitleSearch)</onclick>
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="button" id="1005">
@@ -311,11 +312,11 @@
 	  </control>
 
 		<control type="group">
-			<posx>245</posx>
-	    <posy>445</posy>
+			<left>245</left>
+	    <top>445</top>
 			<include>OSDPlotAnimation</include>
 	    <visible>Window.IsActive(VideoOSD)</visible>
-	    <visible>![Window.IsActive(ShutdownMenu) | IsEmpty(VideoPlayer.Plot)] + Control.HasFocus(200)</visible>
+	    <visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | IsEmpty(VideoPlayer.Plot)] + Control.HasFocus(200)</visible>
 			<animation effect="slide" start="0,0" end="110,0" condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]">Conditional</animation>
 			<control type="label">
 				<description>Title label</description>
@@ -330,7 +331,7 @@
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="grouplist">
-	      <posy>-15</posy>
+	      <top>-15</top>
 				<height>70</height>
 				<width>970</width>
 				<itemgap>10</itemgap>
@@ -348,7 +349,7 @@
 				</control>
 			</control>
 	    <control type="textbox">
-	      <posy>30</posy>
+	      <top>30</top>
 	      <width>540</width>
 	      <height>110</height>
 				<font>FontSize_20</font>

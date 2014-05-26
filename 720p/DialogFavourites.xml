@@ -1,5 +1,7 @@
-<window type="dialog" id="134">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  type="dialog" id="134">
 	<defaultcontrol always="true">450</defaultcontrol>
+	<include>OnLoadDialogsClose</include>
 	<onload condition="!IntegerGreaterThan(Container(450).NumItems,0)">ActivateWindow(1110)</onload>
 	<controls>
 
@@ -10,52 +12,45 @@
         <effect type="slide" start="0,0" end="0,35" time="300" tween="sine" easing="inout" />
       </animation>
       <animation type="Conditional" reversible="true" condition="Window.IsActive(ContextMenu)">
-        <effect type="slide" start="0,0" end="0,75" time="280" tween="sine" easing="inout" />
+        <effect type="slide" start="0,0" end="0,120" time="280" tween="sine" easing="inout" />
       </animation>
 			<control type="panel" id="450">
-				<posx>25</posx>
-				<posy>200</posy>
-				<width>1230</width>
-				<height>360</height>
+				<left>25</left>
+				<top>150</top>
+				<width>1220</width>
+				<height>400</height>
 				<onleft>450</onleft>
 				<onright>450</onright>
 				<onup>close</onup>
 				<ondown>close</ondown>
-	      <orientation>horizontal</orientation>
-				<viewtype label="31085">list</viewtype>
-	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
-				<itemlayout height="265" width="244">
+        <scrolltime tween="Quadratic" easing="out">250</scrolltime>
+				<viewtype label="536">icon</viewtype>
+        <orientation>horizontal</orientation>
+			  <preloaditems>2</preloaditems>
+				<itemlayout height="200" width="203">
 					<control type="image">
-						<width>260</width>
-						<height>280</height>
+						<width>216</width>
+						<height>216</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="25">views/thumbnails/thumb_panel.png</texture>
+						<texture border="30">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<posx>25</posx>
-						<posy>24</posy>
-						<width>206</width>
-						<height>200</height>
-						<aspectratio align="center" aligny="center">stretch</aspectratio>
-					  <texture background="true">empty_icon.png</texture>
+						<left>23</left>
+						<top>23</top>
+						<width>170</width>
+						<height>143</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
-					</control>
-					<control type="image">
-						<posx>25</posx>
-						<posy>24</posy>
-						<width>206</width>
-						<height>200</height>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
-					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Thumb]</texture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<posx>128</posx>
-						<posy>220</posy>
-						<width>210</width>
+						<left>108</left>
+						<top>163</top>
+						<width>162</width>
 						<height>35</height>
-						<textcolor>99white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<textcolor>white</textcolor>
+						<shadowcolor>77000000</shadowcolor>
 						<font>FontSize_20</font>
 						<scroll>false</scroll>
 						<align>center</align>
@@ -63,38 +58,30 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="265" width="244">
+				<focusedlayout height="200" width="203">
 					<control type="image">
-						<width>260</width>
-						<height>280</height>
+						<width>216</width>
+						<height>216</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="25">views/thumbnails/thumb_panel.png</texture>
+						<texture border="30">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<posx>25</posx>
-						<posy>24</posy>
-						<width>206</width>
-						<height>200</height>
-						<aspectratio align="center" aligny="center">stretch</aspectratio>
-					  <texture background="true">empty_icon.png</texture>
+						<left>23</left>
+						<top>23</top>
+						<width>170</width>
+						<height>143</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
-					</control>
-					<control type="image">
-						<posx>25</posx>
-						<posy>24</posy>
-						<width>206</width>
-						<height>200</height>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
-					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Thumb]</texture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<posx>128</posx>
-						<posy>220</posy>
-						<width>210</width>
+						<left>108</left>
+						<top>163</top>
+						<width>162</width>
 						<height>35</height>
 						<textcolor>blue</textcolor>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>77000000</shadowcolor>
 						<font>FontSize_20</font>
 						<scrollspeed>35</scrollspeed>
 						<align>center</align>
@@ -102,17 +89,13 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<width>260</width>
-						<height>280</height>
+						<left>0</left>
+						<width>216</width>
+						<height>216</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="25">views/thumbnails/focus.png</texture>
+						<texture border="30">views/thumbnails/focus.png</texture>
             <animation type="Focus">
-              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
-            </animation>
-            <animation type="Unfocus">
-              <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-              <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
+              <effect type="zoom" start="95" end="100" time="150" tween="sine" easing="inout" center="auto" />
             </animation>
 					</control>
 				</focusedlayout>
@@ -120,8 +103,8 @@
 		</control>
 
 	 <control type="group">
-		  <posx>45</posx>
-		  <posy>25</posy>
+		  <left>45</left>
+		  <top>25</top>
 	    <include>TopOptionsSlideAnimations</include>
       <animation type="Conditional" reversible="true" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)">
         <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
@@ -129,8 +112,8 @@
       </animation>
 		  <!--  Content Info  -->
 			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>70</height>
 				<width>1000</width>
 				<align>left</align>
@@ -143,8 +126,8 @@
 			</control>
 			<control type="label">
 				<description>Page Count Label</description>
-				<posx>0</posx>
-				<posy>48</posy>
+				<left>0</left>
+				<top>45</top>
 				<width>300</width>
 				<height>20</height>
 				<font>FontSize_18</font>

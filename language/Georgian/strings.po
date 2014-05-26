@@ -64,6 +64,10 @@ msgctxt "#31285"
 msgid "Playlist Options"
 msgstr "ფლეილისტის პარამეტრები"
 
+msgctxt "#31302"
+msgid "Paused"
+msgstr "პაუზა"
+
 msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "ვიზუალიზაციის პრესეტები"

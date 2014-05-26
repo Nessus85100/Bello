@@ -68,6 +68,10 @@ msgctxt "#31012"
 msgid "OFF"
 msgstr "AV"
 
+msgctxt "#31013"
+msgid "Enable Home Menu Animation"
+msgstr "Aktivera animering för hemmeny"
+
 msgctxt "#31014"
 msgid "ViewType Options"
 msgstr "Alternativ för vytyp"
@@ -208,6 +212,10 @@ msgctxt "#31086"
 msgid "Banner List"
 msgstr "Banderoll Lista"
 
+msgctxt "#31087"
+msgid "VideoWall Fanart"
+msgstr "Fanart för videovägg"
+
 msgctxt "#31088"
 msgid "List Wall"
 msgstr "List vägg"
@@ -215,6 +223,14 @@ msgstr "List vägg"
 msgctxt "#31098"
 msgid "Home Menu"
 msgstr "Använd Watched State Overlays"
+
+msgctxt "#31099"
+msgid "Show Home Menu Buttons"
+msgstr "Visa hemmenyknappar"
+
+msgctxt "#31100"
+msgid "Hide Home Menu Buttons"
+msgstr "Göm hemmenyknappar"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -287,6 +303,10 @@ msgstr "Musik Knappen öppnar..."
 msgctxt "#31118"
 msgid "Custom Button"
 msgstr "Anpassad Knapp"
+
+msgctxt "#31119"
+msgid "Custom Home Menu Buttons"
+msgstr "Egna hemmenyknappar"
 
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
@@ -417,8 +437,8 @@ msgid "Show RSS feed in whole skin"
 msgstr "Visa RSS flöde i hela skalet"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Dölj flaggläsning från videofilnamn [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide Live TV Submenu"
+msgstr "Göm undermenyn för Live-TV"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
@@ -432,9 +452,33 @@ msgctxt "#31155"
 msgid "Add-ons Button opens..."
 msgstr "Tillägg-knappen öppnar..."
 
+msgctxt "#31156"
+msgid "Hide Video Views"
+msgstr "Göm videovyer"
+
+msgctxt "#31157"
+msgid "Hide Music Views"
+msgstr "Göm musikvyer"
+
 msgctxt "#31158"
 msgid "Views"
 msgstr "Vyer"
+
+msgctxt "#31159"
+msgid "Show FullScreenInfo instead of the SeekBar"
+msgstr "Visa fullskärmsinfo istället för söklisten"
+
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "Ladda ned [COLOR=selected]logo.png[/COLOR] för alla filmer"
+
+msgctxt "#31161"
+msgid "Hide Library Totals"
+msgstr "Visa inte totalt antal biblioteksobjekt"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Aktivera kioskläge"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -499,6 +543,10 @@ msgstr "Nästa sändning"
 msgctxt "#31216"
 msgid "Last Aired"
 msgstr "Senast Visad"
+
+msgctxt "#31217"
+msgid "Wide Thumb"
+msgstr "Bred miniatyr"
 
 msgctxt "#31218"
 msgid "Landscape"
@@ -760,6 +808,98 @@ msgctxt "#31373"
 msgid "Clean Music Library"
 msgstr "Rensa musikbibliotek"
 
+msgctxt "#31374"
+msgid "Quick Navigation"
+msgstr "Snabbnavigering"
+
+msgctxt "#31375"
+msgid "Disable Quick Navigation"
+msgstr "Inaktivera snabbnavigering"
+
+msgctxt "#31376"
+msgid "Show Update Video Library Button"
+msgstr "Visa knapp för uppdatera videobibliotek"
+
+msgctxt "#31377"
+msgid "Show Update Music Library Button"
+msgstr "Visa knapp för uppdatera musikbibliotek"
+
+msgctxt "#31378"
+msgid "Show Clean Video Library Button"
+msgstr "Visa knapp för städa videobibliotek"
+
+msgctxt "#31379"
+msgid "Show Clean Music Library Button"
+msgstr "Visa knapp för städa musikbibliotek"
+
+msgctxt "#31380"
+msgid "Show Party Mode Button"
+msgstr "Visa knapp för partyläge"
+
+msgctxt "#31381"
+msgid "Show Shutdown Button"
+msgstr "Visa knapp för avstängning"
+
+msgctxt "#31382"
+msgid "Show File Manager Button"
+msgstr "Visa knapp för filhanterare"
+
+msgctxt "#31383"
+msgid "Hide Movies Button"
+msgstr "Göm knappen för film"
+
+msgctxt "#31384"
+msgid "Hide TV Shows Button"
+msgstr "Göm knappen för TV-serier"
+
+msgctxt "#31385"
+msgid "Hide Music Button"
+msgstr "Göm knapp för musik"
+
+msgctxt "#31386"
+msgid "Hide Pictures Button"
+msgstr "Göm knapp för bilder"
+
+msgctxt "#31387"
+msgid "Hide Add-ons Button"
+msgstr "Göm knapp för tillägg"
+
+msgctxt "#31388"
+msgid "Hide New Movies Button"
+msgstr "Göm knapp för nya filmer"
+
+msgctxt "#31389"
+msgid "Hide New TV Shows Button"
+msgstr "Göm knapp för nya TV-program"
+
+msgctxt "#31390"
+msgid "Hide New Music Button"
+msgstr "Göm knapp för ny musik"
+
+msgctxt "#31391"
+msgid "Hide Settings Button"
+msgstr "Göm knapp för inställningar"
+
+msgctxt "#31392"
+msgid "Show Videos Button"
+msgstr "Visa knapp för videor"
+
+msgctxt "#31393"
+msgid "Hide QuickNav Buttons"
+msgstr "Göm snabbnavigeringsknappar"
+
+msgctxt "#31394"
+msgid "Show QuickNav Buttons"
+msgstr "Visa snabbnavigeringsknappar"
+
+msgctxt "#31395"
+msgid "Custom QuickNav Buttons"
+msgstr "Egna snabbnavigeringsknappar"
+
+msgctxt "#31396"
+msgid "Custom Button"
+msgstr "Egen knapp"
+
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
 msgstr "Justera utseendet och känslan för XBMC. Inkluderar skal, tema, ljud och typsnitt, RSS flöde och lokaliseringsinställningar."
@@ -839,3 +979,15 @@ msgstr "Konfigurera profilinställningar"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Konfigurera skalinställningar"
+
+msgctxt "#31430"
+msgid "Help Tip"
+msgstr "Hjälptips"
+
+msgctxt "#31431"
+msgid "You haven't added any items to Favorites yet. Highlight an item, and choose \"Add to favorites\" from the context menu."
+msgstr "Du har inte lagt till några objekt i Favoriter än. Ställ dig på ett objekt och välj \"Lägg till i favoriter\" från undermenyn."
+
+msgctxt "#31432"
+msgid "Mouse usage is not supported. Please disable it from Settings>System>Input Devices>\"Enable mouse and Touch Screen support\"."
+msgstr "Mus stöds inte. Var vänlig inaktivera det under Inställningar>System>Inmatningsenheter>\"Aktivera mus- och pekskärmsstöd\"."

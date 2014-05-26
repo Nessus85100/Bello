@@ -1,4 +1,5 @@
-<window id="110">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="110">
 	<defaultcontrol always="true">1</defaultcontrol>
 	<controls>
 
@@ -11,8 +12,8 @@
 		</control>
 		<control type="label" id="1">
 			<description>header label</description>
-			<posx>340</posx>
-			<posy>265</posy>
+			<left>340</left>
+			<top>265</top>
 			<width>600</width>
 			<font>FontSize_36</font>
 			<textcolor>white</textcolor>
@@ -24,12 +25,12 @@
 		</control>
 	
 	   <control type="group">
-			<posx>370</posx>
-			<posy>250</posy>
+			<left>370</left>
+			<top>250</top>
 			<control type="label" id="2">
 				<description>dialog line 1</description>
-				<posx>0</posx>
-				<posy>60</posy>
+				<left>0</left>
+				<top>60</top>
         <width>550</width>
 				<height>40</height>
 				<textcolor>99white</textcolor>
@@ -41,8 +42,8 @@
 			</control>
 			<control type="label" id="3">
 				<description>dialog line 2</description>
-				<posx>0</posx>
-				<posy>85</posy>
+				<left>0</left>
+				<top>85</top>
         <width>550</width>
 				<height>40</height>
 				<textcolor>99white</textcolor>
@@ -55,8 +56,8 @@
 			</control>
 			<control type="label" id="4">
 				<description>dialog line 3</description>
-				<posx>0</posx>
-				<posy>110</posy>
+				<left>0</left>
+				<top>110</top>
         <width>545</width>
 				<height>40</height>
 				<textcolor>99white</textcolor>

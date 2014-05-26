@@ -1,11 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <fonts>
 	<fontset id="Default" idloc="15109" unicode="true">
-	 	<font>
-			<name>BackFont</name>
-			<filename>OpenSans-Regular.ttf</filename>
-			<size>22</size>
-			<style>bold</style>
-		</font>
 	 	<font>
 			<name>ClockFont</name>
 			<filename>OpenSans-Regular.ttf</filename>

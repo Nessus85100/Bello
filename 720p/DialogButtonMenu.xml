@@ -1,21 +1,22 @@
-<window type="buttonMenu" id="111">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  type="buttonMenu" id="111">
 	<defaultcontrol>9000</defaultcontrol>
 	<onload>Dialog.Close(playercontrols)</onload>
 	<include>OnLoadDialogsClose</include>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 
 	 <control type="group">
-		<posx>45</posx>
-		<posy>25</posy>
+		<left>45</left>
+		<top>25</top>
 	  <include>TopOptionsSlideAnimations</include>
 	  <control type="grouplist" id="9000">
-			<posx>0</posx>
-			<posy>50</posy>
+			<left>0</left>
+			<top>50</top>
 			<width>460</width>
 			<height max="520">auto</height>
 			<itemgap>0</itemgap>
@@ -25,40 +26,14 @@
 			<ondown>9000</ondown>
 			<control type="button" id="1">
 				<description>Exit button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
 				<onclick>XBMC.Quit()</onclick>
 				<label>$LOCALIZE[13012] XBMC</label>
 				<visible>System.ShowExitButton</visible>
 			</control>
 			<control type="button" id="2">
 				<description>Settings button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
         <include>OnClickDialogsClose</include>
 				<onclick>ActivateWindow(AppearanceSettings)</onclick>
 				<label>$LOCALIZE[5]</label>
@@ -66,20 +41,7 @@
 			</control>
 			<control type="button" id="3">
 				<description>System Info button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
         <include>OnClickDialogsClose</include>
 				<onclick>ActivateWindow(SystemInfo)</onclick>
 				<label>$LOCALIZE[130]</label>
@@ -87,40 +49,14 @@
 			</control>
 			<control type="button" id="4">
 				<description>File Manager button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
         <include>OnClickDialogsClose</include>
 				<onclick>ActivateWindow(FileManager)</onclick>
 				<label>$LOCALIZE[31016]</label>
         <visible>System.Loggedon</visible>
 			</control>
 			<control type="button" id="5">
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
         <include>OnClickDialogsClose</include>
 				<onclick>XBMC.Powerdown()</onclick>
 				<visible>System.CanPowerDown</visible>
@@ -128,20 +64,7 @@
 			</control>
 			<control type="button" id="6">
 				<description>Custom Shutdown Timer</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
 				<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Powerdown())</onclick>
 				<label>$LOCALIZE[20150]</label>
 				<visible>!System.HasAlarm(shutdowntimer)</visible>
@@ -149,100 +72,35 @@
 			</control>
 			<control type="button" id="7">
 				<description>Cancel Shutdown Timer</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
 				<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
 				<label>$LOCALIZE[20151]</label>
 				<visible>System.HasAlarm(shutdowntimer)</visible>
 			</control>
 			<control type="button" id="8">
 				<description>Suspend button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
 				<onclick>XBMC.Suspend()</onclick>
 				<label>$LOCALIZE[13011]</label>
 				<visible>System.CanSuspend</visible>
 			</control>
 			<control type="button" id="9">
 				<description>Hibernate button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
 				<onclick>XBMC.Hibernate()</onclick>
 				<label>$LOCALIZE[13010]</label>
 				<visible>System.CanHibernate</visible>
 			</control>
 			<control type="button" id="10">
 				<description>Reboot button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>22000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
 				<onclick>XBMC.Reset()</onclick>
 				<visible>System.CanReboot</visible>
 				<label>$LOCALIZE[13013]</label>
 			</control>
 			<control type="button" id="11">
 				<description>Logoff button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
 				<onclick>dialog.close(all,true)</onclick>
 				<onclick>System.LogOff</onclick>
 				<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
@@ -251,23 +109,8 @@
 			</control>
 			<control type="togglebutton" id="12">
 				<description>Master mode button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
 				<usealttexture>!System.IsMaster</usealttexture>
-				<alttexturefocus>buttons/contextmenu_fo.png</alttexturefocus>
-				<alttexturenofocus>buttons/contextmenu_nf.png</alttexturenofocus>
 				<onclick>xbmc.mastermode</onclick>
 				<label>$LOCALIZE[20046]</label>
 				<altlabel>$LOCALIZE[20045]</altlabel>
@@ -275,24 +118,26 @@
 			</control>
 			<control type="button" id="13">
 				<description>Profiles button</description>
-				<width>460</width>
-				<height>40</height>
-				<font>FontSize_22</font>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>44white</disabledcolor>
-			  <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
+			  <include>TopLeftMenusButton</include>
         <include>OnClickDialogsClose</include>
 				<onclick>ActivateWindow(Profiles)</onclick>
 				<label>$LOCALIZE[13200]</label>
         <visible>System.Loggedon</visible>
+			</control>
+			<control type="button" id="14">
+				<description>Eject button</description>
+			  <include>TopLeftMenusButton</include>
+        <onclick>EjectTray</onclick>
+				<label>$LOCALIZE[13391]</label>
+			  <visible>System.HasMediaDVD</visible>
+        <visible>System.Loggedon</visible>
+			</control>
+			<control type="button" id="17">
+			  <include>TopLeftMenusButton</include>
+		    <onclick>Dialog.Close(all,true)</onclick>
+		    <onclick>Action(reloadkeymaps)</onclick>
+		    <onclick>XBMC.ReloadSkin()</onclick>
+				<label>$LOCALIZE[20183]</label>
 			</control>
 	  </control>
 
@@ -300,8 +145,8 @@
 	  <!-- Top Content Info -->
 	  <!-- ================ -->
 		<control type="grouplist">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>70</height>
 			<width>1000</width>
 			<align>left</align>
@@ -346,8 +191,8 @@
 	 <!-- Small System Info -->
 	 <!-- ================= -->
 	 <control type="group">
-	  <posx>45</posx>
-		<posy>540</posy>
+	  <left>45</left>
+		<top>505</top>
     <animation type="WindowOpen" reversible="false">
       <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
       <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
@@ -365,8 +210,8 @@
       <effect type="slide" start="0,0" end="0,90" time="350" tween="sine" easing="out" />
     </animation>
 		<control type="grouplist">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>200</height>
 			<width>1190</width>
 			<itemgap>0</itemgap>
@@ -413,7 +258,18 @@
 		    <align>right</align>
 		    <aligny>center</aligny>
 				<scroll>false</scroll>
-				<label>$INFO[Network.IPAddress, $LOCALIZE[150]: ]</label>
+				<label>$INFO[System.InternetState,$LOCALIZE[443]: ]</label>
+			</control>
+			<control type="label" id="1">
+				<height>25</height>
+				<width>1190</width>
+				<font>FontSize_22</font>
+				<textcolor>77white</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+		    <align>right</align>
+		    <aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[Network.LinkState]$INFO[Network.IPAddress, (,)]</label>
 			</control>
 			<control type="label" id="1">
 				<height>25</height>

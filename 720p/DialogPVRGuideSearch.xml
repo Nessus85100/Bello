@@ -1,4 +1,5 @@
-<window>
+<?xml version="1.0" encoding="UTF-8"?>
+<window >
 	<defaultcontrol always="true">9</defaultcontrol>
 	<controls>
 	 <control type="group">
@@ -62,7 +63,7 @@
       <!-- Left Part -->
 			<control type="group">
 	      <posx>230</posx>
-	      <posy>244</posy>
+	      <posy>242</posy>
 				<control type="radiobutton" id="10">
 					<description>Include Description</description>
 					<width>400</width>

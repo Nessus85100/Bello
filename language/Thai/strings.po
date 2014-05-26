@@ -140,6 +140,10 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "หลายภาพ"
 
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "เปิดใช้ โหมด Kiosk"
+
 msgctxt "#31203"
 msgid "New Search"
 msgstr "ค้นหาใหม่"

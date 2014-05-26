@@ -437,8 +437,8 @@ msgid "Show RSS feed in whole skin"
 msgstr "Tunjuk suapan RSS dalam keseluruhan kulit"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Sembunyi pembenderaan baca dari nama fail video [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide Live TV Submenu"
+msgstr "Sembunyi Submenu TV Langsung"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
@@ -467,6 +467,18 @@ msgstr "Papar"
 msgctxt "#31159"
 msgid "Show FullScreenInfo instead of the SeekBar"
 msgstr "Tunjuk Maklumat Skrin Penuh selain dari Palang Jangkau"
+
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "Muat turun [COLOR=selected]logo.png[/COLOR] untuk semua Cereka"
+
+msgctxt "#31161"
+msgid "Hide Library Totals"
+msgstr "Sembunyi Jumlah Pustaka"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Benarkan Mod Kiosk"
 
 msgctxt "#31200"
 msgid "My Movies"

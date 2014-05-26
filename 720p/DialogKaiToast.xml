@@ -1,28 +1,28 @@
-<window id="107">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="107">
 	<controls>
 
 	 <control type="group">
-	  <posx>40</posx>
-		<posy>645</posy>
-		<visible>!Window.IsActive(ShutdownMenu) + !Window.IsVisible(startup)</visible>
+	  <left>40</left>
+		<top>645</top>
+		<visible>!Window.IsActive(ShutdownMenu) + !Window.IsVisible(startup) + !Window.IsVisible(loginscreen)</visible>
+		<animation effect="slide" start="0,0" end="0,150" time="260" tween="sine" easing="inout" condition="[Window.IsActive(Favourites) + Window.IsActive(ContextMenu)]">Conditional</animation>
 	  <include>NowPlaying</include>
 		<control type="grouplist">
-			<posx>0</posx>
-			<posy>0</posy>
+			<right>100</right>
+			<top>0</top>
 			<height>60</height>
-			<width>1190</width>
-			<align>right</align>
+			<width>840</width>
 			<aligny>center</aligny>
 			<itemgap>10</itemgap>
 			<orientation>horizontal</orientation>
 			<control type="group">
-			  <posx>50r</posx>
+			  <right>-50</right>
 				<control type="label" id="401">
 			    <description>Heading</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<top>0</top>
 					<height>25</height>
-					<width>740</width>
+					<width>840</width>
 					<font>NotificationsFont</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>99000000</shadowcolor>
@@ -32,10 +32,9 @@
 				</control>
 				<control type="label" id="402">
 			    <description>Message</description>
-					<posx>0</posx>
-					<posy>20</posy>
+					<top>20</top>
 					<height>25</height>
-					<width>740</width>
+					<width>840</width>
 					<font>NotificationsFont</font>
 					<textcolor>99white</textcolor>
 					<shadowcolor>99000000</shadowcolor>
@@ -46,12 +45,10 @@
 			</control>
 	  </control>
 		<control type="group">
-			<posx>95r</posx>
-		  <posy>-7</posy>
+			<left>1145</left>
+		  <top>-7</top>
 			<control type="image" id="400">
 				<description>little pic</description>
-				<posx>0</posx>
-				<posy>0</posy>
 				<width>55</width>
 				<height>55</height>
 				<aspectratio>stretch</aspectratio>
@@ -61,8 +58,6 @@
 			</control>
 			<control type="image" id="403">
 				<description>little pic</description>
-				<posx>0</posx>
-				<posy>0</posy>
 				<width>55</width>
 				<height>55</height>
 				<aspectratio>stretch</aspectratio>
@@ -73,8 +68,6 @@
 			</control>
 			<control type="image" id="404">
 				<description>little pic</description>
-				<posx>0</posx>
-				<posy>0</posy>
 				<width>55</width>
 				<height>55</height>
 				<aspectratio>stretch</aspectratio>
@@ -85,8 +78,6 @@
 			</control>
 			<control type="image" id="405">
 				<description>little pic</description>
-				<posx>0</posx>
-				<posy>0</posy>
 				<width>55</width>
 				<height>55</height>
 				<aspectratio>stretch</aspectratio>

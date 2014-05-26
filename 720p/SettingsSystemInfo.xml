@@ -1,4 +1,5 @@
-<window id="7">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="7">
 	<defaultcontrol always="true">95</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
@@ -19,12 +20,12 @@
 		</control>			
 
 		<control type="group">
-				<posx>100</posx>
-				<posy>166</posy>
+				<left>100</left>
+				<top>166</top>
 			  <include>Window_OpenClose_Animation</include>
 			<control type="grouplist" id="9001">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>295</width>
 				<height>414</height>
 				<itemgap>2</itemgap>
@@ -135,11 +136,11 @@
 				</control>
 			</control>
 			<control type="grouplist">
-					<posx>317</posx>
-					<posy>0</posy>
-					<width>782</width>
-					<height>414</height>
-					<itemgap>2</itemgap>
+				<left>317</left>
+				<top>0</top>
+				<width>782</width>
+				<height>414</height>
+				<itemgap>2</itemgap>
 				<control type="label" id="2">
 					<description>Label 2</description>
 					<width>782</width>
@@ -245,17 +246,17 @@
 
     <!-- Header & Footer Labels -->
 		<control type="group">
-				<posx>120</posx>
-				<posy>163</posy>
-			  <include>Window_OpenClose_Animation</include>
+		  <left>120</left>
+			<top>163</top>
+		  <include>Window_OpenClose_Animation</include>
 			<control type="label" id="40">
 				<description>Hidden label to get the values</description>
 				<visible>false</visible>
 			</control>
 			<control type="label">
 				<description>Header Label</description>
-				<posx>0</posx>
-				<posy>-50</posy>
+				<left>0</left>
+				<top>-50</top>
 				<width>1075</width>
 				<height>50</height>
 				<font>FontSize_36</font>
@@ -267,8 +268,8 @@
 			</control>
 			<control type="label" id="52">
 				<description>XBMC BUILD Version</description>
-				<posx>0</posx>
-				<posy>425</posy>
+				<left>0</left>
+				<top>425</top>
 				<width>1045</width>
 				<height>30</height>
 				<textcolor>33white</textcolor>
@@ -277,8 +278,8 @@
 			</control>
 			<control type="label.">
 				<description>CPU Text</description>
-				<posx>1040</posx>
-				<posy>420</posy>
+				<left>1040</left>
+				<top>420</top>
 				<width>350</width>
 				<height>25</height>
 				<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
@@ -290,16 +291,16 @@
 			</control>
 			<control type="progress.">
 				<description>CPU BAR</description>
-				<posx>790</posx>
-				<posy>425</posy>
+				<left>790</left>
+				<top>425</top>
 				<width>250</width>
 				<height>16</height>
 				<info>System.CPUUsage</info>
 			</control>
 			<control type="label.">
 				<description>Memory Text</description>
-				<posx>1040</posx>
-				<posy>440</posy>
+				<left>1040</left>
+				<top>440</top>
 				<width>350</width>
 				<height>25</height>
 				<label>$LOCALIZE[31027] $INFO[system.memory(used.percent)]</label>
@@ -311,8 +312,8 @@
 			</control>
 			<control type="progress.">
 				<description>Memory BAR</description>
-				<posx>790</posx>
-				<posy>445</posy>
+				<left>790</left>
+				<top>445</top>
 				<width>250</width>
 				<height>16</height>
 				<info>system.memory(used)</info>
@@ -324,5 +325,6 @@
 		<include>CommonNowPlaying</include>
 		<include>CommonDialogsFadeOutBG</include>
 		<include>SettingsMenu</include>
+		<include>SettingsWeatherAndClock</include>
 	</controls>
 </window>

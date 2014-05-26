@@ -1,4 +1,5 @@
-<window id="136">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="136">
     <zorder>5</zorder>
 		<animation type="WindowOpen" reversible="false">
 			<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
@@ -18,12 +19,12 @@
 		</animation>
 		<controls>
 		<control type="group">
-				<posx>545</posx>
-				<posy>245</posy>
+				<left>545</left>
+				<top>245</top>
 			<control type="image">
 				<description>Busy animation</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>220</width>
 				<height>220</height>
 				<texture>dialogs/busy/static_busy.png</texture>
@@ -31,8 +32,8 @@
 			</control>
 			<control type="image">
 				<description>Busy animation</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>220</width>
 				<height>220</height>
 				<texture>dialogs/busy/animation_1.png</texture>
@@ -41,8 +42,8 @@
 			</control>
 			<control type="image">
 				<description>Busy animation</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>220</width>
 				<height>220</height>
 				<texture>dialogs/busy/animation_2.png</texture>
@@ -51,8 +52,8 @@
 			</control>
 			<control type="label">
 				<description>Busy label</description>
-				<posx>-90</posx>
-				<posy>90</posy>
+				<left>-90</left>
+				<top>90</top>
 				<width>400</width>
 				<height>35</height>
 				<align>center</align>

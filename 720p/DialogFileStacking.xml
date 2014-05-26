@@ -1,14 +1,15 @@
-<window id="2008">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="2008">
 	<defaultcontrol>450</defaultcontrol>
 	<controls>
 		
 	 <control type="group">
-		<posx>45</posx>
-		<posy>25</posy>
+		<left>45</left>
+		<top>25</top>
 	  <include>TopOptionsSlideAnimations</include>
 	  <control type="list" id="450">
-			<posx>0</posx>
-			<posy>50</posy>
+			<left>0</left>
+			<top>50</top>
 			<width>460</width>
 			<height>85</height>
 			<itemgap>0</itemgap>
@@ -18,7 +19,7 @@
 			<ondown>450</ondown>
 			<itemlayout width="460" height="40">
 			<control type="label">
-				<posx>0</posx>
+				<left>0</left>
 				<width>460</width>
 				<height>40</height>
 				<font>FontSize_20</font>
@@ -31,7 +32,7 @@
 			</itemlayout>
 			<focusedlayout width="460" height="40">
 			<control type="label">
-				<posx>0</posx>
+				<left>0</left>
 				<width>460</width>
 				<height>40</height>
 				<font>FontSize_20</font>
@@ -47,12 +48,12 @@
 		
 
 	  <control type="group">
-				<posx>45</posx>
-				<posy>25</posy>
+				<left>45</left>
+				<top>25</top>
 		    <include>TopOptionsSlideAnimations</include>
 			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>70</height>
 				<width>1000</width>
 				<align>left</align>

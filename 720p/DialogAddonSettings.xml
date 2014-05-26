@@ -1,12 +1,13 @@
-<window id="140">
-	<defaultcontrol always="true">9</defaultcontrol>
-	<controls>
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="140">
+ <defaultcontrol always="true">9</defaultcontrol>
+ <controls>
 
 	<control type="group">
 	 <animation type="WindowOpen" condition="Window.IsVisible(contentsettings) | Window.IsVisible(okdialog) | Window.IsVisible(progressdialog) | Window.IsVisible(1112) | Window.IsVisible(script-XBMC-Subtitles-main.xml)" reversible="false">
 		<effect type="fade" start="0" end="100" time="0" delay="300" />
 	 </animation>
-		
+
 	 <control type="group">
 		<visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(textviewer) + !Window.IsActive(okdialog) + !Window.IsActive(progressdialog) + !Window.IsActive(filebrowser) + !Window.IsActive(sliderdialog) + !Window.IsActive(selectdialog) + !Window.IsActive(DialogSelect.xml)</visible>
 	  <include>DialogAnimation</include>
@@ -24,8 +25,8 @@
 
 		<control type="label"  id="20">
 			<description>header label</description>
-			<posx>200</posx>
-			<posy>143</posy>
+			<left>200</left>
+			<top>143</top>
 			<width>880</width>
 			<height>50</height>
 			<font>FontSize_36</font>
@@ -39,13 +40,13 @@
 		</control>
 			
 	  <control type="group" id="9000">
-		 <posy>196</posy>
+		 <top>196</top>
 	   <control type="group">
-			<posx>200</posx>
+			<left>200</left>
 			<control type="grouplist" id="9">
 				<description>category area</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>252</width>
 				<height>362</height>
 				<itemgap>2</itemgap>
@@ -73,11 +74,11 @@
 		 </control>
 
 	   <control type="group">
-			<posx>455</posx>
+			<left>455</left>
 			<control type="grouplist" id="2">
 				<description>control area</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>625</width>
 				<height>362</height>
 				<itemgap>2</itemgap>
@@ -99,7 +100,7 @@
 			<control type="spincontrolex" id="5">
 				<description>Default spincontrolex</description>
 				<textwidth>550</textwidth>
-			  <spinposx>10</spinposx>
+			  <spinleft>10</spinleft>
 		    <include>SettingsSpincontrolex</include>
 			</control>
 			<control type="sliderex" id="8">
@@ -127,12 +128,12 @@
 
 
 	  <control type="group" id="10000">
-			<posx>220</posx>
-			<posy>552</posy>
+			<left>220</left>
+			<top>552</top>
       <!-- Buttons -->
 			<control type="grouplist" id="10001">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>0</width>
 				<height>0</height>
 				<itemgap>0</itemgap>
@@ -160,8 +161,8 @@
 			</control>
       <!-- Buttons Labels -->
 			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>70</height>
 				<width>552</width>
 				<itemgap>25</itemgap>
@@ -211,11 +212,7 @@
 				</control>
 			</control>
 	  </control>
-
-
 	 </control>
-
   </control>
-		
-	</controls>
+ </controls>
 </window>

@@ -35,3 +35,7 @@ msgstr "Pahina"
 msgctxt "#31027"
 msgid "Memory Used:"
 msgstr "Gamit na Memory"
+
+msgctxt "#31302"
+msgid "Paused"
+msgstr "Pause"

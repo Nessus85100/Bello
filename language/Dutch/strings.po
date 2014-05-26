@@ -437,8 +437,8 @@ msgid "Show RSS feed in whole skin"
 msgstr "Toon RSS feed in heel de skin"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Verberg markeringen uit video bestandennamen [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide Live TV Submenu"
+msgstr "Verberg Live-TV Submenu"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
@@ -467,6 +467,18 @@ msgstr "Weergaves"
 msgctxt "#31159"
 msgid "Show FullScreenInfo instead of the SeekBar"
 msgstr "geef Fullscreeninfo weer in plaats van de SeekBar"
+
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "Download [COLOR=selected]logo.png[/COLOR] voor alle films"
+
+msgctxt "#31161"
+msgid "Hide Library Totals"
+msgstr "Verberg Bibliotheektotalen"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Kioskmodus activeren (geen zij menu's)"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -902,7 +914,7 @@ msgstr "Verander de terugspelen-instellingen, beheer EPG data instellingen, opna
 
 msgctxt "#31404"
 msgid "Configure how XBMC handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Configureer hoe XBMC muziek behandeld. setup terguspelen en lijst opties, zoeken naar files of databases en veel meer."
+msgstr "Configureer hoe XBMC muziek behandeld. instellen afspelen en lijst opties, zoeken naar files of databases en veel meer."
 
 msgctxt "#31405"
 msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
@@ -942,7 +954,7 @@ msgstr "Configureer Skin Instellingen"
 
 msgctxt "#31414"
 msgid "Configure Music Settings"
-msgstr "Configureer Muziek Instellinen"
+msgstr "Configureer Muziek Instellingen"
 
 msgctxt "#31415"
 msgid "Configure Pictures Settings"

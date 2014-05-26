@@ -68,6 +68,10 @@ msgctxt "#31012"
 msgid "OFF"
 msgstr "ВЫКЛ"
 
+msgctxt "#31013"
+msgid "Enable Home Menu Animation"
+msgstr "Включить анимацию главного меню"
+
 msgctxt "#31014"
 msgid "ViewType Options"
 msgstr "Настройки вида"
@@ -208,6 +212,10 @@ msgctxt "#31086"
 msgid "Banner List"
 msgstr "Баннеры"
 
+msgctxt "#31087"
+msgid "VideoWall Fanart"
+msgstr "Фанарт видеостены"
+
 msgctxt "#31088"
 msgid "List Wall"
 msgstr "Стена со списком"
@@ -215,6 +223,14 @@ msgstr "Стена со списком"
 msgctxt "#31098"
 msgid "Home Menu"
 msgstr "Главное Меню"
+
+msgctxt "#31099"
+msgid "Show Home Menu Buttons"
+msgstr "Показать кнопки в Главном Меню"
+
+msgctxt "#31100"
+msgid "Hide Home Menu Buttons"
+msgstr "Скрыть кнопки главного меню"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -287,6 +303,10 @@ msgstr "Кнопка Музыка открывает..."
 msgctxt "#31118"
 msgid "Custom Button"
 msgstr "Дополнительная кнопка"
+
+msgctxt "#31119"
+msgid "Custom Home Menu Buttons"
+msgstr "Пользовательские кнопки главного меню"
 
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
@@ -417,8 +437,8 @@ msgid "Show RSS feed in whole skin"
 msgstr "Показывать поток RSS на всех экранах"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Не показывать флаги из имени видеофайла [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide Live TV Submenu"
+msgstr "Убрать подменю ТВ"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
@@ -432,9 +452,33 @@ msgctxt "#31155"
 msgid "Add-ons Button opens..."
 msgstr "Кнопка Дополнения открывает..."
 
+msgctxt "#31156"
+msgid "Hide Video Views"
+msgstr "Спрятать просмотры Видео"
+
+msgctxt "#31157"
+msgid "Hide Music Views"
+msgstr "Спрятать просмотры Музыки"
+
 msgctxt "#31158"
 msgid "Views"
 msgstr "Режим просмотра"
+
+msgctxt "#31159"
+msgid "Show FullScreenInfo instead of the SeekBar"
+msgstr "Показывать Полноэкранную информацию вместо панели поиска"
+
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "Скачать [COLOR=selected]logo.png[/COLOR] для всех фильмов"
+
+msgctxt "#31161"
+msgid "Hide Library Totals"
+msgstr "Спрятать статистику медиатеки"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Включить Режим \"Киоск\""
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -499,6 +543,10 @@ msgstr "Далее в эфире"
 msgctxt "#31216"
 msgid "Last Aired"
 msgstr "Ранее в эфире"
+
+msgctxt "#31217"
+msgid "Wide Thumb"
+msgstr "Широкий эскиз"
 
 msgctxt "#31218"
 msgid "Landscape"
@@ -931,3 +979,15 @@ msgstr "Настройки профайлов"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Настройки обложки"
+
+msgctxt "#31430"
+msgid "Help Tip"
+msgstr "Подсказка"
+
+msgctxt "#31431"
+msgid "You haven't added any items to Favorites yet. Highlight an item, and choose \"Add to favorites\" from the context menu."
+msgstr "Вы еще ничего не добавили в Избранное. Выделите элемент и выберите \"Добавить в Избранное\" из контекстного меню"
+
+msgctxt "#31432"
+msgid "Mouse usage is not supported. Please disable it from Settings>System>Input Devices>\"Enable mouse and Touch Screen support\"."
+msgstr "Мышь не поддерживается. Пожалуйста, отключите ее в Установки>Система>Ввод устройств>\"Включить поддержку мыши и сенсорного экрана\""

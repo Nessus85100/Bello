@@ -1,4 +1,5 @@
-<window id="3">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="3">
 	<defaultcontrol>20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<backgroundcolor>0</backgroundcolor>
@@ -7,7 +8,7 @@
 
 	 <control type="group">
     <include>Window_OpenClose_Animation</include>
-		<visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(MediaSource)</visible>
+		<visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(MediaSource) + !Window.IsActive(favourites)</visible>
 		
 		<control type="group">
       <include>Window_OpenClose_Animation</include>
@@ -30,14 +31,14 @@
 				<animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
 			</control>
 			<control type="fadelabel">
-				<posx>445</posx>
-				<posy>148r</posy>
+				<left>445</left>
+				<top>573</top>
 				<width>400</width>
 				<height>35</height>
-				<font>FontSize_18</font>
 				<align>center</align>
-				<textcolor>77white</textcolor>
-			  <shadowcolor>99000000</shadowcolor>
+				<textcolor>33white</textcolor>
+				<shadowcolor>44333333</shadowcolor>
+				<font>FontSize_20</font>
 				<label>$INFO[System.Totalspace,, $LOCALIZE[20182]]</label>
 				<label>$INFO[System.Freespace,, $LOCALIZE[20182]]</label>
 	      <scroll>false</scroll>
@@ -50,12 +51,12 @@
 		</control>
 
 		<control type="group">
-			<posx>0</posx>
-			<posy>-20</posy>
+			<left>0</left>
+			<top>-20</top>
       <include>Window_OpenClose_Animation</include>
 			<control type="label" id="101">
-				<posx>136</posx>
-				<posy>140</posy>
+				<left>136</left>
+				<top>140</top>
 				<width>495</width>
 				<height>40</height>
 				<font>FontSize_34</font>
@@ -65,8 +66,8 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>638.5</posx>
-				<posy>183</posy>
+				<left>638.5</left>
+				<top>183</top>
 				<width>4</width>
 				<height>411</height>
 				<texturesliderbackground>-</texturesliderbackground>
@@ -82,8 +83,8 @@
 				<visible>Control.IsVisible(20)</visible>
 			</control>
 			<control type="list" id="20">
-				<posx>124</posx>
-				<posy>185</posy>
+				<left>124</left>
+				<top>185</top>
 				<width>515</width>
 				<height>410</height>
 				<onleft>21</onleft>
@@ -96,8 +97,8 @@
 			  <animation effect="fade" start="100" end="0" time="250" condition="Window.IsVisible(ContextMenu) + Control.HasFocus(20)" reversible="true">Conditional</animation>
 				<itemlayout height="45" width="515">
 					<control type="label">
-						<posx>13</posx>
-						<posy>0</posy>
+						<left>13</left>
+						<top>0</top>
 						<width>450</width>
 						<height>45</height>
 						<font>FontSize_20</font>
@@ -109,8 +110,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>503</posx>
-						<posy>0</posy>
+						<left>503</left>
+						<top>0</top>
 						<width>320</width>
 						<height>45</height>
 						<font>FontSize_20</font>
@@ -124,28 +125,28 @@
 				</itemlayout>
 				<focusedlayout height="45" width="515">
 					<control type="image">
-						<posx>0</posx>
-						<posy>2</posy>
+						<left>0</left>
+						<top>2</top>
 						<width>515</width>
 						<height>45</height>
-				    <texture>windows/filemanager/focus.png</texture>
+				    <texture background="true" border="1">windows/filemanager/focus.png</texture>
 						<visible>!Control.HasFocus(20)</visible>
 			      <animation effect="fade" start="100" end="30" time="250" condition="!Control.HasFocus(20)">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>2</posy>
+						<left>0</left>
+						<top>2</top>
 						<width>515</width>
 						<height>45</height>
-				    <texture>windows/filemanager/focus.png</texture>
+				    <texture background="true" border="1">windows/filemanager/focus.png</texture>
 						<visible>Control.HasFocus(20)</visible>
 			      <animation effect="slide" start="0,25" end="0,0" time="200" reversible="false" tween="back" easing="out" condition="Container(20).OnPrevious">focus</animation>
 			      <animation effect="slide" start="0,-25" end="0,0" time="200" reversible="false" tween="back" easing="out" condition="Container(20).OnNext">focus</animation>
 			      <animation effect="fade" start="70" end="100" time="200" condition="Control.HasFocus(20)">Conditional</animation>
 					</control>
 					<control type="label">
-						<posx>13</posx>
-						<posy>0</posy>
+						<left>13</left>
+						<top>0</top>
 						<width>450</width>
 						<height>45</height>
 						<font>FontSize_20</font>
@@ -157,8 +158,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>503</posx>
-						<posy>0</posy>
+						<left>503</left>
+						<top>0</top>
 						<width>320</width>
 						<height>45</height>
 						<font>FontSize_20</font>
@@ -173,26 +174,25 @@
 			</control>
 			<control type="label">
 				<description>Items</description>
-				<posx>136</posx>
-				<posy>146r</posy>
-				<width>410</width>
-				<font>FontSize_18</font>
+				<left>136</left>
+				<top>592</top>
+				<width>400</width>
+				<height>35</height>
 				<align>left</align>
-				<scroll>true</scroll>
-				<textcolor>white</textcolor>
-				<shadowcolor>99000000</shadowcolor>
-				<!-- <textcolor>FFA939FF</textcolor> -->
+				<textcolor>33white</textcolor>
+				<shadowcolor>44333333</shadowcolor>
+				<font>FontSize_20</font>
 				<label>$INFO[Container(20).NumItems,, $LOCALIZE[31025]]</label>
-				<animation effect="fade" end="30" condition="true">Conditional</animation>
+		    <visible>IntegerGreaterThan(Container(20).NumItems,0)</visible>
 			</control>			
 		</control>
 		<control type="group">
-			<posx>478</posx>
-			<posy>-20</posy>
+			<left>478</left>
+			<top>-20</top>
       <include>Window_OpenClose_Animation</include>
 			<control type="label" id="102">
-				<posx>664</posx>
-				<posy>140</posy>
+				<left>174</left>
+				<top>140</top>
 				<width>495</width>
 				<height>40</height>
 				<font>FontSize_34</font>
@@ -202,8 +202,8 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="scrollbar" id="61">
-				<posx>160.5</posx>
-				<posy>183</posy>
+				<left>160.5</left>
+				<top>183</top>
 				<width>4</width>
 				<height>411</height>
 				<texturesliderbackground>-</texturesliderbackground>
@@ -219,8 +219,8 @@
 				<visible>Control.IsVisible(21)</visible>
 			</control>
 			<control type="list" id="21">
-				<posx>164</posx>
-				<posy>185</posy>
+				<left>164</left>
+				<top>185</top>
 				<width>515</width>
 				<height>410</height>
 				<onleft>61</onleft>
@@ -233,8 +233,8 @@
 			  <animation effect="fade" start="100" end="0" time="250" condition="Window.IsVisible(ContextMenu) + Control.HasFocus(21)" reversible="true">Conditional</animation>
 				<itemlayout height="45" width="515">
 					<control type="label">
-						<posx>13</posx>
-						<posy>0</posy>
+						<left>13</left>
+						<top>0</top>
 						<width>450</width>
 						<height>45</height>
 						<font>FontSize_20</font>
@@ -246,8 +246,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>503</posx>
-						<posy>0</posy>
+						<left>503</left>
+						<top>0</top>
 						<width>320</width>
 						<height>45</height>
 						<font>FontSize_20</font>
@@ -261,28 +261,28 @@
 				</itemlayout>
 				<focusedlayout height="45" width="515">
 					<control type="image">
-						<posx>0</posx>
-						<posy>2</posy>
+						<left>0</left>
+						<top>2</top>
 						<width>515</width>
 						<height>45</height>
-				    <texture>windows/filemanager/focus.png</texture>
+				    <texture border="1">windows/filemanager/focus.png</texture>
 						<visible>!Control.HasFocus(21)</visible>
 			      <animation effect="fade" start="100" end="30" time="250" condition="!Control.HasFocus(21)" reversible="true">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>2</posy>
+						<left>0</left>
+						<top>2</top>
 						<width>515</width>
 						<height>45</height>
-				    <texture>windows/filemanager/focus.png</texture>
+				    <texture border="1">windows/filemanager/focus.png</texture>
 						<visible>Control.HasFocus(21)</visible>
 			      <animation effect="slide" start="0,25" end="0,0" time="200" reversible="false" tween="back" easing="out" condition="Container(21).OnPrevious">focus</animation>
 			      <animation effect="slide" start="0,-25" end="0,0" time="200" reversible="false" tween="back" easing="out" condition="Container(21).OnNext">focus</animation>
 			      <animation effect="fade" start="70" end="100" time="200" condition="Control.HasFocus(21)" reversible="true">Conditional</animation>
 					</control>
 					<control type="label">
-						<posx>13</posx>
-						<posy>0</posy>
+						<left>13</left>
+						<top>0</top>
 						<width>450</width>
 						<height>45</height>
 						<font>FontSize_20</font>
@@ -294,8 +294,8 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>503</posx>
-						<posy>0</posy>
+						<left>503</left>
+						<top>0</top>
 						<width>320</width>
 						<height>45</height>
 						<font>FontSize_20</font>
@@ -310,56 +310,56 @@
 			</control>
 			<control type="label">
 				<description>Items</description>
-				<posx>665</posx>
-				<posy>146r</posy>
-				<width>410</width>
-				<font>FontSize_18</font>
+				<left>267</left>
+				<top>592</top>
+				<width>400</width>
+				<height>35</height>
 				<align>right</align>
-				<scroll>true</scroll>
-				<textcolor>white</textcolor>
-		    <shadowcolor>99000000</shadowcolor>
-				<!-- <textcolor>FFA939FF</textcolor> -->
+				<textcolor>33white</textcolor>
+				<shadowcolor>44333333</shadowcolor>
+				<font>FontSize_20</font>
 				<label>$INFO[Container(21).NumItems,, $LOCALIZE[31025]]</label>
-				<animation effect="fade" end="30" condition="true">Conditional</animation>
+		    <visible>IntegerGreaterThan(Container(21).NumItems,0)</visible>
 			</control>
 		</control>
 	 </control>
 
-    <!-- ================ -->
-    <!-- Top Content Info -->
-    <!-- ================ -->
-	  <control type="group">
-			<posx>45</posx>
-			<posy>25</posy>
-		  <visible>!Window.IsActive(ShutdownMenu)</visible>
-		  <include>CommonSlideAnimations</include>
-		  <include>CommonWeatherAndClock</include>
-			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
-			  <height>70</height>
-				<width>1000</width>
-				<align>left</align>
-				<itemgap>12</itemgap>
-				<orientation>horizontal</orientation>
-		    <include>CommonSlideAnimations</include>
-				<control type="label">
-				  <include>TopBigLabel</include>
-					<label>$LOCALIZE[7]</label>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-          <label>$INFO[Control.GetLabel(101)]</label>
-			    <visible>Control.HasFocus(20)</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-          <label>$INFO[Control.GetLabel(102)]</label>
-			    <visible>Control.HasFocus(21)</visible>
-				</control>
+	 <include>CommonWeatherAndClock</include>
+		
+   <!-- ================ -->
+   <!-- Top Content Info -->
+   <!-- ================ -->
+   <control type="group">
+		<left>45</left>
+		<top>25</top>
+	  <visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(favourites)</visible>
+	  <include>CommonSlideAnimations</include>
+		<control type="grouplist">
+			<left>0</left>
+			<top>0</top>
+		  <height>70</height>
+			<width>1000</width>
+			<align>left</align>
+			<itemgap>12</itemgap>
+			<orientation>horizontal</orientation>
+	    <include>CommonSlideAnimations</include>
+			<control type="label">
+			  <include>TopBigLabel</include>
+				<label>$LOCALIZE[7]</label>
 			</control>
-	  </control>
+			<control type="label">
+			  <include>TopZoomedSmallLabel</include>
+        <label>$INFO[Control.GetLabel(101)]</label>
+		    <visible>Control.HasFocus(20)</visible>
+			</control>
+			<control type="label">
+			  <include>TopZoomedSmallLabel</include>
+        <label>$INFO[Control.GetLabel(102)]</label>
+		    <visible>Control.HasFocus(21)</visible>
+			</control>
+		</control>
+   </control>
 
-		<include>CommonItems</include>
+	 <include>CommonItems</include>
 	</controls>
 </window>

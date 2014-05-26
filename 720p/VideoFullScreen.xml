@@ -1,4 +1,5 @@
-<window id="2005">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="2005">
   <defaultcontrol>-</defaultcontrol>
 	<controls>
 		<control type="image" id="1">
@@ -7,8 +8,8 @@
 			<texture background="true">windows/bg/bg_vignette.png</texture>
 			<fadetime>FanartCrossfadeTime</fadetime>
       <visible>Window.IsActive(InfoDialog) + !Window.IsActive(ShutdownMenu)</visible>
-		 <animation effect="fade" time="300">Visible</animation>
-		 <animation effect="fade" time="400" delay="300">Hidden</animation>
+			<animation effect="fade" time="300">Visible</animation>
+			<animation effect="fade" time="400" delay="300">Hidden</animation>
 		</control>
 		<control type="image" id="1">
 		  <description>Vignette</description>
@@ -17,7 +18,7 @@
 			<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
       <visible>!Window.IsActive(SliderDialog)</visible>
-      <visible>Player.ShowInfo | Window.IsActive(VideoOSD) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(script-XBMC-Subtitles-main.xml) | Window.IsActive(NumericInput)</visible>
+      <visible>Player.ShowInfo | Window.IsActive(ShutdownMenu) | Window.IsActive(VideoOSD) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(SubtitleSearch) | Window.IsActive(NumericInput)</visible>
 		</control>
 		<control type="image" id="1">
 		  <description>Diffuse</description>
@@ -26,7 +27,7 @@
 			<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
       <visible>!Window.IsActive(SliderDialog)</visible>
-      <visible>Window.IsActive(ShutdownMenu) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)</visible>
+      <visible>Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide) | Window.IsActive(ShutdownMenu)</visible>
 		</control>
 
 		<!-- ============================ -->
@@ -34,20 +35,20 @@
 		<!-- ============================ -->
 		<control type="group" id="1">
 		  <control type="image" id="1">
-				<posx>0</posx>
-				<posy>410</posy>
+				<left>0</left>
+				<top>410</top>
 				<width>1280</width>
 				<height>220</height>
 				<fadetime>200</fadetime>
 				<texture background="true">osd/tile.png</texture>
 			  <colordiffuse>D9FFFFFF</colordiffuse>
 				<include>FanartFade</include>
-        <visible>[Player.ShowInfo | [Player.Paused + Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(script-XBMC-Subtitles-main.xml) | Window.IsActive(ShutdownMenu) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
+        <visible>[Player.ShowInfo | [Player.Paused + Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(SubtitleSearch) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
 		  </control>
 			<control type="group" id="1">
-				<posx>40</posx>
-				<posy>325</posy>
-        <visible>[Player.ShowInfo | [Player.Paused+Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(script-XBMC-Subtitles-main.xml) | Window.IsActive(ShutdownMenu) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
+				<left>35</left>
+				<top>325</top>
+        <visible>[Player.ShowInfo | [Player.Paused+Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(SubtitleSearch) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
 		    <animation type="WindowOpen">
 	        <effect type="slide" start="-150,0" end="0,0" time="450" delay="0" tween="sine" easing="out" />
 	        <effect type="fade" start="0" end="100" time="450" delay="0" tween="sine" easing="out" />
@@ -66,243 +67,241 @@
 		    </animation>
 		    <!-- Movies & Episodes Cover -->
 			  <control type="group" id="1">
-				 <posx>-5</posx>
-			   <visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
+			    <visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
 					<control type="image" id="1">
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>185</width>
 						<height>258</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<texture diffuse="thumbs/poster_diffuse.png">thumbs/thumb_back.png</texture>
+						<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/thumb_back.png</texture>
 						<fadetime>800</fadetime>
 					</control>
 				 <control type="image" id="1">
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>185</width>
 						<height>258</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<texture fallback="thumbs/fallback_poster.png" diffuse="thumbs/poster_diffuse.png">$VAR[PlayerThumbs]</texture>
+						<texture background="true" fallback="thumbs/fallback_poster_tp.png" diffuse="thumbs/poster_diffuse.png">$VAR[PlayerThumbs]</texture>
 						<fadetime>800</fadetime>
 				 </control>
 				 <control type="image" id="1">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>206</width>
 						<height>280</height>
-						<texture>thumbs/poster_overlay.png</texture>
+						<texture background="true">thumbs/poster_overlay.png</texture>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<fadetime>800</fadetime>
 				 </control>
 				 <control type="image" id="1">
 						<description>paused indicator</description>
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>185</width>
 						<height>258</height>
-						<texture diffuse="thumbs/poster_diffuse.png">osd/paused-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/poster_diffuse.png">osd/paused-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Paused</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Paused" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
 				 </control>
 				 <control type="image" id="1">
 						<description>ff indicator</description>
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>185</width>
 						<height>258</height>
-						<texture diffuse="thumbs/poster_diffuse.png">osd/ff-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/poster_diffuse.png">osd/ff-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Forwarding</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Forwarding" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
 				 </control>
 				 <control type="image" id="1">
 						<description>rw indicator</description>
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>185</width>
 						<height>258</height>
-						<texture diffuse="thumbs/poster_diffuse.png">osd/rw-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/poster_diffuse.png">osd/rw-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Rewinding</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Rewinding" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
 				 </control>
+			  </control>
+		    <!-- Videos -->
+			  <control type="group" id="1">
+				  <top>60</top>
+          <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
+					<control type="image" id="1">
+						<left>8</left>
+						<top>8</top>
+						<width>274</width>
+						<height>199</height>
+						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+						<texture background="true" diffuse="thumbs/video_diffuse.png">thumbs/thumb_back.png</texture>
+						<fadetime>800</fadetime>
+					</control>
+				  <control type="image" id="1">
+						<left>8</left>
+						<top>8</top>
+						<width>274</width>
+						<height>199</height>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+						<texture background="true" diffuse="thumbs/video_diffuse.png">$INFO[VideoPlayer.Cover]</texture>
+						<fadetime>800</fadetime>
+					  <visible>!VideoPlayer.HasMenu</visible>
+				  </control>
+				  <control type="image" id="1">
+						<left>8</left>
+						<top>8</top>
+						<width>274</width>
+						<height>199</height>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+						<texture background="true" fallback="thumbs/fallback_disc_tp.png" diffuse="thumbs/video_diffuse.png">$VAR[PlayerThumbs]</texture>
+						<fadetime>800</fadetime>
+					  <visible>VideoPlayer.HasMenu</visible>
+				  </control>
+				  <control type="image" id="1">
+						<left>0</left>
+						<top>0</top>
+						<width>289</width>
+						<height>215</height>
+						<texture background="true">thumbs/video_overlay.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<fadetime>800</fadetime>
+				  </control>
+				  <control type="image" id="1">
+						<description>paused indicator</description>
+						<left>8</left>
+						<top>8</top>
+						<width>274</width>
+						<height>199</height>
+						<texture background="true" diffuse="thumbs/video_diffuse.png">osd/paused-overlay.png</texture>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+						<visible>Player.Paused</visible>
+						<animation type="conditional" condition="Player.Paused" reversible="true">
+							<effect type="fade" start="0" end="50" time="300" />
+						</animation>
+				  </control>
+				  <control type="image" id="1">
+						<description>ff indicator</description>
+						<left>8</left>
+						<top>8</top>
+						<width>274</width>
+						<height>199</height>
+						<texture background="true" diffuse="thumbs/video_diffuse.png">osd/ff-overlay.png</texture>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+						<visible>Player.Forwarding</visible>
+						<animation type="conditional" condition="Player.Forwarding" reversible="true">
+							<effect type="fade" start="0" end="50" time="300" />
+						</animation>
+				  </control>
+				  <control type="image" id="1">
+						<description>rw indicator</description>
+						<left>8</left>
+						<top>8</top>
+						<width>274</width>
+						<height>199</height>
+						<texture background="true" diffuse="thumbs/video_diffuse.png">osd/rw-overlay.png</texture>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+						<visible>Player.Rewinding</visible>
+						<animation type="conditional" condition="Player.Rewinding" reversible="true">
+							<effect type="fade" start="0" end="50" time="300" />
+						</animation>
+				  </control>
 			  </control>
 		    <!-- LiveTV Cover -->
 			  <control type="group" id="1">
-				 <posx>-5</posx>
-				 <posy>60</posy>
+				  <top>60</top>
 				  <visible>VideoPlayer.Content(LiveTV)</visible>
 					<control type="image" id="1">
-						<posx>8</posx>
-						<posy>8</posy>
+						<left>8</left>
+						<top>8</top>
 						<width>199</width>
 						<height>199</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<texture diffuse="thumbs/music_diffuse.png">thumbs/thumb_back.png</texture>
+						<texture background="true" diffuse="thumbs/music_diffuse.png">thumbs/thumb_back.png</texture>
 						<fadetime>800</fadetime>
 					</control>
 				  <control type="image" id="1">
-						<posx>8</posx>
-						<posy>8</posy>
+						<left>8</left>
+						<top>8</top>
 						<width>199</width>
 						<height>199</height>
-						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<texture fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse.png">$INFO[Player.Art(thumb)]</texture>
+						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
+						<texture background="true" fallback="thumbs/fallback_square_tp.png" diffuse="thumbs/music_diffuse.png">$VAR[PlayerThumbs]</texture>
 						<fadetime>800</fadetime>
 				  </control>
 				  <control type="image" id="1">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>215</width>
 						<height>215</height>
-						<texture>thumbs/music_overlay.png</texture>
+						<texture background="true">thumbs/music_overlay.png</texture>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<fadetime>800</fadetime>
 				  </control>
 				  <control type="image" id="1">
 						<description>paused indicator</description>
-						<posx>8</posx>
-						<posy>8</posy>
+						<left>8</left>
+						<top>8</top>
 						<width>199</width>
 						<height>199</height>
-						<texture diffuse="thumbs/music_diffuse.png">osd/paused-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/music_diffuse.png">osd/paused-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Paused</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Paused" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
 				  </control>
 				  <control type="image" id="1">
 						<description>ff indicator</description>
-						<posx>8</posx>
-						<posy>8</posy>
+						<left>8</left>
+						<top>8</top>
 						<width>199</width>
 						<height>199</height>
-						<texture diffuse="thumbs/music_diffuse.png">osd/ff-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/music_diffuse.png">osd/ff-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Forwarding</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Forwarding" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
 				  </control>
 				  <control type="image" id="1">
 						<description>rw indicator</description>
-						<posx>8</posx>
-						<posy>8</posy>
+						<left>8</left>
+						<top>8</top>
 						<width>199</width>
 						<height>199</height>
-						<texture diffuse="thumbs/music_diffuse.png">osd/rw-overlay.png</texture>
+						<texture background="true" diffuse="thumbs/music_diffuse.png">osd/rw-overlay.png</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>Player.Rewinding</visible>
-						<include>VisibleFadeEffect</include>
-						<animation type="conditional" condition="Player.Rewinding" reversible="true">
-							<effect type="fade" start="0" end="50" time="300" />
-						</animation>
-				  </control>
-			  </control> 			  
-		    <!-- Videos -->
-			  <control type="group" id="1">
-				 <posx>-5</posx>
-				 <posy>60</posy>
-          <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
-					<control type="image" id="1">
-						<posx>8</posx>
-						<posy>8</posy>
-						<width>294</width>
-						<height>199</height>
-						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<texture diffuse="thumbs/video_diffuse.png">thumbs/thumb_back.png</texture>
-						<fadetime>800</fadetime>
-					</control>
-				  <control type="image" id="1">
-						<posx>8</posx>
-						<posy>8</posy>
-						<width>294</width>
-						<height>199</height>
-						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<texture fallback="thumbs/fallback_episode.png" diffuse="thumbs/video_diffuse.png">$INFO[VideoPlayer.Cover]</texture>
-						<fadetime>800</fadetime>
-				  </control>
-				  <control type="image" id="1">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>310</width>
-						<height>215</height>
-						<texture>thumbs/video_overlay.png</texture>
-						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<fadetime>800</fadetime>
-				  </control>
-				  <control type="image" id="1">
-						<description>paused indicator</description>
-						<posx>8</posx>
-						<posy>8</posy>
-						<width>294</width>
-						<height>199</height>
-						<texture diffuse="thumbs/video_diffuse.png">osd/paused-overlay.png</texture>
-						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<visible>Player.Paused</visible>
-						<include>VisibleFadeEffect</include>
-						<animation type="conditional" condition="Player.Paused" reversible="true">
-							<effect type="fade" start="0" end="50" time="300" />
-						</animation>
-				  </control>
-				  <control type="image" id="1">
-						<description>ff indicator</description>
-						<posx>8</posx>
-						<posy>8</posy>
-						<width>294</width>
-						<height>199</height>
-						<texture diffuse="thumbs/video_diffuse.png">osd/ff-overlay.png</texture>
-						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<visible>Player.Forwarding</visible>
-						<include>VisibleFadeEffect</include>
-						<animation type="conditional" condition="Player.Forwarding" reversible="true">
-							<effect type="fade" start="0" end="50" time="300" />
-						</animation>
-				  </control>
-				  <control type="image" id="1">
-						<description>rw indicator</description>
-						<posx>8</posx>
-						<posy>8</posy>
-						<width>294</width>
-						<height>199</height>
-						<texture diffuse="thumbs/video_diffuse.png">osd/rw-overlay.png</texture>
-						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<visible>Player.Rewinding</visible>
-						<include>VisibleFadeEffect</include>
 						<animation type="conditional" condition="Player.Rewinding" reversible="true">
 							<effect type="fade" start="0" end="50" time="300" />
 						</animation>
 				  </control>
 			  </control>
 
-
 		    <!-- Movies Info -->
 				<control type="group" id="1">
-					<posx>205</posx>
-					<posy>105</posy>
+					<left>210</left>
+					<top>100</top>
 	        <include>OSDPlotAnimation</include>
 	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
 			    <visible>VideoPlayer.Content(Movies)</visible>
 					<control type="label" id="1">
 						<description>Title label</description>
-						<posx>0</posx>
-						<posy>15</posy>
+						<left>0</left>
+						<top>15</top>
 						<height>30</height>
-						<width>820</width>
+						<width>750</width>
 					  <label>$INFO[VideoPlayer.Title,, ]$INFO[VideoPlayer.Year, (,) ]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -312,11 +311,11 @@
 					</control>
 					<control type="label" id="1">
 						<description>Genre Label</description>
-						<posx>0</posx>
-						<posy>45</posy>
+						<left>0</left>
+						<top>45</top>
 						<height>30</height>
-						<width>550</width>
-						<label>$INFO[VideoPlayer.Genre,,]</label>
+						<width>750</width>
+						<label>$INFO[VideoPlayer.Genre]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>FontSize_22</font>
@@ -325,18 +324,18 @@
 					</control>
 					<control type="image" id="1">
 						<description>Rating image</description>
-						<posx>0</posx>
-						<posy>80</posy>
+						<left>0</left>
+						<top>85</top>
 						<width>130</width>
 						<height>25</height>
 						<aspectratio align="left">keep</aspectratio>
-						<texture>rating/$INFO[Player.StarRating]</texture>
+						<texture background="true">rating/$INFO[Player.StarRating]</texture>
 					</control>
 					<control type="fadelabel" id="1">
-						<posx>0</posx>
-						<posy>510r</posy>
-						<width>380</width>
-						<height>40</height>
+						<left>0</left>
+						<top>110</top>
+						<width>400</width>
+						<height>45</height>
 						<font>FontSize_20</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -350,21 +349,43 @@
             <scrollout>false</scrollout>
             <scrollspeed>100</scrollspeed>
             <pauseatend>5000</pauseatend>
+					  <visible>!Player.ChapterCount</visible>		
+					</control>
+					<control type="fadelabel" id="1">
+						<left>0</left>
+						<top>110</top>
+						<width>400</width>
+						<height>45</height>
+						<font>FontSize_20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>99white</textcolor>
+					  <shadowcolor>55000000</shadowcolor>
+            <label>$INFO[VideoPlayer.Director,[COLOR=white]$LOCALIZE[20339]:[/COLOR] ]</label>
+            <label>$INFO[VideoPlayer.Writer,[COLOR=white]$LOCALIZE[20417]:[/COLOR] ]</label>
+            <label>$INFO[VideoPlayer.RatingAndVotes,[COLOR=white]$LOCALIZE[563]:[/COLOR] ]</label>
+            <label>$INFO[VideoPlayer.Top250,[COLOR=white]$LOCALIZE[368] $LOCALIZE[13409][/COLOR] # ]</label>
+            <label>$LOCALIZE[21396]: [COLOR=white]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ][/COLOR]</label>
+            <scroll>false</scroll>
+            <scrollout>false</scrollout>
+            <scrollspeed>100</scrollspeed>
+            <pauseatend>5000</pauseatend>
+					  <visible>Player.ChapterCount</visible>
 					</control>
 				</control>
 		    <!-- Episodes Info -->
 				<control type="group" id="1">
-					<posx>205</posx>
-					<posy>105</posy>
+					<left>210</left>
+					<top>100</top>
 	        <include>OSDPlotAnimation</include>
 	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
 			    <visible>VideoPlayer.Content(Episodes)</visible>
 					<control type="label" id="1">
 						<description>Title label</description>
-						<posx>0</posx>
-						<posy>15</posy>
+						<left>0</left>
+						<top>15</top>
 						<height>30</height>
-						<width>820</width>
+						<width>750</width>
             <label>$INFO[VideoPlayer.Title]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -374,10 +395,10 @@
 					</control>
 					<control type="label" id="1">
 						<description>Genre Label</description>
-						<posx>0</posx>
-						<posy>45</posy>
+						<left>0</left>
+						<top>45</top>
 						<height>30</height>
-						<width>550</width>
+						<width>750</width>
             <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season, · $LOCALIZE[20373] ,]$INFO[VideoPlayer.Episode, · $LOCALIZE[20359] ,]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -387,19 +408,19 @@
 					</control>
 					<control type="image" id="1">
 						<description>Rating image</description>
-						<posx>0</posx>
-						<posy>80</posy>
+						<left>0</left>
+						<top>85</top>
 						<width>130</width>
 						<height>25</height>
 						<aspectratio align="left">keep</aspectratio>
-						<texture>rating/$INFO[Player.StarRating]</texture>
+						<texture background="true">rating/$INFO[Player.StarRating]</texture>
 					</control>
 					<control type="fadelabel" id="1">
-						<posx>0</posx>
-						<posy>510r</posy>
-						<width>380</width>
-						<height>40</height>
-						<font>FontSize_18</font>
+						<left>0</left>
+						<top>110</top>
+						<width>400</width>
+						<height>45</height>
+						<font>FontSize_20</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>99white</textcolor>
@@ -416,17 +437,17 @@
 				</control>
 		    <!-- Videos Info -->
 				<control type="group" id="1">
-					<posx>315</posx>
-					<posy>105</posy>
+					<left>300</left>
+					<top>100</top>
 	        <include>OSDPlotAnimation</include>
 	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
-				  <visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]</visible>
+				  <visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]</visible> 
 					<control type="label" id="1">
 						<description>Title label</description>
-						<posx>0</posx>
-						<posy>15</posy>
+						<left>0</left>
+						<top>25</top>
 						<height>30</height>
-						<width>700</width>
+						<width>630</width>
             <label>$INFO[VideoPlayer.Title]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -436,10 +457,10 @@
 					</control>
 					<control type="label" id="1">
 						<description>Label</description>
-						<posx>0</posx>
-						<posy>45</posy>
+						<left>0</left>
+						<top>55</top>
 						<height>30</height>
-						<width>700</width>
+						<width>630</width>
             <label>$INFO[VideoPlayer.Genre]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -447,19 +468,38 @@
 						<textcolor>99white</textcolor>
 						<shadowcolor>55000000</shadowcolor>
 					</control>
+					<control type="fadelabel" id="1">
+						<left>0</left>
+						<top>110</top>
+						<width>400</width>
+						<height>45</height>
+						<font>FontSize_20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>99white</textcolor>
+					  <shadowcolor>55000000</shadowcolor>
+            <label>$INFO[VideoPlayer.Premiered,[COLOR=white]$LOCALIZE[20416]:[/COLOR] ]</label>
+            <label>$INFO[VideoPlayer.Director,[COLOR=white]$LOCALIZE[20339]:[/COLOR] ]</label>
+            <label>$INFO[VideoPlayer.Writer,[COLOR=white]$LOCALIZE[20417]:[/COLOR] ]</label>
+            <label>$LOCALIZE[21396]: [COLOR=white]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ][/COLOR]</label>
+            <scroll>false</scroll>
+            <scrollout>false</scrollout>
+            <scrollspeed>100</scrollspeed>
+            <pauseatend>5000</pauseatend>
+					</control>
 				</control>
 		    <!-- LiveTV Info -->
 			  <control type="group" id="1">
-					<posx>220</posx>
-					<posy>105</posy>
+					<left>225</left>
+					<top>100</top>
 	        <include>OSDPlotAnimation</include>
 	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
 				  <visible>VideoPlayer.Content(LiveTV)</visible>
 					<control type="grouplist" id="1">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>15</top>
 						<height>70</height>
-						<width>700</width>
+						<width>630</width>
 						<itemgap>10</itemgap>
 						<align>left</align>
 						<orientation>horizontal</orientation>
@@ -476,10 +516,10 @@
 					</control>
 					<control type="label" id="1">
 						<description>Label</description>
-						<posx>0</posx>
-						<posy>45</posy>
+						<left>0</left>
+						<top>55</top>
 						<height>30</height>
-						<width>700</width>
+						<width>630</width>
             <label>$INFO[VideoPlayer.Genre]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -488,10 +528,10 @@
 						<shadowcolor>55000000</shadowcolor>
 					</control>
 					<control type="fadelabel" id="1">
-						<posx>0</posx>
-						<posy>510r</posy>
-						<width>380</width>
-						<height>40</height>
+						<left>0</left>
+						<top>110</top>
+						<width>400</width>
+						<height>45</height>
 						<font>FontSize_20</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -509,64 +549,68 @@
 
 		    <!-- Progress -->
 			  <control type="group" id="1">
-					<posx>203</posx>
-					<posy>240</posy>
+					<left>207</left>
+					<top>240</top>
 	        <include>OSDPlotAnimation</include>
 	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
-				  <animation effect="slide" start="0,0" end="110,0" condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">Conditional</animation>
+				  <animation effect="slide" start="0,0" end="90,0" condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">Conditional</animation>
 				  <animation effect="slide" start="0,0" end="15,0" condition="VideoPlayer.Content(LiveTV)">Conditional</animation>
 					<control type="label" id="1">
-						<posx>543</posx>
-						<posy>509r</posy>
-						<width>155</width>
+						<left>367</left>
+						<top>-25</top>
+						<width>175</width>
 						<height>40</height>
-						<font>FontSize_18</font>
+						<font>FontSize_20</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 						<textcolor>white</textcolor>
 					  <shadowcolor>55000000</shadowcolor>
+				    <animation effect="slide" start="0,0" end="45,0" condition="[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">Conditional</animation>
 					</control>
 					<control type="progress" id="1">
 						<description>Progressbar</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>545</width>
+						<left>0</left>
+						<top>0</top>
+		        <include condition="[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDProgressWidth</include>
+		        <include condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDProgressWidthSmall</include>
 						<height>24</height>
 						<info>Player.Progress</info>
             <reveal>true</reveal>
-						<texturebg border="10">osd/osd_bg_progress_big.png</texturebg>
-						<lefttexture>osd/osd_left_progress.png</lefttexture>
-						<midtexture>osd/osd_center_progress.png</midtexture>
-						<righttexture>osd/osd_right_progress.png</righttexture>
+						<texturebg border="1">osd/osd_bg_progress_big.png</texturebg>
+						<lefttexture border="1">osd/osd_left_progress.png</lefttexture>
+						<midtexture border="1">osd/osd_center_progress.png</midtexture>
+						<righttexture border="1">osd/osd_right_progress.png</righttexture>
             <overlaytexture>-</overlaytexture>
 					</control>
 					<control type="progress" id="1">
 						<description>Progressbar</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>545</width>
+						<left>0</left>
+						<top>0</top>
+		        <include condition="[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDProgressWidth</include>
+		        <include condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDProgressWidthSmall</include>
 						<height>24</height>
 						<info>Player.CacheLevel</info>
-						<texturebg border="10">osd/osd_bg_progress_cache_big.png</texturebg>
-						<lefttexture>osd/osd_left_progress_cache.png</lefttexture>
-						<midtexture>osd/osd_center_progress_cache.png</midtexture>
-						<righttexture>osd/osd_right_progress_cache.png</righttexture>
+						<texturebg border="1">osd/osd_bg_progress_cache_big.png</texturebg>
+						<lefttexture border="1">osd/osd_left_progress_cache.png</lefttexture>
+						<midtexture border="1">osd/osd_center_progress_cache.png</midtexture>
+						<righttexture border="1">osd/osd_right_progress_cache.png</righttexture>
             <overlaytexture>-</overlaytexture>
             <colordiffuse>11FFFFFF</colordiffuse>
 					</control>
 					<control type="progress" id="1">
 						<description>Progressbar</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>545</width>
+						<left>0</left>
+						<top>0</top>
+		        <include condition="[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDProgressWidth</include>
+		        <include condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDProgressWidthSmall</include>
 						<height>24</height>
 						<info>Player.ProgressCache</info>
             <reveal>true</reveal>
-						<texturebg border="10">osd/osd_bg_progress_cache_big.png</texturebg>
-						<lefttexture>osd/osd_left_progress.png</lefttexture>
-						<midtexture>osd/osd_center_progress.png</midtexture>
-						<righttexture>osd/osd_right_progress.png</righttexture>
+						<texturebg border="1">osd/osd_bg_progress_cache_big.png</texturebg>
+						<lefttexture border="1">osd/osd_left_progress.png</lefttexture>
+						<midtexture border="1">osd/osd_center_progress.png</midtexture>
+						<righttexture border="1">osd/osd_right_progress.png</righttexture>
             <overlaytexture>-</overlaytexture>
             <colordiffuse>44FFFFFF</colordiffuse>
 					</control>
@@ -574,7 +618,7 @@
 			</control>
 	    <!-- Media Flags -->
 			<control type="grouplist" id="1">
-        <visible>[Player.ShowInfo | [Player.Paused+Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(script-XBMC-Subtitles-main.xml) | Window.IsActive(ShutdownMenu) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
+        <visible>[Player.ShowInfo | [Player.Paused+Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(SubtitleSearch) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
 		    <animation type="WindowOpen" reversible="false">
 	        <effect type="slide" start="150,0" end="0,0" time="450" delay="0" tween="sine" easing="out" />
 	        <effect type="fade" start="0" end="100" time="450" delay="0" tween="sine" easing="out" />
@@ -591,26 +635,83 @@
 	        <effect type="slide" start="0,0" end="200,0" time="450" delay="0" tween="sine" easing="out" />
 	        <effect type="fade" start="100" end="0" time="450" delay="0" tween="sine" easing="out" />
 		    </animation>
-				<posx>635</posx>
-				<posy>435</posy>
+				<right>50</right>
+				<top>435</top>
 				<width>600</width>
 				<align>right</align>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
-				<control type="image" id="1">
-					<description>Video Resolution Image</description>
-					<include>FlagsOSDLayout</include>
-					<texture>$INFO[VideoPlayer.VideoResolution,flags/res/,.png]</texture>
+				<!-- Audio & Subtitles Language -->
+				<control type="group" id="1">
+          <width>54</width>
+					<height>23</height>
+			    <visible>!IsEmpty(VideoPlayer.AudioLanguage)</visible>
+				  <control type="image" id="1">
+						<width>54</width>
+						<height>23</height>
+						<colordiffuse>77ffffff</colordiffuse>
+						<aspectratio align="center">keep</aspectratio>
+				    <texture>flags/language/language_flag.png</texture>
+				  </control>
+				  <control type="image" id="1">
+						<left>27</left>
+						<top>3</top>
+						<width>24</width>
+						<height>17</height>
+						<aspectratio align="center">keep</aspectratio>
+					  <texture>$INFO[VideoPlayer.AudioLanguage,flags/language/,.png]</texture>
+				  </control>
 				</control>
-				<control type="image" id="1">
-					<description>Aspectratio Image</description>
-					<include>FlagsOSDLayout</include>
-					<texture>$INFO[VideoPlayer.VideoCodec,flags/video/,.png]</texture>
+				<control type="group" id="1">
+          <width>54</width>
+					<height>23</height>
+			    <visible>!IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+				  <control type="image" id="1">
+						<width>54</width>
+						<height>23</height>
+						<colordiffuse>77ffffff</colordiffuse>
+						<aspectratio align="center">keep</aspectratio>
+				    <texture>flags/language/subtitle_flag.png</texture>
+				  </control>
+				  <control type="image" id="1">
+						<left>27</left>
+						<top>3</top>
+						<width>24</width>
+						<height>17</height>
+						<aspectratio align="center">keep</aspectratio>
+					  <texture>$INFO[VideoPlayer.SubtitlesLanguage,flags/language/,.png]</texture>
+				  </control>
 				</control>
-				<control type="image" id="1">
-					<description>Audio Codec Image</description>
-					<include>FlagsOSDLayout</include>
-					<texture>$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
+				<!-- Stereoscopic -->
+				<control type="group" id="1">
+          <width>54</width>
+					<visible>VideoPlayer.IsStereoscopic</visible>
+					<control type="image" id="1">
+						<description>Video Stereoscopics Image</description>
+						<include>FlagsOSDLayout</include>
+						<texture>flags/video/3d.png</texture>
+					</control>
+				</control>
+				<!-- Video Resolution -->
+				<control type="group" id="1">
+          <width>54</width>
+          <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
+					<control type="image" id="1">
+						<description>Video Resolution Flag</description>
+						<include>FlagsOSDLayout</include>
+						<texture>$INFO[VideoPlayer.VideoResolution,flags/res/,.png]</texture>
+				    <!-- <visible>IsEmpty(VideoPlayer.IsStereoscopic) + ![SubString(Player.FileNameAndPath,.3D.) | SubString(Player.FileNameAndPath,-3D.) | SubString(Player.Filenameandpath,.3dbd.)]</visible> -->
+					</control>
+				</control>
+				<!-- Audio Codec -->
+				<control type="group" id="1">
+          <width>54</width>
+          <visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+					<control type="image" id="1">
+						<description>Audio Codec Flag</description>
+						<include>FlagsOSDLayout</include>
+						<texture>$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
+					</control>
 				</control>
 			</control>
 		</control>
@@ -620,7 +721,7 @@
 		<!-- ====== Seekbar Code ======= -->
 		<!-- =========================== -->
 		<control type="group" id="1">
-	    <visible>Window.IsActive(FullScreenVideo) + [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Skin.HasSetting(ShowVideoInfo)] | Player.Forwarding | Player.Rewinding] + ![Player.ShowInfo | Window.IsActive(VideoOSD)] + !Window.IsActive(script-XBMC-Subtitles-main.xml) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
+	    <visible>Window.IsActive(FullScreenVideo) + [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Skin.HasSetting(ShowVideoInfo)] | Player.Forwarding | Player.Rewinding] + ![Player.ShowInfo | Window.IsActive(VideoOSD)] + !Window.IsActive(SubtitleSearch) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(favourites) + !Window.IsActive(NumericInput) + !Window.IsActive(PVROSDChannels) + !Window.IsActive(PVROSDGuide)</visible>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" time="350" center="640,360" start="150" end="100" tween="cubic" easing="out"/>
 				<effect type="fade" time="350" start="0" easing="out" end="100"/>
@@ -638,55 +739,55 @@
 				<effect type="fade" time="350" start="100" easing="in" end="0"/>
 			</animation>
 			<animation type="Conditional" condition="Player.Paused + ![Player.Caching | Player.Seeking | Player.DisplayAfterSeek | Player.SeekOffset | Player.Forwarding | Player.Rewinding | Player.ShowInfo]">
-				<effect type="zoom" time="350" delay="9000" center="640,360" start="100" end="0" tween="cubic" easing="in"/>
-				<effect type="fade" time="350" delay="9000" start="100" easing="in" end="0"/>
+				<effect type="zoom" time="350" delay="13000" center="640,360" start="100" end="0" tween="cubic" easing="in"/>
+				<effect type="fade" time="350" delay="13000" start="100" easing="in" end="0"/>
 			</animation>
 			<control type="image" id="1">
-				<posx>450</posx>
-				<posy>165</posy>
+				<left>450</left>
+				<top>165</top>
 				<width>395</width>
 				<height>395</height>
-				<texture>osd/osd_controls_bg.png</texture>
+				<texture background="true">osd/osd_controls_bg.png</texture>
 				<colordiffuse>AA999999</colordiffuse>
 			</control>
 		  <control type="group" id="1">
-				<posx>485</posx>
-				<posy>195</posy>
+				<left>485</left>
+				<top>195</top>
 				<control type="image" id="1">
 					<width>330</width>
 					<height>330</height>
-					<texture>osd/osd_pause.png</texture>
+					<texture background="true">osd/osd_pause.png</texture>
 					<visible>Player.Paused</visible>
 				  <colordiffuse>AA999999</colordiffuse>
 				</control>
 				<control type="image" id="1">
 					<width>330</width>
 					<height>330</height>
-					<texture>osd/osd_play.png</texture>
+					<texture background="true">osd/osd_play.png</texture>
 					<visible>Player.Playing</visible>
 				  <colordiffuse>AA999999</colordiffuse>
 				</control>
 				<control type="image" id="1">
 					<width>330</width>
 					<height>330</height>
-					<texture>osd/osd_rw.png</texture>
+					<texture background="true">osd/osd_rw.png</texture>
 					<visible>Player.Rewinding</visible>
 				  <colordiffuse>aa999999</colordiffuse>
 				</control>
 				<control type="image" id="1">
 					<width>330</width>
 					<height>330</height>
-					<texture>osd/osd_ff.png</texture>
+					<texture background="true">osd/osd_ff.png</texture>
 					<visible>Player.Forwarding</visible>
 				  <colordiffuse>AA999999</colordiffuse>
 				</control>
 			</control>
 	
 			<control type="group" id="1">
-				<posx>485</posx>
-				<posy>215</posy>
+				<left>485</left>
+				<top>215</top>
 				<control type="group" id="1">
-					<posx>3</posx>
+					<left>3</left>
 					<visible>!Player.ChapterCount</visible>
 					<control type="label" id="1">
 						<description>Seek Time Label</description>
@@ -722,7 +823,7 @@
 					</control>
 				</control>
 				<control type="group" id="1">
-					<posx>3</posx>
+					<left>3</left>
 					<visible>Player.ChapterCount</visible>		
 					<control type="label" id="1">
 						<description>Seek Time Label</description>
@@ -777,8 +878,8 @@
 				
 				<control type="label" id="1">
 					<description>Time Label</description>
-					<posx>0</posx>
-					<posy>260</posy>
+					<left>0</left>
+					<top>265</top>
 					<width>80</width>
 					<height>20</height>
 					<font>FontSize_18</font>
@@ -790,8 +891,8 @@
 				</control>
 				<control type="label" id="1">
 					<description>Time Remaining Label</description>
-					<posx>323</posx>
-					<posy>260</posy>
+					<right>470</right>
+					<top>265</top>
 					<width>80</width>
 					<height>20</height>
 					<font>FontSize_18</font>
@@ -803,44 +904,44 @@
 			  </control>
 				<control type="progress" id="1">
 					<description>Progressbar</description>
-					<posx>-2</posx>
-					<posy>280</posy>
+					<left>-2</left>
+					<top>280</top>
 					<width>327</width>
 					<height>25</height>
 					<info>Player.Progress</info>
 	        <reveal>true</reveal>
-					<texturebg border="10">osd/osd_bg_progress.png</texturebg>
-					<lefttexture>osd/osd_left_progress.png</lefttexture>
-					<midtexture>osd/osd_center_progress.png</midtexture>
-					<righttexture>osd/osd_right_progress.png</righttexture>
+					<texturebg border="1">osd/osd_bg_progress.png</texturebg>
+					<lefttexture border="1">osd/osd_left_progress.png</lefttexture>
+					<midtexture border="1">osd/osd_center_progress.png</midtexture>
+					<righttexture border="1">osd/osd_right_progress.png</righttexture>
 	        <overlaytexture>-</overlaytexture>
 				</control>
 				<control type="progress" id="1">
 					<description>Progressbar</description>
-					<posx>-2</posx>
-					<posy>280</posy>
+					<left>-2</left>
+					<top>280</top>
 					<width>327</width>
 					<height>25</height>
 					<info>Player.CacheLevel</info>
-					<texturebg border="10">osd/osd_bg_progress_cache_big.png</texturebg>
-					<lefttexture>osd/osd_left_progress_cache.png</lefttexture>
-					<midtexture>osd/osd_center_progress_cache.png</midtexture>
-					<righttexture>osd/osd_right_progress_cache.png</righttexture>
+					<texturebg border="1">osd/osd_bg_progress_cache_big.png</texturebg>
+					<lefttexture border="1">osd/osd_left_progress_cache.png</lefttexture>
+					<midtexture border="1">osd/osd_center_progress_cache.png</midtexture>
+					<righttexture border="1">osd/osd_right_progress_cache.png</righttexture>
 	        <overlaytexture>-</overlaytexture>
 	        <colordiffuse>11FFFFFF</colordiffuse>
 				</control>
 				<control type="progress" id="1">
 					<description>Progressbar</description>
-					<posx>-2</posx>
-					<posy>280</posy>
+					<left>-2</left>
+					<top>280</top>
 					<width>327</width>
 					<height>25</height>
 					<info>Player.ProgressCache</info>
 	        <reveal>true</reveal>
-					<texturebg border="10">osd/osd_bg_progress_cache_big.png</texturebg>
-					<lefttexture>osd/osd_left_progress.png</lefttexture>
-					<midtexture>osd/osd_center_progress.png</midtexture>
-					<righttexture>osd/osd_right_progress.png</righttexture>
+					<texturebg border="1">osd/osd_bg_progress_cache_big.png</texturebg>
+					<lefttexture border="1">osd/osd_left_progress.png</lefttexture>
+					<midtexture border="1">osd/osd_center_progress.png</midtexture>
+					<righttexture border="1">osd/osd_right_progress.png</righttexture>
 	        <overlaytexture>-</overlaytexture>
 	        <colordiffuse>44FFFFFF</colordiffuse>
 				</control>
@@ -851,8 +952,8 @@
 		<!-- === Weather & Clock ==== -->
 		<!-- ======================== -->		
 	  <control type="group" id="1">
-			<posx>25</posx>
-			<posy>40</posy>
+			<left>25</left>
+			<top>45</top>
       <include>WeatherAndClock</include>
 	    <animation type="WindowOpen" reversible="false">
 	        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
@@ -878,7 +979,7 @@
 		      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
 		      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
 		  </animation>
-      <visible>!Window.IsActive(script-XBMC-Subtitles-main.xml)</visible>
+      <visible>!Window.IsActive(SubtitleSearch)</visible>
       <visible>[Player.ShowInfo | Window.IsActive(VideoOSD)]</visible>
 <!--  <visible>[Player.ShowInfo | Window.IsActive(VideoOSD)] | [Window.IsActive(FullScreenVideo) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]]</visible> -->
 	  </control>		
@@ -888,7 +989,7 @@
 		<!-- ===== Codec Info Code ===== -->
 		<!-- =========================== -->
 		<control type="group" id="0">
-			<visible>Control.IsVisible(10) + !Window.IsVisible(VideoOSD)</visible>
+			<visible>Control.IsVisible(10) + !Window.IsVisible(VideoOSD) + !Window.IsActive(favourites)</visible>
 			<animation type="Hidden">
 				<effect type="fade" time="400" start="100" end="0" />
 				<effect type="slide" time="400" start="0,0" end="0,-125" easing="in" tween="cubic" />
@@ -907,17 +1008,17 @@
 			</animation>
 			<control type="image">
 				<description>media info background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>-11</top>
 				<width>1280</width>
-				<height>150</height>
+				<height>185</height>
 				<texture background="true">osd/tile.png</texture>
 			  <colordiffuse>D9FFFFFF</colordiffuse>
 			</control>
 			<control type="label" id="10">
 				<description>row 1 label</description>
-				<posx>20</posx>
-				<posy>15</posy>
+				<left>10</left>
+				<top>15</top>
 				<width>1240</width>
 				<height>30</height>
 				<align>left</align>
@@ -930,8 +1031,8 @@
 			</control>
 			<control type="label" id="11">
 				<description>row 2 label</description>
-				<posx>20</posx>
-				<posy>45</posy>
+				<left>10</left>
+				<top>65</top>
 				<width>1240</width>
 				<height>30</height>
 				<align>left</align>
@@ -944,8 +1045,8 @@
 			</control>
 			<control type="label" id="12">
 				<description>row 3 label</description>
-				<posx>20</posx>
-				<posy>75</posy>
+				<left>10</left>
+				<top>105</top>
 				<width>1240</width>
 				<height>50</height>
 				<align>left</align>

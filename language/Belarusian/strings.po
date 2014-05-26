@@ -164,6 +164,10 @@ msgctxt "#31158"
 msgid "Views"
 msgstr "Views"
 
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Enable Kiosk Mode"
+
 msgctxt "#31203"
 msgid "New Search"
 msgstr "New Search"

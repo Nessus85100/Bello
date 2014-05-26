@@ -1,4 +1,5 @@
-<window id="137">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="137">
 	<defaultcontrol always="true">9001</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
@@ -13,8 +14,8 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<posx>305</posx>
-				<posy>260</posy>
+				<left>305</left>
+				<top>260</top>
 				<width>670</width>
 				<height>50</height>
 				<font>FontSize_36</font>
@@ -28,8 +29,8 @@
 			</control>
 			<control type="label">
 				<description>Rule match label</description>
-				<posx>330</posx>
-				<posy>305</posy>
+				<left>330</left>
+				<top>305</top>
 				<width>620</width>
 				<height>30</height>
 				<align>left</align>
@@ -42,8 +43,8 @@
 			<control type="group" id="9001">
 				<control type="label.">
 					<description>Rule Field label</description>
-					<posx>335</posx>
-					<posy>337</posy>
+					<left>335</left>
+					<top>337</top>
 					<width>310</width>
 					<height>45</height>
 					<font>FontSize_20</font>
@@ -55,8 +56,8 @@
 				</control>
 				<control type="spincontrolex" id="15">
 					<description>Rule Field</description>
-					<posx>328</posx>
-					<posy>337</posy>
+					<left>328</left>
+					<top>337</top>
 					<width>310</width>
 					<height>45</height>
 					<onright>16</onright>
@@ -67,8 +68,8 @@
 				</control>
 				<control type="spincontrolex" id="16">
 					<description>Rule operator</description>
-					<posx>642</posx>
-					<posy>337</posy>
+					<left>642</left>
+					<top>337</top>
 					<width>310</width>
 					<height>45</height>
 					<onright>15</onright>
@@ -80,8 +81,8 @@
 			</control>
 			<control type="button" id="17">
 				<description>Value Button</description>
-				<posx>328</posx>
-				<posy>386</posy>
+				<left>328</left>
+				<top>386</top>
 				<width>460</width>
 				<height>45</height>
 				<label>-</label>
@@ -89,12 +90,13 @@
 				<onleft>20</onleft>
 				<onright>20</onright>
 				<ondown>10000</ondown>
+		    <invalidcolor>invalid</invalidcolor>
         <include>DialogsButton</include>
 			</control>
 			<control type="button" id="20">
 				<description>Browse Button</description>
-				<posx>792</posx>
-				<posy>386</posy>
+				<left>792</left>
+				<top>386</top>
 				<width>160</width>
 				<height>45</height>
 				<label>1024</label>
@@ -108,12 +110,12 @@
 		
 		
 		  <control type="group" id="10000">
-				<posx>330</posx>
-				<posy>425</posy>
+				<left>330</left>
+				<top>425</top>
 	      <!-- Buttons -->
 				<control type="grouplist" id="10001">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>0</width>
 					<height>0</height>
 					<itemgap>0</itemgap>
@@ -136,8 +138,8 @@
 				</control>
 	      <!-- Buttons Labels -->
 				<control type="grouplist">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>70</height>
 					<width>552</width>
 					<itemgap>30</itemgap>

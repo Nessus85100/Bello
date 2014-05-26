@@ -1,4 +1,5 @@
-<window id="129">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="129">
 	<defaultcontrol>10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
@@ -12,8 +13,8 @@
 			</control>
 			<control type="label" id="2">
 				<description>header label</description>
-				<posx>305</posx>
-				<posy>180</posy>
+				<left>305</left>
+				<top>180</top>
 				<width>670</width>
 				<height>50</height>
 				<font>FontSize_36</font>
@@ -27,8 +28,8 @@
 			</control>
 			<control type="label">
 				<description>path label</description>
-				<posx>330</posx>
-				<posy>228</posy>
+				<left>330</left>
+				<top>228</top>
 				<width>620</width>
 				<height>30</height>
 				<align>left</align>
@@ -40,8 +41,8 @@
 			</control>
 			<control type="group" id="9000">
 				<control type="list" id="10">
-					<posx>328</posx>
-					<posy>262</posy>
+					<left>328</left>
+					<top>262</top>
 					<width>460</width>
 					<height>154</height>
 					<onup>10000</onup>
@@ -51,8 +52,8 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout height="51" width="460">
 						<control type="label">
-							<posx>12</posx>
-							<posy>0</posy>
+							<left>12</left>
+							<top>0</top>
 							<width>448</width>
 							<height>47</height>
 							<font>FontSize_20</font>
@@ -65,8 +66,8 @@
 					</itemlayout>
 					<focusedlayout height="51" width="460">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>460</width>
 							<height>47</height>
 							<texture>buttons/settings_fo.png</texture>
@@ -74,8 +75,8 @@
 						  <include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
-							<posx>12</posx>
-							<posy>0</posy>
+							<left>12</left>
+							<top>0</top>
 							<width>448</width>
 							<height>47</height>
 							<font>FontSize_20</font>
@@ -87,8 +88,8 @@
               <visible>Control.HasFocus(10)</visible>
 						</control>
 						<control type="label">
-							<posx>12</posx>
-							<posy>0</posy>
+							<left>12</left>
+							<top>0</top>
 							<width>448</width>
 							<height>47</height>
 							<font>FontSize_20</font>
@@ -102,12 +103,12 @@
 					</focusedlayout>
 				</control>
 				<control type="group" id="9001">
-					<posx>792</posx>
-					<posy>262</posy>
+					<left>792</left>
+					<top>262</top>
 					<control type="button" id="11">
 						<description>Browse Button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>160</width>
 						<onup>10000</onup>
 						<onleft>10</onleft>
@@ -119,8 +120,8 @@
 					</control>
 					<control type="button" id="13">
 						<description>Add Path Button</description>
-						<posx>0</posx>
-						<posy>51</posy>
+						<left>0</left>
+						<top>51</top>
 						<width>160</width>
 						<onup>11</onup>
 						<ondown>14</ondown>
@@ -132,8 +133,8 @@
 					</control>
 					<control type="button" id="14">
 						<description>Remove Path Button</description>
-						<posx>0</posx>
-						<posy>102</posy>
+						<left>0</left>
+						<top>102</top>
 						<width>160</width>
 						<onup>13</onup>
 						<ondown>12</ondown>
@@ -147,8 +148,8 @@
 			</control>			
 			<control type="label">
 				<description>Name label</description>
-				<posx>330</posx>
-				<posy>426</posy>
+				<left>330</left>
+				<top>426</top>
 				<width>620</width>
 				<height>30</height>
 				<align>left</align>
@@ -160,8 +161,8 @@
 			</control>
 			<control type="button" id="12">
 				<description>Name Button</description>
-				<posx>328</posx>
-				<posy>459</posy>
+				<left>328</left>
+				<top>459</top>
 				<width>624</width>
 				<onup>9000</onup>
 				<ondown>10000</ondown>
@@ -173,12 +174,12 @@
 			
 
 		  <control type="group" id="10000">
-				<posx>330</posx>
-				<posy>500</posy>
+				<left>330</left>
+				<top>500</top>
 	      <!-- Buttons -->
 				<control type="grouplist" id="10001">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>0</width>
 					<height>0</height>
 					<itemgap>0</itemgap>
@@ -201,8 +202,8 @@
 				</control>
 	      <!-- Buttons Labels -->
 				<control type="grouplist">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>70</height>
 					<width>552</width>
 					<itemgap>30</itemgap>
@@ -210,28 +211,14 @@
 					<orientation>horizontal</orientation>
 					<control type="label">
 						<description>Save Label</description>
-						<height>62</height>
-						<width min="10" max="552">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
+	          <include>DialogsButtonLabels</include>
             <label>$INFO[Control.GetLabel(18),․  ]</label>
 						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(18)" reversible="true">Conditional</animation>
 	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(18)" reversible="true">Conditional</animation>
 					</control>
 					<control type="label">
 						<description>Cancel Label</description>
-						<height>62</height>
-						<width min="10" max="552">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
+	          <include>DialogsButtonLabels</include>
             <label>$INFO[Control.GetLabel(19),․  ]</label>
 						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(19)" reversible="true">Conditional</animation>
 	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(19)" reversible="true">Conditional</animation>

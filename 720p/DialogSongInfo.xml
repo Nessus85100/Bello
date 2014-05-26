@@ -1,4 +1,5 @@
-<window id="135">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="135">
 	<defaultcontrol always="true">10</defaultcontrol>
 	<controls>
 
@@ -322,6 +323,13 @@
 				  <include>TopButton</include>
 					<label>13405</label>
 				</control>
+				<control type="button" id="16">
+					<description>Search YouTube</description>
+					<label>31254</label>
+				  <include>TopButton</include>
+			    <include>OnClickDialogsClose</include>
+          <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Label],return)</onclick>
+				</control>
 			</control>
       <!-- Labels -->
 			<control type="grouplist">
@@ -380,6 +388,13 @@
           <label>$INFO[Control.GetLabel(13)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(13)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(13)" reversible="true">Conditional</animation>
+				</control>
+				<control type="label">
+					<description>Search YouTube</description>
+				  <include>TopSmallLabel</include>
+          <label>$INFO[Control.GetLabel(16)]</label>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(16)" reversible="true">Conditional</animation>
+          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(16)" reversible="true">Conditional</animation>
 				</control>
 			</control>
 		</control>

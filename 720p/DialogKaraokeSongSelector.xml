@@ -1,12 +1,13 @@
-<window type="dialog" id="143">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  type="dialog" id="143">
 	<controls>
 	 <control type="group">
-	  <posx>95</posx>
-		<posy>645</posy>
+	  <left>95</left>
+		<top>645</top>
 	  <include>NowPlaying</include>
 		<control type="grouplist">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>60</height>
 			<width>1190</width>
 			<align>right</align>
@@ -14,11 +15,11 @@
 			<itemgap>10</itemgap>
 			<orientation>horizontal</orientation>
 			<control type="group">
-			  <posx>50r</posx>
+			  <left>50r</left>
 				<control type="label" id="401">
 				<description>Song Number Label</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>25</height>
 					<width>640</width>
 					<font>FontSize_18B</font>
@@ -30,8 +31,8 @@
 				</control>
 				<control type="label" id="402">
 				<description>Song Name Label</description>
-					<posx>0</posx>
-					<posy>20</posy>
+					<left>0</left>
+					<top>20</top>
 					<height>25</height>
 					<width>640</width>
 					<font>FontSize_18</font>

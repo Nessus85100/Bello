@@ -52,6 +52,10 @@ msgctxt "#31010"
 msgid "-"
 msgstr "-"
 
+msgctxt "#31015"
+msgid "General Options"
+msgstr "Općenite mogućnosti"
+
 msgctxt "#31017"
 msgid "Karaoke Song Selector"
 msgstr "Karoke selektor pjesama"
@@ -63,6 +67,10 @@ msgstr "Sažetak filma"
 msgctxt "#31020"
 msgid "Found"
 msgstr "Pronađeno"
+
+msgctxt "#31021"
+msgid "Music Library"
+msgstr "Fonoteka"
 
 msgctxt "#31022"
 msgid "Music Files"
@@ -104,6 +112,10 @@ msgctxt "#31039"
 msgid "IP Address"
 msgstr "IP adresa"
 
+msgctxt "#31041"
+msgid "Creator"
+msgstr "Stvorio"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Diapozitiv"
@@ -139,6 +151,10 @@ msgstr "Više slika"
 msgctxt "#31158"
 msgid "Views"
 msgstr "Prikazi"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Omogući Kiosk način"
 
 msgctxt "#31203"
 msgid "New Search"

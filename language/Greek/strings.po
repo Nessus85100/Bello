@@ -437,8 +437,8 @@ msgid "Show RSS feed in whole skin"
 msgstr "Εμφάνιση τροφοδοσίας RSS σε όλο το κέλυφος"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Απόκρυψη Σημαιών που προέρχονται από τα ονόματα των αρχείων βίντεο [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide Live TV Submenu"
+msgstr "Απόκρυψη Υπομενού Live TV"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
@@ -467,6 +467,18 @@ msgstr "Προβολές"
 msgctxt "#31159"
 msgid "Show FullScreenInfo instead of the SeekBar"
 msgstr "Εμφάνιση Πληροφοριών Πλήρους Οθόνης αντί της Μπάρας Αναζήτησης"
+
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "Λήψη του [COLOR=selected]logo.png[/COLOR] για όλες τις Ταινίες"
+
+msgctxt "#31161"
+msgid "Hide Library Totals"
+msgstr "Απόκρυψη Στατιστικών Συλλογής"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Ενεργοποίηση Λειτουργίας Kiosk"
 
 msgctxt "#31200"
 msgid "My Movies"

@@ -132,6 +132,10 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "多張圖片"
 
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "啟用Kiosk模式"
+
 msgctxt "#31203"
 msgid "New Search"
 msgstr "新的搜尋"

@@ -28,6 +28,10 @@ msgctxt "#31017"
 msgid "Karaoke Song Selector"
 msgstr "Бирач караоке песме"
 
+msgctxt "#31018"
+msgid "Trailers"
+msgstr "Најава"
+
 msgctxt "#31023"
 msgid "Info"
 msgstr "Информације"

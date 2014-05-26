@@ -437,8 +437,8 @@ msgid "Show RSS feed in whole skin"
 msgstr "Afficher les flux RSS dans toutes les fenêtres"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Masquer l'indicateur de fichiers vidéo déjà vus [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide Live TV Submenu"
+msgstr "cacher le sous-menu TV Direct"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
@@ -467,6 +467,18 @@ msgstr "Vues"
 msgctxt "#31159"
 msgid "Show FullScreenInfo instead of the SeekBar"
 msgstr "Afficher les infos en plein écran au lieu de la barre de recherche"
+
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "Télécharger [COLOR=selected]logo.png[/COLOR] pour tous les films"
+
+msgctxt "#31161"
+msgid "Hide Library Totals"
+msgstr "Cacher les totaux de la bibliothèque"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Activer le mode Kiosk"
 
 msgctxt "#31200"
 msgid "My Movies"

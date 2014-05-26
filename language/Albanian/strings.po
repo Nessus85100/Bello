@@ -44,6 +44,10 @@ msgctxt "#31017"
 msgid "Karaoke Song Selector"
 msgstr "Përzgjedhës i Këngëve Karaoke"
 
+msgctxt "#31018"
+msgid "Trailers"
+msgstr "Trailer"
+
 msgctxt "#31020"
 msgid "Found"
 msgstr "Gjetur"

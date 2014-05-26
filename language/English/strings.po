@@ -225,8 +225,23 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr ""
 
-#empty strings from id 31089 to 31097
+#empty strings from id 31089 to 31093
 #Skin Settings labels
+msgctxt "#31094"
+msgid "Choose Movies Widget"
+msgstr ""
+
+msgctxt "#31095"
+msgid "Choose TV Shows Widget"
+msgstr ""
+
+msgctxt "#31096"
+msgid "Choose Music Widget"
+msgstr ""
+
+msgctxt "#31097"
+msgid "Choose RSS Video Feed Widget"
+msgstr ""
 
 msgctxt "#31098"
 msgid "Home Menu"
@@ -253,7 +268,7 @@ msgid "Hide Now Playing Music Info"
 msgstr ""
 
 msgctxt "#31104"
-msgid "Hide Search Button"
+msgid "Show Search Button"
 msgstr ""
 
 msgctxt "#31105"
@@ -297,7 +312,7 @@ msgid "Show Videos Button"
 msgstr ""
 
 msgctxt "#31115"
-msgid "Show DVD Button"
+msgid "Show Exit Button"
 msgstr ""
 
 msgctxt "#31116"
@@ -393,7 +408,7 @@ msgid "Enable Movies Notifications"
 msgstr ""
 
 msgctxt "#31139"
-msgid "Enable Addons Notifications"
+msgid "Enable Add-ons Notifications"
 msgstr ""
 
 msgctxt "#31140"
@@ -449,7 +464,7 @@ msgid "Hide Live TV Submenu"
 msgstr ""
 
 msgctxt "#31153"
-msgid "Enable Login Screen"
+msgid "Enable login screen"
 msgstr ""
 
 msgctxt "#31154"
@@ -481,15 +496,62 @@ msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
 msgstr ""
 
 msgctxt "#31161"
-msgid "Hide Library Totals"
+msgid "Show Library Totals"
 msgstr ""
 
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr ""
 
+msgctxt "#31163"
+msgid "Cast info"
+msgstr ""
 
-#empty strings from id 31163 to 31199
+msgctxt "#31164"
+msgid "Press DOWN for more info"
+msgstr ""
+
+msgctxt "#31165"
+msgid "Download [COLOR=selected]disc.png[/COLOR] for all Movies"
+msgstr ""
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr ""
+
+msgctxt "#31167"
+msgid "Settings Level:"
+msgstr ""
+
+msgctxt "#31168"
+msgid "Reset Level"
+msgstr ""
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr ""
+
+msgctxt "#31170"
+msgid "All Skin Settings will revert back to their default state.[CR]Are you sure you want to proceed ?"
+msgstr ""
+
+msgctxt "#31171"
+msgid "Update Art"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Enable Home Menu Fanart SlideShow"
+msgstr ""
+
+msgctxt "#31173"
+msgid "Hide Add-ons Submenu"
+msgstr ""
+
+msgctxt "#31174"
+msgid "Hide Submenus"
+msgstr ""
+
+#empty strings from id 31175 to 31199
 #Scripts labels
 
 msgctxt "#31200"
@@ -508,7 +570,9 @@ msgctxt "#31203"
 msgid "New Search"
 msgstr ""
 
-#empty string with id 31204
+msgctxt "#31204"
+msgid "Please check your weather settings"
+msgstr ""
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -626,9 +690,7 @@ msgctxt "#31233"
 msgid "Chance of Precipitation"
 msgstr ""
 
-msgctxt "#31234"
-msgid "Fetching Forecast Info for..."
-msgstr ""
+#empty string with id 31234
 
 msgctxt "#31235"
 msgid "Current Forecast"
@@ -702,7 +764,35 @@ msgctxt "#31252"
 msgid "All Music"
 msgstr ""
 
-#empty strings from id 31253 to 31279
+msgctxt "#31253"
+msgid "Add YouTube UserID and Title"
+msgstr ""
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr ""
+
+msgctxt "#31255"
+msgid "RSS Video Feeds"
+msgstr ""
+
+msgctxt "#31256"
+msgid "In Cinemas Now"
+msgstr ""
+
+msgctxt "#31257"
+msgid "Trending Movies"
+msgstr ""
+
+msgctxt "#31258"
+msgid "Trending  TV Shows"
+msgstr ""
+
+msgctxt "#31259"
+msgid "Top Artists"
+msgstr ""
+
+#empty strings from id 31256 to 31279
 #Playlist Editor labels
 
 msgctxt "#31280"
@@ -796,7 +886,11 @@ msgctxt "#31315"
 msgid "Hide Scrolling Titles"
 msgstr ""
 
-#empty strings from id 31316 to 31349
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr ""
+
+#empty strings from id 31317 to 31349
 #PVR
 
 msgctxt "#31350"
@@ -843,11 +937,11 @@ msgid "Disable Quick Navigation"
 msgstr ""
 
 msgctxt "#31376"
-msgid "Show Update Video Library Button"
+msgid "Hide Update Video Library Button"
 msgstr ""
 
 msgctxt "#31377"
-msgid "Show Update Music Library Button"
+msgid "Hide Update Music Library Button"
 msgstr ""
 
 msgctxt "#31378"
@@ -903,7 +997,7 @@ msgid "Hide New Music Button"
 msgstr ""
 
 msgctxt "#31391"
-msgid "Hide Settings Button"
+msgid "Show Settings Button"
 msgstr ""
 
 msgctxt "#31392"
@@ -926,7 +1020,19 @@ msgctxt "#31396"
 msgid "Custom Button"
 msgstr ""
 
-#empty strings from id 31397 to 31400
+msgctxt "#31397"
+msgid "Hide Skin Settings Button"
+msgstr ""
+
+msgctxt "#31398"
+msgid "Hide Favourites Button"
+msgstr ""
+
+msgctxt "#31399"
+msgid "Hide LiveTV Button"
+msgstr ""
+
+#empty string with id 31400
 #Settings Category Description & Header Labels
 
 msgctxt "#31401"
@@ -966,7 +1072,7 @@ msgid "Choose from a variety of settings and customization options to make \"Bel
 msgstr ""
 
 msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
+msgid "With XBMC you can have several profiles and the auto login option if the login screen is disabled."
 msgstr ""
 
 msgctxt "#31411"
@@ -1012,13 +1118,13 @@ msgstr ""
 #empty strings from id 31421 to 31429
 
 msgctxt "#31430"
-msgid "Help Tip"
+msgid "Help"
 msgstr ""
 
 msgctxt "#31431"
-msgid "You haven't added any items to Favorites yet. Highlight an item, and choose \"Add to favorites\" from the context menu."
+msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."
 msgstr ""
 
 msgctxt "#31432"
-msgid "Mouse usage is not supported. Please disable it from Settings>System>Input Devices>\"Enable mouse and Touch Screen support\"."
+msgid "Mouse usage is not supported.[CR]Please disable it from Settings>System>Input Devices>[CR]\"Enable mouse and Touch Screen support\"."
 msgstr ""

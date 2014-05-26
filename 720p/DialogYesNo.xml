@@ -1,4 +1,5 @@
-<window id="100">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="100">
 	<defaultcontrol always="true">10</defaultcontrol>
   <zorder>5</zorder>
 	<controls>
@@ -23,97 +24,60 @@
 			<scrollspeed>20</scrollspeed>
 		  <label>-</label>
 		</control>
-	
-	   <control type="group">
-			<posx>370</posx>
-			<posy>250</posy>
-			<control type="label" id="2">
-				<description>dialog line 1</description>
-				<posx>0</posx>
-				<posy>60</posy>
-        <width>550</width>
-				<height>40</height>
-				<textcolor>99white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>-</label>
-				<haspath>true</haspath>
-				<font>FontSize_20</font>
-			</control>
-			<control type="label" id="3">
-				<description>dialog line 2</description>
-				<posx>0</posx>
-				<posy>85</posy>
-        <width>550</width>
-				<height>40</height>
-				<textcolor>99white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>-</label>
-				<haspath>true</haspath>
-				<font>FontSize_20</font>
-				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(2))">Conditional</animation>
-			</control>
-			<control type="label" id="4">
-				<description>dialog line 3</description>
-				<posx>0</posx>
-				<posy>110</posy>
-        <width>550</width>
-				<height>40</height>
-				<textcolor>99white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>-</label>
-				<haspath>true</haspath>
-				<font>FontSize_20</font>
-				<animation effect="slide" start="0,0" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(2))">Conditional</animation>
-			</control>
-		 </control>
-
-			<control type="button" id="11">
-				<description>Yes button</description>
-				<posx>470</posx>
-				<posy>423</posy>
-				<width>160</width>
-				<height>40</height>
-				<texturenofocus border="10,0,10,0">dialogs/keyboard/button_nf.png</texturenofocus>
-				<texturefocus border="10,0,10,0">dialogs/keyboard/button_fo.png</texturefocus>
-				<align>center</align>
-				<aligny>top</aligny>
-				<font>FontSize_22</font>
-				<textcolor>99grey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<disabledcolor>44white</disabledcolor>
-				<shadowcolor>55000000</shadowcolor>
-				<textoffsety>4</textoffsety>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>11</onup>
-				<ondown>11</ondown>
-			</control>
-			<control type="button" id="10">
-				<description>No button</description>
-				<posx>650</posx>
-				<posy>423</posy>
-				<width>160</width>
-				<height>40</height>
-				<texturenofocus border="10,0,10,0">dialogs/keyboard/button_nf.png</texturenofocus>
-				<texturefocus border="10,0,10,0">dialogs/keyboard/button_fo.png</texturefocus>
-				<align>center</align>
-				<aligny>top</aligny>
-				<font>FontSize_22</font>
-				<textcolor>99grey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<disabledcolor>44white</disabledcolor>
-				<shadowcolor>55000000</shadowcolor>
-				<textoffsety>4</textoffsety>
-				<onleft>11</onleft>
-				<onright>11</onright>
-				<onup>10</onup>
-				<ondown>10</ondown>
-			</control>			
-			
+		<control type="textbox" id="9">
+			<posx>365</posx>
+			<posy>310</posy>
+      <width>550</width>
+			<height>90</height>
+			<font>FontSize_20</font>
+		  <align>center</align>
+			<textcolor>99white</textcolor>
+			<shadowcolor>99000000</shadowcolor>
+			<autoscroll time="3000" delay="3000" repeat="5000">true</autoscroll>
+		  <label>Remove ID to Test, Remove ID to Test, Remove ID to Test, Remove ID to Test, Remove ID to Test, Remove ID to Test, Remove ID to Test, Remove ID to Test, Remove ID to Test, Remove ID to Test, Remove ID to Test, Remove ID to Test</label>
+		</control>
+		<control type="button" id="11">
+			<description>Yes button</description>
+			<posx>470</posx>
+			<posy>423</posy>
+			<width>160</width>
+			<height>40</height>
+			<texturenofocus border="10,0,10,0">dialogs/keyboard/button_nf.png</texturenofocus>
+			<texturefocus border="10,0,10,0">dialogs/keyboard/button_fo.png</texturefocus>
+			<align>center</align>
+			<aligny>top</aligny>
+			<font>FontSize_22</font>
+			<textcolor>99grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<disabledcolor>44white</disabledcolor>
+			<shadowcolor>55000000</shadowcolor>
+			<textoffsety>4</textoffsety>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>11</onup>
+			<ondown>11</ondown>
+		</control>
+		<control type="button" id="10">
+			<description>No button</description>
+			<posx>650</posx>
+			<posy>423</posy>
+			<width>160</width>
+			<height>40</height>
+			<texturenofocus border="10,0,10,0">dialogs/keyboard/button_nf.png</texturenofocus>
+			<texturefocus border="10,0,10,0">dialogs/keyboard/button_fo.png</texturefocus>
+			<align>center</align>
+			<aligny>top</aligny>
+			<font>FontSize_22</font>
+			<textcolor>99grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<disabledcolor>44white</disabledcolor>
+			<shadowcolor>55000000</shadowcolor>
+			<textoffsety>4</textoffsety>
+			<onleft>11</onleft>
+			<onright>11</onright>
+			<onup>10</onup>
+			<ondown>10</ondown>
+		</control>
 	 </control>
-
 	</controls>
 </window>

@@ -1,4 +1,5 @@
-<window id="126">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="126">
 	<defaultcontrol always="true">450</defaultcontrol>
 	  <zorder>3</zorder>
 	  <onload condition="Window.IsActive(networksetup)">SetProperty(ShowDialog,1,home)</onload>
@@ -24,8 +25,8 @@
 			  </control>
 				<control type="label" id="411">
 					<description>header label</description>
-					<posx>305</posx>
-					<posy>180</posy>
+					<left>305</left>
+					<top>180</top>
 					<width>670</width>
 					<height>50</height>
 					<font>FontSize_36</font>
@@ -38,8 +39,8 @@
 				</control>
 				<control type="label" id="412">
 					<description>Path</description>
-					<posx>330</posx>
-					<posy>228</posy>
+					<left>330</left>
+					<top>228</top>
 					<width>620</width>
 					<height>30</height>
 					<font>FontSize_16B</font>
@@ -53,8 +54,8 @@
 
 				<control type="image">
 					<description>Large Icon Image</description>
-					<posx>780</posx>
-					<posy>263</posy>
+					<left>780</left>
+					<top>263</top>
 					<width>171</width>
 					<height>249</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
@@ -65,8 +66,8 @@
 					
 			<!-- List -->
 			<control type="list" id="450">
-				<posx>328</posx>
-				<posy>262</posy>
+				<left>328</left>
+				<top>262</top>
 				<width>447</width>
 				<height>255</height>
 				<onup>450</onup>
@@ -76,8 +77,8 @@
 			  <scrolltime tween="quadratic" easing="out">250</scrolltime>
 				<itemlayout height="51" width="447">
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>427</width>
 						<height>47</height>
 						<info>ListItem.Label</info>
@@ -91,8 +92,8 @@
 				</itemlayout>
 				<focusedlayout height="51" width="447">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>447</width>
 						<height>47</height>
 						<align>left</align>
@@ -103,8 +104,8 @@
             <visible>Control.HasFocus(450)</visible>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>427</width>
 						<height>47</height>
 						<info>ListItem.Label</info>
@@ -118,8 +119,8 @@
 						<visible>Control.HasFocus(450)</visible>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>427</width>
 						<height>47</height>
 						<info>ListItem.Label</info>
@@ -136,12 +137,12 @@
 			</control>
 
 		  <control type="group" id="10000">
-				<posx>330</posx>
-				<posy>505</posy>
+				<left>325</left>
+				<top>505</top>
 	      <!-- Buttons -->
 				<control type="grouplist" id="10001">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>0</width>
 					<height>0</height>
 					<itemgap>0</itemgap>
@@ -162,15 +163,15 @@
 					  <include>TopButton</include>
 					</control>
 					<control type="button" id="415">
-						<description>Cancel</description>
+						<description>New Folder</description>
 					  <label>119</label>
 					  <include>TopButton</include>
 					</control>
 				</control>
 	      <!-- Buttons Labels -->
 				<control type="grouplist">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>70</height>
 					<width>620</width>
 					<itemgap>30</itemgap>
@@ -178,56 +179,36 @@
 					<orientation>horizontal</orientation>
 					<control type="label">
 						<description>Save Label</description>
-						<height>62</height>
-						<width min="10" max="550">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
+	          <include>DialogsButtonLabels</include>
             <label>$INFO[Control.GetLabel(413),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(413)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(413)" reversible="true">Conditional</animation>
+						<animation effect="fade" start="100" end="30" time="100" tween="sine" easing="inout" condition="!Control.HasFocus(413)" reversible="true">Conditional</animation>
+	          <animation effect="zoom" start="100" end="95" time="100" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(413)" reversible="true">Conditional</animation>
 					</control>
 					<control type="label">
 						<description>Cancel Label</description>
-						<height>62</height>
-						<width min="10" max="550">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
+	          <include>DialogsButtonLabels</include>
             <label>$INFO[Control.GetLabel(414),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(414)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(414)" reversible="true">Conditional</animation>
+						<animation effect="fade" start="100" end="30" time="100" tween="sine" easing="inout" condition="!Control.HasFocus(414)" reversible="true">Conditional</animation>
+	          <animation effect="zoom" start="100" end="95" time="100" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(414)" reversible="true">Conditional</animation>
 					</control>
 					<control type="label">
-						<description>Cancel Label</description>
-						<height>62</height>
-						<width min="10" max="550">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
+						<description>New Folder Label</description>
+	          <include>DialogsButtonLabels</include>
             <label>$INFO[Control.GetLabel(415),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(415)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(415)" reversible="true">Conditional</animation>
+						<animation effect="fade" start="100" end="30" time="100" tween="sine" easing="inout" condition="!Control.HasFocus(415)" reversible="true">Conditional</animation>
+	          <animation effect="zoom" start="100" end="95" time="100" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(415)" reversible="true">Conditional</animation>
 					</control>
 				</control>
 				<control type="group">
-					<posx>620</posx>
-					<posy>0</posy>
-					<animation effect="fade" end="30" condition="true">Conditional</animation>
+					<left>343</left>
+					<top>0</top>
+				  <animation effect="fade" end="30" condition="true">Conditional</animation>
+		      <animation effect="zoom" end="96" condition="true">Conditional</animation>
 					<control type="label">
 						<description>Page Count Label</description>
 						<width>300</width>
-						<height>57</height>
-						<font>FontSize_18</font>
+						<height>62</height>
+						<font>FontSize_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 						<scroll>false</scroll>
@@ -238,9 +219,6 @@
 					</control>
 				</control>
 		  </control>
-			
 		</control>
-
-		
 	</controls>
 </window>

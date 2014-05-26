@@ -206,7 +206,7 @@ msgstr "Miniaturas"
 
 msgctxt "#31086"
 msgid "Banner List"
-msgstr "Listaxe de Cartaces"
+msgstr "Listaxe de cs"
 
 msgctxt "#31098"
 msgid "Home Menu"
@@ -324,6 +324,14 @@ msgctxt "#31129"
 msgid "ClearLogo"
 msgstr "ClearLogo"
 
+msgctxt "#31131"
+msgid "Show Only on Home Screen"
+msgstr "Amosar só na Pantalla Principal"
+
+msgctxt "#31133"
+msgid "Custom Background"
+msgstr "Fondo Personalizado"
+
 msgctxt "#31134"
 msgid "Edit Background for Media Type"
 msgstr "Editar os fondos para os tipos de medios"
@@ -335,6 +343,22 @@ msgstr "Imaxe única"
 msgctxt "#31136"
 msgid "Multi Image"
 msgstr "Multi imaxe"
+
+msgctxt "#31137"
+msgid "Enable Notifications"
+msgstr "Activar Notificacións"
+
+msgctxt "#31138"
+msgid "Enable Movies Notifications"
+msgstr "Activar Notificacións para os Filmes"
+
+msgctxt "#31139"
+msgid "Enable Addons Notifications"
+msgstr "Activar Notificacións para os Complementos"
+
+msgctxt "#31140"
+msgid "Enable Weather Alerts Notifications"
+msgstr "Activar Notificacións para as Alertas Meteoroloxicas"
 
 msgctxt "#31141"
 msgid "Choose Lyrics Add-on"
@@ -379,6 +403,10 @@ msgstr "Escoller Complemento de Avances"
 msgctxt "#31158"
 msgid "Views"
 msgstr "Vistas"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Activar o modo Quiosco"
 
 msgctxt "#31200"
 msgid "My Movies"

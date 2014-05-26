@@ -148,6 +148,10 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "Multi-imatge"
 
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Activa el mode quiosc"
+
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Horitzontal"

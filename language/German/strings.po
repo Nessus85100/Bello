@@ -302,11 +302,11 @@ msgstr "Der Musik-knopf öffnet..."
 
 msgctxt "#31118"
 msgid "Custom Button"
-msgstr "Eigener Knopf"
+msgstr "Eigene Schaltfläche"
 
 msgctxt "#31119"
 msgid "Custom Home Menu Buttons"
-msgstr "Eigene Hauptmenü Knöpfe anzeigen"
+msgstr "Benutzerdefinierte Hauptmenüschaltflächen anzeigen"
 
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
@@ -437,8 +437,8 @@ msgid "Show RSS feed in whole skin"
 msgstr "Zeige RSS-Newsfeeds im gesamten Skin"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Flags auslesen von Videodateinamen ausblenden [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide Live TV Submenu"
+msgstr "Live TV Untermenü nicht anzeigen"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
@@ -468,6 +468,18 @@ msgctxt "#31159"
 msgid "Show FullScreenInfo instead of the SeekBar"
 msgstr "Zeige Vollbildinfo statt der Suchleiste"
 
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "Lade [COLOR=selected]logo.png[/COLOR] für alle Filme"
+
+msgctxt "#31161"
+msgid "Hide Library Totals"
+msgstr "Datenbankstatistiken nicht anzeigen"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Kiosk-Modus aktivieren"
+
 msgctxt "#31200"
 msgid "My Movies"
 msgstr "Meine Filme"
@@ -490,7 +502,7 @@ msgstr "Neu hinzugefügte Filme durchsuchen"
 
 msgctxt "#31206"
 msgid "Browse the most recently added episodes"
-msgstr "Zuletzt hinzugefügte Episoden durchsuchen"
+msgstr "Die zuletzt hinzugefügten Folgen durchsuchen"
 
 msgctxt "#31207"
 msgid "Browse the most recently added albums"
@@ -678,15 +690,15 @@ msgstr "Komplette Musik"
 
 msgctxt "#31280"
 msgid "Open Playlist"
-msgstr "Playliste öffnen"
+msgstr "Wiedergabeliste öffnen"
 
 msgctxt "#31281"
 msgid "Save Playlist"
-msgstr "Playliste speichern"
+msgstr "Wiedergabeliste speichern"
 
 msgctxt "#31282"
 msgid "Close Playlist"
-msgstr "Playliste schliessen"
+msgstr "Wiedergabeliste schließen"
 
 msgctxt "#31283"
 msgid "System Music Files"
@@ -694,7 +706,7 @@ msgstr "System Musik Dateien"
 
 msgctxt "#31284"
 msgid "Current Playlist"
-msgstr "Aktuelle Playliste"
+msgstr "Aktuelle Wiedergabeliste"
 
 msgctxt "#31285"
 msgid "Playlist Options"
@@ -882,11 +894,11 @@ msgstr "Schnellnavigation-knopf anzeigen"
 
 msgctxt "#31395"
 msgid "Custom QuickNav Buttons"
-msgstr "Eigene Schnellnavigation-knöpfe"
+msgstr "Benutzerdefinierte Schnellnavigationsschaltflächen"
 
 msgctxt "#31396"
 msgid "Custom Button"
-msgstr "Eigener Knopf"
+msgstr "Benutzerdefinierte Schaltfläche"
 
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."

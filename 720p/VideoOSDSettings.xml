@@ -1,9 +1,10 @@
-<window id="123">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="123">
 	<defaultcontrol>5</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="group">
@@ -24,8 +25,8 @@
 			</control>
 			<control type="label" id="2">
 				<description>Heding Label</description>
-				<posx>357</posx>
-				<posy>165</posy>
+				<left>357</left>
+				<top>165</top>
 				<width>565</width>
 				<font>FontSize_36</font>
 				<textcolor>white</textcolor>
@@ -35,8 +36,8 @@
 			</control>
 			<control type="label" id="3">
 				<description>No Settings Label</description>
-				<posx>320</posx>
-				<posy>175</posy>
+				<left>320</left>
+				<top>175</top>
 				<width>640</width>
 				<height>352</height>
 				<textcolor>77white</textcolor>
@@ -45,8 +46,8 @@
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
-				<posx>363</posx>
-				<posy>209</posy>
+				<left>363</left>
+				<top>209</top>
 				<width>555</width>
 				<height>353</height>
 			  <itemgap>4</itemgap>

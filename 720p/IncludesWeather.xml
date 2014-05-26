@@ -1,4 +1,5 @@
-<includes>
+<?xml version="1.0" encoding="UTF-8"?>
+<includes> 
 
 	<!-- ============================= -->
   <!-- ========= TOP INFO ========== -->
@@ -6,19 +7,18 @@
 	<include name="WeatherTopInfo">			
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-		  <visible>!Window.IsActive(ShutdownMenu)</visible>
 	    <include>DialogZoomInOutAnimation</include>
 
 			<control type="group">
 			  <include>Window_OpenClose_Animation</include>
-			  <visible>!IsEmpty(Window.Property(Current.Condition))</visible>
+			  <visible>Weather.IsFetched + !SubString(Window(Weather).Property(Current.ConditionIcon),na) + ![IsEmpty(Window(Weather).Property(Current.Condition)) | IsEmpty(Window(Weather).Property(Location))]</visible>
 				<!-- Top Info Left -->
 				<control type="group">
-					<posy>65</posy>
+					<top>65</top>
 					<control type="image">
 						<description>current weather icon</description>
-						<posx>230</posx>
-						<posy>10</posy>
+						<left>230</left>
+						<top>10</top>
 						<height>190</height>
 						<width>190</width>
 						<texture>$INFO[Window.Property(Current.ConditionIcon)]</texture>
@@ -26,8 +26,8 @@
 					<!-- *Disabled* -->
 					<control type="multiimage.">
 						<description>current weather icon</description>
-						<posx>230</posx>
-						<posy>10</posy>
+						<left>230</left>
+						<top>10</top>
 						<height>190</height>
 						<width>190</width>
 						<imagepath>special://skin/extras/animations/weather/$INFO[Window.Property(Current.FanartCode)]</imagepath>					
@@ -37,8 +37,8 @@
 						<visible>Skin.HasSetting(weatherwindowanimated)</visible>
 					</control>
 					<control type="grouplist">
-						<posx>37</posx>
-						<posy>35</posy>
+						<left>37</left>
+						<top>35</top>
 						<width>1000</width>
 						<height>150</height>
 						<itemgap>0</itemgap>
@@ -68,8 +68,8 @@
 						</control>
 					</control>
 					<control type="grouplist">
-						<posx>43</posx>
-						<posy>165</posy>
+						<left>43</left>
+						<top>165</top>
 						<width>1000</width>
 						<height>50</height>
 						<itemgap>15</itemgap>
@@ -101,12 +101,12 @@
 				</control>
 			  <!-- Day/Date/Year Right -->	
 				<control type="group">
-					<posx>1113</posx>
-					<posy>10</posy>
+					<left>748</left>
+					<top>10</top>
 					<control type="label">
 							<description>Date</description>
-							<posx>98</posx>
-							<posy>110</posy>
+							<left>98</left>
+							<top>110</top>
 							<width>365</width>
 							<height>50</height>
 							<font>FontSize_85</font>
@@ -118,8 +118,8 @@
 					</control>
 					<control type="label">
 							<description>Year</description>
-							<posx>156</posx>
-							<posy>140</posy>
+							<left>420</left>
+							<top>140</top>
 							<width>100</width>
 							<height>30</height>
 							<font>FontSize_28</font>
@@ -133,8 +133,8 @@
 					</control>
 					<control type="label">
 							<description>Weekday</description>
-							<posx>4</posx>
-							<posy>105</posy>
+							<left>18</left>
+							<top>105</top>
 							<width>350</width>
 							<height>30</height>
 							<font>FontSize_34</font>
@@ -146,8 +146,8 @@
 					</control>
 					<control type="label">
 							<description>Month</description>
-							<posx>4</posx>
-							<posy>139</posy>
+							<left>18</left>
+							<top>139</top>
 							<width>350</width>
 							<height>30</height>
 							<font>FontSize_34</font>
@@ -160,12 +160,12 @@
 				</control>
 			  <!-- Sunrise/Sunset/Provider Right -->	
 				<control type="group">
-					<posx>1236</posx>
-					<posy>195</posy>
+					<left>856</left>
+					<top>195</top>
 					<control type="label">
 							<description>Sunrise-Sunset</description>
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>380</width>
 							<height>30</height>
 							<font>FontSize_20</font>
@@ -179,8 +179,8 @@
 					</control>
 					<control type="label">
 							<description>last update</description>
-							<posx>0</posx>
-							<posy>23</posy>
+							<left>0</left>
+							<top>23</top>
 							<width>380</width>
 							<height>30</height>
 							<font>FontSize_20</font>
@@ -194,8 +194,8 @@
 					<!-- Current Weather Provider -->	
 					<control type="label">
 							<description>current provider</description>
-							<posx>0</posx>
-							<posy>46</posy>
+							<left>0</left>
+							<top>46</top>
 							<width>380</width>
 							<height>30</height>
 							<font>FontSize_20</font>
@@ -218,19 +218,18 @@
 	<include name="WeatherDefault">
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-		  <visible>!Window.IsActive(ShutdownMenu)</visible>
 	    <include>DialogZoomInOutAnimation</include>
-			<control type="group">
-				<visible>!IsEmpty(Window.Property(Current.Condition))</visible>
+			<control type="group" id="50">
+				<visible>Weather.IsFetched + !SubString(Window(Weather).Property(Current.ConditionIcon),na) + ![IsEmpty(Window(Weather).Property(Current.Condition)) | IsEmpty(Window(Weather).Property(Location))]</visible>
 				<include>Window_OpenClose_Animation</include>
 				<control type="list" id="52">
-					<posx>12</posx>
-					<posy>280</posy>
+					<left>12</left>
+					<top>280</top>
 					<width>1240</width>
 					<height>360</height>
 					<onleft>52</onleft>
 					<onright>52</onright>
-					<onup>9000</onup>
+					<onup condition="!SubString(Window(Weather).Property(Current.ConditionIcon),na)">9111</onup>
 					<ondown>noop</ondown>
 					<itemgap>3</itemgap>
 					<preloaditems>4</preloaditems>
@@ -239,16 +238,16 @@
 				  <scrolltime tween="cubic" easing="out">350</scrolltime>
 					<itemlayout width="310">
 						<control type="image">
-							<posx>10</posx>
-							<posy>-5</posy>
+							<left>10</left>
+							<top>-5</top>
 							<width>305</width>
 							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel.png</texture>
 						</control>
 						<control type="label">
-						  <posx>163</posx>
-							<posy>25</posy>
+						  <left>163</left>
+							<top>25</top>
 							<width>245</width>
 							<height>30</height>
 							<font>FontSize_26</font>
@@ -259,8 +258,8 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-						  <posx>163</posx>
-							<posy>55</posy>
+						  <left>163</left>
+							<top>55</top>
 							<width>245</width>
 							<height>30</height>
 							<font>FontSize_26</font>
@@ -271,8 +270,8 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="label">
-					    <posx>163</posx>
-							<posy>255</posy>
+					    <left>163</left>
+							<top>255</top>
 							<width>245</width>
 							<height>30</height>
 							<font>FontSize_26</font>
@@ -283,8 +282,8 @@
 							<label>$INFO[ListItem.Property(HighTemperature)]</label>
 						</control>
 						<control type="label">
-					    <posx>163</posx>
-							<posy>285</posy>
+					    <left>163</left>
+							<top>285</top>
 							<width>245</width>
 							<height>30</height>
 							<font>FontSize_26</font>
@@ -295,8 +294,8 @@
 							<label>$INFO[ListItem.Property(LowTemperature)]</label>
 						</control>
 						<control type="image">
-							<posx>70</posx>
-							<posy>75</posy>
+							<left>70</left>
+							<top>75</top>
 							<width>180</width>
 							<height>180</height>
 							<aspectratio>keep</aspectratio>
@@ -305,28 +304,27 @@
 					</itemlayout>
 					<focusedlayout width="310">
 						<control type="image">
-							<posx>10</posx>
-							<posy>-5</posy>
+							<left>10</left>
+							<top>-5</top>
 							<width>305</width>
 							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel.png</texture>
 						</control>
 						<control type="image">
-							<posx>14</posx>
-							<posy>0</posy>
-							<width>301</width>
-							<height>352</height>
+							<left>10</left>
+							<top>-5</top>
+							<width>305</width>
+							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="50">views/thumbnails/focus.png</texture>
+							<texture border="25">windows/weather/day_panel_focus.png</texture>
 							<animation effect="slide" start="70,0" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(52).OnPrevious">Focus</animation>
 							<animation effect="slide" start="-70,0" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(52).OnNext">Focus</animation>
-							<include>VisibleFadeEffect</include>
 							<visible>Control.HasFocus(52)</visible>
 						</control>
 						<control type="label">
-						  <posx>163</posx>
-							<posy>25</posy>
+						  <left>163</left>
+							<top>25</top>
 							<width>245</width>
 							<height>30</height>
 							<font>FontSize_26</font>
@@ -337,8 +335,8 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-						  <posx>163</posx>
-							<posy>55</posy>
+						  <left>163</left>
+							<top>55</top>
 							<width>245</width>
 							<height>30</height>
 							<font>FontSize_26</font>
@@ -349,8 +347,8 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="label">
-						  <posx>163</posx>
-							<posy>255</posy>
+						  <left>163</left>
+							<top>255</top>
 							<width>245</width>
 							<height>30</height>
 							<font>FontSize_26</font>
@@ -361,8 +359,8 @@
 							<label>$INFO[ListItem.Property(HighTemperature)]</label>
 						</control>
 						<control type="label">
-						  <posx>163</posx>
-							<posy>285</posy>
+						  <left>163</left>
+							<top>285</top>
 							<width>245</width>
 							<height>30</height>
 							<font>FontSize_26</font>
@@ -373,8 +371,8 @@
 							<label>$INFO[ListItem.Property(LowTemperature)]</label>
 						</control>
 						<control type="image">
-							<posx>70</posx>
-							<posy>75</posy>
+							<left>70</left>
+							<top>75</top>
 							<width>180</width>
 							<height>180</height>
 							<aspectratio>keep</aspectratio>
@@ -485,35 +483,43 @@
   <!-- ================== WEATHER UNDERGROUND ADDON =================== -->
   <!-- ================================================================ -->
   <include name="WeatherUnderground">
+		<control type="button" id="50">
+			<description>Get Focus Fake Button</description>
+			<include>TopButton</include>
+			<onup>9111</onup>
+			<ondown>noop</ondown>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<visible>!Skin.String(WeatherUnderground,4) + !SubString(Window(Weather).Property(Current.ConditionIcon),na)</visible>
+		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-		  <visible>!Window.IsActive(ShutdownMenu)</visible>
 	    <include>DialogZoomInOutAnimation</include>
+	    <visible>!SubString(Window(Weather).Property(Current.ConditionIcon),na)</visible>
 	
 	    <!-- Current Weather Conditions -->
 			<control type="group">
 				<description>Current Weather</description>
-				<visible>Skin.String(WeatherUnderground,1)</visible>
-				<visible>!IsEmpty(Window.Property(Current.Condition))</visible>
+        <visible>Skin.String(WeatherUnderground,1) + Weather.IsFetched + !IsEmpty(Window(Weather).Property(Daily.IsFetched)) + ![IsEmpty(Window(Weather).Property(Current.Condition)) | IsEmpty(Window(Weather).Property(Location))]</visible>
 				<include>Window_OpenClose_Animation</include>
 			 <control type="group">
-				<posx>0</posx>
-				<posy>300</posy>
+				<left>0</left>
+				<top>300</top>
 	      <!-- Today -->
 				<control type="group">
-					<posx>25</posx>
-					<posy>0</posy>
+					<left>25</left>
+					<top>0</top>
 					<control type="image">
-						<posx>-5</posx>
-						<posy>-25</posy>
+						<left>-5</left>
+						<top>-25</top>
 						<width>345</width>
 						<height>355</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="25">windows/weather/day_panel.png</texture>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>10</posy>
+						<left>0</left>
+						<top>10</top>
 						<width>300</width>
 						<height>30</height>
 						<font>FontSize_30B</font>
@@ -523,8 +529,8 @@
 						<label>$LOCALIZE[33006]</label>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>60</posy>
+						<left>0</left>
+						<top>60</top>
 						<width>300</width>
 						<height>30</height>
 						<font>FontSize_20</font>
@@ -534,8 +540,8 @@
 						<label>$INFO[Window.Property(Daily.1.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[393]: [/COLOR]]</label>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>85</posy>
+						<left>0</left>
+						<top>85</top>
 						<width>300</width>
 						<height>30</height>
 						<font>FontSize_20</font>
@@ -545,8 +551,8 @@
 						<label>$INFO[Window.Property(Daily.1.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[391]: [/COLOR]]</label>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>160</posy>
+						<left>30</left>
+						<top>160</top>
 						<width>270</width>
 						<height>20</height>
 						<font>FontSize_26</font>
@@ -557,8 +563,8 @@
 						<label>$INFO[Window.Property(Daily.1.Outlook)]</label>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>200</posy>
+						<left>30</left>
+						<top>200</top>
 						<width>270</width>
 						<height>20</height>
 						<font>FontSize_18</font>
@@ -569,9 +575,9 @@
 						<label>[COLOR=ddC6C6C8]$LOCALIZE[383]:[/COLOR] $LOCALIZE[31227] $INFO[Window.Property(Daily.1.ShortWindDirection)] $LOCALIZE[31228] $INFO[Window.Property(Daily.1.WindSpeed)]</label>
 					</control>
 					<control type="textbox">
-						<posx>30</posx>
-						<posy>220</posy>
-						<width>273</width>
+						<left>30</left>
+						<top>220</top>
+						<width>275</width>
 						<height>80</height>
 						<font>FontSize_18</font>
 						<textcolor>white</textcolor>
@@ -581,8 +587,8 @@
 						<label>$INFO[Window.Property(Daily.1.LongOutlookDay),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>150</width>
 						<height>150</height>
 						<aspectratio>keep</aspectratio>
@@ -591,19 +597,19 @@
 				</control>
 	      <!-- Tomorrow -->
 				<control type="group">
-					<posx>345</posx>
-					<posy>0</posy>
+					<left>345</left>
+					<top>0</top>
 					<control type="image">
-						<posx>-5</posx>
-						<posy>-25</posy>
+						<left>-5</left>
+						<top>-25</top>
 						<width>345</width>
 						<height>355</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="25">windows/weather/day_panel.png</texture>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>10</posy>
+						<left>0</left>
+						<top>10</top>
 						<width>300</width>
 						<height>30</height>
 						<font>FontSize_30B</font>
@@ -613,8 +619,8 @@
 						<label>$LOCALIZE[33007]</label>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>60</posy>
+						<left>0</left>
+						<top>60</top>
 						<width>300</width>
 						<height>30</height>
 						<font>FontSize_20</font>
@@ -624,8 +630,8 @@
 						<label>$INFO[Window.Property(Daily.2.HighTemperature),[COLOR=ddC6C6C8]$LOCALIZE[393]: [/COLOR]]</label>
 					</control>
 					<control type="label">
-						<posx>300</posx>
-						<posy>85</posy>
+						<left>0</left>
+						<top>85</top>
 						<width>300</width>
 						<height>30</height>
 						<font>FontSize_20</font>
@@ -635,8 +641,8 @@
 						<label>$INFO[Window.Property(Daily.2.LowTemperature),[COLOR=ddC6C6C8]$LOCALIZE[391]: [/COLOR]]</label>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>160</posy>
+						<left>30</left>
+						<top>160</top>
 						<width>270</width>
 						<height>20</height>
 						<font>FontSize_26</font>
@@ -647,8 +653,8 @@
 						<label>$INFO[Window.Property(Daily.2.Outlook)]</label>
 					</control>
 					<control type="label">
-						<posx>30</posx>
-						<posy>200</posy>
+						<left>30</left>
+						<top>200</top>
 						<width>270</width>
 						<height>20</height>
 						<font>FontSize_18</font>
@@ -659,9 +665,9 @@
 						<label>[COLOR=ddC6C6C8]$LOCALIZE[383]:[/COLOR] $LOCALIZE[31227] $INFO[Window.Property(Daily.2.ShortWindDirection)] $LOCALIZE[31228] $INFO[Window.Property(Daily.2.WindSpeed)]</label>
 					</control>
 					<control type="textbox">
-						<posx>30</posx>
-						<posy>220</posy>
-						<width>273</width>
+						<left>30</left>
+						<top>220</top>
+						<width>275</width>
 						<height>80</height>
 						<font>FontSize_18</font>
 						<textcolor>white</textcolor>
@@ -671,8 +677,8 @@
 						<label>$INFO[Window.Property(Daily.2.LongOutlookDay),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>150</width>
 						<height>150</height>
 						<aspectratio>keep</aspectratio>
@@ -681,11 +687,11 @@
 				</control>
 	      <!-- Maps -->			
 				<control type="group">
-					<posx>690</posx>
-					<posy>0</posy>
+					<left>690</left>
+					<top>0</top>
 					<control type="image">
-						<posx>-5</posx>
-						<posy>-25</posy>
+						<left>-5</left>
+						<top>-25</top>
 						<width>572</width>
 						<height>355</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
@@ -693,8 +699,8 @@
 					</control>
 					<control type="multiimage">
 						<description>maps multiimage</description>
-						<posx>36</posx>
-						<posy>16</posy>
+						<left>36</left>
+						<top>16</top>
 						<width>490</width>
 						<height>274</height>
 						<imagepath>$INFO[Window.Property(MapPath)]</imagepath>
@@ -706,13 +712,13 @@
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>10</posy>
+						<left>30</left>
+						<top>10</top>
 						<width>502</width>
 						<height>286</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="6">empty_icon.png</texture>
-						<bordertexture border="25">dialogs/other/iconborder_black.png</bordertexture>
+						<bordertexture border="25">dialogs/other/iconborder.png</bordertexture>
 						<bordersize>6</bordersize>
 					</control>
 			  </control>
@@ -723,26 +729,25 @@
 	    <!-- 36-Hours Forecast-->
 			<control type="group">
 				<description>36Hours</description>
-				<visible>Skin.String(WeatherUnderground,2)</visible>
-				<visible>!IsEmpty(Window.Property(Current.Condition))</visible>
+        <visible>Skin.String(WeatherUnderground,2) + Weather.IsFetched + !IsEmpty(Window(Weather).Property(36Hour.IsFetched)) + ![IsEmpty(Window(Weather).Property(Current.Condition)) | IsEmpty(Window(Weather).Property(Location))]</visible>
 				<include>Window_OpenClose_Animation</include>
 				<control type="group">
-					<posx>0</posx>
-					<posy>300</posy>
+					<left>0</left>
+					<top>300</top>
 					<control type="group">
-						<posx>25</posx>
-						<posy>0</posy>
+						<left>25</left>
+						<top>0</top>
 						<control type="image">
-							<posx>-5</posx>
-							<posy>-25</posy>
+							<left>-5</left>
+							<top>-25</top>
 							<width>420</width>
 							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel.png</texture>
 						</control>
 						<control type="label">
-							<posx>375</posx>
-							<posy>15</posy>
+							<left>25</left>
+							<top>15</top>
 							<width>345</width>
 							<height>30</height>
 							<font>FontSize_30B</font>
@@ -752,8 +757,8 @@
 							<label>$INFO[Window.Property(36Hour.1.Heading)]</label>
 						</control>
 						<control type="label">
-							<posx>375</posx>
-							<posy>70</posy>
+							<left>20</left>
+							<top>70</top>
 							<width>350</width>
 							<height>30</height>
 							<font>FontSize_20</font>
@@ -763,8 +768,8 @@
 							<label>[COLOR=ddC6C6C8]$INFO[Window.Property(36Hour.1.TemperatureHeading)][/COLOR]$INFO[Window.Property(36Hour.1.Temperature),  ]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>170</posy>
+							<left>30</left>
+							<top>170</top>
 							<width>348</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -774,9 +779,9 @@
 							<label>$INFO[Window.Property(36Hour.1.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR]]</label>
 						</control>
 						<control type="textbox">
-							<posx>30</posx>
-							<posy>190</posy>
-							<width>348</width>
+							<left>30</left>
+							<top>190</top>
+							<width>350</width>
 							<height>105</height>
 							<font>FontSize_18</font>
 							<textcolor>white</textcolor>
@@ -784,8 +789,8 @@
 							<label>$INFO[Window.Property(36hour.1.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 						</control>
 						<control type="image">
-							<posx>50</posx>
-							<posy>15</posy>
+							<left>50</left>
+							<top>15</top>
 							<width>150</width>
 							<height>150</height>
 							<aspectratio>keep</aspectratio>
@@ -793,19 +798,19 @@
 						</control>
 					</control>
 					<control type="group">
-						<posx>437</posx>
-						<posy>0</posy>
+						<left>437</left>
+						<top>0</top>
 						<control type="image">
-							<posx>-5</posx>
-							<posy>-25</posy>
+							<left>-5</left>
+							<top>-25</top>
 							<width>420</width>
 							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel.png</texture>
 						</control>
 						<control type="label">
-							<posx>375</posx>
-							<posy>15</posy>
+							<left>25</left>
+							<top>15</top>
 							<width>345</width>
 							<height>30</height>
 							<font>FontSize_30B</font>
@@ -815,8 +820,8 @@
 							<label>$INFO[Window.Property(36Hour.2.Heading)]</label>
 						</control>
 						<control type="label">
-							<posx>375</posx>
-							<posy>70</posy>
+							<left>20</left>
+							<top>70</top>
 							<width>350</width>
 							<height>30</height>
 							<font>FontSize_20</font>
@@ -826,8 +831,8 @@
 							<label>[COLOR=ddC6C6C8]$INFO[Window.Property(36Hour.2.TemperatureHeading)][/COLOR]$INFO[Window.Property(36Hour.2.Temperature),  ]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>170</posy>
+							<left>30</left>
+							<top>170</top>
 							<width>348</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -837,9 +842,9 @@
 							<label>$INFO[Window.Property(36Hour.2.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR]]</label>
 						</control>
 						<control type="textbox">
-							<posx>30</posx>
-							<posy>190</posy>
-							<width>348</width>
+							<left>30</left>
+							<top>190</top>
+							<width>350</width>
 							<height>105</height>
 							<font>FontSize_18</font>
 							<textcolor>white</textcolor>
@@ -847,8 +852,8 @@
 							<label>$INFO[Window.Property(36hour.2.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 						</control>
 						<control type="image">
-							<posx>50</posx>
-							<posy>15</posy>
+							<left>50</left>
+							<top>15</top>
 							<width>150</width>
 							<height>150</height>
 							<aspectratio>keep</aspectratio>
@@ -856,19 +861,19 @@
 						</control>
 					</control>
 					<control type="group">
-						<posx>845</posx>
-						<posy>0</posy>
+						<left>845</left>
+						<top>0</top>
 						<control type="image">
-							<posx>-5</posx>
-							<posy>-25</posy>
+							<left>-5</left>
+							<top>-25</top>
 							<width>420</width>
 							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel.png</texture>
 						</control>
 						<control type="label">
-							<posx>375</posx>
-							<posy>15</posy>
+							<left>25</left>
+							<top>15</top>
 							<width>345</width>
 							<height>30</height>
 							<font>FontSize_30B</font>
@@ -878,8 +883,8 @@
 							<label>$INFO[Window.Property(36Hour.3.Heading)]</label>
 						</control>
 						<control type="label">
-							<posx>375</posx>
-							<posy>70</posy>
+							<left>20</left>
+							<top>70</top>
 							<width>350</width>
 							<height>30</height>
 							<font>FontSize_20</font>
@@ -889,8 +894,8 @@
 							<label>[COLOR=ddC6C6C8]$INFO[Window.Property(36Hour.3.TemperatureHeading)][/COLOR]$INFO[Window.Property(36Hour.3.Temperature),  ]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>170</posy>
+							<left>30</left>
+							<top>170</top>
 							<width>348</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -900,9 +905,9 @@
 							<label>$INFO[Window.Property(36Hour.3.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR]]</label>
 						</control>
 						<control type="textbox">
-							<posx>30</posx>
-							<posy>190</posy>
-							<width>348</width>
+							<left>30</left>
+							<top>190</top>
+							<width>350</width>
 							<height>105</height>
 							<font>FontSize_18</font>
 							<textcolor>white</textcolor>
@@ -910,248 +915,49 @@
 							<label>$INFO[Window.Property(36hour.3.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
 						</control>
 						<control type="image">
-							<posx>50</posx>
-							<posy>15</posy>
+							<left>50</left>
+							<top>15</top>
 							<width>150</width>
 							<height>150</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(36Hour.3.OutlookIcon)]</texture>
 						</control>
 					</control>
-	
-				</control>
-	
-	
-	
-				<control type="group.">
-					<posx>0</posx>
-					<posy>310</posy>
-					<control type="group">
-						<posx>43</posx>
-						<posy>0</posy>
-						<control type="image">
-							<posx>15</posx>
-							<posy>0</posy>
-							<width>380</width>
-							<height>300</height>
-							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="25">windows/weather/day_panel1.png</texture>
-						</control>
-						<control type="label">
-							<posx>375</posx>
-							<posy>15</posy>
-							<width>345</width>
-							<height>30</height>
-							<font>FontSize_30B</font>
-							<textcolor>white</textcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(36Hour.1.Heading)]</label>
-						</control>
-						<control type="label">
-							<posx>375</posx>
-							<posy>70</posy>
-							<width>350</width>
-							<height>30</height>
-							<font>FontSize_20</font>
-							<textcolor>white</textcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<label>[COLOR=ddC6C6C8]$INFO[Window.Property(36Hour.1.TemperatureHeading)][/COLOR]$INFO[Window.Property(36Hour.1.Temperature),  ]</label>
-						</control>
-						<control type="label">
-							<posx>30</posx>
-							<posy>170</posy>
-							<width>348</width>
-							<height>20</height>
-							<font>FontSize_18</font>
-							<textcolor>white</textcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(36Hour.1.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR]]</label>
-						</control>
-						<control type="textbox">
-							<posx>30</posx>
-							<posy>190</posy>
-							<width>348</width>
-							<height>105</height>
-							<font>FontSize_18</font>
-							<textcolor>white</textcolor>
-							<align>justify</align>
-							<label>$INFO[Window.Property(36hour.1.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
-						</control>
-						<control type="image">
-							<posx>50</posx>
-							<posy>15</posy>
-							<width>150</width>
-							<height>150</height>
-							<aspectratio>keep</aspectratio>
-							<texture>$INFO[Window.Property(36Hour.1.OutlookIcon)]</texture>
-						</control>
-					</control>
-					<control type="group">
-						<posx>436</posx>
-						<posy>0</posy>
-						<control type="image">
-							<posx>15</posx>
-							<posy>0</posy>
-							<width>380</width>
-							<height>300</height>
-							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="25">windows/weather/day_panel1.png</texture>
-						</control>
-						<control type="label">
-							<posx>375</posx>
-							<posy>15</posy>
-							<width>345</width>
-							<height>30</height>
-							<font>FontSize_30B</font>
-							<textcolor>white</textcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(36Hour.2.Heading)]</label>
-						</control>
-						<control type="label">
-							<posx>375</posx>
-							<posy>70</posy>
-							<width>350</width>
-							<height>30</height>
-							<font>FontSize_20</font>
-							<textcolor>white</textcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<label>[COLOR=ddC6C6C8]$INFO[Window.Property(36Hour.2.TemperatureHeading)][/COLOR]$INFO[Window.Property(36Hour.2.Temperature),  ]</label>
-						</control>
-						<control type="label">
-							<posx>30</posx>
-							<posy>170</posy>
-							<width>348</width>
-							<height>20</height>
-							<font>FontSize_18</font>
-							<textcolor>white</textcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(36Hour.2.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR]]</label>
-						</control>
-						<control type="textbox">
-							<posx>30</posx>
-							<posy>190</posy>
-							<width>348</width>
-							<height>105</height>
-							<font>FontSize_18</font>
-							<textcolor>white</textcolor>
-							<align>justify</align>
-							<label>$INFO[Window.Property(36hour.2.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
-						</control>
-						<control type="image">
-							<posx>50</posx>
-							<posy>15</posy>
-							<width>150</width>
-							<height>150</height>
-							<aspectratio>keep</aspectratio>
-							<texture>$INFO[Window.Property(36Hour.2.OutlookIcon)]</texture>
-						</control>
-					</control>
-					<control type="group">
-						<posx>829</posx>
-						<posy>0</posy>
-						<control type="image">
-							<posx>15</posx>
-							<posy>0</posy>
-							<width>380</width>
-							<height>300</height>
-							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="25">windows/weather/day_panel1.png</texture>
-						</control>
-						<control type="label">
-							<posx>375</posx>
-							<posy>15</posy>
-							<width>345</width>
-							<height>30</height>
-							<font>FontSize_30B</font>
-							<textcolor>white</textcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(36Hour.3.Heading)]</label>
-						</control>
-						<control type="label">
-							<posx>375</posx>
-							<posy>70</posy>
-							<width>350</width>
-							<height>30</height>
-							<font>FontSize_20</font>
-							<textcolor>white</textcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<label>[COLOR=ddC6C6C8]$INFO[Window.Property(36Hour.3.TemperatureHeading)][/COLOR]$INFO[Window.Property(36Hour.3.Temperature),  ]</label>
-						</control>
-						<control type="label">
-							<posx>30</posx>
-							<posy>170</posy>
-							<width>348</width>
-							<height>20</height>
-							<font>FontSize_18</font>
-							<textcolor>white</textcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[Window.Property(36Hour.3.ChancePrecipitation),[COLOR=ddC6C6C8]$LOCALIZE[31233]: [/COLOR]]</label>
-						</control>
-						<control type="textbox">
-							<posx>30</posx>
-							<posy>190</posy>
-							<width>348</width>
-							<height>105</height>
-							<font>FontSize_18</font>
-							<textcolor>white</textcolor>
-							<align>justify</align>
-							<label>$INFO[Window.Property(36hour.3.Forecast),[COLOR=ddC6C6C8]$LOCALIZE[31236]: [/COLOR]]</label>
-						</control>
-						<control type="image">
-							<posx>50</posx>
-							<posy>15</posy>
-							<width>150</width>
-							<height>150</height>
-							<aspectratio>keep</aspectratio>
-							<texture>$INFO[Window.Property(36Hour.3.OutlookIcon)]</texture>
-						</control>
-					</control>
-	
 				</control>
 			</control>
 	
 	    <!-- Hourly Forecast -->
 			<control type="group">
 				<description>Hourly</description>
-				<visible>Skin.String(WeatherUnderground,3)</visible>
-				<visible>!IsEmpty(Window.Property(Current.Condition))</visible>
+        <visible>Skin.String(WeatherUnderground,3) + Weather.IsFetched + !IsEmpty(Window(Weather).Property(Hourly.IsFetched)) + ![IsEmpty(Window(Weather).Property(Current.Condition)) | IsEmpty(Window(Weather).Property(Location))]</visible>
 				<include>Window_OpenClose_Animation</include>
 				<control type="group">
-					<posx>0</posx>
-					<posy>300</posy>
+					<left>0</left>
+					<top>300</top>
 					<!--- Top Row -->
 					<control type="group">
 					  <description>Next 1 Hour Data</description>
-						<posx>24</posx>
-						<posy>0</posy>
+						<left>24</left>
+						<top>0</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -1162,8 +968,8 @@
 							<label>$INFO[Window.Property(Hourly.1.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -1173,8 +979,8 @@
 							<label>$INFO[Window.Property(Hourly.1.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -1184,8 +990,8 @@
 							<label>$INFO[Window.Property(Hourly.1.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1195,8 +1001,8 @@
 							<label>$INFO[Window.Property(Hourly.1.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1206,8 +1012,8 @@
 							<label>$INFO[Window.Property(Hourly.1.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1217,8 +1023,8 @@
 							<label>$INFO[Window.Property(Hourly.1.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1231,27 +1037,27 @@
 	
 					<control type="group">
 					  <description>Next 2 Hour Data</description>
-						<posx>226</posx>
-						<posy>0</posy>
+						<left>226</left>
+						<top>0</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -1262,8 +1068,8 @@
 							<label>$INFO[Window.Property(Hourly.2.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -1273,8 +1079,8 @@
 							<label>$INFO[Window.Property(Hourly.2.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -1284,8 +1090,8 @@
 							<label>$INFO[Window.Property(Hourly.2.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1295,8 +1101,8 @@
 							<label>$INFO[Window.Property(Hourly.2.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1306,8 +1112,8 @@
 							<label>$INFO[Window.Property(Hourly.2.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1317,8 +1123,8 @@
 							<label>$INFO[Window.Property(Hourly.2.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1331,27 +1137,27 @@
 	
 					<control type="group">
 					  <description>Next 3 Hour Data</description>
-						<posx>428</posx>
-						<posy>0</posy>
+						<left>428</left>
+						<top>0</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
+							<texture>$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -1359,99 +1165,99 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<scroll>false</scroll>
-							<label>$INFO[Window.Property(Hourly.2.Outlook)]</label>
+							<label>$INFO[Window.Property(Hourly.3.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
 							<textcolor>white</textcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<label>$INFO[Window.Property(Hourly.2.ShortDate)]</label>
+							<label>$INFO[Window.Property(Hourly.3.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
 							<textcolor>white</textcolor>
 							<align>right</align>
 							<aligny>center</aligny>
-							<label>$INFO[Window.Property(Hourly.2.Time)]</label>
+							<label>$INFO[Window.Property(Hourly.3.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
 							<textcolor>white</textcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<label>$INFO[Window.Property(Hourly.2.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
+							<label>$INFO[Window.Property(Hourly.3.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
 							<textcolor>white</textcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<label>$INFO[Window.Property(Hourly.2.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
+							<label>$INFO[Window.Property(Hourly.3.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
 							<textcolor>white</textcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<label>$INFO[Window.Property(Hourly.2.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
+							<label>$INFO[Window.Property(Hourly.3.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
 							<textcolor>white</textcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<label>[COLOR=ddC6C6C8]$LOCALIZE[383]:[/COLOR] $INFO[Window.Property(Hourly.2.ShortWindDirection)] $INFO[Window.Property(Hourly.2.WindSpeed)]</label>
+							<label>[COLOR=ddC6C6C8]$LOCALIZE[383]:[/COLOR] $INFO[Window.Property(Hourly.3.ShortWindDirection)] $INFO[Window.Property(Hourly.3.WindSpeed)]</label>
 						</control>
 					</control>
 	
 					<control type="group">
 					  <description>Next 4 Hour Data</description>
-						<posx>628</posx>
-						<posy>0</posy>
+						<left>628</left>
+						<top>0</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -1462,8 +1268,8 @@
 							<label>$INFO[Window.Property(Hourly.4.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -1473,8 +1279,8 @@
 							<label>$INFO[Window.Property(Hourly.4.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -1484,8 +1290,8 @@
 							<label>$INFO[Window.Property(Hourly.4.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1495,8 +1301,8 @@
 							<label>$INFO[Window.Property(Hourly.4.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1506,8 +1312,8 @@
 							<label>$INFO[Window.Property(Hourly.4.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1517,8 +1323,8 @@
 							<label>$INFO[Window.Property(Hourly.4.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1531,27 +1337,27 @@
 	
 					<control type="group">
 					  <description>Next 5 Hour Data</description>
-						<posx>830</posx>
-						<posy>0</posy>
+						<left>830</left>
+						<top>0</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -1562,8 +1368,8 @@
 							<label>$INFO[Window.Property(Hourly.5.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -1573,8 +1379,8 @@
 							<label>$INFO[Window.Property(Hourly.5.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -1584,8 +1390,8 @@
 							<label>$INFO[Window.Property(Hourly.5.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1595,8 +1401,8 @@
 							<label>$INFO[Window.Property(Hourly.5.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1606,8 +1412,8 @@
 							<label>$INFO[Window.Property(Hourly.5.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1617,8 +1423,8 @@
 							<label>$INFO[Window.Property(Hourly.5.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1631,27 +1437,27 @@
 					
 					<control type="group">
 					  <description>Next 6 Hour Data</description>
-						<posx>1031</posx>
-						<posy>0</posy>
+						<left>1031</left>
+						<top>0</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -1662,8 +1468,8 @@
 							<label>$INFO[Window.Property(Hourly.6.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -1673,8 +1479,8 @@
 							<label>$INFO[Window.Property(Hourly.6.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -1684,8 +1490,8 @@
 							<label>$INFO[Window.Property(Hourly.6.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1695,8 +1501,8 @@
 							<label>$INFO[Window.Property(Hourly.6.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1706,8 +1512,8 @@
 							<label>$INFO[Window.Property(Hourly.6.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1717,8 +1523,8 @@
 							<label>$INFO[Window.Property(Hourly.6.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1732,27 +1538,27 @@
 					<!--- Bottom Row -->
 					<control type="group">
 					  <description>Next 7 Hour Data</description>
-						<posx>24</posx>
-						<posy>176</posy>
+						<left>24</left>
+						<top>176</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -1763,8 +1569,8 @@
 							<label>$INFO[Window.Property(Hourly.7.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -1774,8 +1580,8 @@
 							<label>$INFO[Window.Property(Hourly.7.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -1785,8 +1591,8 @@
 							<label>$INFO[Window.Property(Hourly.7.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1796,8 +1602,8 @@
 							<label>$INFO[Window.Property(Hourly.7.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1807,8 +1613,8 @@
 							<label>$INFO[Window.Property(Hourly.7.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1818,8 +1624,8 @@
 							<label>$INFO[Window.Property(Hourly.7.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1832,27 +1638,27 @@
 	
 					<control type="group">
 					  <description>Next 8 Hour Data</description>
-						<posx>226</posx>
-						<posy>176</posy>
+						<left>226</left>
+						<top>176</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.8.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -1863,8 +1669,8 @@
 							<label>$INFO[Window.Property(Hourly.8.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -1874,8 +1680,8 @@
 							<label>$INFO[Window.Property(Hourly.8.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -1885,8 +1691,8 @@
 							<label>$INFO[Window.Property(Hourly.8.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1896,8 +1702,8 @@
 							<label>$INFO[Window.Property(Hourly.8.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1907,8 +1713,8 @@
 							<label>$INFO[Window.Property(Hourly.8.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1918,8 +1724,8 @@
 							<label>$INFO[Window.Property(Hourly.8.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1932,27 +1738,27 @@
 	
 					<control type="group">
 					  <description>Next 9 Hour Data</description>
-						<posx>428</posx>
-						<posy>176</posy>
+						<left>428</left>
+						<top>176</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.9.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -1963,8 +1769,8 @@
 							<label>$INFO[Window.Property(Hourly.9.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -1974,8 +1780,8 @@
 							<label>$INFO[Window.Property(Hourly.9.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -1985,8 +1791,8 @@
 							<label>$INFO[Window.Property(Hourly.9.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -1996,8 +1802,8 @@
 							<label>$INFO[Window.Property(Hourly.9.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2007,8 +1813,8 @@
 							<label>$INFO[Window.Property(Hourly.9.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2018,8 +1824,8 @@
 							<label>$INFO[Window.Property(Hourly.9.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2032,27 +1838,27 @@
 	
 					<control type="group">
 					  <description>Next 10 Hour Data</description>
-						<posx>628</posx>
-						<posy>176</posy>
+						<left>628</left>
+						<top>176</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.10.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -2063,8 +1869,8 @@
 							<label>$INFO[Window.Property(Hourly.10.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -2074,8 +1880,8 @@
 							<label>$INFO[Window.Property(Hourly.10.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -2085,8 +1891,8 @@
 							<label>$INFO[Window.Property(Hourly.10.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2096,8 +1902,8 @@
 							<label>$INFO[Window.Property(Hourly.10.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2107,8 +1913,8 @@
 							<label>$INFO[Window.Property(Hourly.10.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2118,8 +1924,8 @@
 							<label>$INFO[Window.Property(Hourly.10.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2132,27 +1938,27 @@
 	
 					<control type="group">
 					  <description>Next 11 Hour Data</description>
-						<posx>830</posx>
-						<posy>176</posy>
+						<left>830</left>
+						<top>176</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.11.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -2163,8 +1969,8 @@
 							<label>$INFO[Window.Property(Hourly.11.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -2174,8 +1980,8 @@
 							<label>$INFO[Window.Property(Hourly.11.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -2185,8 +1991,8 @@
 							<label>$INFO[Window.Property(Hourly.11.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2196,8 +2002,8 @@
 							<label>$INFO[Window.Property(Hourly.11.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2207,8 +2013,8 @@
 							<label>$INFO[Window.Property(Hourly.11.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2218,8 +2024,8 @@
 							<label>$INFO[Window.Property(Hourly.11.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2232,27 +2038,27 @@
 	
 					<control type="group">
 					  <description>Next 12 Hour Data</description>
-						<posx>1031</posx>
-						<posy>176</posy>
+						<left>1031</left>
+						<top>176</top>
 						<control type="image">
-							<posx>5</posx>
-							<posy>-20</posy>
+							<left>5</left>
+							<top>-20</top>
 							<width>215</width>
 							<height>190</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel_small.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>35</posy>
+							<left>125</left>
+							<top>35</top>
 							<width>70</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[Window.Property(Hourly.12.OutlookIcon)]</texture>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>32</posy>
+							<left>30</left>
+							<top>32</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_18</font>
@@ -2263,8 +2069,8 @@
 							<label>$INFO[Window.Property(Hourly.12.Outlook)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>8</posy>
+							<left>30</left>
+							<top>8</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -2274,8 +2080,8 @@
 							<label>$INFO[Window.Property(Hourly.12.ShortDate)]</label>
 						</control>
 						<control type="label">
-							<posx>195</posx>
-							<posy>0</posy>
+							<left>25</left>
+							<top>0</top>
 							<width>170</width>
 							<height>30</height>
 							<font>FontSize_24</font>
@@ -2285,8 +2091,8 @@
 							<label>$INFO[Window.Property(Hourly.12.Time)]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>70</posy>
+							<left>30</left>
+							<top>70</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2296,8 +2102,8 @@
 							<label>$INFO[Window.Property(Hourly.12.Temperature),[COLOR=ddC6C6C8]$LOCALIZE[419]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>89</posy>
+							<left>30</left>
+							<top>89</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2307,8 +2113,8 @@
 							<label>$INFO[Window.Property(Hourly.12.FeelsLike),[COLOR=ddC6C6C8]$LOCALIZE[402]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>108</posy>
+							<left>30</left>
+							<top>108</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2318,8 +2124,8 @@
 							<label>$INFO[Window.Property(Hourly.12.Humidity),[COLOR=ddC6C6C8]$LOCALIZE[406]:[/COLOR] ,]</label>
 						</control>
 						<control type="label">
-							<posx>30</posx>
-							<posy>127</posy>
+							<left>30</left>
+							<top>127</top>
 							<width>170</width>
 							<height>20</height>
 							<font>FontSize_16</font>
@@ -2333,19 +2139,18 @@
 			</control>
 	
 	    <!-- 10-Days Forecast -->
-			<control type="group">
+			<control type="group" id="50">
 				<description>10Days</description>
-				<visible>Skin.String(WeatherUnderground,4)</visible>
-				<visible>!IsEmpty(Window.Property(Current.Condition))</visible>
+        <visible>Skin.String(WeatherUnderground,4) + Weather.IsFetched + !IsEmpty(Window(Weather).Property(Daily.IsFetched)) + ![IsEmpty(Window(Weather).Property(Current.Condition)) | IsEmpty(Window(Weather).Property(Location))]</visible>
 				<include>Window_OpenClose_Animation</include>
 				<control type="list" id="51">
-					<posx>12</posx>
-					<posy>280</posy>
+					<left>12</left>
+					<top>280</top>
 					<width>1240</width>
 					<height>360</height>
 					<onleft>51</onleft>
 					<onright>51</onright>
-					<onup>9000</onup>
+					<onup condition="!SubString(Window(Weather).Property(Current.ConditionIcon),na)">9111</onup>
 					<ondown>noop</ondown>
 					<itemgap>3</itemgap>
 					<preloaditems>4</preloaditems>
@@ -2354,16 +2159,16 @@
 				  <scrolltime tween="cubic" easing="out">350</scrolltime>
 					<itemlayout width="310">
 					<control type="image">
-						<posx>10</posx>
-						<posy>-5</posy>
+						<left>10</left>
+						<top>-5</top>
 						<width>305</width>
 						<height>355</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="25">windows/weather/day_panel.png</texture>
 					</control>
 					<control type="label">
-					  <posx>280</posx>
-						<posy>10</posy>
+					  <left>280</left>
+						<top>10</top>
 						<width>200</width>
 						<height>60</height>
 						<font>FontSize_24</font>
@@ -2374,8 +2179,8 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="label">
-					  <posx>280</posx>
-						<posy>35</posy>
+					  <left>280</left>
+						<top>35</top>
 						<width>200</width>
 						<height>60</height>
 						<font>FontSize_22</font>
@@ -2386,8 +2191,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-					  <posx>165</posx>
-						<posy>160</posy>
+					  <left>165</left>
+						<top>160</top>
 						<width>245</width>
 						<height>60</height>
 						<font>FontSize_24</font>
@@ -2399,9 +2204,9 @@
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 					</control>
 					<control type="group">
-						<posx>45</posx>
+						<left>45</left>
 						<control type="label">
-							<posy>215</posy>
+							<top>215</top>
 							<width>260</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -2412,7 +2217,7 @@
 							<label>$INFO[ListItem.Property(HighTemperature)]</label>
 						</control>
 						<control type="label">
-							<posy>240</posy>
+							<top>240</top>
 							<width>235</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -2423,7 +2228,7 @@
 							<label>$INFO[ListItem.Property(LowTemperature)]</label>
 						</control>
 						<control type="label">
-							<posy>265</posy>
+							<top>265</top>
 							<width>590</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -2434,7 +2239,7 @@
 							<label>$INFO[ListItem.ActualIcon]</label>
 						</control>
 						<control type="label">
-							<posy>290</posy>
+							<top>290</top>
 							<width>260</width>
 							<height>30</height>
 							<font>FontSize_18</font>
@@ -2446,8 +2251,8 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>45</posx>
-						<posy>30</posy>
+						<left>45</left>
+						<top>30</top>
 						<width>130</width>
 						<height>130</height>
 						<aspectratio>keep</aspectratio>
@@ -2456,28 +2261,27 @@
 					</itemlayout>
 					<focusedlayout width="310">
 						<control type="image">
-							<posx>10</posx>
-							<posy>-5</posy>
+							<left>10</left>
+							<top>-5</top>
 							<width>305</width>
 							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture border="25">windows/weather/day_panel.png</texture>
 						</control>
 						<control type="image">
-							<posx>14</posx>
-							<posy>0</posy>
-							<width>301</width>
-							<height>352</height>
+							<left>10</left>
+							<top>-5</top>
+							<width>305</width>
+							<height>355</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="50">views/thumbnails/focus.png</texture>
+							<texture border="25">windows/weather/day_panel_focus.png</texture>
 							<animation effect="slide" start="70,0" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(51).OnPrevious">Focus</animation>
 							<animation effect="slide" start="-70,0" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(51).OnNext">Focus</animation>
-							<include>VisibleFadeEffect</include>
-							<visible>Control.HasFocus(51)</visible>
+              <animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9111).HasFocus">Conditional</animation>
 						</control>
 						<control type="label">
-						  <posx>280</posx>
-							<posy>10</posy>
+						  <left>280</left>
+							<top>10</top>
 							<width>200</width>
 							<height>60</height>
 							<font>FontSize_24</font>
@@ -2488,8 +2292,8 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="label">
-						  <posx>280</posx>
-							<posy>35</posy>
+						  <left>280</left>
+							<top>35</top>
 							<width>200</width>
 							<height>60</height>
 							<font>FontSize_22</font>
@@ -2500,8 +2304,8 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-						  <posx>165</posx>
-							<posy>160</posy>
+						  <left>165</left>
+							<top>160</top>
 							<width>245</width>
 							<height>60</height>
 							<font>FontSize_24</font>
@@ -2513,9 +2317,9 @@
 							<label>$INFO[ListItem.Property(Outlook)]</label>
 						</control>
 						<control type="group">
-							<posx>45</posx>
+							<left>45</left>
 							<control type="label">
-								<posy>215</posy>
+								<top>215</top>
 								<width>260</width>
 								<height>30</height>
 								<font>FontSize_18</font>
@@ -2526,7 +2330,7 @@
 								<label>$INFO[ListItem.Property(HighTemperature)]</label>
 							</control>
 							<control type="label">
-								<posy>240</posy>
+								<top>240</top>
 								<width>235</width>
 								<height>30</height>
 								<font>FontSize_18</font>
@@ -2537,7 +2341,7 @@
 								<label>$INFO[ListItem.Property(LowTemperature)]</label>
 							</control>
 							<control type="label">
-								<posy>265</posy>
+								<top>265</top>
 								<width>590</width>
 								<height>30</height>
 								<font>FontSize_18</font>
@@ -2548,7 +2352,7 @@
 								<label>$INFO[ListItem.ActualIcon]</label>
 							</control>
 							<control type="label">
-								<posy>290</posy>
+								<top>290</top>
 								<width>260</width>
 								<height>30</height>
 								<font>FontSize_18</font>
@@ -2560,8 +2364,8 @@
 							</control>
 						</control>
 						<control type="image">
-							<posx>45</posx>
-							<posy>30</posy>
+							<left>45</left>
+							<top>30</top>
 							<width>130</width>
 							<height>130</height>
 							<aspectratio>keep</aspectratio>

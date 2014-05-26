@@ -1,4 +1,5 @@
-<window id="1110" type="dialog">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="1110" type="dialog">
 	<defaultcontrol always="true">10</defaultcontrol>
   <zorder>5</zorder>
 	<controls>
@@ -12,11 +13,12 @@
 		</control>
 		<control type="label">
 			<description>header label</description>
-			<posx>340</posx>
-			<posy>265</posy>
+			<left>340</left>
+			<top>265</top>
 			<width>600</width>
 			<font>FontSize_36</font>
 			<textcolor>white</textcolor>
+			<shadowcolor>99000000</shadowcolor>
 			<align>center</align>
 			<aligny>center</aligny>
 			<scroll>true</scroll>
@@ -25,8 +27,8 @@
 		</control>
 		<control type="textbox">
 			<description>Help Tip</description>
-			<posx>365</posx>
-			<posy>310</posy>
+			<left>365</left>
+			<top>310</top>
       <width>550</width>
 			<height>90</height>
 	    <label>$VAR[CustomDialogOKMessage]</label>
@@ -34,11 +36,12 @@
 		  <align>center</align>
 			<textcolor>99white</textcolor>
 			<shadowcolor>99000000</shadowcolor>
+			<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 		</control>
 		<control type="button" id="10">
 			<description>OK button</description>
-			<posx>575</posx>
-			<posy>423</posy>
+			<left>575</left>
+			<top>423</top>
 			<width>150</width>
 			<height>40</height>
 			<texturenofocus border="10,0,10,0">dialogs/keyboard/button_nf.png</texturenofocus>
@@ -59,6 +62,7 @@
 		  <onclick>Action(Close)</onclick>
 			<onclick condition="!IntegerGreaterThan(Container(450).NumItems,0)">Dialog.Close(favourites)</onclick>
 			<onback condition="!IntegerGreaterThan(Container(450).NumItems,0)">Dialog.Close(favourites)</onback>
+	    <onclick condition="Window.IsActive(Weather)">ReplaceWindow(WeatherSettings)</onclick>
 		</control>
 	 </control>
 	</controls>

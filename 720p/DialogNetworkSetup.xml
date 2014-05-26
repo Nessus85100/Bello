@@ -1,4 +1,5 @@
-<window id="128">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="128">
 	<defaultcontrol>10</defaultcontrol>
 	<controls>
 
@@ -13,7 +14,7 @@
 		<control type="label" id="2">
 			<description>Head Label</description>
 			<posx>340</posx>
-			<posy>163</posy>
+			<posy>185</posy>
 			<width>600</width>
 			<font>FontSize_36</font>
 			<textcolor>white</textcolor>
@@ -146,31 +147,17 @@
 					<orientation>horizontal</orientation>
 					<control type="label">
 						<description>Save Label</description>
-						<height>62</height>
-						<width min="10" max="552">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
+	          <include>DialogsButtonLabels</include>
             <label>$INFO[Control.GetLabel(18),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(18)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(18)" reversible="true">Conditional</animation>
+						<animation effect="fade" start="100" end="30" time="100" tween="sine" easing="inout" condition="!Control.HasFocus(18)" reversible="true">Conditional</animation>
+	          <animation effect="zoom" start="100" end="95" time="100" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(18)" reversible="true">Conditional</animation>
 					</control>
 					<control type="label">
 						<description>Cancel Label</description>
-						<height>62</height>
-						<width min="10" max="552">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
+	          <include>DialogsButtonLabels</include>
             <label>$INFO[Control.GetLabel(19),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(19)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(19)" reversible="true">Conditional</animation>
+						<animation effect="fade" start="100" end="30" time="100" tween="sine" easing="inout" condition="!Control.HasFocus(19)" reversible="true">Conditional</animation>
+	          <animation effect="zoom" start="100" end="95" time="100" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(19)" reversible="true">Conditional</animation>
 					</control>
 				</control>
 		  </control>

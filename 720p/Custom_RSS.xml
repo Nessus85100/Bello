@@ -1,18 +1,19 @@
-<window type="dialog" id="3000">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  type="dialog" id="3002">
   <zorder>3</zorder>
   <allowoverlay>no</allowoverlay>
 	<include>NowPlaying</include>
   <visible>Skin.HasSetting(EnableGlobalRSS) | [Window.IsActive(home) + !Skin.HasSetting(EnableGlobalRSS)] + !Window.IsVisible(startup)</visible>
   <controls>
 	  <control type="group">
-			<posx>0</posx>
-			<posy>28r</posy>
       <visible>!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !Window.IsVisible(screencalibration) + !Window.IsVisible(screensaver) + !Window.IsVisible(slideshow)</visible>
 			<control type="rss">
 				<description>RSS feed</description>
-				<height>30</height>
+				<left>0</left>
+			  <top>690</top>
+				<height>0</height>
 				<width>1250</width>
-				<font>FontSize_18</font>
+				<font>FontSize_20</font>
 				<urlset>1</urlset>
 				<textcolor>99white</textcolor>
 				<titlecolor>blue</titlecolor>
@@ -21,10 +22,10 @@
 			</control>
 			<control type="image">
 				<description>RSS Icon</description>
-				<posx>1250</posx>
-				<posy>0</posy>
-				<width>24</width>
-				<height>24</height>
+				<left>1250</left>
+				<top>694</top>
+				<width>22</width>
+				<height>22</height>
 				<texture>rss_icon.png</texture>
 			  <visible>System.Getbool(lookandfeel.enablerssfeeds)</visible>
 			</control>

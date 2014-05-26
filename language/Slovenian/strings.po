@@ -20,6 +20,10 @@ msgctxt "#31000"
 msgid "Live TV"
 msgstr "TV v živo"
 
+msgctxt "#31001"
+msgid "TV Guide"
+msgstr "TV Vodič"
+
 msgctxt "#31003"
 msgid "Aired"
 msgstr "Predvajano"

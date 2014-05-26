@@ -1,4 +1,5 @@
-<window type="dialog" id="144">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  type="dialog" id="144">
 	<include>DialogAnimation</include>
 	<controls>
 
@@ -11,8 +12,8 @@
 		</control>
 		<control type="label" id="1">
 			<description>header label</description>
-			<posx>340</posx>
-			<posy>245</posy>
+			<left>340</left>
+			<top>245</top>
 			<width>600</width>
 			<font>FontSize_36</font>
 			<textcolor>white</textcolor>
@@ -24,12 +25,12 @@
 		</control>
 	
 	   <control type="group">
-			<posx>370</posx>
-			<posy>250</posy>
+			<left>370</left>
+			<top>250</top>
 			<control type="label" id="401">
 				<description>Song Number Label</description>
-				<posx>0</posx>
-				<posy>65</posy>
+				<left>0</left>
+				<top>65</top>
         <width>550</width>
 				<height>45</height>
 				<textcolor>77white</textcolor>
@@ -41,8 +42,8 @@
 			</control>
 			<control type="label" id="402">
 				<description>Song Name Label</description>
-				<posx>0</posx>
-				<posy>95</posy>
+				<left>0</left>
+				<top>95</top>
         <width>550</width>
 				<height>45</height>
 				<textcolor>77white</textcolor>

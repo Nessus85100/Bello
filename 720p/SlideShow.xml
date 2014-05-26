@@ -1,4 +1,5 @@
-<window id="2007">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="2007">
 	<controls>
 	 <control type="group" id="13">
 		<animation type="Conditional" condition="Slideshow.IsPaused + Slideshow.IsActive">
@@ -47,7 +48,7 @@
 					 <posy>160</posy>
 					 <width>300</width>
 					 <height>30</height>
-					 <label>$LOCALIZE[13350]</label>
+					 <label>$LOCALIZE[31316]...</label>
 					 <align>right</align>
 					 <aligny>center</aligny>
 					 <font>FontSize_22</font>
@@ -72,6 +73,7 @@
 		       <texture fallback="osd/cd.png" diffuse="osd/cd_diffuse.png">$INFO[Player.FolderPath]cdart.png</texture>
 	         <aspectratio>keep</aspectratio>
 					 <include>CDImageAnim</include>
+					 <visible>!Player.IsInternetStream</visible>
 	      </control>				
 				<control type="image">
 						<posx>0</posx>

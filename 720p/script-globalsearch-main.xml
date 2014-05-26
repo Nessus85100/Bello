@@ -1,4 +1,5 @@
-<window type="dialog">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  type="dialog">
 	<defaultcontrol>9000</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
@@ -1064,6 +1065,12 @@
 					</control>
 				</control>
 		 </control>
+		 
+		 <include>CommonNowPlaying</include>
+		 <control type="group">
+				<include>GlobalSearchSlideAnimations</include>
+	      <include>CommonWeatherAndClock</include>
+	   </control>
 
 		</control>
 	
@@ -1079,8 +1086,8 @@
 			<control type="list" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>380</width>
-				<height>540</height>
+				<width>425</width>
+				<height>343</height>
 				<onleft>100</onleft>
 				<onright>100</onright>
 				<onup>9000</onup>
@@ -1088,42 +1095,60 @@
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
 	      <include>ShutdownMenuAnimation</include>
-				<itemlayout height="40" width="380">
+				<itemlayout height="37" width="425">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>425</width>
+						<height>37</height>
+						<align>left</align>
+						<aligny>center</aligny>
+            <texture>buttons/contextmenu_nf.png</texture>
+					</control>
 					<control type="label">
-						<posx>4</posx>
+						<posx>25</posx>
 						<posy>0</posy>
 						<width>380</width>
-						<height>40</height>
+						<height>39</height>
 						<font>FontSize_22</font>
 						<textcolor>77white</textcolor>
 					  <shadowcolor>99000000</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>․  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="40" width="380">
+				<focusedlayout height="37" width="425">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>425</width>
+						<height>37</height>
+						<align>left</align>
+						<aligny>center</aligny>
+            <texture>buttons/contextmenu_fo.png</texture>
+					</control>
 					<control type="label">
-						<posx>4</posx>
+						<posx>25</posx>
 						<posy>0</posy>
 						<width>380</width>
-						<height>40</height>
+						<height>39</height>
 						<font>FontSize_22</font>
 						<textcolor>white</textcolor>
 					  <shadowcolor>99000000</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>․  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<label>$LOCALIZE[342]</label>
+						<label>$LOCALIZE[20342]</label>
 						<onclick>noop</onclick>
 						<visible>Control.IsVisible(119)</visible>
 					</item>
 					<item id="2">
-						<label>$LOCALIZE[20343]</label>
+						<label>$LOCALIZE[31002]</label>
 						<onclick>noop</onclick>
 						<visible>Control.IsVisible(129)</visible>
 					</item>

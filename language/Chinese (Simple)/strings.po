@@ -437,8 +437,8 @@ msgid "Show RSS feed in whole skin"
 msgstr "在整个皮肤显示 RSS 新闻"
 
 msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
-msgstr "隐藏视频文件名的媒体标识 [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide Live TV Submenu"
+msgstr "隐藏直播电视子菜单"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
@@ -467,6 +467,18 @@ msgstr "视图"
 msgctxt "#31159"
 msgid "Show FullScreenInfo instead of the SeekBar"
 msgstr "显示全屏信息而非进度条"
+
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "为所有电影下载[COLOR=selected]logo.png[/COLOR]"
+
+msgctxt "#31161"
+msgid "Hide Library Totals"
+msgstr "隐藏资料库总计"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "启用自助终端模式"
 
 msgctxt "#31200"
 msgid "My Movies"

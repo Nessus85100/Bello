@@ -64,6 +64,14 @@ msgctxt "#31011"
 msgid "ON"
 msgstr "켜기"
 
+msgctxt "#31012"
+msgid "OFF"
+msgstr "끔"
+
+msgctxt "#31013"
+msgid "Enable Home Menu Animation"
+msgstr "홈 메뉴 애니메이션 사용"
+
 msgctxt "#31014"
 msgid "ViewType Options"
 msgstr "보기 형식 옵션"
@@ -111,6 +119,10 @@ msgstr "페이지"
 msgctxt "#31025"
 msgid "Items"
 msgstr "항목"
+
+msgctxt "#31026"
+msgid "Scrolling..."
+msgstr "스크롤..."
 
 msgctxt "#31027"
 msgid "Memory Used:"
@@ -164,6 +176,14 @@ msgctxt "#31039"
 msgid "IP Address"
 msgstr "IP 주소"
 
+msgctxt "#31040"
+msgid "Created by"
+msgstr "제작:"
+
+msgctxt "#31041"
+msgid "Creator"
+msgstr "제작자"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "슬라이드"
@@ -195,6 +215,18 @@ msgstr "배너 목록"
 msgctxt "#31088"
 msgid "List Wall"
 msgstr "월 목록"
+
+msgctxt "#31098"
+msgid "Home Menu"
+msgstr "홈 메뉴"
+
+msgctxt "#31099"
+msgid "Show Home Menu Buttons"
+msgstr "홈 메뉴 버튼 보기"
+
+msgctxt "#31100"
+msgid "Hide Home Menu Buttons"
+msgstr "홈 메뉴 버튼 숨기기"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -238,7 +270,7 @@ msgstr "프로그램 버튼 숨기기"
 
 msgctxt "#31111"
 msgid "Hide Add-ons Button"
-msgstr "추가기능 버튼 숨기기"
+msgstr "애드온 버튼 숨기기"
 
 msgctxt "#31112"
 msgid "Hide Weather Button"
@@ -262,11 +294,15 @@ msgstr "뮤직비디오 버튼 숨기기"
 
 msgctxt "#31117"
 msgid "Music Button opens..."
-msgstr "음악 버튼 선택시 이동..."
+msgstr "음악 버튼 동작:"
 
 msgctxt "#31118"
 msgid "Custom Button"
 msgstr "사용자 설정 버튼"
+
+msgctxt "#31119"
+msgid "Custom Home Menu Buttons"
+msgstr "사용자 홈 메뉴 버튼"
 
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
@@ -392,10 +428,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "전체 스킨에서 RSS 피드 보기"
 
-msgctxt "#31152"
-msgid "Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]"
-msgstr "비디오 파일명에서 읽은 플래그 숨기기 [COLOR=55white](블루레이, HD-DVD)[/COLOR]"
-
 msgctxt "#31153"
 msgid "Enable Login Screen"
 msgstr "로그인 화면 사용"
@@ -404,9 +436,21 @@ msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "예고편 애드온 선택"
 
+msgctxt "#31155"
+msgid "Add-ons Button opens..."
+msgstr "애드온 버튼 동작:"
+
 msgctxt "#31158"
 msgid "Views"
 msgstr "보기"
+
+msgctxt "#31159"
+msgid "Show FullScreenInfo instead of the SeekBar"
+msgstr "탐색막대 대신 전체화면 정보 표시"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "전시모드 사용"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -555,6 +599,10 @@ msgstr "보기"
 msgctxt "#31238"
 msgid "No Shows Airing Today"
 msgstr "오늘 방송하는 쇼 없음"
+
+msgctxt "#31240"
+msgid "Shows Airing Today"
+msgstr "오늘 방송하는 TV 쇼"
 
 msgctxt "#31241"
 msgid "Recently Added Movies"
@@ -716,9 +764,101 @@ msgctxt "#31373"
 msgid "Clean Music Library"
 msgstr "음악 라이브러리 정리"
 
+msgctxt "#31374"
+msgid "Quick Navigation"
+msgstr "빠른 탐색"
+
+msgctxt "#31375"
+msgid "Disable Quick Navigation"
+msgstr "빠른 탐색 사용 안 함"
+
+msgctxt "#31376"
+msgid "Show Update Video Library Button"
+msgstr "비디오 라이브러리 업데이트 버튼 보기"
+
+msgctxt "#31377"
+msgid "Show Update Music Library Button"
+msgstr "음악 라이브러리 업데이트 버튼 보기"
+
+msgctxt "#31378"
+msgid "Show Clean Video Library Button"
+msgstr "비디오 라이브러리 정리 버튼 보기"
+
+msgctxt "#31379"
+msgid "Show Clean Music Library Button"
+msgstr "음악 라이브러리 정리 버튼 보기"
+
+msgctxt "#31380"
+msgid "Show Party Mode Button"
+msgstr "파티 모드 버튼 보기"
+
+msgctxt "#31381"
+msgid "Show Shutdown Button"
+msgstr "종료 버튼 보기"
+
+msgctxt "#31382"
+msgid "Show File Manager Button"
+msgstr "파일 관리자 버튼 보기"
+
+msgctxt "#31383"
+msgid "Hide Movies Button"
+msgstr "영화 버튼 숨기기"
+
+msgctxt "#31384"
+msgid "Hide TV Shows Button"
+msgstr "TV 쇼 버튼 숨기기"
+
+msgctxt "#31385"
+msgid "Hide Music Button"
+msgstr "음악 버튼 숨기기"
+
+msgctxt "#31386"
+msgid "Hide Pictures Button"
+msgstr "사진 버튼 숨기기"
+
+msgctxt "#31387"
+msgid "Hide Add-ons Button"
+msgstr "애드온 버튼 숨기기"
+
+msgctxt "#31388"
+msgid "Hide New Movies Button"
+msgstr "새 영화 버튼 숨기기"
+
+msgctxt "#31389"
+msgid "Hide New TV Shows Button"
+msgstr "새 TV 쇼 버튼 숨기기"
+
+msgctxt "#31390"
+msgid "Hide New Music Button"
+msgstr "새 음악 버튼 숨기기"
+
+msgctxt "#31391"
+msgid "Hide Settings Button"
+msgstr "설정 버튼 숨기기"
+
+msgctxt "#31392"
+msgid "Show Videos Button"
+msgstr "비디오 버튼 숨기기"
+
+msgctxt "#31393"
+msgid "Hide QuickNav Buttons"
+msgstr "빠른 탐색 버튼 숨기기"
+
+msgctxt "#31394"
+msgid "Show QuickNav Buttons"
+msgstr "빠른 탐색 버튼 보기"
+
+msgctxt "#31395"
+msgid "Custom QuickNav Buttons"
+msgstr "사용자 빠른 탐색 버튼"
+
+msgctxt "#31396"
+msgid "Custom Button"
+msgstr "사용자 설정 버튼"
+
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "XBMC의 룩 앤 필을 설정합니다. 스킨, 테마, 네비게이션 사운드, 글꼴, RSS 피드와 언어 설정을 변경합니다."
+msgstr "XBMC의 모양새를 설정합니다. 스킨, 테마, 네비게이션 사운드, 글꼴, RSS 피드와 언어 설정을 변경합니다."
 
 msgctxt "#31402"
 msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
@@ -735,6 +875,18 @@ msgstr "XBMC가 음악을 어떻게 다룰지를 설정합니다. 재생 설정,
 msgctxt "#31405"
 msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
 msgstr "사진 관리 옵션을 설정합니다. 디스플레이 조정, 효과, 태그, 사진 목록 등을 설정합니다."
+
+msgctxt "#31407"
+msgid "Set up XBMC's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
+msgstr "XBMC의 네트워크 인터페이스를 설정합니다. IP 주소 할당, WWW와 FTP 서버, SMB 클라이언트, UPnP 등을 설정합니다."
+
+msgctxt "#31408"
+msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
+msgstr "하드웨어와 소프트웨어 기능을 제어합니다. 오디오와 비디오 하드웨어, 자동 재생, 잠금 기능 등을 설정합니다."
+
+msgctxt "#31410"
+msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
+msgstr "여러 개의 프로파일을 만들 수 있으며 로그온 화면으로 접속을 제한할 수 있습니다."
 
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
@@ -775,3 +927,11 @@ msgstr "프로파일 설정"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "스킨 설정"
+
+msgctxt "#31431"
+msgid "You haven't added any items to Favorites yet. Highlight an item, and choose \"Add to favorites\" from the context menu."
+msgstr "즐겨찾기에 추가한 항목이 없습니다. 항목을 선택하고 컨텍스트 메뉴에서 \"즐겨찾기에 추가\"를 선택하세요."
+
+msgctxt "#31432"
+msgid "Mouse usage is not supported. Please disable it from Settings>System>Input Devices>\"Enable mouse and Touch Screen support\"."
+msgstr "마우스 사용을 지원하지 않습니다. 설정>시스템>입력장치>\"마우스와 터치화면 사용\"을 해제하세요."

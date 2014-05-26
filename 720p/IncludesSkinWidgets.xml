@@ -1,4 +1,5 @@
-<includes>
+<?xml version="1.0" encoding="UTF-8"?>
+<includes> 
 
 	<include name="ContentSkinWidgetsInfo">
 	 <control type="group">
@@ -8,11 +9,11 @@
 	      <effect type="fade" start="100" end="0" time="250" delay="250" tween="sine" easing="out" />
 	      <effect type="slide" start="0,0" end="0,-55" time="300" delay="250" tween="sine" easing="out" />
 	    </animation>
-	    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)]">
+	    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu) | Window.IsActive(Favourites)]">
 	      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
 	      <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
 	    </animation>
-	    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu)">
+	    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(ContextMenu) | Window.IsActive(Favourites)">
 	      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
 	      <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
 	    </animation>
@@ -162,11 +163,11 @@
       <effect type="fade" start="100" end="0" time="250" delay="250" tween="sine" easing="out" />
       <effect type="slide" start="0,0" end="0,-55" time="300" delay="250" tween="sine" easing="out" />
     </animation>
-    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls)]">
+    <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites)]">
       <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
       <effect type="slide" start="0,55" end="0,0" time="350" tween="cubic" easing="out" />
     </animation>
-    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls)">
+    <animation type="Conditional" reversible="false" condition="Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites)">
       <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
       <effect type="slide" start="0,0" end="0,55" time="350" tween="sine" easing="out" />
     </animation>
@@ -655,7 +656,7 @@
 			 </control>
 			</focusedlayout>
       <content>
-        <include>MyRecentlyAddedMediaContent</include>
+        <include>MyLatestMediaContent</include>
       </content>
 		</control>
 
@@ -1458,40 +1459,4 @@
 	 </control>
 	</include>
 
-	<include name="HomeSubMenusArrows">
-	 <control type="group">
-		<posx>620</posx>
-		<posy>350r</posy>
-		<control type="group">
-     <animation type="WindowOpen">
-      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-      <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
-     </animation>
-     <animation type="WindowClose">
-      <effect type="fade" start="100" end="0" time="300" delay="100" tween="sine" easing="inout" />
-      <effect type="slide" start="0,0" end="0,-55" time="350" delay="100" tween="sine" easing="inout" />
-     </animation>
-     <animation type="Visible">
-      <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in"  />
-      <effect type="slide" start="0,-35" end="0,0" time="250" tween="cubic" easing="out" />
-     </animation>
-     <animation type="Hidden">
-      <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
-      <effect type="slide" start="0,0" end="0,15" time="250" tween="sine" easing="out" />
-     </animation>
-		 <animation type="Conditional" condition="![Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling] + !ControlGroup(21).HasFocus + !Window.IsActive(Favourites) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(BusyDialog) + !Window.IsActive(PlayerControls) + !Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(23) + ![Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling] + [[[Library.HasContent(movies) + Container(20).HasFocus(2)] + !Skin.HasSetting(HideMoviesSubMenu)] | [[Library.HasContent(tvshows) + Container(20).HasFocus(1)] + !Skin.HasSetting(HideTVShowsSubMenu)] | [[Library.HasContent(music) + Container(20).HasFocus(3)] + !Skin.HasSetting(HideMusicSubMenu)] | [Container(20).HasFocus(9) + !Skin.HasSetting(HideSettingsSubMenu)] | [Container(20).HasFocus(11) + !Skin.HasSetting(HideLiveTVSubMenu)]]" pulse="true">
-		  <effect type="fade" start="0" end="100" delay="800" time="800"  />
-			<effect type="slide" start="0,0" end="0,4" tween="sine" easing="inout" delay="800" time="800" />
-		 </animation>
-		 <visible>![Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling] + !ControlGroup(21).HasFocus + !Window.IsActive(Favourites) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(BusyDialog) + !Window.IsActive(PlayerControls) + !Window.IsActive(VirtualKeyboard) + !Window.IsActive(script-globalsearch-main.xml) + !Window.IsActive(busy.xml) + !Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(23) + [[[Library.HasContent(movies) + Container(20).HasFocus(2)] + !Skin.HasSetting(HideMoviesSubMenu)] | [[Library.HasContent(tvshows) + Container(20).HasFocus(1)] + !Skin.HasSetting(HideTVShowsSubMenu)] | [[Library.HasContent(music) + Container(20).HasFocus(3)] + !Skin.HasSetting(HideMusicSubMenu)] | [Container(20).HasFocus(9) + !Skin.HasSetting(HideSettingsSubMenu)] | [Container(20).HasFocus(11) + !Skin.HasSetting(HideLiveTVSubMenu)] | [Container(20).HasFocus(11) + !Skin.HasSetting(HideLiveTVSubMenu)]]</visible>
-		 <control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>21</width>
-			<height>18</height>
-			<texture>buttons/arrow.png</texture>
-		 </control>
-		</control>
-	 </control>
-  </include>
 </includes>

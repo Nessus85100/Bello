@@ -1,4 +1,5 @@
-<window>
+<?xml version="1.0" encoding="UTF-8"?>
+<window >
 	<defaultcontrol always="true">20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
@@ -28,8 +29,8 @@
 		</control>
 		<control type="label">
 			<description>header label</description>
-      <posx>230</posx>
-      <posy>145</posy>
+      <left>230</left>
+      <top>145</top>
       <width>825</width>
       <height>40</height>
 			<font>FontSize_32</font>
@@ -44,8 +45,8 @@
 		</control>
 		<control type="label">
 			<description>header label</description>
-      <posx>230</posx>
-      <posy>97</posy>
+      <left>230</left>
+      <top>97</top>
       <width>825</width>
       <height>40</height>
 			<font>FontSize_32</font>
@@ -62,11 +63,11 @@
 		<control type="group"  id="10002">
 			<!-- Left Part -->
 			<control type="group"  id="20000">
-				<posx>230</posx>
-				<posy>198</posy>
+				<left>230</left>
+				<top>198</top>
 				<control type="list" id="20">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>400</width>
 					<height>308</height>
 					<onup>20</onup>
@@ -78,27 +79,27 @@
         	<visible>!Window.IsActive(contextmenu)</visible>
 					<itemlayout height="44" width="400">
 						<control type="image">
-							<posx>3</posx>
-							<posy>3</posy>
+							<left>3</left>
+							<top>3</top>
 							<width>34</width>
 							<height>34</height>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
-							<texture fallback="windows/pvr/DefaultTV.png">$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Property(Icon)]</texture>
 							<visible>ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="image">
-							<posx>3</posx>
-							<posy>3</posy>
+							<left>3</left>
+							<top>3</top>
 							<width>34</width>
 							<height>34</height>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
 							<colordiffuse>77white</colordiffuse>
-							<texture fallback="windows/pvr/DefaultTV.png">$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Property(Icon)]</texture>
 							<visible>!ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="label">
-							<posx>47</posx>
-							<posy>0</posy>
+							<left>47</left>
+							<top>0</top>
 							<width>335</width>
 							<height>40</height>
 							<font>FontSize_20</font>
@@ -110,8 +111,8 @@
 							<visible>ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="label">
-							<posx>47</posx>
-							<posy>0</posy>
+							<left>47</left>
+							<top>0</top>
 							<width>335</width>
 							<height>40</height>
 							<font>FontSize_20</font>
@@ -123,8 +124,8 @@
 							<visible>!ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="image">
-							<posx>397</posx>
-							<posy>0</posy>
+							<left>397</left>
+							<top>0</top>
 							<width>3</width>
 							<height>40</height>
 						  <texture>windows/pvr/changed.png</texture>
@@ -136,43 +137,43 @@
 			      <animation effect="slide" start="0,35" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(20).OnPrevious">focus</animation>
 			      <animation effect="slide" start="0,-35" end="0,0" time="350" reversible="false" tween="back" easing="out" condition="Container(20).OnNext">focus</animation>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>400</width>
 							<height>40</height>
 							<texture>buttons/settings_fo.png</texture>
 						  <animation effect="fade" start="100" end="0" time="100" condition="!Control.HasFocus(20)">conditional</animation>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>400</width>
 							<height>40</height>
 						  <texture>dialogs/selectdialog/selected.png</texture>
 						  <animation effect="fade" start="100" end="0" time="100" condition="Control.HasFocus(20)">conditional</animation>
 						</control>
 						<control type="image">
-							<posx>3</posx>
-							<posy>3</posy>
+							<left>3</left>
+							<top>3</top>
 							<width>34</width>
 							<height>34</height>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
-							<texture fallback="windows/pvr/DefaultTV.png">$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Property(Icon)]</texture>
 							<visible>ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="image">
-							<posx>3</posx>
-							<posy>3</posy>
+							<left>3</left>
+							<top>3</top>
 							<width>34</width>
 							<height>34</height>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
 							<colordiffuse>77white</colordiffuse>
-							<texture fallback="windows/pvr/DefaultTV.png">$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Property(Icon)]</texture>
 							<visible>!ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="label">
-							<posx>47</posx>
-							<posy>0</posy>
+							<left>47</left>
+							<top>0</top>
 							<width>335</width>
 							<height>40</height>
 							<font>FontSize_20</font>
@@ -184,8 +185,8 @@
 							<visible>ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="label">
-							<posx>47</posx>
-							<posy>0</posy>
+							<left>47</left>
+							<top>0</top>
 							<width>335</width>
 							<height>40</height>
 							<font>FontSize_20</font>
@@ -198,8 +199,8 @@
 						</control>
 					 </control>
 						<control type="image">
-							<posx>397</posx>
-							<posy>0</posy>
+							<left>397</left>
+							<top>0</top>
 							<width>3</width>
 							<height>40</height>
 						  <texture>windows/pvr/changed.png</texture>
@@ -209,8 +210,8 @@
 				</control>
 	
 				<control type="group">
-					<posx>0</posx>
-					<posy>308</posy>
+					<left>0</left>
+					<top>308</top>
 					<control type="button" id ="31">
 						<description>Edit channel Button</description>
 						<width>131</width>
@@ -235,7 +236,7 @@
 					</control>
 					<control type="button" id ="32">
 						<description>Delete channel Button</description>
-						<posx>135</posx>
+						<left>135</left>
 						<width>131</width>
 				    <height>40</height>
 						<font>FontSize_16B</font>
@@ -258,7 +259,7 @@
 					</control>
 					<control type="button" id ="33">
 						<description>New channel Button</description>
-						<posx>270</posx>
+						<left>270</left>
 						<width>130</width>
 				    <height>40</height>
 						<font>FontSize_16B</font>
@@ -284,8 +285,8 @@
 	
 			<!-- Right Part -->		
 			<control type="group" id="30000">
-				<posx>648</posx>
-				<posy>198</posy>
+				<left>648</left>
+				<top>198</top>
 				<control type="radiobutton" id="7">
 					<description>Channel activated</description>
 					<width>400</width>
@@ -313,7 +314,7 @@
 				</control>
 				<control type="edit" id="8">
 					<description>Channel name</description>
-					<posy>44</posy>
+					<top>44</top>
 					<width>400</width>
 			    <height>40</height>
 					<font>FontSize_20</font>
@@ -336,7 +337,7 @@
 				</control>
 				<control type="button" id="9">
 					<description>Channel logo Button</description>
-					<posy>88</posy>
+					<top>88</top>
 					<width>400</width>
 			    <height>40</height>
 					<font>FontSize_20</font>
@@ -359,16 +360,16 @@
 				</control>
 				<control type="image" id="10">
 					<description>Current Channel Icon</description>
-					<posx>356</posx>
-					<posy>91</posy>
+					<left>356</left>
+					<top>91</top>
 					<width>34</width>
 					<height>34</height>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<info>ListItem.Property(Icon)</info>
 				</control>
 				<control type="radiobutton" id="12">
 					<description>EPG activated</description>
-					<posy>132</posy>
+					<top>132</top>
 					<width>400</width>
 			    <height>40</height>
 					<font>FontSize_20</font>
@@ -394,7 +395,7 @@
 				</control>
 				<control type="spincontrolex" id="13">
 					<description>EPG source</description>
-					<posy>176</posy>
+					<top>176</top>
 					<width>400</width>
 			    <height>40</height>
 					<font>FontSize_20</font>
@@ -420,7 +421,7 @@
 				</control>
 				<control type="radiobutton" id="14">
 					<description>Parental locked</description>
-					<posy>220</posy>
+					<top>220</top>
 					<width>400</width>
 			    <height>40</height>
 					<font>FontSize_20</font>
@@ -446,7 +447,7 @@
 				</control>
 				<control type="button" id="35">
 					<description>Client name</description>
-					<posy>264</posy>
+					<top>264</top>
 					<width>400</width>
 			    <height>40</height>
 					<font>FontSize_20</font>
@@ -470,8 +471,8 @@
 				</control>
 				<control type="button" id="30">
 					<description>Group Manager Button</description>
-					<posx>0</posx>
-					<posy>308</posy>
+					<left>0</left>
+					<top>308</top>
 					<width>198</width>
 					<height>40</height>
 					<font>FontSize_16B</font>
@@ -494,8 +495,8 @@
 				</control>
 				<control type="button" id="34">
 					<description>TV/Radio Button</description>
-					<posx>202</posx>
-					<posy>308</posy>
+					<left>202</left>
+					<top>308</top>
 					<width>198</width>
 					<height>40</height>
 					<font>FontSize_16B</font>
@@ -519,8 +520,8 @@
 				</control>
 				<control type="button" id="34">
 					<description>TV/Radio Button</description>
-					<posx>202</posx>
-					<posy>308</posy>
+					<left>202</left>
+					<top>308</top>
 					<width>198</width>
 					<height>40</height>
 					<font>FontSize_16B</font>
@@ -546,16 +547,13 @@
 		</control>
 
 	  <control type="group" id="10000">
-			<posx>235</posx>
-			<posy>540</posy>
+			<left>230</left>
+			<top>542</top>
 	    <!-- Buttons -->
 			<control type="grouplist" id="10001">
-				<posx>0</posx>
-				<posy>0</posy>
 				<width>0</width>
 				<height>0</height>
 				<itemgap>0</itemgap>
-				<align>left</align>
 				<orientation>horizontal</orientation>
 				<onleft>10001</onleft>
 				<onright>10001</onright>
@@ -579,65 +577,42 @@
 			</control>
 	    <!-- Buttons Labels -->
 			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
+				<width>825</width>
 				<height>70</height>
-				<width>552</width>
-				<itemgap>30</itemgap>
-				<align>left</align>
+				<itemgap>35</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="label">
 					<description>Search Label</description>
-					<height>62</height>
-					<width min="10" max="552">auto</width>
-					<font>FontSize_20</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-			    <align>left</align>
-			    <aligny>center</aligny>
-					<scroll>false</scroll>
+	        <include>DialogsButtonLabels</include>
 	        <label>$INFO[Control.GetLabel(4),․  ]</label>
-					<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(4)" reversible="true">Conditional</animation>
-	        <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(4)" reversible="true">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="100" tween="sine" easing="inout" condition="!Control.HasFocus(4)" reversible="true">Conditional</animation>
+	        <animation effect="zoom" start="100" end="95" time="100" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(4)" reversible="true">Conditional</animation>
 				</control>
 				<control type="label">
 					<description>Cancel Label</description>
-					<height>62</height>
-					<width min="10" max="552">auto</width>
-					<font>FontSize_20</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-			    <align>left</align>
-			    <aligny>center</aligny>
-					<scroll>false</scroll>
+	        <include>DialogsButtonLabels</include>
 	        <label>$INFO[Control.GetLabel(6),․  ]</label>
-					<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
-	        <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="100" tween="sine" easing="inout" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
+	        <animation effect="zoom" start="100" end="95" time="100" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
 				</control>
 				<control type="label">
 					<description>Defaults Label</description>
-					<height>62</height>
-					<width min="10" max="552">auto</width>
-					<font>FontSize_20</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>99000000</shadowcolor>
-			    <align>left</align>
-			    <aligny>center</aligny>
-					<scroll>false</scroll>
+	        <include>DialogsButtonLabels</include>
 	        <label>$INFO[Control.GetLabel(5),․  ]</label>
-					<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(5)" reversible="true">Conditional</animation>
-	        <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(5)" reversible="true">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="100" tween="sine" easing="inout" condition="!Control.HasFocus(5)" reversible="true">Conditional</animation>
+	        <animation effect="zoom" start="100" end="95" time="100" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(5)" reversible="true">Conditional</animation>
 				</control>
 			</control>
 			<control type="group">
-				<posx>810</posx>
-				<posy>0</posy>
+				<left>530</left>
+				<top>0</top>
 				<animation effect="fade" end="30" condition="true">Conditional</animation>
+	      <animation effect="zoom" end="96" condition="true">Conditional</animation>
 				<control type="label">
 					<description>Page Count Label</description>
 					<width>300</width>
-					<height>57</height>
-					<font>FontSize_18</font>
+					<height>62</height>
+					<font>FontSize_20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>99000000</shadowcolor>
 					<scroll>false</scroll>

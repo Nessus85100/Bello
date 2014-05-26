@@ -1,4 +1,5 @@
-<window id="2001">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="2001">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
@@ -7,20 +8,20 @@
 			<visible>!Window.IsActive(FileBrowser) + !Window.IsActive(SelectDialog) + !Window.IsActive(DialogSelect.xml)</visible>
 	    <include>DialogAnimation</include>
 			<control type="group">
-				<posx>45</posx>
-				<posy>170</posy>
+				<left>45</left>
+				<top>170</top>
 				<include>VisibleFadeEffect</include>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>386</width>
 					<height>386</height>
 					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 					<texture background="true" fallback="thumbs/fallback_square.png" diffuse="thumbs/music_diffuse_big.png">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>-12</posx>
-					<posy>-12</posy>
+					<left>-12</left>
+					<top>-12</top>
 					<width>410</width>
 					<height>410</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
@@ -28,8 +29,8 @@
 				</control>
 				<control type="label">
 					<description>Title</description>
-					<posx>408</posx>
-					<posy>5</posy>
+					<left>408</left>
+					<top>5</top>
 					<width>775</width>
 					<height>30</height>
 					<font>FontSize_40</font>
@@ -42,8 +43,8 @@
 				</control>
 				<control type="label">
 					<description>Title</description>
-					<posx>408</posx>
-					<posy>5</posy>
+					<left>408</left>
+					<top>5</top>
 					<width>775</width>
 					<height>30</height>
 					<font>FontSize_40</font>
@@ -56,8 +57,8 @@
 				</control>
 				<control type="label">
 					<description>Under Title</description>
-					<posx>410</posx>
-					<posy>37</posy>
+					<left>410</left>
+					<top>37</top>
 					<width>775</width>
 					<height>30</height>
 					<font>FontSize_22</font>
@@ -68,13 +69,13 @@
 					<shadowcolor>99000000</shadowcolor>
 				</control>
 				<control type="group">
-					<posx>410</posx>
-					<posy>80</posy>
+					<left>410</left>
+					<top>80</top>
 					<visible>Container.Content(Albums)</visible>
 					<!-- Genre label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -97,8 +98,8 @@
 					</control>
 					<!-- Year label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>25</posy>
+						<left>0</left>
+						<top>25</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -120,8 +121,8 @@
 					</control>
 					<!-- Type label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>50</posy>
+						<left>0</left>
+						<top>50</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -144,8 +145,8 @@
 					</control>					
 					<!-- Music Label label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>75</posy>
+						<left>0</left>
+						<top>75</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -168,8 +169,8 @@
 					</control>
 					<!-- Path Label label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>100</posy>
+						<left>0</left>
+						<top>100</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -192,13 +193,13 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>410</posx>
-					<posy>77</posy>
+					<left>410</left>
+					<top>77</top>
 					<visible>Container.Content(Artists)</visible>
 					<!-- Artist Formed label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -221,8 +222,8 @@
 					</control>
 					<!-- Years Active label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>25</posy>
+						<left>0</left>
+						<top>25</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -245,8 +246,8 @@
 					</control>
 					<!-- Disbanded label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>50</posy>
+						<left>0</left>
+						<top>50</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -269,8 +270,8 @@
 					</control>				
 					<!-- Moods label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>75</posy>
+						<left>0</left>
+						<top>75</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -292,8 +293,8 @@
 					</control>
 					<!-- Styles label -->
 					<control type="grouplist">
-						<posx>0</posx>
-						<posy>100</posy>
+						<left>0</left>
+						<top>100</top>
 						<width>775</width>
 		        <height>30</height>
 					  <orientation>horizontal</orientation>
@@ -322,8 +323,8 @@
 			<control type="group" id="4">
 				<control type="textbox">
 					<description>Description Value</description>
-					<posx>455</posx>
-					<posy>395</posy>
+					<left>455</left>
+					<top>395</top>
 					<width>775</width>
 					<height>155</height>
 					<font>FontSize_22</font>
@@ -339,8 +340,8 @@
 							
 		 <!-- Albums\Tracks List -->
 		 <control type="group">
-			<posx>445</posx>
-			<posy>400</posy>
+			<left>445</left>
+			<top>400</top>
 			<animation effect="slide" start="0,0" end="0,-25" time="150" condition="Control.HasFocus(50) | Control.HasFocus(150)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="300" reversible="false" condition="!Control.IsVisible(50)">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="300" reversible="false" condition="Control.IsVisible(50)">Conditional</animation>
@@ -355,8 +356,8 @@
 			</control>
 			<control type="wraplist" id="50">
 				<description>Albums\Tracks</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>800</width>
 				<height>250</height>
 				<focusposition>0</focusposition>
@@ -368,24 +369,24 @@
 				<ondown>9000</ondown>
 				<itemlayout width="159" height="250">
 					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>140</width>
 						<height>140</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="thumbs/music_diffuse.png">thumbs/thumb_back.png</texture>
 					</control>
 					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>140</width>
 						<height>140</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<texture fallback="DefaultMusicSongs.png" diffuse="thumbs/music_diffuse.png">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>5</posx>
-						<posy>5</posy>
+						<left>5</left>
+						<top>5</top>
 						<width>150</width>
 						<height>150</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
@@ -394,32 +395,32 @@
 				</itemlayout>
 				<focusedlayout width="159" height="250">
 					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>140</width>
 						<height>140</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="thumbs/music_diffuse.png">thumbs/thumb_back.png</texture>
 					</control>
 					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
+						<left>10</left>
+						<top>10</top>
 						<width>140</width>
 						<height>140</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<texture fallback="DefaultMusicSongs.png" diffuse="thumbs/music_diffuse.png">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>5</posx>
-						<posy>5</posy>
+						<left>5</left>
+						<top>5</top>
 						<width>150</width>
 						<height>150</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="thumbs/music_diffuse.png">thumbs/music_overlay_noglass.png</texture>
 					</control>
 					<control type="image">
-						<posx>-6</posx>
-						<posy>-5</posy>
+						<left>-6</left>
+						<top>-5</top>
 						<width>176</width>
 						<height>176</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
@@ -427,8 +428,8 @@
 						<visible>Control.HasFocus(50) | Control.HasFocus(150)</visible>
 					</control>
 					<control type="group">
-						<posx>12</posx>
-						<posy>150</posy>
+						<left>12</left>
+						<top>150</top>
 						<animation effect="fade" start="0" end="100" time="400" reversible="false" condition="Control.HasFocus(50) | Control.HasFocus(150)">Conditional</animation>
 						<animation effect="fade" start="100" end="0" time="0" reversible="false" condition="![Control.HasFocus(50) | Control.HasFocus(150)]">Conditional</animation>
 					  <control type="label">
@@ -483,8 +484,8 @@
     <!-- Top Buttons Labels -->
     <!-- ================== -->    
 	  <control type="group">
-			<posx>45</posx>
-			<posy>25</posy>
+			<left>45</left>
+			<top>25</top>
 	    <animation type="WindowOpen" reversible="false">
 	        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
 	        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
@@ -499,8 +500,8 @@
 	    </animation>
 			<!-- StarRating -->
 			<control type="image">
-				<posx>1050</posx>
-				<posy>12</posy>
+				<left>1050</left>
+				<top>12</top>
 				<width>140</width>
 				<height>30</height>
         <aspectratio>keep</aspectratio>
@@ -516,8 +517,8 @@
 			</control>
       <!-- Buttons -->
 			<control type="grouplist" id="9000">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>0</width>
 				<height>0</height>
 				<itemgap>0</itemgap>
@@ -531,7 +532,7 @@
 				  <include>TopButton</include>
 					<label>208</label>
           <onclick>RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
-          <visible>Container.Content(Albums) + System.HasAddon(script.playalbum)</visible>
+          <visible>[System.HasAddon(script.playalbum) + Container.Content(Albums)]</visible>
 				</control>
 				<control type="button" id="5">
 					<description>Albums/Biography/Tracks/Review</description>
@@ -560,6 +561,14 @@
 				  <include>TopButton</include>
 					<label>184</label>
 				</control>
+				<control type="button" id="16">
+					<description>Search YouTube</description>
+					<label>31254</label>
+				  <include>TopButton</include>
+			    <include>OnClickDialogsClose</include>
+          <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Label],return)</onclick>
+				  <visible>Container.Content(artists)</visible>
+				</control>
 			</control>
       <!-- Labels -->
 			<control type="grouplist">
@@ -571,8 +580,8 @@
 	          <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
 	          <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
 	      </animation>			
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>70</height>
 				<width>1190</width>
 				<itemgap>15</itemgap>
@@ -630,6 +639,14 @@
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
 				</control>
+				<control type="label">
+					<description>Search YouTube</description>
+				  <include>TopSmallLabel</include>
+          <label>$INFO[Control.GetLabel(16)]</label>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(16)" reversible="true">Conditional</animation>
+          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(16)" reversible="true">Conditional</animation>
+				  <visible>Container.Content(artists)</visible>
+				</control>
 			</control>
 		</control>
 
@@ -637,8 +654,8 @@
     <!-- Top Content Info -->
     <!-- ================ -->
 		<control type="group">
-			<posx>47</posx>
-			<posy>70</posy>
+			<left>47</left>
+			<top>70</top>
 			<include>TopOptionsSlideAnimations</include>
 			<control type="label">
 				<width>300</width>

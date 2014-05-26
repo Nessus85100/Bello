@@ -1,16 +1,17 @@
-<includes>
+<?xml version="1.0" encoding="UTF-8"?>
+<includes> 
 
-<!-- =================== -->
-<!-- Home Window SubMenu -->
-<!-- =================== -->
+	<!-- ========================= -->
+	<!-- == Home Window SubMenu == -->
+	<!-- ========================= -->
 
-<!-- Wrap List Vars -->
+  <!-- Wrap List Vars -->
 	<include name="SubMenuWraplistVarsDown">
 	  <include>HomeSlideAnimations</include>
-		<posx>285</posx>
-		<posy>370</posy>
+		<left>283</left>
+		<top>370</top>
 		<width>700</width>
-		<height>201</height>
+		<height>155</height>
 		<onup>23</onup>
 		<ondown>23</ondown>
 		<onleft>20</onleft>
@@ -27,12 +28,10 @@
         <effect type="slide" start="0,0" end="0,-35" time="350" tween="sine" easing="out" />
 		</animation>     
 	</include>
-
-
-<!-- Item Layout Vars -->
+  <!-- Item Layout Vars -->
 	<include name="SubMenuItemLayoutVarsDown">
-		<posx>350</posx>
-		<posy>0</posy>
+		<left>350</left>
+		<top>0</top>
 		<width>700</width>
 		<height>50</height>
 		<align>center</align>
@@ -46,12 +45,10 @@
 			<effect type="zoom" end="75" time="0" />
 		</animation>
 	</include>
-
-
-<!-- Focused Layout Vars -->
+  <!-- Focused Layout Vars -->
 	<include name="SubMenuFocusedLayoutVarsDown">
-		<posx>350</posx>
-		<posy>0</posy>
+		<left>350</left>
+		<top>0</top>
 		<width>700</width>
 		<height>50</height>
 		<align>center</align>
@@ -69,14 +66,49 @@
 			<effect type="zoom" start="100" end="75" time="200" tween="sine" easing="out" />
 		</animation>
 	</include>
+
+  <!-- Home DVD SubLabel -->
+	<include name="HomeMenuSubLabels">
+		<control type="group">
+			<description>SubLabel DVD</description>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(virtualkeyboard) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(14) + Control.HasFocus(20)</visible>
+			<animation type="WindowOpen">
+        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
+			</animation>
+			<animation type="WindowClose" >
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
+			</animation>	
+			<animation type="Visible">
+        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Hidden" >
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
+			</animation>
+			<control type="label">
+				<left>285</left>
+				<top>375</top>
+				<width>700</width>
+				<height>55</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>FontSize_48</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+			  <label>[LOWERCASE]$INFO[System.DVDLabel][/LOWERCASE]</label>
+			</control>
+		</control>				
+	</include>
 	
 
   <!-- Home SubMenu Movies -->
 	<include name="HomeSubMenuMovies">
-
 		<control type="wraplist" id="23">
 			<description>SubMenu Container Movies</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(2)</visible>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(2)</visible>
 			<include>SubMenuWraplistVarsDown</include>
 			<itemlayout height="46">
 				<control type="label">
@@ -155,12 +187,11 @@
 	</include>
 
 
-<!-- Home SubMenu TVShows -->
+  <!-- Home SubMenu TVShows -->
 	<include name="HomeSubMenuTVShows">
-
 		<control type="wraplist" id="23">
 			<description>SubMenu Container TVShows</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(1)</visible>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(1)</visible>
 			<include>SubMenuWraplistVarsDown</include>
 			<itemlayout height="46">
 				<control type="label">
@@ -211,7 +242,7 @@
 				</item>
 				<item id="7">
 					<label>$LOCALIZE[14022]</label>
-					<onclick>ActivateWindow(videos,root)</onclick>
+		<onclick>ActivateWindow(videos,root)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="8">
@@ -229,12 +260,11 @@
 	</include>
 
 
-<!-- Home SubMenu Music -->
+  <!-- Home SubMenu Music -->
 	<include name="HomeSubMenuMusic">
-
 		<control type="wraplist" id="23">
 			<description>SubMenu Container Music</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(3)</visible>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(3)</visible>
 			<include>SubMenuWraplistVarsDown</include>
 			<itemlayout height="46">
 				<control type="label">
@@ -316,11 +346,11 @@
 	</include>
 
 
-<!-- Home SubMenu Settings -->
+  <!-- Home SubMenu Settings -->
 	<include name="HomeSubMenuSettings">
 		<control type="wraplist" id="23">
 			<description>SubMenu Container Settings</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(9)</visible>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(9)</visible>
 			<include>SubMenuWraplistVarsDown</include>
 			<itemlayout height="46">
 				<control type="label">
@@ -390,11 +420,57 @@
 	</include>
 
 
-<!-- Home SubMenu LiveTV -->
+  <!-- Home SubMenu Addons -->
+	<include name="HomeSubMenuAddons">
+		<control type="wraplist" id="23">
+			<description>SubMenu Container Addons</description>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(7)</visible>
+			<include>SubMenuWraplistVarsDown</include>
+			<itemlayout height="46">
+				<control type="label">
+					<include>SubMenuItemLayoutVarsDown</include>
+				</control>
+			</itemlayout>
+			<focusedlayout height="55">
+				<control type="label">
+					<include>SubMenuFocusedLayoutVarsDown</include>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="0">
+					<label>$LOCALIZE[3]</label>
+          <onclick>ActivateWindow(videos,addons,return)</onclick>
+				</item>
+				<item id="1">
+					<label>$LOCALIZE[2]</label>
+          <onclick>ActivateWindow(music,addons,return)</onclick>
+				</item>
+				<item id="2">
+					<label>$LOCALIZE[1]</label>
+          <onclick>ActivateWindow(pictures,addons,return)</onclick>
+				</item>
+				<item id="3">
+					<label>$LOCALIZE[0]</label>
+          <onclick>ActivateWindow(Programs,addons,return)</onclick>
+				</item>
+				<item id="4">
+					<label>$LOCALIZE[24033]</label>
+					<onclick>ActivateWindow(AddonBrowser,addons://all/,return)</onclick>
+				</item>
+				<item id="5">
+					<label>$LOCALIZE[24043]</label>
+					<onclick>ActivateWindow(AddonBrowser,addons://outdated/,return)</onclick>
+				</item>
+			</content>
+		</control>
+	</include>
+
+
+  <!-- Home SubMenu LiveTV -->
 	<include name="HomeSubMenuLiveTV">
 		<control type="wraplist" id="23">
 			<description>SubMenu Container LiveTV</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(11)</visible>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(11)</visible>
 			<include>SubMenuWraplistVarsDown</include>
 			<itemlayout height="46">
 				<control type="label">
@@ -438,54 +514,18 @@
 
 	
 
-	<!-- ============================ -->
-	<!-- == Content Top Slide Info == -->
-	<!-- ============================ -->
-	
-	<include name="ContextMenuContentInfoWindows">
-	  <control type="group">
-				<posx>45</posx>
-				<posy>25</posy>
-		    <include>TopOptionsSlideAnimations</include>
-	       <visible>!Window.IsVisible(LockSettings)</visible>
-			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
-				<height>70</height>
-				<width>1000</width>
-				<align>left</align>
-				<aligny>center</aligny>
-				<itemgap>20</itemgap>
-				<orientation>horizontal</orientation>
-				<control type="label">
-				  <include>TopBigLabel</include>
-					<label>31009</label>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-			    <label>13200</label>
-	       <visible>Window.IsVisible(Profiles)</visible>
-				</control>
-				<control type="label">
-				  <include>TopZoomedSmallLabel</include>
-			    <label>10029</label>
-	       <visible>Window.IsVisible(LoginScreen)</visible>
-				</control>
-			</control>
-	  </control>
-	</include> 	
-	
-	
-	
+	<!-- ================================== -->
+	<!-- 	== Context Menu Cont	ent Info == -->
+	<!-- ================================== -->
 	<include name="ContextMenuContentInfo">
 	  <control type="group">
-				<posx>45</posx>
-				<posy>25</posy>
-		    <include>TopOptionsSlideAnimations</include>
-	      <visible>!Window.IsVisible(LockSettings) + !Window.IsVisible(ProfileSettings) + !Window.IsVisible(LoginScreen) + !Window.IsVisible(Profiles)</visible>
+			<left>45</left>
+			<top>25</top>
+	    <include>TopOptionsSlideAnimations</include>
+			<visible>!Window.IsVisible(LockSettings) + !Window.IsVisible(ProfileSettings) + !Window.IsVisible(LoginScreen) + !Window.IsVisible(Profiles)</visible>
 			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>70</height>
 				<width>1000</width>
 				<align>left</align>
@@ -547,24 +587,215 @@
           <visible>Window.IsVisible(AddonInformation)</visible>
 	        <visible>Substring(Container.FolderPath,addons://) + !Window.IsVisible(MusicLibrary) + !Window.IsVisible(MusicFiles)</visible>
 				</control>
+			</control>
+	  </control>
+	</include>
+
+	<include name="ContextMenuContentInfoWindows">
+	  <control type="group">
+			<left>45</left>
+			<top>25</top>
+	    <include>TopOptionsSlideAnimations</include>
+      <visible>!Window.IsVisible(LockSettings)</visible>
+			<control type="grouplist">
+				<left>0</left>
+				<top>0</top>
+				<height>70</height>
+				<width>1000</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<control type="label">
+				  <include>TopBigLabel</include>
+					<label>31009</label>
+				</control>
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
-			    <label>1036</label>
-	        <visible>Window.IsVisible(Favourites)</visible>
+			    <label>13200</label>
+	       <visible>Window.IsVisible(Profiles)</visible>
+				</control>
+				<control type="label">
+				  <include>TopZoomedSmallLabel</include>
+			    <label>10029</label>
+	       <visible>Window.IsVisible(LoginScreen)</visible>
 				</control>
 			</control>
 	  </control>
-	</include> 
- 
+	</include>
 
+	<include name="ContextMenuContentInfoFavourites">
+	  <control type="group">
+			<left>45</left>
+			<top>25</top>
+	    <include>TopOptionsSlideAnimations</include>
+			<control type="grouplist">
+				<left>0</left>
+				<top>0</top>
+				<height>70</height>
+				<width>1000</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<control type="label">
+				  <include>TopBigLabel</include>
+					<label>31009</label>
+				</control>
+				<control type="label">
+				  <include>TopZoomedSmallLabel</include>
+			    <label>1036</label>
+				</control>
+			</control>
+	  </control>
+	</include> 	
+	 
+
+
+	<!-- =================== -->
+	<!-- == Context Menus == -->
+	<!-- =================== -->
+	<include name="ContextMenuDefault">
+      <control type="image" id="999">
+        <description>background image</description>
+				<left>0</left>
+				<top>0</top>
+        <width>480</width>
+        <height>410</height>
+        <texture>-</texture>
+        <aspectratio aligny="center">stretch</aspectratio>
+        <visible>false</visible>
+      </control>
+			<control type="grouplist" id="996">
+				<left>0</left>
+				<top>0</top>
+				<width>480</width>
+				<height max="405">auto</height>
+				<itemgap>0</itemgap>
+				<onleft>Close</onleft>
+				<onright>Close</onright>
+				<animation effect="fade" start="0" end="100" time="250" reversible="true">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200" reversible="true">WindowClose</animation>
+			</control>
+			<control type="button" id="1000">
+				<description>button template</description>
+				<width>480</width>
+				<height>45</height>
+				<textcolor>77white</textcolor>
+				<focusedcolor>white</focusedcolor>
+			  <disabledcolor>33white</disabledcolor>
+		    <shadowcolor>99000000</shadowcolor>
+				<align>center</align>
+				<aligny>top</aligny>
+				<textwidth>430</textwidth>
+				<textoffsetx>23</textoffsetx>
+				<textoffsety>7</textoffsety>
+				<texturefocus border="23">windows/filemanager/contextmenu_fo.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>FontSize_22</font>
+			</control>
+	</include>
+
+	<include name="ContextMenuOnTopLeft">
+      <control type="image" id="999">
+        <description>background image</description>
+				<left>0</left>
+				<top>0</top>
+        <width>1280</width>
+        <height>1280</height>
+        <texture>-</texture>
+        <aspectratio aligny="center">stretch</aspectratio>
+        <visible>false</visible>
+      </control>
+			<control type="grouplist" id="996">
+				<left>45</left>
+				<top>75</top>
+				<width>460</width>
+				<height max="520">auto</height>
+				<itemgap>0</itemgap>
+				<onleft>Close</onleft>
+				<onright>Close</onright>
+		    <include>TopOptionsSlideAnimations</include>
+			</control>
+			<control type="button" id="1000">
+				<description>button template</description>
+			  <include>TopLeftMenusButton</include>
+			</control>
+	</include>
+
+	<include name="ContextMenuFavourites">
+      <control type="image" id="999">
+        <description>background image</description>
+				<left>0</left>
+				<top>0</top>
+        <width>1280</width>
+        <height>1280</height>
+        <texture>-</texture>
+        <aspectratio aligny="center">stretch</aspectratio>
+        <visible>false</visible>
+      </control>
+			<control type="grouplist" id="996">
+				<left>45</left>
+				<top>75</top>
+				<width>460</width>
+				<height max="520">auto</height>
+				<itemgap>0</itemgap>
+				<onleft>Close</onleft>
+				<onright>Close</onright>
+		    <include>TopOptionsSlideAnimations</include>
+				<control type="button" id="991">
+					<description>button template</description>
+			    <include>TopLeftMenusButton</include>
+				  <onclick>SendClick(1001)</onclick>
+	        <label>31028</label>
+				</control>
+				<control type="button" id="992">
+					<description>button template</description>
+			    <include>TopLeftMenusButton</include>
+				  <onclick>SendClick(1002)</onclick>
+	        <label>31029</label>
+				</control>
+				<control type="button" id="993">
+					<description>button template</description>
+			    <include>TopLeftMenusButton</include>
+				  <onclick>SendClick(1003)</onclick>
+	        <label>15015</label>
+				</control>
+				<control type="button" id="994">
+					<description>button template</description>
+			    <include>TopLeftMenusButton</include>
+				  <onclick>SendClick(1004)</onclick>
+	        <label>118</label>
+				</control>
+				<control type="button" id="995">
+					<description>button template</description>
+			    <include>TopLeftMenusButton</include>
+				  <onclick>SendClick(1005)</onclick>
+	        <label>20019</label>
+				</control>
+			</control>
+			<control type="button" id="1000">
+				<description>button template</description>
+			  <include>TopButton</include>
+			  <label>-</label>
+        <visible>false</visible>
+			</control>			
+	</include>
+
+
+
+	<!-- ========================== -->
+	<!-- == PVR OSD Content Info == -->
+	<!-- ========================== -->
 	<include name="PVROSDContentInfo">
 	  <control type="group">
-				<posx>45</posx>
-				<posy>25</posy>
+				<left>45</left>
+				<top>25</top>
 		    <include>TopOptionsSlideAnimations</include>
 			<control type="grouplist">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>70</height>
 				<width>1000</width>
 				<align>left</align>
@@ -603,248 +834,340 @@
 	  </control>
 	</include> 
 
-
-	<!-- ================== -->
-	<!-- == Context Menu == -->
-	<!-- ================== -->
-	<include name="ContextMenuDefault">
-      <control type="image" id="999">
-        <description>background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-        <width>480</width>
-        <height>410</height>
-        <texture>-</texture>
-        <aspectratio aligny="center">stretch</aspectratio>
-        <visible>false</visible>
-      </control>
-			<control type="grouplist" id="996">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>480</width>
-				<height max="405">auto</height>
-				<itemgap>0</itemgap>
-				<onleft>Close</onleft>
-				<onright>Close</onright>
-				<animation effect="fade" start="0" end="100" time="250" reversible="true">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="200" reversible="true">WindowClose</animation>
-			</control>
-			<control type="button" id="1000">
-				<description>button template</description>
-				<width>480</width>
-				<height>45</height>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>33white</disabledcolor>
-		    <shadowcolor>99000000</shadowcolor>
-				<align>center</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>7</textoffsety>
-				<texturefocus border="23">windows/filemanager/contextmenu_fo.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<font>FontSize_22</font>
-			</control>
-	</include>
-
-	<include name="ContextMenuOnTopLeft">
-      <control type="image" id="999">
-        <description>background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-        <width>1280</width>
-        <height>1280</height>
-        <texture>-</texture>
-        <aspectratio aligny="center">stretch</aspectratio>
-        <visible>false</visible>
-      </control>
-			<control type="grouplist" id="996">
-				<posx>45</posx>
-				<posy>75</posy>
-				<width>460</width>
-				<height max="520">auto</height>
-				<itemgap>0</itemgap>
-				<onleft>Close</onleft>
-				<onright>Close</onright>
+	<!-- ========================== -->
+	<!-- == PVR OSD EPGuide Menu == -->
+	<!-- ========================== -->
+	<include name="PVRGuideOSDMenu">
+			<control type="list" id="11">
 		    <include>TopOptionsSlideAnimations</include>
-				<control type="button." id="990">
-					<description>Library Editor Button</description>
-					<width>460</width>
-					<height>40</height>
-	        <label>31125</label>
-					<textcolor>77white</textcolor>
-					<focusedcolor>white</focusedcolor>
-				  <disabledcolor>33white</disabledcolor>
-			    <shadowcolor>99000000</shadowcolor>
-					<align>left</align>
-					<aligny>top</aligny>
-					<textwidth>430</textwidth>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-					<font>FontSize_22</font>
-	        <onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
-	        <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + System.HasAddon(script.libraryeditor)</visible>
-				</control>
-			</control>
-			<control type="button" id="1000">
-				<description>button template</description>
-				<width>460</width>
-				<height>40</height>
-				<textcolor>77white</textcolor>
-				<focusedcolor>white</focusedcolor>
-			  <disabledcolor>33white</disabledcolor>
-		    <shadowcolor>99000000</shadowcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textwidth>430</textwidth>
-				<textoffsetx>23</textoffsetx>
-				<textoffsety>5</textoffsety>
-				<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-				<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<font>FontSize_22</font>
-			</control>
-	</include>
-
-	<include name="ContextMenuFavourites">
-      <control type="image" id="999">
-        <description>background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-        <width>1280</width>
-        <height>1280</height>
-        <texture>-</texture>
-        <aspectratio aligny="center">stretch</aspectratio>
-        <visible>false</visible>
-      </control>
-			<control type="grouplist" id="996">
-				<posx>45</posx>
-				<posy>75</posy>
-				<width>460</width>
-				<height max="520">auto</height>
+		    <animation type="Conditional" reversible="false" condition="![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)]">
+		        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+		        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
+		    </animation>
+		    <animation type="Conditional" reversible="false" condition="Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)">
+		        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+		        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
+		    </animation>
+				<left>45</left>
+				<top>75</top>
+				<width>480</width>
+				<height>530</height>
 				<itemgap>0</itemgap>
 				<onleft>Close</onleft>
 				<onright>Close</onright>
-		    <include>TopOptionsSlideAnimations</include>
-				<control type="button" id="991">
-					<description>button template</description>
-					<width>460</width>
-					<height>40</height>
-					<font>FontSize_22</font>
-					<textcolor>77white</textcolor>
-					<focusedcolor>white</focusedcolor>
-				  <disabledcolor>33white</disabledcolor>
-			    <shadowcolor>99000000</shadowcolor>
-					<align>left</align>
-					<aligny>top</aligny>
-					<textwidth>430</textwidth>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-				  <onclick>SendClick(1001)</onclick>
-	        <label>31028</label>
-				</control>
-				<control type="button" id="992">
-					<description>button template</description>
-					<width>460</width>
-					<height>40</height>
-					<font>FontSize_22</font>
-					<textcolor>77white</textcolor>
-					<focusedcolor>white</focusedcolor>
-				  <disabledcolor>33white</disabledcolor>
-			    <shadowcolor>99000000</shadowcolor>
-					<align>left</align>
-					<aligny>top</aligny>
-					<textwidth>430</textwidth>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-				  <onclick>SendClick(1002)</onclick>
-	        <label>31029</label>
-				</control>
-				<control type="button" id="993">
-					<description>button template</description>
-					<width>460</width>
-					<height>40</height>
-					<font>FontSize_22</font>
-					<textcolor>77white</textcolor>
-					<focusedcolor>white</focusedcolor>
-				  <disabledcolor>33white</disabledcolor>
-			    <shadowcolor>99000000</shadowcolor>
-					<align>left</align>
-					<aligny>top</aligny>
-					<textwidth>430</textwidth>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-				  <onclick>SendClick(1003)</onclick>
-	        <label>15015</label>
-				</control>
-				<control type="button" id="994">
-					<description>button template</description>
-					<width>460</width>
-					<height>40</height>
-					<font>FontSize_22</font>
-					<textcolor>77white</textcolor>
-					<focusedcolor>white</focusedcolor>
-				  <disabledcolor>33white</disabledcolor>
-			    <shadowcolor>99000000</shadowcolor>
-					<align>left</align>
-					<aligny>top</aligny>
-					<textwidth>430</textwidth>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-				  <onclick>SendClick(1004)</onclick>
-	        <label>118</label>
-				</control>
-				<control type="button" id="995">
-					<description>button template</description>
-					<width>460</width>
-					<height>40</height>
-					<font>FontSize_22</font>
-					<textcolor>77white</textcolor>
-					<focusedcolor>white</focusedcolor>
-				  <disabledcolor>33white</disabledcolor>
-			    <shadowcolor>99000000</shadowcolor>
-					<align>left</align>
-					<aligny>top</aligny>
-					<textwidth>430</textwidth>
-					<textoffsetx>23</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>buttons/contextmenu_fo.png</texturefocus>
-					<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-				  <onclick>SendClick(1005)</onclick>
-	        <label>20019</label>
-				</control>
+        <preloaditems>2</preloaditems>
+				<viewtype label="535">list</viewtype>
+			  <scrolltime tween="cubic" easing="out">300</scrolltime>
+				<itemlayout height="58" width="480">
+					<control type="label">
+						<left>5</left>
+						<top>0</top>
+						<width>100</width>
+						<height>45</height>
+						<font>FontSize_24B</font>
+						<textcolor>77white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>․</label>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>0</top>
+						<width>400</width>
+						<height>45</height>
+						<font>FontSize_24B</font>
+						<textcolor>77white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.StartTime]</label>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>25</top>
+						<width>400</width>
+						<height>40</height>
+						<font>FontSize_20</font>
+						<textcolor>77white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+					</control>
+					<control type="image.">
+						<left>120</left>
+						<top>5</top>
+						<width>30</width>
+						<height>20</height>
+						<texture>PVR-IsRecording.png</texture>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="image.">
+						<left>120</left>
+						<top>5</top>
+						<width>20</width>
+						<height>20</height>
+						<texture>PVR-HasTimer.png</texture>
+						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+					</control>
+					<control type="label.">
+						<left>400</left>
+						<top>0</top>
+						<width>130</width>
+						<height>40</height>
+						<font>FontSize_22</font>
+						<textcolor>77white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.StartTime]</label>
+						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="58" width="480">
+					<control type="label">
+						<left>5</left>
+						<top>0</top>
+						<width>100</width>
+						<height>45</height>
+						<font>FontSize_24B</font>
+						<textcolor>white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>․</label>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>0</top>
+						<width>400</width>
+						<height>45</height>
+						<font>FontSize_24B</font>
+						<textcolor>white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.StartTime]</label>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>25</top>
+						<width>400</width>
+						<height>40</height>
+						<font>FontSize_20</font>
+						<textcolor>white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+					</control>
+					<control type="image.">
+						<left>120</left>
+						<top>5</top>
+						<width>30</width>
+						<height>20</height>
+						<texture>PVR-IsRecording.png</texture>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="image.">
+						<left>120</left>
+						<top>5</top>
+						<width>20</width>
+						<height>20</height>
+						<texture>PVR-HasTimer.png</texture>
+						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+					</control>
+					<control type="label.">
+						<left>400</left>
+						<top>0</top>
+						<width>130</width>
+						<height>40</height>
+						<font>FontSize_22</font>
+						<textcolor>white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.StartTime]</label>
+						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
+					</control>
+				</focusedlayout>
 			</control>
-			<control type="button" id="1000">
-				<description>button template</description>
-			  <include>TopButton</include>
-			  <label>-</label>
-        <visible>false</visible>
-			</control>			
 	</include>
 
+	<!-- =========================== -->
+	<!-- == PVR OSD Channels Menu == -->
+	<!-- =========================== -->
+	<include name="PVRChannelsOSDMenu">
+			<control type="list" id="11">
+		    <include>TopOptionsSlideAnimations</include>
+		    <animation type="Conditional" reversible="false" condition="![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)]">
+		        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+		        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
+		    </animation>
+		    <animation type="Conditional" reversible="false" condition="Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)">
+		        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+		        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
+		    </animation>		    
+				<left>45</left>
+				<top>75</top>
+				<width>480</width>
+				<height>530</height>
+				<itemgap>0</itemgap>
+				<onleft>Close</onleft>
+				<onright>Close</onright>
+        <preloaditems>2</preloaditems>
+				<viewtype label="535">list</viewtype>
+			  <scrolltime tween="cubic" easing="out">350</scrolltime>
+				<itemlayout height="58" width="480">
+					<control type="label">
+						<left>5</left>
+						<top>0</top>
+						<width>100</width>
+						<height>45</height>
+						<font>FontSize_24B</font>
+						<textcolor>77white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>․</label>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>0</top>
+						<width>400</width>
+						<height>45</height>
+						<font>FontSize_24B</font>
+						<textcolor>77white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>25</top>
+						<width>400</width>
+						<height>40</height>
+						<font>FontSize_20</font>
+						<textcolor>77white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Title]</label>
+						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+					</control>
+					<control type="image.">
+						<left>120</left>
+						<top>5</top>
+						<width>30</width>
+						<height>20</height>
+						<texture>PVR-IsRecording.png</texture>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="image.">
+						<left>120</left>
+						<top>5</top>
+						<width>20</width>
+						<height>20</height>
+						<texture>PVR-HasTimer.png</texture>
+						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+					</control>
+					<control type="label.">
+						<left>400</left>
+						<top>0</top>
+						<width>130</width>
+						<height>40</height>
+						<font>FontSize_22</font>
+						<textcolor>77white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.StartTime]</label>
+						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="58" width="480">
+					<control type="label">
+						<left>5</left>
+						<top>0</top>
+						<width>100</width>
+						<height>45</height>
+						<font>FontSize_24B</font>
+						<textcolor>white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>․</label>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>0</top>
+						<width>400</width>
+						<height>45</height>
+						<font>FontSize_24B</font>
+						<textcolor>white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>25</top>
+						<width>400</width>
+						<height>40</height>
+						<font>FontSize_20</font>
+						<textcolor>white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Title]</label>
+						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+					</control>
+					<control type="image.">
+						<left>120</left>
+						<top>5</top>
+						<width>30</width>
+						<height>20</height>
+						<texture>PVR-IsRecording.png</texture>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="image.">
+						<left>120</left>
+						<top>5</top>
+						<width>20</width>
+						<height>20</height>
+						<texture>PVR-HasTimer.png</texture>
+						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+					</control>
+					<control type="label.">
+						<left>400</left>
+						<top>0</top>
+						<width>130</width>
+						<height>40</height>
+						<font>FontSize_22</font>
+						<textcolor>white</textcolor>
+				    <shadowcolor>99000000</shadowcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.StartTime]</label>
+						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
+					</control>
+				</focusedlayout>
+			</control>
+	</include>
+
+	<!-- ====================================== -->
+	<!-- == Context Menu PVR Channel Manager == -->
+	<!-- ====================================== -->
 	<include name="ContextMenuPVRChannelManager">
       <control type="image" id="999">
         <description>background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
         <width>350</width>
         <height>304</height>
         <texture>-</texture>
@@ -852,8 +1175,8 @@
         <visible>false</visible>
       </control>
 			<control type="grouplist" id="996">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>350</width>
 				<height max="294">auto</height>
 				<itemgap>0</itemgap>
@@ -872,7 +1195,7 @@
 		    <shadowcolor>99000000</shadowcolor>
 				<align>center</align>
 				<aligny>top</aligny>
-				<textwidth>430</textwidth>
+				<textwidth>320</textwidth>
 				<textoffsetx>23</textoffsetx>
 				<textoffsety>7</textoffsety>
 				<texturefocus border="23">windows/filemanager/contextmenu_fo.png</texturefocus>
@@ -882,336 +1205,4 @@
 			</control>
 	</include>
 
-	<!-- ======================== -->
-	<!-- == PVR EPGuide OSD Menu == -->
-	<!-- ======================== -->
-	<include name="PVRGuideOSDMenu">
-			<control type="list" id="11">
-		    <include>TopOptionsSlideAnimations</include>
-		    <animation type="Conditional" reversible="false" condition="![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)]">
-		        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-		        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
-		    </animation>
-		    <animation type="Conditional" reversible="false" condition="Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)">
-		        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-		        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
-		    </animation>
-				<posx>45</posx>
-				<posy>75</posy>
-				<width>480</width>
-				<height>530</height>
-				<itemgap>0</itemgap>
-				<onleft>Close</onleft>
-				<onright>Close</onright>
-        <preloaditems>2</preloaditems>
-				<viewtype label="535">list</viewtype>
-			  <scrolltime tween="cubic" easing="out">300</scrolltime>
-				<itemlayout height="58" width="480">
-					<control type="label">
-						<posx>5</posx>
-						<posy>0</posy>
-						<width>100</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>․</label>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>25</posy>
-						<width>400</width>
-						<height>40</height>
-						<font>FontSize_20</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="image.">
-						<posx>120</posx>
-						<posy>5</posy>
-						<width>30</width>
-						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image.">
-						<posx>120</posx>
-						<posy>5</posy>
-						<width>20</width>
-						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label.">
-						<posx>400</posx>
-						<posy>0</posy>
-						<width>130</width>
-						<height>40</height>
-						<font>FontSize_22</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout height="58" width="480">
-					<control type="label">
-						<posx>5</posx>
-						<posy>0</posy>
-						<width>100</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>․</label>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>25</posy>
-						<width>400</width>
-						<height>40</height>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="image.">
-						<posx>120</posx>
-						<posy>5</posy>
-						<width>30</width>
-						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image.">
-						<posx>120</posx>
-						<posy>5</posy>
-						<width>20</width>
-						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label.">
-						<posx>400</posx>
-						<posy>0</posy>
-						<width>130</width>
-						<height>40</height>
-						<font>FontSize_22</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
-					</control>
-				</focusedlayout>
-			</control>
-	</include>
-
-
-
-	<!-- =========================== -->
-	<!-- == PVR Channels OSD Menu == -->
-	<!-- =========================== -->
-	<include name="PVRChannelsOSDMenu">
-			<control type="list" id="11">
-		    <include>TopOptionsSlideAnimations</include>
-		    <animation type="Conditional" reversible="false" condition="![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)]">
-		        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-		        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
-		    </animation>
-		    <animation type="Conditional" reversible="false" condition="Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)">
-		        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-		        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
-		    </animation>		    
-				<posx>45</posx>
-				<posy>75</posy>
-				<width>480</width>
-				<height>530</height>
-				<itemgap>0</itemgap>
-				<onleft>Close</onleft>
-				<onright>Close</onright>
-        <preloaditems>2</preloaditems>
-				<viewtype label="535">list</viewtype>
-			  <scrolltime tween="cubic" easing="out">350</scrolltime>
-				<itemlayout height="58" width="480">
-					<control type="label">
-						<posx>5</posx>
-						<posy>0</posy>
-						<width>100</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>․</label>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>25</posy>
-						<width>400</width>
-						<height>40</height>
-						<font>FontSize_20</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Title]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="image.">
-						<posx>120</posx>
-						<posy>5</posy>
-						<width>30</width>
-						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image.">
-						<posx>120</posx>
-						<posy>5</posy>
-						<width>20</width>
-						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label.">
-						<posx>400</posx>
-						<posy>0</posy>
-						<width>130</width>
-						<height>40</height>
-						<font>FontSize_22</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout height="58" width="480">
-					<control type="label">
-						<posx>5</posx>
-						<posy>0</posy>
-						<width>100</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>․</label>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>25</posy>
-						<width>400</width>
-						<height>40</height>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Title]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="image.">
-						<posx>120</posx>
-						<posy>5</posy>
-						<width>30</width>
-						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image.">
-						<posx>120</posx>
-						<posy>5</posy>
-						<width>20</width>
-						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label.">
-						<posx>400</posx>
-						<posy>0</posy>
-						<width>130</width>
-						<height>40</height>
-						<font>FontSize_22</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
-					</control>
-				</focusedlayout>
-			</control>
-	</include>
-
-
 </includes>
-				
-				
-				

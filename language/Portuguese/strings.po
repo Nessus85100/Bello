@@ -162,7 +162,7 @@ msgstr "Fechar"
 
 msgctxt "#31037"
 msgid "Change Rating"
-msgstr "Mudar classificação"
+msgstr "Alterar Classificação"
 
 msgctxt "#31038"
 msgid "Esc"
@@ -368,21 +368,37 @@ msgctxt "#31142"
 msgid "Choose Subtitles Add-on"
 msgstr "Escolher o add-on de legendas"
 
+msgctxt "#31143"
+msgid "Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-on)[/COLOR]"
+msgstr "Activar Informação do NextAired nos programas da TV [COLOR=55white](Requer Add-on do Next Aired)[/COLOR]"
+
+msgctxt "#31144"
+msgid "Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-on)[/COLOR]"
+msgstr "Activar Tema de Música nos Programas da TV [COLOR=55white](Requer Add-on do TV Tunes)[/COLOR]"
+
 msgctxt "#31149"
 msgid "Download [COLOR=selected]banner.jpg[/COLOR] for all TV Shows"
 msgstr "Download [COLOR=selected]banner.jpg[/COLOR] para todas as Séries TV"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
-msgstr "Ativar ecrã de login"
+msgstr "Activar ecrã de login"
 
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Escolher add-on de Trailers"
 
+msgctxt "#31155"
+msgid "Add-ons Button opens..."
+msgstr "O Botão dos Add-ons abre ..."
+
 msgctxt "#31158"
 msgid "Views"
 msgstr "Vistas"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Activar Modo de Quiosque"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -399,6 +415,18 @@ msgstr "A minha Música"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Nova Procura"
+
+msgctxt "#31205"
+msgid "Browse the most recently added movies"
+msgstr "Pesquisar os filmes adicionados mais recentemente"
+
+msgctxt "#31206"
+msgid "Browse the most recently added episodes"
+msgstr "Pesquisar os episódios adicionados mais recentemente"
+
+msgctxt "#31207"
+msgid "Browse the most recently added albums"
+msgstr "Pesquisar os álbuns adicionados mais recentemente"
 
 msgctxt "#31214"
 msgid "Airing"
@@ -538,7 +566,7 @@ msgstr "Guardar lista de reprodução"
 
 msgctxt "#31282"
 msgid "Close Playlist"
-msgstr "Fechar lista de reprodução"
+msgstr "Fechar Lista de Reprodução"
 
 msgctxt "#31283"
 msgid "System Music Files"

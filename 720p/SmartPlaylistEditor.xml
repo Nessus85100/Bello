@@ -1,4 +1,5 @@
-<window id="136">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="136">
 	<defaultcontrol always="true">22</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
@@ -13,8 +14,8 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<posx>305</posx>
-				<posy>170</posy>
+				<left>305</left>
+				<top>170</top>
 				<width>670</width>
 				<height>50</height>
 				<font>FontSize_36</font>
@@ -43,8 +44,8 @@
 				</control>			
 				<control type="spincontrolex" id="22">
 					<description>Set Playlist type</description>
-					<posx>328</posx>
-					<posy>222</posy>
+					<left>328</left>
+					<top>222</top>
 					<width>624</width>
 					<height>45</height>
 					<label>467</label>
@@ -56,8 +57,8 @@
 				</control>
 				<control type="label">
 					<description>Name Label</description>
-					<posx>330</posx>
-					<posy>274</posy>
+					<left>330</left>
+					<top>274</top>
 					<width>620</width>
 					<height>30</height>
 					<align>left</align>
@@ -69,8 +70,8 @@
 				</control>
 				<control type="edit" id="12">
 					<description>Name Button</description>
-					<posx>328</posx>
-					<posy>306</posy>
+					<left>328</left>
+					<top>306</top>
 					<width>624</width>
 					<height>45</height>
 					<textoffsetx>10</textoffsetx>
@@ -102,8 +103,8 @@
 				</control>						
 				<control type="label">
 					<description>rules label</description>
-					<posx>330</posx>
-					<posy>357</posy>
+					<left>330</left>
+					<top>357</top>
 					<width>620</width>
 					<height>30</height>
 					<align>left</align>
@@ -116,8 +117,8 @@
 				<control type="group" id="9000">
 					<control type="list" id="10">
 						<description>Rules List Control</description>
-						<posx>328</posx>
-						<posy>388</posy>
+						<left>328</left>
+						<top>388</top>
 						<width>460</width>
 						<height>154</height>
 						<onup>12</onup>
@@ -128,8 +129,8 @@
 						<include>VisibleFadeEffect</include>
 						<itemlayout height="51" width="460">
 							<control type="label">
-								<posx>10</posx>
-								<posy>-1</posy>
+								<left>10</left>
+								<top>-1</top>
 								<width>446</width>
 								<height>45</height>
 								<font>FontSize_20</font>
@@ -142,8 +143,8 @@
 						</itemlayout>
 						<focusedlayout height="51" width="460">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>460</width>
 								<height>45</height>
 								<texture>buttons/settings_fo.png</texture>
@@ -151,8 +152,8 @@
 		            <include>FocusVisibleFadeEffect</include>
 						  </control>
 							<control type="label">
-								<posx>10</posx>
-								<posy>-1</posy>
+								<left>10</left>
+								<top>-1</top>
 								<width>446</width>
 								<height>45</height>
 								<font>FontSize_20</font>
@@ -164,8 +165,8 @@
 								<visible>Control.HasFocus(10)</visible>
 							</control>
 							<control type="label">
-								<posx>10</posx>
-								<posy>-1</posy>
+								<left>10</left>
+								<top>-1</top>
 								<width>446</width>
 								<height>45</height>
 								<font>FontSize_20</font>
@@ -179,11 +180,11 @@
 						</focusedlayout>
 					</control>
 					<control type="group" id="9001">
-						<posx>792</posx>
-						<posy>388</posy>
+						<left>792</left>
+						<top>388</top>
 						<control type="button" id="13">
 							<description>Add Rule Button</description>
-							<posy>0</posy>
+							<top>0</top>
 							<width>160</width>
 							<height>45</height>
 							<label>15019</label>
@@ -196,7 +197,7 @@
 						</control>
 						<control type="button" id="14">
 							<description>Remove Rule Button</description>
-							<posy>49</posy>
+							<top>49</top>
 							<height>45</height>
 							<width>160</width>
 							<label>1210</label>
@@ -209,7 +210,7 @@
 						</control>
 						<control type="button" id="15">
 							<description>Edit Rule Button</description>
-							<posy>98</posy>
+							<top>98</top>
 							<height>45</height>
 							<width>160</width>
 							<label>21435</label>
@@ -239,8 +240,8 @@
 					<texture background="true">dialogs/playlist_editor/playlisteditor_bottom.png</texture>
 				</control>
 				<control type="spincontrolex" id="16">
-					<posx>328</posx>
-					<posy>388</posy>
+					<left>328</left>
+					<top>388</top>
 					<width>624</width>
 					<height>45</height>
 					<label>21424</label>
@@ -252,8 +253,8 @@
 	        <include>DialogsSpincontrolex</include>
 				</control>
 				<control type="spincontrolex" id="17">
-					<posx>328</posx>
-					<posy>437</posy>
+					<left>328</left>
+					<top>437</top>
 					<width>624</width>
 					<height>45</height>
 					<label>21427</label>
@@ -265,8 +266,8 @@
 	        <include>DialogsSpincontrolex</include>
 				</control>
 				<control type="spincontrolex" id="18">
-					<posx>328</posx>
-					<posy>487</posy>
+					<left>328</left>
+					<top>487</top>
 					<width>460</width>
 					<height>45</height>
 					<label>21429</label>
@@ -278,8 +279,8 @@
 	        <include>DialogsSpincontrolex</include>
 				</control>
 				<control type="togglebutton" id="19">
-					<posx>792</posx>
-					<posy>487</posy>
+					<left>792</left>
+					<top>487</top>
 					<width>160</width>
 					<height>45</height>
 					<label>21431</label>
@@ -297,12 +298,12 @@
 			</control>
 
 		  <control type="group" id="10000">
-				<posx>330</posx>
-				<posy>528</posy>
+				<left>330</left>
+				<top>528</top>
 	      <!-- Buttons -->
 				<control type="grouplist" id="10001">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>0</width>
 					<height>0</height>
 					<itemgap>0</itemgap>
@@ -331,8 +332,8 @@
 				</control>
 	      <!-- Buttons Labels -->
 				<control type="grouplist">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>70</height>
 					<width>552</width>
 					<itemgap>30</itemgap>

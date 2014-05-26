@@ -1,3 +1,30 @@
+[B]v2.0.0[/B]
+• Full Gotham support.
+• Added Skin support for the Cinema Experience script.
+• Added Skin support for the Metadata Actors script.
+• Added Skin support for the Video Language script (Audio and Subtitles).
+• Added Skin support for the new NextAired script futures.
+• Added 3D media flag and OSD button.
+• Added more optional QuickNav  widgets.
+• Added progress indicator to PVR EPG Timeline.
+• Added channel icon to PVR EPG Timeline.
+• Added support for cdArt in ListWall View.
+• Added support for accessing favourites from everywhere in the skin.
+• Added Reset Skin Settings button.
+• Added optional "Exit" button to Home Menu.
+• Added more rows in PVR windows.
+• Added random fanart background to Home Menu categories.
+• Added eject command to DVD Home Menu entry (press "DOWN" key).
+• Changed raname option to Home Menu custom buttons to "DOWN" instead of "BACK" key.
+• Fixed multiImage custom background bug not showing only in Home screen.
+• Fixed dots bug in video addons list view overlapping flag.
+• Fixed weather screen bug when no weather data are available.
+• Show track number in Songs ListView.
+• Updated skin's screenshots.
+• Updated skin's dependencies.
+• Updated language files from Transifex.
+• Several other cleanups, tweaks and code fixes across the whole skin.
+
 [B]v1.5.5[/B]
 • Added ReccentlyAdded Movies, TVShows and Music items in QuickNav.
 • Added LiveTV Home Submenu.

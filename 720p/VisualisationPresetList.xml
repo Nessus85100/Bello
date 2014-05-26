@@ -1,4 +1,5 @@
-<window id="122">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="122">
 	<defaultcontrol always="true">100</defaultcontrol>
 	<controls>
 	<control type="button" id="100">
@@ -23,8 +24,8 @@
 			</control>
 			<control type="label">
 				<description>Heding Label</description>
-				<posx>357</posx>
-				<posy>165</posy>
+				<left>357</left>
+				<top>165</top>
 				<width>565</width>
 				<label>$LOCALIZE[31309]</label>
 				<font>FontSize_36</font>
@@ -35,8 +36,8 @@
 			</control>
 			<control type="label" id="4">
 				<description>No Settings Label</description>
-				<posx>320</posx>
-				<posy>195</posy>
+				<left>320</left>
+				<top>195</top>
 				<width>640</width>
 				<height>352</height>
 				<textcolor>77white</textcolor>
@@ -45,8 +46,8 @@
 				<font>FontSize_20</font>
 			</control>
 			<control type="list" id="2">
-				<posx>362</posx>
-				<posy>209</posy>
+				<left>362</left>
+				<top>209</top>
 				<width>556</width>
 				<height>357</height>
 			  <itemgap>4</itemgap>
@@ -57,8 +58,8 @@
 			  <scrolltime tween="Cubic" easing="Out">250</scrolltime>
 				<itemlayout height="51" width="558">
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>536</width>
 						<height>47</height>
 						<font>FontSize_20</font>
@@ -71,8 +72,8 @@
 				</itemlayout>
 				<focusedlayout height="51" width="558">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>556</width>
 						<height>47</height>
 					  <texture>buttons/settings_fo.png</texture>
@@ -80,8 +81,8 @@
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>536</width>
 						<height>47</height>
 						<font>FontSize_20</font>

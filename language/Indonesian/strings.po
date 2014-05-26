@@ -24,6 +24,10 @@ msgctxt "#31007"
 msgid "Sort: Descending"
 msgstr "Sortir: Terbalik"
 
+msgctxt "#31018"
+msgid "Trailers"
+msgstr "Trailer"
+
 msgctxt "#31023"
 msgid "Info"
 msgstr "Info"

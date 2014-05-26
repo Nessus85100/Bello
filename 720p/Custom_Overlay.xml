@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="50">
+<window  type="dialog" id="50">
 	<zorder>2</zorder>
 	<visible>!Window.IsVisible(startup)</visible>
 	<controls>
@@ -8,18 +8,28 @@
 
 		<control type="image">
 			<visible>Skin.HasSetting(ShowDebugGrid)</visible>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>debug/debuggrid.png</texture>
 		</control>
 
+		<control type="image">
+			<visible>Skin.HasSetting(ShowDebugInfo)</visible>
+			<left>0</left>
+			<top>0</top>
+			<width>1280</width>
+			<height>720</height>
+			<texture>debug/skin_area.png</texture>
+		</control>
+
+
 		<!-- Window/Dialog debug -->
 
 		<control type="grouplist">
-			<posx>15</posx>
-			<posy>15</posy>
+			<left>5</left>
+			<top>5</top>
 			<width>780</width>
 			<height>450</height>
 			<itemgap>12</itemgap>
@@ -960,8 +970,8 @@
 				<shadowcolor>99000000</shadowcolor>
 				<font>FontSize_22B</font>
 				<align>left</align>
-				<label>script-XBMC-Subtitles-main.xml</label>
-				<visible>Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
+				<label>SubtitleSearch</label>
+				<visible>Window.IsVisible(SubtitleSearch)</visible>
 			</control>
 
 			<control type="label">
@@ -974,14 +984,58 @@
 				<label>script-NextAired-TVGuide.xml</label>
 				<visible>Window.IsVisible(script-NextAired-TVGuide.xml)</visible>
 			</control>
+			
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+				<font>FontSize_22B</font>
+				<align>left</align>
+				<label>script-Actors-Browser.xml</label>
+				<visible>Window.IsVisible(script-Actors-Browser.xml)</visible>
+			</control>
+						
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+				<font>FontSize_22B</font>
+				<align>left</align>
+				<label>script-Actors-ContextMenu.xml</label>
+				<visible>Window.IsVisible(script-Actors-ContextMenu.xml)</visible>
+			</control>
+
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+				<font>FontSize_22B</font>
+				<align>left</align>
+				<label>script-Actors-DialogInfo.xml</label>
+				<visible>Window.IsVisible(script-Actors-DialogInfo.xml)</visible>
+			</control>
+
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>99000000</shadowcolor>
+				<font>FontSize_22B</font>
+				<align>left</align>
+				<label>script-Actors-DialogVideoInfo.xml</label>
+				<visible>Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
+			</control>
 		</control>
 
 		<!-- Control label -->
 
 		<control type="label">
-			<posx>15r</posx>
-			<posy>15</posy>
-			<width>780</width>
+			<right>5</right>
+			<top>5</top>
+			<width>1000</width>
 			<height>21</height>
 			<textcolor>FF0000FF</textcolor>
 			<shadowcolor>99000000</shadowcolor>
@@ -994,9 +1048,9 @@
 		<!-- Path label -->
 
 		<control type="label">
-			<posx>15r</posx>
-			<posy>48</posy>
-			<width>780</width>
+			<right>5</right>
+			<top>30</top>
+			<width>1000</width>
 			<height>21</height>
 			<textcolor>FFFF0000</textcolor>
 			<shadowcolor>99000000</shadowcolor>
@@ -1006,5 +1060,66 @@
 			<visible>Skin.HasSetting(ShowDebugInfo)</visible>
 		</control>
 
+		<!-- Container label -->
+
+		<control type="label">
+			<left>0</left>
+			<top>695</top>
+			<width>640</width>
+			<height>21</height>
+			<textcolor>FFFFFF40</textcolor>
+			<shadowcolor>99000000</shadowcolor>
+			<font>FontSize_22B</font>
+			<align>right</align>
+			<label>Container.HasFolders</label>
+			<visible>Container.HasFolders</visible>
+			<visible>Skin.HasSetting(ShowDebugInfo)</visible>
+		</control>
+		<control type="label">
+			<left>640</left>
+			<top>695</top>
+			<width>640</width>
+			<height>21</height>
+			<textcolor>FFFFFF40</textcolor>
+			<shadowcolor>99000000</shadowcolor>
+			<font>FontSize_22B</font>
+			<align>left</align>
+			<label> | Container.HasFiles</label>
+			<visible>Container.HasFiles</visible>
+			<visible>Skin.HasSetting(ShowDebugInfo)</visible>
+		</control>
+
+
+		<!-- CPU & RAM label -->
+		
+		<control type="label" id="1">
+			<left>5</left>
+			<top>690</top>
+			<height>25</height>
+			<width>1190</width>
+			<font>FontSize_20B</font>
+			<textcolor>purple</textcolor>
+			<shadowcolor>99000000</shadowcolor>
+	    <align>left</align>
+	    <aligny>center</aligny>
+			<scroll>false</scroll>
+			<label>$INFO[System.CPUUsage,CPU: ]</label>
+			<visible>Skin.HasSetting(ShowDebugInfo)</visible>
+		</control>
+
+		<control type="label" id="1">
+			<right>5</right>
+			<top>690</top>
+			<height>25</height>
+			<width>1190</width>
+			<font>FontSize_20B</font>
+			<textcolor>purple</textcolor>
+			<shadowcolor>99000000</shadowcolor>
+	    <align>right</align>
+	    <aligny>center</aligny>
+			<scroll>false</scroll>
+			<label>$INFO[System.Memory(used.percent),RAM: ]</label>
+			<visible>Skin.HasSetting(ShowDebugInfo)</visible>
+		</control>				
 	</controls>
 </window>

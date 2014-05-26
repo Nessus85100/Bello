@@ -2,35 +2,19 @@
 # Addon Name: Bello
 # Addon id: skin.bello
 # Addon Provider: Nessus
-# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-12-14 22:40+0000\n"
-"Last-Translator: TeamXBMC <xbmctranslations@gmail.com>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
 "Language-Team: Bulgarian (http://www.transifex.com/projects/p/xbmc-skins/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgctxt "Addon Summary"
-msgid "A GUI for XBMC Media Center"
-msgstr "Облик за XBMC"
-
-msgctxt "Addon Description"
-msgid ""
-"Bello is a GUI for XBMC Media Center. The goal of Bello is to maximize your "
-"XBMC entertainment experience with it's fast, unique and unified interface "
-"along with all the latest features of XBMC."
-msgstr ""
-
-msgctxt "Addon Disclaimer"
-msgid "Mouse usage is not supported"
-msgstr "Не се поддържа използването на мишка"
 
 msgctxt "#31000"
 msgid "Live TV"
@@ -42,15 +26,15 @@ msgstr "ТВ гид"
 
 msgctxt "#31002"
 msgid "TV Shows"
-msgstr "TV Сериали"
+msgstr "ТВ Сериали"
 
 msgctxt "#31003"
 msgid "Aired"
-msgstr "Излъчен"
+msgstr "Излъчен на"
 
 msgctxt "#31004"
 msgid "Premiere"
-msgstr ""
+msgstr "Премиера"
 
 msgctxt "#31005"
 msgid "Track Number"
@@ -66,7 +50,7 @@ msgstr "Ред: Низходящ"
 
 msgctxt "#31008"
 msgid "System auto shutdown in"
-msgstr ""
+msgstr "Системата ще се изключи след"
 
 msgctxt "#31009"
 msgid "Context Menu"
@@ -74,31 +58,31 @@ msgstr "Контекстно меню"
 
 msgctxt "#31010"
 msgid "-"
-msgstr ""
+msgstr "-"
 
 msgctxt "#31011"
 msgid "ON"
-msgstr ""
+msgstr "Вкл."
 
 msgctxt "#31012"
 msgid "OFF"
-msgstr ""
+msgstr "Изкл."
 
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
-msgstr ""
+msgstr "Включи анимирането на началното меню"
 
 msgctxt "#31014"
 msgid "ViewType Options"
-msgstr ""
+msgstr "Настройки на изгледа"
 
 msgctxt "#31015"
 msgid "General Options"
-msgstr ""
+msgstr "Настройки"
 
 msgctxt "#31016"
 msgid "File Manager"
-msgstr ""
+msgstr "Диспечер на файлове"
 
 msgctxt "#31017"
 msgid "Karaoke Song Selector"
@@ -110,7 +94,7 @@ msgstr "Трейлъри"
 
 msgctxt "#31019"
 msgid "Search for movies directed by"
-msgstr ""
+msgstr "Търси за филми режисирани от"
 
 msgctxt "#31020"
 msgid "Found"
@@ -118,11 +102,11 @@ msgstr "Резултат:"
 
 msgctxt "#31021"
 msgid "Music Library"
-msgstr ""
+msgstr "Музикална библиотека"
 
 msgctxt "#31022"
 msgid "Music Files"
-msgstr ""
+msgstr "Музикални файлове"
 
 msgctxt "#31023"
 msgid "Info"
@@ -138,19 +122,11 @@ msgstr "Елемента"
 
 msgctxt "#31026"
 msgid "Scrolling..."
-msgstr ""
+msgstr "Превъртане..."
 
 msgctxt "#31027"
 msgid "Memory Used:"
 msgstr "Памет в употреба:"
-
-msgctxt "#31028"
-msgid "Move Left"
-msgstr ""
-
-msgctxt "#31029"
-msgid "Move Right"
-msgstr ""
 
 msgctxt "#31030"
 msgid "AM"
@@ -162,7 +138,7 @@ msgstr "След обяд"
 
 msgctxt "#31032"
 msgid "User Login"
-msgstr ""
+msgstr "Потребител"
 
 msgctxt "#31033"
 msgid "Channel Group"
@@ -170,11 +146,7 @@ msgstr "Група канали"
 
 msgctxt "#31034"
 msgid "Teletext"
-msgstr ""
-
-msgctxt "#31035"
-msgid "REC"
-msgstr ""
+msgstr "Телетекст"
 
 msgctxt "#31036"
 msgid "Close"
@@ -182,23 +154,15 @@ msgstr "Затвори"
 
 msgctxt "#31037"
 msgid "Change Rating"
-msgstr ""
+msgstr "Промени рейтинга"
 
 msgctxt "#31038"
 msgid "Esc"
-msgstr ""
+msgstr "Esc"
 
 msgctxt "#31039"
 msgid "IP Address"
 msgstr "IP адрес"
-
-msgctxt "#31040"
-msgid "Created by"
-msgstr ""
-
-msgctxt "#31041"
-msgid "Creator"
-msgstr ""
 
 msgctxt "#31080"
 msgid "Slide"
@@ -206,15 +170,15 @@ msgstr "Плъзгане"
 
 msgctxt "#31081"
 msgid "Gallery"
-msgstr ""
+msgstr "Галерия"
 
 msgctxt "#31082"
 msgid "3D Wall"
-msgstr ""
+msgstr "3D стена"
 
 msgctxt "#31083"
 msgid "Wall"
-msgstr ""
+msgstr "Стена"
 
 msgctxt "#31084"
 msgid "Posters"
@@ -226,131 +190,119 @@ msgstr "Миниатюри"
 
 msgctxt "#31086"
 msgid "Banner List"
-msgstr ""
+msgstr "Списък с банери"
 
 msgctxt "#31087"
 msgid "VideoWall Fanart"
-msgstr ""
+msgstr "Видео стена от Fanart"
 
 msgctxt "#31088"
 msgid "List Wall"
-msgstr ""
+msgstr "Списъчна стена"
 
 msgctxt "#31098"
 msgid "Home Menu"
-msgstr ""
+msgstr "Начално меню"
 
 msgctxt "#31099"
 msgid "Show Home Menu Buttons"
-msgstr ""
+msgstr "Показвани бутони в началното меню"
 
 msgctxt "#31100"
 msgid "Hide Home Menu Buttons"
-msgstr ""
+msgstr "Скриване на бутони от началното меню"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
-msgstr ""
-
-msgctxt "#31102"
-msgid "Hide Now Playing Video Info"
-msgstr ""
-
-msgctxt "#31103"
-msgid "Hide Now Playing Music Info"
-msgstr ""
+msgstr "Показвай текущите метеорологични условия"
 
 msgctxt "#31104"
 msgid "Hide Search Button"
-msgstr ""
+msgstr "Без бутона за търсене"
 
 msgctxt "#31105"
 msgid "Hide Trailers Button"
-msgstr ""
+msgstr "Без бутона за трейлъри"
 
 msgctxt "#31106"
 msgid "Hide Movies Button"
-msgstr ""
+msgstr "Без бутона за филми"
 
 msgctxt "#31107"
 msgid "Hide TV Shows Button"
-msgstr ""
+msgstr "Без бутона за ТВ Сериали"
 
 msgctxt "#31108"
 msgid "Hide Music Button"
-msgstr ""
+msgstr "Без бутона за музика"
 
 msgctxt "#31109"
 msgid "Hide Pictures Button"
-msgstr ""
+msgstr "Без бутона за снимки"
 
 msgctxt "#31110"
 msgid "Hide Programs Button"
-msgstr ""
+msgstr "Без бутона за програми"
 
 msgctxt "#31111"
 msgid "Hide Add-ons Button"
-msgstr ""
+msgstr "Без бутона за добавки"
 
 msgctxt "#31112"
 msgid "Hide Weather Button"
-msgstr ""
+msgstr "Без бутона за времето"
 
 msgctxt "#31113"
 msgid "Hide Settings Button"
-msgstr ""
+msgstr "Без бутона за настройки"
 
 msgctxt "#31114"
 msgid "Show Videos Button"
-msgstr ""
+msgstr "Показвай бутона за видео"
 
 msgctxt "#31115"
 msgid "Show DVD Button"
-msgstr ""
+msgstr "Показвай бутона за DVD"
 
 msgctxt "#31116"
 msgid "Show Music Videos Button"
-msgstr ""
+msgstr "Показвай бутона за музикални клипове"
 
 msgctxt "#31117"
 msgid "Music Button opens..."
-msgstr ""
+msgstr "Бутонът \"Музика\" да отваря..."
 
 msgctxt "#31118"
 msgid "Custom Button"
-msgstr ""
+msgstr "Персонален бутон"
 
 msgctxt "#31119"
 msgid "Custom Home Menu Buttons"
-msgstr ""
+msgstr "Персонални бутони в началното меню"
 
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
-msgstr ""
+msgstr "Без подменю за раздел Филми"
 
 msgctxt "#31121"
 msgid "Hide TV Shows Submenu"
-msgstr ""
+msgstr "Без подменю за раздел ТВ Сериали"
 
 msgctxt "#31122"
 msgid "Hide Music Submenu"
-msgstr ""
+msgstr "Без подменю за раздел Музика"
 
 msgctxt "#31123"
 msgid "Hide Settings Submenu"
-msgstr ""
-
-msgctxt "#31124"
-msgid "Flashing Lights"
-msgstr ""
+msgstr "Без подменю за раздел Настройки"
 
 msgctxt "#31125"
 msgid "Edit Info"
-msgstr ""
+msgstr "Редактирай информацията"
 
 msgctxt "#31126"
 msgid "Episode Thumb"
-msgstr ""
+msgstr "Миниатюра на епизода"
 
 msgctxt "#31127"
 msgid "Landscape"
@@ -362,23 +314,23 @@ msgstr "Изчистено изображение"
 
 msgctxt "#31129"
 msgid "ClearLogo"
-msgstr ""
+msgstr "ClearLogo"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
-msgstr ""
+msgstr "Без Fanart, в който и да е раздел"
 
 msgctxt "#31131"
 msgid "Show Only on Home Screen"
-msgstr ""
+msgstr "Само на началния екран"
 
 msgctxt "#31132"
 msgid "Hide Background Video"
-msgstr ""
+msgstr "Без показване на текущо възпроизвежданото видео на заден план"
 
 msgctxt "#31133"
 msgid "Custom Background"
-msgstr ""
+msgstr "Персонален фон"
 
 msgctxt "#31134"
 msgid "Edit Background for Media Type"
@@ -394,169 +346,159 @@ msgstr "Няколко картини"
 
 msgctxt "#31137"
 msgid "Enable Notifications"
-msgstr ""
+msgstr "Известия"
 
 msgctxt "#31138"
 msgid "Enable Movies Notifications"
-msgstr ""
+msgstr "Включи известията за филми"
 
 msgctxt "#31139"
 msgid "Enable Addons Notifications"
-msgstr ""
+msgstr "Включи известията за добавки"
 
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
-msgstr ""
+msgstr "Включи известията за времето"
 
 msgctxt "#31141"
 msgid "Choose Lyrics Add-on"
-msgstr ""
+msgstr "Избертете добавка за лириките"
 
 msgctxt "#31142"
 msgid "Choose Subtitles Add-on"
-msgstr ""
-
-msgctxt "#31143"
-msgid ""
-"Enable NextAired Info on TV Shows [COLOR=55white](Requires Next Aired Add-"
-"on)[/COLOR]"
-msgstr ""
+msgstr "Изберете добавка за субтитрите"
 
 msgctxt "#31144"
-msgid ""
-"Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-"
-"on)[/COLOR]"
-msgstr ""
+msgid "Enable Music Theme on TV Shows [COLOR=55white](Requires TV Tunes Add-on)[/COLOR]"
+msgstr "Включи тематичните мелодии от ТВ Сериали [COLOR=55white](изисква добавката TvTunes)[/COLOR]"
 
 msgctxt "#31145"
 msgid "Download music themes for all TV Shows"
-msgstr ""
+msgstr "Свали мелодия за всеки ТВ Сериал"
 
 msgctxt "#31146"
 msgid "Download [COLOR=selected]logo.png[/COLOR] for all TV Shows"
-msgstr ""
+msgstr "Свали [COLOR=selected]logo.png[/COLOR] за всеки ТВ Сериал"
 
 msgctxt "#31147"
 msgid "Download [COLOR=selected]clearart.png[/COLOR] for all TV Shows"
-msgstr ""
+msgstr "Свали [COLOR=selected]clearart.png[/COLOR] за всеки ТВ Сериал"
 
 msgctxt "#31148"
 msgid "Download [COLOR=selected]landscape.jpg[/COLOR] for all TV Shows"
-msgstr ""
+msgstr "Свали [COLOR=selected]landscape.jpg[/COLOR] за всеки ТВ Сериал"
 
 msgctxt "#31149"
 msgid "Download [COLOR=selected]banner.jpg[/COLOR] for all TV Shows"
-msgstr ""
+msgstr " Свали [COLOR=selected]banner.jpg[/COLOR] за всеки ТВ Сериал"
 
 msgctxt "#31150"
 msgid "Download [COLOR=selected]poster.jpg[/COLOR] for all TV Shows"
-msgstr ""
+msgstr "Свали [COLOR=selected]poster.jpg[/COLOR] за всеки ТВ Сериал"
 
 msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
-msgstr ""
+msgstr "Показвай RSS емисиите из всяка секция на облика"
 
 msgctxt "#31152"
-msgid ""
-"Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-"
-"DVD)[/COLOR]"
-msgstr ""
+msgid "Hide Live TV Submenu"
+msgstr "Без подменю за раздел Телевизия"
 
 msgctxt "#31153"
 msgid "Enable Login Screen"
-msgstr ""
+msgstr "Включи екрана за влизане"
 
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
-msgstr ""
+msgstr "Изберете добавка за трейлърите"
 
 msgctxt "#31155"
 msgid "Add-ons Button opens..."
-msgstr ""
+msgstr "Бутонът \"Добавки\" да отваря..."
 
 msgctxt "#31156"
 msgid "Hide Video Views"
-msgstr ""
+msgstr "Скриване на изгледи във видео раздела"
 
 msgctxt "#31157"
 msgid "Hide Music Views"
-msgstr ""
+msgstr "Скриване на изгледи в музикалния раздел"
 
 msgctxt "#31158"
 msgid "Views"
 msgstr "Изгледи"
 
-msgctxt "#31159"
-msgid "Show FullScreenInfo instead of the SeekBar"
-msgstr ""
+msgctxt "#31160"
+msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
+msgstr "Свали [COLOR=selected]logo.png[/COLOR] за всеки филм"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Включи kiosk режима"
 
 msgctxt "#31200"
 msgid "My Movies"
-msgstr ""
+msgstr "Моите филми"
 
 msgctxt "#31201"
 msgid "My TV Shows"
-msgstr ""
+msgstr "Моите ТВ Сериали"
 
 msgctxt "#31202"
 msgid "My Music"
-msgstr ""
+msgstr "Моята музика"
 
 msgctxt "#31203"
 msgid "New Search"
-msgstr ""
+msgstr "Ново търсене"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
-msgstr ""
+msgstr "Преглед на наскоро добавените филми"
 
 msgctxt "#31206"
 msgid "Browse the most recently added episodes"
-msgstr ""
+msgstr "Преглед на наскоро добавените епизоди"
 
 msgctxt "#31207"
 msgid "Browse the most recently added albums"
-msgstr ""
+msgstr "Преглед на наскоро добавените албуми"
 
 msgctxt "#31208"
 msgid "Browse all movies in progress"
-msgstr ""
+msgstr "Преглед на недогледаните филми"
 
 msgctxt "#31209"
 msgid "Browse all shows in progress"
-msgstr ""
+msgstr "Преглед на недогледаните ТВ Сериали"
 
 msgctxt "#31210"
 msgid "Browse all music in progress"
-msgstr ""
+msgstr "Преглед на всички недослушани песни"
 
 msgctxt "#31211"
 msgid "Browse all movies in your library"
-msgstr ""
+msgstr "Преглед на всички филми от библиотеката"
 
 msgctxt "#31212"
 msgid "Browse all shows in your library"
-msgstr ""
+msgstr "Преглед на всички ТВ Сериали от библиотеката"
 
 msgctxt "#31213"
 msgid "Browse all music in your library"
-msgstr ""
+msgstr "Преглед на всички песни от библиотеката"
 
 msgctxt "#31214"
 msgid "Airing"
-msgstr ""
+msgstr "Излъчващи се"
 
 msgctxt "#31215"
 msgid "Next Airs"
-msgstr ""
+msgstr "Предстоящо"
 
 msgctxt "#31216"
 msgid "Last Aired"
-msgstr ""
-
-msgctxt "#31217"
-msgid "Wide Thumb"
-msgstr ""
+msgstr "Последно"
 
 msgctxt "#31218"
 msgid "Landscape"
@@ -568,15 +510,11 @@ msgstr "Лого"
 
 msgctxt "#31220"
 msgid "Extra Info"
-msgstr ""
-
-msgctxt "#31221"
-msgid "Get Extra Art"
-msgstr ""
+msgstr "Допълнителна инф."
 
 msgctxt "#31222"
 msgid "Get TV Tune"
-msgstr ""
+msgstr "Свали мелодия"
 
 msgctxt "#31223"
 msgid "36 Hour Forecast"
@@ -592,31 +530,31 @@ msgstr "Прогноза за уикенда"
 
 msgctxt "#31226"
 msgid "10 Days Forecast"
-msgstr ""
+msgstr "10 дневна прогноза"
 
 msgctxt "#31227"
 msgid "From"
-msgstr ""
+msgstr "От"
 
 msgctxt "#31228"
 msgid "at"
-msgstr ""
+msgstr "в"
 
 msgctxt "#31229"
 msgid "Last Updated"
-msgstr "Последна актуализация"
+msgstr "Последно обновяване"
 
 msgctxt "#31230"
 msgid "Data Provider"
-msgstr ""
+msgstr "Източник на данни"
 
 msgctxt "#31231"
 msgid "Max Humidity"
-msgstr ""
+msgstr "Макс. влажност"
 
 msgctxt "#31232"
 msgid "Min Humidity"
-msgstr ""
+msgstr "Мин. влажност"
 
 msgctxt "#31233"
 msgid "Chance of Precipitation"
@@ -624,11 +562,11 @@ msgstr "Вероятност за преваляване"
 
 msgctxt "#31234"
 msgid "Fetching Forecast Info for..."
-msgstr ""
+msgstr "Изтегляне на прогнозата за..."
 
 msgctxt "#31235"
 msgid "Current Forecast"
-msgstr ""
+msgstr "Текуща прогноза"
 
 msgctxt "#31236"
 msgid "Forecast"
@@ -636,19 +574,7 @@ msgstr "Прогноза"
 
 msgctxt "#31237"
 msgid "View"
-msgstr "Вид"
-
-msgctxt "#31238"
-msgid "No Shows Airing Today"
-msgstr ""
-
-msgctxt "#31239"
-msgid "Shows Listed"
-msgstr ""
-
-msgctxt "#31240"
-msgid "Shows Airing Today"
-msgstr ""
+msgstr "Изглед"
 
 msgctxt "#31241"
 msgid "Recently Added Movies"
@@ -656,75 +582,75 @@ msgstr "Наскоро добавени филми"
 
 msgctxt "#31242"
 msgid "Recently Added TV Shows"
-msgstr ""
+msgstr "Наскоро добавени ТВ Сериали"
 
 msgctxt "#31243"
 msgid "Recently Added Music"
-msgstr ""
+msgstr "Наскоро добавена музика"
 
 msgctxt "#31244"
 msgid "New Movies"
-msgstr ""
+msgstr "Нови филми"
 
 msgctxt "#31245"
 msgid "New TV Shows"
-msgstr ""
+msgstr "Нови ТВ Сериали"
 
 msgctxt "#31246"
 msgid "New Music"
-msgstr ""
+msgstr "Нова музика"
 
 msgctxt "#31247"
 msgid "Random Movies"
-msgstr ""
+msgstr "Случаен филм"
 
 msgctxt "#31248"
 msgid "Random TV Shows"
-msgstr ""
+msgstr "Случаен ТВ Сериал"
 
 msgctxt "#31249"
 msgid "Random Music"
-msgstr ""
+msgstr "Случайна песен"
 
 msgctxt "#31250"
 msgid "All Movies"
-msgstr ""
+msgstr "Всички филми"
 
 msgctxt "#31251"
 msgid "All TV Shows"
-msgstr "Всички сериали"
+msgstr "Всички ТВ Сериали"
 
 msgctxt "#31252"
 msgid "All Music"
-msgstr ""
+msgstr "Всички песни"
 
 msgctxt "#31280"
 msgid "Open Playlist"
-msgstr ""
+msgstr "Отвори плейлиста"
 
 msgctxt "#31281"
 msgid "Save Playlist"
-msgstr ""
+msgstr "Запиши плейлиста"
 
 msgctxt "#31282"
 msgid "Close Playlist"
-msgstr ""
+msgstr "Затвори плейлиста"
 
 msgctxt "#31283"
 msgid "System Music Files"
-msgstr ""
+msgstr "Музикални файлове (системни)"
 
 msgctxt "#31284"
 msgid "Current Playlist"
-msgstr ""
+msgstr "Текущ плейлист"
 
 msgctxt "#31285"
 msgid "Playlist Options"
-msgstr "Настройки на елементите в плейлиста"
+msgstr "Настройки на плейлиста"
 
 msgctxt "#31300"
 msgid "Muted"
-msgstr ""
+msgstr "Без звук"
 
 msgctxt "#31301"
 msgid "Playing"
@@ -734,21 +660,13 @@ msgctxt "#31302"
 msgid "Paused"
 msgstr "На пауза"
 
-msgctxt "#31303"
-msgid "Rewinding:"
-msgstr ""
-
-msgctxt "#31304"
-msgid "Forwarding:"
-msgstr ""
-
 msgctxt "#31305"
 msgid "Finish Time:"
-msgstr ""
+msgstr "Ще свърши в:"
 
 msgctxt "#31306"
 msgid "Customize Background"
-msgstr ""
+msgstr "Персонален фон"
 
 msgctxt "#31307"
 msgid "Enable Visualization"
@@ -756,35 +674,19 @@ msgstr "Включи визуализация"
 
 msgctxt "#31308"
 msgid "Visualization Type"
-msgstr ""
+msgstr "Тип визуализация"
 
 msgctxt "#31309"
 msgid "Visualization Presets"
-msgstr "Шаблони за визуализации"
+msgstr "Шаблони за визуализацията"
 
 msgctxt "#31310"
 msgid "Visualization Settings"
-msgstr ""
-
-msgctxt "#31311"
-msgid "Enable Music Fanart SlideShow"
-msgstr ""
-
-msgctxt "#31312"
-msgid "Enable Artist SlideShow"
-msgstr ""
+msgstr "Настройки за визуализацията"
 
 msgctxt "#31313"
 msgid "Animated Backgrounds"
-msgstr ""
-
-msgctxt "#31314"
-msgid "Hide Diffuse Colors"
-msgstr ""
-
-msgctxt "#31315"
-msgid "Hide Scrolling Titles"
-msgstr ""
+msgstr "Анимирани фонове"
 
 msgctxt "#31350"
 msgid "Available Groups"
@@ -804,11 +706,11 @@ msgstr "Изтрий групата"
 
 msgctxt "#31370"
 msgid "Update Video Library"
-msgstr "Актуализиране на видео библиотеката"
+msgstr "Обнови видео библиотеката"
 
 msgctxt "#31371"
 msgid "Update Music Library"
-msgstr "Актуализиране на музикалната библиотека"
+msgstr "Обнови музикалната библиотека"
 
 msgctxt "#31372"
 msgid "Clean Video Library"
@@ -820,208 +722,180 @@ msgstr "Почистване на музикалната библиотека"
 
 msgctxt "#31374"
 msgid "Quick Navigation"
-msgstr ""
+msgstr "Бързо навигиране"
 
 msgctxt "#31375"
 msgid "Disable Quick Navigation"
-msgstr ""
+msgstr "Изключи бързото навигиране"
 
 msgctxt "#31376"
 msgid "Show Update Video Library Button"
-msgstr ""
+msgstr "Показвай бутона \"Обнови видео библиотеката\""
 
 msgctxt "#31377"
 msgid "Show Update Music Library Button"
-msgstr ""
+msgstr "Показвай бутона \"Обнови музикалната библиотека\""
 
 msgctxt "#31378"
 msgid "Show Clean Video Library Button"
-msgstr ""
+msgstr "Показвай бутона \"Почисти видео библиотека\""
 
 msgctxt "#31379"
 msgid "Show Clean Music Library Button"
-msgstr ""
+msgstr "Показвай бутона \"Почисти музикалната библиотека\""
 
 msgctxt "#31380"
 msgid "Show Party Mode Button"
-msgstr ""
+msgstr "Показвай бутона \"Режим парти\""
 
 msgctxt "#31381"
 msgid "Show Shutdown Button"
-msgstr ""
+msgstr "Показвай бутона \"Изключи...\""
 
 msgctxt "#31382"
 msgid "Show File Manager Button"
-msgstr ""
+msgstr "Показвай бутона \"Диспечър на файлове\""
 
 msgctxt "#31383"
 msgid "Hide Movies Button"
-msgstr ""
+msgstr "Без бутона за филми"
 
 msgctxt "#31384"
 msgid "Hide TV Shows Button"
-msgstr ""
+msgstr "Без бутона за ТВ Сериали"
 
 msgctxt "#31385"
 msgid "Hide Music Button"
-msgstr ""
+msgstr "Без бутона за музика"
 
 msgctxt "#31386"
 msgid "Hide Pictures Button"
-msgstr ""
+msgstr "Без бутона за снимки"
 
 msgctxt "#31387"
 msgid "Hide Add-ons Button"
-msgstr ""
+msgstr "Без бутона за добавки"
 
 msgctxt "#31388"
 msgid "Hide New Movies Button"
-msgstr ""
+msgstr "Без бутона за нови филми"
 
 msgctxt "#31389"
 msgid "Hide New TV Shows Button"
-msgstr ""
+msgstr "Без бутона за нови ТВ Сериали"
 
 msgctxt "#31390"
 msgid "Hide New Music Button"
-msgstr ""
+msgstr "Без бутона за нови песни"
 
 msgctxt "#31391"
 msgid "Hide Settings Button"
-msgstr ""
+msgstr "Без бутона за настройки"
 
 msgctxt "#31392"
 msgid "Show Videos Button"
-msgstr ""
+msgstr "Показвай бутона за видео"
 
 msgctxt "#31393"
 msgid "Hide QuickNav Buttons"
-msgstr ""
+msgstr "Скриване на бутони от менюто за бързо навигиране"
 
 msgctxt "#31394"
 msgid "Show QuickNav Buttons"
-msgstr ""
+msgstr "Показвани бутони от мнюто за бързо навигиране"
 
 msgctxt "#31395"
 msgid "Custom QuickNav Buttons"
-msgstr ""
+msgstr "Персонални бутони за бързо навигиране"
 
 msgctxt "#31396"
 msgid "Custom Button"
-msgstr ""
+msgstr "Персонален бутон"
 
 msgctxt "#31401"
-msgid ""
-"Adjust the look and feel of XBMC. Includes skin, theme, sound and font "
-"selection, RSS feed and localisation settings."
-msgstr ""
+msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
+msgstr "Променете външния вид на XBMC - облика, темата, звуците, шрифтовете, RSS емисията и езика."
 
 msgctxt "#31402"
-msgid ""
-"Manage your video content. Includes library database options, subtitles, "
-"scrapers, and playback options."
-msgstr ""
-
-msgctxt "#31403"
-msgid ""
-"Change playback settings, manage EPG data settings, recordings and parental "
-"control."
-msgstr ""
+msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
+msgstr "Управлявайте видео библиотеката, субтитрите, източниците на инф. и възпроизвеждането."
 
 msgctxt "#31404"
-msgid ""
-"Configure how XBMC handles music. Setup playback and listing options, "
-"browsing files or database and many more."
-msgstr ""
+msgid "Configure how XBMC handles music. Setup playback and listing options, browsing files or database and many more."
+msgstr "Конфигурирайте възпроизвеждането на музика, преглеждането на файлове/библиотеката и много други."
 
 msgctxt "#31405"
-msgid ""
-"Picture handeling can be quite easy. You can do this by adjusting display, "
-"effects, tags, timing and picture listing."
-msgstr ""
+msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
+msgstr "Управлението на снимки може да бъде лесно. Настройте дисплея, ефектите, етикетите и списъците със снимки."
 
 msgctxt "#31406"
-msgid ""
-"Adjusting Weather is very easy with XBMC. Select a weather plugin and get "
-"live updates for up to three cities."
-msgstr ""
+msgid "Adjusting Weather is very easy with XBMC. Select a weather plugin and get live updates for up to three cities."
+msgstr "Синоптична прогноза - просто изберете приставка и до три града, за които да получавате информация."
 
 msgctxt "#31407"
-msgid ""
-"Set up XBMC's network interface. Controls IP assignment, WWW and FTP server,"
-" SMB client, and UPnP configuration."
-msgstr ""
+msgid "Set up XBMC's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
+msgstr "Настройте мрежовия интерфейс, IP адресс, WWW и FTP сървъра, SMB клиента и UPnP конфигурацията."
 
 msgctxt "#31408"
-msgid ""
-"Control core hardware and software functions, including audio and video "
-"hardware setup, autoplay and locking."
-msgstr ""
+msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
+msgstr "Основните функции - настройки на аудио и видео хардуера, възпроизвеждането и заключването."
 
 msgctxt "#31409"
-msgid ""
-"Choose from a variety of settings and customization options to make "
-"\"Bello\" fit your needs and taste."
-msgstr ""
+msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
+msgstr "Променете разнообразните настройки, за да нагодите \"Bello\" към вашия вкус и потребности."
 
 msgctxt "#31410"
-msgid ""
-"With XBMC you can have several profiles, even a logon screen for controlled "
-"access."
-msgstr ""
+msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
+msgstr "С XBMC може да ползвате няколко профила. Разполагате и с екран за вписване - с цел контролиране на достъпа."
 
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
-msgstr ""
+msgstr "Конфигуриране на изгледа"
 
 msgctxt "#31412"
 msgid "Configure Video Settings"
-msgstr ""
+msgstr "Конфигуриране на видеото"
 
 msgctxt "#31413"
 msgid "Configure Live TV Settings"
-msgstr ""
+msgstr "Конфигуриране на телевизията"
 
 msgctxt "#31414"
 msgid "Configure Music Settings"
-msgstr ""
+msgstr "Конфигуриране на музиката"
 
 msgctxt "#31415"
 msgid "Configure Pictures Settings"
-msgstr ""
+msgstr "Конфигуриране на снимките"
 
 msgctxt "#31416"
 msgid "Configure Weather Settings"
-msgstr ""
+msgstr "Конфигуриране на времето"
 
 msgctxt "#31417"
 msgid "Configure Services Settings"
-msgstr ""
+msgstr "Конфигуриране на услугите"
 
 msgctxt "#31418"
 msgid "Configure System Settings"
-msgstr ""
+msgstr "Конфигуриране на системата"
 
 msgctxt "#31419"
 msgid "Configure Profiles Settings"
-msgstr ""
+msgstr "Конфигуриране на профилите"
 
 msgctxt "#31420"
 msgid "Configure Skin Settings"
-msgstr ""
+msgstr "Настройки на облика"
 
 msgctxt "#31430"
 msgid "Help Tip"
-msgstr ""
+msgstr "Помощ"
 
 msgctxt "#31431"
-msgid ""
-"You haven't added any items to Favorites yet. Highlight an item, and choose "
-"\"Add to favorites\" from the context menu."
-msgstr ""
+msgid "You haven't added any items to Favorites yet. Highlight an item, and choose \"Add to favorites\" from the context menu."
+msgstr "Все още не сте добавили нито един елемнт към списъка с любими. За целта посочете/маркирайте даден елемент и от контекстното меню изберете \"Добави към любимите\""
 
 msgctxt "#31432"
-msgid ""
-"Mouse usage is not supported. Please disable it from Settings>System>Input "
-"Devices>\"Enable mouse and Touch Screen support\"."
-msgstr ""
+msgid "Mouse usage is not supported. Please disable it from Settings>System>Input Devices>\"Enable mouse and Touch Screen support\"."
+msgstr "Не се поддържа мишка. Моля, изключете я от Настройки > Система > Входни устройства > Включи поддръжката на мишка и Touch Screen"

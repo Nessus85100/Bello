@@ -36,6 +36,10 @@ msgctxt "#31017"
 msgid "Karaoke Song Selector"
 msgstr "Karaoke kanta antzemalea"
 
+msgctxt "#31018"
+msgid "Trailers"
+msgstr "Trailerra"
+
 msgctxt "#31020"
 msgid "Found"
 msgstr "Aurkitua"

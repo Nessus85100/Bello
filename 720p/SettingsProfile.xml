@@ -1,4 +1,5 @@
-<window id="34">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="34">
 	<defaultcontrol always="true">9001</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
@@ -18,12 +19,12 @@
 			  <texture background="true">windows/settings/bg_settings.png</texture>
 			</control>
 			<control type="group">
-					<posx>100</posx>
-					<posy>166</posy>
-				  <include>Window_OpenClose_Animation</include>	
+				<left>100</left>
+				<top>166</top>
+			  <include>Window_OpenClose_Animation</include>	
 				<control type="list" id="9001">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>295</width>
 					<height>414</height>
 					<itemgap>2</itemgap>
@@ -35,15 +36,15 @@
 					<scrolltime>300</scrolltime>
 					<itemlayout height="52" width="295">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>295</width>
 							<height>50</height>
 							<texture>buttons/catbullet_nf.png</texture>
 						</control>
 						<control type="label">
-							<posx>40</posx>
-							<posy>0</posy>
+							<left>40</left>
+							<top>0</top>
 							<width>295</width>
 							<height>50</height>
 					    <font>FontSize_20</font>
@@ -55,15 +56,16 @@
 					</itemlayout>
 					<focusedlayout height="52" width="295">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>295</width>
 							<height>50</height>
 							<texture>buttons/catbullet_fo.png</texture>
+              <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(9001)">Conditional</animation>
 						</control>
 						<control type="label">
-							<posx>40</posx>
-							<posy>0</posy>
+							<left>40</left>
+							<top>0</top>
 							<width>295</width>
 							<height>50</height>
 					    <font>FontSize_20</font>
@@ -86,37 +88,36 @@
 				</control>
 	
 				<control type="group" id="7010">
-					<control type="radiobutton" id="4">
-						<posx>297</posx>
-						<posy>0</posy>
+					<control type="grouplist" id="3">
+						<include>CloseAnimation</include>
+					  <visible>Container(9001).Hasfocus(1)</visible>
+						<left>297</left>
+						<top>0</top>
 						<width>782</width>
-						<height>50</height>
+						<height>414</height>
+						<itemgap>2</itemgap>
+						<pagecontrol>60</pagecontrol>
 						<onleft>9001</onleft>
 						<onright>9001</onright>
-						<onup>4</onup>
-						<ondown>4</ondown>
-						<font>FontSize_20</font>
-						<textcolor>77white</textcolor>
-						<focusedcolor>white</focusedcolor>
-					  <disabledcolor>33white</disabledcolor>
-						<texturefocus>buttons/settings_fo.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<align>left</align>
-						<aligny>center</aligny>
-						<radioposx>720</radioposx>
-					  <textwidth>700</textwidth>
-						<textoffsetx>20</textoffsetx>
-						<pulseonselect>false</pulseonselect>
-						<label>31153</label>
-					  <visible>Container(9001).Hasfocus(1)</visible>
-					  <include>CloseAnimation</include>
+						<onup>3</onup>
+						<ondown>3</ondown>
+						<control type="radiobutton" id="4">
+		          <include>SettingsRadioButton</include>
+							<label>31153</label>
+						</control>
+						<control type="button" id="5">
+		          <include>SettingsButton</include>
+							<label>$LOCALIZE[33084]</label>
+						  <label2>$INFO[System.ProfileAutoLogin]</label2>
+						  <enable>!System.HasLoginScreen</enable>
+						</control>
 					</control>
 		
-					<control type="list" id="2">
+					<control type="panel" id="2">
 					  <include>CloseAnimation</include>
 						<visible>Container(9001).Hasfocus(2)</visible>
-						<posx>297</posx>
-						<posy>0</posy>
+						<left>297</left>
+						<top>0</top>
 						<width>782</width>
 						<height>414</height>
 						<itemgap>2</itemgap>
@@ -128,8 +129,8 @@
 						<scrolltime>300</scrolltime>
 						<itemlayout height="52" width="782">
 							<control type="label">
-								<posx>20</posx>
-								<posy>0</posy>
+								<left>20</left>
+								<top>0</top>
 								<width>782</width>
 								<height>50</height>
 						    <font>FontSize_20</font>
@@ -141,16 +142,15 @@
 						</itemlayout>
 						<focusedlayout height="52" width="782">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>782</width>
 								<height>50</height>
 								<texture>buttons/settings_fo.png</texture>
-								<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(2)">Conditional</animation>
 							</control>
 							<control type="label">
-								<posx>20</posx>
-								<posy>0</posy>
+								<left>20</left>
+								<top>0</top>
 								<width>782</width>
 								<height>50</height>
 						    <font>FontSize_20</font>
@@ -166,14 +166,14 @@
 	
 	    <!-- Description Category Labels -->
 			<control type="group">
-					<posx>120</posx>
-					<posy>163</posy>
+					<left>120</left>
+					<top>163</top>
 					<visible>Window.IsVisible(Profiles)</visible>
 				  <include>Window_OpenClose_Animation</include>
 				<control type="label">
 					<description>Header Category Label</description>
-					<posx>0</posx>
-					<posy>-50</posy>
+					<left>0</left>
+					<top>-50</top>
 					<width>1075</width>
 					<height>50</height>
 					<font>FontSize_36</font>
@@ -185,8 +185,8 @@
 				</control>
 			  <control type="textbox">
 					<description>Category Description</description>
-					<posx>0</posx>
-					<posy>425</posy>
+					<left>0</left>
+					<top>425</top>
 					<width>1045</width>
 					<height>30</height>
 					<textcolor>33white</textcolor>
@@ -203,5 +203,6 @@
 		<include>CommonNowPlaying</include>
 		<include>CommonDialogsFadeOutBG</include>
 		<include>SettingsMenu</include>
+		<include>SettingsWeatherAndClock</include>
 	</controls>
 </window>

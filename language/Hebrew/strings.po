@@ -200,9 +200,17 @@ msgctxt "#31158"
 msgid "Views"
 msgstr "תצוגות"
 
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "הפעלת מצב מחשב ציבורי"
+
 msgctxt "#31203"
 msgid "New Search"
 msgstr "חיפוש חדש"
+
+msgctxt "#31215"
+msgid "Next Airs"
+msgstr "מועד השידור הבא"
 
 msgctxt "#31218"
 msgid "Landscape"
@@ -295,6 +303,10 @@ msgstr "מושהה"
 msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "קביעוני חיזוי"
+
+msgctxt "#31350"
+msgid "Available Groups"
+msgstr "קבוצות זמינות"
 
 msgctxt "#31351"
 msgid "Add Group"

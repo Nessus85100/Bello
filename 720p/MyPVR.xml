@@ -1,4 +1,5 @@
-<window id="600">
+<?xml version="1.0" encoding="UTF-8"?>
+<window  id="600">
 	<defaultcontrol>32</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
   <onload condition="Control.IsVisible(10)">SetFocus(10)</onload>	
@@ -8,19 +9,19 @@
 		<include>CommonScrollingLetters</include>
 		<include>CommonNowPlaying</include>
 		<include>CommonDialogsFadeOutBG</include>
+		<include>CommonWeatherAndClock</include>
 
     <!-- ==================== -->
     <!-- PVR Options Controls -->
     <!-- ==================== -->
 	  <control type="group"  id="9000">
-			<posx>45</posx>
-			<posy>25</posy>
+			<left>45</left>
+			<top>25</top>
       <include>CommonSlideAnimations</include>
-		  <include>CommonWeatherAndClock</include>
       <!-- PVR Options -->
 			<control type="grouplist" id="9111">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>0</width>
 				<height>0</height>
 				<itemgap>0</itemgap>
@@ -64,7 +65,7 @@
 			</control>
       <!-- PVR Labels -->
 			<control type="grouplist">
-		    <visible allowhiddenfocus="true">!Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu)</visible>
+		    <visible allowhiddenfocus="true">!Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(favourites)</visible>
 	      <animation type="Visible"  reversible="false">
 	          <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
 	          <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
@@ -73,8 +74,8 @@
 	          <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
 	          <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
 	      </animation>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>70</height>
 				<width>1190</width>
 				<itemgap>15</itemgap>
@@ -128,7 +129,7 @@
 				</control>
 			</control>
 			<control type="label">
-		    <visible allowhiddenfocus="true">!Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu)</visible>
+		    <visible allowhiddenfocus="true">!Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(favourites)</visible>
 	      <animation type="Visible"  reversible="false">
           <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
           <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
@@ -138,8 +139,8 @@
           <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
 	      </animation>
 				<description>Page Count Label</description>
-				<posx>0</posx>
-				<posy>45</posy>
+				<left>0</left>
+				<top>45</top>
 				<width>300</width>
 				<height>20</height>
 				<font>FontSize_18</font>
