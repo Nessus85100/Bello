@@ -358,13 +358,13 @@
 	
 				</control>
 				<control type="scrollbar" id="61">
-					<left>913</left>
+					<left>914</left>
 					<top>269</top>
-					<width>4</width>
+					<width>2</width>
 					<height>347</height>
 					<texturesliderbackground>-</texturesliderbackground>
-					<texturesliderbar border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbar>
-					<texturesliderbarfocus border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbarfocus>
+					<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>11</onleft>
@@ -738,13 +738,13 @@
 				</control>
 
 				<control type="scrollbar" id="62">
-					<left>913</left>
+					<left>914</left>
 					<top>269</top>
-					<width>4</width>
+					<width>2</width>
 					<height>347</height>
 					<texturesliderbackground>-</texturesliderbackground>
-					<texturesliderbar border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbar>
-					<texturesliderbarfocus border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbarfocus>
+					<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>12</onleft>
@@ -1667,13 +1667,13 @@
 				</control>
 
 				<control type="scrollbar" id="66">
-					<left>913</left>
+					<left>914</left>
 					<top>269</top>
-					<width>4</width>
+					<width>2</width>
 					<height>347</height>
 					<texturesliderbackground>-</texturesliderbackground>
-					<texturesliderbar border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbar>
-					<texturesliderbarfocus border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbarfocus>
+					<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>16</onleft>
@@ -2080,13 +2080,13 @@
 				</control>
 
 				<control type="scrollbar" id="65">
-					<left>913</left>
+					<left>914</left>
 					<top>269</top>
-					<width>4</width>
+					<width>2</width>
 					<height>347</height>
 					<texturesliderbackground>-</texturesliderbackground>
-					<texturesliderbar border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbar>
-					<texturesliderbarfocus border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbarfocus>
+					<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>15</onleft>
@@ -2257,7 +2257,7 @@
 								<height>45</height>
 								<align>center</align>
 								<aligny>center</aligny>
-	              <aspectratio>strecth</aspectratio>
+	              <aspectratio>stretch</aspectratio>
 							  <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 								<texture border="20">overlays/unwatched/thumbs/UnWatched_Banner.png</texture>
 							</control>
@@ -2351,7 +2351,7 @@
 								<height>45</height>
 								<align>center</align>
 								<aligny>center</aligny>
-	              <aspectratio>strecth</aspectratio>
+	              <aspectratio>stretch</aspectratio>
 							  <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 								<texture border="20">overlays/unwatched/thumbs/UnWatched_Banner.png</texture>
 							</control>
@@ -2360,13 +2360,13 @@
 	
 				</control>
 				<control type="scrollbar" id="63">
-					<left>913</left>
+					<left>914</left>
 					<top>269</top>
-					<width>4</width>
+					<width>2</width>
 					<height>347</height>
 					<texturesliderbackground>-</texturesliderbackground>
-					<texturesliderbar border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbar>
-					<texturesliderbarfocus border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbarfocus>
+					<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>13</onleft>
@@ -2704,13 +2704,13 @@
 				</control>
 	
 				<control type="scrollbar" id="64">
-					<left>895</left>
+					<left>896</left>
 					<top>219</top>
-					<width>4</width>
+					<width>2</width>
 					<height>395</height>
 					<texturesliderbackground>-</texturesliderbackground>
-					<texturesliderbar border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbar>
-					<texturesliderbarfocus border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbarfocus>
+					<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>14</onleft>
@@ -3050,13 +3050,13 @@
 				</control>
 	
 				<control type="scrollbar" id="67">
-					<left>895</left>
+					<left>896</left>
 					<top>269</top>
-					<width>4</width>
+					<width>2</width>
 					<height>347</height>
 					<texturesliderbackground>-</texturesliderbackground>
-					<texturesliderbar border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbar>
-					<texturesliderbarfocus border="0,15,0,15">views/scrollbar/scrollbar_alt.png</texturesliderbarfocus>
+					<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar_pvr.png</texturesliderbarfocus>
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>17</onleft>
@@ -3108,37 +3108,5 @@
     </control>
    </control>
  </include>
-
-
-	<include name="LiveTV_EmptyLayout">
-		<control type="image">
-      <description>Title Sep</description>
-			<left>10</left>
-			<top>0</top>
-			<width>456</width>
-			<height>45</height>
-			<texture>windows/pvr/seperator.png</texture>
-      <include>VisibleFadeEffect2</include>
-		</control>
-		<control type="image">
-      <description>Date Sep</description>
-			<left>470</left>
-			<top>0</top>
-			<width>202</width>
-			<height>45</height>
-			<texture>windows/pvr/seperator.png</texture>
-      <include>VisibleFadeEffect2</include>
-		</control>
-		<control type="image">
-      <description>Time Sep</description>
-			<left>676</left>
-			<top>0</top>
-			<width>202</width>
-			<height>45</height>
-			<texture>windows/pvr/seperator.png</texture>
-      <include>VisibleFadeEffect2</include>
-		</control>
-	</include>
-
 
 </includes>

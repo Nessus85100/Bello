@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -245,8 +245,8 @@ msgid "Hide Now Playing Music Info"
 msgstr "Slėpti -Dabar grojama- muzikos info"
 
 msgctxt "#31104"
-msgid "Hide Search Button"
-msgstr "Slėpti -Paieška- mygtuką"
+msgid "Show Search Button"
+msgstr "Rodyti paieškos mygtuką"
 
 msgctxt "#31105"
 msgid "Hide Trailers Button"
@@ -287,10 +287,6 @@ msgstr "Slėpti -Nustatymai- mygtuką"
 msgctxt "#31114"
 msgid "Show Videos Button"
 msgstr "Rodyti -Video- mygtuką"
-
-msgctxt "#31115"
-msgid "Show DVD Button"
-msgstr "Rodyti -DVD- mygtuką"
 
 msgctxt "#31116"
 msgid "Show Music Videos Button"
@@ -384,10 +380,6 @@ msgctxt "#31138"
 msgid "Enable Movies Notifications"
 msgstr "Įjungti Filmo pranešimai"
 
-msgctxt "#31139"
-msgid "Enable Addons Notifications"
-msgstr "Įjungti priedų pranešimą"
-
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
 msgstr "Įjungti orų įspėjimo pranešimus"
@@ -440,10 +432,6 @@ msgctxt "#31152"
 msgid "Hide Live TV Submenu"
 msgstr "Slėpti Live TV submeniu"
 
-msgctxt "#31153"
-msgid "Enable Login Screen"
-msgstr "Įjungti prisijungimo langą"
-
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Pasirinkti filo anonso priedą"
@@ -472,13 +460,13 @@ msgctxt "#31160"
 msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
 msgstr "Atsisiųsti [COLOR=selected]logo.png[/COLOR] visiems filmams"
 
-msgctxt "#31161"
-msgid "Hide Library Totals"
-msgstr "Slėpti bendrą biblioteką"
-
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "Įjungti viso ekrano režimu"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Galima vietiniai subtitrai"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -612,10 +600,6 @@ msgctxt "#31233"
 msgid "Chance of Precipitation"
 msgstr "Kritulių tikimybė"
 
-msgctxt "#31234"
-msgid "Fetching Forecast Info for..."
-msgstr "Gaunama prognozės info ..."
-
 msgctxt "#31235"
 msgid "Current Forecast"
 msgstr "Dabartinė prognozė"
@@ -687,6 +671,10 @@ msgstr "Visi TV Šou"
 msgctxt "#31252"
 msgid "All Music"
 msgstr "Visa Muzika"
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Ieškoti YouTube"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -776,6 +764,10 @@ msgctxt "#31315"
 msgid "Hide Scrolling Titles"
 msgstr "Slėpti slinkties antraštes"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Dabar atkuriama"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "Galimos grupės"
@@ -815,14 +807,6 @@ msgstr "Greita navigacija"
 msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "Išjungti -Greita navigacija"
-
-msgctxt "#31376"
-msgid "Show Update Video Library Button"
-msgstr "Rodyti -Atnaujinti vaizdo biblioteką- mygtuką"
-
-msgctxt "#31377"
-msgid "Show Update Music Library Button"
-msgstr "Rodyti -Atnaujinti muzikos biblioteką- mygtuką"
 
 msgctxt "#31378"
 msgid "Show Clean Video Library Button"
@@ -875,10 +859,6 @@ msgstr "Slėpti -Nauji TV Šou- mygtuką"
 msgctxt "#31390"
 msgid "Hide New Music Button"
 msgstr "Slėpti -Nauja Muzika- mygtuką"
-
-msgctxt "#31391"
-msgid "Hide Settings Button"
-msgstr "Slėpti -Nustatymai- mygtuką"
 
 msgctxt "#31392"
 msgid "Show Videos Button"
@@ -936,10 +916,6 @@ msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
 msgstr "Pasirinkti vieną iš nustatymų ir pritaikykite įvairius variantus teminėje išvaizdoje \"Bello\" atitinkančius jūsų poreikius ir skonį."
 
-msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
-msgstr "Su XBMC galite turėti kelis profilius,  prisijungimo ekrane kontroliuojamas prieigas."
-
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
 msgstr "Konfigūruoti vaizdo parametrus"
@@ -981,13 +957,5 @@ msgid "Configure Skin Settings"
 msgstr "Konfigūruoti teminės išvaizdos parametrus"
 
 msgctxt "#31430"
-msgid "Help Tip"
-msgstr "Pagalba/Patarimas"
-
-msgctxt "#31431"
-msgid "You haven't added any items to Favorites yet. Highlight an item, and choose \"Add to favorites\" from the context menu."
-msgstr "Jūs neįkėlėte jokių elementų į Patinkantis. Pažymėkite elementą ir pasirinkite \"Įdėti į Patinkantis\" iš kontekstinio meniu."
-
-msgctxt "#31432"
-msgid "Mouse usage is not supported. Please disable it from Settings>System>Input Devices>\"Enable mouse and Touch Screen support\"."
-msgstr "Pelės naudojimas nepalaikomas. Prašome išjungti  Konfiguravimas> Sistema> Įvesties įrenginiai> \"Įjungti pelę ir liečiamą ekraną\"."
+msgid "Help"
+msgstr "Pagalba"

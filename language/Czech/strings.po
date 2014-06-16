@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -160,6 +160,10 @@ msgctxt "#31158"
 msgid "Views"
 msgstr "Počet zobrazení"
 
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Titulky jsou k dispozici lokálně"
+
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Na šířku"
@@ -204,6 +208,10 @@ msgctxt "#31241"
 msgid "Recently Added Movies"
 msgstr "Nejnovější filmy"
 
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Vyhledat na YouTube"
+
 msgctxt "#31281"
 msgid "Save Playlist"
 msgstr "Uložit seznam skladeb"
@@ -232,6 +240,10 @@ msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "Předvolby vizualizace"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Nyní přehrávám"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "Dostupné skupiny"
@@ -255,3 +267,7 @@ msgstr "Aktualizovat knihovnu videí"
 msgctxt "#31371"
 msgid "Update Music Library"
 msgstr "Aktualizovat hudební knihovnu"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Nápověda"

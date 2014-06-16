@@ -41,7 +41,7 @@
 					<top>167</top>
 					<width>174</width>
 					<height>242</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
 					<fadetime>100</fadetime>
 					<texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[VarArtPoster]</texture>
 					<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
@@ -63,7 +63,7 @@
 					<top>167</top>
 					<width>422</width>
 					<height>242</height>
-					<aspectratio aligny="center" align="center">strecth</aspectratio>
+					<aspectratio aligny="center" align="center">stretch</aspectratio>
 					<texture background="true" border="20">dialogs/other/iconborder_black.png</texture>
 				</control>
 				<control type="image">
@@ -71,7 +71,7 @@
 					<top>167</top>
 					<width>422</width>
 					<height>242</height>
-					<aspectratio align="center" aligny="center">strecth</aspectratio>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
 					<fadetime>100</fadetime>
 			    <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[VarArtFanart]</texture>
 					<bordersize>5</bordersize>
@@ -267,7 +267,7 @@
 				</control>
 				<control type="textbox">
 					<left>820</left>
-					<top>457</top>
+					<top>456</top>
 					<width>415</width>
 					<height>140</height>
 					<font>FontSize_20</font>
@@ -277,20 +277,6 @@
 					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<label fallback="195">$VAR[GlobalPlotDescription]</label>
 					<visible>!Container.Content(Sets)</visible>
-		<!--		<visible>Container.Content(TVShows) | Container.Content(Seasons) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]</visible> -->
-				</control>
-				<control type="textbox.">
-					<left>820</left>
-					<top>455</top>
-					<width>415</width>
-					<height>93</height>
-					<font>FontSize_20</font>
-					<textcolor>99white</textcolor>
-					<shadowcolor>77000000</shadowcolor>
-					<align>justify</align>
-					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<label fallback="195">$VAR[GlobalPlotDescription]</label>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons) | Substring(ListItem.Path,videodb://movies/sets/) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]]</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -585,9 +571,9 @@
 						<width>53</width>
 						<height>22</height>
 				    <colordiffuse>55ffffff</colordiffuse>
-				    <aspectratio align="center" aligny="center">sretch</aspectratio>
+				    <aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture>flags/empty.png</texture>
-						<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+						<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 					</control>
 					<control type="label">
 						<left>557</left>
@@ -716,7 +702,7 @@
 					    <colordiffuse>ffcccccc</colordiffuse>
 					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>flags/empty.png</texture>
-							<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+							<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 						</control>
 						<control type="label">
 							<left>557</left>
@@ -768,10 +754,10 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>20</left>
-				<top>160</top>
-				<width>11</width>
-				<height>427</height>
+				<left>25</left>
+				<top>164</top>
+				<width>9</width>
+				<height>425</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
@@ -959,7 +945,7 @@
 									<font>FontSize_22</font>
 						      <scroll>false</scroll>
 									<align>left</align>
-									<aligy>center</aligy>
+									<aligny>center</aligny>
 				          <label>$VAR[SmallGlobalInfo]</label>
 				          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
 				          <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
@@ -1013,16 +999,15 @@
 	      <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(Container.ListItem.Plot) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(ContextMenu)</visible>
 	    </control>
 			<control type="scrollbar" id="60">
-				<left>298</left>
+				<left>299</left>
 				<top>520</top>
-				<width>955</width>
-				<height>11</height>
+				<width>920</width>
+				<height>9</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>99white</colordiffuse>
 				<onup>51</onup>
 				<ondown>51</ondown>
 				<showonepage>false</showonepage>
@@ -1145,7 +1130,7 @@
 							<description>Black Border</description>
 							<width>675</width>
 							<height>380</height>
-							<aspectratio aligny="center" align="center">strecth</aspectratio>
+							<aspectratio aligny="center" align="center">stretch</aspectratio>
 							<texture background="true" border="20">dialogs/other/iconborder_black.png</texture>
 						</control>
 						<control type="image">
@@ -1249,7 +1234,7 @@
 									<font>FontSize_22</font>
 						      <scroll>false</scroll>
 									<align>left</align>
-									<aligy>center</aligy>
+									<aligny>center</aligny>
 				          <label>$VAR[SmallGlobalInfo]</label>
 				          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
 				          <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
@@ -1270,14 +1255,13 @@
 			<control type="scrollbar" id="60">
 				<left>305</left>
 				<top>555</top>
-				<width>670</width>
-				<height>11</height>
+				<width>668</width>
+				<height>9</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>77white</colordiffuse>
 				<onup>52</onup>
 				<ondown>52</ondown>
 				<showonepage>false</showonepage>
@@ -1521,7 +1505,7 @@
 							<font>FontSize_22</font>
 				      <scroll>false</scroll>
 							<align>left</align>
-							<aligy>center</aligy>
+							<aligny>center</aligny>
 		          <label>$VAR[SmallGlobalInfo]</label>
 		          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
 		          <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
@@ -1820,7 +1804,7 @@
 							<font>FontSize_22</font>
 				      <scroll>false</scroll>
 							<align>left</align>
-							<aligy>center</aligy>
+							<aligny>center</aligny>
 		          <label>$VAR[SmallGlobalInfo]</label>
 		          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
 		          <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
@@ -2157,7 +2141,7 @@
 					<viewtype label="31088">Multiple Walls</viewtype>
 					<pagecontrol>60</pagecontrol>
 			    <scrolltime tween="quadratic" easing="out">200</scrolltime>
-					<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible>
+					<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
 					<itemlayout height="45" width="710">
 						<control type="label">
 							<left>14</left>
@@ -2284,9 +2268,9 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>20</left>
-					<top>178</top>
-					<width>11</width>
+					<left>25</left>
+					<top>179</top>
+					<width>9</width>
 					<height>380</height>
 					<texturesliderbackground>-</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
@@ -2479,16 +2463,15 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>80</left>
-				<top>600</top>
-				<width>1110</width>
-				<height>11</height>
+				<left>68</left>
+				<top>595</top>
+				<width>1130</width>
+				<height>9</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>77white</colordiffuse>
 				<onup>55</onup>
 				<ondown>55</ondown>
 				<showonepage>false</showonepage>
@@ -2529,20 +2512,20 @@
 			<control type="panel" id="560">
 				<left>26</left>
 				<top>100</top>
-				<height>520</height>
+				<height>493</height>
         <include condition="Skin.HasSetting(ThumbnailShowInfo)">VideoThumbnailsInfoWidth</include>
         <include condition="!Skin.HasSetting(ThumbnailShowInfo)">VideoThumbnailsNoInfoWidth</include>
-				<onleft>560</onleft>
-				<onright>560</onright>
-				<onup>9111</onup>
-				<ondown>60</ondown>
+				<onleft>9111</onleft>
+				<onright>60</onright>
+				<onup>560</onup>
+				<ondown>560</ondown>
 				<viewtype label="31085">list</viewtype>
-	      <orientation>horizontal</orientation>
+	      <orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
         <scrolltime tween="Quadratic" easing="out">300</scrolltime>
 				<preloaditems>2</preloaditems>
 			  <visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons)</visible>
-				<itemlayout height="240" width="174">
+				<itemlayout height="243" width="173">
 					<control type="image">
 						<left>0</left>
 						<width>186</width>
@@ -2571,7 +2554,7 @@
             <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="240" width="174">
+				<focusedlayout height="243" width="173">
 					<control type="image">
 						<left>0</left>
 						<width>186</width>
@@ -2618,8 +2601,8 @@
 			</control>
 
 			<control type="group">
-				<left>26</left>
-			  <top>585</top>
+				<left>24</left>
+			  <top>592</top>
 			  <visible>Control.IsVisible(560)</visible>
 			  <visible>!Skin.HasSetting(ThumbnailShowInfo)</visible>
 				<control type="label">
@@ -2629,15 +2612,15 @@
 					<width>900</width>
 					<textcolor>white</textcolor>
 	        <shadowcolor>99000000</shadowcolor>
-					<font>FontSize_34B</font>
+					<font>FontSize_26B</font>
 		      <scroll>false</scroll>
 					<align>left</align>
 					<label>$VAR[ListItem.label]</label>
 				</control>
 				<!-- Small Down Info -->
 			  <control type="group">
-					<left>1176</left>
-					<top>10</top>
+					<left>1174</left>
+					<top>5</top>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -2674,11 +2657,11 @@
 						<height>20</height>
 						<width>600</width>
 						<textcolor>white</textcolor>
-		        <shadowcolor>77000000</shadowcolor>
-						<font>FontSize_20B</font>
+		        <shadowcolor>99000000</shadowcolor>
+						<font>FontSize_26B</font>
 			      <scroll>false</scroll>
 						<align>right</align>
-						<aligy>center</aligy>
+						<aligny>center</aligny>
 	          <label>$VAR[SmallGlobalInfo]</label>
 	          <animation effect="slide" start="0,0" end="50,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>	          
@@ -2688,13 +2671,13 @@
 			</control>
 
 			<control type="group">
-				<left>896</left>
+				<left>893</left>
 				<top>100</top>
 			  <visible>Control.IsVisible(560)</visible>
 			  <visible>Skin.HasSetting(ThumbnailShowInfo)</visible>
 				<control type="image">
 					<width>357</width>
-					<height>495</height>
+					<height>498</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<texture border="30">views/thumbnails/thumb_panel.png</texture>
 				</control>
@@ -2730,7 +2713,7 @@
 				<!-- Small Down Info -->
 			  <control type="group">
 					<left>30</left>
-					<top>440</top>
+					<top>446</top>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -2771,7 +2754,7 @@
 						<font>FontSize_20</font>
 			      <scroll>false</scroll>
 						<align>left</align>
-						<aligy>center</aligy>
+						<aligny>center</aligny>
 	          <label>$VAR[SmallGlobalInfo]</label>
 	          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
 	          <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
@@ -2781,7 +2764,7 @@
 				<control type="textbox">
 					<description>Plot</description>
 					<left>30</left>
-					<top>90</top>
+					<top>93</top>
 					<width>295</width>
 					<height>330</height>
 					<font>FontSize_20</font>
@@ -2793,40 +2776,21 @@
 				</control>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>42</left>
-				<top>620</top>
-				<width>1195</width>
-				<height>11</height>
+				<right>30</right>
+				<top>117</top>
+				<width>9</width>
+				<height>460</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>77white</colordiffuse>
-				<onup>560</onup>
-				<ondown>560</ondown>
+				<onleft>560</onleft>
+				<onright>9111</onright>
 				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
+				<orientation>vertical</orientation>
 			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-				<visible>Control.IsVisible(560) + !Skin.HasSetting(ThumbnailShowInfo)</visible>
-			</control>
-			<control type="scrollbar" id="60">
-				<left>42</left>
-				<top>585</top>
-				<width>851</width>
-				<height>11</height>
-				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>77white</colordiffuse>
-				<onup>560</onup>
-				<ondown>560</ondown>
-				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
-			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-				<visible>Control.IsVisible(560) + Skin.HasSetting(ThumbnailShowInfo)</visible>
+				<visible>Control.IsVisible(560)</visible>
 			</control>
 		</control>
 	</include>
@@ -2842,52 +2806,53 @@
 	    <include>DialogZoomInOutAnimation</include>
 	    <include>ThumbnailsAnimations</include>
 			<control type="panel" id="561">
-				<left>26</left>
-				<top>85</top>
-				<height>710</height>
+				<left>30</left>
+				<top>90</top>
+				<height>545</height>
         <width>1227</width>
-				<onleft>561</onleft>
-				<onright>561</onright>
-				<onup>9111</onup>
-				<ondown>60</ondown>
+				<onleft>9111</onleft>
+				<onright>60</onright>
+				<onup>561</onup>
+				<ondown>561</ondown>
 				<viewtype label="31085">list</viewtype>
-	      <orientation>horizontal</orientation>
+	      <orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
         <scrolltime tween="Quadratic" easing="out">300</scrolltime>
 				<preloaditems>2</preloaditems>
 			  <visible>[Container.Content(Episodes) | substring(Container.FolderPath,plugin://plugin.video.youtube)]</visible>
-				<itemlayout height="180" width="243">
+				<itemlayout height="180" width="241">
 					<control type="image">
 						<left>-2</left>
+						<top>-7</top>
 						<width>260</width>
-						<height>200</height>
+						<height>199</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture background="true" border="30">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<left>21</left>
-						<top>23</top>
-						<width>214</width>
-						<height>125</height>
+						<left>22</left>
+						<top>17</top>
+						<width>212</width>
+						<height>127</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$INFO[ListItem.Art(thumb)]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
-						<left>21</left>
-						<top>23</top>
-						<width>214</width>
-						<height>125</height>
+						<left>22</left>
+						<top>17</top>
+						<width>212</width>
+						<height>127</height>
 						<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<bordersize>6</bordersize>
             <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 					<control type="label">
-						<left>126</left>
-						<top>145</top>
-						<width>205</width>
+						<left>128</left>
+						<top>138</top>
+						<width>213</width>
 						<height>35</height>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -2898,38 +2863,39 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="180" width="243">
+				<focusedlayout height="180" width="241">
 					<control type="image">
 						<left>-2</left>
+						<top>-7</top>
 						<width>260</width>
-						<height>200</height>
+						<height>199</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture background="true" border="30">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<left>21</left>
-						<top>23</top>
-						<width>214</width>
-						<height>125</height>
+						<left>22</left>
+						<top>17</top>
+						<width>212</width>
+						<height>127</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$INFO[ListItem.Art(thumb)]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
-						<left>21</left>
-						<top>23</top>
-						<width>214</width>
-						<height>125</height>
+						<left>22</left>
+						<top>17</top>
+						<width>212</width>
+						<height>127</height>
 						<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<bordersize>6</bordersize>
             <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 					<control type="label">
-						<left>126</left>
-						<top>145</top>
-						<width>205</width>
+						<left>128</left>
+						<top>138</top>
+						<width>213</width>
 						<height>35</height>
 						<textcolor>blue</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -2941,8 +2907,9 @@
 					</control>
 					<control type="image">
 						<left>-2</left>
+						<top>-7</top>
 						<width>260</width>
-						<height>200</height>
+						<height>199</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture background="true" border="30">views/thumbnails/focus.png</texture>
             <animation type="Focus">
@@ -2957,20 +2924,19 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>40</left>
-				<top>632</top>
-				<width>1200</width>
-				<height>11</height>
+				<right>30</right>
+				<top>100</top>
+				<width>9</width>
+				<height>525</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>77white</colordiffuse>
-				<onup>561</onup>
-				<ondown>561</ondown>
+				<onleft>560</onleft>
+				<onright>9111</onright>
 				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
+				<orientation>vertical</orientation>
 			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 				<visible>Control.IsVisible(561)</visible>
 			</control>
@@ -3154,7 +3120,7 @@
 		            <selectedcolor>99white</selectedcolor>
 					      <scroll>false</scroll>
 								<align>left</align>
-								<aligy>center</aligy>
+								<aligny>center</aligny>
 			          <label>$VAR[SmallGlobalInfo]</label>
 			          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
 			          <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
@@ -3247,7 +3213,7 @@
 		            <selectedcolor>99white</selectedcolor>
 					      <scroll>false</scroll>
 								<align>left</align>
-								<aligy>center</aligy>
+								<aligny>center</aligny>
 			          <label>$VAR[SmallGlobalInfo]</label>
 			          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution)">Conditional</animation>
 							</control>
@@ -3350,7 +3316,7 @@
 		            <selectedcolor>99white</selectedcolor>
 					      <scroll>false</scroll>
 								<align>left</align>
-								<aligy>center</aligy>
+								<aligny>center</aligny>
 			          <label>$VAR[SmallGlobalInfo]</label>
 			          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution)">Conditional</animation>
 							</control>
@@ -3360,9 +3326,9 @@
 			</control>
 			<control type="scrollbar" id="60">
 				<left>1010</left>
-				<top>127</top>
-				<width>11</width>
-				<height>475</height>
+				<top>125</top>
+				<width>9</width>
+				<height>480</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
@@ -3521,7 +3487,7 @@
 					<font>FontSize_22</font>
 		      <scroll>false</scroll>
 					<align>left</align>
-					<aligy>center</aligy>
+					<aligny>center</aligny>
           <label>$VAR[SmallGlobalInfo]</label>
           <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
           <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
@@ -3535,18 +3501,17 @@
 				<height>120</height>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[VideoWallThumb]</texture>
-			</control>	
+			</control>
 			<control type="scrollbar" id="60">
 				<left>20</left>
-				<top>120</top>
-				<width>1168</width>
-				<height>11</height>
+				<top>125</top>
+				<width>1170</width>
+				<height>9</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>77white</colordiffuse>
 				<onup>580</onup>
 				<ondown>580</ondown>
 				<showonepage>false</showonepage>

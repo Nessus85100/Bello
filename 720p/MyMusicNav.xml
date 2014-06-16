@@ -132,7 +132,7 @@
 				<control type="label">
 					<description>Advanced Filter</description>
 				  <include>TopSmallLabel</include>
-					<label>$INFO[Control.GetLabel(20)]</label>
+					<label>$INFO[Control.GetLabel(98)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(98)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(98)" reversible="true">Conditional</animation>
 					<visible>Container.CanFilterAdvanced</visible>
@@ -245,8 +245,6 @@
 					<description>Party Mode</description>
 					<label>589</label>
 				  <include>TopButton</include>
-					<textureradiofocus>-</textureradiofocus>
-					<textureradionofocus>-</textureradionofocus>
 					<font>-</font>
 				</control>
 			</control>
@@ -284,7 +282,6 @@
 					<description>Sort asc</description>
 				  <include>TopSmallLabel</include>
 					<label>$INFO[Control.GetLabel(4)]</label>
-					<altlabel>$INFO[Control.GetLabel(4)]</altlabel>
 					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(4)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(4)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(4)" reversible="true">Conditional</animation>

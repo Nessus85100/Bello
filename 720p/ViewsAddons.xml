@@ -41,7 +41,7 @@
 					<top>172</top>
 					<width>222</width>
 					<height>222</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
 					<fadetime>100</fadetime>
 					<texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[VarArtPoster]</texture>
 					<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
@@ -62,7 +62,7 @@
 					<top>172</top>
 					<width>374</width>
 					<height>222</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
 					<fadetime>100</fadetime>
 			    <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[VarArtFanart]</texture>
 					<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
@@ -339,9 +339,9 @@
 			</control>
 			<control type="scrollbar" id="60">
 				<left>20</left>
-				<top>160</top>
-				<width>11</width>
-				<height>427</height>
+				<top>168</top>
+				<width>9</width>
+				<height>417</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
@@ -384,30 +384,30 @@
 	    <include>ThumbnailsAnimations</include>
 			<control type="panel" id="56">
 				<left>26</left>
-				<top>95</top>
+				<top>90</top>
 				<width>1227</width>
-				<height>580</height>
-				<onleft>56</onleft>
-				<onright>56</onright>
-				<onup>9111</onup>
-				<ondown>60</ondown>
-	      <orientation>horizontal</orientation>
+				<height>520</height>
+				<onleft>9111</onleft>
+				<onright>60</onright>
+				<onup>56</onup>
+				<ondown>56</ondown>
+	      <orientation>vertical</orientation>
 				<viewtype label="31085">list</viewtype>
 				<pagecontrol>60</pagecontrol>
         <scrolltime tween="Quadratic" easing="out">300</scrolltime>
 				<preloaditems>2</preloaditems>
 			  <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] + !substring(Container.FolderPath,plugin://plugin.video.youtube)</visible>
-				<itemlayout height="260" width="244">
+				<itemlayout height="258" width="243">
 					<control type="image">
 						<left>-2</left>
-						<width>260</width>
-						<height>275</height>
+						<width>256</width>
+						<height>270</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="30">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<left>24</left>
-						<top>26</top>
+						<left>22</left>
+						<top>23</top>
 						<width>208</width>
 						<height>194</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
@@ -416,8 +416,8 @@
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
-						<left>24</left>
-						<top>26</top>
+						<left>22</left>
+						<top>23</top>
 						<width>208</width>
 						<height>194</height>
 					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
@@ -426,8 +426,8 @@
             <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 					<control type="image">
-						<left>24</left>
-						<top>26</top>
+						<left>22</left>
+						<top>23</top>
 						<width>208</width>
 						<height>194</height>
 					  <texture background="true">$VAR[AddonStatus]</texture>
@@ -436,8 +436,8 @@
 					</control>
 					<control type="label">
 						<left>128</left>
-						<top>220</top>
-						<width>210</width>
+						<top>215</top>
+						<width>205</width>
 						<height>35</height>
 						<textcolor>99white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -448,17 +448,17 @@
 						<label>$VAR[BannersListMusicLabel]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="260" width="244">
+				<focusedlayout height="258" width="243">
 					<control type="image">
 						<left>-2</left>
-						<width>260</width>
-						<height>275</height>
+						<width>256</width>
+						<height>270</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="30">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<left>24</left>
-						<top>26</top>
+						<left>22</left>
+						<top>23</top>
 						<width>208</width>
 						<height>194</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
@@ -467,8 +467,8 @@
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
-						<left>24</left>
-						<top>26</top>
+						<left>22</left>
+						<top>23</top>
 						<width>208</width>
 						<height>194</height>
 					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
@@ -477,8 +477,8 @@
             <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 					<control type="image">
-						<left>24</left>
-						<top>26</top>
+						<left>22</left>
+						<top>23</top>
 						<width>208</width>
 						<height>194</height>
 					  <texture background="true">$VAR[AddonStatus]</texture>
@@ -487,8 +487,8 @@
 					</control>
 					<control type="label">
 						<left>128</left>
-						<top>220</top>
-						<width>210</width>
+						<top>215</top>
+						<width>205</width>
 						<height>35</height>
 						<textcolor>blue</textcolor>
 						<shadowcolor>99000000</shadowcolor>
@@ -500,8 +500,8 @@
 					</control>
 					<control type="image">
 						<left>-2</left>
-						<width>260</width>
-						<height>275</height>
+						<width>256</width>
+						<height>270</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="30">views/thumbnails/focus.png</texture>
             <animation type="Focus">
@@ -511,22 +511,20 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>40</left>
-				<top>625</top>
-				<width>1200</width>
-				<height>11</height>
+				<right>30</right>
+				<top>107</top>
+				<width>9</width>
+				<height>495</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>44white</colordiffuse>
-				<onup>56</onup>
-				<ondown>56</ondown>
+				<onleft>56</onleft>
+				<onright>9111</onright>
 				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
+				<orientation>vertical</orientation>
 			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-				<visible>Control.IsVisible(56)</visible>
 			</control>
 		</control>
 	</include>

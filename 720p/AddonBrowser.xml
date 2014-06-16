@@ -60,8 +60,6 @@
 					<description>Auto-Updates</description>
 					<label>24063</label>
 				  <include>TopButton</include>
-					<textureradiofocus>-</textureradiofocus>
-					<textureradionofocus>-</textureradionofocus>
 				</control>
 				<control type="radiobutton" id="6">
 					<description>Notifications</description>

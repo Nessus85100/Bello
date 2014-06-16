@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -233,8 +233,8 @@ msgid "Hide Now Playing Music Info"
 msgstr "Ukrywaj Teraz odtwarzane dla muzyki"
 
 msgctxt "#31104"
-msgid "Hide Search Button"
-msgstr "Ukryj przycisk wyszukiwania"
+msgid "Show Search Button"
+msgstr "Pokazuj przycisk wyszukiwania"
 
 msgctxt "#31105"
 msgid "Hide Trailers Button"
@@ -275,10 +275,6 @@ msgstr "Ukryj przycisk ustawień"
 msgctxt "#31114"
 msgid "Show Videos Button"
 msgstr "Pokaż przycisk wideo"
-
-msgctxt "#31115"
-msgid "Show DVD Button"
-msgstr "Pokaż przycisk DVD"
 
 msgctxt "#31116"
 msgid "Show Music Videos Button"
@@ -368,10 +364,6 @@ msgctxt "#31138"
 msgid "Enable Movies Notifications"
 msgstr "Włącz powiadomienia filmów"
 
-msgctxt "#31139"
-msgid "Enable Addons Notifications"
-msgstr "Włącz powiadomienia wtyczek"
-
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
 msgstr "Włącz powiadomienia o ostrzeżeniach pogodowych"
@@ -424,10 +416,6 @@ msgctxt "#31152"
 msgid "Hide Live TV Submenu"
 msgstr "Ukrywaj podmenu telewizji"
 
-msgctxt "#31153"
-msgid "Enable Login Screen"
-msgstr "Włącz ekran logowania"
-
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Wybierz rodzaj wtyczki zwiastunów"
@@ -447,6 +435,14 @@ msgstr "Pokazuj informacje ekranowe zamiast paska przeszukiwania"
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "Włącz tryb Kiosku"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Dostępne lokalne napisy"
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr "Resetuj Skórę"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -576,10 +572,6 @@ msgctxt "#31233"
 msgid "Chance of Precipitation"
 msgstr "Możliwość opadów"
 
-msgctxt "#31234"
-msgid "Fetching Forecast Info for..."
-msgstr "Pobieranie prognozy pogody dla..."
-
 msgctxt "#31235"
 msgid "Current Forecast"
 msgstr "Aktualna prognoza"
@@ -651,6 +643,10 @@ msgstr "Wszystkie seriale"
 msgctxt "#31252"
 msgid "All Music"
 msgstr "Wszystkie utwory muzyczne"
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Wyszukaj na YouTube"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -740,6 +736,10 @@ msgctxt "#31315"
 msgid "Hide Scrolling Titles"
 msgstr "Ukryj przewijane napisy"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Teraz odtwarzane"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "Dostępne grupy"
@@ -779,14 +779,6 @@ msgstr "Szybka nawigacja"
 msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "Wyłącz szybką nawigację"
-
-msgctxt "#31376"
-msgid "Show Update Video Library Button"
-msgstr "Pokazuj przycisk Aktualizuj bibliotekę wideo"
-
-msgctxt "#31377"
-msgid "Show Update Music Library Button"
-msgstr "Pokazuj przycisk Aktualizuj bibliotekę muzyki"
 
 msgctxt "#31378"
 msgid "Show Clean Video Library Button"
@@ -839,10 +831,6 @@ msgstr "Ukrywaj przycisk Nowe Seriale"
 msgctxt "#31390"
 msgid "Hide New Music Button"
 msgstr "Ukrywaj przycisk Nowe Utwory"
-
-msgctxt "#31391"
-msgid "Hide Settings Button"
-msgstr "Ukrywaj przycisk Ustawienia"
 
 msgctxt "#31392"
 msgid "Show Videos Button"
@@ -900,10 +888,6 @@ msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
 msgstr "Wybierz z pośród różnych ustawień i opcji, aby skórka \"Bello\" jak najbardziej odpowiadała Twoim potrzebom i upodobaniom. "
 
-msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
-msgstr "XBMC pozwala na ustawienie kilku profili, nawet ekran logowania dostępu. "
-
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
 msgstr "Konfiguracja wyglądu"
@@ -943,3 +927,7 @@ msgstr "Konfiguracja profili"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Konfiguracja skóry"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Pomoc"

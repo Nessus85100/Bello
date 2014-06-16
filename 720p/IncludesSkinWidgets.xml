@@ -1315,7 +1315,6 @@
 		        <colordiffuse>FFbbbbbb</colordiffuse>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
 						<texture background="true" diffuse="overlays/skin_widgets/poster_diffuse_nf.png">$INFO[ListItem.Property(RandomAlbum1)]</texture>
-						<aspectratio align="center">stretch</aspectratio>
 					</control>
 					<control type="image">
 						<posy>120</posy>

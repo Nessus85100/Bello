@@ -66,8 +66,10 @@
 	  <disabledcolor>33white</disabledcolor>
 		<texturefocus>buttons/settings_fo.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<textureradiofocus>buttons/radio_button_fo.png</textureradiofocus>
-		<textureradionofocus>buttons/radio_button_nf.png</textureradionofocus>
+		<textureradioonfocus>buttons/radio_button_on.png</textureradioonfocus>
+		<textureradioonnofocus>buttons/radio_button_on.png</textureradioonnofocus>
+		<textureradioofffocus>buttons/radio_button_off.png</textureradioofffocus>
+		<textureradiooffnofocus>buttons/radio_button_off.png</textureradiooffnofocus>
 		<align>left</align>
 		<aligny>center</aligny>
 		<pulseonselect>no</pulseonselect>

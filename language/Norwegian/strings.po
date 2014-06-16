@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -26,7 +26,7 @@ msgstr "TV guide"
 
 msgctxt "#31002"
 msgid "TV Shows"
-msgstr "TV Serier"
+msgstr "TV-Serier"
 
 msgctxt "#31003"
 msgid "Aired"
@@ -156,6 +156,10 @@ msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "Aktiver kioskmodus"
 
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Lokal undertekst tilgjengelig"
+
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Nytt søk"
@@ -216,6 +220,10 @@ msgctxt "#31250"
 msgid "All Movies"
 msgstr "Alle filmer"
 
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Søk på YouTube"
+
 msgctxt "#31285"
 msgid "Playlist Options"
 msgstr "Alternativer for spilleliste"
@@ -232,6 +240,10 @@ msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "Visualiseringsforvalg"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Nå spilles"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "Available Groups"
@@ -247,3 +259,7 @@ msgstr "Gi nytt navn på gruppe"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Slett gruppe"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Hjelp"

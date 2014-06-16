@@ -2235,7 +2235,6 @@
 							<textcolor>white</textcolor>
 			        <shadowcolor>99000000</shadowcolor>
 							<align>left</align>
-							<align>center</align>
 							<label>$INFO[ListItem.ActualIcon]</label>
 						</control>
 						<control type="label">
@@ -2348,7 +2347,6 @@
 								<textcolor>white</textcolor>
 				        <shadowcolor>99000000</shadowcolor>
 								<align>left</align>
-								<align>center</align>
 								<label>$INFO[ListItem.ActualIcon]</label>
 							</control>
 							<control type="label">

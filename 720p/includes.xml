@@ -97,8 +97,10 @@
 			<font>-</font>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<textureradiofocus>-</textureradiofocus>
-			<textureradionofocus>-</textureradionofocus>
+			<textureradioonfocus>-</textureradioonfocus>
+			<textureradioonnofocus>-</textureradioonnofocus>
+			<textureradioofffocus>-</textureradioofffocus>
+			<textureradiooffnofocus>-</textureradiooffnofocus>
 			<textureup>-</textureup>
 			<texturedown>-</texturedown>
 			<textureupfocus>-</textureupfocus>
@@ -425,8 +427,10 @@
 			<shadowcolor>99000000</shadowcolor>
 			<texturefocus>buttons/settings_fo.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<textureradiofocus>buttons/radio_button_fo.png</textureradiofocus>
-			<textureradionofocus>buttons/radio_button_nf.png</textureradionofocus>
+			<textureradioonfocus>buttons/radio_button_on.png</textureradioonfocus>
+			<textureradioonnofocus>buttons/radio_button_on.png</textureradioonnofocus>
+			<textureradioofffocus>buttons/radio_button_off.png</textureradioofffocus>
+			<textureradiooffnofocus>buttons/radio_button_off.png</textureradiooffnofocus>
 			<align>left</align>
 			<aligny>top</aligny>
 			<radioposx>715</radioposx>
@@ -476,11 +480,9 @@
 			<sliderheight>25</sliderheight>
 	    <align>left</align>
 			<aligny>center</aligny>
-			<pulseonselect>no</pulseonselect>
+			<pulseonselect>false</pulseonselect>
 		  <textoffsetx>15</textoffsetx>
 		  <textoffsety>0</textoffsety>
-	    <align>left</align>
-		  <aligny>top</aligny>
 	</include>
 
 
@@ -498,7 +500,7 @@
 			<aligny>top</aligny>
 			<textoffsetx>10</textoffsetx>
 			<textoffsety>10</textoffsety>
-			<pulseonselect>true</pulseonselect>
+			<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="DialogsRadioButton">
 			<description>Default RadioButton</description>
@@ -512,14 +514,16 @@
 			<shadowcolor>99000000</shadowcolor>
 			<texturefocus>buttons/settings_fo.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<textureradiofocus>buttons/radio_button_fo.png</textureradiofocus>
-			<textureradionofocus>buttons/radio_button_nf.png</textureradionofocus>
+			<textureradioonfocus>buttons/radio_button_on.png</textureradioonfocus>
+			<textureradioonnofocus>buttons/radio_button_on.png</textureradioonnofocus>
+			<textureradioofffocus>buttons/radio_button_off.png</textureradioofffocus>
+			<textureradiooffnofocus>buttons/radio_button_off.png</textureradiooffnofocus>
 			<align>left</align>
 			<aligny>top</aligny>
 			<radioposx>490</radioposx>
 			<textoffsetx>10</textoffsetx>
 			<textoffsety>10</textoffsety>
-			<pulseonselect>true</pulseonselect>
+			<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="DialogsSpincontrolex">
 			<description>Default SpinControlex</description>
@@ -543,7 +547,7 @@
 			<textoffsetx>10</textoffsetx>
 			<textoffsety>8</textoffsety>
 			<reverse>yes</reverse>
-			<pulseonselect>true</pulseonselect>
+			<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="DialogsSliderx">
 			<description>Default Slider</description>
@@ -564,7 +568,7 @@
 			<sliderheight>25</sliderheight>
 		  <textoffsetx>10</textoffsetx>
 		  <textoffsety>10</textoffsety>
-			<pulseonselect>true</pulseonselect>
+			<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="DialogsButtonLabels">
 			<height>62</height>
@@ -593,9 +597,11 @@
 			<texturenofocus>buttons/contextmenu_nf.png</texturenofocus>
 			<alttexturefocus>buttons/contextmenu_fo.png</alttexturefocus>
 			<alttexturenofocus>buttons/contextmenu_nf.png</alttexturenofocus>
-			<textureradiofocus>-</textureradiofocus>
-			<textureradionofocus>-</textureradionofocus>
-			<pulseonselect>no</pulseonselect>
+			<textureradioonfocus>-</textureradioonfocus>
+			<textureradioonnofocus>-</textureradioonnofocus>
+			<textureradioofffocus>-</textureradioofffocus>
+			<textureradiooffnofocus>-</textureradiooffnofocus>
+			<pulseonselect>false</pulseonselect>
 	</include>
 	
 	
@@ -864,10 +870,11 @@
 				<description>Page Count Label</description>
 				<left>45</left>
 				<top>70</top>
-				<width>300</width>
+				<width>640</width>
 				<height>20</height>
 				<font>FontSize_18</font>
 				<textcolor>blue</textcolor>
+				<shadowcolor>77000000</shadowcolor>
 				<scroll>false</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -885,7 +892,7 @@
       <visible>Container.Scrolling</visible>
 			<include>TopRightSlideAnimations</include>
 			<control type="grouplist">
-				<left>0</left>
+				<right>45</right>
 				<top>0</top>
 				<height>70</height>
 				<width>360</width>
@@ -895,7 +902,7 @@
 				<orientation>horizontal</orientation>
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
-		      <label>31026</label>
+		      <label>$LOCALIZE[31026]</label>
 				</control>
 				<control type="label">
 				  <include>TopBigLabel</include>
@@ -1004,7 +1011,7 @@
 			    <height>25</height>
 			    <font>FontSize_20</font>
 					<textcolor>white</textcolor>
-				  <shadowcolor>99000000</shadowcolor>
+				  <shadowcolor>77000000</shadowcolor>
 			    <align>right</align>
 			    <aligny>center</aligny>
 					<scroll>false</scroll>
@@ -1018,7 +1025,7 @@
 		    <height>25</height>
 		    <font>FontSize_20</font>
 				<textcolor>blue</textcolor>
-				<shadowcolor>99000000</shadowcolor>
+				<shadowcolor>77000000</shadowcolor>
 		    <align>left</align>
 		    <aligny>center</aligny>
 				<scroll>false</scroll>
@@ -1036,7 +1043,7 @@
 					<height>18</height>
 		      <font>ClockFont</font>
 					<textcolor>blue</textcolor>
-					<shadowcolor>99000000</shadowcolor>
+					<shadowcolor>77000000</shadowcolor>
 				  <label>31030</label>
 					<colordiffuse>grey</colordiffuse>
 				</control>
@@ -1047,7 +1054,7 @@
 					<width>20</width>
 					<height>18</height>
 					<textcolor>blue</textcolor>
-					<shadowcolor>99000000</shadowcolor>
+					<shadowcolor>77000000</shadowcolor>
 		      <font>ClockFont</font>
 				  <label>31031</label>
 					<colordiffuse>grey</colordiffuse>
@@ -1059,7 +1066,7 @@
 		    <height>25</height>
 		    <font>FontSize_20</font>
 				<textcolor>blue</textcolor>
-				<shadowcolor>99000000</shadowcolor>
+				<shadowcolor>77000000</shadowcolor>
 		    <align>left</align>
 		    <aligny>center</aligny>
 				<scroll>false</scroll>
@@ -1079,7 +1086,7 @@
 					<height>18</height>
 		      <font>ClockFont</font>
 					<textcolor>blue</textcolor>
-					<shadowcolor>99000000</shadowcolor>
+					<shadowcolor>77000000</shadowcolor>
 				  <label>31030</label>
 					<colordiffuse>grey</colordiffuse>
 				</control>
@@ -1090,7 +1097,7 @@
 					<width>20</width>
 					<height>18</height>
 					<textcolor>blue</textcolor>
-					<shadowcolor>99000000</shadowcolor>
+					<shadowcolor>77000000</shadowcolor>
 		      <font>ClockFont</font>
 				  <label>31031</label>
 					<colordiffuse>grey</colordiffuse>
@@ -1245,8 +1252,8 @@
 	</variable>
 
   <variable name="AddonStatus">
-    <value condition="stringcompare(ListItem.Label2,$LOCALIZE[24098])">overlays/addons_status/status_broken.png</value>
     <value condition="stringcompare(ListItem.Label2,$LOCALIZE[305])">overlays/addons_status/status_enabled.png</value>
+    <value condition="stringcompare(ListItem.Label2,$LOCALIZE[24098]) | stringcompare(ListItem.Label2,$LOCALIZE[24049])">overlays/addons_status/status_broken.png</value>
     <value condition="stringcompare(ListItem.Label2,$LOCALIZE[24068])">overlays/addons_status/status_update.png</value>
   </variable>
 	
@@ -1274,16 +1281,6 @@
 		<value condition="stringcompare(Skin.String(MusicName),playlists)">$LOCALIZE[136]</value>
 	</variable>
 
-	<variable name="SettingsCategoryDescription">
-		<value condition="Window.IsVisible(AppearanceSettings)">$INFO[Control.GetLabel(101)]</value>
-		<value condition="Window.IsVisible(VideosSettings)">$INFO[Control.GetLabel(102)]</value>
-		<value condition="Window.IsVisible(PVRSettings)">$INFO[Control.GetLabel(103)]</value>
-		<value condition="Window.IsVisible(MusicSettings)">$INFO[Control.GetLabel(104)]</value>
-		<value condition="Window.IsVisible(PicturesSettings)">$INFO[Control.GetLabel(105)]</value>
-		<value condition="Window.IsVisible(WeatherSettings)">$INFO[Control.GetLabel(106)]</value>
-		<value condition="Window.IsVisible(NetworkSettings)">$INFO[Control.GetLabel(108)]</value>
-		<value condition="Window.IsVisible(SystemSettings)">$INFO[Control.GetLabel(109)]</value>
-	</variable>
 	<variable name="SettingsCategoryHeadLabels">
 		<value condition="Window.IsVisible(AppearanceSettings)">$LOCALIZE[31411]</value>
 		<value condition="Window.IsVisible(VideosSettings)">$LOCALIZE[31412]</value>
@@ -1342,7 +1339,7 @@
 	</variable>	
 
   <variable name="ViewsDef3DFlags">
-    <value condition="ListItem.IsStereoscopic | SubString(ListItem.FileNameAndPath,.3D.) | SubString(ListItem.FileNameAndPath,-3D.) | SubString(ListItem.Filenameandpath,.3dbd.)">flags/def/3d.png</value>
+    <value condition="ListItem.IsStereoscopic">flags/def/3d.png</value>
     <value condition="IntegerGreaterThan(ListItem.VideoResolution,719)">flags/def/hd.png</value>
     <value condition="!IsEmpty(ListItem.VideoResolution)">flags/def/sd.png</value>
   </variable>
@@ -1428,12 +1425,6 @@
 		<value condition="Container.Content(Seasons)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
 	</variable>
 	
-	<variable name="PlayerThumbs">
-		<value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
-		<value condition="VideoPlayer.Content(Episodes) + !IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
-		<value>$INFO[Player.Art(thumb)]</value>
-	</variable>
-	
 	<variable name="FanartThumbsOptionsLabels">
 		<value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),1)">$LOCALIZE[20445]</value>
 		<value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),2)">$LOCALIZE[31218]</value>
@@ -1509,13 +1500,45 @@
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 
+	<variable name="VideoPlayerThumb">
+		<value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
+		<value condition="VideoPlayer.Content(Episodes) + !IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
+		<value>$INFO[Player.Art(thumb)]</value>
+	</variable>
+
+  <include name="OSDFadeLabelWidth">
+    <width>420</width>
+  </include>
+  <include name="OSDFadeLabelWidthSmall">
+    <width>365</width>
+  </include>
   <include name="OSDProgressWidth">
-    <width>590</width>
+    <width>600</width>
   </include>
   <include name="OSDProgressWidthSmall">
     <width>545</width>
   </include>
-  
+
+	<variable name="OSDInfoTitleLabel">
+		<value condition="VideoPlayer.Content(Movies)">$INFO[VideoPlayer.Title,, ]$INFO[VideoPlayer.Year, (,) ]</value>
+		<value>$INFO[VideoPlayer.Title]</value>
+	</variable>
+
+	<variable name="OSDInfoUnderTitleLabel">
+		<value condition="VideoPlayer.Content(Movies)">$INFO[VideoPlayer.Genre]</value>
+		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season, · $LOCALIZE[20373] ,]$INFO[VideoPlayer.Episode, · $LOCALIZE[20359] ,]</value>
+		<value condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)] + !IsEmpty(VideoPlayer.Genre)">$INFO[VideoPlayer.Genre]</value>
+		<value>$INFO[Player.FolderPath]</value>
+	</variable>
+
+	<variable name="OSDInfoPremieredFadeLabel">
+		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.Premiered,[COLOR=white]$LOCALIZE[20416]:[/COLOR] ]</value>
+	</variable>
+
+	<variable name="OSDInfoChapterFadeLabel">
+		<value condition="Player.ChapterCount">$LOCALIZE[21396]: [COLOR=white]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ][/COLOR]</value>
+	</variable>
+
 	<variable name="DialogSeekBarLabel">
 		<value condition="Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek">[COLOR=blue]$LOCALIZE[31301][/COLOR]</value>
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[COLOR=blue]$LOCALIZE[31302][/COLOR]</value>

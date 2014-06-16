@@ -1114,7 +1114,7 @@
 								<texturefocus>-</texturefocus>
 								<texturenofocus>-</texturenofocus>
 								<onclick condition="!System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetTVShowsType),3)">Skin.SetString(QuickNavWidgetTVShowsName,$LOCALIZE[31242])</onclick>
-								<onclick condition="!System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetTVShowsType),3">Skin.SetString(QuickNavWidgetTVShowsType,1)</onclick>
+								<onclick condition="!System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetTVShowsType),3)">Skin.SetString(QuickNavWidgetTVShowsType,1)</onclick>
 								<onclick condition="System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetTVShowsType),4)">Skin.SetString(QuickNavWidgetTVShowsName,$LOCALIZE[31242])</onclick>
 								<onclick condition="System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetTVShowsType),4)">Skin.SetString(QuickNavWidgetTVShowsType,1)</onclick>
 								<onclick condition="System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetTVShowsType),3)">Skin.SetString(QuickNavWidgetTVShowsName,$LOCALIZE[31258])</onclick>
@@ -1178,7 +1178,7 @@
 								<texturefocus>-</texturefocus>
 								<texturenofocus>-</texturenofocus>
 								<onclick condition="!System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMusicType),3)">Skin.SetString(QuickNavWidgetMusicName,$LOCALIZE[31243])</onclick>
-								<onclick condition="!System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMusicType),3">Skin.SetString(QuickNavWidgetMusicType,1)</onclick>
+								<onclick condition="!System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMusicType),3)">Skin.SetString(QuickNavWidgetMusicType,1)</onclick>
 								<onclick condition="System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMusicType),4)">Skin.SetString(QuickNavWidgetMusicName,$LOCALIZE[31243])</onclick>
 								<onclick condition="System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMusicType),4)">Skin.SetString(QuickNavWidgetMusicType,1)</onclick>
 								<onclick condition="System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMusicType),3)">Skin.SetString(QuickNavWidgetMusicName,$LOCALIZE[31259])</onclick>

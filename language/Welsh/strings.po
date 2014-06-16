@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -76,6 +76,10 @@ msgctxt "#31080"
 msgid "Slide"
 msgstr "Sleid"
 
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Isdeitlau lleol ar gael"
+
 msgctxt "#31223"
 msgid "36 Hour Forecast"
 msgstr "Rhagolygon 36 Awr"
@@ -119,6 +123,10 @@ msgstr "Oedi"
 msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "Rhagosodiaid Delweddu"
+
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Nawr yn Chwarae"
 
 msgctxt "#31351"
 msgid "Add Group"

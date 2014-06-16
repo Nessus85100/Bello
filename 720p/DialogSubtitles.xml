@@ -278,7 +278,7 @@
 		    <animation effect="zoom" start="50" end="100" time="450" center="auto" tween="back" easing="out" condition="[Control.HasFocus(150) | ControlGroup(170).HasFocus]" reversible="false">Conditional</animation>
 		    <animation effect="zoom" start="100" end="50" time="450" center="auto" tween="back" easing="out" condition="[IsEmpty(Container(120).ListItem.Label) + !Stringcompare(Control.GetLabel(140),$LOCALIZE[24109])]" reversible="false">Conditional</animation>
 		    <animation effect="zoom" start="100" end="50" time="450" center="auto" tween="back" easing="out" condition="![Control.HasFocus(150) | ControlGroup(170).HasFocus]" reversible="false">Conditional</animation>
-		    <visible allowhiddenfocus="true">[[Control.HasFocus(150) | ControlGroup(170).HasFocus] + ![IsEmpty(Container(120).ListItem.Label) + !Stringcompare(Control.GetLabel(140),$LOCALIZE[24109])]</visible>
+		    <visible allowhiddenfocus="true">[[Control.HasFocus(150) | ControlGroup(170).HasFocus] + ![IsEmpty(Container(120).ListItem.Label) + !Stringcompare(Control.GetLabel(140),$LOCALIZE[24109])]]</visible>
 	      <control type="image">
 	        <description>Background Image</description>
 					<include>FullscreenDimensions</include>

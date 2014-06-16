@@ -7,7 +7,7 @@
   <onload condition="SubString(Container.FolderPath,plugin://plugin.video.youtube)">Container.SetViewMode(561)</onload>
 	<onload condition="System.HasAddon(script.videolanguage) + Container.Content(movies)">RunScript(script.videolanguage,backend=True)</onload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows) + Skin.HasSetting(NextAiredEnabled)">RunScript(script.tv.show.next.aired,backend=True)</onload>
-  <onload condition="System.HasAddon(script.tvtunes) + Library.HasContent(TVShows) + !Player.HasMedia + Skin.HasSetting(TVTunesEnabled)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+  <onload condition="System.HasAddon(script.tvtunes) + [Library.HasContent(Movies) | Library.HasContent(TVShows)] + Skin.HasSetting(TVTunesEnabled) + !Player.HasMedia">RunScript(script.tvtunes,backend=True)</onload>
 	<onload condition="IsEmpty(Skin.String(ListViewWideThumbTVShows))">Skin.SetString(ListViewWideThumbTVShows,1)</onload>
 	<onload condition="IsEmpty(Skin.String(GalleryViewWideThumbTVShows))">Skin.SetString(GalleryViewWideThumbTVShows,1)</onload>
 	<onload condition="IsEmpty(Skin.String(ListViewWideThumbMovies))">Skin.SetString(ListViewWideThumbMovies,1)</onload>
@@ -402,7 +402,6 @@
 					<description>Sort asc</description>
 				  <include>TopSmallLabel</include>
 					<label>$INFO[Control.GetLabel(4)]</label>
-					<altlabel>$INFO[Control.GetLabel(4)]</altlabel>
 					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(4)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(4)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(4)" reversible="true">Conditional</animation>
@@ -449,7 +448,7 @@
 			<control type="label">
 			  <include>TopBigLabel</include>
 				<label>$LOCALIZE[3]</label>
-	      <visible>![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
+	      <visible>![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			</control>
 			<!-- Movies -->
 			<control type="label">

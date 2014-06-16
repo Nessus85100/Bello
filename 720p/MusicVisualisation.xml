@@ -57,7 +57,6 @@
 					<angle>45</angle>
 					<align>left</align>
 					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
 				</control>			
 				<control type="label">
 					<description>Player Times</description>
@@ -113,7 +112,6 @@
 					<textcolor>99grey</textcolor>
 					<align>left</align>
 					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
 				</control>			
 			  <control type="label">
 					<description>Player Times</description>
@@ -170,7 +168,6 @@
 					<align>left</align>
 					<angle>90</angle>
 					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
 				</control>
 			  <control type="label">
 					<description>Player Times</description>

@@ -11,7 +11,7 @@
 			<left>316</left>
 			<top>122</top>
 			<width>647</width>
-			<height>472</height>
+			<height>465</height>
 			<texture background="true" border="39">dialogs/other/default_bg.png</texture>
 		</control>
 		<control type="image">
@@ -34,8 +34,8 @@
 		<control type="grouplist" id="5">
 			<description>Control Area</description>
 			<left>363</left>
-			<top>367</top>
-			<width>555</width>
+			<top>366</top>
+			<width>553</width>
 			<height>149</height>
 			<itemgap>4</itemgap>
 			<onleft>10000</onleft>
@@ -48,10 +48,12 @@
 	    <include>DialogsButton</include>
 		</control>
 		<control type="radiobutton" id="8">
+			<width>553</width>
 			<description>Default RadioButton</description>
 	    <include>DialogsRadioButton</include>
 		</control>
 		<control type="spincontrolex" id="9">
+			<width>553</width>
 			<description>Default SpinControlex</description>
 	    <include>DialogsSpincontrolex</include>
 		</control>

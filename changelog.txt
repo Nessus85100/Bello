@@ -1,3 +1,13 @@
+[B]v2.0.1[/B]
+• Fixed search youtube bug in some QuickNav widgets.
+• Fixed some misaligned elements in some cases in Videofullscreen.
+• Fixed misaligned scrollbars in severall views.
+• Added missing icons for "Update" and "Incompatible" addon status.
+• Changed Thumbnails views navigation to vertical.
+• Updated TVTunes script support.
+• Updated language files from Transifex.
+• Several code fixes required for the XBMC official repo.
+
 [B]v2.0.0[/B]
 • Full Gotham support.
 • Added Skin support for the Cinema Experience script.

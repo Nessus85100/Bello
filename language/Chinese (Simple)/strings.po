@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -220,6 +220,22 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr "列表墙"
 
+msgctxt "#31094"
+msgid "Choose Movies Widget"
+msgstr "选择电影小插件"
+
+msgctxt "#31095"
+msgid "Choose TV Shows Widget"
+msgstr "选择剧集小部件"
+
+msgctxt "#31096"
+msgid "Choose Music Widget"
+msgstr "选择音乐小部件"
+
+msgctxt "#31097"
+msgid "Choose RSS Video Feed Widget"
+msgstr "选择RSS视频订阅小部件"
+
 msgctxt "#31098"
 msgid "Home Menu"
 msgstr "首页菜单"
@@ -245,8 +261,8 @@ msgid "Hide Now Playing Music Info"
 msgstr "隐藏当前播放音乐信息"
 
 msgctxt "#31104"
-msgid "Hide Search Button"
-msgstr "隐藏搜索按钮"
+msgid "Show Search Button"
+msgstr "显示搜索按钮"
 
 msgctxt "#31105"
 msgid "Hide Trailers Button"
@@ -289,8 +305,8 @@ msgid "Show Videos Button"
 msgstr "显示视频按钮"
 
 msgctxt "#31115"
-msgid "Show DVD Button"
-msgstr "显示DVD按钮"
+msgid "Show Exit Button"
+msgstr "显示退出按钮"
 
 msgctxt "#31116"
 msgid "Show Music Videos Button"
@@ -385,8 +401,8 @@ msgid "Enable Movies Notifications"
 msgstr "启用电影通知"
 
 msgctxt "#31139"
-msgid "Enable Addons Notifications"
-msgstr "启用插件通知"
+msgid "Enable Add-ons Notifications"
+msgstr "启用扩展通知"
 
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
@@ -441,7 +457,7 @@ msgid "Hide Live TV Submenu"
 msgstr "隐藏直播电视子菜单"
 
 msgctxt "#31153"
-msgid "Enable Login Screen"
+msgid "Enable login screen"
 msgstr "启用登录屏"
 
 msgctxt "#31154"
@@ -473,12 +489,60 @@ msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
 msgstr "为所有电影下载[COLOR=selected]logo.png[/COLOR]"
 
 msgctxt "#31161"
-msgid "Hide Library Totals"
-msgstr "隐藏资料库总计"
+msgid "Show Library Totals"
+msgstr "显示资料库总计"
 
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "启用自助终端模式"
+
+msgctxt "#31163"
+msgid "Cast info"
+msgstr "演职员信息"
+
+msgctxt "#31164"
+msgid "Press DOWN for more info"
+msgstr "按下键显示更多信息"
+
+msgctxt "#31165"
+msgid "Download [COLOR=selected]disc.png[/COLOR] for all Movies"
+msgstr "为所有电影下载[COLOR=selected]disc.png[/COLOR]"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "本地字幕可用"
+
+msgctxt "#31167"
+msgid "Settings Level:"
+msgstr "设置等级："
+
+msgctxt "#31168"
+msgid "Reset Level"
+msgstr "重置等级"
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr "重置皮肤"
+
+msgctxt "#31170"
+msgid "All Skin Settings will revert back to their default state.[CR]Are you sure you want to proceed ?"
+msgstr "所有皮肤设置将恢复到默认状态。[CR]你确认要继续吗？"
+
+msgctxt "#31171"
+msgid "Update Art"
+msgstr "更新艺术图片"
+
+msgctxt "#31172"
+msgid "Enable Home Menu Fanart SlideShow"
+msgstr "启用首页菜单同人画幻灯片"
+
+msgctxt "#31173"
+msgid "Hide Add-ons Submenu"
+msgstr "隐藏扩展子菜单"
+
+msgctxt "#31174"
+msgid "Hide Submenus"
+msgstr "隐藏子菜单"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -495,6 +559,10 @@ msgstr "我的音乐"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "新的搜索"
+
+msgctxt "#31204"
+msgid "Please check your weather settings"
+msgstr "请检查你的天气设置"
 
 msgctxt "#31205"
 msgid "Browse the most recently added movies"
@@ -612,10 +680,6 @@ msgctxt "#31233"
 msgid "Chance of Precipitation"
 msgstr "降雨概率"
 
-msgctxt "#31234"
-msgid "Fetching Forecast Info for..."
-msgstr "获取天气信息..."
-
 msgctxt "#31235"
 msgid "Current Forecast"
 msgstr "当前天气预报"
@@ -687,6 +751,34 @@ msgstr "所有剧集"
 msgctxt "#31252"
 msgid "All Music"
 msgstr "所有音乐"
+
+msgctxt "#31253"
+msgid "Add YouTube UserID and Title"
+msgstr "添加YouTube UserID 和标题"
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "YouTube搜索"
+
+msgctxt "#31255"
+msgid "RSS Video Feeds"
+msgstr "RSS视频订阅"
+
+msgctxt "#31256"
+msgid "In Cinemas Now"
+msgstr "正在影院上映"
+
+msgctxt "#31257"
+msgid "Trending Movies"
+msgstr "流行电影"
+
+msgctxt "#31258"
+msgid "Trending  TV Shows"
+msgstr "流行剧集"
+
+msgctxt "#31259"
+msgid "Top Artists"
+msgstr "顶尖艺人"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -776,6 +868,10 @@ msgctxt "#31315"
 msgid "Hide Scrolling Titles"
 msgstr "隐藏滚动标题"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "正在播放"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "可用组"
@@ -817,11 +913,11 @@ msgid "Disable Quick Navigation"
 msgstr "启用快速浏览"
 
 msgctxt "#31376"
-msgid "Show Update Video Library Button"
+msgid "Hide Update Video Library Button"
 msgstr "显示更新视频资料库按钮"
 
 msgctxt "#31377"
-msgid "Show Update Music Library Button"
+msgid "Hide Update Music Library Button"
 msgstr "显示更新音乐资料库按钮"
 
 msgctxt "#31378"
@@ -877,8 +973,8 @@ msgid "Hide New Music Button"
 msgstr "隐藏新增音乐按钮"
 
 msgctxt "#31391"
-msgid "Hide Settings Button"
-msgstr "隐藏设置按钮"
+msgid "Show Settings Button"
+msgstr "显示设置按钮"
 
 msgctxt "#31392"
 msgid "Show Videos Button"
@@ -899,6 +995,18 @@ msgstr "自定义快速浏览按钮"
 msgctxt "#31396"
 msgid "Custom Button"
 msgstr "自定义按钮"
+
+msgctxt "#31397"
+msgid "Hide Skin Settings Button"
+msgstr "隐藏皮肤设置按钮"
+
+msgctxt "#31398"
+msgid "Hide Favourites Button"
+msgstr "隐藏收藏按钮"
+
+msgctxt "#31399"
+msgid "Hide LiveTV Button"
+msgstr "隐藏LiveTV按钮"
 
 msgctxt "#31401"
 msgid "Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
@@ -937,8 +1045,8 @@ msgid "Choose from a variety of settings and customization options to make \"Bel
 msgstr "自定义一系列设置和选项来让 \"Bello\" 符合你的需求和品味."
 
 msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
-msgstr "通过XBMC你可以设置多个用户, 甚至在进行受控操作时使用登录屏."
+msgid "With XBMC you can have several profiles and the auto login option if the login screen is disabled."
+msgstr "在XBMC你可以设置多个用户配置，以及在登录屏禁用时的自动登录选项。"
 
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
@@ -981,13 +1089,13 @@ msgid "Configure Skin Settings"
 msgstr "配置皮肤设置"
 
 msgctxt "#31430"
-msgid "Help Tip"
-msgstr "帮助小贴士"
+msgid "Help"
+msgstr "帮助"
 
 msgctxt "#31431"
-msgid "You haven't added any items to Favorites yet. Highlight an item, and choose \"Add to favorites\" from the context menu."
-msgstr "你还未添加任何项目到收藏夹。右键选择一个项目，下拉菜单中选择“添加到收藏夹”。"
+msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."
+msgstr "你还未添加任何项目到收藏夹。[CR]高亮选择一个项目，功能菜单中选择“添加到收藏夹”。"
 
 msgctxt "#31432"
-msgid "Mouse usage is not supported. Please disable it from Settings>System>Input Devices>\"Enable mouse and Touch Screen support\"."
-msgstr "不支持鼠标操作。请在设置》系统》输入设备》“启用鼠标和触摸板支持”中关闭它"
+msgid "Mouse usage is not supported.[CR]Please disable it from Settings>System>Input Devices>[CR]\"Enable mouse and Touch Screen support\"."
+msgstr "不支持鼠标操作。[CR]请在设置》系统》输入设备》[CR]“启用鼠标和触摸板支持”中关闭它。"

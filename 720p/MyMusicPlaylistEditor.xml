@@ -309,15 +309,17 @@
 		</control>
 	 </control>
 
-   <!-- ============================= -->
-   <!-- Top Options Controls DISABLED -->
-   <!-- ============================= -->
-   <!--
+
+
+   <!-- ===================== -->
+   <!-- Top Options Controls -->
+   <!-- ===================== -->
+<!-- *NOT USED*
 	 <control type="group."  id="9000">
 			<left>45</left>
 			<top>25</top>
       <include>TopOptionsSlideAnimations</include>
-      <!-- Main Options --
+      Main Options
 			<control type="grouplist" id="9111">
 				<left>0</left>
 				<top>0</top>
@@ -347,7 +349,8 @@
 				  <include>TopButton</include>
 				</control>
 			</control>
-      <!-- Main Options Labels --
+      
+      Main Options Labels
 			<control type="grouplist">
 		    <visible allowhiddenfocus="true">ControlGroup(9111).HasFocus</visible>
 	      <animation type="Visible"  reversible="false">
@@ -392,7 +395,7 @@
 				</control>
 			</control>
 	 </control>
-   -->
+-->
 
 		<include>CommonItems</include>
 		<include>CommonWeatherAndClock</include>

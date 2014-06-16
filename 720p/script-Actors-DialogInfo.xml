@@ -360,7 +360,7 @@
 				  <include>TopButton</include>
 				</control>
         <control type="button" id="22">
-          <label>Search on YouTube</label>
+          <label>31254</label>
           <onclick>SetProperty(script.metadata.actors.path,$INFO[ListItem.Label],home)</onclick>
           <onclick condition="Window.IsActive(movieinformation)">Dialog.Close(movieinformation)</onclick>
           <onclick>PreviousMenu</onclick>
@@ -399,6 +399,7 @@
 					<description>Browse</description>
 				  <include>TopSmallLabel</include>
           <label>$INFO[Control.GetLabel(8)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(8)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(8)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(8)" reversible="true">Conditional</animation>
 				</control>
@@ -406,6 +407,7 @@
 					<description>Cast/Plot</description>
 				  <include>TopSmallLabel</include>
           <label>$INFO[Control.GetLabel(105)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(105)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(105)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(105)" reversible="true">Conditional</animation>
 				</control>
@@ -413,6 +415,7 @@
 					<description>Search on YouTube</description>
 				  <include>TopSmallLabel</include>
           <label>$INFO[Control.GetLabel(22)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(22)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(22)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(22)" reversible="true">Conditional</animation>
 				</control>
@@ -420,6 +423,7 @@
 					<description>Refresh</description>
 				  <include>TopSmallLabel</include>
           <label>$INFO[Control.GetLabel(6)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(6)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
 				</control>

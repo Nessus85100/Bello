@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -136,6 +136,10 @@ msgctxt "#31158"
 msgid "Views"
 msgstr "Görünümler"
 
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Yerel altyazı mevcut"
+
 msgctxt "#31215"
 msgid "Next Airs"
 msgstr "Sıradaki Canlı Yayın"
@@ -188,6 +192,10 @@ msgctxt "#31241"
 msgid "Recently Added Movies"
 msgstr "Son Eklenen Filmler"
 
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "YouTube'da Ara"
+
 msgctxt "#31285"
 msgid "Playlist Options"
 msgstr "Çalma Listesi Seçenekleri"
@@ -208,6 +216,10 @@ msgctxt "#31310"
 msgid "Visualization Settings"
 msgstr "Görsel Öğe Ayarları"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Şimdi Çalınıyor"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "Mevcut Gruplar"
@@ -223,3 +235,7 @@ msgstr "Grubu Yeniden Adlandır"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Grubu Sil"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Yardım"

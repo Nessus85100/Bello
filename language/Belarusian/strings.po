@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -168,6 +168,14 @@ msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "Enable Kiosk Mode"
 
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Даступныя лакальныя субтытры"
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr "Reset Skin"
+
 msgctxt "#31203"
 msgid "New Search"
 msgstr "New Search"
@@ -244,6 +252,10 @@ msgctxt "#31250"
 msgid "All Movies"
 msgstr "All Movies"
 
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Search on YouTube"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Open Playlist"
@@ -279,6 +291,10 @@ msgstr "Прыпынена"
 msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "Visualization Presets"
+
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Зараз прайграецца"
 
 msgctxt "#31350"
 msgid "Available Groups"
@@ -335,3 +351,7 @@ msgstr "Configure Weather Settings"
 msgctxt "#31418"
 msgid "Configure System Settings"
 msgstr "Configure System Settings"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Help"

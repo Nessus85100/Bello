@@ -25,7 +25,7 @@
 	    </animation>
 			<control type="grouplist" id="100">
 				<right>35</right>
-				<top>535</top>
+				<top>538</top>
 				<width>370</width>
 				<height>55</height>
 				<itemgap>-10</itemgap>
@@ -317,11 +317,12 @@
 			<include>OSDPlotAnimation</include>
 	    <visible>Window.IsActive(VideoOSD)</visible>
 	    <visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | IsEmpty(VideoPlayer.Plot)] + Control.HasFocus(200)</visible>
-			<animation effect="slide" start="0,0" end="110,0" condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="90,0" condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-75,0" condition="VideoPlayer.Content(LiveTV)">Conditional</animation>
 			<control type="label">
 				<description>Title label</description>
 				<height>30</height>
-				<width>820</width>
+				<width>730</width>
 			  <label>$INFO[VideoPlayer.Title,,]$INFO[VideoPlayer.Year, (,) ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -333,7 +334,7 @@
 			<control type="grouplist">
 	      <top>-15</top>
 				<height>70</height>
-				<width>970</width>
+				<width>730</width>
 				<itemgap>10</itemgap>
 				<align>left</align>
 				<orientation>horizontal</orientation>
@@ -350,7 +351,8 @@
 			</control>
 	    <control type="textbox">
 	      <top>30</top>
-	      <width>540</width>
+        <include condition="[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDProgressWidth</include>
+        <include condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDProgressWidthSmall</include>
 	      <height>110</height>
 				<font>FontSize_20</font>
 				<textcolor>99white</textcolor>

@@ -821,7 +821,7 @@
 							<top>0</top>
 							<width>129</width>
 							<height>181</height>
-							<texture background="true" fallback="thumbs/fallback_poster.png">$VAR[PlayerThumbs]</texture>
+							<texture background="true" fallback="thumbs/fallback_poster.png">$VAR[VideoPlayerThumb]</texture>
 							<aspectratio aligny="center" scalediffuse="false">stretch</aspectratio>
 						</control>
 						<control type="image">
@@ -877,9 +877,9 @@
 							<top>0</top>
 							<width>179</width>
 							<height>181</height>
-							<texture background="true" fallback="thumbs/fallback_square.png">$INFO[VideoPlayer.Cover]</texture>
+							<texture background="true" fallback="thumbs/fallback_disc_big_tp.png">$VAR[VideoPlayerThumb]</texture>
 							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						  <visible>Player.HasVideo + !VideoPlayer.HasMenu</visible>
+						  <visible>[Player.HasVideo + VideoPlayer.HasMenu]</visible>
 						</control>
 						<control type="image">
 							<description>Cover image</description>
@@ -887,9 +887,19 @@
 							<top>0</top>
 							<width>179</width>
 							<height>181</height>
-							<texture background="true" fallback="thumbs/fallback_disc_big_tp.png">$VAR[PlayerThumbs]</texture>
+							<texture background="true" fallback="thumbs/fallback_square.png">$VAR[VideoPlayerThumb]</texture>
 							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						  <visible>Player.HasVideo + VideoPlayer.HasMenu</visible>
+						  <visible>[Player.HasVideo + VideoPlayer.Content(LiveTV)]</visible>
+						</control>
+						<control type="image">
+							<description>Cover image</description>
+							<left>0</left>
+							<top>0</top>
+							<width>179</width>
+							<height>181</height>
+							<texture background="true">$INFO[VideoPlayer.Cover]</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+						  <visible>[Player.HasVideo + ![VideoPlayer.HasMenu | VideoPlayer.Content(LiveTV)]]</visible>
 						</control>
 						<control type="image">
 							<description>Cover image</description>

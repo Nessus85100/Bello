@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -132,6 +132,10 @@ msgctxt "#31098"
 msgid "Home Menu"
 msgstr "Naslovni izbornik"
 
+msgctxt "#31104"
+msgid "Show Search Button"
+msgstr "Prikaži tipku pretrage"
+
 msgctxt "#31128"
 msgid "ClearArt"
 msgstr "Prazna slika omota"
@@ -155,6 +159,10 @@ msgstr "Prikazi"
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "Omogući Kiosk način"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Dostupan je lokalni podnaslov"
 
 msgctxt "#31203"
 msgid "New Search"
@@ -224,6 +232,10 @@ msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "Vizualizacija Memorirana"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Sad Svira"
+
 msgctxt "#31351"
 msgid "Add Group"
 msgstr "Dodaj grupu"
@@ -251,3 +263,7 @@ msgstr "Čisćenje videoteke"
 msgctxt "#31373"
 msgid "Clean Music Library"
 msgstr "Čisćenje fonoteke"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Pomoć"

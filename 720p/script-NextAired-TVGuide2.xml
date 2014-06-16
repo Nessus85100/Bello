@@ -40,7 +40,7 @@
 				<top>140</top>
 				<width>295</width>
 				<height>165</height>
-				<aspectratio aligny="center" align="center">strecth</aspectratio>
+				<aspectratio aligny="center" align="center">stretch</aspectratio>
 				<texture background="true" border="39">dialogs/other/iconborder_black.png</texture>
 			</control>
 			<control type="image">
@@ -50,7 +50,7 @@
 				<width>295</width>
 				<height>166</height>
         <fadetime>100</fadetime>
-				<aspectratio aligny="center" align="center">strecth</aspectratio>
+				<aspectratio aligny="center" align="center">stretch</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[TVGuideLandscape]</texture>
 				<bordersize>7</bordersize>
 				<visible>Stringcompare(Skin.String(PreviewThumb),1)</visible>
@@ -73,7 +73,7 @@
 				<width>295</width>
 				<height>166</height>
         <fadetime>100</fadetime>
-				<aspectratio aligny="center" align="center">strecth</aspectratio>
+				<aspectratio aligny="center" align="center">stretch</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[TVGuideFanart]</texture>
 				<bordersize>7</bordersize>
 				<visible>Stringcompare(Skin.String(PreviewThumb),3)</visible>
@@ -85,7 +85,7 @@
 				<top>140</top>
 				<width>134</width>
 				<height>80</height>
-				<aspectratio aligny="center" align="center">strecth</aspectratio>
+				<aspectratio aligny="center" align="center">stretch</aspectratio>
 				<texture background="true" border="10">dialogs/other/iconborder_black.png</texture>
         <fadetime>100</fadetime>
 				<visible>!Stringcompare(Skin.String(PreviewThumb),3)</visible>
@@ -109,7 +109,7 @@
 				<top>173</top>
 				<width>250</width>
 				<height>140</height>
-				<aspectratio aligny="center" align="right">strecth</aspectratio>
+				<aspectratio aligny="center" align="right">stretch</aspectratio>
 				<texture background="true">$VAR[TVGuideClearart]</texture>
         <fadetime>100</fadetime>
 				<colordiffuse>ddffffff</colordiffuse>

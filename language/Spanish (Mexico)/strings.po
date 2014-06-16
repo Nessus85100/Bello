@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -128,6 +128,10 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "Múltiples Imágenes"
 
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Subtitulo local disponible"
+
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Apaisado"
@@ -168,6 +172,10 @@ msgctxt "#31237"
 msgid "View"
 msgstr "Ver"
 
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Buscar en YouTube"
+
 msgctxt "#31285"
 msgid "Playlist Options"
 msgstr "Opciones de Lista de Reproducción"
@@ -183,6 +191,10 @@ msgstr "Pausado"
 msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "Preajustes de Visualización"
+
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Ahora reproduciendo"
 
 msgctxt "#31350"
 msgid "Available Groups"
@@ -215,3 +227,7 @@ msgstr "Limpiar Biblioteca de Video"
 msgctxt "#31373"
 msgid "Clean Music Library"
 msgstr "Limpiar Biblioteca de Música"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Ayuda"

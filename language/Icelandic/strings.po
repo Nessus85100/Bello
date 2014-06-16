@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -112,6 +112,10 @@ msgctxt "#31031"
 msgid "PM"
 msgstr "EH"
 
+msgctxt "#31033"
+msgid "Channel Group"
+msgstr "Rásahópar"
+
 msgctxt "#31034"
 msgid "Teletext"
 msgstr "Textavarp"
@@ -128,6 +132,10 @@ msgctxt "#31041"
 msgid "Creator"
 msgstr "Höfundur"
 
+msgctxt "#31080"
+msgid "Slide"
+msgstr "Skruna"
+
 msgctxt "#31083"
 msgid "Wall"
 msgstr "Veggur"
@@ -135,6 +143,14 @@ msgstr "Veggur"
 msgctxt "#31084"
 msgid "Posters"
 msgstr "Plaköt"
+
+msgctxt "#31086"
+msgid "Banner List"
+msgstr "Listi á borða"
+
+msgctxt "#31098"
+msgid "Home Menu"
+msgstr "Heimavalblað"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -187,6 +203,10 @@ msgstr "Einföld mynd"
 msgctxt "#31136"
 msgid "Multi Image"
 msgstr "Margföld mynd"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Texti í boði á tölvu"
 
 msgctxt "#31202"
 msgid "My Music"
@@ -252,6 +272,18 @@ msgctxt "#31237"
 msgid "View"
 msgstr "Sýn"
 
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Kvikmyndir af handahófi"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Allar kvikmyndir"
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Leita á YouTube"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Opna spilunarlista"
@@ -280,6 +312,42 @@ msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "Forstillingar myndskreytinga"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Í spilun"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "Tiltækir hópar"
+
+msgctxt "#31351"
+msgid "Add Group"
+msgstr "Bæta við hóp"
+
+msgctxt "#31352"
+msgid "Rename Group"
+msgstr "Endurnefna hóp"
+
+msgctxt "#31353"
+msgid "Delete Group"
+msgstr "Eyða hóp"
+
+msgctxt "#31370"
+msgid "Update Video Library"
+msgstr "Uppfæra kvikmyndasafn"
+
+msgctxt "#31371"
+msgid "Update Music Library"
+msgstr "Uppfæra tónlistarsafn"
+
+msgctxt "#31372"
+msgid "Clean Video Library"
+msgstr "Tiltekt á Kvikmyndasafni"
+
+msgctxt "#31373"
+msgid "Clean Music Library"
+msgstr "Tiltekt á Tónlistarsafni"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Hjálp"

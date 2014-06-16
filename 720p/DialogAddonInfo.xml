@@ -67,7 +67,6 @@
 					<top>220</top>
 					<width>775</width>
 					<height>155</height>
-					<height>195</height>
 					<font>FontSize_22</font>
 					<align>justify</align>
 					<textcolor>99white</textcolor>
@@ -93,9 +92,9 @@
 				<control type="textbox">
 					<description>Description Value</description>
 					<left>410</left>
-					<top>225</top>
+					<top>220</top>
 					<width>775</width>
-					<height>110</height>
+					<height>120</height>
 					<font>FontSize_22</font>
 					<align>justify</align>
 					<textcolor>99white</textcolor>
@@ -121,7 +120,7 @@
 				<!-- Broken Message -->
 				<control type="grouplist">
 					<left>410</left>
-					<top>342</top>
+					<top>345</top>
 					<width>775</width>
 	        <height>50</height>
 				  <orientation>horizontal</orientation>

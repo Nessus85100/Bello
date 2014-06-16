@@ -792,7 +792,7 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr ""
 
-#empty strings from id 31256 to 31279
+#empty strings from id 31260 to 31279
 #Playlist Editor labels
 
 msgctxt "#31280"

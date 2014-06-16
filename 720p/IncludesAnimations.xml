@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes> 
 
-	<include name="BannerFocusAnimation">
-		<animation type="Focus" reversible="true">
- 			<effect type="zoom" start="75" end="100" center="210,200" time="350"/>
-      <effect type="fade" start="0" end="100" time="500" />
-		</animation>
-	</include>
-
   <include name="ShutdownMenuAnimation">
     <animation type="Conditional" reversible="false" condition="![Window.IsActive(ShutdownMenu) | Window.IsActive(contextmenu) | Window.IsActive(favourites)]">
         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
@@ -18,37 +11,6 @@
         <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
     </animation>
   </include>
-  
-  <include name="DialogsButtonsAnimation">
-		<animation type="Conditional" condition="ControlGroup(10000).HasFocus">
-        <effect type="fade" start="100" end="0" time="250"/>
-		</animation>
-		<animation type="Conditional" condition="!ControlGroup(10000).HasFocus">
-        <effect type="fade" start="0" end="100" time="250"/>
-		</animation>			
-  </include>
-  
-  
-  <include name="HomeMenuScrolling">
-	 <animation type="Focus"  reversible="true" condition="[Container(20).OnNext | Container(20).OnPrevious]">
-			<effect type="zoom" start="75" end="100" center="210,200" time="200"  tween="sine" easing="in"/>
-	 </animation>
-	 <animation type="UnFocus"  reversible="true" condition="[Container(20).OnNext | Container(20).OnPrevious]">
-			<effect type="zoom" start="100" end="75" center="210,200" time="200"  tween="sine" easing="in"/>
-	 </animation>
-  </include>
-
-	<include name="HomeSubMenuAnimationDown">
-		<animation type="Conditional" condition="Control.HasFocus(23)">
-        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-        <effect type="slide" start="0,-35" end="0,0" time="350" tween="cubic" easing="out" />
-		</animation>
-		<animation type="Conditional" condition="!Control.HasFocus(23)">
-        <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" />
-        <effect type="slide" start="0,0" end="0,-35" time="300" tween="sine" easing="out" />
-		</animation>
-	</include>
-
 
 	<include name="HomeSlideAnimations">
      <animation type="WindowOpen" reversible="true">
@@ -575,22 +537,6 @@
 			<effect type="slide" start="0,55" end="0,0" tween="sine" easing="out" time="700" delay="300" />
 		</animation>
 		<animation effect="rotate" end="-3600" center="auto" time="30000" loop="true" reversible="false" condition="true">Conditional</animation>
-	</include>
-
-
-	<include name="OpenCloseFadeOutAnimation">
-		<animation type="WindowOpen" reversible="false">
-      <effect type="fade" start="0" end="100" time="200"/>
-		</animation>
-		<animation type="Visible" reversible="false">
-      <effect type="fade" start="0" end="100" time="200"/>
-		</animation>
-		<animation type="WindowClose" reversible="false">
-      <effect type="fade" start="100" end="0" delay="180" time="450"/>
-		</animation>
-		<animation type="Hidden" reversible="false">
-      <effect type="fade" start="100" end="0" delay="180" time="450"/>
-		</animation>
 	</include>
 	
 	<include name="PVRAnimations">

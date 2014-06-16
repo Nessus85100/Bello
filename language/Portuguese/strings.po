@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -225,8 +225,8 @@ msgid "Hide Now Playing Music Info"
 msgstr "Esconder informação da musica que está a tocar"
 
 msgctxt "#31104"
-msgid "Hide Search Button"
-msgstr "Ocultar botão de Pesquisa"
+msgid "Show Search Button"
+msgstr "Mostrar Botão da Procura"
 
 msgctxt "#31105"
 msgid "Hide Trailers Button"
@@ -267,10 +267,6 @@ msgstr "Esconder o botão Definições"
 msgctxt "#31114"
 msgid "Show Videos Button"
 msgstr "Exibir botão de Videos"
-
-msgctxt "#31115"
-msgid "Show DVD Button"
-msgstr "Exibir botão de DVD"
 
 msgctxt "#31116"
 msgid "Show Music Videos Button"
@@ -352,10 +348,6 @@ msgctxt "#31138"
 msgid "Enable Movies Notifications"
 msgstr "Activar Notificações de Filmes"
 
-msgctxt "#31139"
-msgid "Enable Addons Notifications"
-msgstr "Activar notificações de Add-ons"
-
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
 msgstr "Activar notificações de alerta de tempo"
@@ -380,10 +372,6 @@ msgctxt "#31149"
 msgid "Download [COLOR=selected]banner.jpg[/COLOR] for all TV Shows"
 msgstr "Download [COLOR=selected]banner.jpg[/COLOR] para todas as Séries TV"
 
-msgctxt "#31153"
-msgid "Enable Login Screen"
-msgstr "Activar ecrã de login"
-
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Escolher add-on de Trailers"
@@ -399,6 +387,14 @@ msgstr "Vistas"
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "Activar Modo de Quiosque"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Legenda local disponível"
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr "Reiniciar Definições do Tema"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -556,6 +552,10 @@ msgctxt "#31252"
 msgid "All Music"
 msgstr "Todas as Musicas"
 
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Procurar no YouTube"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Abrir lista de reprodução"
@@ -628,6 +628,10 @@ msgctxt "#31313"
 msgid "Animated Backgrounds"
 msgstr "Fundos de Ecrã Animado"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "A Reproduzir"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "Grupos Disponíveis"
@@ -684,10 +688,6 @@ msgctxt "#31387"
 msgid "Hide Add-ons Button"
 msgstr "Ocultar botão de Add-ons"
 
-msgctxt "#31391"
-msgid "Hide Settings Button"
-msgstr "Esconder o botão Definições"
-
 msgctxt "#31392"
 msgid "Show Videos Button"
 msgstr "Exibir botão de Videos"
@@ -731,3 +731,7 @@ msgstr "Configurar opções de sistema"
 msgctxt "#31419"
 msgid "Configure Profiles Settings"
 msgstr "Configurar definições dos Perfis"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Ajuda"

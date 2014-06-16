@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -99,6 +99,10 @@ msgstr "Spæli"
 msgctxt "#31302"
 msgid "Paused"
 msgstr "Steðga"
+
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Spæli nú"
 
 msgctxt "#31351"
 msgid "Add Group"

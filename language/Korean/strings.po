@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -240,10 +240,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "지금 재생중 음악 정보 숨기기"
 
-msgctxt "#31104"
-msgid "Hide Search Button"
-msgstr "검색 버튼 숨기기"
-
 msgctxt "#31105"
 msgid "Hide Trailers Button"
 msgstr "예고편 버튼 숨기기"
@@ -283,10 +279,6 @@ msgstr "설정 버튼 숨기기"
 msgctxt "#31114"
 msgid "Show Videos Button"
 msgstr "비디오 버튼 숨기기"
-
-msgctxt "#31115"
-msgid "Show DVD Button"
-msgstr "DVD 버튼 숨기기"
 
 msgctxt "#31116"
 msgid "Show Music Videos Button"
@@ -376,10 +368,6 @@ msgctxt "#31138"
 msgid "Enable Movies Notifications"
 msgstr "영화 알림 사용"
 
-msgctxt "#31139"
-msgid "Enable Addons Notifications"
-msgstr "애드온 알림 사용"
-
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
 msgstr "날씨 경보 알림 사용"
@@ -428,10 +416,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "전체 스킨에서 RSS 피드 보기"
 
-msgctxt "#31153"
-msgid "Enable Login Screen"
-msgstr "로그인 화면 사용"
-
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "예고편 애드온 선택"
@@ -451,6 +435,14 @@ msgstr "탐색막대 대신 전체화면 정보 표시"
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "전시모드 사용"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "로컬 자막 있음"
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr "스킨 초기화"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -580,10 +572,6 @@ msgctxt "#31233"
 msgid "Chance of Precipitation"
 msgstr "강수확률"
 
-msgctxt "#31234"
-msgid "Fetching Forecast Info for..."
-msgstr "날씨 정보를 가져오는 중..."
-
 msgctxt "#31235"
 msgid "Current Forecast"
 msgstr "현재 예보"
@@ -651,6 +639,10 @@ msgstr "모든 TV 쇼"
 msgctxt "#31252"
 msgid "All Music"
 msgstr "모든 음악"
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "유투브에서 검색"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -732,6 +724,10 @@ msgctxt "#31313"
 msgid "Animated Backgrounds"
 msgstr "움직이는 배경화면"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "지금 재생중"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "사용 가능한 그룹"
@@ -771,14 +767,6 @@ msgstr "빠른 탐색"
 msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "빠른 탐색 사용 안 함"
-
-msgctxt "#31376"
-msgid "Show Update Video Library Button"
-msgstr "비디오 라이브러리 업데이트 버튼 보기"
-
-msgctxt "#31377"
-msgid "Show Update Music Library Button"
-msgstr "음악 라이브러리 업데이트 버튼 보기"
 
 msgctxt "#31378"
 msgid "Show Clean Video Library Button"
@@ -832,10 +820,6 @@ msgctxt "#31390"
 msgid "Hide New Music Button"
 msgstr "새 음악 버튼 숨기기"
 
-msgctxt "#31391"
-msgid "Hide Settings Button"
-msgstr "설정 버튼 숨기기"
-
 msgctxt "#31392"
 msgid "Show Videos Button"
 msgstr "비디오 버튼 숨기기"
@@ -884,10 +868,6 @@ msgctxt "#31408"
 msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
 msgstr "하드웨어와 소프트웨어 기능을 제어합니다. 오디오와 비디오 하드웨어, 자동 재생, 잠금 기능 등을 설정합니다."
 
-msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
-msgstr "여러 개의 프로파일을 만들 수 있으며 로그온 화면으로 접속을 제한할 수 있습니다."
-
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
 msgstr "모양새 설정"
@@ -928,10 +908,6 @@ msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "스킨 설정"
 
-msgctxt "#31431"
-msgid "You haven't added any items to Favorites yet. Highlight an item, and choose \"Add to favorites\" from the context menu."
-msgstr "즐겨찾기에 추가한 항목이 없습니다. 항목을 선택하고 컨텍스트 메뉴에서 \"즐겨찾기에 추가\"를 선택하세요."
-
-msgctxt "#31432"
-msgid "Mouse usage is not supported. Please disable it from Settings>System>Input Devices>\"Enable mouse and Touch Screen support\"."
-msgstr "마우스 사용을 지원하지 않습니다. 설정>시스템>입력장치>\"마우스와 터치화면 사용\"을 해제하세요."
+msgctxt "#31430"
+msgid "Help"
+msgstr "도움말"

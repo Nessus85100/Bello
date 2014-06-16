@@ -222,7 +222,7 @@
 			<include>FullscreenDimensions</include>
 			<texture background="true">windows/bg/bg_diffuse.png</texture>
 			<include>FanartFade</include>
-      <colordiffuse>ddFFFFFF</colordiffuse>
+<!--  <colordiffuse>ddFFFFFF</colordiffuse> -->
 			<visible>[Control.IsVisible(50) + !Window.IsVisible(weather) + !Window.IsVisible(musicplaylisteditor) + !Window.IsVisible(profiles)]
 			| [Control.IsVisible(57) + !Window.IsVisible(profiles)]
 			| Control.IsVisible(56)

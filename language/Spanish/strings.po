@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -245,8 +245,8 @@ msgid "Hide Now Playing Music Info"
 msgstr "Ocultar información de música en reproducción"
 
 msgctxt "#31104"
-msgid "Hide Search Button"
-msgstr "Ocultar botón de buscar"
+msgid "Show Search Button"
+msgstr "Mostrar botón de Buscar"
 
 msgctxt "#31105"
 msgid "Hide Trailers Button"
@@ -287,10 +287,6 @@ msgstr "Ocultar botón de Ajustes"
 msgctxt "#31114"
 msgid "Show Videos Button"
 msgstr "Mostrar botón de Videos"
-
-msgctxt "#31115"
-msgid "Show DVD Button"
-msgstr "Mostrar botón de DVD"
 
 msgctxt "#31116"
 msgid "Show Music Videos Button"
@@ -384,10 +380,6 @@ msgctxt "#31138"
 msgid "Enable Movies Notifications"
 msgstr "Activar notificaciones de Películas"
 
-msgctxt "#31139"
-msgid "Enable Addons Notifications"
-msgstr "Activar notificaciones de Addons"
-
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
 msgstr "Activar notificaciones de alertas del tiempo"
@@ -440,10 +432,6 @@ msgctxt "#31152"
 msgid "Hide Live TV Submenu"
 msgstr "Ocultar submenu TV en vivo"
 
-msgctxt "#31153"
-msgid "Enable Login Screen"
-msgstr "Activar pantalla de inicio de sesión"
-
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Elija Complemento de Trailers"
@@ -472,13 +460,17 @@ msgctxt "#31160"
 msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
 msgstr "Descargar [COLOR=selected]logo.png[/COLOR] para todas las series"
 
-msgctxt "#31161"
-msgid "Hide Library Totals"
-msgstr "Ocultar Totales de la librería"
-
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "Habilitar modo Kiosko"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Subtítulo local disponible"
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr "Reiniciar Skin"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -612,10 +604,6 @@ msgctxt "#31233"
 msgid "Chance of Precipitation"
 msgstr "Probabilidad de precipitación"
 
-msgctxt "#31234"
-msgid "Fetching Forecast Info for..."
-msgstr "Obteniendo información meteorológica para..."
-
 msgctxt "#31235"
 msgid "Current Forecast"
 msgstr "Pronóstico actual"
@@ -687,6 +675,10 @@ msgstr "Todas las Series"
 msgctxt "#31252"
 msgid "All Music"
 msgstr "Toda la Música"
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Buscar en YouTube"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -776,6 +768,10 @@ msgctxt "#31315"
 msgid "Hide Scrolling Titles"
 msgstr "Ocultar títulos desplazantes"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Reproduciendo"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "Grupos Disponibles"
@@ -815,14 +811,6 @@ msgstr "Navegación Rápida"
 msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "Desactivar Navegación Rápida"
-
-msgctxt "#31376"
-msgid "Show Update Video Library Button"
-msgstr "Mostrar botón de Actualizar Librería de Vídeo"
-
-msgctxt "#31377"
-msgid "Show Update Music Library Button"
-msgstr "Mostrar botón de Actualizar Librería de Música"
 
 msgctxt "#31378"
 msgid "Show Clean Video Library Button"
@@ -875,10 +863,6 @@ msgstr "Ocultar botón Series TV Nuevas"
 msgctxt "#31390"
 msgid "Hide New Music Button"
 msgstr "Ocultar botón Música Nueva"
-
-msgctxt "#31391"
-msgid "Hide Settings Button"
-msgstr "Ocultar botón Ajustes"
 
 msgctxt "#31392"
 msgid "Show Videos Button"
@@ -936,10 +920,6 @@ msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
 msgstr "Escoge entre una variedad de opciones para hacer \"Bello\" acorde a tus gustos."
 
-msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
-msgstr "Con XBMC puedes tener distintos perfiles, incluso con una pantalla de inicio para controlar el acceso."
-
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
 msgstr "Configurar Opciones de Apariencia"
@@ -981,13 +961,5 @@ msgid "Configure Skin Settings"
 msgstr "Configurar Opciones de Skin"
 
 msgctxt "#31430"
-msgid "Help Tip"
-msgstr "Consejo"
-
-msgctxt "#31431"
-msgid "You haven't added any items to Favorites yet. Highlight an item, and choose \"Add to favorites\" from the context menu."
-msgstr "No has añadido nada a Favoritos todavía. Selecciona un elemento y elege \"Añadir a favoritos\" en el menú contextual."
-
-msgctxt "#31432"
-msgid "Mouse usage is not supported. Please disable it from Settings>System>Input Devices>\"Enable mouse and Touch Screen support\"."
-msgstr "Uso del ratón no soportado. Por favor, deshabilítalo en Opciones->Sistema->Dispositivos de Entrada->\"Habilitar soporte de ratón y pantalla táctil\"."
+msgid "Help"
+msgstr "Ayuda"

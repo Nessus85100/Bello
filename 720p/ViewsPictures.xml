@@ -552,10 +552,10 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>20</left>
-				<top>160</top>
-				<width>11</width>
-				<height>427</height>
+				<left>25</left>
+				<top>167</top>
+				<width>9</width>
+				<height>418</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
@@ -751,15 +751,14 @@
 			</control>
 			<control type="scrollbar" id="60">
 				<left>305</left>
-				<top>555</top>
+				<top>556</top>
 				<width>670</width>
-				<height>11</height>
+				<height>9</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>77white</colordiffuse>
 				<onup>52</onup>
 				<ondown>52</ondown>
 				<showonepage>false</showonepage>

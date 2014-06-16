@@ -134,8 +134,6 @@
 				<control type="radiobutton" id="1002">
 					<description>Info</description>
 				  <include>TopButton</include>
-					<textureradiofocus>-</textureradiofocus>
-					<textureradionofocus>-</textureradionofocus>
 					<onclick>Skin.ToggleSetting(MusicInfoOSD)</onclick>
 				</control>
 				<control type="button" id="1003">
@@ -146,8 +144,6 @@
 				<control type="togglebutton" id="1004">
 					<description>Random</description>
 			    <include>TopButton</include>
-					<textureradiofocus>-</textureradiofocus>
-					<textureradionofocus>-</textureradionofocus>
           <onclick>XBMC.PlayerControl(Random)</onclick>
 				</control>
 				<control type="togglebutton" id="1005">

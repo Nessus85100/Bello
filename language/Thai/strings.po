@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -120,6 +120,10 @@ msgctxt "#31098"
 msgid "Home Menu"
 msgstr "เมนูหลัก"
 
+msgctxt "#31104"
+msgid "Show Search Button"
+msgstr "แสดงปุ่มค้นหา"
+
 msgctxt "#31127"
 msgid "Landscape"
 msgstr "แนวนอน"
@@ -143,6 +147,10 @@ msgstr "หลายภาพ"
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "เปิดใช้ โหมด Kiosk"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "มีคำบรรยายในเครื่องใช้งานได้"
 
 msgctxt "#31203"
 msgid "New Search"
@@ -192,6 +200,10 @@ msgctxt "#31247"
 msgid "Random Movies"
 msgstr "ภาพยนตร์ แบบสุ่ม"
 
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "ค้นหาใน YouTube"
+
 msgctxt "#31285"
 msgid "Playlist Options"
 msgstr "ตัวเลือกของรายการเล่น"
@@ -208,6 +220,10 @@ msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "ชุดรูปแบบ การแสดงแสงสี"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "กำลังเล่น"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "กลุ่ม ที่มีอยู่"
@@ -223,3 +239,7 @@ msgstr "เปลี่ยนชื่อกลุ่ม"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "ลบกลุ่ม"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "ส่วนช่วยเหลือ"

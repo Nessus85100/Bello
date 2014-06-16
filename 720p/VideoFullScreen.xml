@@ -65,7 +65,7 @@
 	        <effect type="slide" start="0,0" end="-300,0" time="400" delay="0" tween="sine" easing="out" />
 	        <effect type="fade" start="100" end="0" time="400" delay="0" tween="sine" easing="out" />
 		    </animation>
-		    <!-- Movies & Episodes Cover -->
+		    <!-- Movies/Episodes Cover -->
 			  <control type="group" id="1">
 			    <visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
 					<control type="image" id="1">
@@ -83,7 +83,7 @@
 						<width>185</width>
 						<height>258</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<texture background="true" fallback="thumbs/fallback_poster_tp.png" diffuse="thumbs/poster_diffuse.png">$VAR[PlayerThumbs]</texture>
+						<texture background="true" fallback="thumbs/fallback_poster_tp.png" diffuse="thumbs/poster_diffuse.png">$VAR[VideoPlayerThumb]</texture>
 						<fadetime>800</fadetime>
 				 </control>
 				 <control type="image" id="1">
@@ -164,7 +164,7 @@
 						<width>274</width>
 						<height>199</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<texture background="true" fallback="thumbs/fallback_disc_tp.png" diffuse="thumbs/video_diffuse.png">$VAR[PlayerThumbs]</texture>
+						<texture background="true" fallback="thumbs/fallback_disc_tp.png" diffuse="thumbs/video_diffuse.png">$VAR[VideoPlayerThumb]</texture>
 						<fadetime>800</fadetime>
 					  <visible>VideoPlayer.HasMenu</visible>
 				  </control>
@@ -236,7 +236,7 @@
 						<width>199</width>
 						<height>199</height>
 						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-						<texture background="true" fallback="thumbs/fallback_square_tp.png" diffuse="thumbs/music_diffuse.png">$VAR[PlayerThumbs]</texture>
+						<texture background="true" fallback="thumbs/fallback_square_tp.png" diffuse="thumbs/music_diffuse.png">$VAR[VideoPlayerThumb]</texture>
 						<fadetime>800</fadetime>
 				  </control>
 				  <control type="image" id="1">
@@ -289,166 +289,21 @@
 				  </control>
 			  </control>
 
-		    <!-- Movies Info -->
+		    <!-- Movies/Episodes/Videos Info -->
 				<control type="group" id="1">
 					<left>210</left>
 					<top>100</top>
 	        <include>OSDPlotAnimation</include>
 	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
-			    <visible>VideoPlayer.Content(Movies)</visible>
+			    <visible>!VideoPlayer.Content(LiveTV)</visible>
+				  <animation effect="slide" start="0,0" end="90,0" condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)]">Conditional</animation>
 					<control type="label" id="1">
 						<description>Title label</description>
 						<left>0</left>
 						<top>15</top>
 						<height>30</height>
-						<width>750</width>
-					  <label>$INFO[VideoPlayer.Title,, ]$INFO[VideoPlayer.Year, (,) ]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>FontSize_36</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>55000000</shadowcolor>
-					</control>
-					<control type="label" id="1">
-						<description>Genre Label</description>
-						<left>0</left>
-						<top>45</top>
-						<height>30</height>
-						<width>750</width>
-						<label>$INFO[VideoPlayer.Genre]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>FontSize_22</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>55000000</shadowcolor>
-					</control>
-					<control type="image" id="1">
-						<description>Rating image</description>
-						<left>0</left>
-						<top>85</top>
-						<width>130</width>
-						<height>25</height>
-						<aspectratio align="left">keep</aspectratio>
-						<texture background="true">rating/$INFO[Player.StarRating]</texture>
-					</control>
-					<control type="fadelabel" id="1">
-						<left>0</left>
-						<top>110</top>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_20</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>99white</textcolor>
-					  <shadowcolor>55000000</shadowcolor>
-            <label>$INFO[VideoPlayer.Director,[COLOR=white]$LOCALIZE[20339]:[/COLOR] ]</label>
-            <label>$INFO[VideoPlayer.Writer,[COLOR=white]$LOCALIZE[20417]:[/COLOR] ]</label>
-            <label>$INFO[VideoPlayer.RatingAndVotes,[COLOR=white]$LOCALIZE[563]:[/COLOR] ]</label>
-            <label>$INFO[VideoPlayer.Top250,[COLOR=white]$LOCALIZE[368] $LOCALIZE[13409][/COLOR] # ]</label>
-            <scroll>false</scroll>
-            <scrollout>false</scrollout>
-            <scrollspeed>100</scrollspeed>
-            <pauseatend>5000</pauseatend>
-					  <visible>!Player.ChapterCount</visible>		
-					</control>
-					<control type="fadelabel" id="1">
-						<left>0</left>
-						<top>110</top>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_20</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>99white</textcolor>
-					  <shadowcolor>55000000</shadowcolor>
-            <label>$INFO[VideoPlayer.Director,[COLOR=white]$LOCALIZE[20339]:[/COLOR] ]</label>
-            <label>$INFO[VideoPlayer.Writer,[COLOR=white]$LOCALIZE[20417]:[/COLOR] ]</label>
-            <label>$INFO[VideoPlayer.RatingAndVotes,[COLOR=white]$LOCALIZE[563]:[/COLOR] ]</label>
-            <label>$INFO[VideoPlayer.Top250,[COLOR=white]$LOCALIZE[368] $LOCALIZE[13409][/COLOR] # ]</label>
-            <label>$LOCALIZE[21396]: [COLOR=white]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ][/COLOR]</label>
-            <scroll>false</scroll>
-            <scrollout>false</scrollout>
-            <scrollspeed>100</scrollspeed>
-            <pauseatend>5000</pauseatend>
-					  <visible>Player.ChapterCount</visible>
-					</control>
-				</control>
-		    <!-- Episodes Info -->
-				<control type="group" id="1">
-					<left>210</left>
-					<top>100</top>
-	        <include>OSDPlotAnimation</include>
-	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
-			    <visible>VideoPlayer.Content(Episodes)</visible>
-					<control type="label" id="1">
-						<description>Title label</description>
-						<left>0</left>
-						<top>15</top>
-						<height>30</height>
-						<width>750</width>
-            <label>$INFO[VideoPlayer.Title]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>FontSize_36</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>55000000</shadowcolor>
-					</control>
-					<control type="label" id="1">
-						<description>Genre Label</description>
-						<left>0</left>
-						<top>45</top>
-						<height>30</height>
-						<width>750</width>
-            <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season, · $LOCALIZE[20373] ,]$INFO[VideoPlayer.Episode, · $LOCALIZE[20359] ,]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>FontSize_22</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>55000000</shadowcolor>
-					</control>
-					<control type="image" id="1">
-						<description>Rating image</description>
-						<left>0</left>
-						<top>85</top>
-						<width>130</width>
-						<height>25</height>
-						<aspectratio align="left">keep</aspectratio>
-						<texture background="true">rating/$INFO[Player.StarRating]</texture>
-					</control>
-					<control type="fadelabel" id="1">
-						<left>0</left>
-						<top>110</top>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_20</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>99white</textcolor>
-					  <shadowcolor>55000000</shadowcolor>
-            <label>$INFO[VideoPlayer.Premiered,[COLOR=white]$LOCALIZE[20416]:[/COLOR] ]</label>
-            <label>$INFO[VideoPlayer.Director,[COLOR=white]$LOCALIZE[20339]:[/COLOR] ]</label>
-            <label>$INFO[VideoPlayer.Writer,[COLOR=white]$LOCALIZE[20417]:[/COLOR] ]</label>
-            <label>$INFO[VideoPlayer.RatingAndVotes,[COLOR=white]$LOCALIZE[563]:[/COLOR] ]</label>
-            <scroll>false</scroll>
-            <scrollout>false</scrollout>
-            <scrollspeed>100</scrollspeed>
-            <pauseatend>5000</pauseatend>
-					</control>
-				</control>
-		    <!-- Videos Info -->
-				<control type="group" id="1">
-					<left>300</left>
-					<top>100</top>
-	        <include>OSDPlotAnimation</include>
-	        <visible>[IsEmpty(Window(VideoOSD).Property(ShowPlot)) | IsEmpty(VideoPlayer.Plot)]</visible>
-				  <visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]</visible> 
-					<control type="label" id="1">
-						<description>Title label</description>
-						<left>0</left>
-						<top>25</top>
-						<height>30</height>
-						<width>630</width>
-            <label>$INFO[VideoPlayer.Title]</label>
+						<width>730</width>
+					  <label>$VAR[OSDInfoTitleLabel]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>FontSize_36</font>
@@ -457,31 +312,44 @@
 					</control>
 					<control type="label" id="1">
 						<description>Label</description>
-						<left>0</left>
-						<top>55</top>
+						<left>2</left>
+						<top>45</top>
 						<height>30</height>
-						<width>630</width>
-            <label>$INFO[VideoPlayer.Genre]</label>
+						<width>730</width>
+					  <label>$VAR[OSDInfoUnderTitleLabel]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>FontSize_22</font>
 						<textcolor>99white</textcolor>
 						<shadowcolor>55000000</shadowcolor>
 					</control>
+					<control type="image" id="1">
+						<description>Rating image</description>
+						<left>0</left>
+						<top>85</top>
+						<width>130</width>
+						<height>25</height>
+						<aspectratio align="left">keep</aspectratio>
+						<texture background="true">rating/$INFO[Player.StarRating]</texture>
+					  <visible>!IsEmpty(VideoPlayer.Rating)</visible>
+					</control>
 					<control type="fadelabel" id="1">
 						<left>0</left>
 						<top>110</top>
-						<width>400</width>
+		        <include condition="[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDFadeLabelWidth</include>
+		        <include condition="![VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">OSDFadeLabelWidthSmall</include>
 						<height>45</height>
 						<font>FontSize_20</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>99white</textcolor>
 					  <shadowcolor>55000000</shadowcolor>
-            <label>$INFO[VideoPlayer.Premiered,[COLOR=white]$LOCALIZE[20416]:[/COLOR] ]</label>
+            <label>$VAR[OSDInfoPremieredFadeLabel]</label>
             <label>$INFO[VideoPlayer.Director,[COLOR=white]$LOCALIZE[20339]:[/COLOR] ]</label>
             <label>$INFO[VideoPlayer.Writer,[COLOR=white]$LOCALIZE[20417]:[/COLOR] ]</label>
-            <label>$LOCALIZE[21396]: [COLOR=white]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ][/COLOR]</label>
+            <label>$INFO[VideoPlayer.RatingAndVotes,[COLOR=white]$LOCALIZE[563]:[/COLOR] ]</label>
+            <label>$INFO[VideoPlayer.Top250,[COLOR=white]$LOCALIZE[368] $LOCALIZE[13409][/COLOR] # ]</label>
+            <label>$VAR[OSDInfoChapterFadeLabel]</label>
             <scroll>false</scroll>
             <scrollout>false</scrollout>
             <scrollspeed>100</scrollspeed>
@@ -499,8 +367,8 @@
 						<left>0</left>
 						<top>15</top>
 						<height>70</height>
-						<width>630</width>
-						<itemgap>10</itemgap>
+						<width>730</width>
+						<itemgap>5</itemgap>
 						<align>left</align>
 						<orientation>horizontal</orientation>
 					  <include>OSDSlideAnimations</include>
@@ -519,7 +387,7 @@
 						<left>0</left>
 						<top>55</top>
 						<height>30</height>
-						<width>630</width>
+						<width>730</width>
             <label>$INFO[VideoPlayer.Genre]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -530,7 +398,7 @@
 					<control type="fadelabel" id="1">
 						<left>0</left>
 						<top>110</top>
-						<width>400</width>
+						<width>420</width>
 						<height>45</height>
 						<font>FontSize_20</font>
 						<align>left</align>
@@ -566,7 +434,7 @@
 						<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 						<textcolor>white</textcolor>
 					  <shadowcolor>55000000</shadowcolor>
-				    <animation effect="slide" start="0,0" end="45,0" condition="[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">Conditional</animation>
+				    <animation effect="slide" start="0,0" end="55,0" condition="[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(LiveTV)]">Conditional</animation>
 					</control>
 					<control type="progress" id="1">
 						<description>Progressbar</description>
@@ -618,7 +486,7 @@
 			</control>
 	    <!-- Media Flags -->
 			<control type="grouplist" id="1">
-        <visible>[Player.ShowInfo | [Player.Paused+Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(SubtitleSearch) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
+        <visible>[Player.ShowInfo | [Player.Paused + Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(SubtitleSearch) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
 		    <animation type="WindowOpen" reversible="false">
 	        <effect type="slide" start="150,0" end="0,0" time="450" delay="0" tween="sine" easing="out" />
 	        <effect type="fade" start="0" end="100" time="450" delay="0" tween="sine" easing="out" />
@@ -645,7 +513,7 @@
 				<control type="group" id="1">
           <width>54</width>
 					<height>23</height>
-			    <visible>!IsEmpty(VideoPlayer.AudioLanguage)</visible>
+			    <visible>[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)] + !IsEmpty(VideoPlayer.AudioLanguage)</visible>
 				  <control type="image" id="1">
 						<width>54</width>
 						<height>23</height>
@@ -665,7 +533,7 @@
 				<control type="group" id="1">
           <width>54</width>
 					<height>23</height>
-			    <visible>!IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+			    <visible>[VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)] + !IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
 				  <control type="image" id="1">
 						<width>54</width>
 						<height>23</height>
@@ -948,42 +816,6 @@
 			</control>
 		</control>	
 
-		<!-- ======================== -->
-		<!-- === Weather & Clock ==== -->
-		<!-- ======================== -->		
-	  <control type="group" id="1">
-			<left>25</left>
-			<top>45</top>
-      <include>WeatherAndClock</include>
-	    <animation type="WindowOpen" reversible="false">
-	        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-	        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
-	    </animation>
-	    <animation type="WindowClose" reversible="false">
-	        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-	        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
-	    </animation>
-	    <animation type="Visible" reversible="false">
-	        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-	        <effect type="slide" start="0,-35" end="0,0" time="350" tween="cubic" easing="out" />
-	    </animation>
-	    <animation type="Hidden" reversible="false">
-	        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-	        <effect type="slide" start="0,0" end="0,-35" time="350" tween="sine" easing="out" />
-	    </animation>
-		  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar) + !Window.IsActive(SliderDialog) + !Player.ShowCodec">
-		      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-		      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
-		  </animation>
-		  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar) | Window.IsActive(SliderDialog) | Player.ShowCodec">
-		      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-		      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
-		  </animation>
-      <visible>!Window.IsActive(SubtitleSearch)</visible>
-      <visible>[Player.ShowInfo | Window.IsActive(VideoOSD)]</visible>
-<!--  <visible>[Player.ShowInfo | Window.IsActive(VideoOSD)] | [Window.IsActive(FullScreenVideo) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]]</visible> -->
-	  </control>		
-
 
 		<!-- =========================== -->
 		<!-- ===== Codec Info Code ===== -->
@@ -1058,5 +890,42 @@
 				<label>-</label>
 			</control>
 		</control>
+
+
+		<!-- ======================== -->
+		<!-- === Weather & Clock ==== -->
+		<!-- ======================== -->		
+	  <control type="group" id="1">
+			<left>25</left>
+			<top>45</top>
+      <include>WeatherAndClock</include>
+	    <animation type="WindowOpen" reversible="false">
+	        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+	        <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
+	    </animation>
+	    <animation type="WindowClose" reversible="false">
+	        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+	        <effect type="slide" start="0,0" end="0,-55" time="350" tween="sine" easing="out" />
+	    </animation>
+	    <animation type="Visible" reversible="false">
+	        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+	        <effect type="slide" start="0,-35" end="0,0" time="350" tween="cubic" easing="out" />
+	    </animation>
+	    <animation type="Hidden" reversible="false">
+	        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+	        <effect type="slide" start="0,0" end="0,-35" time="350" tween="sine" easing="out" />
+	    </animation>
+		  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar) + !Window.IsActive(SliderDialog)">
+		      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+		      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
+		  </animation>
+		  <animation type="Conditional" reversible="false" condition="Window.IsActive(VolumeBar) | Window.IsActive(SliderDialog)">
+		      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+		      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
+		  </animation>
+      <visible>!Window.IsActive(SubtitleSearch)</visible>
+      <visible>[Player.ShowInfo | Window.IsActive(VideoOSD)]</visible>
+<!--  <visible>[Player.ShowInfo | Window.IsActive(VideoOSD)] | [Window.IsActive(FullScreenVideo) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]]</visible> -->
+	  </control>		
 	</controls>
 </window>

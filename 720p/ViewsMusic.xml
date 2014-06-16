@@ -62,7 +62,7 @@
 					<top>172</top>
 					<width>374</width>
 					<height>222</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
 					<fadetime>100</fadetime>
 			    <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[VarArtFanart]</texture>
 					<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
@@ -419,7 +419,7 @@
 			<control type="group">
 			  <include>ListViewAnimationsRight</include>
 			  <visible>IsEmpty(ListItem.Property(Addon.Name))</visible>
-				<visible>![Container.Content(Artists) | Container.Content(Albums | Container.Content(Songs)]</visible>
+				<visible>![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)]</visible>
 				<control type="image">
 					<left>670</left>
 					<top>10</top>
@@ -576,10 +576,10 @@
 			</control>
 			
 			<control type="scrollbar" id="60">
-				<left>20</left>
-				<top>160</top>
-				<width>11</width>
-				<height>427</height>
+				<left>25</left>
+				<top>165</top>
+				<width>9</width>
+				<height>425</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
@@ -781,16 +781,15 @@
 	      <visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + ![IsEmpty(Container.ListItem.Property(Album_Description)) + IsEmpty(Container.ListItem.Property(Artist_Description))] + !Window.IsActive(ShutdownMenu) + !Window.IsActive(ContextMenu)</visible>
 	    </control>
 			<control type="scrollbar" id="60">
-				<left>355</left>
-				<top>495</top>
-				<width>900</width>
-				<height>11</height>
+				<left>357</left>
+				<top>497</top>
+				<width>883</width>
+				<height>9</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>77white</colordiffuse>
 				<onup>51</onup>
 				<ondown>51</ondown>
 				<showonepage>false</showonepage>
@@ -957,15 +956,14 @@
 			</control>
 			<control type="scrollbar" id="60">
 				<left>305</left>
-				<top>555</top>
+				<top>556</top>
 				<width>670</width>
-				<height>11</height>
+				<height>9</height>
 				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
-				<texturesliderbarfocus border="14,14,14,14">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>77white</colordiffuse>
 				<onup>52</onup>
 				<ondown>52</ondown>
 				<showonepage>false</showonepage>
@@ -999,6 +997,7 @@
 			  <pagecontrol>60</pagecontrol>
         <focusposition>2</focusposition>
         <preloaditems>2</preloaditems>
+        <movement>2</movement>
 				<scrolltime tween="Cubic" easing="Out">500</scrolltime>
 	      <visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicPlaylist)</visible>
 				<itemlayout width="560" height="65">
@@ -1115,9 +1114,9 @@
 			</control>
 			<control type="scrollbar" id="60">
 				<left>1010</left>
-				<top>127</top>
-				<width>11</width>
-				<height>475</height>
+				<top>125</top>
+				<width>9</width>
+				<height>480</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>

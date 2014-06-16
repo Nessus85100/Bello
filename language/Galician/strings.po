@@ -1,5 +1,5 @@
 # XBMC Media Center language file
-# Addon Name: Bello
+# Addon Name: Bello - Beta
 # Addon id: skin.bello
 # Addon Provider: Nessus
 msgid ""
@@ -225,8 +225,8 @@ msgid "Hide Now Playing Music Info"
 msgstr "Agochar Info. da Música en Reprodución"
 
 msgctxt "#31104"
-msgid "Hide Search Button"
-msgstr "Agochar o Botón Buscar"
+msgid "Show Search Button"
+msgstr "Amosar o Botón Buscar"
 
 msgctxt "#31105"
 msgid "Hide Trailers Button"
@@ -267,10 +267,6 @@ msgstr "Agochar o Botón Axustes"
 msgctxt "#31114"
 msgid "Show Videos Button"
 msgstr "Amosar o Botón Vídeos"
-
-msgctxt "#31115"
-msgid "Show DVD Button"
-msgstr "Amosar o Botón DVD"
 
 msgctxt "#31116"
 msgid "Show Music Videos Button"
@@ -352,10 +348,6 @@ msgctxt "#31138"
 msgid "Enable Movies Notifications"
 msgstr "Activar Notificacións para os Filmes"
 
-msgctxt "#31139"
-msgid "Enable Addons Notifications"
-msgstr "Activar Notificacións para os Complementos"
-
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
 msgstr "Activar Notificacións para as Alertas Meteoroloxicas"
@@ -392,10 +384,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "Amosar as novas RSS en todo o tema"
 
-msgctxt "#31153"
-msgid "Enable Login Screen"
-msgstr "Activar a Pantalla de Inicio de Sesión"
-
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Escoller Complemento de Avances"
@@ -407,6 +395,14 @@ msgstr "Vistas"
 msgctxt "#31162"
 msgid "Enable Kiosk Mode"
 msgstr "Activar o modo Quiosco"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "subtítulos locais dispoñíbeis"
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr "Restabelecer o Tema"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -500,10 +496,6 @@ msgctxt "#31233"
 msgid "Chance of Precipitation"
 msgstr "Probabilidades de chuvia"
 
-msgctxt "#31234"
-msgid "Fetching Forecast Info for..."
-msgstr "Obtendo a info. da predición para..."
-
 msgctxt "#31235"
 msgid "Current Forecast"
 msgstr "Predición Actual"
@@ -567,6 +559,10 @@ msgstr "Todas as Series de TV"
 msgctxt "#31252"
 msgid "All Music"
 msgstr "Toda a música"
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Buscar en YouTube"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -648,6 +644,10 @@ msgctxt "#31315"
 msgid "Hide Scrolling Titles"
 msgstr "Agochar desprazamento do títulos"
 
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Agora reproducindo"
+
 msgctxt "#31350"
 msgid "Available Groups"
 msgstr "Grupos dispoñíbeis"
@@ -683,10 +683,6 @@ msgstr "Limpar biblioteca de música"
 msgctxt "#31408"
 msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
 msgstr "Controle o hardware e as funcións do software, así como a configuración do hardware de audio e vídeo, reprodución automática e bloqueo."
-
-msgctxt "#31410"
-msgid "With XBMC you can have several profiles, even a logon screen for controlled access."
-msgstr "Grazas a XBMC pode ter varios perfís ademais dunha pantalla de inicio de sesión para controlar o acceso."
 
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
@@ -727,3 +723,7 @@ msgstr "Configurar os Axustes dos Perfís"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Configurar os Axustes do Tema"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Axuda"
