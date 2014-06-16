@@ -15,39 +15,38 @@
         <effect type="slide" start="0,0" end="0,120" time="280" tween="sine" easing="inout" />
       </animation>
 			<control type="panel" id="450">
-				<left>25</left>
-				<top>150</top>
+				<left>28</left>
+				<top>140</top>
 				<width>1220</width>
-				<height>400</height>
+				<height>442</height>
 				<onleft>450</onleft>
 				<onright>450</onright>
-				<onup>close</onup>
-				<ondown>close</ondown>
+				<onup>450</onup>
+				<ondown>450</ondown>
         <scrolltime tween="Quadratic" easing="out">250</scrolltime>
 				<viewtype label="536">icon</viewtype>
-        <orientation>horizontal</orientation>
-			  <preloaditems>2</preloaditems>
-				<itemlayout height="200" width="203">
+        <orientation>vertical</orientation>
+				<itemlayout height="216" width="201">
 					<control type="image">
-						<width>216</width>
-						<height>216</height>
+						<width>219</width>
+						<height>234</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="30">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<left>23</left>
-						<top>23</top>
-						<width>170</width>
-						<height>143</height>
+						<left>24</left>
+						<top>24</top>
+						<width>171</width>
+						<height>161</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>108</left>
-						<top>163</top>
-						<width>162</width>
+						<left>109</left>
+						<top>181</top>
+						<width>170</width>
 						<height>35</height>
 						<textcolor>white</textcolor>
 						<shadowcolor>77000000</shadowcolor>
@@ -58,27 +57,27 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="200" width="203">
+				<focusedlayout height="216" width="201">
 					<control type="image">
-						<width>216</width>
-						<height>216</height>
+						<width>219</width>
+						<height>234</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="30">views/thumbnails/thumb_panel.png</texture>
 					</control>
 					<control type="image">
-						<left>23</left>
-						<top>23</top>
-						<width>170</width>
-						<height>143</height>
+						<left>24</left>
+						<top>24</top>
+						<width>171</width>
+						<height>161</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>108</left>
-						<top>163</top>
-						<width>162</width>
+						<left>109</left>
+						<top>181</top>
+						<width>170</width>
 						<height>35</height>
 						<textcolor>blue</textcolor>
 						<shadowcolor>77000000</shadowcolor>
@@ -89,9 +88,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<left>0</left>
-						<width>216</width>
-						<height>216</height>
+						<width>219</width>
+						<height>234</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<texture border="30">views/thumbnails/focus.png</texture>
             <animation type="Focus">

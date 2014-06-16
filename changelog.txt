@@ -1,3 +1,7 @@
+[B]v2.0.2[/B]
+• Changed Favourites navigation to vertical.
+• Remove "Beta" tag from Addon name
+
 [B]v2.0.1[/B]
 • Fixed search youtube bug in some QuickNav widgets.
 • Fixed some misaligned elements in some cases in Videofullscreen.
