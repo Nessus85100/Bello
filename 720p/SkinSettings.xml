@@ -1259,7 +1259,7 @@
 								<onclick condition="stringcompare(Skin.String(RSSVideoFeedName),TEDx Talks)">Skin.SetString(RSSVideoFeedName,VH1)</onclick>
 								<onclick condition="stringcompare(Skin.String(RSSVideoFeedName),TEDx Talks)">Skin.SetString(RSSVideoFeedURL,VH1)</onclick>
 								<onclick condition="stringcompare(Skin.String(RSSVideoFeedName),The Ellen Show)">Skin.SetString(RSSVideoFeedName,TEDx Talks)</onclick>
-								<onclick condition="stringcompare(Skin.String(RSSVideoFeedName),The Ellen Show)">Skin.SetString(RSSVideoFeedURL,TEDx Talks)</onclick>
+								<onclick condition="stringcompare(Skin.String(RSSVideoFeedName),The Ellen Show)">Skin.SetString(RSSVideoFeedURL,TEDx Talks)</onclick>
 								<onclick condition="stringcompare(Skin.String(RSSVideoFeedName),TMZ)">Skin.SetString(RSSVideoFeedName,The Ellen Show)</onclick>
 								<onclick condition="stringcompare(Skin.String(RSSVideoFeedName),TMZ)">Skin.SetString(RSSVideoFeedURL,The Ellen Show)</onclick>								
 								<onclick condition="stringcompare(Skin.String(RSSVideoFeedName),Vice)">Skin.SetString(RSSVideoFeedName,TMZ)</onclick>
@@ -1644,7 +1644,7 @@
 				<shadowcolor>44333333</shadowcolor>
 				<font>FontSize_20</font>
 				<align>left</align>
-				<scroll>false</scroll>
+				<autoscroll>false</autoscroll>
 				<label>$LOCALIZE[31409]</label>
 		 </control>
 		</control>

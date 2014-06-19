@@ -870,7 +870,7 @@
 						<scroll>false</scroll>
 						<angle>90</angle>
 						<align>left</align>
-						<aligny>left</aligny>
+						<aligny>top</aligny>
 						<label>$VAR[BannersListMusicLabel]</label>
 					</control>
 				</itemlayout>
@@ -1225,7 +1225,7 @@
 						<top>161</top>
 						<width>356</width>
 						<height>356</height>
-						<aspectratio aligny="center" align="center" stretchdiffuse="false">stretch</aspectratio>
+						<aspectratio aligny="center" align="center">stretch</aspectratio>
 						<texture background="true" diffuse="views/wall/square_diffuse.png" >$INFO[ListItem.Icon]</texture>
 						<animation type="WindowOpen">
 							<effect type="fade" start="0" end="100" time="500" delay="500"  tween="sine" easing="out"/>
@@ -1257,7 +1257,7 @@
 						<top>161</top>
 						<width>356</width>
 						<height>356</height>
-						<aspectratio aligny="center" align="center" stretchdiffuse="false">stretch</aspectratio>
+						<aspectratio aligny="center" align="center">stretch</aspectratio>
 						<texture background="true" diffuse="views/wall/square_diffuse.png">$INFO[ListItem(-1).Icon]</texture>
 						<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(6013)">Conditional</animation>
 						<visible>Control.IsVisible(6013) + !stringcompare(ListItem(-1).Label,..)</visible>
@@ -1277,7 +1277,7 @@
 						<top>161</top>
 						<width>356</width>
 						<height>356</height>
-						<aspectratio aligny="center" align="center" stretchdiffuse="false">stretch</aspectratio>
+						<aspectratio aligny="center" align="center">stretch</aspectratio>
 						<texture background="true" diffuse="views/wall/square_diffuse.png">$INFO[ListItem(1).Icon]</texture>
 						<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(6014)">Conditional</animation>
 						<visible>Control.IsVisible(6014) + !stringcompare(ListItem(1).Label,..)</visible>

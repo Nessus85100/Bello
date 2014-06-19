@@ -197,7 +197,7 @@
 					<alttexturefocus>-</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 				</control>
-				<control type="button" id="99">
+				<control type="radiobutton" id="99">
 					<description>Library</description>
 					<label>15100</label>
 				  <include>TopButton</include>
@@ -247,7 +247,7 @@
 				<control type="label">
 					<description>Library</description>
 				  <include>TopSmallLabel</include>
-					<label>$INFO[Control.GetLabel(99)]</label>
+					<label>$LOCALIZE[15100]</label>
 					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(99)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(99)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(99)" reversible="true">Conditional</animation>

@@ -63,13 +63,11 @@
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
 					<description>Filter</description>
 				  <include>TopButton</include>
-					<label>587</label>
 				</control>
-				<control type="button" id="98">
+				<control type="radiobutton" id="98">
 					<visible>Container.CanFilterAdvanced</visible>
 					<description>Filter</description>
 					<include>TopButton</include>
-					<label>587</label>
 					<selected>Container.Filtered</selected>
 					<onclick>Action(down)</onclick>
 					<onclick>Filter</onclick>
@@ -142,7 +140,7 @@
 				<control type="label">
 					<description>Filter</description>
 				  <include>TopSmallLabel</include>
-					<label>$INFO[Control.GetLabel(19)]</label>
+					<label>$LOCALIZE[587]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(19)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(19)" reversible="true">Conditional</animation>
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
@@ -150,7 +148,7 @@
 				<control type="label">
 					<description>Filter</description>
 				  <include>TopSmallLabel</include>
-					<label>$INFO[Control.GetLabel(98)]</label>
+					<label>$LOCALIZE[587]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(98)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(98)" reversible="true">Conditional</animation>
 					<visible>Container.CanFilterAdvanced</visible>
@@ -360,12 +358,16 @@
 					<label>20367</label>
 				  <include>TopButton</include>
 				</control>
-				<control type="button" id="99">
+				<control type="togglebutton" id="99">
 					<description>Files</description>
 					<label>744</label>
+					<altlabel>14022</altlabel>
 				  <include>TopButton</include>
+					<alttexturefocus>-</alttexturefocus>
+					<alttexturenofocus>-</alttexturenofocus>
           <onclick>ActivateWindow(Videos,Files,return)</onclick>
-					<selected>Window.IsVisible(videos)</selected>
+					<altclick>ActivateWindow(videos,root)</altclick>
+					<visible>Library.HasContent(Movies) | Library.HasContent(TVShows)</visible>
 				</control>
 			</control>
       <!-- General Options Labels -->
@@ -421,7 +423,7 @@
 					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(99)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(99)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(99)" reversible="true">Conditional</animation>
-					<visible>Window.IsVisible(videos)</visible>
+					<visible>Library.HasContent(Movies) | Library.HasContent(TVShows)</visible>
 				</control>
 			</control>
 	  </control>

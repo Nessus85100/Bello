@@ -1045,7 +1045,6 @@
 					<textcolor>blue</textcolor>
 					<shadowcolor>77000000</shadowcolor>
 				  <label>31030</label>
-					<colordiffuse>grey</colordiffuse>
 				</control>
 				<control type="label" id="1">
 					<visible>substring(system.time,PM,right)</visible>
@@ -1057,7 +1056,6 @@
 					<shadowcolor>77000000</shadowcolor>
 		      <font>ClockFont</font>
 				  <label>31031</label>
-					<colordiffuse>grey</colordiffuse>
 				</control>
 			</control>
 		  <!-- NowPlaying Finish Time -->
@@ -1088,7 +1086,6 @@
 					<textcolor>blue</textcolor>
 					<shadowcolor>77000000</shadowcolor>
 				  <label>31030</label>
-					<colordiffuse>grey</colordiffuse>
 				</control>
 				<control type="label" id="1">
 					<visible>substring(system.time,PM,right)</visible>
@@ -1100,7 +1097,6 @@
 					<shadowcolor>77000000</shadowcolor>
 		      <font>ClockFont</font>
 				  <label>31031</label>
-					<colordiffuse>grey</colordiffuse>
 				</control>
 			</control>
 	  </control>

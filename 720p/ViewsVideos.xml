@@ -1097,7 +1097,7 @@
 						<scroll>false</scroll>
 						<angle>90</angle>
 						<align>right</align>
-						<aligny>left</aligny>
+						<aligny>top</aligny>
             <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
             <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
 					</control>
@@ -1111,7 +1111,7 @@
 						<scroll>false</scroll>
 						<angle>90</angle>
 						<align>left</align>
-						<aligny>left</aligny>
+						<aligny>top</aligny>
 						<label>$INFO[ListItem.label]</label>
 					</control>
 				</itemlayout>
@@ -2610,7 +2610,7 @@
 					<top>0</top>
 					<height>30</height>
 					<width>900</width>
-					<textcolor>white</textcolor>
+					<textcolor>bbwhite</textcolor>
 	        <shadowcolor>99000000</shadowcolor>
 					<font>FontSize_26B</font>
 		      <scroll>false</scroll>
@@ -2626,7 +2626,7 @@
 						<top>0</top>
 						<width>34</width>
 						<height>22</height>
-				    <colordiffuse>white</colordiffuse>
+				    <colordiffuse>bbwhite</colordiffuse>
 				    <aspectratio align="right" aligny="center">stretch</aspectratio>
 						<texture>$VAR[ViewsDef3DFlags]</texture>
 						<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
@@ -2636,7 +2636,7 @@
 						<top>0</top>
 						<width>38</width>
 						<height>22</height>
-		        <colordiffuse>white</colordiffuse>
+		        <colordiffuse>bbwhite</colordiffuse>
 				    <aspectratio align="right" aligny="center">stretch</aspectratio>
 						<texture background="true">flags/sets/sets.png</texture>
 						<visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
@@ -2646,7 +2646,7 @@
 						<top>0</top>
 						<width>50</width>
 						<height>22</height>
-				    <colordiffuse>white</colordiffuse>
+				    <colordiffuse>bbwhite</colordiffuse>
 				    <aspectratio align="right" aligny="center">stretch</aspectratio>
 						<texture background="true">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
 						<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.mpaa)</visible>
@@ -2656,7 +2656,7 @@
 						<top>0</top>
 						<height>20</height>
 						<width>600</width>
-						<textcolor>white</textcolor>
+						<textcolor>bbwhite</textcolor>
 		        <shadowcolor>99000000</shadowcolor>
 						<font>FontSize_26B</font>
 			      <scroll>false</scroll>

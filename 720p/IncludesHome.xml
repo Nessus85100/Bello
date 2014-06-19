@@ -173,7 +173,7 @@
 						 <height>30</height>
 						 <label>$LOCALIZE[31316]...</label>
 						 <align>left</align>
-						 <aligny>left</aligny>
+						 <aligny>top</aligny>
 						 <font>FontSize_22</font>
 						 <textcolor>purple</textcolor>
 						 <shadowcolor>77000000</shadowcolor>
@@ -349,7 +349,7 @@
 					 <height>30</height>
 					 <label>$LOCALIZE[31316]...</label>
 					 <align>left</align>
-					 <aligny>left</aligny>
+					 <aligny>top</aligny>
 					 <font>FontSize_22</font>
 					 <textcolor>purple</textcolor>
 					 <shadowcolor>77000000</shadowcolor>
@@ -455,7 +455,7 @@
 					 <height>30</height>
 					 <label>$LOCALIZE[31316]...</label>
 					 <align>left</align>
-					 <aligny>left</aligny>
+					 <aligny>top</aligny>
 					 <font>FontSize_22</font>
 					 <textcolor>purple</textcolor>
 					 <shadowcolor>77000000</shadowcolor>
@@ -571,7 +571,7 @@
 						 <height>30</height>
 					   <label>$LOCALIZE[31316]...</label>
 						 <align>left</align>
-						 <aligny>left</aligny>
+						 <aligny>top</aligny>
 						 <font>FontSize_22</font>
 						 <textcolor>purple</textcolor>
 						 <shadowcolor>77000000</shadowcolor>

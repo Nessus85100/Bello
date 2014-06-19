@@ -661,7 +661,7 @@
 						<scroll>false</scroll>
 						<angle>90</angle>
 						<align>left</align>
-						<aligny>left</aligny>
+						<aligny>top</aligny>
 						<label>$INFO[ListItem.label]</label>
 					</control>
 				</itemlayout>

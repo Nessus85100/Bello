@@ -48,17 +48,15 @@
 					<onclick>SetFocus(9333)</onclick>
 				  <include>TopButton</include>
 				</control>
-				<control type="button" id="19">
+				<control type="radiobutton" id="19">
 					<description>Filter</description>
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
 				  <include>TopButton</include>
-					<label>587</label>
 				</control>
-				<control type="button" id="98">
+				<control type="radiobutton" id="98">
 					<description>Advanced Filter</description>
 					<visible>Container.CanFilterAdvanced</visible>
 					<include>TopButton</include>
-					<label>587</label>
 					<selected>Container.Filtered</selected>
 					<onclick>Action(down)</onclick>
 					<onclick>Filter</onclick>
@@ -124,7 +122,7 @@
 				<control type="label">
 					<description>Filter</description>
 				  <include>TopSmallLabel</include>
-					<label>$INFO[Control.GetLabel(19)]</label>
+					<label>$LOCALIZE[587]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(19)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(19)" reversible="true">Conditional</animation>
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
@@ -132,7 +130,7 @@
 				<control type="label">
 					<description>Advanced Filter</description>
 				  <include>TopSmallLabel</include>
-					<label>$INFO[Control.GetLabel(98)]</label>
+					<label>$LOCALIZE[587]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(98)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(98)" reversible="true">Conditional</animation>
 					<visible>Container.CanFilterAdvanced</visible>
@@ -234,9 +232,8 @@
 					<alttexturefocus>-</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 				</control>
-				<control type="button" id="99">
+				<control type="radiobutton" id="99">
 					<description>Files</description>
-					<label>744</label>
 				  <include>TopButton</include>
 					<onclick>ReplaceWindow(MusicFiles)</onclick>
 					<selected>Window.IsVisible(MusicFiles)</selected>
@@ -289,7 +286,7 @@
 				<control type="label">
 					<description>Files</description>
 				  <include>TopSmallLabel</include>
-          <label>$INFO[Control.GetLabel(99)]</label>
+					<label>744</label>
 					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(99)" reversible="true">Conditional</animation>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9333).HasFocus(99)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9333).HasFocus(99)" reversible="true">Conditional</animation>

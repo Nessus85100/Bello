@@ -49,7 +49,7 @@
 					<label>103</label>
 				  <include>TopButton</include>
 				</control>
-				<control type="button" id="4">
+				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
 					<label>31007</label>
 					<altlabel>31006</altlabel>

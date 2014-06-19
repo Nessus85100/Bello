@@ -145,7 +145,7 @@
 				<shadowcolor>44333333</shadowcolor>
 				<font>FontSize_20</font>
 				<align>left</align>
-				<scroll>false</scroll>
+				<autoscroll>false</autoscroll>
 				<label>-</label>
 		 </control>
 		</control>
