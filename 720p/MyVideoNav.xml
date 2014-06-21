@@ -239,7 +239,7 @@
 					<altlabel>$LOCALIZE[31124]: $LOCALIZE[31011]</altlabel>
 				  <include>TopButton</include>
 					<onclick>Skin.ToggleSetting(FlashingCinemaLights)</onclick>
-					<selected>Skin.HasSetting(FlashingCinemaLights)</selected>
+					<usealttexture>Skin.HasSetting(FlashingCinemaLights)</usealttexture>
 				  <visible>Control.IsVisible(55) + Container.Content(Movies)</visible>
 				</control>
 				<control type="togglebutton" id="295">
@@ -249,7 +249,7 @@
 				  <include>TopButton</include>
 					<onclick>Skin.ToggleSetting(ThumbnailShowInfo)</onclick>
 			    <onclick>Reloadskin</onclick>
-					<selected>Skin.HasSetting(ThumbnailShowInfo)</selected>
+					<usealttexture>Skin.HasSetting(ThumbnailShowInfo)</usealttexture>
 				  <visible>Control.IsVisible(560) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Window.IsVisible(VideoPlaylist)]</visible>
 				</control>
 			</control>

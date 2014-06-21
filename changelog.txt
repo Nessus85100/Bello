@@ -1,5 +1,8 @@
+[B]v2.0.4[/B]
+• More necessary fixes/changes for the official repo.
+
 [B]v2.0.3[/B]
-• Necessary fixes for the official repo.
+• Necessary fixes/changes for the official repo.
 
 [B]v2.0.2[/B]
 • Changed Favourites navigation to vertical.

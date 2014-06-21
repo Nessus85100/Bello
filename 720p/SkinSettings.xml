@@ -405,7 +405,6 @@
 	          <include>SettingsButton</include>
 						<label>31174</label>
 						<onclick>Skin.ToggleSetting(HideSubmenus)</onclick>
-						<selected>Skin.HasSetting(HideSubmenus)</selected>
 					</control>
 					<control type="radiobutton" id="8331">
 						<description>Hide Movies SubMenu</description>
@@ -464,7 +463,6 @@
 	          <include>SettingsButton</include>
 						<label>31100</label>
 						<onclick>Skin.ToggleSetting(HideHomeCategories)</onclick>
-						<selected>Skin.HasSetting(HideHomeCategories)</selected>
 					</control>
 					<control type="radiobutton" id="8302">
 						<description>Hide Movies Button</description>
@@ -547,7 +545,6 @@
 	          <include>SettingsButton</include>
 						<label>31099</label>
 						<onclick>Skin.ToggleSetting(ShowHomeCategories)</onclick>
-						<selected>Skin.HasSetting(ShowHomeCategories)</selected>
 					</control>
 					<control type="radiobutton" id="8321">
 						<description>Show Videos Button</description>
@@ -590,7 +587,6 @@
 	          <include>SettingsButton</include>
 						<label>31119</label>
 						<onclick>Skin.ToggleSetting(CustomHomeCategories)</onclick>
-						<selected>Skin.HasSetting(CustomHomeCategories)</selected>
 					</control>
 					<control type="button" id="8381">
             <include>SettingsButton</include>
@@ -754,7 +750,6 @@
 	          <include>SettingsButton</include>
 						<label>31156</label>
 						<onclick>Skin.ToggleSetting(VideoViews)</onclick>
-						<selected>Skin.HasSetting(VideoViews)</selected>
 					</control>
 					<control type="radiobutton" id="8511">
 	          <include>SettingsRadioButton</include>
@@ -828,7 +823,6 @@
 	          <include>SettingsButton</include>
 						<label>31157</label>
 						<onclick>Skin.ToggleSetting(MusicViews)</onclick>
-						<selected>Skin.HasSetting(MusicViews)</selected>
 					</control>					
 					<control type="radiobutton" id="8521">
 	          <include>SettingsRadioButton</include>
@@ -1322,7 +1316,6 @@
 	          <include>SettingsButton</include>
 						<label>$LOCALIZE[31393]</label>
 						<onclick>Skin.ToggleSetting(HideQuickNavButtons)</onclick>
-						<selected>Skin.HasSetting(HideQuickNavButtons)</selected>
 						<visible>!Skin.HasSetting(DisableQuickNav)</visible>
 					</control>
 					<control type="radiobutton" id="8711">
@@ -1439,7 +1432,6 @@
 	          <include>SettingsButton</include>
 						<label>$LOCALIZE[31394]</label>
 						<onclick>Skin.ToggleSetting(ShowQuickNavButtons)</onclick>
-						<selected>Skin.HasSetting(ShowQuickNavButtons)</selected>
 						<visible>!Skin.HasSetting(DisableQuickNav)</visible>
 					</control>
 					<control type="radiobutton" id="8731">
@@ -1507,7 +1499,6 @@
 	          <include>SettingsButton</include>
 						<label>$LOCALIZE[31395]</label>
 						<onclick>Skin.ToggleSetting(CustomQuickNavButtons)</onclick>
-						<selected>Skin.HasSetting(CustomQuickNavButtons)</selected>
 						<visible>!Skin.HasSetting(DisableQuickNav)</visible>
 					</control>
 					<control type="button" id="8761">
