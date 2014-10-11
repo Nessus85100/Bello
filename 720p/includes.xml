@@ -49,7 +49,7 @@
       <animation effect="fade" time="300" start="0" end="100" tween="sine" easing="out">Visible</animation>
       <animation effect="fade" time="300" start="100" end="0" tween="sine" easing="in">Hidden</animation>
       <colordiffuse>ddFFFFFF</colordiffuse>
-			<visible>[[Window.IsActive(busydialog) | Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog) | Window.IsActive(1117)] + ![Window.IsActive(movieinformation) | Window.IsActive(addoninformation) |Window.IsActive(musicinformation)]]</visible>	
+			<visible>[ControlGroup(9111).HasFocus + Window.IsActive(MyPVR.xml)] | [[Window.IsActive(busydialog) | Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog) | Window.IsActive(1117)] + ![Window.IsActive(movieinformation) | Window.IsActive(addoninformation) |Window.IsActive(musicinformation)]]</visible>	
 		</control>
 		<control type="image">
 			<include>FullscreenDimensions</include>
@@ -58,7 +58,7 @@
       <animation effect="fade" time="300" start="100" end="0" tween="sine" easing="in">WindowClose</animation>
       <animation effect="fade" time="300" start="0" end="100" tween="sine" easing="out">Visible</animation>
       <animation effect="fade" time="300" start="100" end="0" tween="sine" easing="in">Hidden</animation>
-			<visible>ControlGroup(9111).HasFocus  | Window.IsActive(FileStackingDialog)</visible>
+			<visible>[ControlGroup(9111).HasFocus + !Window.IsActive(MyPVR.xml)]  | Window.IsActive(FileStackingDialog)</visible>
 		</control>
 	</include>
 
