@@ -1,3 +1,11 @@
+[B]v2.0.6[/B]
+• Added switching channels groups when pressing left/right in fullcreen video.
+• Fixed changing channels group (left/right) in PVRChannelsOSD dialog.
+• Fixed misaligned icons in NowPlaying LiveTV home widget.
+• Fixed black overlay bug in PVR window.
+• Fixed Filter bug in Music section.
+
+
 [B]v2.0.5[/B]
 • Changed all Views Options menus to drop-down menus.
 • Added Current Playlist button on Options Menu.
