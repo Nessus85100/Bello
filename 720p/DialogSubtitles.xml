@@ -36,13 +36,13 @@
 					<colordiffuse>FAFFFFFF</colordiffuse>
 	      </control>
 	     <control type="group">
-	      <left>260</left>
+	      <left>0</left>
 	      <top>130</top>
 	      <control type="label">
 	        <description>XBMC Subtitles Header</description>
-	        <left>0</left>
+	        <left>230</left>
 	        <top>25</top>
-	        <width>770</width>
+	        <width>830</width>
 	        <height>40</height>
 	        <label>XBMC $LOCALIZE[24012]</label>
 					<font>FontSize_34</font>
@@ -52,9 +52,9 @@
 	      </control>
 	      <control type="label" id="100">
 	        <description>Subtitle Service Name</description>
-	        <left>0</left>
+	        <left>230</left>
 	        <top>55</top>
-	        <width>770</width>
+	        <width>830</width>
 	        <height>40</height>
 	        <label>($INFO[Container(150).ListItem.Label])</label>
 					<font>FontSize_20</font>
@@ -63,9 +63,9 @@
 	        <scrollspeed>20</scrollspeed>
 	      </control>
 	      <control type="list" id="120">
-	        <left>0</left>
+	        <left>230</left>
 	        <top>100</top>
-	        <width>760</width>
+	        <width>825</width>
 	        <height>306</height>
 		      <onright>ClearProperty(Movement)</onright>
 		      <onleft>SetProperty(Movement,1)</onleft>
@@ -77,61 +77,88 @@
 	        <pagecontrol>121</pagecontrol>
 		      <scrolltime tween="cubic" easing="out">350</scrolltime>
 	        <itemlayout height="51">
-	          <control type="group">
-	            <visible>!ListItem.property(sync)</visible>
-		          <control type="image">
-		            <left>8</left>
-		            <top>13</top>
-		            <width>32</width>
-		            <height>23</height>
-					      <texture>osd/xbmcsubs/flags/$INFO[ListItem.Thumb].png</texture>
-		          </control>
-		          <control type="label">
-		            <left>45</left>
-		            <top>0</top>
-		            <width>625</width>
-		            <height>47</height>
-		            <font>FontSize_18</font>
-							  <textcolor>77white</textcolor>
-						    <shadowcolor>99000000</shadowcolor>
-		            <aligny>center</aligny>
-		            <align>left</align>
-		            <scroll>false</scroll>
-		            <label>$INFO[ListItem.Label2]</label>
-		          </control>
-	          </control>
-	          <control type="group">
-	            <visible>ListItem.property(sync)</visible>
-		          <control type="image">
-		            <left>8</left>
-		            <top>13</top>
-		            <width>32</width>
-		            <height>23</height>
-					      <texture>osd/xbmcsubs/flags/$INFO[ListItem.Thumb].png</texture>
-		          </control>
-		          <control type="image">
-		            <left>41</left>
-		            <top>11</top>
-		            <width>55</width>
-		            <height>27</height>
-		            <texture>osd/xbmcsubs/icon_sync.png</texture>
-		          </control>
-		          <control type="label">
-		            <left>100</left>
-		            <top>0</top>
-		            <width>568</width>
-		            <height>47</height>
-		            <font>FontSize_18</font>
-						    <textcolor>77white</textcolor>
-							  <shadowcolor>99000000</shadowcolor>
-		            <aligny>center</aligny>
-		            <align>left</align>
-		            <scroll>false</scroll>
-		            <label>$INFO[ListItem.Label2]</label>
-		          </control>
-		        </control>
 	          <control type="image">
-	            <left>660</left>
+	            <left>8</left>
+	            <top>14</top>
+	            <width>32</width>
+	            <height>23</height>
+				      <texture>osd/xbmcsubs/flags/$INFO[ListItem.Thumb].png</texture>
+	          </control>
+	          <control type="image">
+	            <left>40</left>
+	            <top>10</top>
+	            <width>30</width>
+	            <height>31</height>
+	            <texture>osd/xbmcsubs/icon_hi.png</texture>
+              <visible>ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="image">
+	            <left>40</left>
+	            <top>10</top>
+	            <width>60</width>
+	            <height>31</height>
+	            <texture>osd/xbmcsubs/icon_sync.png</texture>
+              <visible>ListItem.property(sync)</visible>
+              <animation effect="slide" end="25" time="0" condition="ListItem.property(hearing_imp)">Conditional</animation>
+	          </control>
+	          <control type="label">
+	            <left>45</left>
+	            <top>0</top>
+	            <width>685</width>
+	            <height>49</height>
+	            <font>FontSize_20</font>
+						  <textcolor>77white</textcolor>
+					    <shadowcolor>99000000</shadowcolor>
+	            <aligny>center</aligny>
+	            <align>left</align>
+	            <scroll>false</scroll>
+	            <label>$INFO[ListItem.Label2]</label>
+              <visible>!ListItem.property(sync) + !ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="label">
+	            <left>70</left>
+	            <top>0</top>
+	            <width>655</width>
+	            <height>49</height>
+	            <font>FontSize_20</font>
+						  <textcolor>77white</textcolor>
+					    <shadowcolor>99000000</shadowcolor>
+	            <aligny>center</aligny>
+	            <align>left</align>
+	            <scroll>false</scroll>
+	            <label>$INFO[ListItem.Label2]</label>
+              <visible>!ListItem.property(sync) + ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="label">
+	            <left>100</left>
+	            <top>0</top>
+	            <width>625</width>
+	            <height>49</height>
+	            <font>FontSize_20</font>
+						  <textcolor>77white</textcolor>
+					    <shadowcolor>99000000</shadowcolor>
+	            <aligny>center</aligny>
+	            <align>left</align>
+	            <scroll>false</scroll>
+	            <label>$INFO[ListItem.Label2]</label>
+              <visible>ListItem.property(sync) + !ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="label">
+	            <left>125</left>
+	            <top>0</top>
+	            <width>600</width>
+	            <height>49</height>
+	            <font>FontSize_20</font>
+						  <textcolor>77white</textcolor>
+					    <shadowcolor>99000000</shadowcolor>
+	            <aligny>center</aligny>
+	            <align>left</align>
+	            <scroll>false</scroll>
+	            <label>$INFO[ListItem.Label2]</label>
+              <visible>ListItem.property(sync) + ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="image">
+	            <left>725</left>
 	            <top>14</top>
 	            <width>100</width>
 	            <height>18</height>
@@ -141,65 +168,94 @@
 	        </itemlayout>
 	        <focusedlayout height="51">
 	          <control type="image">
-	            <width>760</width>
+	            <width>825</width>
 	            <height>47</height>
 	            <texture>buttons/settings_fo.png</texture>
-							<animation effect="slide" start="0,35" end="0,0" time="400" reversible="false" tween="back" easing="out" condition="Container(120).OnPrevious">focus</animation>
-							<animation effect="slide" start="0,-35" end="0,0" time="400" reversible="false" tween="back" easing="out" condition="Container(120).OnNext">focus</animation>
-	          </control>
-	          <control type="group">
-	            <visible>!ListItem.property(sync)</visible>
-		          <control type="image">
-		            <left>8</left>
-		            <top>13</top>
-		            <width>32</width>
-		            <height>23</height>
-					      <texture>osd/xbmcsubs/flags/$INFO[ListItem.Thumb].png</texture>
-		          </control>
-		          <control type="label">
-		            <left>45</left>
-		            <top>0</top>
-		            <width>625</width>
-		            <height>47</height>
-		            <font>FontSize_18</font>
-								<textcolor>white</textcolor>
-								<shadowcolor>99000000</shadowcolor>
-		            <align>left</align>
-		            <aligny>center</aligny>
-		            <label>$INFO[ListItem.Label2]</label>
-		          </control>
-	          </control>
-	          <control type="group">
-	            <visible>ListItem.property(sync)</visible>
-		          <control type="image">
-		            <left>8</left>
-		            <top>13</top>
-		            <width>32</width>
-		            <height>23</height>
-					      <texture>osd/xbmcsubs/flags/$INFO[ListItem.Thumb].png</texture>
-		          </control>
-		          <control type="image">
-		            <left>41</left>
-		            <top>11</top>
-		            <width>55</width>
-		            <height>27</height>
-		            <texture>osd/xbmcsubs/icon_sync.png</texture>
-		          </control>
-		          <control type="label">
-		            <left>100</left>
-		            <top>0</top>
-		            <width>568</width>
-		            <height>47</height>
-		            <font>FontSize_18</font>
-								<textcolor>white</textcolor>
-								<shadowcolor>99000000</shadowcolor>
-		            <align>left</align>
-		            <aligny>center</aligny>
-		            <label>$INFO[ListItem.Label2]</label>
-		          </control>
+							<animation effect="slide" start="0,35" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(120).OnPrevious">focus</animation>
+							<animation effect="slide" start="0,-35" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(120).OnNext">focus</animation>
 	          </control>
 	          <control type="image">
-	            <left>660</left>
+	            <left>8</left>
+	            <top>14</top>
+	            <width>32</width>
+	            <height>23</height>
+				      <texture>osd/xbmcsubs/flags/$INFO[ListItem.Thumb].png</texture>
+	          </control>
+	          <control type="image">
+	            <left>40</left>
+	            <top>10</top>
+	            <width>30</width>
+	            <height>31</height>
+	            <texture>osd/xbmcsubs/icon_hi.png</texture>
+              <visible>ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="image">
+	            <left>40</left>
+	            <top>10</top>
+	            <width>60</width>
+	            <height>31</height>
+	            <texture>osd/xbmcsubs/icon_sync.png</texture>
+              <visible>ListItem.property(sync)</visible>
+              <animation effect="slide" end="25" time="0" condition="ListItem.property(hearing_imp)">Conditional</animation>
+	          </control>
+	          <control type="label">
+	            <left>45</left>
+	            <top>0</top>
+	            <width>685</width>
+	            <height>49</height>
+	            <font>FontSize_20</font>
+						  <textcolor>white</textcolor>
+					    <shadowcolor>99000000</shadowcolor>
+	            <aligny>center</aligny>
+	            <align>left</align>
+	            <scroll>false</scroll>
+	            <label>$INFO[ListItem.Label2]</label>
+              <visible>!ListItem.property(sync) + !ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="label">
+	            <left>70</left>
+	            <top>0</top>
+	            <width>655</width>
+	            <height>49</height>
+	            <font>FontSize_20</font>
+						  <textcolor>white</textcolor>
+					    <shadowcolor>99000000</shadowcolor>
+	            <aligny>center</aligny>
+	            <align>left</align>
+	            <scroll>false</scroll>
+	            <label>$INFO[ListItem.Label2]</label>
+              <visible>!ListItem.property(sync) + ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="label">
+	            <left>100</left>
+	            <top>0</top>
+	            <width>625</width>
+	            <height>49</height>
+	            <font>FontSize_20</font>
+						  <textcolor>white</textcolor>
+					    <shadowcolor>99000000</shadowcolor>
+	            <aligny>center</aligny>
+	            <align>left</align>
+	            <scroll>false</scroll>
+	            <label>$INFO[ListItem.Label2]</label>
+              <visible>ListItem.property(sync) + !ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="label">
+	            <left>125</left>
+	            <top>0</top>
+	            <width>600</width>
+	            <height>49</height>
+	            <font>FontSize_20</font>
+						  <textcolor>white</textcolor>
+					    <shadowcolor>99000000</shadowcolor>
+	            <aligny>center</aligny>
+	            <align>left</align>
+	            <scroll>false</scroll>
+	            <label>$INFO[ListItem.Label2]</label>
+              <visible>ListItem.property(sync) + ListItem.property(hearing_imp)</visible>
+	          </control>
+	          <control type="image">
+	            <left>725</left>
 	            <top>14</top>
 	            <width>100</width>
 	            <height>18</height>
@@ -211,14 +267,13 @@
 					     
 	      <control type="group">
 	        <left>0</left>
-	        <top>316</top>
+	        <top>317</top>
 		      <control type="label" id="130">
-		        <left>0</left>
+		        <left>230</left>
 		        <top>95</top>
-						<width>700</width>
+						<width>760</width>
 						<font>FontSize_20</font>
-						<textcolor>44white</textcolor>
-					  <shadowcolor>99000000</shadowcolor>
+						<textcolor>55white</textcolor>
 						<align>left</align>
 	          <label>$LOCALIZE[31166]</label>
 					  <animation type="Conditional" reversible="false" condition="true" loop="true">
@@ -227,32 +282,35 @@
 				      <effect type="fade" start="100" end="0" time="300" delay="10000" />
 				    </animation>
 		      </control>
-		      <control type="label">
-		        <left>0</left>
-		        <top>95</top>
-						<width>700</width>
-						<font>FontSize_20</font>
-						<textcolor>44white</textcolor>
-					  <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-	          <label>$INFO[Control.GetLabel(140)] for '$INFO[VideoPlayer.Title]'</label>
-						<animation type="Conditional" reversible="false" condition="Control.IsVisible(130)" loop="true">
-						  <effect type="fade" start="0" end="100" time="300" delay="5300" />
-						  <effect type="fade" start="100" end="0" time="300" delay="10000" />
-						</animation>
-		      </control>
 			    <control type="label">
 						<description>Pages</description>
-						<right>258</right>
+						<right>223</right>
 						<top>97</top>
 						<width>200</width>
 						<label>$LOCALIZE[31024] $INFO[Container(120).CurrentPage]$INFO[Container(120).NumPages, / ]</label>
 						<align>right</align>
 						<font>FontSize_20</font>
-						<textcolor>44white</textcolor>
-					  <shadowcolor>99000000</shadowcolor>
+						<textcolor>55white</textcolor>
 						<visible>IntegerGreaterThan(Container(120).NumPages,1)</visible>
+					  <animation type="Conditional" reversible="false" condition="true" loop="true">
+						  <effect type="fade" start="0" end="100" time="300" delay="0" />
+						  <effect type="fade" start="100" end="0" time="300" delay="5000" />
+				      <effect type="fade" start="100" end="0" time="300" delay="10000" />
+				    </animation>
 			    </control>
+		      <control type="label">
+		        <left>227</left>
+		        <top>95</top>
+						<width>840</width>
+						<font>FontSize_20</font>
+						<textcolor>55white</textcolor>
+						<align>left</align>
+	          <label>$INFO[Control.GetLabel(140)] for '$INFO[Player.Filename]'</label>
+						<animation type="Conditional" reversible="false" condition="Control.IsVisible(130)" loop="true">
+						  <effect type="fade" start="0" end="100" time="300" delay="5300" />
+						  <effect type="fade" start="100" end="0" time="300" delay="10000" />
+						</animation>
+		      </control>
 	      </control>				  
 	     </control>
 	    </control>

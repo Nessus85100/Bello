@@ -103,7 +103,7 @@
 			<control type="group" id="1">
 				<left>35</left>
 				<top>325</top>
-        <visible>[Player.ShowInfo | [Player.Paused+Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(SubtitleSearch) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
+        <visible>[Player.ShowInfo | [Player.Paused + Skin.HasSetting(ShowVideoInfo)] | Window.IsActive(VideoOSD)] + ![Window.IsActive(SliderDialog) | Window.IsActive(SeekBar) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(SelectDialog) | Window.IsActive(SubtitleSearch) | Window.IsActive(ShutdownMenu) | Window.IsActive(favourites) | Window.IsActive(NumericInput) | Window.IsActive(PVROSDChannels) | Window.IsActive(PVROSDGuide)]</visible>
 		    <animation type="WindowOpen">
 	        <effect type="slide" start="-150,0" end="0,0" time="450" delay="0" tween="sine" easing="out" />
 	        <effect type="fade" start="0" end="100" time="450" delay="0" tween="sine" easing="out" />
