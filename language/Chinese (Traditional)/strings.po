@@ -223,3 +223,7 @@ msgstr "重新命名群組"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "刪除群組"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "說明"

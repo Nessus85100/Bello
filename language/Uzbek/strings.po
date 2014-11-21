@@ -28,6 +28,10 @@ msgctxt "#31023"
 msgid "Info"
 msgstr "Ma'lumot"
 
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Nishonchalar"
+
 msgctxt "#31302"
 msgid "Paused"
 msgstr "Pauza"

@@ -36,6 +36,10 @@ msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Menú Contextual"
 
+msgctxt "#31011"
+msgid "On"
+msgstr "Activado"
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "Desactivado"
@@ -191,3 +195,7 @@ msgstr "Renombrar Grupo"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Borrar Grupo"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Ayuda"

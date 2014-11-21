@@ -426,7 +426,7 @@ msgstr "Télécharger [COLOR=selected]logo.png[/COLOR] pour toutes les séries t
 
 msgctxt "#31147"
 msgid "Download [COLOR=selected]clearart.png[/COLOR] for all TV Shows"
-msgstr "Télécharger [COLOR=selected]clearart.png[/COLOR] pour toutes les séries télé"
+msgstr "Télécharger [COLOR=selected]clearart.png[/COLOR] pour toutes les émissions télé"
 
 msgctxt "#31148"
 msgid "Download [COLOR=selected]landscape.jpg[/COLOR] for all TV Shows"
@@ -542,7 +542,7 @@ msgstr "Mes films"
 
 msgctxt "#31201"
 msgid "My TV Shows"
-msgstr "Mes séries télé"
+msgstr "Mes émissions télé"
 
 msgctxt "#31202"
 msgid "My Music"
@@ -846,7 +846,7 @@ msgstr "Activer le diaporama du fanart de la musique"
 
 msgctxt "#31312"
 msgid "Enable Artist SlideShow"
-msgstr "Activer le diaporama des artistes"
+msgstr "Activer le diaporama de l'artiste"
 
 msgctxt "#31313"
 msgid "Animated Backgrounds"

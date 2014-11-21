@@ -88,6 +88,10 @@ msgctxt "#31080"
 msgid "Slide"
 msgstr "Slide"
 
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Ikona"
+
 msgctxt "#31166"
 msgid "Local subtitle available"
 msgstr "Subtitra lokal në dispozicion"

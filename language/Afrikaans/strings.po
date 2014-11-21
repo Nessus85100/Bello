@@ -36,6 +36,10 @@ msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Konteks Kieslys"
 
+msgctxt "#31011"
+msgid "On"
+msgstr "Aan"
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "Af"
@@ -87,6 +91,14 @@ msgstr "Maak toe"
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Skyfie"
+
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Ikone"
+
+msgctxt "#31084"
+msgid "Posters"
+msgstr "Plakaat"
 
 msgctxt "#31134"
 msgid "Edit Background for Media Type"
@@ -171,3 +183,7 @@ msgstr "Verander Groep naam"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Wis Groep uit"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Help"

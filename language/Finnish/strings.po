@@ -40,6 +40,10 @@ msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Pikavalikko"
 
+msgctxt "#31011"
+msgid "On"
+msgstr "Päällä"
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "Ei käytössä"

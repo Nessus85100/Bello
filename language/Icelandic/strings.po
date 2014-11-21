@@ -236,6 +236,10 @@ msgctxt "#31227"
 msgid "From"
 msgstr "Frá"
 
+msgctxt "#31228"
+msgid "at"
+msgstr "þann"
+
 msgctxt "#31229"
 msgid "Last Updated"
 msgstr "Síðast uppfært"
@@ -339,6 +343,26 @@ msgstr "Tiltekt á Kvikmyndasafni"
 msgctxt "#31373"
 msgid "Clean Music Library"
 msgstr "Tiltekt á Tónlistarsafni"
+
+msgctxt "#31383"
+msgid "Hide Movies Button"
+msgstr "Fela kvikmynda hnapp"
+
+msgctxt "#31384"
+msgid "Hide TV Shows Button"
+msgstr "Fela sjónvarsps hnapp"
+
+msgctxt "#31385"
+msgid "Hide Music Button"
+msgstr "Fela tónlistar hnapp"
+
+msgctxt "#31386"
+msgid "Hide Pictures Button"
+msgstr "Fael mynda hnapp"
+
+msgctxt "#31387"
+msgid "Hide Add-ons Button"
+msgstr "Fela viðbóta hnapp"
 
 msgctxt "#31430"
 msgid "Help"

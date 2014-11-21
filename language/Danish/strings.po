@@ -176,6 +176,10 @@ msgctxt "#31169"
 msgid "Reset Skin"
 msgstr "Nulstil Skin"
 
+msgctxt "#31174"
+msgid "Hide Submenus"
+msgstr "Skjul undermenuer"
+
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Ny Søgning"
@@ -284,9 +288,17 @@ msgctxt "#31302"
 msgid "Paused"
 msgstr "Pause"
 
+msgctxt "#31306"
+msgid "Customize Background"
+msgstr "Tilpas baggrund"
+
 msgctxt "#31309"
 msgid "Visualization Presets"
 msgstr "Visualiserings-forudindstillinger"
+
+msgctxt "#31310"
+msgid "Visualization Settings"
+msgstr "Visualiseringsindstillinger"
 
 msgctxt "#31316"
 msgid "Now Playing"

@@ -64,6 +64,10 @@ msgctxt "#31036"
 msgid "Close"
 msgstr "Đóng lại"
 
+msgctxt "#31084"
+msgid "Posters"
+msgstr "Áp phích"
+
 msgctxt "#31166"
 msgid "Local subtitle available"
 msgstr "Phụ đề đã có sẵn trên máy bạn"

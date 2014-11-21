@@ -32,6 +32,10 @@ msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Dewislen Cyd-destun"
 
+msgctxt "#31011"
+msgid "On"
+msgstr "Ymlaen"
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "Diffodd"
@@ -64,13 +68,37 @@ msgctxt "#31027"
 msgid "Memory Used:"
 msgstr "Defnydd Cof:"
 
+msgctxt "#31030"
+msgid "AM"
+msgstr "AM"
+
+msgctxt "#31031"
+msgid "PM"
+msgstr "PM"
+
 msgctxt "#31033"
 msgid "Channel Group"
 msgstr "Grŵp Sianel"
 
+msgctxt "#31036"
+msgid "Close"
+msgstr "Cau"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Sleid"
+
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Eiconau"
+
+msgctxt "#31084"
+msgid "Posters"
+msgstr "Poster"
+
+msgctxt "#31086"
+msgid "Banner List"
+msgstr "Rhestr Cloriau"
 
 msgctxt "#31166"
 msgid "Local subtitle available"
@@ -87,6 +115,10 @@ msgstr "Rhoagolygon Fesul Awr"
 msgctxt "#31225"
 msgid "Weekend Forecast"
 msgstr "Rhagolygon Penwythnos"
+
+msgctxt "#31228"
+msgid "at"
+msgstr "am"
 
 msgctxt "#31229"
 msgid "Last Updated"
@@ -135,3 +167,7 @@ msgstr "Ailenwi Grŵp"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Dileu Grŵp"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Cymorth"

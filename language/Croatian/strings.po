@@ -44,6 +44,10 @@ msgctxt "#31010"
 msgid "-"
 msgstr "-"
 
+msgctxt "#31011"
+msgid "On"
+msgstr "Uključeno"
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "Isključen"
@@ -116,6 +120,10 @@ msgctxt "#31080"
 msgid "Slide"
 msgstr "Diapozitiv"
 
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Ikone"
+
 msgctxt "#31084"
 msgid "Posters"
 msgstr "Plakat"
@@ -131,6 +139,10 @@ msgstr "Naslovni izbornik"
 msgctxt "#31104"
 msgid "Show Search Button"
 msgstr "Prikaži tipku pretrage"
+
+msgctxt "#31127"
+msgid "Landscape"
+msgstr "Pejzaž"
 
 msgctxt "#31128"
 msgid "ClearArt"
@@ -163,6 +175,10 @@ msgstr "Dostupan je lokalni podnaslov"
 msgctxt "#31203"
 msgid "New Search"
 msgstr "Novo pretraživanje"
+
+msgctxt "#31218"
+msgid "Landscape"
+msgstr "Pejzaž"
 
 msgctxt "#31219"
 msgid "Logo"

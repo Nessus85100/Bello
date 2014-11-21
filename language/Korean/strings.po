@@ -186,11 +186,11 @@ msgstr "갤러리"
 
 msgctxt "#31082"
 msgid "3D Wall"
-msgstr "3D 월"
+msgstr "3D 벽"
 
 msgctxt "#31083"
 msgid "Wall"
-msgstr "벽면"
+msgstr "벽"
 
 msgctxt "#31084"
 msgid "Posters"
@@ -210,7 +210,7 @@ msgstr "VideoWall 팬아트"
 
 msgctxt "#31088"
 msgid "List Wall"
-msgstr "월 목록"
+msgstr "벽 목록"
 
 msgctxt "#31094"
 msgid "Choose Movies Widget"
@@ -688,6 +688,10 @@ msgctxt "#31238"
 msgid "No Shows Airing Today"
 msgstr "오늘 방송하는 TV 쇼 없음"
 
+msgctxt "#31239"
+msgid "Shows Listed"
+msgstr "확산 색상 숨김"
+
 msgctxt "#31240"
 msgid "Shows Airing Today"
 msgstr "오늘 방송하는 TV 쇼"
@@ -847,6 +851,10 @@ msgstr "Artist SlideShow 사용"
 msgctxt "#31313"
 msgid "Animated Backgrounds"
 msgstr "움직이는 배경화면"
+
+msgctxt "#31314"
+msgid "Hide Diffuse Colors"
+msgstr "확산 색상 숨김"
 
 msgctxt "#31315"
 msgid "Hide Scrolling Titles"
@@ -1027,6 +1035,10 @@ msgstr "하드웨어와 소프트웨어 기능을 제어합니다. 오디오와 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
 msgstr "다양한 설정과 사용자 맞춤 옵션으로 사용자의 필요와 취향에 맞는 \"Bello\"를 만들 수 있습니다."
+
+msgctxt "#31410"
+msgid "With Kodi you can have several profiles and the auto login option if the login screen is disabled."
+msgstr "여러개의 프로파일을 사용할 수 있고 로그인 화면을 끄면 자동 로그인 할 수 있습니다."
 
 msgctxt "#31411"
 msgid "Configure Appearance Settings"

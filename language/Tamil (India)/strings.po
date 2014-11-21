@@ -32,6 +32,10 @@ msgctxt "#31009"
 msgid "Context Menu"
 msgstr "சூழல் மெனு"
 
+msgctxt "#31011"
+msgid "On"
+msgstr "இயக்கு"
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "நிறுத்து"
@@ -83,6 +87,14 @@ msgstr "மூடுக"
 msgctxt "#31080"
 msgid "Slide"
 msgstr "சறுக்கு"
+
+msgctxt "#31083"
+msgid "Wall"
+msgstr "சின்னங்கள்"
+
+msgctxt "#31084"
+msgid "Posters"
+msgstr "சுவரொட்டி"
 
 msgctxt "#31166"
 msgid "Local subtitle available"
@@ -151,3 +163,7 @@ msgstr "குழுவுக்கு வேறு பெயரிடு"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "குழுவை நீக்கு"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "உதவி"

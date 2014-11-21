@@ -64,6 +64,10 @@ msgctxt "#31031"
 msgid "PM"
 msgstr "popodne"
 
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Ikone"
+
 msgctxt "#31134"
 msgid "Edit Background for Media Type"
 msgstr "Uredite pozadinu tastera za početni ekran"

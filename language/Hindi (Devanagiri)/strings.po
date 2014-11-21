@@ -24,6 +24,10 @@ msgctxt "#31024"
 msgid "Page"
 msgstr "पृष्ठ"
 
+msgctxt "#31025"
+msgid "Items"
+msgstr "वस्तुए"
+
 msgctxt "#31030"
 msgid "AM"
 msgstr "AM"
@@ -35,6 +39,14 @@ msgstr "PM"
 msgctxt "#31080"
 msgid "Slide"
 msgstr "	परिकलन"
+
+msgctxt "#31083"
+msgid "Wall"
+msgstr "प्रतीक"
+
+msgctxt "#31301"
+msgid "Playing"
+msgstr "वादन"
 
 msgctxt "#31302"
 msgid "Paused"

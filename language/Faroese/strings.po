@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Lag nummar"
 
+msgctxt "#31011"
+msgid "On"
+msgstr "Tendra"
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "Sløkk"
@@ -56,9 +60,21 @@ msgctxt "#31027"
 msgid "Memory Used:"
 msgstr "Brúkt minni:"
 
+msgctxt "#31030"
+msgid "AM"
+msgstr "Fyrrapart"
+
+msgctxt "#31031"
+msgid "PM"
+msgstr "Seinnapart"
+
 msgctxt "#31033"
 msgid "Channel Group"
 msgstr "Rás bólkur"
+
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Ímyndir"
 
 msgctxt "#31223"
 msgid "36 Hour Forecast"
@@ -71,6 +87,10 @@ msgstr "Tíma forsøgn"
 msgctxt "#31225"
 msgid "Weekend Forecast"
 msgstr "Vikuskiftis forsøgn"
+
+msgctxt "#31228"
+msgid "at"
+msgstr "um"
 
 msgctxt "#31229"
 msgid "Last Updated"

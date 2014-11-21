@@ -684,6 +684,34 @@ msgctxt "#31373"
 msgid "Clean Music Library"
 msgstr "Limpar biblioteca de música"
 
+msgctxt "#31383"
+msgid "Hide Movies Button"
+msgstr "Agochar o Botón Filmes"
+
+msgctxt "#31384"
+msgid "Hide TV Shows Button"
+msgstr "Agochar o Botón Series de TV"
+
+msgctxt "#31385"
+msgid "Hide Music Button"
+msgstr "Agochar o Botón Música"
+
+msgctxt "#31386"
+msgid "Hide Pictures Button"
+msgstr "Agochar o Botón Imaxes"
+
+msgctxt "#31387"
+msgid "Hide Add-ons Button"
+msgstr "Agochar o Botón Complementos"
+
+msgctxt "#31392"
+msgid "Show Videos Button"
+msgstr "Amosar o Botón Vídeos"
+
+msgctxt "#31396"
+msgid "Custom Button"
+msgstr "Botón Personalizado"
+
 msgctxt "#31408"
 msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
 msgstr "Controle o hardware e as funcións do software, así como a configuración do hardware de audio e vídeo, reprodución automática e bloqueo."

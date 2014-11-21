@@ -16,6 +16,10 @@ msgstr ""
 "Language: lv\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "Tiešraides TV"
+
 msgctxt "#31002"
 msgid "TV Shows"
 msgstr "TV Šovi"
@@ -24,9 +28,17 @@ msgctxt "#31003"
 msgid "Aired"
 msgstr "Ēterā"
 
+msgctxt "#31005"
+msgid "Track Number"
+msgstr "Celiņa numurs"
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Satura izvēlne"
+
+msgctxt "#31011"
+msgid "On"
+msgstr "Darbojas"
 
 msgctxt "#31012"
 msgid "Off"
@@ -39,6 +51,10 @@ msgstr "Karaoke dziesmas izvēlētājs"
 msgctxt "#31018"
 msgid "Trailers"
 msgstr "Rullīši"
+
+msgctxt "#31020"
+msgid "Found"
+msgstr "Atrada"
 
 msgctxt "#31023"
 msgid "Info"
@@ -64,17 +80,53 @@ msgctxt "#31031"
 msgid "PM"
 msgstr "PM"
 
+msgctxt "#31033"
+msgid "Channel Group"
+msgstr "Kanāla grupa"
+
 msgctxt "#31036"
 msgid "Close"
 msgstr "Aizvērt"
+
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Ikonas"
+
+msgctxt "#31084"
+msgid "Posters"
+msgstr "Plakāts"
 
 msgctxt "#31166"
 msgid "Local subtitle available"
 msgstr "PIeejami vietējie subtitri"
 
+msgctxt "#31223"
+msgid "36 Hour Forecast"
+msgstr "36 stundu prognoze"
+
+msgctxt "#31224"
+msgid "Hourly Forecast"
+msgstr "Prognoze ik stundu"
+
+msgctxt "#31225"
+msgid "Weekend Forecast"
+msgstr "Prognoze nedēļas nogalei"
+
+msgctxt "#31228"
+msgid "at"
+msgstr "ar"
+
 msgctxt "#31229"
 msgid "Last Updated"
 msgstr "Pēdējie atjaunotie"
+
+msgctxt "#31233"
+msgid "Chance of Precipitation"
+msgstr "Nokrišņu iespējamība"
+
+msgctxt "#31236"
+msgid "Forecast"
+msgstr "Prognoze"
 
 msgctxt "#31237"
 msgid "View"
@@ -99,3 +151,19 @@ msgstr "Vizualizācijas sagataves"
 msgctxt "#31316"
 msgid "Now Playing"
 msgstr "Pašlaik atskaņo"
+
+msgctxt "#31351"
+msgid "Add Group"
+msgstr "Pievienot grupu"
+
+msgctxt "#31352"
+msgid "Rename Group"
+msgstr "Pārsaukt grupu"
+
+msgctxt "#31353"
+msgid "Delete Group"
+msgstr "Dzēst grupu"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Palīdzība"

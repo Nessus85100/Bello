@@ -42,7 +42,7 @@ msgstr "Numer ścieżki"
 
 msgctxt "#31008"
 msgid "System auto shutdown in"
-msgstr "Automatycznie wyłącz system w"
+msgstr "Zamknij system automatycznie po"
 
 msgctxt "#31009"
 msgid "Context Menu"
@@ -114,7 +114,7 @@ msgstr "Pozycje"
 
 msgctxt "#31026"
 msgid "Scrolling..."
-msgstr "Przewijanie"
+msgstr "Przewijanie..."
 
 msgctxt "#31027"
 msgid "Memory Used:"
@@ -306,11 +306,11 @@ msgstr "Przycisk muzyki otwiera..."
 
 msgctxt "#31118"
 msgid "Custom Button"
-msgstr "Przycisk niestandardowy"
+msgstr "Niestandardowy przycisk"
 
 msgctxt "#31119"
 msgid "Custom Home Menu Buttons"
-msgstr "Zdefiniowane przyciski menu startowego"
+msgstr "Niestandardowe przyciski menu startowego"
 
 msgctxt "#31120"
 msgid "Hide Movies Submenu"
@@ -366,7 +366,7 @@ msgstr "Nie używaj odtwarzane wideo w roli tła"
 
 msgctxt "#31133"
 msgid "Custom Background"
-msgstr "Własne tło"
+msgstr "Niestandardowe tło"
 
 msgctxt "#31134"
 msgid "Edit Background for Media Type"
@@ -730,7 +730,7 @@ msgstr "Przewijanie do tyłu:"
 
 msgctxt "#31304"
 msgid "Forwarding:"
-msgstr "W przód:"
+msgstr "Do przodu:"
 
 msgctxt "#31305"
 msgid "Finish Time:"
@@ -750,7 +750,7 @@ msgstr "Typ wizualizacji"
 
 msgctxt "#31309"
 msgid "Visualization Presets"
-msgstr "Zestaw ustawień wizualizacji"
+msgstr "Zdefiniowane szablony wizualizacji"
 
 msgctxt "#31310"
 msgid "Visualization Settings"
@@ -886,11 +886,11 @@ msgstr "Pokaż przyciski szybkiej nawigacji"
 
 msgctxt "#31395"
 msgid "Custom QuickNav Buttons"
-msgstr "Własne przyciski szybkiej nawigacji"
+msgstr "Niestandardowe przyciski szybkiej nawigacji"
 
 msgctxt "#31396"
 msgid "Custom Button"
-msgstr "Przycisk niestandardowy"
+msgstr "Niestandardowy przycisk"
 
 msgctxt "#31398"
 msgid "Hide Favourites Button"

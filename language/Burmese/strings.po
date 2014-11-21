@@ -24,6 +24,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "အပုဒ်ရေနံပါတ်"
 
+msgctxt "#31011"
+msgid "On"
+msgstr "ဖွင့်"
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "ပိတ်"
@@ -56,9 +60,25 @@ msgctxt "#31027"
 msgid "Memory Used:"
 msgstr "အသုံးပြုထားသော Memory -"
 
+msgctxt "#31030"
+msgid "AM"
+msgstr "AM"
+
+msgctxt "#31031"
+msgid "PM"
+msgstr "PM"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "Slide"
+
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Icons"
+
+msgctxt "#31084"
+msgid "Posters"
+msgstr "ပိုစတာ"
 
 msgctxt "#31166"
 msgid "Local subtitle available"

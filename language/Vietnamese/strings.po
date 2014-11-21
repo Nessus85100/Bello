@@ -88,6 +88,14 @@ msgctxt "#31080"
 msgid "Slide"
 msgstr "Ảnh"
 
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Biểu tượng"
+
+msgctxt "#31084"
+msgid "Posters"
+msgstr "Poster"
+
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "Một ảnh"
@@ -175,3 +183,7 @@ msgstr "Đổi tên nhóm"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Xoá nhóm"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Trợ giúp"

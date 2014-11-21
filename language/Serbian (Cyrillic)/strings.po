@@ -60,6 +60,10 @@ msgctxt "#31031"
 msgid "PM"
 msgstr "поподне"
 
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Иконе"
+
 msgctxt "#31134"
 msgid "Edit Background for Media Type"
 msgstr "Уредите позадину тастера за почетни екран"
