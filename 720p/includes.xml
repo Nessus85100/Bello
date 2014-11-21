@@ -1314,7 +1314,7 @@
 	</variable>
 
 	<variable name="GlobalInfo">
-		<value condition="Substring(ListItem.Path,videodb://movies/sets/,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[342] $LOCALIZE[20141]</value>
+		<value condition="Substring(ListItem.Path,videodb://movies/sets/,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[20434]</value>
 		<value condition="Container.Content(Movies) + !IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</value>
     <value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)">$INFO[ListItem.MPAA,$LOCALIZE[20074]: ]</value>
     <value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</value>
@@ -1333,7 +1333,7 @@
 	</variable>
 
 	<variable name="SmallGlobalInfo">
-		<value condition="Substring(ListItem.Path,videodb://movies/sets/,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[342] $LOCALIZE[20141]</value>
+		<value condition="Substring(ListItem.Path,videodb://movies/sets/,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[20434]</value>
 		<value condition="Container.Content(Movies) + IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Year]$INFO[ListItem.Rating, • ,]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]</value>
 		<value condition="Container.Content(Movies) + !IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</value>
 		<value condition="Container.Content(TVShows) | Container.Content(Seasons) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Year,, • ,]$INFO[ListItem.Rating,, • ,]$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
