@@ -7,6 +7,7 @@
     <onfocus>SetFocus(13)</onfocus>
     <animation effect="fade" start="0" end="100" time="0" delay="50">Focus</animation>
   </control>
+
 	<control type="group">
 		<animation type="WindowOpen" condition="Window.IsVisible(script-RSS_Editor-setEditor.xml)" reversible="false">
 			<effect type="fade" start="0" end="100" time="0" delay="300" />
@@ -14,32 +15,49 @@
 		<control type="group">
 			<visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(numericinput)</visible>
 			<include>DialogAnimation</include>
+  	  <control type="image">
+  			<left>311</left>
+  			<top>246</top>
+  		  <width>658</width>
+  		  <height>57</height>
+  		  <colordiffuse>blue</colordiffuse>
+  		  <texture background="true" border="9">dialogs/other/header.png</texture>
+  	  </control>
+  	  <control type="image">
+  			<left>311</left>
+  			<top>300</top>
+  		  <width>658</width>
+  		  <height>188</height>
+  		  <texture background="true" border="39,19,39,19">dialogs/other/body.png</texture>
+  	  </control>
 			<control type="image">
 				<description>background image</description>
 				<include>FullscreenDimensions</include>
 				<texture background="true">dialogs/other/bg_rss.png</texture>
 			</control>
-			<control type="label" id="2">
-				<description>header label</description>
-				<posx>305</posx>
-				<posy>262</posy>
-				<width>670</width>
-				<height>50</height>
-				<font>FontSize_36</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
-				<shadowcolor>99000000</shadowcolor>
-				<scroll>true</scroll>
-				<scrollspeed>20</scrollspeed>
-			</control>
+  		 <control type="image">
+  			<left>313</left>
+  			<top>299</top>
+  			<width>654</width>
+  			<height>4</height>
+  			<aspectratio>stretch</aspectratio>
+  			<texture background="true">dialogs/other/header_line.png</texture>
+  		 </control>
+  		<control type="label" id="2">
+  			<description>header label</description>
+  			<left>325</left>
+  			<top>261</top>
+  			<width>560</width>
+  	    <include>DialogsHeaderLabel</include>
+        <label>Remove ID to Test, Remove ID to Test, Remove</label>
+  		</control>
 			<control type="label" id="3">
 				<description>List label</description>
 				<font>-</font>
 				<visible>false</visible>
 			</control>
 	
-			<control type="group" id="9000">
+			<control type="group" id="10010">
 			 <control type="list" id="10">
 				<description>Feeds List Control</description>
 				<posx>328</posx>
@@ -49,9 +67,8 @@
 				<onup>10</onup>
 				<ondown>10</ondown>
 				<onleft>10000</onleft>
-				<onright>9001</onright>
+				<onright>10020</onright>
 				<scrolltime>200</scrolltime>
-				<include>VisibleFadeEffect</include>
 				<itemlayout height="51" width="460">
 					<control type="label">
 						<posx>10</posx>
@@ -72,9 +89,8 @@
 						<posy>0</posy>
 						<width>460</width>
 						<height>47</height>
-						<texture>buttons/settings_fo.png</texture>
+						<texture>buttons/focus.png</texture>
 						<visible>Control.HasFocus(10)</visible>
-	          <include>FocusVisibleFadeEffect</include>
 				  </control>
 					<control type="label">
 						<posx>10</posx>
@@ -105,7 +121,7 @@
 				</focusedlayout>
 			 </control>
 		
-			 <control type="group" id="9001">
+			 <control type="group" id="10020">
 				<posx>792</posx>
 				<posy>317</posy>
 				<control type="button" id="13">
@@ -146,74 +162,37 @@
 				</control>
 			 </control>
 			</control>
-	
-		  <control type="group" id="10000">
-				<posx>330</posx>
-				<posy>460</posy>
-	      <!-- Buttons -->
-				<control type="grouplist" id="10001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>0</width>
-					<height>0</height>
-					<itemgap>0</itemgap>
-					<align>left</align>
-					<orientation>horizontal</orientation>
-					<onleft>10001</onleft>
-					<onright>10001</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<control type="button" id="18">
-						<description>Save</description>
-					  <label>190</label>
-					  <include>TopButton</include>
-					</control>
-					<control type="button" id="19">
-						<description>Cancel</description>
-					  <label>222</label>
-					  <include>TopButton</include>
-					</control>
-				</control>
-	      <!-- Buttons Labels -->
-				<control type="grouplist">
-					<posx>0</posx>
-					<posy>0</posy>
-					<height>70</height>
-					<width>552</width>
-					<itemgap>30</itemgap>
-					<align>left</align>
-					<orientation>horizontal</orientation>
-					<control type="label">
-						<description>Save Label</description>
-						<height>62</height>
-						<width min="10" max="552">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
-	          <label>$INFO[Control.GetLabel(18),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(18)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(18)" reversible="true">Conditional</animation>
-					</control>
-					<control type="label">
-						<description>Cancel Label</description>
-						<height>62</height>
-						<width min="10" max="552">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
-	          <label>$INFO[Control.GetLabel(19),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(19)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(19)" reversible="true">Conditional</animation>
-					</control>
-				</control>
-		  </control>
-	
+
+      <!-- Control Buttons -->
+  	  <control type="group"  id="10000">
+  			<left>974</left>
+  			<top>443</top>
+    		<control type="button" id="18">
+  				<description>Save</description>
+      		<width>150</width>
+  	      <include>DialogsButtonsText</include>
+      		<texturefocus border="49,0,49,0">dialogs/buttons/save_focus.png</texturefocus>
+      		<texturenofocus border="49,0,49,0">dialogs/buttons/save_nofocus.png</texturenofocus>
+    			<onleft>10010</onleft>
+    			<onright>10010</onright>
+    			<onup>19</onup>
+    			<ondown>19</ondown>
+  				<label>$LOCALIZE[190]</label>
+    		</control>
+    		<control type="button" id="19">
+  				<description>Cancel</description>
+    			<top>-50</top>
+      		<width>150</width>
+  	      <include>DialogsButtonsText</include>
+      		<texturefocus border="49,0,49,0">dialogs/buttons/cancel_focus.png</texturefocus>
+      		<texturenofocus border="49,0,49,0">dialogs/buttons/cancel_nofocus.png</texturenofocus>
+    			<onleft>10010</onleft>
+    			<onright>10010</onright>
+    			<onup>18</onup>
+    			<ondown>18</ondown>
+  				<label>$LOCALIZE[222]</label>
+    		</control>
+  	  </control>
 		</control>
 	</control>
 	</controls>

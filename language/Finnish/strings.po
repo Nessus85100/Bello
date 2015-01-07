@@ -148,6 +148,14 @@ msgctxt "#31166"
 msgid "Local subtitle available"
 msgstr "Paikallisia tekstityksiä saatavilla"
 
+msgctxt "#31200"
+msgid "My Movies"
+msgstr "Omat elokuvat"
+
+msgctxt "#31201"
+msgid "My TV Shows"
+msgstr "Omat TV-ohjelmat"
+
 msgctxt "#31218"
 msgid "Landscape"
 msgstr "Vaakakuva"
@@ -191,6 +199,18 @@ msgstr "Ennuste"
 msgctxt "#31237"
 msgid "View"
 msgstr "Näkymä"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Satunnaiset elokuvat"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Kaikki elokuvat"
+
+msgctxt "#31251"
+msgid "All TV Shows"
+msgstr "Kaikki TV-ohjelmat"
 
 msgctxt "#31254"
 msgid "Search on YouTube"

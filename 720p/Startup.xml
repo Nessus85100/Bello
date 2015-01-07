@@ -3,14 +3,13 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
+  <onload condition="System.HasAddon(script.extendedinfo)">RunScript(script.skin.info.service,info=movies)</onload>
+	<onload condition="IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
   <onload condition="[System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMoviesType),4)]">RunScript(script.extendedinfo,info=incinemas)</onload>
   <onload condition="[System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMoviesType),5)]">RunScript(script.extendedinfo,info=trendingmovies)</onload>
   <onload condition="[System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetTVShowsType),4)]">RunScript(script.extendedinfo,info=trendingshows)</onload>
   <onload condition="[System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMusicType),4)]">RunScript(script.extendedinfo,info=topartists)</onload>
-	<onload condition="IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
-  <onload condition="IsEmpty(Skin.String(AddonsName))">Skin.SetString(AddonsName,addonbrowser)</onload>
-  <onload condition="IsEmpty(Skin.String(MusicName))">Skin.SetString(MusicName,library)</onload>
-  <onload condition="IsEmpty(Skin.String(MusicPath))">Skin.SetString(MusicPath,root)</onload>
+
 	<onload condition="IsEmpty(Skin.String(QuickNavWidgetMoviesType))">Skin.SetString(QuickNavWidgetMoviesType,1)</onload>
 	<onload condition="IsEmpty(Skin.String(QuickNavWidgetMoviesName))">Skin.SetString(QuickNavWidgetMoviesName,$LOCALIZE[31241])</onload>
 	<onload condition="IsEmpty(Skin.String(QuickNavWidgetTVShowsType))">Skin.SetString(QuickNavWidgetTVShowsType,1)</onload>

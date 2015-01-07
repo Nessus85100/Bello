@@ -4,6 +4,8 @@
 	<controls>
 
 	 <control type="group">
+	  <left>45</left>
+		<top>640</top>
 	  <include>NowPlaying</include>
 	  <include>KaiToastSlideAnimations</include>
     <visible>!Window.IsActive(ShutdownMenu) + !Window.IsVisible(startup)</visible>
@@ -16,24 +18,24 @@
       <effect type="fade" start="100" end="0"/>
 	  </animation>
 		<control type="grouplist">
-		  <left>55</left>
-			<top>645</top>
+		  <left>0</left>
+			<top>0</top>
 			<height>60</height>
-			<width>1190</width>
+			<width>1195</width>
 			<align>right</align>
 			<aligny>center</aligny>
-			<itemgap>10</itemgap>
+			<itemgap>5</itemgap>
 			<orientation>horizontal</orientation>
 			<control type="group">
 				<width>840</width>
 				<control type="label" id="30">
 					<top>0</top>
 				  <description>Header Label</description>
-					<height>25</height>
+					<height>33</height>
 					<width>840</width>
 					<font>NotificationsFont</font>
 					<textcolor>white</textcolor>
-					<shadowcolor>99000000</shadowcolor>
+					<shadowcolor>77000000</shadowcolor>
 			    <align>right</align>
 			    <aligny>center</aligny>
 					<scroll>false</scroll>
@@ -41,22 +43,22 @@
 				<control type="label" id="31">
 				  <description>Title Label</description>
 					<top>20</top>
-					<height>25</height>
+					<height>35</height>
 					<width>840</width>
 					<font>NotificationsFont</font>
 					<textcolor>99white</textcolor>
-					<shadowcolor>99000000</shadowcolor>
+					<shadowcolor>77000000</shadowcolor>
 			    <align>right</align>
 			    <aligny>center</aligny>
 					<scroll>false</scroll>
 				</control>
 			</control>
 			<control type="label" id="1">
-				<height>43</height>
-				<width min="10" max="150">auto</width>
-				<font>FontSize_46</font>
+				<height>53</height>
+				<width min="10" max="200">auto</width>
+				<font>FontSize_50</font>
 				<textcolor>white</textcolor>
-				<shadowcolor>99000000</shadowcolor>
+				<shadowcolor>77000000</shadowcolor>
 		    <align>left</align>
 		    <aligny>center</aligny>
 				<scroll>false</scroll>

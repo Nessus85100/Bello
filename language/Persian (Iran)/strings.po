@@ -20,6 +20,10 @@ msgctxt "#31000"
 msgid "Live TV"
 msgstr "تلویزیون زنده"
 
+msgctxt "#31005"
+msgid "Track Number"
+msgstr "شماره تراک"
+
 msgctxt "#31011"
 msgid "On"
 msgstr "روشن"
@@ -28,6 +32,14 @@ msgctxt "#31012"
 msgid "Off"
 msgstr "خاموش"
 
+msgctxt "#31017"
+msgid "Karaoke Song Selector"
+msgstr "انتخاب آهنگ کاراوکه"
+
+msgctxt "#31020"
+msgid "Found"
+msgstr "پیدا شده"
+
 msgctxt "#31021"
 msgid "Music Library"
 msgstr "کتابخانه ی موسیقی"
@@ -35,6 +47,10 @@ msgstr "کتابخانه ی موسیقی"
 msgctxt "#31022"
 msgid "Music Files"
 msgstr "فایل های موسیقی"
+
+msgctxt "#31023"
+msgid "Info"
+msgstr "اطلاعات"
 
 msgctxt "#31024"
 msgid "Page"
@@ -56,6 +72,10 @@ msgctxt "#31031"
 msgid "PM"
 msgstr "ب ظ"
 
+msgctxt "#31033"
+msgid "Channel Group"
+msgstr "گروه کانال ها"
+
 msgctxt "#31080"
 msgid "Slide"
 msgstr "اسلاید"
@@ -76,13 +96,45 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "چند تصویره"
 
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "زیر نویس محلی موجود"
+
 msgctxt "#31219"
 msgid "Logo"
 msgstr "لوگو"
 
+msgctxt "#31223"
+msgid "36 Hour Forecast"
+msgstr "پیش بینی 36 ساعته"
+
+msgctxt "#31224"
+msgid "Hourly Forecast"
+msgstr "پیش بینی یک ساعته"
+
+msgctxt "#31225"
+msgid "Weekend Forecast"
+msgstr "پیش بینی هفتگی"
+
+msgctxt "#31229"
+msgid "Last Updated"
+msgstr "آخرین بروزرسانی"
+
 msgctxt "#31230"
 msgid "Data Provider"
 msgstr "ارائه دهنده خدمات داده"
+
+msgctxt "#31236"
+msgid "Forecast"
+msgstr "پیش بینی"
+
+msgctxt "#31285"
+msgid "Playlist Options"
+msgstr "گزینه های لیست پخش"
+
+msgctxt "#31301"
+msgid "Playing"
+msgstr "در حال پخش"
 
 msgctxt "#31302"
 msgid "Paused"
@@ -91,6 +143,10 @@ msgstr "مکث شده"
 msgctxt "#31316"
 msgid "Now Playing"
 msgstr "در حال پخش"
+
+msgctxt "#31351"
+msgid "Add Group"
+msgstr "افزودن گروه جدید"
 
 msgctxt "#31352"
 msgid "Rename Group"

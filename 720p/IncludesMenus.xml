@@ -8,9 +8,9 @@
   <!-- Wrap List Vars -->
 	<include name="SubMenuWraplistVarsDown">
 	  <include>HomeSlideAnimations</include>
-		<left>283</left>
-		<top>370</top>
-		<width>700</width>
+		<left>350</left>
+		<top>380</top>
+		<width>600</width>
 		<height>155</height>
 		<onup>23</onup>
 		<ondown>23</ondown>
@@ -30,26 +30,26 @@
 	</include>
   <!-- Item Layout Vars -->
 	<include name="SubMenuItemLayoutVarsDown">
-		<left>350</left>
+		<left>0</left>
 		<top>0</top>
-		<width>700</width>
+		<width>580</width>
 		<height>50</height>
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>FontSize_46</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>99000000</shadowcolor>
-		<info>ListItem.Label</info>
+		<label>$INFO[ListItem.Label]</label>
 		<animation type="Conditional" condition="true" reversible="false">
-			<effect type="fade" end="40" time="0" />
-			<effect type="zoom" end="75" time="0" />
+			<effect type="fade" end="40" time="0"/>
+			<effect type="zoom" end="75" time="0" center="auto"/>
 		</animation>
 	</include>
   <!-- Focused Layout Vars -->
 	<include name="SubMenuFocusedLayoutVarsDown">
-		<left>350</left>
+		<left>0</left>
 		<top>0</top>
-		<width>700</width>
+		<width>580</width>
 		<height>50</height>
 		<align>center</align>
 		<aligny>center</aligny>
@@ -59,11 +59,11 @@
 		<label>$INFO[ListItem.label]</label>
 		<animation type="Focus" condition="Container(23).OnNext | Container(23).OnPrevious" reversible="false">
 			<effect type="fade" start="40" end="100" time="200" tween="sine" easing="in" />
-			<effect type="zoom" start="75" end="100" time="200" tween="sine" easing="in" />
+			<effect type="zoom" start="75" end="100" time="200" center="auto" tween="sine" easing="in" />
 		</animation>
 		<animation type="Unfocus" condition="Container(23).OnNext | Container(23).OnPrevious" reversible="false">
 			<effect type="fade" start="100" end="40" time="200" tween="sine" easing="out" />
-			<effect type="zoom" start="100" end="75" time="200" tween="sine" easing="out" />
+			<effect type="zoom" start="100" end="75" time="200" center="auto" tween="sine" easing="out" />
 		</animation>
 	</include>
 
@@ -71,7 +71,7 @@
 	<include name="HomeMenuSubLabels">
 		<control type="group">
 			<description>SubLabel DVD</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(virtualkeyboard) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(14) + Control.HasFocus(20)</visible>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(virtualkeyboard) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(14) + Control.HasFocus(20)</visible>
 			<animation type="WindowOpen">
         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
         <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />
@@ -102,417 +102,30 @@
 			</control>
 		</control>				
 	</include>
-	
 
-  <!-- Home SubMenu Movies -->
-	<include name="HomeSubMenuMovies">
+
+  <!-- Home SubMenus -->
+	<include name="HomeSubMenus">
 		<control type="wraplist" id="23">
 			<description>SubMenu Container Movies</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(2)</visible>
+			<visible>![Window.IsActive(1110) | Window.IsActive(1113) | Window.IsActive(1114) | Window.IsActive(1115) | Window.IsActive(ShutdownMenu) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Window.IsActive(script-skinshortcuts.xml) | Window.IsActive(script-globalsearch-main.xml) | Window.IsActive(script-Actors-DialogInfo.xml) | Window.IsActive(script-Actors-DialogVideoInfo.xml) | Container(20).OnNext | Container(20).OnPrevious]</visible>
 			<include>SubMenuWraplistVarsDown</include>
-			<itemlayout height="46">
+			<itemlayout width="580" height="46">
 				<control type="label">
 					<include>SubMenuItemLayoutVarsDown</include>
 				</control>
 			</itemlayout>
-			<focusedlayout height="55">
+			<focusedlayout width="580" height="55">
 				<control type="label">
 					<include>SubMenuFocusedLayoutVarsDown</include>
 				</control>
 			</focusedlayout>
 			<content>
-				<item id="0">
-					<label>$LOCALIZE[31200]</label>
-					<onclick>SetFocus(81)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="1">
-					<label>$LOCALIZE[31018]</label>
-					<onclick>ActivateWindow(10025,plugin://plugin.video.the.trailers/,return)</onclick>
-					<visible>System.HasAddon(plugin.video.the.trailers)</visible>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="2">
-					<label>$LOCALIZE[135]</label>
-					<onclick>ActivateWindow(videos,moviegenres,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="3">			
-					<label>$LOCALIZE[652]</label>
-					<onclick>ActivateWindow(videos,movieyears,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="4">
-					<label>$LOCALIZE[344]</label>
-					<onclick>ActivateWindow(videos,movieactors,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="5">
-					<label>$LOCALIZE[20348]</label>
-					<onclick>ActivateWindow(videos,moviedirectors,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="6">
-					<label>$LOCALIZE[20388]</label>
-					<onclick>ActivateWindow(videos,moviestudios,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="7">
-					<label>$LOCALIZE[136]</label>
-					<onclick>ActivateWindow(videos,playlists,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="8">
-					<label>$LOCALIZE[20434]</label>
-					<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
-					<visible>Library.HasContent(MovieSets)</visible>				
-				</item>
-				<item id="9">
-					<label>$LOCALIZE[14022]</label>
-					<onclick>ActivateWindow(videos,root)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="10">
-					<label>$LOCALIZE[744]</label>
-					<onclick>ActivateWindow(videos,files,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
-				<item id="11">
-					<label>$LOCALIZE[1037]</label>
-					<onclick>ActivateWindow(videos,addons,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>
+  			<include>skinshortcuts-submenu</include>
 			</content>
 		</control>				
 	</include>
 
-
-  <!-- Home SubMenu TVShows -->
-	<include name="HomeSubMenuTVShows">
-		<control type="wraplist" id="23">
-			<description>SubMenu Container TVShows</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(1)</visible>
-			<include>SubMenuWraplistVarsDown</include>
-			<itemlayout height="46">
-				<control type="label">
-					<include>SubMenuItemLayoutVarsDown</include>
-				</control>
-			</itemlayout>
-			<focusedlayout height="55">
-				<control type="label">
-					<include>SubMenuFocusedLayoutVarsDown</include>
-				</control>
-			</focusedlayout>
-			<content>
-				<item id="0">
-					<label>$LOCALIZE[31201]</label>
-					<onclick>SetFocus(81)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
-				</item>
-				<item id="1">
-					<label>$LOCALIZE[31001]</label>
-					<onclick>XBMC.RunScript(script.tv.show.next.aired)</onclick>
-				  <visible>System.HasAddon(script.tv.show.next.aired)</visible>
-					<visible>Library.HasContent(TVShows)</visible>
-				</item>
-				<item id="2">			
-					<label>$LOCALIZE[20388]</label>
-					<onclick>ActivateWindow(videos,tvshowstudios,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
-				</item>
-				<item id="3">				
-					<label>$LOCALIZE[135]</label>
-					<onclick>ActivateWindow(videos,tvshowgenres,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
-				</item>	
-				<item id="4">
-					<label>$LOCALIZE[344]</label>
-					<onclick>ActivateWindow(videos,tvshowactors,return)</onclick>		
-					<visible>Library.HasContent(TVShows)</visible>		
-				</item>
-				<item id="5">
-					<label>$LOCALIZE[652]</label>
-					<onclick>ActivateWindow(videos,tvshowyears,return)</onclick>		
-					<visible>Library.HasContent(TVShows)</visible>		
-				</item>
-				<item id="6">
-					<label>$LOCALIZE[136]</label>
-					<onclick>ActivateWindow(videos,playlists,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
-				</item>
-				<item id="7">
-					<label>$LOCALIZE[14022]</label>
-		<onclick>ActivateWindow(videos,root)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
-				</item>
-				<item id="8">
-					<label>$LOCALIZE[744]</label>
-					<onclick>ActivateWindow(videos,files,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
-				</item>
-				<item id="9">
-					<label>$LOCALIZE[1037]</label>
-					<onclick>ActivateWindow(videos,addons,return)</onclick>
-					<visible>Library.HasContent(TVShows)</visible>
-				</item>	
-			</content>
-		</control>
-	</include>
-
-
-  <!-- Home SubMenu Music -->
-	<include name="HomeSubMenuMusic">
-		<control type="wraplist" id="23">
-			<description>SubMenu Container Music</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(3)</visible>
-			<include>SubMenuWraplistVarsDown</include>
-			<itemlayout height="46">
-				<control type="label">
-					<include>SubMenuItemLayoutVarsDown</include>
-				</control>
-			</itemlayout>
-			<focusedlayout height="55">
-				<control type="label">
-					<include>SubMenuFocusedLayoutVarsDown</include>
-				</control>
-			</focusedlayout>
-			<content>
-				<item id="0">
-					<label>$LOCALIZE[31202]</label>
-					<onclick>SetFocus(81)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="1">
-					<label>$LOCALIZE[132]</label>
-					<onclick>ActivateWindow(musiclibrary,albums,return)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="2">
-					<label>$LOCALIZE[133]</label>
-					<onclick>ActivateWindow(musiclibrary,artists,return)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="3">
-					<label>$LOCALIZE[134]</label>
-					<onclick>ActivateWindow(musiclibrary,songs,return)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="4">
-					<label>$LOCALIZE[135]</label>
-					<onclick>ActivateWindow(musiclibrary,genres,return)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="5">
-					<label>$LOCALIZE[652]</label>
-					<onclick>ActivateWindow(musiclibrary,years,return)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="6">
-					<label>$LOCALIZE[271]</label>
-					<onclick>ActivateWindow(musiclibrary,top100,return)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="7">
-					<label>$LOCALIZE[521]</label>
-					<onclick>ActivateWindow(musiclibrary,compilations,return)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="8">
-					<label>$LOCALIZE[136]</label>
-					<onclick>ActivateWindow(musiclibrary,playlists,return)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="9">
-					<label>$LOCALIZE[14022]</label>
-					<onclick>ActivateWindow(musiclibrary,root)</onclick>
-					<visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="10">
-					<label>$LOCALIZE[744]</label>
-					<onclick>ActivateWindow(musicfiles)</onclick>
-				</item>
-				<item id="11">
-					<label>$LOCALIZE[1038]</label>
-					<onclick>ActivateWindow(musiclibrary,addons,return)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
-				</item>
-				<item id="12">
-					<label>$LOCALIZE[1038]</label>
-					<onclick>ActivateWindow(musicfiles,addons,return)</onclick>
-			    <visible>!Library.HasContent(Music)</visible>
-				</item>
-			</content>
-		</control>
-	</include>
-
-
-  <!-- Home SubMenu Settings -->
-	<include name="HomeSubMenuSettings">
-		<control type="wraplist" id="23">
-			<description>SubMenu Container Settings</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(9)</visible>
-			<include>SubMenuWraplistVarsDown</include>
-			<itemlayout height="46">
-				<control type="label">
-					<include>SubMenuItemLayoutVarsDown</include>
-				</control>
-			</itemlayout>
-			<focusedlayout height="55">
-				<control type="label">
-					<include>SubMenuFocusedLayoutVarsDown</include>
-				</control>
-			</focusedlayout>
-			<content>
-				<item id="0">
-					<label>$LOCALIZE[20077]</label>
-					<onclick>ActivateWindow(SkinSettings)</onclick>
-				</item>
-				<item id="1">
-					<label>$LOCALIZE[480]</label>
-					<onclick>ActivateWindow(AppearanceSettings)</onclick>
-				</item>
-				<item id="2">
-					<label>$LOCALIZE[24001]</label>
-					<onclick>ActivateWindow(40)</onclick>
-				</item>
-				<item id="3">
-					<label>$LOCALIZE[705]</label>
-					<onclick>ActivateWindow(NetworkSettings)</onclick>
-				</item>
-				<item id="4">
-					<label>$LOCALIZE[13200]</label>
-					<onclick>ActivateWindow(Profiles)</onclick>
-				</item>
-				<item id="5">
-					<label>$LOCALIZE[8]</label>
-					<onclick>ActivateWindow(WeatherSettings)</onclick>
-				</item>
-				<item id="6">
-					<label>$LOCALIZE[3]</label>
-					<onclick>ActivateWindow(VideosSettings)</onclick>
-				</item>
-				<item id="7">
-					<label>$LOCALIZE[31000]</label>
-					<onclick>ActivateWindow(PVRSettings)</onclick>
-				</item>
-				<item id="8">
-					<label>$LOCALIZE[292]</label>
-					<onclick>ActivateWindow(MusicSettings)</onclick>
-				</item>
-				<item id="9">
-					<label>$LOCALIZE[1]</label>
-					<onclick>ActivateWindow(PicturesSettings)</onclick>
-				</item>
-				<item id="10">
-					<label>$LOCALIZE[13000]</label>
-					<onclick>ActivateWindow(SystemSettings)</onclick>
-				</item>
-				<item id="11">
-					<label>$LOCALIZE[31016]</label>
-					<onclick>ActivateWindow(FileManager,return)</onclick>
-				</item>
-				<item id="12">
-					<label>$LOCALIZE[130]</label>
-					<onclick>ActivateWindow(SystemInfo)</onclick>
-				</item>
-			</content>
-		</control>
-	</include>
-
-
-  <!-- Home SubMenu Addons -->
-	<include name="HomeSubMenuAddons">
-		<control type="wraplist" id="23">
-			<description>SubMenu Container Addons</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(7)</visible>
-			<include>SubMenuWraplistVarsDown</include>
-			<itemlayout height="46">
-				<control type="label">
-					<include>SubMenuItemLayoutVarsDown</include>
-				</control>
-			</itemlayout>
-			<focusedlayout height="55">
-				<control type="label">
-					<include>SubMenuFocusedLayoutVarsDown</include>
-				</control>
-			</focusedlayout>
-			<content>
-				<item id="0">
-					<label>$LOCALIZE[3]</label>
-          <onclick>ActivateWindow(videos,addons,return)</onclick>
-				</item>
-				<item id="1">
-					<label>$LOCALIZE[2]</label>
-          <onclick>ActivateWindow(music,addons,return)</onclick>
-				</item>
-				<item id="2">
-					<label>$LOCALIZE[1]</label>
-          <onclick>ActivateWindow(pictures,addons,return)</onclick>
-				</item>
-				<item id="3">
-					<label>$LOCALIZE[0]</label>
-          <onclick>ActivateWindow(Programs,addons,return)</onclick>
-				</item>
-				<item id="4">
-					<label>$LOCALIZE[24033]</label>
-					<onclick>ActivateWindow(AddonBrowser,addons://all/,return)</onclick>
-				</item>
-				<item id="5">
-					<label>$LOCALIZE[24043]</label>
-					<onclick>ActivateWindow(AddonBrowser,addons://outdated/,return)</onclick>
-				</item>
-			</content>
-		</control>
-	</include>
-
-
-  <!-- Home SubMenu LiveTV -->
-	<include name="HomeSubMenuLiveTV">
-		<control type="wraplist" id="23">
-			<description>SubMenu Container LiveTV</description>
-			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(11)</visible>
-			<include>SubMenuWraplistVarsDown</include>
-			<itemlayout height="46">
-				<control type="label">
-					<include>SubMenuItemLayoutVarsDown</include>
-				</control>
-			</itemlayout>
-			<focusedlayout height="55">
-				<control type="label">
-					<include>SubMenuFocusedLayoutVarsDown</include>
-				</control>
-			</focusedlayout>
-			<content>
-				<item id="0">
-					<label>$LOCALIZE[19023]</label>
-          <onclick>ActivateWindowAndFocus(PVR, 32,0, 11,0)</onclick>
-				</item>
-				<item id="1">
-					<label>$LOCALIZE[19163]</label>
-          <onclick>ActivateWindowAndFocus(PVR, 34,0, 13,0)</onclick>
-				</item>
-				<item id="2">
-					<label>$LOCALIZE[19040]</label>
-          <onclick>ActivateWindowAndFocus(PVR, 35,0, 14,0)</onclick>
-				</item>
-				<item id="3">
-					<label>$LOCALIZE[19069]</label>
-          <onclick>ActivateWindowAndFocus(PVR, 31,0, 10,0)</onclick>
-				</item>
-				<item id="4">
-					<label>$LOCALIZE[137]</label>
-          <onclick>ActivateWindowAndFocus(PVR, 36,0, 17,0)</onclick>
-				</item>
-				<item id="5">
-					<label>$LOCALIZE[19024]</label>
-          <onclick>ActivateWindowAndFocus(PVR, 33,0, 12,0)</onclick>
-				</item>
-			</content>
-		</control>
-	</include>
-
-
-	
 
 	<!-- ================================== -->
 	<!-- 	== Context Menu Cont	ent Info == -->

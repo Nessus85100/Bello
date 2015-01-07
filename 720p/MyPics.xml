@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
-	<views>50,52,56</views>
+	<views>50,52,56,560</views>
 	<controls>
 		<include>BackgroundItems</include>
 		<include>PicturesViews</include>
@@ -55,6 +55,15 @@
 					<description>View as</description>
 				  <include>TopLeftMenusButton</include>
 				</control>
+  			<control type="togglebutton" id="294">
+  			  <description>Change Thumbs Size (Thumbnails View)</description>
+  			  <include>TopLeftMenusButton</include>
+          <label>$LOCALIZE[31098]</label>
+          <altlabel>$LOCALIZE[31099]</altlabel>
+  				<onclick>Skin.ToggleSetting(ShowSmallPicturesThumbs)</onclick>
+  				<selected>Skin.HasSetting(ShowSmallPicturesThumbs)</selected>
+  			  <visible>Control.IsVisible(560)</visible>
+  			</control>
 				<control type="button" id="3">
 					<description>Sort by</description>
 				  <include>TopLeftMenusButton</include>

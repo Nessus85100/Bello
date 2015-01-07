@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-	<fontset id="Default" idloc="15109" unicode="true">
+	<fontset id="Default" idloc="15109">
 	 	<font>
 			<name>ClockFont</name>
 			<filename>OpenSans-Regular.ttf</filename>
@@ -11,6 +11,18 @@
 			<name>NotificationsFont</name>
 			<filename>OpenSans-Regular.ttf</filename>
 			<size>20</size>
+		</font>
+	 	<font>
+			<name>TextboxFont_18</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>18</size>
+      <linespacing>0.85</linespacing>
+		</font>
+	 	<font>
+			<name>TextboxFont_20</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>20</size>
+      <linespacing>0.85</linespacing>
 		</font>
 	 	<font>
 			<name>FontSize_12</name>

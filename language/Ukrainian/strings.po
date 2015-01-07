@@ -120,6 +120,10 @@ msgctxt "#31166"
 msgid "Local subtitle available"
 msgstr "Доступні локальні субтитри"
 
+msgctxt "#31219"
+msgid "Logo"
+msgstr "Логотип"
+
 msgctxt "#31223"
 msgid "36 Hour Forecast"
 msgstr "Прогноз на 36 г."

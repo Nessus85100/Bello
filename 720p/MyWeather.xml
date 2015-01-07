@@ -4,18 +4,17 @@
   <allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
 	<onload condition="SubString(Window(Weather).Property(Current.ConditionIcon),na) | [IsEmpty(Window(Weather).Property(Current.Condition)) | IsEmpty(Window(Weather).Property(Location))] + IsEmpty(Control.GetLabel(3))">ActivateWindow(1110)</onload>
-	<onload condition="IsEmpty(Skin.String(WeatherUnderground))">Skin.SetString(WeatherUnderground,1)</onload>
+	<onload condition="IsEmpty(Skin.String(WeatherExtended))">Skin.SetString(WeatherExtended,1)</onload>
 	<controls>
 		<include>BackgroundContent</include>
-		<include>HomeCategoriesFanart</include>
 		<include>BackgroundVignette</include>
 	  <include>CommonNowPlaying</include>
     <include condition="Skin.HasSetting(EnableWeatherAlertsNotifications)">WeatherAlertsNotifications</include>
 
 		<control type="group">
 		 <include>WeatherTopInfo</include>
-		 <include condition="!StringCompare(Weather.Plugin,weather.wunderground)">WeatherDefault</include>
-		 <include condition="StringCompare(Weather.Plugin,weather.wunderground)">WeatherUnderground</include>
+		 <include condition="!StringCompare(Weather.Plugin,weather.openweathermap.extended)">WeatherDefault</include>
+		 <include condition="StringCompare(Weather.Plugin,weather.openweathermap.extended)">WeatherExtended</include>
 		</control>
 
 		<include>CommonDialogsFadeOutBG</include>
@@ -78,12 +77,12 @@
 					<description>Change View</description>
 	        <label>$LOCALIZE[31237]: $VAR[WeatherViewsLabels]</label>
 				  <include>TopLeftMenusButton</include>
-			    <onclick condition="stringcompare(Skin.String(WeatherUnderground),4)">Skin.SetString(WeatherUnderground,1)</onclick>
-			    <onclick condition="stringcompare(Skin.String(WeatherUnderground),3)">Skin.SetString(WeatherUnderground,4)</onclick>
-			    <onclick condition="stringcompare(Skin.String(WeatherUnderground),2)">Skin.SetString(WeatherUnderground,3)</onclick>
-			    <onclick condition="stringcompare(Skin.String(WeatherUnderground),1)">Skin.SetString(WeatherUnderground,2)</onclick>
-			    <onclick condition="stringcompare(Skin.String(WeatherUnderground),4)">Skin.SetString(WeatherUnderground,1)</onclick>
-					<visible>StringCompare(Weather.Plugin,weather.wunderground) + !IsEmpty(Control.GetLabel(3))</visible>
+			    <onclick condition="stringcompare(Skin.String(WeatherExtended),4)">Skin.SetString(WeatherExtended,1)</onclick>
+			    <onclick condition="stringcompare(Skin.String(WeatherExtended),3)">Skin.SetString(WeatherExtended,4)</onclick>
+			    <onclick condition="stringcompare(Skin.String(WeatherExtended),2)">Skin.SetString(WeatherExtended,3)</onclick>
+			    <onclick condition="stringcompare(Skin.String(WeatherExtended),1)">Skin.SetString(WeatherExtended,2)</onclick>
+			    <onclick condition="stringcompare(Skin.String(WeatherExtended),4)">Skin.SetString(WeatherExtended,1)</onclick>
+					<visible>StringCompare(Weather.Plugin,weather.openweathermap.extended) + !IsEmpty(Control.GetLabel(3))</visible>
 				</control>
 				<control type="togglebutton" id="262">
 					<description>Fanart Toggle</description>
@@ -104,7 +103,7 @@
 					<onclick>Skin.ToggleSetting(EnableWeatherAlertsNotifications)</onclick>
 			    <onclick condition="Skin.HasSetting(EnableWeatherAlertsNotifications)">ReplaceWindow(Weather)</onclick>
 					<selected>Skin.HasSetting(EnableWeatherAlertsNotifications)</selected>
-					<visible>StringCompare(Weather.Plugin,weather.wunderground)</visible>
+					<visible>StringCompare(Weather.Plugin,weather.openweathermap.extended)</visible>
 				</control>
 				<control type="button" id="2">
 					<description>Refresh</description>
@@ -159,22 +158,22 @@
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
 			    <label>$LOCALIZE[31235]</label>
-		      <visible>![Skin.String(WeatherUnderground,2) | Skin.String(WeatherUnderground,3) | Skin.String(WeatherUnderground,4)]</visible>
+		      <visible>![Skin.String(WeatherExtended,2) | Skin.String(WeatherExtended,3) | Skin.String(WeatherExtended,4)]</visible>
 				</control>
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
 					<label>$LOCALIZE[31223]</label>
-		      <visible>Skin.String(WeatherUnderground,2)</visible>
+		      <visible>Skin.String(WeatherExtended,2)</visible>
 				</control>
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
 					<label>$LOCALIZE[31224]</label>
-		      <visible>Skin.String(WeatherUnderground,3)</visible>
+		      <visible>Skin.String(WeatherExtended,3)</visible>
 				</control>
 				<control type="label">
 				  <include>TopZoomedSmallLabel</include>
 					<label>$LOCALIZE[31226]</label>
-		      <visible>Skin.String(WeatherUnderground,4)</visible>
+		      <visible>Skin.String(WeatherExtended,4)</visible>
 				</control>
 			</control>
 			<control type="grouplist">

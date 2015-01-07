@@ -6,33 +6,40 @@
 		<control type="group">
 			<include>DialogAnimation</include>
 			<control type="image">
+				<posx>483</posx>
+				<posy>155</posy>
+				<width>314</width>
+				<height>414</height>
+				<texture background="true" border="39">dialogs/other/default.png</texture>
+			</control>
+			<control type="image">
 				<description>background image</description>
 				<include>FullscreenDimensions</include>
-				<texture>dialogs/keyboard/numpad-bg.png</texture>
+				<texture>dialogs/keyboard/bg_numpad.png</texture>
 			</control>
 
-		<control type="label" id="1">
-			<description>Heading</description>
-			<posx>510</posx>
-			<posy>202</posy>
-			<width>260</width>
-			<font>FontSize_32</font>
-			<textcolor>white</textcolor>
-			<align>center</align>
-			<scroll>true</scroll>
-			<scrollspeed>20</scrollspeed>
-		</control>
-		<control type="label" id="4">
-			<description>Edit Text</description>
-			<posx>526</posx>
-			<posy>248</posy>
-			<width>228</width>
-			<font>FontSize_34</font>
-			<textcolor>77white</textcolor>
-			<align>center</align>
-			<scroll>true</scroll>
-			<scrollspeed>20</scrollspeed>
-		</control>
+  		<control type="label" id="1">
+  			<description>Heading</description>
+  			<posx>510</posx>
+  			<posy>202</posy>
+  			<width>260</width>
+  			<font>FontSize_32</font>
+  			<textcolor>white</textcolor>
+  			<align>center</align>
+  			<scroll>true</scroll>
+  			<scrollspeed>20</scrollspeed>
+  		</control>
+  		<control type="label" id="4">
+  			<description>Edit Text</description>
+  			<posx>526</posx>
+  			<posy>248</posy>
+  			<width>228</width>
+  			<font>FontSize_34</font>
+  			<textcolor>77white</textcolor>
+  			<align>center</align>
+  			<scroll>true</scroll>
+  			<scrollspeed>20</scrollspeed>
+  		</control>
 										
 			<control type="group">
 				<posx>513</posx>

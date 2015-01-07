@@ -4,8 +4,7 @@
   <allowoverlay>yes</allowoverlay>
 	<views>50,51,52,53,54,58,580,55,56,560,561,57</views>
   <backgroundcolor>0</backgroundcolor>
-  <onload condition="SubString(Container.FolderPath,plugin://plugin.video.youtube)">Container.SetViewMode(561)</onload>
-	<onload condition="System.HasAddon(script.videolanguage) + Container.Content(movies)">RunScript(script.videolanguage,backend=True)</onload>
+  <onload condition="[SubString(Container.FolderPath,plugin://plugin.video.youtube) + Container.HasFiles]">Container.SetViewMode(561)</onload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows) + Skin.HasSetting(NextAiredEnabled)">RunScript(script.tv.show.next.aired,backend=True)</onload>
   <onload condition="System.HasAddon(script.tvtunes) + [Library.HasContent(Movies) | Library.HasContent(TVShows)] + Skin.HasSetting(TVTunesEnabled) + !Player.HasMedia">RunScript(script.tvtunes,backend=True)</onload>
 	<onload condition="IsEmpty(Skin.String(ListViewWideThumbTVShows))">Skin.SetString(ListViewWideThumbTVShows,1)</onload>
@@ -87,7 +86,7 @@
 				  <visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets)]</visible>
 				</control>
 				<control type="button" id="292">
-					<description>ListView WideThumb (TVShows)</description>
+					<description>GalleryView WideThumb (TVShows)</description>
 	        <label>$LOCALIZE[31217]: $VAR[FanartThumbsOptionsLabels]</label>
 			    <onclick condition="Stringcompare(Skin.String(GalleryViewWideThumbTVShows),3)">Skin.SetString(GalleryViewWideThumbTVShows,1)</onclick>
 			    <onclick condition="Stringcompare(Skin.String(GalleryViewWideThumbTVShows),2)">Skin.SetString(GalleryViewWideThumbTVShows,3)</onclick>
@@ -97,7 +96,7 @@
 				  <visible>Control.IsVisible(52) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 				</control>
 				<control type="button" id="293">
-					<description>ListView WideThumb (Movies)</description>
+					<description>GalleryView WideThumb (Movies)</description>
 	        <label>$LOCALIZE[31217]: $VAR[FanartThumbsOptionsLabels]</label>
 			    <onclick condition="Stringcompare(Skin.String(GalleryViewWideThumbMovies),3)">Skin.SetString(GalleryViewWideThumbMovies,1)</onclick>
 			    <onclick condition="Stringcompare(Skin.String(GalleryViewWideThumbMovies),2)">Skin.SetString(GalleryViewWideThumbMovies,3)</onclick>
@@ -123,8 +122,17 @@
 					<onclick>Skin.ToggleSetting(ThumbnailShowInfo)</onclick>
 			    <onclick>Reloadskin</onclick>
 					<usealttexture>Skin.HasSetting(ThumbnailShowInfo)</usealttexture>
-				  <visible>Control.IsVisible(560) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Window.IsVisible(VideoPlaylist)]</visible>
+				  <visible>Control.IsVisible(561) + [Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Window.IsVisible(VideoPlaylist)]</visible>
 				</control>
+  			<control type="togglebutton" id="296">
+  			  <description>Change Thumbs Size (Thumbnails View)</description>
+  			  <include>TopLeftMenusButton</include>
+          <label>$LOCALIZE[31098]</label>
+          <altlabel>$LOCALIZE[31099]</altlabel>
+  				<onclick>Skin.ToggleSetting(ShowSmallVideoThumbs)</onclick>
+  				<selected>Skin.HasSetting(ShowSmallVideoThumbs)</selected>
+  			  <visible>Control.IsVisible(560) + stringcompare(Container.FolderPath,addons://sources/video/)</visible>
+  			</control>
   			<control type="button" id="3">
   				<description>Sort by</description>
   			  <include>TopLeftMenusButton</include>

@@ -132,6 +132,10 @@ msgctxt "#31237"
 msgid "View"
 msgstr "Skats"
 
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Visas filmas"
+
 msgctxt "#31285"
 msgid "Playlist Options"
 msgstr "Spēļsaraksta opcijas"

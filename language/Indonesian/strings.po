@@ -20,6 +20,10 @@ msgctxt "#31000"
 msgid "Live TV"
 msgstr "Siaran TV Langsung"
 
+msgctxt "#31002"
+msgid "TV Shows"
+msgstr "Acara TV"
+
 msgctxt "#31003"
 msgid "Aired"
 msgstr "Disiarkan"
@@ -80,6 +84,14 @@ msgctxt "#31033"
 msgid "Channel Group"
 msgstr "Grup Kanal"
 
+msgctxt "#31039"
+msgid "IP Address"
+msgstr "Alamat IP"
+
+msgctxt "#31080"
+msgid "Slide"
+msgstr "Slide"
+
 msgctxt "#31083"
 msgid "Wall"
 msgstr "Ikon"
@@ -119,6 +131,10 @@ msgstr "Kemungkinan Presipitasi"
 msgctxt "#31236"
 msgid "Forecast"
 msgstr "Prakiraan"
+
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "Film yang Sekarang Ditambahkan"
 
 msgctxt "#31285"
 msgid "Playlist Options"

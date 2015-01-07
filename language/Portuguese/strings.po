@@ -548,6 +548,10 @@ msgctxt "#31254"
 msgid "Search on YouTube"
 msgstr "Procurar no YouTube"
 
+msgctxt "#31257"
+msgid "Trending Movies"
+msgstr "Filmes em voga"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Abrir lista de reprodução"

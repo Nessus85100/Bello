@@ -876,6 +876,10 @@ msgctxt "#31396"
 msgid "Custom Button"
 msgstr "Egyéni Gomb"
 
+msgctxt "#31398"
+msgid "Hide Favourites Button"
+msgstr "Kefvencek Gomb Elrejtése"
+
 msgctxt "#31401"
 msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
 msgstr "Változtassa meg az Kodi kinézetés és használati módját. Beleértve a felszínt, témát, hangokat, betűkészleteket, RSS csatornát és a lokalizációs beállításokat."

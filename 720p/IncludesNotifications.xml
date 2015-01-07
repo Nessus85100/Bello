@@ -3,8 +3,8 @@
 
   <include name="NextAiredNotifications">
 		<control type="group">
-		  <left>40</left>
-			<top>645</top>
+		  <left>45</left>
+			<top>640</top>
 			<visible>![Container.Content(Episodes) + Substring(Container.FolderPath,plugin://) | Stringcompare(ListItem.Label,..)]</visible>
 	    <include>NotificationsAnimations</include>
 		  <visible>!Window.IsActive(ShutdownMenu)</visible>
@@ -21,23 +21,24 @@
         <visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
         <visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 				<control type="grouplist">
-					<right>100</right>
-					<top>0</top>
-					<height>60</height>
-					<width>480</width>
-					<aligny>center</aligny>
-					<itemgap>10</itemgap>
-					<orientation>horizontal</orientation>
+    		  <left>0</left>
+    			<top>0</top>
+    			<height>60</height>
+    			<width>1140</width>
+    			<align>right</align>
+    			<aligny>center</aligny>
+    			<itemgap>5</itemgap>
+    			<orientation>horizontal</orientation>
 					<control type="group">
-			      <right>-50</right>
+				    <width>540</width>
 						<control type="label">
 					    <description>First Line</description>
 							<top>0</top>
-							<height>25</height>
-							<width>480</width>
+							<height>33</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -46,11 +47,11 @@
 						<control type="label">
 					    <description>Second Line</description>
 							<top>20</top>
-							<height>25</height>
-							<width>480</width>
+							<height>35</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>99white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -58,41 +59,38 @@
 						</control>
 					</control>				
 			  </control>
-				<control type="group">
-				 <left>1145</left>
-			   <top>-7</top>
-				 <control type="image">
-					<width>55</width>
-					<height>55</height>
-					<aspectratio>stretch</aspectratio>
-				  <texture>icons/notification_time.png</texture>
-					<align>right</align>
-					<aligny>center</aligny>
-				 </control>
-			  </control>
+				<control type="image">
+  				<left>1141</left>
+  			  <top>-1</top>
+  				<width>55</width>
+  				<height>55</height>
+  				<aspectratio>stretch</aspectratio>
+  			  <texture>icons/notification_time.png</texture>
+				</control>
 			</control>
 			<control type="group">
 	      <include>NotificationsAnimations</include>
         <visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
         <visible>IsEmpty(Window(Home).Property(NextAired.NextDate)) + !IsEmpty(Window(Home).Property(NextAired.LatestTitle))</visible>
 				<control type="grouplist">
-					<right>100</right>
-					<top>0</top>
-					<height>60</height>
-					<width>480</width>
-					<aligny>center</aligny>
-					<itemgap>10</itemgap>
-					<orientation>horizontal</orientation>
+    		  <left>0</left>
+    			<top>0</top>
+    			<height>60</height>
+    			<width>1140</width>
+    			<align>right</align>
+    			<aligny>center</aligny>
+    			<itemgap>5</itemgap>
+    			<orientation>horizontal</orientation>
 					<control type="group">
-			      <right>-50</right>
+				    <width>540</width>
 						<control type="label">
 					    <description>First Line</description>
 							<top>0</top>
-							<height>25</height>
-							<width>480</width>
+							<height>33</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -101,11 +99,11 @@
 						<control type="label">
 					    <description>Second Line</description>
 							<top>20</top>
-							<height>25</height>
-							<width>480</width>
+							<height>35</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>99white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -113,28 +111,24 @@
 						</control>
 					</control>				
 			  </control>
-				<control type="group">
-				 <left>1145</left>
-			   <top>-7</top>
-				 <control type="image">
+				<control type="image">
+  				<left>1141</left>
+  			  <top>-1</top>
 					<width>55</width>
 					<height>55</height>
 					<aspectratio>stretch</aspectratio>
 				  <texture>icons/notification_warning.png</texture>
-					<align>right</align>
-					<aligny>center</aligny>
 					<visible>!StringCompare(Window(Home).Property(NextAired.StatusID),1)</visible>
-				 </control>
-				 <control type="image">
+				</control>
+				<control type="image">
+  				<left>1141</left>
+  			  <top>-1</top>
 					<width>55</width>
 					<height>55</height>
 					<aspectratio>stretch</aspectratio>
 				  <texture>icons/notification_error.png</texture>
-					<align>right</align>
-					<aligny>center</aligny>
 					<visible>StringCompare(Window(Home).Property(NextAired.StatusID),1)</visible>
-				 </control>
-			  </control>
+				</control>
 			</control>
 		</control>
   </include>
@@ -142,8 +136,8 @@
 
   <include name="AddonsNotifications">
 		<control type="group">
-		  <left>40</left>
-			<top>645</top>
+		  <left>45</left>
+			<top>640</top>
 	    <include>NotificationsAnimations</include>
 		  <visible>!Window.IsActive(ShutdownMenu) + !Stringcompare(ListItem.Label,..)</visible>
 		  <animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)]">
@@ -159,23 +153,24 @@
         <visible>Container.Content(Addons)</visible>
 				<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
 				<control type="grouplist">
-					<right>100</right>
-					<top>0</top>
-					<height>60</height>
-					<width>480</width>
-					<aligny>center</aligny>
-					<itemgap>10</itemgap>
-					<orientation>horizontal</orientation>
+    		  <left>0</left>
+    			<top>0</top>
+    			<height>60</height>
+    			<width>1140</width>
+    			<align>right</align>
+    			<aligny>center</aligny>
+    			<itemgap>5</itemgap>
+    			<orientation>horizontal</orientation>
 					<control type="group">
-			      <right>-50</right>
+				    <width>540</width>
 						<control type="label">
 					    <description>First Line</description>
 							<top>0</top>
-							<height>25</height>
-							<width>480</width>
+							<height>33</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -184,11 +179,11 @@
 						<control type="label">
 					    <description>Second Line</description>
 							<top>20</top>
-							<height>25</height>
-							<width>480</width>
+							<height>35</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>99white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -196,18 +191,16 @@
 						</control>
 					</control>				
 			  </control>
-				<control type="group">
-				 <left>1145</left>
-			   <top>-7</top>
-				 <control type="image">
+				<control type="image">
+  				<left>1141</left>
+  			  <top>-1</top>
 					<width>55</width>
 					<height>55</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>icons/notification_error.png</texture>
 					<align>right</align>
 					<aligny>center</aligny>
-				 </control>
-			  </control>
+				</control>
 			</control>
 
 			<control type="group">
@@ -215,23 +208,24 @@
         <visible>Container.Content(Addons)</visible>
 				<visible>!IsEmpty(ListItem.Property(Addon.Status)) + IsEmpty(ListItem.Property(Addon.Broken))</visible>
 				<control type="grouplist">
-					<right>100</right>
-					<top>0</top>
-					<height>60</height>
-					<width>480</width>
-					<aligny>center</aligny>
-					<itemgap>10</itemgap>
-					<orientation>horizontal</orientation>
+    		  <left>0</left>
+    			<top>0</top>
+    			<height>60</height>
+    			<width>1140</width>
+    			<align>right</align>
+    			<aligny>center</aligny>
+    			<itemgap>5</itemgap>
+    			<orientation>horizontal</orientation>
 					<control type="group">
-			      <right>-50</right>
+				    <width>540</width>
 						<control type="label">
 					    <description>First Line</description>
 							<top>0</top>
-							<height>25</height>
-							<width>480</width>
+							<height>33</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -240,11 +234,11 @@
 						<control type="label">
 					    <description>Second Line</description>
 							<top>20</top>
-							<height>25</height>
-							<width>480</width>
+							<height>35</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>99white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -254,11 +248,11 @@
 						<control type="label">
 					    <description>Second Line</description>
 							<top>20</top>
-							<height>25</height>
+							<height>35</height>
 							<width>480</width>
 							<font>NotificationsFont</font>
 							<textcolor>99white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -267,18 +261,14 @@
 						</control>
 					</control>				
 			  </control>
-				<control type="group">
-				 <left>1145</left>
-			   <top>-7</top>
-				 <control type="image">
+				<control type="image">
+  				<left>1141</left>
+  			  <top>-1</top>
 					<width>55</width>
 					<height>55</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>icons/notification_info.png</texture>
-					<align>right</align>
-					<aligny>center</aligny>
-				 </control>
-			  </control>
+				</control>
 			</control>			
 		</control>
   </include>
@@ -286,8 +276,8 @@
 
   <include name="WeatherAlertsNotifications">
 		<control type="group">
-		  <left>40</left>
-			<top>645</top>
+		  <left>45</left>
+			<top>640</top>
 	    <include>NotificationsAnimations</include>
 		  <visible>!Window.IsActive(ShutdownMenu)</visible>
 		  <animation type="Conditional" reversible="false" condition="![Window.IsActive(InfoDialog) | Window.IsActive(extendedprogressdialog)]">
@@ -303,23 +293,24 @@
         <visible>Window.IsVisible(Weather)</visible>
 			  <visible>!IsEmpty(Window.Property(Alerts.RSS)) + !IsEmpty(Window.Property(Current.Condition))</visible>
 				<control type="grouplist">
-					<right>100</right>
-					<top>0</top>
-					<height>60</height>
-					<width>480</width>
-					<aligny>center</aligny>
-					<itemgap>10</itemgap>
-					<orientation>horizontal</orientation>
+    		  <left>0</left>
+    			<top>0</top>
+    			<height>60</height>
+    			<width>1195</width>
+    			<align>right</align>
+    			<aligny>center</aligny>
+    			<itemgap>5</itemgap>
+    			<orientation>horizontal</orientation>
 					<control type="group">
-			      <right>-50</right>
+				    <width>540</width>
 						<control type="label">
 					    <description>First Line</description>
 							<top>0</top>
-							<height>25</height>
-							<width>480</width>
+							<height>33</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -328,11 +319,11 @@
 						<control type="label">
 					    <description>Second Line</description>
 							<top>20</top>
-							<height>25</height>
-							<width>480</width>
+							<height>35</height>
+							<width>540</width>
 							<font>NotificationsFont</font>
 							<textcolor>99white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>77000000</shadowcolor>
 					    <align>right</align>
 					    <aligny>center</aligny>
 							<scroll>false</scroll>
@@ -340,18 +331,14 @@
 						</control>
 					</control>				
 			  </control>
-				<control type="group">
-				 <left>1145</left>
-			   <top>-7</top>
-				 <control type="image">
+				<control type="image">
+  				<left>1141</left>
+  			  <top>-1</top>
 					<width>55</width>
 					<height>55</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>icons/notification_warning.png</texture>
-					<align>right</align>
-					<aligny>center</aligny>
-				 </control>
-			  </control>
+				</control>
 			</control>
 		</control>
   </include>

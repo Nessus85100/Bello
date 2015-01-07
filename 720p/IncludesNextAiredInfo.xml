@@ -17,7 +17,7 @@
 			</control>
 			<control type="label">
 				<description>Episode Number</description>
-				<left>80</left>
+				<left>0</left>
 				<top>29</top>
 				<width>150</width>
 				<height>35</height>
@@ -28,7 +28,7 @@
 			</control>
 			<control type="label">
 				<description>Next air date/time</description>
-				<left>80</left>
+				<left>0</left>
 				<top>49</top>
 				<width>150</width>
 				<height>35</height>
@@ -44,7 +44,7 @@
 				<top>0</top>
 				<width>160</width>
 				<height>80</height>
-				<texture border="20">buttons/settings_fo.png</texture>
+				<texture border="20">buttons/focus.png</texture>
 	      <include>VisibleFadeEffect2</include>
 			</control>
 			<control type="image">
@@ -60,7 +60,7 @@
 			</control>
 			<control type="label">
 				<description>Episode Number</description>
-				<left>80</left>
+				<left>0</left>
 				<top>29</top>
 				<width>150</width>
 				<height>35</height>
@@ -71,7 +71,7 @@
 			</control>
 			<control type="label">
 				<description>Next air date/time</description>
-				<left>80</left>
+				<left>0</left>
 				<top>49</top>
 				<width>150</width>
 				<height>35</height>

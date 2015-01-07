@@ -119,3 +119,7 @@ msgstr "Преименуј групу"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Обриши групу"
+
+msgctxt "#31430"
+msgid "Help"
+msgstr "Pomoć"

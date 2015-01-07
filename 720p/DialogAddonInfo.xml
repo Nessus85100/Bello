@@ -362,6 +362,13 @@
 				  <include>TopButton</include>
 					<label>24022</label>
 				</control>
+<!--
+				<control type="button" id="12">
+					<description>Launch</description>
+				  <include>TopButton</include>
+					<label>518</label>
+				</control>
+-->
 				<control type="button" id="7">
 					<description>Enable/Disable</description>
 				  <include>TopButton</include>
@@ -427,6 +434,16 @@
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
 				</control>
+<!--
+				<control type="label">
+					<description>Launch</description>
+				  <include>TopSmallLabel</include>
+					<label>$INFO[Control.GetLabel(12)]</label>
+					<animation effect="fade" start="100" end="60" time="200" tween="cubic" easing="inout" condition="!Control.IsEnabled(12)" reversible="true">Conditional</animation>
+					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!Control.HasFocus(12)" reversible="true">Conditional</animation>
+          <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(12)" reversible="true">Conditional</animation>
+				</control>
+-->
 				<control type="label">
 					<description>Enable/Disable</description>
 				  <include>TopSmallLabel</include>

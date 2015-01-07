@@ -896,53 +896,54 @@
 			<control type="image">
 				<description>media info background image</description>
 				<left>0</left>
-				<top>-11</top>
+				<top>-10</top>
 				<width>1280</width>
-				<height>185</height>
+				<height>215</height>
 				<texture background="true">osd/tile.png</texture>
 			  <colordiffuse>D9FFFFFF</colordiffuse>
+        <animation effect="slide" start="0,0" end="0,-30" time="0" condition="!System.Getbool(videoplayer.usedisplayasclock)">Conditional</animation>
 			</control>
 			<control type="label" id="10">
 				<description>row 1 label</description>
 				<left>10</left>
-				<top>15</top>
-				<width>1240</width>
+				<top>5</top>
+				<width>1200</width>
 				<height>30</height>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<textcolor>white</textcolor>
 			  <shadowcolor>22000000</shadowcolor>
 				<font>FontSize_18B</font>
 				<scroll>false</scroll>
-				<label>-</label>
+				<label>Remove ID to Test, Remove ID to Test, Remove ID to Test Remove ID to Test, Remove ID to Test[CR]Remove ID to Test Remove ID to Test, Remove ID to Test, Remove ID to Test[CR]Remove ID to Test Remove ID to Test, Remove ID to Test, Remove ID to Test</label>
 			</control>
 			<control type="label" id="11">
 				<description>row 2 label</description>
 				<left>10</left>
-				<top>65</top>
-				<width>1240</width>
+				<top>55</top>
+				<width>1200</width>
 				<height>30</height>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<textcolor>white</textcolor>
 			  <shadowcolor>22000000</shadowcolor>
 				<font>FontSize_18B</font>
 				<scroll>false</scroll>
-				<label>-</label>
+				<label>Remove ID to Test, Remove ID to Test, Remove ID to Test Remove ID to Test, Remove ID to Test[CR]Remove ID to Test Remove ID to Test, Remove ID to Test, Remove ID to Test[CR]Remove ID to Test Remove ID to Test, Remove ID to Test, Remove ID to Test</label>
 			</control>
 			<control type="label" id="12">
 				<description>row 3 label</description>
 				<left>10</left>
 				<top>105</top>
-				<width>1240</width>
-				<height>50</height>
+				<width>1200</width>
+				<height>60</height>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<textcolor>white</textcolor>
 			  <shadowcolor>22000000</shadowcolor>
 				<font>FontSize_18B</font>
 				<scroll>false</scroll>
-				<label>-</label>
+				<label>Remove ID to Test, Remove ID to Test, Remove ID to Test Remove ID to Test, Remove ID to Test[CR]Remove ID to Test Remove ID to Test, Remove ID to Test, Remove ID to Test[CR]Remove ID to Test Remove ID to Test, Remove ID to Test, Remove ID to Test</label>
 			</control>
 		</control>
 

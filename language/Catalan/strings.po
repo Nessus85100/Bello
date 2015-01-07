@@ -128,6 +128,10 @@ msgctxt "#31084"
 msgid "Posters"
 msgstr "Cartell"
 
+msgctxt "#31098"
+msgid "Home Menu"
+msgstr "Menú principal"
+
 msgctxt "#31127"
 msgid "Landscape"
 msgstr "Horitzontal"
@@ -196,9 +200,17 @@ msgctxt "#31237"
 msgid "View"
 msgstr "Visualització"
 
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "Pel·licules afegides recentment"
+
 msgctxt "#31247"
 msgid "Random Movies"
 msgstr "Pel·lícules aleatòries"
+
+msgctxt "#31249"
+msgid "Random Music"
+msgstr "Música a l'atzar"
 
 msgctxt "#31250"
 msgid "All Movies"

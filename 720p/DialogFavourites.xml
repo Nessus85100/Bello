@@ -44,7 +44,7 @@
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>109</left>
+						<left>24</left>
 						<top>181</top>
 						<width>170</width>
 						<height>35</height>
@@ -75,7 +75,7 @@
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>109</left>
+						<left>24</left>
 						<top>181</top>
 						<width>170</width>
 						<height>35</height>

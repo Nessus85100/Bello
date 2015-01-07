@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<backgroundcolor>0</backgroundcolor>
-	<views>50,56</views>
+	<views>50,56,560</views>
 	<controls>
 		<include>BackgroundItems</include>
 		<include>AddonsViews</include>
@@ -57,6 +57,15 @@
 				  <label>-</label>
 				  <include>TopLeftMenusButton</include>
 				</control>
+  			<control type="togglebutton" id="294">
+  			  <description>Change Thumbs Size (Thumbnails View)</description>
+  			  <include>TopLeftMenusButton</include>
+          <label>$LOCALIZE[31098]</label>
+          <altlabel>$LOCALIZE[31099]</altlabel>
+  				<onclick>Skin.ToggleSetting(ShowSmallAddonsThumbs)</onclick>
+  				<selected>Skin.HasSetting(ShowSmallAddonsThumbs)</selected>
+  			  <visible>Control.IsVisible(560)</visible>
+  			</control>
 				<control type="button" id="3">
 					<description>Sort by</description>
 					<label>103</label>
@@ -68,10 +77,8 @@
           <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
 				  <include>TopLeftMenusButton</include>
 				</control>
-  			<control type="togglebutton" id="5">
+  			<control type="button" id="5">
   				<description>Auto Update</description>
-  				<label>$LOCALIZE[24063]: $LOCALIZE[31012]</label>
-          <altlabel>$LOCALIZE[24063]: $LOCALIZE[31011]</altlabel>
   			  <include>TopLeftMenusButton</include>
   			</control>
   			<control type="togglebutton" id="6">
@@ -115,14 +122,6 @@
           <label>$INFO[Control.GetLabel(2)]</label>
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="inout" condition="!ControlGroup(9111).HasFocus(2)" reversible="true">Conditional</animation>
           <animation effect="zoom" start="100" end="90" time="200" tween="cubic" easing="inout" center="auto" condition="!ControlGroup(9111).HasFocus(2)" reversible="true">Conditional</animation>
-				</control>
-				<control type="label">
-					<description>Viewtype Options</description>
-				  <include>TopSmallLabel</include>
-					<label>$LOCALIZE[31014]</label>
-					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!ControlGroup(9111).HasFocus(95)" reversible="true">Conditional</animation>
-          <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!ControlGroup(9111).HasFocus(95)" reversible="true">Conditional</animation>
-				  <visible>false</visible>
 				</control>
 				<control type="label">
 					<description>Short by</description>

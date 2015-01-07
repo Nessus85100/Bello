@@ -94,13 +94,14 @@
 							<control type="group">
 				        <include>BannerListFocusAnimation</include>
 				        <animation effect="zoom" start="100" end="93" center="400,140" time="250" tween="sine" easing="inout" condition="![Control.HasFocus(111) | Window.IsVisible(script-globalsearch-contextmenu.xml) | Window.IsVisible(script-globalsearch-infodialog.xml) | Window.IsVisible(shutdownmenu)]">Conditional</animation>
-								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
-									<width>746</width>
-									<height>252</height>
-						      <texture>dialogs/global_search/banner_panel.png</texture>
-								</control>
+        				<control type="image">
+        					<left>-10</left>
+        					<top>-10</top>
+        					<width>761</width>
+        					<height>273</height>
+        					<aspectratio align="center" aligny="center">stretch</aspectratio>
+        					<texture background="true" border="39">dialogs/other/default.png</texture>
+        				</control>
 								<control type="image">
 									<posx>21</posx>
 									<posy>20</posy>
@@ -235,13 +236,14 @@
 							<control type="group">
 				        <include>BannerListFocusAnimation</include>
 				        <animation effect="zoom" start="100" end="93" center="400,140" time="250" tween="sine" easing="inout" condition="![Control.HasFocus(121) | Window.IsVisible(script-globalsearch-contextmenu.xml) | Window.IsVisible(script-globalsearch-infodialog.xml) | Window.IsVisible(shutdownmenu)]">Conditional</animation>
-								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
-									<width>746</width>
-									<height>252</height>
-						      <texture>dialogs/global_search/banner_panel.png</texture>
-								</control>
+        				<control type="image">
+        					<left>-10</left>
+        					<top>-10</top>
+        					<width>761</width>
+        					<height>273</height>
+        					<aspectratio align="center" aligny="center">stretch</aspectratio>
+        					<texture background="true" border="39">dialogs/other/default.png</texture>
+        				</control>
 								<control type="image">
 									<posx>21</posx>
 									<posy>20</posy>
@@ -388,13 +390,14 @@
 							<control type="group">
 				        <include>BannerListFocusAnimation</include>
 				        <animation effect="zoom" start="100" end="93" center="400,140" time="250" tween="sine" easing="inout" condition="![Control.HasFocus(141) | Window.IsVisible(script-globalsearch-contextmenu.xml) | Window.IsVisible(script-globalsearch-infodialog.xml)]">Conditional</animation>
-								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
-									<width>746</width>
-									<height>252</height>
-						      <texture>dialogs/global_search/banner_panel.png</texture>
-								</control>
+        				<control type="image">
+        					<left>-10</left>
+        					<top>-10</top>
+        					<width>761</width>
+        					<height>273</height>
+        					<aspectratio align="center" aligny="center">stretch</aspectratio>
+        					<texture background="true" border="39">dialogs/other/default.png</texture>
+        				</control>
 								<control type="image">
 									<posx>21</posx>
 									<posy>20</posy>
@@ -518,13 +521,14 @@
 							<control type="group">
 				        <include>BannerListFocusAnimation</include>
 				        <animation effect="zoom" start="100" end="93" center="400,140" time="250" tween="sine" easing="inout" condition="![Control.HasFocus(151) | Window.IsVisible(script-globalsearch-contextmenu.xml) | Window.IsVisible(script-globalsearch-infodialog.xml)]">Conditional</animation>
-								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
-									<width>746</width>
-									<height>252</height>
-						      <texture>dialogs/global_search/banner_panel.png</texture>
-								</control>
+        				<control type="image">
+        					<left>-10</left>
+        					<top>-10</top>
+        					<width>761</width>
+        					<height>273</height>
+        					<aspectratio align="center" aligny="center">stretch</aspectratio>
+        					<texture background="true" border="39">dialogs/other/default.png</texture>
+        				</control>
 								<control type="image">
 									<posx>21</posx>
 									<posy>20</posy>
@@ -640,13 +644,14 @@
 							<control type="group">
 				        <include>BannerListFocusAnimation</include>
 				        <animation effect="zoom" start="100" end="93" center="400,140" time="250" tween="sine" easing="inout" condition="![Control.HasFocus(161) | Window.IsVisible(script-globalsearch-contextmenu.xml) | Window.IsVisible(script-globalsearch-infodialog.xml)]">Conditional</animation>
-								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
-									<width>746</width>
-									<height>252</height>
-						      <texture>dialogs/global_search/banner_panel.png</texture>
-								</control>
+        				<control type="image">
+        					<left>-10</left>
+        					<top>-10</top>
+        					<width>761</width>
+        					<height>273</height>
+        					<aspectratio align="center" aligny="center">stretch</aspectratio>
+        					<texture background="true" border="39">dialogs/other/default.png</texture>
+        				</control>
 								<control type="image">
 									<posx>21</posx>
 									<posy>20</posy>
@@ -761,13 +766,14 @@
 							<control type="group">
 				        <include>BannerListFocusAnimation</include>
 				        <animation effect="zoom" start="100" end="93" center="400,140" time="250" tween="sine" easing="inout" condition="![Control.HasFocus(171) | Window.IsVisible(script-globalsearch-contextmenu.xml) | Window.IsVisible(script-globalsearch-infodialog.xml)]">Conditional</animation>
-								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
-									<width>746</width>
-									<height>252</height>
-						      <texture>dialogs/global_search/banner_panel.png</texture>
-								</control>
+        				<control type="image">
+        					<left>-10</left>
+        					<top>-10</top>
+        					<width>761</width>
+        					<height>273</height>
+        					<aspectratio align="center" aligny="center">stretch</aspectratio>
+        					<texture background="true" border="39">dialogs/other/default.png</texture>
+        				</control>
 								<control type="image">
 									<posx>21</posx>
 									<posy>20</posy>
@@ -890,13 +896,14 @@
 							<control type="group">
 				        <include>BannerListFocusAnimation</include>
 				        <animation effect="zoom" start="100" end="93" center="400,140" time="250" tween="sine" easing="inout" condition="![Control.HasFocus(181) | Window.IsVisible(script-globalsearch-contextmenu.xml) | Window.IsVisible(script-globalsearch-infodialog.xml)]">Conditional</animation>
-								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
-									<width>746</width>
-									<height>252</height>
-						      <texture>dialogs/global_search/banner_panel.png</texture>
-								</control>
+        				<control type="image">
+        					<left>-10</left>
+        					<top>-10</top>
+        					<width>761</width>
+        					<height>273</height>
+        					<aspectratio align="center" aligny="center">stretch</aspectratio>
+        					<texture background="true" border="39">dialogs/other/default.png</texture>
+        				</control>
 								<control type="image">
 									<posx>21</posx>
 									<posy>20</posy>

@@ -1,3 +1,19 @@
+[B][COLOR=FF56ADDA]v3.0.0 - BETA[/COLOR][/B]
+• Updated code for Kodi v14.0 Helix (including PVR section).
+• Added support for Skinshortcuts script for building HomeMenu, Submenus and Home backgrounds.
+• Added support for OpenWeatherMap Extended addon.
+• Added skin option for small thumbs in Thumbnails views.
+• Changed "MyMovies","MyTVShows" and "MyMusic" to custom windows (ESC is working now).
+• Added new QuickNav Custom Items selection dialog.
+• Added new Busy, Progress, OK, Yes/No dialogs.
+• Added new textures in all dialogs.
+• Added new layout for selecting and setting artwork in VideoInfo dialog.
+• Updated some defaults icons.
+• Changed Home NowPlaying widget to Common NowPlaying.
+• Reworked and unified skin code and textures and remove unused textures and code(WIP).
+• Several small fixes.
+• Updated language files from Transifex.
+
 [B]v2.0.8[/B]
 • Added subtitles hearing impaired icon.
 • Fixed Movie Sets labels in several views.

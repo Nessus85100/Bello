@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window  id="136">
+<window id="136">
 	<defaultcontrol always="true">22</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
 	<controls>
-
 		<control type="group">
-			<visible>!Window.IsActive(virtualkeyboard) + !Window.IsVisible(smartplaylistrule) + !Window.IsActive(selectdialog)</visible>
+			<visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(smartplaylistrule) + !Window.IsActive(selectdialog)</visible>
 			<include>DialogAnimation</include>
-			<control type="image">
-				<description>background image</description>
-				<include>FullscreenDimensions</include>
-				<texture background="true">dialogs/playlist_editor/bg_playlisteditor.png</texture>
-			</control>
-			<control type="label">
-				<description>header label</description>
-				<left>305</left>
-				<top>170</top>
-				<width>670</width>
-				<height>50</height>
-				<font>FontSize_36</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
-				<shadowcolor>99000000</shadowcolor>
-				<scroll>true</scroll>
-				<scrollspeed>20</scrollspeed>
-				<label>21432</label>
-			</control>			
+  	  <control type="image">
+  			<left>311</left>
+  			<top>151</top>
+  		  <width>658</width>
+  		  <height>57</height>
+  		  <colordiffuse>blue</colordiffuse>
+  		  <texture background="true" border="9">dialogs/other/header.png</texture>
+  	  </control>
+  	  <control type="image">
+  			<left>311</left>
+  			<top>205</top>
+  		  <width>658</width>
+  		  <height>348</height>
+  		  <texture background="true" border="39,19,39,19">dialogs/other/body.png</texture>
+  	  </control>
+  		 <control type="image">
+  			<left>313</left>
+  			<top>204</top>
+  			<width>654</width>
+  			<height>4</height>
+  			<aspectratio>stretch</aspectratio>
+  			<texture background="true">dialogs/other/header_line.png</texture>
+  		 </control>
+  		<control type="label">
+  			<description>header label</description>
+				<left>325</left>
+				<top>165</top>
+				<width>620</width>
+  	    <include>DialogsHeaderLabel</include>
+        <label>$LOCALIZE[21432]</label>
+  		</control>
 			
 			<control type="group">
 				<animation type="Conditional" condition="![Control.HasFocus(16) | Control.HasFocus(17) | Control.HasFocus(18) | Control.HasFocus(19) | ControlGroup(10000).HasFocus]" reversible="false">
@@ -40,7 +49,7 @@
 				<control type="image">
 					<description>background image</description>
 					<include>FullscreenDimensions</include>
-					<texture background="true">dialogs/playlist_editor/playlisteditor_top.png</texture>
+					<texture background="true">dialogs/playlisteditor/playlisteditor_top.png</texture>
 				</control>			
 				<control type="spincontrolex" id="22">
 					<description>Set Playlist type</description>
@@ -49,9 +58,9 @@
 					<width>624</width>
 					<height>45</height>
 					<label>467</label>
-					<onup>noop</onup>
+					<onup>10030</onup>
 					<ondown>12</ondown>
-					<onright>22</onright>
+					<onright>10000</onright>
 					<onleft>22</onleft>
 	        <include>DialogsSpincontrolex</include>
 				</control>
@@ -74,18 +83,12 @@
 					<top>306</top>
 					<width>624</width>
 					<height>45</height>
-					<textoffsetx>10</textoffsetx>
-					<textwidth>614</textwidth>
-					<font>FontSize_20</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<texturefocus>buttons/settings_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
 					<label>-</label>
 					<onup>22</onup>
 					<onleft>12</onleft>
-					<onright>12</onright>
+					<onright>10000</onright>
 					<ondown>9000</ondown>
+          <include>DialogsButton</include>
 				</control>
 			</control>			
 				
@@ -99,7 +102,7 @@
 				<control type="image">
 					<description>background image</description>
 					<include>FullscreenDimensions</include>
-					<texture background="true">dialogs/playlist_editor/playlisteditor_mid.png</texture>
+					<texture background="true">dialogs/playlisteditor/playlisteditor_mid.png</texture>
 				</control>						
 				<control type="label">
 					<description>rules label</description>
@@ -126,7 +129,6 @@
 						<onleft>9001</onleft>
 						<onright>9001</onright>
 						<scrolltime>200</scrolltime>
-						<include>VisibleFadeEffect</include>
 						<itemlayout height="51" width="460">
 							<control type="label">
 								<left>10</left>
@@ -147,9 +149,8 @@
 								<top>0</top>
 								<width>460</width>
 								<height>45</height>
-								<texture>buttons/settings_fo.png</texture>
+								<texture>buttons/focus.png</texture>
 								<visible>Control.HasFocus(10)</visible>
-		            <include>FocusVisibleFadeEffect</include>
 						  </control>
 							<control type="label">
 								<left>10</left>
@@ -191,7 +192,7 @@
 							<onup>12</onup>
 							<ondown>14</ondown>
 							<onleft>10</onleft>
-							<onright>10</onright>
+							<onright>10000</onright>
 				      <align>center</align>
 			        <include>DialogsButton</include>
 						</control>
@@ -204,7 +205,7 @@
 							<onup>13</onup>
 							<ondown>15</ondown>
 							<onleft>10</onleft>
-							<onright>10</onright>
+							<onright>10000</onright>
 				      <align>center</align>
 			        <include>DialogsButton</include>
 						</control>
@@ -217,7 +218,7 @@
 							<onup>14</onup>
 							<ondown>16</ondown>
 							<onleft>10</onleft>
-							<onright>10</onright>
+							<onright>10000</onright>
 				      <align>center</align>
 			        <include>DialogsButton</include>
 						</control>
@@ -237,7 +238,7 @@
 				<control type="image">
 					<description>background image</description>
 					<include>FullscreenDimensions</include>
-					<texture background="true">dialogs/playlist_editor/playlisteditor_bottom.png</texture>
+					<texture background="true">dialogs/playlisteditor/playlisteditor_bottom.png</texture>
 				</control>
 				<control type="spincontrolex" id="16">
 					<left>328</left>
@@ -245,7 +246,7 @@
 					<width>624</width>
 					<height>45</height>
 					<label>21424</label>
-					<onright>16</onright>
+					<onright>10000</onright>
 					<onleft>16</onleft>
 					<onup>9000</onup>
 					<ondown>17</ondown>
@@ -258,131 +259,77 @@
 					<width>624</width>
 					<height>45</height>
 					<label>21427</label>
-					<onright>17</onright>
+					<onright>10000</onright>
 					<onleft>17</onleft>
 					<onup>16</onup>
 					<ondown>18</ondown>
 				  <onback>10010</onback>
 	        <include>DialogsSpincontrolex</include>
 				</control>
-				<control type="spincontrolex" id="18">
-					<left>328</left>
-					<top>487</top>
-					<width>460</width>
-					<height>45</height>
-					<label>21429</label>
-					<onright>19</onright>
-					<onleft>19</onleft>
-					<onup>17</onup>
-					<ondown>10000</ondown>
-				  <onback>10010</onback>
-	        <include>DialogsSpincontrolex</include>
-				</control>
-				<control type="togglebutton" id="19">
-					<left>792</left>
-					<top>487</top>
-					<width>160</width>
-					<height>45</height>
-					<label>21431</label>
-					<altlabel>21430</altlabel>
-					<alttexturefocus>buttons/settings_fo.png</alttexturefocus>
-					<alttexturenofocus>-</alttexturenofocus>
-			    <align>center</align>
-					<onright>18</onright>
-					<onleft>18</onleft>
-					<onup>17</onup>
-					<ondown>10000</ondown>
-				  <onback>10010</onback>
-	        <include>DialogsButton</include>
-				</control>
+    	  <control type="group"  id="10030">
+  				<control type="spincontrolex" id="18">
+  					<left>328</left>
+  					<top>487</top>
+  					<width>460</width>
+  					<height>45</height>
+  					<label>21429</label>
+  					<onright>19</onright>
+  					<onleft>19</onleft>
+  					<onup>17</onup>
+  					<ondown>22</ondown>
+  				  <onback>10010</onback>
+  	        <include>DialogsSpincontrolex</include>
+  				</control>
+  				<control type="togglebutton" id="19">
+  					<left>792</left>
+  					<top>487</top>
+  					<width>160</width>
+  					<height>45</height>
+  					<label>21431</label>
+  					<altlabel>21430</altlabel>
+  					<alttexturefocus>buttons/focus.png</alttexturefocus>
+  					<alttexturenofocus>-</alttexturenofocus>
+  			    <align>center</align>
+  					<onright>10000</onright>
+  					<onleft>18</onleft>
+  					<onup>17</onup>
+  					<ondown>22</ondown>
+  				  <onback>10010</onback>
+  	        <include>DialogsButton</include>
+  				</control>
+  			</control>
 			</control>
 
-		  <control type="group" id="10000">
-				<left>330</left>
-				<top>528</top>
-	      <!-- Buttons -->
-				<control type="grouplist" id="10001">
-					<left>0</left>
-					<top>0</top>
-					<width>0</width>
-					<height>0</height>
-					<itemgap>0</itemgap>
-					<align>left</align>
-					<orientation>horizontal</orientation>
-					<onleft>10001</onleft>
-					<onright>10001</onright>
-					<onup>18</onup>
-					<ondown>22</ondown>
-					<control type="button" id="20">
-						<description>Save</description>
-					  <label>190</label>
-					  <include>TopButton</include>
-					</control>
-					<control type="button" id="21">
-						<description>Cancel</description>
-					  <label>222</label>
-					  <include>TopButton</include>
-					</control>
-					<control type="button." id="6">
-						<description>Playlist Options</description>
-					  <label>31285</label>
-					  <include>TopButton</include>
-					  <onclick>SetFocus(10020)</onclick>
-					</control>
-				</control>
-	      <!-- Buttons Labels -->
-				<control type="grouplist">
-					<left>0</left>
-					<top>0</top>
-					<height>70</height>
-					<width>552</width>
-					<itemgap>30</itemgap>
-					<align>left</align>
-					<orientation>horizontal</orientation>
-					<control type="label">
-						<description>Save Label</description>
-						<height>62</height>
-						<width min="10" max="552">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
-            <label>$INFO[Control.GetLabel(20),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(20)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(20)" reversible="true">Conditional</animation>
-					</control>
-					<control type="label">
-						<description>Cancel Label</description>
-						<height>62</height>
-						<width min="10" max="552">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
-            <label>$INFO[Control.GetLabel(21),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(21)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(21)" reversible="true">Conditional</animation>
-					</control>
-					<control type="label.">
-						<description>Playlist Options</description>
-						<height>62</height>
-						<width min="10" max="552">auto</width>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-				    <align>left</align>
-				    <aligny>center</aligny>
-						<scroll>false</scroll>
-            <label>$INFO[Control.GetLabel(6),․  ]</label>
-						<animation effect="fade" start="100" end="30" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
-	          <animation effect="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="15,0" condition="!Control.HasFocus(6)" reversible="true">Conditional</animation>
-					</control>
-				</control>
-		  </control>
+      <!-- Control Buttons -->
+  	  <control type="group"  id="10000">
+  			<left>974</left>
+  			<top>508</top>
+    		<control type="button" id="28">
+  				<description>Save</description>
+      		<width>150</width>
+  	      <include>DialogsButtonsText</include>
+      		<texturefocus border="49,0,49,0">dialogs/buttons/save_focus.png</texturefocus>
+      		<texturenofocus border="49,0,49,0">dialogs/buttons/save_nofocus.png</texturenofocus>
+    			<onleft>10030</onleft>
+    			<onright>10030</onright>
+    			<onup>29</onup>
+    			<ondown>29</ondown>
+  				<label>$LOCALIZE[190]</label>
+    		</control>
+    		<control type="button" id="29">
+  				<description>Cancel</description>
+    			<top>-50</top>
+      		<width>150</width>
+  	      <include>DialogsButtonsText</include>
+      		<texturefocus border="49,0,49,0">dialogs/buttons/cancel_focus.png</texturefocus>
+      		<texturenofocus border="49,0,49,0">dialogs/buttons/cancel_nofocus.png</texturenofocus>
+    			<onleft>10030</onleft>
+    			<onright>10030</onright>
+    			<onup>28</onup>
+    			<ondown>28</ondown>
+  				<label>$LOCALIZE[222]</label>
+    		</control>
+  	  </control>
 		</control>
 	</controls>
 </window>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes> 
 
-	<include name="WeatherConditionsFanart">
+	<include name="BackgroundWeather">
 		<control type="multiimage">
 			<include>FullscreenDimensions</include>
 			<include>FanartFade</include>
@@ -10,7 +10,7 @@
 		  <fadetime>500</fadetime>
 		  <randomize>true</randomize>
 		  <loop>yes</loop>
-			<visible>[Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + Window.IsVisible(weather) | Container(20).HasFocus(8)</visible>
+			<visible>[Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + Window.IsVisible(weather) | StringCompare(Container(20).ListItem.Property(defaultID),weather)</visible>
       <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 		</control>
 	</include>
@@ -28,7 +28,7 @@
 		<visible>![Player.HasVideo + !Skin.HasSetting(HideBGVideo)]</visible>
 		<visible>![Player.HasAudio + [[Skin.HasSetting(Vis-Fanart) + !IsEmpty(Player.Art(fanart))] | Skin.HasSetting(Vis-MusicSlideshow) | Skin.HasSetting(Vis-ArtistSlideshow)]]</visible>
 		<control type="image">
-			<description>Default Background Image</description>
+			<description>Default Background</description>
 			<include>FullscreenDimensions</include>
 	    <include>BackgroundFade</include>
 			<texture background="true">special://skin/extras/backgrounds/SKINDEFAULT.jpg</texture>
@@ -72,17 +72,16 @@
       </control>
     </control>
 		<control type="image">
-			<description>Custom Background Image</description>
+			<description>Global Single-Background</description>
 			<include>FullscreenDimensions</include>
 	    <include>BackgroundFade</include>
 			<texture background="true">$INFO[Skin.String(CustomImageBackgroundPath)]</texture>
 			<fadetime>500</fadetime>
 			<visible>Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomImageBackgroundPath))</visible>
-      <visible>![[Container(20).HasFocus(8) | Window.IsVisible(weather)] + [Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]]</visible>
       <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 		</control>
 		<control type="multiimage">
-			<description>Custom Background Folder</description>
+			<description>Global Multi-Background</description>
 			<include>FullscreenDimensions</include>
 	    <include>FanartFade</include>
 			<imagepath background="true">$INFO[Skin.String(CustomFolderBackgroundPath)]</imagepath>
@@ -91,8 +90,29 @@
       <loop>yes</loop>
 			<fadetime>500</fadetime>
 			<visible>Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomFolderBackgroundPath)) + ![Skin.HasSetting(ShowCustomBackgroundOnHomeOnly) + !Window.IsVisible(Home)]</visible>
-      <visible>![[Container(20).HasFocus(8) | Window.IsVisible(weather)] + [Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]]</visible>
-      <visible>![[Container(20).HasFocus(0) | Container(20).HasFocus(1) | Container(20).HasFocus(2) | Container(20).HasFocus(3) | Container(20).HasFocus(13)] + Skin.HasSetting(HomeCategoriesFanart)]</visible>
+      <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
+		</control>
+		<control type="image">
+			<description>HomeMenu Single-Background</description>
+			<include>FullscreenDimensions</include>
+	    <include>FanartFade</include>
+			<texture background="true">$INFO[Container(20).ListItem.Property(Background)]</texture>
+			<fadetime>500</fadetime>
+      <visible>![SubString(Container(20).ListItem.Property(background),\,Right) | SubString(Container(20).ListItem.Property(background),/,Right)]</visible>
+      <visible>![[StringCompare(Container(20).ListItem.Property(defaultID),weather) | Window.IsVisible(weather)] + [Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]]</visible>
+      <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
+		</control>
+		<control type="multiimage">
+			<description>HomeMenu Multi-Background</description>
+			<include>FullscreenDimensions</include>
+	    <include>FanartFade</include>
+			<imagepath background="true">$INFO[Container(20).ListItem.Property(Background)]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+      <loop>yes</loop>
+			<fadetime>600</fadetime>
+      <visible>SubString(Container(20).ListItem.Property(background),\,Right) | SubString(Container(20).ListItem.Property(background),/,Right)</visible>
+      <visible>![[StringCompare(Container(20).ListItem.Property(defaultID),weather) | Window.IsVisible(weather)] + [Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]]</visible>
       <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 		</control>
 	 </control>
@@ -149,6 +169,7 @@
 			<visible>Player.HasAudio + Skin.HasSetting(Vis-ArtistSlideshow) + IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh))</visible>
       <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 		</control>
+	  <include condition="[Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">BackgroundWeather</include>
 	</include>
 
 	<include name="GlobalFanart">
@@ -184,28 +205,21 @@
 		</control>
 	</include>
 
-	<include name="HomeCategoriesFanart">
-		<control type="image">
-			<description>Home BG</description>
-		  <include>FullscreenDimensions</include>
-			<texture background="true">$VAR[HomeCategoriesFanart]</texture>
-			<include>FanartFade</include>
-			<fadetime>500</fadetime>
-			<visible>Skin.HasSetting(HomeCategoriesFanart)</visible>
-      <visible>![![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))] + Window.IsVisible(weather) + Container(20).HasFocus(8)]</visible>
-      <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
-		</control>
-	  <include condition="[Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">WeatherConditionsFanart</include>
-  </include>
-
-	<include name="HomeSkinWidgetsFanart">
+	<include name="HomeWidgetsFanart">
 	  <control type="image">
 			<include>FullscreenDimensions</include>
-			<texture background="true">$VAR[HomeSkinWidgetsFanart]</texture>
-			<include>BackgroundFade</include>
+			<texture background="true">$VAR[HomeWidgetsFanart]</texture>
+			<include>FanartFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 		  <visible>!Skin.HasSetting(HideBGFanart)</visible>
-      <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
+		</control>
+		<control type="image">
+		  <description>Vignette</description>
+			<include>FullscreenDimensions</include>
+			<texture background="true">windows/bg/bg_vignette.png</texture>
+			<include>FanartFade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+		  <visible>!Skin.HasSetting(HideBGFanart)</visible>
 		</control>
 	</include>
 

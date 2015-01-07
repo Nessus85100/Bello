@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window  id="29">
+<window id="29">
 	<defaultcontrol always="true">52</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<backgroundcolor>0</backgroundcolor>
@@ -36,16 +36,24 @@
 					<top>298</top>
 					<width>91</width>
 					<height>91</height>
+					<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+					<texture diffuse="windows/logon/profile_icon_diffuse.png">thumbs/thumb_back.png</texture>
+				</control>
+				<control type="image">
+					<left>8</left>
+					<top>298</top>
+					<width>91</width>
+					<height>91</height>
+					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 					<texture fallback="dialogs/profiles/unknown_user.png" diffuse="windows/logon/profile_icon_diffuse.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
 					<left>0</left>
 					<top>290</top>
 					<width>107</width>
 					<height>107</height>
+			    <aspectratio align="center" aligny="center">stretch</aspectratio>
 					<texture>windows/logon/profile_icon_overlay.png</texture>
-					<aspectratio>keep</aspectratio>
 				</control>
 			</itemlayout>
 			<focusedlayout width="135">
@@ -54,8 +62,18 @@
 					<top>298</top>
 					<width>91</width>
 					<height>91</height>
+					<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+					<texture diffuse="windows/logon/profile_icon_diffuse.png">thumbs/thumb_back.png</texture>
+					<animation reversible="false" effect="zoom" start="100" end="150" center="auto" time="200">focus</animation>
+					<animation reversible="false" effect="zoom" start="150" end="100" center="auto" time="200">unfocus</animation>
+				</control>
+				<control type="image">
+					<left>8</left>
+					<top>298</top>
+					<width>91</width>
+					<height>91</height>
+					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 					<texture fallback="dialogs/profiles/unknown_user.png" diffuse="windows/logon/profile_icon_diffuse.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
 					<animation reversible="false" effect="zoom" start="100" end="150" center="auto" time="200">focus</animation>
 					<animation reversible="false" effect="zoom" start="150" end="100" center="auto" time="200">unfocus</animation>
 				</control>
@@ -64,8 +82,8 @@
 					<top>290</top>
 					<width>107</width>
 					<height>107</height>
+			    <aspectratio align="center" aligny="center">stretch</aspectratio>
 					<texture>windows/logon/profile_icon_overlay.png</texture>
-					<aspectratio>keep</aspectratio>
 					<animation reversible="false" effect="zoom" start="100" end="150" center="auto" time="200">focus</animation>
 					<animation reversible="false" effect="zoom" start="150" end="100" center="auto" time="200">unfocus</animation>
 				</control>
@@ -88,6 +106,15 @@
 			</focusedlayout>
 		</control>
    </control>
+
+	 <include>CommonDialogsFadeOutBG</include>
+
+	 <control type="group">
+		<left>25</left>
+		<top>40</top>
+		<include>HomeSlideAnimations</include>
+	  <include>WeatherAndClock</include>
+	 </control>
 
    <!-- ================ -->
    <!-- Top Content Info -->
@@ -135,12 +162,6 @@
 		</control>
 	 </control>
 
-	 <control type="group.">
-		<left>25</left>
-		<top>40</top>
-		<include>HomeSlideAnimations</include>
-	  <include>WeatherAndClock</include>
-	 </control>
 	 
    <!-- =============== -->
    <!-- == Date Info == -->

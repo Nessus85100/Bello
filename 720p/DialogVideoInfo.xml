@@ -5,7 +5,7 @@
 	<controls>
 
 		<control type="group">
-			<visible>![Window.IsActive(busydialog) | Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog) | Window.IsActive(FileBrowser) | Window.IsActive(SelectDialog) | Window.IsActive(DialogSelect.xml)]</visible>
+			<visible>![Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog) | Window.IsActive(FileBrowser) | Window.IsActive(SelectDialog) | Window.IsActive(DialogSelect.xml)]</visible>
       <visible>!Window.IsActive(script-Actors-DialogInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 	    <include>DialogAnimation</include>
 
@@ -243,6 +243,7 @@
 							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
+              <haspath>true</haspath>
 							<label fallback="195">$INFO[ListItem.FilenameAndPath]</label>
 						</control>
 					</control>
@@ -391,6 +392,7 @@
 							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
+              <haspath>true</haspath>
 							<label fallback="195">$INFO[ListItem.FilenameAndPath]</label>
 						</control>
 					</control>

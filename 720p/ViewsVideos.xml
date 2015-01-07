@@ -10,474 +10,294 @@
 		<visible>Control.IsVisible(50)</visible>
 	  <include>DialogZoomInOutAnimation</include>
 	
-		<!-- ==== Info & Thumb Code ==== -->
-		<control type="group">
-		  <include>ListViewAnimationsRight</include>
-			<control type="group">
-			  <include>ListViewAnimationsRight</include>
-	      <visible>!Stringcompare(ListItem.Label,..)</visible>
-	      <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
-				<control type="image">
-					<left>430</left>
-					<top>-50</top>
-					<width>1040</width>
-					<height>668</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-				  <texture background="true">views/list/shine.png</texture>
-					<!-- <colordiffuse>ccffffff</colordiffuse> -->
-				</control>
-				<control type="image">
-					<left>555</left>
-					<top>86</top>
-					<width>755</width>
-					<height>404</height>
-					<aspectratio align="right" aligny="center">stretch</aspectratio>
-					<fadetime>100</fadetime>
-					<texture border="70">views/list/panel.png</texture>
-					<bordersize>20</bordersize>
-				</control>
-				<control type="image">
-					<left>636</left>
-					<top>167</top>
-					<width>174</width>
-					<height>242</height>
-					<aspectratio align="center" aligny="center">scale</aspectratio>
-					<fadetime>100</fadetime>
-					<texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[VarArtPoster]</texture>
-					<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
-					<bordersize>5</bordersize>
-				</control>
-				<control type="image">
-					<left>636</left>
-					<top>167</top>
-					<width>174</width>
-					<height>242</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<fadetime>100</fadetime>
-					<texture background="true">views/list/overlay_poster.png</texture>
-					<bordersize>4</bordersize>
-				</control>
-				<control type="image">
-					<description>Black Border</description>
-					<left>807</left>
-					<top>167</top>
-					<width>422</width>
-					<height>242</height>
-					<aspectratio aligny="center" align="center">stretch</aspectratio>
-					<texture background="true" border="20">dialogs/other/iconborder_black.png</texture>
-				</control>
-				<control type="image">
-					<left>807</left>
-					<top>167</top>
-					<width>422</width>
-					<height>242</height>
-					<aspectratio align="center" aligny="center">scale</aspectratio>
-					<fadetime>100</fadetime>
-			    <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[VarArtFanart]</texture>
-					<bordersize>5</bordersize>
-				  <visible>![[Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),3)] + ![[Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(ListViewWideThumbMovies),3)]</visible>
-				</control>
-				<control type="image">
-					<left>807</left>
-					<top>167</top>
-					<width>422</width>
-					<height>242</height>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<fadetime>100</fadetime>
-			    <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[VarArtFanart]</texture>
-					<bordersize>40</bordersize>
-				  <visible>[[Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(ListViewWideThumbTVShows),3)] | [[Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(ListViewWideThumbMovies),3)]</visible>
-				</control>
-				<control type="image">
-					<left>807</left>
-					<top>167</top>
-					<width>422</width>
-					<height>242</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<fadetime>100</fadetime>
-					<texture background="true">views/list/overlay_fanart.png</texture>
-					<bordersize>4</bordersize>
-				</control>
-				<control type="image">
-					<left>670</left>
-					<top>425</top>
-					<width>120</width>
-					<height>23</height>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-			    <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/]</texture>
-				</control>
-				<control type="grouplist">
-					<left>630</left>
-					<top>464</top>
-					<width>200</width>
-		      <height>300</height>
-				  <orientation>vertical</orientation>
-		      <visible>!Substring(ListItem.Path,videodb://movies/sets/)</visible>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label>$LOCALIZE[20339]</label>
-						<font>FontSize_18B</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label fallback="195">$INFO[ListItem.Director]</label>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label>$LOCALIZE[515]</label>
-						<font>FontSize_18B</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-						<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label fallback="195">$INFO[ListItem.Genre]</label>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-						<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
-					</control>
-				</control>
-				<control type="grouplist">
-					<left>630</left>
-					<top>510</top>
-					<width>200</width>
-		      <height>300</height>
-				  <orientation>vertical</orientation>
-		      <visible>!Substring(ListItem.Path,videodb://movies/sets/)</visible>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label>$LOCALIZE[20417]</label>
-						<font>FontSize_18B</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label fallback="195">$INFO[ListItem.Writer]</label>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label>$LOCALIZE[31004]</label>
-						<font>FontSize_18B</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-						<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label fallback="195">$INFO[ListItem.Premiered]</label>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-						<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
-					</control>
-				</control>
-				<control type="grouplist">
-					<left>630</left>
-					<top>556</top>
-					<width>200</width>
-		      <height>300</height>
-				  <orientation>vertical</orientation>
-		      <visible>!Substring(ListItem.Path,videodb://movies/sets/)</visible>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label>$LOCALIZE[2050]</label>
-						<font>FontSize_18B</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-			      <label fallback="195">$INFO[ListItem.Duration]</label>
-		        <visible>substring(listitem.Duration,min)</visible>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-			      <label fallback="195">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
-		        <visible>!substring(listitem.Duration,min)</visible>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-						<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label>$LOCALIZE[572]</label>
-						<font>FontSize_18B</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-						<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label fallback="195">$INFO[ListItem.Studio]</label>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-						<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
-					</control>
-				</control>
-				<control type="label">
-					<left>820</left>
-					<top>421</top>
-					<width>415</width>
-					<font>FontSize_20</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>77000000</shadowcolor>
-					<label>$VAR[GlobalInfo]</label>
-				</control>
-				<control type="textbox">
-					<left>820</left>
-					<top>456</top>
-					<width>415</width>
-					<height>140</height>
-					<font>FontSize_20</font>
-					<textcolor>99white</textcolor>
-					<shadowcolor>77000000</shadowcolor>
-					<align>justify</align>
-					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<label fallback="195">$VAR[GlobalPlotDescription]</label>
-					<visible>!Container.Content(Sets)</visible>
-				</control>
-			</control>
-			<control type="group">
-			  <include>ListViewAnimationsRight</include>
-	      <visible>IsEmpty(ListItem.Property(Addon.Name))</visible>
-	      <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
-				<control type="image">
-					<left>670</left>
-					<top>10</top>
-					<width>790</width>
-					<height>590</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture>views/list/shine2.png</texture>
-					<!-- <colordiffuse>ccffffff</colordiffuse> -->
-				</control>
-				<control type="image">
-					<left>740</left>
-					<top>162</top>
-					<width>500</width>
-					<height>276</height>
-					<aspectratio align="right" aligny="center">keep</aspectratio>
-					<fadetime>150</fadetime>
-					<texture background="true">$INFO[Listitem.Icon]</texture>
-					<bordertexture border="20">views/list/panel2.png</bordertexture>
-					<bordersize>20</bordersize>
-				</control>
-			</control>			
-		</control>
-	
-	
+		<!-- ==== Poster/Fanart/Info ==== -->
 		<control type="group">
 			<include>ListViewAnimationsRight</include>
-	    <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
-			<control type="group">
-			  <include>ListViewAnimationsRight</include>
-	      <visible>Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Name))</visible>
-				<control type="image">
-					<left>430</left>
-					<top>-25</top>
-					<width>1040</width>
-					<height>610</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-				  <texture background="true">views/list/shine.png</texture>
-					<!-- <colordiffuse>ccffffff</colordiffuse> -->
-				</control>
-				<control type="image">
-					<left>555</left>
-					<top>91</top>
-					<width>755</width>
-					<height>384</height>
-					<aspectratio align="right" aligny="center">stretch</aspectratio>
-					<fadetime>150</fadetime>
-					<texture border="70">views/list/panel.png</texture>
-					<bordersize>20</bordersize>
-				</control>
-				<control type="image">
-					<left>636</left>
-					<top>172</top>
-					<width>223</width>
-					<height>222</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<fadetime>150</fadetime>
-					<texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[VarArtPoster]</texture>
-					<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
-					<bordersize>6</bordersize>
-				</control>
-				<control type="image.">
-					<left>636</left>
-					<top>172</top>
-					<width>223</width>
-					<height>222</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<fadetime>150</fadetime>
-					<texture>views/list/overlay_square.png</texture>
-			    <colordiffuse>77ffffff</colordiffuse>
-					<bordersize>6</bordersize>
-				</control>
-				<control type="image">
-					<left>855</left>
-					<top>172</top>
-					<width>374</width>
-					<height>222</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<fadetime>150</fadetime>
-			    <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[VarArtFanart]</texture>
-					<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
-					<bordersize>6</bordersize>
-				</control>
-				<control type="image.">
-					<left>855</left>
-					<top>172</top>
-					<width>374</width>
-					<height>222</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<fadetime>150</fadetime>
-					<texture>views/list/overlay_fanart.png</texture>
-			    <colordiffuse>77ffffff</colordiffuse>
-					<bordersize>6</bordersize>
-				</control>
-				<control type="image">
-					<left>690</left>
-					<top>412</top>
-					<width>120</width>
-					<height>23</height>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-			    <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/]</texture>
-				</control>
-				<control type="grouplist">
-					<left>630</left>
-					<top>460</top>
-					<width>200</width>
-	        <height>300</height>
-				  <orientation>vertical</orientation>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label>$LOCALIZE[24000] Creator</label>
-						<font>FontSize_18B</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label fallback="195">$INFO[ListItem.Property(Addon.Creator)]</label>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-					</control>
-				</control>
-				<control type="grouplist">
-					<left>630</left>
-					<top>506</top>
-					<width>200</width>
-	        <height>300</height>
-				  <orientation>vertical</orientation>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label>$LOCALIZE[24000] $LOCALIZE[467]</label>
-						<font>FontSize_18B</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label fallback="195">$INFO[ListItem.Property(Addon.Type)]</label>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-					</control>
-				</control>
-				<control type="grouplist">
-					<left>630</left>
-					<top>553</top>
-					<width>200</width>
-	        <height>300</height>
-				  <orientation>vertical</orientation>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label>$LOCALIZE[24000] ID</label>
-						<font>FontSize_18B</font>
-						<textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					</control>
-					<control type="label">
-						<height min="0" max="13">auto</height>
-						<width>180</width>
-						<label fallback="195">$INFO[ListItem.Property(Addon.ID)]</label>
-						<font>FontSize_18</font>
-					  <textcolor>99white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-					  <scrollspeed>30</scrollspeed>
-					</control>
-				</control>
+      <visible>!Stringcompare(ListItem.Label,..)</visible>
+      <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
+	    <include>ListView_PosterAndFanart</include>
+			<control type="label">
+				<left>820</left>
+				<top>421</top>
+				<width>415</width>
+				<font>FontSize_20</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>77000000</shadowcolor>
+				<label>$VAR[GlobalInfo]</label>
+			</control>
+			<control type="textbox">
+				<left>820</left>
+				<top>457</top>
+				<width>415</width>
+				<height>140</height>
+				<font>FontSize_20</font>
+				<textcolor>99white</textcolor>
+				<shadowcolor>77000000</shadowcolor>
+				<align>justify</align>
+				<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<label fallback="195">$VAR[GlobalPlotDescription]</label>
+				<visible>!Container.Content(Sets)</visible>
+	<!--	<visible>Container.Content(TVShows) | Container.Content(Seasons) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]</visible> -->
+			</control>
+			<control type="grouplist">
+				<left>630</left>
+				<top>464</top>
+				<width>200</width>
+	      <height>300</height>
+			  <orientation>vertical</orientation>
+	      <visible>!Substring(ListItem.Path,videodb://movies/sets/)</visible>
 				<control type="label">
-					<left>860</left>
-					<top>408</top>
-					<width>375</width>
-					<font>FontSize_20</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>77000000</shadowcolor>
-					<label>$VAR[GlobalInfo]</label>
-				</control>
-				<control type="textbox">
-					<left>820</left>
-					<top>453</top>
-					<width>415</width>
-					<height>140</height>
-					<font>FontSize_20</font>
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label>$LOCALIZE[20339]</label>
+					<font>FontSize_18B</font>
 					<textcolor>99white</textcolor>
 					<shadowcolor>77000000</shadowcolor>
-					<align>justify</align>
-					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<label fallback="195">$VAR[GlobalPlotDescription]</label>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 				</control>
-			</control>	
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label fallback="195">$INFO[ListItem.Director]</label>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label>$LOCALIZE[515]</label>
+					<font>FontSize_18B</font>
+					<textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label fallback="195">$INFO[ListItem.Genre]</label>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+				</control>
+			</control>
+			<control type="grouplist">
+				<left>630</left>
+				<top>510</top>
+				<width>200</width>
+	      <height>300</height>
+			  <orientation>vertical</orientation>
+	      <visible>!Substring(ListItem.Path,videodb://movies/sets/)</visible>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label>$LOCALIZE[20417]</label>
+					<font>FontSize_18B</font>
+					<textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label fallback="195">$INFO[ListItem.Writer]</label>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label>$LOCALIZE[31004]</label>
+					<font>FontSize_18B</font>
+					<textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label fallback="195">$INFO[ListItem.Premiered]</label>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+				</control>
+			</control>
+			<control type="grouplist">
+				<left>630</left>
+				<top>556</top>
+				<width>200</width>
+	      <height>300</height>
+			  <orientation>vertical</orientation>
+	      <visible>!Substring(ListItem.Path,videodb://movies/sets/)</visible>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label>$LOCALIZE[2050]</label>
+					<font>FontSize_18B</font>
+					<textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+		      <label fallback="195">$INFO[ListItem.Duration]</label>
+	        <visible>substring(listitem.Duration,min)</visible>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+		      <label fallback="195">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
+	        <visible>!substring(listitem.Duration,min)</visible>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label>$LOCALIZE[572]</label>
+					<font>FontSize_18B</font>
+					<textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label fallback="195">$INFO[ListItem.Studio]</label>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+				</control>
+			</control>
+		</control>
+		
+		<!-- ==== Thumb/Fanart/Info ==== -->
+		<control type="group">
+			<include>ListViewAnimationsRight</include>
+      <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
+      <visible>Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Name))</visible>
+      <include>ListView_ThumbAndFanart</include>
+			<control type="label">
+				<left>860</left>
+				<top>408</top>
+				<width>375</width>
+				<font>FontSize_20</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>77000000</shadowcolor>
+				<label>$VAR[GlobalInfo]</label>
+			</control>
+			<control type="textbox">
+				<left>820</left>
+				<top>453</top>
+				<width>415</width>
+				<height>140</height>
+				<font>FontSize_20</font>
+				<textcolor>99white</textcolor>
+				<shadowcolor>77000000</shadowcolor>
+				<align>justify</align>
+				<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<label fallback="195">$VAR[GlobalPlotDescription]</label>
+			</control>
+			<control type="grouplist">
+				<left>630</left>
+				<top>460</top>
+				<width>200</width>
+        <height>300</height>
+			  <orientation>vertical</orientation>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label>$LOCALIZE[24000] Creator</label>
+					<font>FontSize_18B</font>
+					<textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label fallback="195">$INFO[ListItem.Property(Addon.Creator)]</label>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+				</control>
+			</control>
+			<control type="grouplist">
+				<left>630</left>
+				<top>506</top>
+				<width>200</width>
+        <height>300</height>
+			  <orientation>vertical</orientation>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label>$LOCALIZE[24000] $LOCALIZE[467]</label>
+					<font>FontSize_18B</font>
+					<textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label fallback="195">$INFO[ListItem.Property(Addon.Type)]</label>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+				</control>
+			</control>
+			<control type="grouplist">
+				<left>630</left>
+				<top>553</top>
+				<width>200</width>
+        <height>300</height>
+			  <orientation>vertical</orientation>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label>$LOCALIZE[24000] ID</label>
+					<font>FontSize_18B</font>
+					<textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				</control>
+				<control type="label">
+					<height min="0" max="13">auto</height>
+					<width>180</width>
+					<label fallback="195">$INFO[ListItem.Property(Addon.ID)]</label>
+					<font>FontSize_18</font>
+				  <textcolor>99white</textcolor>
+					<shadowcolor>77000000</shadowcolor>
+				  <scrollspeed>30</scrollspeed>
+				</control>
+			</control>
+		</control>
+
+		<!-- ==== Thumb ==== -->
+		<control type="group">
+			<include>ListViewAnimationsRight</include>
+      <visible>IsEmpty(ListItem.Property(Addon.Name))</visible>
+      <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)] | [substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible>
+      <include>ListView_Thumb</include>
 		</control>
 
 
@@ -485,43 +305,20 @@
 		<control type="group">
 			<include>ListViewAnimationsLeft</include>
 			<control type="list" id="50">
-				<left>30</left>
-				<top>150</top>
-				<width>1190</width>
-				<height>450</height>
-				<onleft>60</onleft>
-				<onright>9111</onright>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<viewtype label="535">List</viewtype>
-				<pagecontrol>60</pagecontrol>
-			  <scrolltime tween="cubic" easing="out">300</scrolltime>
+        <include>ListView_Dimensions</include>
 				<itemlayout height="45" width="710">
 					<control type="label">
-						<left>14</left>
+						<left>12</left>
 						<top>0</top>
-						<width>100</width>
-						<height>45</height>
-						<font>FontSize_20</font>
-						<textcolor>77white</textcolor>
-						<shadowcolor>77000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>․  ․  ․</label>
-            <visible>IsEmpty(ListItem.Year) + !Stringcompare(ListItem.Label,..)</visible>
-					</control>
-					<control type="label">
-						<left>15</left>
-						<top>0</top>
-						<width>100</width>
+						<width>55</width>
 						<height>45</height>
 						<font>FontSize_22</font>
 						<textcolor>77white</textcolor>
 						<shadowcolor>77000000</shadowcolor>
-						<align>left</align>
+						<align>center</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-            <visible>!IsEmpty(ListItem.Year)</visible>
+						<label fallback="․  ․  ․">$INFO[ListItem.Year]</label>
+            <visible>!Stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
 						<left>72</left>
@@ -576,7 +373,7 @@
 						<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 					</control>
 					<control type="label">
-						<left>557</left>
+						<left>532</left>
 						<top>0</top>
 						<width>50</width>
 						<height>43</height>
@@ -608,7 +405,7 @@
             <visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
 					</control>
 					<control type="label">
-						<left>580</left>
+						<left>280</left>
 						<top>0</top>
 						<width>300</width>
 						<height>45</height>
@@ -617,7 +414,7 @@
 						<shadowcolor>77000000</shadowcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
+						<label fallback="․  ․  ․">$VAR[ListItemLabel2]</label>
             <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist) | Substring(ListItem.Path,videodb://movies/sets/)]</visible>
             <visible>!Stringcompare(ListItem.Label,..)</visible>
 					</control>
@@ -626,30 +423,17 @@
 		      <control type="group">
 			      <include>ListFocusAnimation</include>
 						<control type="label">
-							<left>14</left>
-							<top>0</top>
-							<width>100</width>
-							<height>45</height>
-							<font>FontSize_20</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>77000000</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>․  ․  ․</label>
-	            <visible>IsEmpty(ListItem.Year) + !Stringcompare(ListItem.Label,..)</visible>
-						</control>
-						<control type="label">
-							<left>15</left>
-							<top>0</top>
-							<width>100</width>
+  						<left>12</left>
+  						<top>0</top>
+  						<width>55</width>
 							<height>45</height>
 							<font>FontSize_22</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>77000000</shadowcolor>
-							<align>left</align>
+							<align>center</align>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Year]</label>
-	            <visible>!IsEmpty(ListItem.Year)</visible>
+  						<label fallback="․  ․  ․">$INFO[ListItem.Year]</label>
+              <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="image">
 							<left>72</left>
@@ -705,7 +489,7 @@
 							<visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png) + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0) + [Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 						</control>
 						<control type="label">
-							<left>557</left>
+							<left>532</left>
 							<top>0</top>
 							<width>50</width>
 							<height>43</height>
@@ -737,7 +521,7 @@
 	            <visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
 						</control>
 						<control type="label">
-							<left>580</left>
+							<left>280</left>
 							<top>0</top>
 							<width>300</width>
 							<height>45</height>
@@ -746,51 +530,19 @@
 							<shadowcolor>77000000</shadowcolor>
 							<align>right</align>
 							<aligny>center</aligny>
-							<label fallback="․  ․  ․">$INFO[ListItem.Label2]</label>
+						  <label fallback="․  ․  ․">$VAR[ListItemLabel2]</label>
 	            <visible>![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Window.IsVisible(VideoPlaylist) | Substring(ListItem.Path,videodb://movies/sets/)]</visible>
 	            <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 	        </control>
 				</focusedlayout>
 			</control>
-			<control type="scrollbar" id="60">
-				<left>25</left>
-				<top>164</top>
-				<width>9</width>
-				<height>425</height>
-				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
-				<onleft>9111</onleft>
-				<onright>50</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-				<visible>Control.IsVisible(50)</visible>
-			</control>
-			<control type="image">
-				<left>58</left>
-				<top>135</top>
-				<width>23</width>
-				<height>20</height>
-				<texture>views/scrollbar/arrow.png</texture>
-	 <!-- <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Container.Content(Addons)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible> -->
-		  </control>
-		  <control type="image">
-				<left>58</left>
-				<top>595</top>
-				<width>23</width>
-				<height>20</height>
-				<texture flipy="true">views/scrollbar/arrow.png</texture>
-	 <!-- <visible>[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Sets) | Container.Content(Addons)] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Episodes)]</visible> -->
-		  </control>
+      <include>ListView_Scrollbar</include>
+      <include>ListView_Arrows</include>
 		</control>
 	
 	 </control>
 	</include>
-
 
 
 	<!-- ========================= -->
@@ -832,29 +584,30 @@
 						<width>238</width>
 						<height>340</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-						<texture background="true" diffuse="overlays/skin_widgets/poster_diffuse_nf.png" fallback="thumbs/fallback_poster_big.png">$VAR[VarArtPoster]</texture>
+						<texture background="true" diffuse="views/slide/poster_diffuse_nf.png" fallback="thumbs/fallback_poster_big.png">$VAR[VarArtPoster]</texture>
 					</control>
 					<control type="image">
 						<width>238</width>
 						<height>340</height>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
-	          <texture diffuse="overlays/skin_widgets/poster_diffuse_nf.png">overlays/unwatched/slide/UnWatched_Poster.png</texture>
+	          <texture diffuse="views/slide/poster_diffuse_nf.png">overlays/unwatched/slide/UnWatched_Poster.png</texture>
 	          <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="238" height="340">
 					<control type="group">
-	        <animation type="Focus" reversible="false" condition="Container(51).OnNext">
-	          <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
-	        </animation>
-	        <animation type="Focus" reversible="false" condition="Container(51).OnPrevious">
-	          <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
-	        </animation>
+  	        <animation type="Focus" reversible="false" condition="Container(51).OnNext">
+  	         <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+  	        </animation>
+  	        <animation type="Focus" reversible="false" condition="Container(51).OnPrevious">
+  	         <effect type="fade" start="20" end="100" time="300" delay="100" tween="sine" easing="out" />
+  	        </animation>
 						<control type="image">
 							<width>238</width>
 							<height>340</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
 						  <texture background="true" fallback="thumbs/fallback_poster_big.png">$VAR[VarArtPoster]</texture>
+		          <bordersize>6</bordersize>
 						</control>
 						<control type="image">
 							<width>238</width>
@@ -862,97 +615,82 @@
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
 	            <texture>overlays/unwatched/slide/UnWatched_Poster.png</texture>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+		          <bordersize>6</bordersize>
 						</control>
 					</control>
 					<control type="group">
-						<left>238</left>
-						<control type="image.">
-							<width>1310</width>
-							<height>340</height>
-							<aspectratio align="center">stretch</aspectratio>
-							<texture background="true">overlays/skin_widgets/title_shadow.png</texture>
+						<left>252</left>
+						<top>250</top>
+	          <animation type="Focus" reversible="false" condition="Container(51).OnNext">
+	            <effect type="slide" start="56,0" end="0,0" time="200" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
+	          </animation>
+	          <animation type="Focus" reversible="false" condition="Container(51).OnPrevious">
+	            <effect type="slide" start="-56,0" end="0,0" time="200" tween="circle" easing="out" />
+	            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
+	          </animation>
+						<control type="label">
+							<height>30</height>
+							<width>935</width>
+							<textcolor>white</textcolor>
+				      <shadowcolor>99000000</shadowcolor>
+							<font>FontSize_38</font>
+							<align>left</align>
+							<label>$INFO[ListItem.label]</label>
+	            <animation effect="slide" start="0,0" end="0,-228" time="250" tween="sine" easing="inout" condition="Control.HasFocus(100)">Conditional</animation>
 						</control>
-						<control type="image.">
-						  <left>-688</left>
-							<width>450</width>
-							<height>340</height>
-							<aspectratio align="center">stretch</aspectratio>
-							<texture background="true" flipx="true">overlays/skin_widgets/title_shadow.png</texture>
-						</control>
-						<control type="group">
-							<left>15</left>
-							<top>250</top>
-		          <animation type="Focus" reversible="false" condition="Container(51).OnNext">
-		            <effect type="slide" start="56,0" end="0,0" time="200" tween="circle" easing="out" />
-		            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
-		          </animation>
-		          <animation type="Focus" reversible="false" condition="Container(51).OnPrevious">
-		            <effect type="slide" start="-56,0" end="0,0" time="200" tween="circle" easing="out" />
-		            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
-		          </animation>
-							<control type="label">
-								<height>30</height>
-								<width>935</width>
-								<textcolor>white</textcolor>
-					      <shadowcolor>99000000</shadowcolor>
-								<font>FontSize_38</font>
-								<align>left</align>
-								<label>$INFO[ListItem.label]</label>
-		            <animation effect="slide" start="0,0" end="0,-228" time="250" tween="sine" easing="inout" condition="Control.HasFocus(100)">Conditional</animation>
-							</control>
-							<!-- Small Down Info -->
-						  <control type="group">
+						<!-- Small Down Info -->
+					  <control type="group">
+							<left>0</left>
+							<top>40</top>
+							<control type="image">
 								<left>0</left>
-								<top>40</top>
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>34</width>
-									<height>22</height>
-							    <colordiffuse>77white</colordiffuse>
-							    <aspectratio align="left" aligny="center">stretch</aspectratio>
-									<texture>$VAR[ViewsDef3DFlags]</texture>
-									<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
-								</control>
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>38</width>
-									<height>22</height>
-					        <colordiffuse>77white</colordiffuse>
-							    <aspectratio align="left" aligny="center">stretch</aspectratio>
-						      <texture background="true">flags/sets/sets.png</texture>
-									<visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
-								</control>
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>50</width>
-									<height>22</height>
-							    <colordiffuse>77white</colordiffuse>
-							    <aspectratio align="left" aligny="center">stretch</aspectratio>
-									<texture background="true">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
-									<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.mpaa)</visible>
-								</control>
-								<control type="label">
-									<left>45</left>
-									<top>0</top>
-									<height>20</height>
-									<width>600</width>
-									<textcolor>99white</textcolor>
-					        <shadowcolor>99000000</shadowcolor>
-		              <selectedcolor>99white</selectedcolor>
-									<font>FontSize_22</font>
-						      <scroll>false</scroll>
-									<align>left</align>
-									<aligny>center</aligny>
-				          <label>$VAR[SmallGlobalInfo]</label>
-				          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
-				          <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
-				          <animation effect="slide" start="0,0" end="60,0" time="0" tween="sine" easing="inout" condition="[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.mpaa)">Conditional</animation>
-								</control>
-						  </control>
-						</control>						
+								<top>0</top>
+								<width>34</width>
+								<height>22</height>
+						    <colordiffuse>77white</colordiffuse>
+						    <aspectratio align="left" aligny="center">stretch</aspectratio>
+								<texture>$VAR[ViewsDef3DFlags]</texture>
+								<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>38</width>
+								<height>22</height>
+				        <colordiffuse>77white</colordiffuse>
+						    <aspectratio align="left" aligny="center">stretch</aspectratio>
+					      <texture background="true">flags/sets/sets.png</texture>
+								<visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>50</width>
+								<height>22</height>
+						    <colordiffuse>77white</colordiffuse>
+						    <aspectratio align="left" aligny="center">stretch</aspectratio>
+								<texture background="true">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
+								<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.mpaa)</visible>
+							</control>
+							<control type="label">
+								<left>45</left>
+								<top>0</top>
+								<height>20</height>
+								<width>600</width>
+								<textcolor>99white</textcolor>
+				        <shadowcolor>99000000</shadowcolor>
+	              <selectedcolor>99white</selectedcolor>
+								<font>FontSize_22</font>
+					      <scroll>false</scroll>
+								<align>left</align>
+								<aligny>center</aligny>
+			          <label>$VAR[SmallGlobalInfo]</label>
+			          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
+			          <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
+			          <animation effect="slide" start="0,0" end="60,0" time="0" tween="sine" easing="inout" condition="[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.mpaa)">Conditional</animation>
+							</control>
+					  </control>
 					</control>
 				</focusedlayout>
 			</control>
@@ -990,6 +728,14 @@
 					<label fallback="195">$VAR[GlobalPlotDescription]</label>
 		    </control>
 		  </control>
+			<control type="image">
+				<left>40</left>
+				<top>194</top>
+				<width>250</width>
+				<height>352</height>
+				<aspectratio align="center" aligny="center">stretch</aspectratio>
+				<texture border="30">views/slide/focus.png</texture>
+			</control>
 	    <control type="button" id="100">
 				<include>TopButton</include>
 				<onleft>51</onleft>
@@ -1019,7 +765,6 @@
 	</include>
 
 
-
 	<!-- =========================== -->
 	<!-- ==== Gallery View "52" ==== -->
 	<!-- =========================== -->
@@ -1029,14 +774,6 @@
 			<visible>Control.IsVisible(52)</visible>
 	    <include>DialogZoomInOutAnimation</include>
 	    <include>CommonSlideAnimations</include>
-			<control type="image.">
-				<left>-230</left>
-				<top>-88</top>
-				<width>1700</width>
-				<height>860</height>
-				<aspectratio align="center" aligny="center">stretch</aspectratio>
-				<texture background="true">views/list/shine.png</texture>
-			</control>
 			<control type="image">
 		    <include>FullscreenDimensions</include>
 				<texture>views/gallery/top_bottom_shadows.png</texture>
@@ -1047,8 +784,8 @@
 				<width>1380</width>
 				<height>492</height>
 				<aspectratio align="center" aligny="center">stretch</aspectratio>
-				<texture border="50">views/thumbnails/thumb_panel.png</texture>
-				<bordersize>20</bordersize>
+				<texture border="39,39,39,39">views/other/panel.png</texture>
+				<bordersize>41</bordersize>
 			</control>
 			<control type="wraplist" id="52">
 				<left>-34</left>
@@ -1088,7 +825,7 @@
 	          <visible>[Container.Content(Movies) | Container.Content(Sets) | Container.Content(Episodes)]</visible>
 					</control>
 					<control type="label">
-						<left>47</left>
+						<left>-10</left>
 						<top>15</top>
 						<width>60</width>
 						<height>60</height>
@@ -1138,6 +875,7 @@
 							<height>380</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
 						  <texture background="true" fallback="thumbs/fallback_fanart_big_tp.png">$VAR[VarArtFanart]</texture>
+    			    <fadetime>FanartCrossfadeTime</fadetime>
 							<bordersize>6</bordersize>
 				      <visible>![[Container.Content(TVShows) | Container.Content(Seasons)] + [Stringcompare(Skin.String(GalleryViewWideThumbTVShows),2) | Stringcompare(Skin.String(GalleryViewWideThumbTVShows),3)]] + ![[Container.Content(Movies) | Container.Content(Sets)] + [Stringcompare(Skin.String(GalleryViewWideThumbMovies),2) | Stringcompare(Skin.String(GalleryViewWideThumbMovies),3)]]</visible>
 						</control>
@@ -1146,6 +884,7 @@
 							<height>380</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
 						  <texture background="true" fallback="thumbs/fallback_fanart_big_tp.png">$VAR[LandscapeVars]</texture>
+    			    <fadetime>FanartCrossfadeTime</fadetime>
 							<bordersize>6</bordersize>
 				      <visible>[[Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(GalleryViewWideThumbTVShows),2)] | [[Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(GalleryViewWideThumbMovies),2)]</visible>
 						</control>
@@ -1155,6 +894,7 @@
 							<height>290</height>
 							<aspectratio aligny="center" align="center">keep</aspectratio>
 						  <texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[ClearlogoVars]</texture>
+    			    <fadetime>FanartCrossfadeTime</fadetime>
 							<bordersize>6</bordersize>
 				      <visible>[[Container.Content(TVShows) | Container.Content(Seasons)] + Stringcompare(Skin.String(GalleryViewWideThumbTVShows),3)] | [[Container.Content(Movies) | Container.Content(Sets)] + Stringcompare(Skin.String(GalleryViewWideThumbMovies),3)]</visible>
 						</control>
@@ -1246,22 +986,23 @@
 			</control>
 			<control type="image">
 				<left>0</left>
-				<top>153</top>
+				<top>157</top>
 				<width>1280</width>
-				<height>418</height>
+				<height>410</height>
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">views/gallery/sides_fade.png</texture>
 			</control>
 			<control type="scrollbar" id="60">
 				<left>305</left>
-				<top>555</top>
-				<width>668</width>
+				<top>552</top>
+				<width>670</width>
 				<height>9</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
 				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
+				<colordiffuse>77white</colordiffuse>
 				<onup>52</onup>
 				<ondown>52</ondown>
 				<showonepage>false</showonepage>
@@ -1271,7 +1012,6 @@
 			</control>
 	  </control>
 	</include>
-
 
 
 	<!-- =========================== -->
@@ -1569,7 +1309,6 @@
 	</include>
 
 
-
 	<!-- ======================== -->
 	<!-- ==== Wall View "54" ==== -->
 	<!-- ======================== -->
@@ -1858,7 +1597,6 @@
 			</control>
 		</control>
 	</include>
-
 
 
 	<!-- ============================= -->
@@ -2303,11 +2041,9 @@
 	</include>
 
 
-
 	<!-- =========================== -->
 	<!-- ==== Posters View "55" ==== -->
 	<!-- =========================== -->
-	
 	<include name="PostersView_Videos">
 		<control type="image">
 	    <include>FullscreenDimensions</include>
@@ -2333,22 +2069,22 @@
 			</control>
 			<control type="fadelabel">
 				<left>0</left>
-				<top>140</top>
+				<top>130</top>
 				<width>1280</width>
 				<height>50</height>
 				<textcolor>99white</textcolor>
-				<shadowcolor>11000000</shadowcolor>
+				<shadowcolor>10000000</shadowcolor>
 				<font>FontSize_120</font>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 				<scrollspeed>30</scrollspeed>
 				<align>center</align>
-				<label>$VAR[ListItem.label]</label>
+				<label>$INFO[ListItem.label]</label>
 	      <visible>!Stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="wraplist" id="55">
-				<left>-380</left>
-				<top>170</top>
+				<left>-394</left>
+				<top>160</top>
 				<width>1900</width>
 				<height>800</height>
 				<onleft>55</onleft>
@@ -2363,101 +2099,95 @@
 			  <pagecontrol>60</pagecontrol>
 				<visible>Container.Content(Movies)</visible>
 				<!-- Movies -->
-				<itemlayout width="430" height="450">
+				<itemlayout width="439.5" height="450">
 					<control type="image">
-						<width>325</width>
-						<height>430</height>
+				    <top>12</top>
+						<width>310</width>
+						<height>438</height>
 						<aspectratio aligny="center" align="center">scale</aspectratio>
 						<texture background="true" fallback="thumbs/fallback_poster_big.png">$VAR[VarArtPoster]</texture>
-						<bordertexture border="30">views/thumbnails/thumb_panel.png</bordertexture>
-						<bordersize>35</bordersize>
+					  <bordertexture border="30">views/other/panel.png</bordertexture>
+						<bordersize>16</bordersize>
 					</control>
 					<control type="image">
-						<width>325</width>
-						<height>430</height>
+				    <top>12</top>
+						<width>310</width>
+						<height>438</height>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
 	          <texture background="true" border="3">views/posters/poster_overlay.png</texture>
-						<bordersize>34</bordersize>
+						<bordersize>16</bordersize>
 					</control>
 					<control type="image">
-						<width>325</width>
-						<height>430</height>
+				    <top>12</top>
+						<width>310</width>
+						<height>438</height>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
 	          <texture background="true">overlays/unwatched/slide/UnWatched_Poster.png</texture>
 	          <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-						<bordersize>34</bordersize>
+						<bordersize>16</bordersize>
 					</control>
 				</itemlayout>
-				<focusedlayout width="430" height="450">
+				<focusedlayout width="439.5" height="450">
 					<control type="group">
-	          <animation type="Focus" reversible="false" condition="Container(55).OnNext">
-	            <effect type="slide" start="56,0" end="0,0" time="200" tween="circle" easing="out" />
-	            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
-	          </animation>
-	          <animation type="Focus" reversible="false" condition="Container(55).OnPrevious">
-	            <effect type="slide" start="-56,0" end="0,0" time="200" tween="circle" easing="out" />
-	            <effect type="fade" start="20" end="100" time="400" delay="100" tween="sine" easing="out" />
-	          </animation>
+				    <left>-7</left>
+					  <visible>!Skin.HasSetting(FlashingCinemaLights)</visible>
 						<control type="image">
 							<width>325</width>
-							<height>430</height>
+							<height>460</height>
 						  <aspectratio aligny="center" align="center">scale</aspectratio>
 						  <texture background="true" fallback="thumbs/fallback_poster_big.png">$VAR[VarArtPoster]</texture>
-						  <bordertexture border="30">views/thumbnails/thumb_panel.png</bordertexture>
-							<bordersize>35</bordersize>
-					    <visible>!Skin.HasSetting(FlashingCinemaLights)</visible>
+						  <bordertexture border="30">views/other/panel.png</bordertexture>
+							<bordersize>18</bordersize>
 						</control>
 						<control type="image">
 							<width>325</width>
-							<height>430</height>
+							<height>460</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
-		          <texture background="true" border="3">views/posters/poster_overlay.png</texture>
-							<bordersize>34</bordersize>
-					    <visible>!Skin.HasSetting(FlashingCinemaLights)</visible>
+		          <texture background="true" border="1">views/posters/poster_overlay.png</texture>
+							<bordersize>18</bordersize>
 						</control>
 						<control type="image">
 							<width>325</width>
-							<height>430</height>
+							<height>460</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
 	            <texture background="true">overlays/unwatched/slide/UnWatched_Poster.png</texture>
-							<bordersize>34</bordersize>
+							<bordersize>18</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-					    <visible>!Skin.HasSetting(FlashingCinemaLights)</visible>
 						</control>
+					</control>
+					<control type="group">
+				    <left>-7</left>
+					  <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
 						<control type="image">
 							<width>325</width>
-							<height>430</height>
+							<height>460</height>
 						  <aspectratio aligny="center" align="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_poster_big.png">$VAR[VarArtPoster]</texture>
-						  <bordertexture border="30">views/thumbnails/thumb_panel.png</bordertexture>
-							<bordersize>46</bordersize>
-					    <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
+						  <texture background="true" fallback="thumbs/fallback_poster_big_tp.png">$VAR[VarArtPoster]</texture>
+						  <bordertexture border="30">views/other/panel.png</bordertexture>
+							<bordersize>35</bordersize>
 						</control>
 						<control type="image">
 							<width>325</width>
-							<height>430</height>
+							<height>460</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
 		          <texture background="true">views/posters/poster_overlay.png</texture>
-							<bordersize>45</bordersize>
-					    <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
+							<bordersize>34</bordersize>
 						</control>
 						<control type="image">
 							<width>325</width>
-							<height>430</height>
+							<height>460</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
 	            <texture background="true">overlays/unwatched/slide/UnWatched_Poster.png</texture>
-							<bordersize>46</bordersize>
+							<bordersize>34</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-					    <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
 						</control>
 						<control type="image">
 							<width>325</width>
-							<height>430</height>
+							<height>460</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
 		          <texture background="true">views/posters/poster_lights.png</texture>
-							<bordersize>19</bordersize>
+							<bordersize>3</bordersize>
               <animation effect="fade" start="100" end="0" delay="300" time="1150" tween="sine" easing="inout" pulse="true" condition="true">Conditional</animation>
-					    <visible>Skin.HasSetting(FlashingCinemaLights)</visible>
 						</control>
 					</control>
 				</focusedlayout>
@@ -2493,120 +2223,542 @@
 	</include>
 
 
-
-	<!-- ================================================ -->
-	<!-- ==== Thumbnails View Videos - Posters "560" ==== -->
-	<!-- ================================================ -->
-  <include name="VideoThumbnailsNoInfoWidth">
-    <width>1227</width>
-  </include>
-  <include name="VideoThumbnailsInfoWidth">
-    <width>885</width>
-  </include>
-
-	<include name="ThumbnailsView_Videos_Posters">
+	<!-- ====================================== -->
+	<!-- ==== Thumbnails View Videos "560" ==== -->
+	<!-- ====================================== -->
+	<include name="ThumbnailsView_Videos">
 		<control type="group">
 			<visible>Control.IsVisible(560)</visible>
-	    <include>DialogZoomInOutAnimation</include>
 	    <include>ThumbnailsAnimations</include>
+	    <include>DialogZoomInOutAnimation</include>
 			<control type="panel" id="560">
-				<left>26</left>
-				<top>100</top>
-				<height>493</height>
-        <include condition="Skin.HasSetting(ThumbnailShowInfo)">VideoThumbnailsInfoWidth</include>
-        <include condition="!Skin.HasSetting(ThumbnailShowInfo)">VideoThumbnailsNoInfoWidth</include>
+				<left>40</left>
+				<top>95</top>
+				<width>1200</width>
+		    <height>501</height>
 				<onleft>9111</onleft>
 				<onright>60</onright>
 				<onup>560</onup>
 				<ondown>560</ondown>
-				<viewtype label="31085">list</viewtype>
-	      <orientation>vertical</orientation>
+        <orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
         <scrolltime tween="Quadratic" easing="out">300</scrolltime>
-				<preloaditems>2</preloaditems>
-			  <visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons)</visible>
-				<itemlayout height="243" width="173">
+				<preloaditems>4</preloaditems>
+				<viewtype label="31085">icons</viewtype>
+        <visible>Container.Content(Episodes) | stringcompare(Container.FolderPath,addons://sources/video/) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles] + ![substring(Container.FolderPath,plugin,left) + Container.Content(Movies)] + !substring(Container.FolderPath,plugin://plugin.video.movie25) + !substring(Container.FolderPath,plugin://plugin.video.icefilms) + !substring(Container.FolderPath,plugin://plugin.video.1channel) + !substring(Container.FolderPath,plugin://plugin.video.hellenic.player) + !substring(Container.FolderPath,plugin://plugin.video.iplayer) + !substring(Container.FolderPath,plugin://plugin.video.lockedtv) + !substring(Container.FolderPath,plugin://plugin.program.super.favourites)</visible>
+				<itemlayout condition="Container.Content(Episodes) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]" height="167" width="239.5">
 					<control type="image">
-						<left>0</left>
-						<width>186</width>
-						<height>255</height>
+						<left>5</left>
+						<top>5</top>
+						<width>231</width>
+						<height>159</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/thumbnails/thumb_panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
-						<left>23</left>
-						<top>23</top>
-						<width>140</width>
-						<height>209</height>
-						<aspectratio aligny="center" align="center">scale</aspectratio>
-					  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[VarArtPoster]</texture>
-						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>151</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[VarArtThumb]</texture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
-						<left>23</left>
-						<top>23</top>
-						<width>140</width>
-						<height>209</height>
+						<left>160</left>
+						<top>125</top>
+						<width>61</width>
+						<height>24</height>
+				    <aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="1">views/other/episode_number.png</texture>
+            <visible>!IsEmpty(ListItem.Duration)</visible>
+					</control>
+					<control type="label">
+						<left>160</left>
+						<top>115</top>
+						<width>61</width>
+						<height>43</height>
+						<font>FontSize_15B</font>
+						<textcolor>bbwhite</textcolor>
+  			    <shadowcolor>99000000</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+            <label>$VAR[ThumbnailsOnThumbLabel]</label>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>151</height>
+						<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					</control>
+				</itemlayout>
+				<itemlayout condition="![Container.Content(Episodes) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]] + !Skin.HasSetting(ShowSmallVideoThumbs)" height="248" width="239.5">
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>231</width>
+						<height>240</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30">views/other/panel2.png</texture>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>232</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+					  <bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>232</height>
+					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>232</height>
+					  <texture background="true">$VAR[AddonStatus]</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+					</control>
+				</itemlayout>
+				<itemlayout condition="![Container.Content(Episodes) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]] + Skin.HasSetting(ShowSmallVideoThumbs)" height="167" width="171">
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>163</width>
+						<height>160</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30">views/other/panel2.png</texture>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>150</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+					  <bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>150</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>150</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+					  <texture background="true">$VAR[AddonStatus]</texture>
+						<bordersize>6</bordersize>
+					</control>
+				</itemlayout>
+
+				<focusedlayout condition="Container.Content(Episodes) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]" height="167" width="239.5">
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>231</width>
+						<height>159</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30">views/other/panel2.png</texture>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>151</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[VarArtThumb]</texture>
+					  <bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>151</height>
+						<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					</control>
+					<control type="group">
+            <animation effect="fade" end="0">Focus</animation>
+  					<control type="image">
+  						<left>160</left>
+  						<top>125</top>
+  						<width>61</width>
+  						<height>24</height>
+  				    <aspectratio align="center" aligny="center">stretch</aspectratio>
+  						<texture border="1">views/other/episode_number.png</texture>
+  					</control>
+  					<control type="label">
+  						<left>160</left>
+  						<top>115</top>
+  						<width>61</width>
+  						<height>43</height>
+  						<font>FontSize_15B</font>
+  						<textcolor>bbwhite</textcolor>
+    			    <shadowcolor>99000000</shadowcolor>
+  						<align>center</align>
+  						<aligny>center</aligny>
+              <label>$VAR[ThumbnailsOnThumbLabel]</label>
+  					</control>
+					</control>
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>231</width>
+						<height>159</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30">views/other/focus_blue.png</texture>
+	          <include>ThumbnailsFocusAnimation</include>
+					</control>
+				</focusedlayout>
+				<focusedlayout condition="![Container.Content(Episodes) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]] + !Skin.HasSetting(ShowSmallVideoThumbs)" height="248" width="239.5">
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>231</width>
+						<height>240</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30">views/other/panel2.png</texture>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>232</height>
+						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+					  <bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>232</height>
+					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>232</height>
+					  <texture background="true">$VAR[AddonStatus]</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>231</width>
+						<height>240</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30">views/other/focus_blue.png</texture>
+	          <include>ThumbnailsFocusAnimation</include>
+					</control>
+				</focusedlayout>
+				<focusedlayout condition="![Container.Content(Episodes) | [substring(Container.FolderPath,plugin,left) + Container.HasFiles]] + Skin.HasSetting(ShowSmallVideoThumbs)" height="167" width="171">
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>163</width>
+						<height>160</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30">views/other/panel2.png</texture>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>150</height>
+						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+					  <bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>150</height>
+					  <texture background="true">overlays/unwatched/thumbs/UnWatched_Square.png</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>150</height>
+					  <texture background="true">$VAR[AddonStatus]</texture>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>163</width>
+						<height>158</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30">views/other/focus_blue.png</texture>
+	          <include>ThumbnailsFocusAnimation</include>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="button">
+				<left>40</left>
+				<top>605</top>
+      	<width>1200</width>
+				<height>35</height>
+				<font>FontSize_26B</font>
+				<textcolor>bbwhite</textcolor>
+				<focusedcolor>bbwhite</focusedcolor>
+			  <disabledcolor>bbwhite</disabledcolor>
+				<shadowcolor>77000000</shadowcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<align>left</align>
+				<aligny>top</aligny>
+      	<label>$INFO[ListItem.Label]</label>
+				<label2>$VAR[AddonsLabel2]</label2>
+				<visible>!Container.Content(Episodes)</visible>
+			  <visible>Control.IsVisible(560)</visible>
+        <animation effect="slide" start="0,0" end="0,-10" time="0" condition="!Skin.HasSetting(ShowSmallVideoThumbs)">Conditional</animation>
+			</control>
+			<control type="group">
+			  <top>599</top>
+				<visible>Container.Content(Episodes)</visible>
+				<control type="label">
+					<left>47</left>
+					<top>0</top>
+					<width>900</width>
+					<height>30</height>
+					<textcolor>bbwhite</textcolor>
+	        <shadowcolor>99000000</shadowcolor>
+					<font>FontSize_26B</font>
+		      <scroll>false</scroll>
+					<align>left</align>
+					<label>$INFO[ListItem.label]</label>
+          <visible>!Stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="label">
+					<left>47</left>
+					<top>0</top>
+					<width>640</width>
+					<height>30</height>
+					<font>FontSize_26B</font>
+					<textcolor>bbwhite</textcolor>
+	        <shadowcolor>99000000</shadowcolor>
+					<align>left</align>
+			    <label>↚</label>
+          <visible>Stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<!-- Small Down Info -->
+			  <control type="group">
+					<left>1198</left>
+					<top>7</top>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>34</width>
+						<height>22</height>
+				    <colordiffuse>bbwhite</colordiffuse>
+				    <aspectratio align="right" aligny="center">stretch</aspectratio>
+						<texture>$VAR[ViewsDef3DFlags]</texture>
+					</control>
+					<control type="label">
+						<left>-610</left>
+						<top>0</top>
+						<height>20</height>
+						<width>600</width>
+						<textcolor>bbwhite</textcolor>
+		        <shadowcolor>77000000</shadowcolor>
+						<font>FontSize_24B</font>
+			      <scroll>false</scroll>
+						<align>right</align>
+						<aligny>center</aligny>
+	          <label>$VAR[SmallGlobalInfo]</label>
+	          <animation effect="slide" start="0,0" end="45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution)">Conditional</animation>
+					</control>
+			  </control>
+			</control>
+
+			<control type="scrollbar" id="60">
+				<right>30</right>
+				<top>100</top>
+				<width>9</width>
+				<height>489</height>
+				<texturesliderbackground>-</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>56</onleft>
+				<onright>9111</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+				<visible>!Skin.HasSetting(ShowSmallVideoThumbs)</visible>
+			</control>
+			<control type="scrollbar" id="60">
+				<right>30</right>
+				<top>100</top>
+				<width>9</width>
+				<height>495</height>
+				<texturesliderbackground>-</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>56</onleft>
+				<onright>9111</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+				<visible>Skin.HasSetting(ShowSmallVideoThumbs)</visible>
+			</control>
+		</control>
+	</include>
+
+
+	<!-- ================================================ -->
+	<!-- ==== Thumbnails View Videos - Posters "561" ==== -->
+	<!-- ================================================ -->
+	<include name="ThumbnailsView_Videos_Posters">
+		<control type="group">
+			<visible>Control.IsVisible(561)</visible>
+	    <include>ThumbnailsAnimations</include>
+	    <include>DialogZoomInOutAnimation</include>
+			<control type="panel" id="561">
+				<left>40</left>
+				<top>95</top>
+				<height>495</height>
+        <include condition="Skin.HasSetting(ThumbnailShowInfo)">VideoThumbnailsInfoWidth</include>
+        <include condition="!Skin.HasSetting(ThumbnailShowInfo)">VideoThumbnailsNoInfoWidth</include>
+				<onleft>9111</onleft>
+				<onright>60</onright>
+				<onup>561</onup>
+				<ondown>561</ondown>
+        <orientation>vertical</orientation>
+				<pagecontrol>60</pagecontrol>
+				<preloaditems>4</preloaditems>
+				<viewtype label="31085">icons</viewtype>
+        <scrolltime tween="Quadratic" easing="out">300</scrolltime>
+			  <visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons)</visible>
+				<itemlayout height="246" width="171">
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>163</width>
+						<height>238</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="30">views/other/panel2.png</texture>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>230</height>
+						<aspectratio aligny="center" align="center">scale</aspectratio>
+					  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[VarArtPoster]</texture>
+					  <bordersize>6</bordersize>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>230</height>
 						<texture background="true">overlays/unwatched/thumbs/UnWatched_Poster.png</texture>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<bordersize>6</bordersize>
             <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="243" width="173">
+				<focusedlayout height="246" width="171">
 					<control type="image">
-						<left>0</left>
-						<width>186</width>
-						<height>255</height>
+						<left>5</left>
+						<top>5</top>
+						<width>163</width>
+						<height>238</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/thumbnails/thumb_panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
-						<left>23</left>
-						<top>23</top>
-						<width>140</width>
-						<height>209</height>
-						<aspectratio aligny="center" align="center">scale</aspectratio>
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>230</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[VarArtPoster]</texture>
-						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
-						<left>23</left>
-						<top>23</top>
-						<width>140</width>
-						<height>209</height>
+						<left>9</left>
+						<top>9</top>
+						<width>155</width>
+						<height>230</height>
 						<texture background="true">overlays/unwatched/thumbs/UnWatched_Poster.png</texture>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<bordersize>6</bordersize>
             <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 					<control type="image">
-						<left>0</left>
-						<width>186</width>
-						<height>255</height>
+						<left>5</left>
+						<top>5</top>
+						<width>163</width>
+						<height>238</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/thumbnails/focus.png</texture>
-            <animation type="Focus">
-              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
-            </animation>
-            <animation type="Unfocus">
-              <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-              <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
-            </animation>
+						<texture border="30">views/other/focus_blue.png</texture>
+	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
 			</control>
 
 			<control type="group">
-				<left>24</left>
-			  <top>592</top>
-			  <visible>Control.IsVisible(560)</visible>
+				<left>23</left>
+			  <top>590</top>
 			  <visible>!Skin.HasSetting(ThumbnailShowInfo)</visible>
+			  <visible>Control.IsVisible(561)</visible>
 				<control type="label">
-					<left>20</left>
+					<left>24</left>
+					<top>0</top>
+					<width>640</width>
+					<height>30</height>
+					<font>FontSize_26B</font>
+					<textcolor>bbwhite</textcolor>
+	        <shadowcolor>99000000</shadowcolor>
+					<align>left</align>
+			    <label>↚</label>
+          <visible>Stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="label">
+					<left>24</left>
 					<top>0</top>
 					<height>30</height>
 					<width>900</width>
@@ -2615,12 +2767,13 @@
 					<font>FontSize_26B</font>
 		      <scroll>false</scroll>
 					<align>left</align>
-					<label>$VAR[ListItem.label]</label>
+					<label>$INFO[ListItem.label]</label>
+          <visible>!Stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<!-- Small Down Info -->
 			  <control type="group">
-					<left>1174</left>
-					<top>5</top>
+					<left>1177</left>
+					<top>7</top>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -2638,7 +2791,7 @@
 						<height>22</height>
 		        <colordiffuse>bbwhite</colordiffuse>
 				    <aspectratio align="right" aligny="center">stretch</aspectratio>
-						<texture background="true">flags/sets/sets.png</texture>
+						<texture>flags/sets/sets.png</texture>
 						<visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
 					</control>
 					<control type="image">
@@ -2648,7 +2801,7 @@
 						<height>22</height>
 				    <colordiffuse>bbwhite</colordiffuse>
 				    <aspectratio align="right" aligny="center">stretch</aspectratio>
-						<texture background="true">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
+						<texture fallback="flags/mpaa/tv/tv-na.png">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
 						<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.mpaa)</visible>
 					</control>
 					<control type="label">
@@ -2657,8 +2810,8 @@
 						<height>20</height>
 						<width>600</width>
 						<textcolor>bbwhite</textcolor>
-		        <shadowcolor>99000000</shadowcolor>
-						<font>FontSize_26B</font>
+		        <shadowcolor>77000000</shadowcolor>
+						<font>FontSize_24B</font>
 			      <scroll>false</scroll>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -2671,15 +2824,15 @@
 			</control>
 
 			<control type="group">
-				<left>893</left>
+				<left>900</left>
 				<top>100</top>
-			  <visible>Control.IsVisible(560)</visible>
 			  <visible>Skin.HasSetting(ThumbnailShowInfo)</visible>
+			  <visible>Control.IsVisible(561)</visible>
 				<control type="image">
-					<width>357</width>
-					<height>498</height>
+					<width>335</width>
+					<height>484</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture border="30">views/thumbnails/thumb_panel.png</texture>
+					<texture border="5">views/other/panel.png</texture>
 				</control>
 				<control type="image">
 					<left>65</left>
@@ -2691,29 +2844,30 @@
 					<visible>stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<left>30</left>
-					<top>25</top>
-					<width>300</width>
-					<label>$VAR[ListItem.Label]</label>
+					<left>13</left>
+					<top>10</top>
+					<width>305</width>
+					<label>$INFO[ListItem.Label]</label>
 					<font>FontSize_26</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>77000000</shadowcolor>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<left>30</left>
-					<top>50</top>
-					<width>300</width>
+					<left>13</left>
+					<top>35</top>
+					<width>305</width>
 					<label>$INFO[ListItem.Genre]</label>
-					<font>FontSize_22</font>
+					<font>FontSize_20</font>
 					<textcolor>aawhite</textcolor>
 					<shadowcolor>77000000</shadowcolor>
 				  <scroll>false</scroll>
 				</control>
 				<!-- Small Down Info -->
 			  <control type="group">
-					<left>30</left>
-					<top>446</top>
+					<left>13</left>
+					<top>450</top>
+					<visible>!stringcompare(ListItem.Label,..)</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -2731,7 +2885,7 @@
 						<height>22</height>
 		        <colordiffuse>77white</colordiffuse>
 				    <aspectratio align="left" aligny="center">stretch</aspectratio>
-						<texture background="true">flags/sets/sets.png</texture>
+						<texture>flags/sets/sets.png</texture>
 						<visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
 					</control>
 					<control type="image">
@@ -2741,7 +2895,7 @@
 						<height>22</height>
 				    <colordiffuse>77white</colordiffuse>
 				    <aspectratio align="left" aligny="center">stretch</aspectratio>
-						<texture background="true">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
+						<texture fallback="flags/mpaa/tv/tv-na.png">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
 						<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.mpaa)</visible>
 					</control>
 					<control type="label">
@@ -2763,177 +2917,30 @@
 			  </control>
 				<control type="textbox">
 					<description>Plot</description>
-					<left>30</left>
-					<top>93</top>
-					<width>295</width>
-					<height>330</height>
+					<left>13</left>
+					<top>75</top>
+					<width>308</width>
+					<height>355</height>
 					<font>FontSize_20</font>
 					<align>justify</align>
 					<textcolor>aawhite</textcolor>
 					<shadowcolor>77000000</shadowcolor>
-					<label>$INFO[ListItem.Plot]</label>
+					<label fallback="195">$INFO[ListItem.Plot]</label>
 					<autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
-			</control>
-			<control type="scrollbar" id="60">
-				<right>30</right>
-				<top>117</top>
-				<width>9</width>
-				<height>460</height>
-				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
-				<onleft>560</onleft>
-				<onright>9111</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-				<visible>Control.IsVisible(560)</visible>
-			</control>
-		</control>
-	</include>
-
-
-
-	<!-- ================================================== -->
-	<!-- ==== Thumbnails View Videos - Landscape "561" ==== -->
-	<!-- ================================================== -->
-	<include name="ThumbnailsView_Videos_Landscape">
-		<control type="group">
-			<visible>Control.IsVisible(561)</visible>
-	    <include>DialogZoomInOutAnimation</include>
-	    <include>ThumbnailsAnimations</include>
-			<control type="panel" id="561">
-				<left>30</left>
-				<top>90</top>
-				<height>545</height>
-        <width>1227</width>
-				<onleft>9111</onleft>
-				<onright>60</onright>
-				<onup>561</onup>
-				<ondown>561</ondown>
-				<viewtype label="31085">list</viewtype>
-	      <orientation>vertical</orientation>
-				<pagecontrol>60</pagecontrol>
-        <scrolltime tween="Quadratic" easing="out">300</scrolltime>
-				<preloaditems>2</preloaditems>
-			  <visible>[Container.Content(Episodes) | substring(Container.FolderPath,plugin://plugin.video.youtube)]</visible>
-				<itemlayout height="180" width="241">
-					<control type="image">
-						<left>-2</left>
-						<top>-7</top>
-						<width>260</width>
-						<height>199</height>
-						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture background="true" border="30">views/thumbnails/thumb_panel.png</texture>
-					</control>
-					<control type="image">
-						<left>22</left>
-						<top>17</top>
-						<width>212</width>
-						<height>127</height>
-						<aspectratio align="center" aligny="center">scale</aspectratio>
-					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$INFO[ListItem.Art(thumb)]</texture>
-						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
-					  <bordersize>6</bordersize>
-					</control>
-					<control type="image">
-						<left>22</left>
-						<top>17</top>
-						<width>212</width>
-						<height>127</height>
-						<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
-						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<bordersize>6</bordersize>
-            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-					</control>
-					<control type="label">
-						<left>128</left>
-						<top>138</top>
-						<width>213</width>
-						<height>35</height>
-						<textcolor>99white</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-						<font>FontSize_20</font>
-						<scroll>false</scroll>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="180" width="241">
-					<control type="image">
-						<left>-2</left>
-						<top>-7</top>
-						<width>260</width>
-						<height>199</height>
-						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture background="true" border="30">views/thumbnails/thumb_panel.png</texture>
-					</control>
-					<control type="image">
-						<left>22</left>
-						<top>17</top>
-						<width>212</width>
-						<height>127</height>
-						<aspectratio align="center" aligny="center">scale</aspectratio>
-					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$INFO[ListItem.Art(thumb)]</texture>
-						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
-					  <bordersize>6</bordersize>
-					</control>
-					<control type="image">
-						<left>22</left>
-						<top>17</top>
-						<width>212</width>
-						<height>127</height>
-						<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
-						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<bordersize>6</bordersize>
-            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
-					</control>
-					<control type="label">
-						<left>128</left>
-						<top>138</top>
-						<width>213</width>
-						<height>35</height>
-						<textcolor>blue</textcolor>
-						<shadowcolor>99000000</shadowcolor>
-						<font>FontSize_20</font>
-						<scrollspeed>35</scrollspeed>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="image">
-						<left>-2</left>
-						<top>-7</top>
-						<width>260</width>
-						<height>199</height>
-						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture background="true" border="30">views/thumbnails/focus.png</texture>
-            <animation type="Focus">
-              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
-            </animation>
-            <animation type="Unfocus">
-              <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-              <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
-            </animation>
-					</control>
-				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
 				<right>30</right>
 				<top>100</top>
 				<width>9</width>
-				<height>525</height>
+				<height>483</height>
 				<texturesliderbackground>-</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">views/scrollbar/scrollbar.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
-				<onleft>560</onleft>
+				<onleft>561</onleft>
 				<onright>9111</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
@@ -2942,6 +2949,13 @@
 			</control>
 		</control>
 	</include>
+
+  <include name="VideoThumbnailsNoInfoWidth">
+    <width>1200</width>
+  </include>
+  <include name="VideoThumbnailsInfoWidth">
+    <width>855</width>
+  </include>
 
 
 	<!-- =========================== -->
@@ -3015,13 +3029,14 @@
 				<focusedlayout condition="![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]" width="560" height="260">
 					<control type="group">
 				    <include>BannerListFocusAnimation</include>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>741</width>
-							<height>252</height>
-				      <texture>dialogs/global_search/banner_panel.png</texture>
-						</control>
+    				<control type="image">
+    					<left>-10</left>
+    					<top>-10</top>
+    					<width>761</width>
+    					<height>273</height>
+    					<aspectratio align="center" aligny="center">stretch</aspectratio>
+    					<texture background="true" border="39">dialogs/other/default.png</texture>
+    				</control>
 						<control type="image">
 							<left>21</left>
 							<top>21</top>
@@ -3131,13 +3146,14 @@
 				<focusedlayout condition="Container.Content(TVShows) | Container.Content(Seasons)" width="560" height="260">
 					<control type="group">
 				    <include>BannerListFocusAnimation</include>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>741</width>
-							<height>252</height>
-				      <texture>dialogs/global_search/banner_panel.png</texture>
-						</control>
+    				<control type="image">
+    					<left>-10</left>
+    					<top>-10</top>
+    					<width>761</width>
+    					<height>273</height>
+    					<aspectratio align="center" aligny="center">stretch</aspectratio>
+    					<texture background="true" border="39">dialogs/other/default.png</texture>
+    				</control>
 						<control type="image">
 							<left>23</left>
 							<top>22</top>
@@ -3223,13 +3239,14 @@
 				<focusedlayout condition="Container.Content(Episodes)" width="560" height="260">
 					<control type="group">
 				    <include>BannerListFocusAnimation</include>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>741</width>
-							<height>252</height>
-				      <texture>dialogs/global_search/banner_panel.png</texture>
-						</control>
+    				<control type="image">
+    					<left>-10</left>
+    					<top>-10</top>
+    					<width>761</width>
+    					<height>273</height>
+    					<aspectratio align="center" aligny="center">stretch</aspectratio>
+    					<texture background="true" border="39">dialogs/other/default.png</texture>
+    				</control>
 						<control type="image">
 							<left>23</left>
 							<top>23</top>
@@ -3343,6 +3360,7 @@
 			</control>
 		</control>
 	</include>		
+
 
 	<!-- ===================================== -->
 	<!-- ==== VideoWall Fanart View "580" ==== -->

@@ -35,7 +35,7 @@
 		<textcolor>77white</textcolor>
 		<focusedcolor>white</focusedcolor>
 	  <disabledcolor>33white</disabledcolor>
-		<texturefocus>buttons/settings_fo.png</texturefocus>
+		<texturefocus>buttons/focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textoffsetx>7</textoffsetx>
 		<align>left</align>
@@ -64,7 +64,7 @@
 		<textcolor>77white</textcolor>
 		<focusedcolor>white</focusedcolor>
 	  <disabledcolor>33white</disabledcolor>
-		<texturefocus>buttons/settings_fo.png</texturefocus>
+		<texturefocus>buttons/focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textureradioonfocus>buttons/radio_button_on.png</textureradioonfocus>
 		<textureradioonnofocus>buttons/radio_button_on.png</textureradioonnofocus>
@@ -101,7 +101,7 @@
 		<textcolor>77white</textcolor>
 		<focusedcolor>white</focusedcolor>
 	  <disabledcolor>33white</disabledcolor>
-		<texturefocus>buttons/settings_fo.png</texturefocus>
+		<texturefocus>buttons/focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textureup>buttons/arrow_up_nf.png</textureup>
 		<texturedown>buttons/arrow_down_nf.png</texturedown>
@@ -123,7 +123,7 @@
 		<textcolor>77white</textcolor>
 		<focusedcolor>white</focusedcolor>
 	  <disabledcolor>33white</disabledcolor>
-		<texturefocus>buttons/settings_fo.png</texturefocus>
+		<texturefocus>buttons/focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textureup>buttons/arrow_up_nf.png</textureup>
 		<texturedown>buttons/arrow_down_nf.png</texturedown>
@@ -142,7 +142,7 @@
 		<textcolor>77white</textcolor>
 		<focusedcolor>white</focusedcolor>
 	  <disabledcolor>33white</disabledcolor>
-		<texturefocus>buttons/settings_fo.png</texturefocus>
+		<texturefocus>buttons/focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<texturesliderbar>osd/osd_slider_bg.png</texturesliderbar>
 		<textureslidernib>osd/osd_slider_nib_nf.png</textureslidernib>
@@ -172,17 +172,17 @@
 		<controloffsety>0</controloffsety>
 	</default>
 	<default type="mover">
-		<texturefocus>buttons/settings_fo.png</texturefocus>
+		<texturefocus>buttons/focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 	</default>
 	<default type="resize">
-		<texturefocus>buttons/settings_fo.png</texturefocus>
+		<texturefocus>buttons/focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 	</default>
 	<default type="edit">
 		<width>300</width>
 		<height>42</height>
-		<texturefocus>buttons/settings_fo.png</texturefocus>
+		<texturefocus>buttons/focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<font>FontSize_18</font>
 		<textcolor>white</textcolor>

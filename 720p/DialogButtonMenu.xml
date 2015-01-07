@@ -23,7 +23,7 @@
 				<description>Exit button</description>
 			  <include>TopLeftMenusButton</include>
 				<onclick>XBMC.Quit()</onclick>
-				<label>$LOCALIZE[13012] XBMC</label>
+				<label>$LOCALIZE[13012]</label>
 				<visible>System.ShowExitButton</visible>
 			</control>
 			<control type="button" id="2">

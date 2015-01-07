@@ -18,7 +18,7 @@
       <animation effect="fade" time="300" start="0" end="100" tween="sine" easing="out">Visible</animation>
       <animation effect="fade" time="300" start="100" end="0" tween="sine" easing="in">Hidden</animation>
 	    <include>FullscreenDimensions</include>
-		  <texture background="true" diffuse="osd/quicknav/fanart_diffuse.png">$VAR[QuickNavWidgetsFanart]</texture>
+		  <texture background="true" diffuse="osd/quicknav/fanart_diffuse.png">$VAR[QuickNavWidgetFanart]</texture>
 			<fadetime>FanartCrossfadeTime</fadetime>
 		  <visible>!Skin.HasSetting(HideBGFanart)</visible>
 		</control>
@@ -35,13 +35,12 @@
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-			    <description>background image</description>
-					<left>268</left>
-					<top>230</top>
-					<width>745</width>
-					<height>256</height>
+					<left>272</left>
+					<top>219</top>
+					<width>737</width>
+					<height>277</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture background="true">osd/quicknav/bg_quicknav.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -112,9 +111,9 @@
 						  <bordersize>6</bordersize>
 						</control>
 						<control type="label">
-							<left>118</left>
+							<left>-30</left>
 							<top>168</top>
-							<width>275</width>
+							<width>295</width>
 							<height>35</height>
 							<textcolor>blue</textcolor>
 							<shadowcolor>99000000</shadowcolor>
@@ -151,6 +150,7 @@
 					</focusedlayout>
 		      <content>
 		        <include>QuickNavContent</include>
+		        <include>CustomItems</include>
 		      </content>
 				</control>
 				<control type="image">
@@ -171,20 +171,19 @@
       <!-- Movies -->
 			<control type="group">
 			  <include>QuickNavMoviesWidgetAnimation</include>
-		    <visible allowhiddenfocus="true">Control.HasFocus(200) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(BusyDialog)</visible>
+		    <visible allowhiddenfocus="true">Control.HasFocus(200) + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-			    <description>background image</description>
-					<left>250</left>
-					<top>230</top>
-					<width>781</width>
-					<height>272</height>
+					<left>244</left>
+					<top>216</top>
+					<width>793</width>
+					<height>290</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture border="30" background="true">osd/quicknav/bg_quicknav.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header title</description>
@@ -274,16 +273,15 @@
 			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),1)">QuickNav_RecentMoviesContent</include>
 			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),2)">QuickNav_RecommendedMoviesContent</include>
 			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),3)">QuickNav_RandomMoviesContent</include>
-			      </content> -->
-			      <content>$VAR[QuickNav_WidgetListContentMovies]
 			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),4)">QuickNav_InCinemasMoviesContent</include>
 			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),5)">QuickNav_TrendingMoviesContent</include>
-			      </content>
+			      </content> -->
+			      <content>$VAR[QuickNav_WidgetListContentMovies]</content>
 				</control>
 				<control type="button">
 					<left>288</left>
-					<top>448</top>
-        	<width>710</width>
+					<top>445</top>
+        	<width>707</width>
 					<height>35</height>
 					<font>FontSize_22</font>
 					<textcolor>bbwhite</textcolor>
@@ -315,20 +313,19 @@
       <!-- TVShows -->
 			<control type="group">
 			  <include>QuickNavTVShowsWidgetAnimation</include>
-		    <visible allowhiddenfocus="true">Control.HasFocus(250) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(BusyDialog)</visible>
+		    <visible allowhiddenfocus="true">Control.HasFocus(250) + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-			    <description>background image</description>
-					<left>250</left>
-					<top>230</top>
-					<width>781</width>
-					<height>272</height>
+					<left>244</left>
+					<top>216</top>
+					<width>793</width>
+					<height>290</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture border="30" background="true">osd/quicknav/bg_quicknav.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -375,7 +372,7 @@
 							<width>115</width>
 							<height>170</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetsTVShowsThumbs]</texture>
+						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetTVShowsThumb]</texture>
 						  <bordersize>5</bordersize>
 						</control>
 					</itemlayout>
@@ -394,7 +391,7 @@
 							<width>115</width>
 							<height>170</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetsTVShowsThumbs]</texture>
+						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetTVShowsThumb]</texture>
 						  <bordersize>5</bordersize>
 						</control>
 						<control type="image">
@@ -415,18 +412,17 @@
 						</control>
 					</focusedlayout>
 			      <!-- <content>
-			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),1)">QuickNav_RecentTVShowsContent</include>
-			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),2)">QuickNav_RecommendedTVShowsContent</include>
-			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),3)">QuickNav_RandomTVShowsContent</include>
-			      </content> -->
-			      <content>$VAR[QuickNav_WidgetListContentTVShows]
+			        <include condition="stringcompare(Skin.String(QuickNavWidgetTVShowsType),1)">QuickNav_RecentTVShowsContent</include>
+			        <include condition="stringcompare(Skin.String(QuickNavWidgetTVShowsType),2)">QuickNav_RecommendedTVShowsContent</include>
+			        <include condition="stringcompare(Skin.String(QuickNavWidgetTVShowsType),3)">QuickNav_RandomTVShowsContent</include>
 			        <include condition="stringcompare(Skin.String(QuickNavWidgetTVShowsType),4)">QuickNav_TrendingTVShowsContent</include>
-			      </content>
+			      </content> -->
+			      <content>$VAR[QuickNav_WidgetListContentTVShows]</content>
 				</control>
 				<control type="button">
 					<left>288</left>
-					<top>448</top>
-        	<width>710</width>
+					<top>445</top>
+        	<width>707</width>
 					<height>35</height>
 					<font>FontSize_22</font>
 					<textcolor>bbwhite</textcolor>
@@ -458,20 +454,19 @@
       <!-- Music -->
 			<control type="group">
 			  <include>QuickNavMusicWidgetAnimation</include>
-		    <visible allowhiddenfocus="true">Control.HasFocus(300) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(BusyDialog)</visible>
+		    <visible allowhiddenfocus="true">Control.HasFocus(300) + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-			    <description>background image</description>
-					<left>240</left>
-					<top>230</top>
-					<width>800</width>
-					<height>256</height>
+					<left>235</left>
+					<top>217</top>
+					<width>809</width>
+					<height>275</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture border="30" background="true">osd/quicknav/bg_quicknav.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -579,18 +574,17 @@
 						</control>
 					</focusedlayout>
 			      <!-- <content>
-			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),1)">QuickNav_RecentMusicContent</include>
-			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),2)">QuickNav_RecommendedMusicContent</include>
-			        <include condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),3)">QuickNav_RandomMusicContent</include>
-			      </content> -->
-			      <content>$VAR[QuickNav_WidgetListContentMusic]
+			        <include condition="stringcompare(Skin.String(QuickNavWidgetMusicType),1)">QuickNav_RecentMusicContent</include>
+			        <include condition="stringcompare(Skin.String(QuickNavWidgetMusicType),2)">QuickNav_RecommendedMusicContent</include>
+			        <include condition="stringcompare(Skin.String(QuickNavWidgetMusicType),3)">QuickNav_RandomMusicContent</include>
 			        <include condition="stringcompare(Skin.String(QuickNavWidgetMusicType),4)">QuickNav_TopArtistsContent</include>
-			      </content>
+			      </content> -->
+			      <content>$VAR[QuickNav_WidgetListContentMusic]</content>
 				</control>
 				<control type="button">
 					<left>280</left>
-					<top>433</top>
-        	<width>720</width>
+					<top>430</top>
+        	<width>722</width>
 					<height>35</height>
 					<font>FontSize_22</font>
 					<textcolor>bbwhite</textcolor>
@@ -623,20 +617,19 @@
       <!-- Video Feeds -->
 			<control type="group">
 			  <include>QuickNavMiscWidgetAnimation</include>
-		    <visible allowhiddenfocus="true">Control.HasFocus(350) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(BusyDialog) + !Window.IsVisible(ProgressDialog)</visible>
+		    <visible allowhiddenfocus="true">Control.HasFocus(350) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(ProgressDialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-			    <description>background image</description>
-					<left>240</left>
-					<top>230</top>
-					<width>800</width>
-					<height>256</height>
+					<left>235</left>
+					<top>217</top>
+					<width>809</width>
+					<height>280</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-		      <texture background="true">osd/quicknav/bg_quicknav.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -742,7 +735,7 @@
 				</control>
 				<control type="button">
 					<left>280</left>
-					<top>433</top>
+					<top>435</top>
         	<width>720</width>
 					<height>35</height>
 					<font>FontSize_22</font>
@@ -775,26 +768,44 @@
       <!-- Mini Player -->
 			<control type="group">
 			  <include>QuickNavMiniPlayerAnimation</include>
-		    <visible allowhiddenfocus="true">ControlGroup(100).HasFocus + Player.HasMedia + !Window.IsVisible(BusyDialog)</visible>
+		    <visible allowhiddenfocus="true">ControlGroup(100).HasFocus + Player.HasMedia</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-					<include>FullscreenDimensions</include>
-					<texture background="true">osd/miniplayer/bg_music.png</texture>
+					<left>262</left>
+					<top>223</top>
+					<width>759</width>
+					<height>270</height>
+					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 					<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="image">
 					<include>FullscreenDimensions</include>
-					<texture background="true">osd/miniplayer/bg_videos.png</texture>
+					<texture background="true">osd/miniplayer/np_music.png</texture>
+					<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
+				</control>
+				<control type="image">
+					<left>262</left>
+					<top>223</top>
+					<width>771</width>
+					<height>270</height>
+					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
+					<visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
+				</control>
+				<control type="image">
+					<include>FullscreenDimensions</include>
+					<texture background="true">osd/miniplayer/np_videos.png</texture>
 					<visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="label">
 			    <description>header label</description>
 					<left>290</left>
-					<top>185</top>
+					<top>190</top>
 					<height>50</height>
 					<width>705</width>
 					<font>FontSize_40</font>
