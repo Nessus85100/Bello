@@ -134,12 +134,12 @@
   <!-- =========== -->
   <!-- Backgrounds -->
   <!-- =========== -->
-  <backgroundBrowse default="special://skin/extras/bg/defaults/">True</backgroundBrowse>
-  <background label="Fanart Movies" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</background>
-  <background label="Fanart TV Shows" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</background>
-  <background label="Fanart Videos" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</background>
-  <background label="Fanart Music" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</background>
-  <background label="Fanart Mixed" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</background>
+  <backgroundBrowse default="special://skin/extras/backgrounds/">True</backgroundBrowse>
+  <background label="Movies Fanart" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</background>
+  <background label="TV Shows Fanart" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</background>
+  <background label="Videos Fanart" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</background>
+  <background label="Music Fanart" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</background>
+  <background label="Mixed Fanart" condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</background>
 
 
   <!-- =============== -->

@@ -554,13 +554,10 @@
 			<visible>Control.IsVisible(51)</visible>
 	    <include>DialogZoomInOutAnimation</include>
 	    <include>CommonSlideAnimations</include>
-		  <control type="group">
-			  <visible>Control.IsVisible(51)</visible>
-				<control type="image">
-			    <include>FullscreenDimensions</include>
-					<texture background="true">views/slide/top_bottom_shadows_videos.png</texture>
-				</control>
-		  </control>
+			<control type="image">
+		    <include>FullscreenDimensions</include>
+				<texture background="true">views/slide/top_bottom_shadows_videos.png</texture>
+			</control>
 	
 			<control type="wraplist" id="51">
 				<left>-192</left>
@@ -583,6 +580,7 @@
 					<control type="image">
 						<width>238</width>
 						<height>340</height>
+		        <colordiffuse>FFbbbbbb</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 						<texture background="true" diffuse="views/slide/poster_diffuse_nf.png" fallback="thumbs/fallback_poster_big.png">$VAR[VarArtPoster]</texture>
 					</control>
@@ -776,7 +774,7 @@
 	    <include>CommonSlideAnimations</include>
 			<control type="image">
 		    <include>FullscreenDimensions</include>
-				<texture>views/gallery/top_bottom_shadows.png</texture>
+				<texture background="true">views/gallery/top_bottom_shadows.png</texture>
 			</control>
 			<control type="image">
 				<left>-50</left>
@@ -812,7 +810,7 @@
 						<height>380</height>
 						<align>left</align>
 						<aspectratio>stretch</aspectratio>
-					  <texture background="true" border="25">dialogs/other/iconborder_black.png</texture>
+						<texture border="20">thumbs/thumb_border.png</texture>
 					</control>
 					<control type="image">
 						<left>54</left>
@@ -868,7 +866,7 @@
 							<width>675</width>
 							<height>380</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
-							<texture background="true" border="20">dialogs/other/iconborder_black.png</texture>
+							<texture background="true" border="6">thumbs/thumb_border.png</texture>
 						</control>
 						<control type="image">
 							<width>675</width>
@@ -2170,7 +2168,7 @@
 							<width>325</width>
 							<height>460</height>
 							<aspectratio aligny="center" align="center">stretch</aspectratio>
-		          <texture background="true">views/posters/poster_overlay.png</texture>
+		          <texture background="true" border="1">views/posters/poster_overlay.png</texture>
 							<bordersize>34</bordersize>
 						</control>
 						<control type="image">
@@ -2253,7 +2251,7 @@
 						<width>231</width>
 						<height>159</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -2262,6 +2260,7 @@
 						<height>151</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[VarArtThumb]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -2303,7 +2302,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -2311,7 +2310,8 @@
 						<width>223</width>
 						<height>232</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+					  <texture background="true" fallback="thumbs/fallback_square.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -2339,9 +2339,9 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>160</height>
+						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -2349,7 +2349,8 @@
 						<width>155</width>
 						<height>150</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+					  <texture background="true" fallback="thumbs/fallback_square.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -2380,7 +2381,7 @@
 						<width>231</width>
 						<height>159</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -2389,6 +2390,7 @@
 						<height>151</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[VarArtThumb]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -2430,7 +2432,7 @@
 						<width>231</width>
 						<height>159</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/focus_blue.png</texture>
+						<texture border="31">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -2441,16 +2443,16 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>223</width>
 						<height>232</height>
-						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+					  <texture background="true" fallback="thumbs/fallback_square.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -2478,7 +2480,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/focus_blue.png</texture>
+						<texture border="31">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -2487,18 +2489,18 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>160</height>
+						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>155</width>
 						<height>150</height>
-						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+					  <texture background="true" fallback="thumbs/fallback_square.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -2526,7 +2528,7 @@
 						<width>163</width>
 						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/focus_blue.png</texture>
+						<texture border="31">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -2554,6 +2556,7 @@
 			<control type="group">
 			  <top>599</top>
 				<visible>Container.Content(Episodes)</visible>
+			  <visible>Control.IsVisible(560)</visible>
 				<control type="label">
 					<left>47</left>
 					<top>0</top>
@@ -2678,7 +2681,7 @@
 						<width>163</width>
 						<height>238</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -2687,6 +2690,7 @@
 						<height>230</height>
 						<aspectratio aligny="center" align="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[VarArtPoster]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -2707,7 +2711,7 @@
 						<width>163</width>
 						<height>238</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -2716,6 +2720,7 @@
 						<height>230</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[VarArtPoster]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -2734,7 +2739,7 @@
 						<width>163</width>
 						<height>238</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/focus_blue.png</texture>
+						<texture border="31">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -3016,7 +3021,7 @@
 						<visible>Container.Content(Episodes)</visible>
 					</control>
 					<control type="image">
-						<left>580</left>
+						<left>585</left>
 						<top>15</top>
 						<width>128</width>
 						<height>22</height>
@@ -3029,37 +3034,30 @@
 				<focusedlayout condition="![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]" width="560" height="260">
 					<control type="group">
 				    <include>BannerListFocusAnimation</include>
-    				<control type="image">
-    					<left>-10</left>
-    					<top>-10</top>
-    					<width>761</width>
-    					<height>273</height>
-    					<aspectratio align="center" aligny="center">stretch</aspectratio>
-    					<texture background="true" border="39">dialogs/other/default.png</texture>
-    				</control>
+		        <include>BannersView_Panel</include>
 						<control type="image">
-							<left>21</left>
-							<top>21</top>
-							<width>145</width>
-							<height>210</height>
+							<left>18</left>
+							<top>18</top>
+							<width>153</width>
+							<height>217</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
 							<texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[VarArtPoster]</texture>
-							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
+							<bordertexture border="20">thumbs/thumb_border.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
-							<left>21</left>
-							<top>21</top>
-							<width>145</width>
-							<height>210</height>
+							<left>17</left>
+							<top>17</top>
+							<width>153</width>
+							<height>219</height>
 							<texture background="true">overlays/unwatched/thumbs/UnWatched_Poster.png</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordersize>6</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 						</control>
 						<control type="image">
-							<left>580</left>
-							<top>202</top>
+							<left>585</left>
+							<top>207</top>
 							<width>128</width>
 							<height>22</height>
 						  <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
@@ -3067,7 +3065,7 @@
 		          <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
-							<left>175</left>
+							<left>180</left>
 							<top>22</top>
 							<width>535</width>
 							<font>FontSize_26</font>
@@ -3078,7 +3076,7 @@
 		          <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
-							<left>175</left>
+							<left>180</left>
 							<top>45</top>
 							<width>525</width>
 							<font>FontSize_20</font>
@@ -3089,11 +3087,11 @@
 							<label>$VAR[GlobalInfo]</label>
 						</control>
 						<control type="textbox">
-							<left>175</left>
-							<top>77</top>
-							<width>533</width>
-							<height>110</height>
-							<font>FontSize_20</font>
+							<left>180</left>
+							<top>73</top>
+							<width>535</width>
+							<height>120</height>
+							<font>TextboxFont_20</font>
 							<textcolor>99white</textcolor>
 				      <shadowcolor>99000000</shadowcolor>
 						  <align>justify</align>
@@ -3103,8 +3101,8 @@
 						</control>
 						<!-- Small Down Info -->
 					  <control type="group">
-							<left>175</left>
-							<top>202</top>
+							<left>180</left>
+							<top>207</top>
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
@@ -3146,36 +3144,29 @@
 				<focusedlayout condition="Container.Content(TVShows) | Container.Content(Seasons)" width="560" height="260">
 					<control type="group">
 				    <include>BannerListFocusAnimation</include>
-    				<control type="image">
-    					<left>-10</left>
-    					<top>-10</top>
-    					<width>761</width>
-    					<height>273</height>
-    					<aspectratio align="center" aligny="center">stretch</aspectratio>
-    					<texture background="true" border="39">dialogs/other/default.png</texture>
-    				</control>
+		        <include>BannersView_Panel</include>
 						<control type="image">
-							<left>23</left>
-							<top>22</top>
-							<width>695</width>
-							<height>120</height>
-							<aspectratio align="center" aligny="center">stretch</aspectratio>
+							<left>18</left>
+							<top>18</top>
+							<width>705</width>
+							<height>123</height>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
 							<texture background="true" fallback="thumbs/fallback_banner_tp.png">$VAR[VarArtBanner]</texture>
-							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
+							<bordertexture border="20">thumbs/thumb_border.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
-							<left>23</left>
-							<top>22</top>
-							<width>695</width>
-							<height>120</height>
+							<left>18</left>
+							<top>18</top>
+							<width>705</width>
+							<height>123</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture background="true">overlays/unwatched/banners/UnWatched_Banner.png</texture>
 							<bordersize>6</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 						</control>
 						<control type="image">
-							<left>580</left>
+							<left>585</left>
 							<top>205</top>
 							<width>128</width>
 							<height>22</height>
@@ -3184,7 +3175,7 @@
 		          <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
-							<left>30</left>
+							<left>25</left>
 							<top>143</top>
 							<width>690</width>
 							<font>FontSize_26</font>
@@ -3194,7 +3185,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>30</left>
+							<left>25</left>
 							<top>165</top>
 							<width>690</width>
 							<font>FontSize_20</font>
@@ -3206,7 +3197,7 @@
 						</control>
 						<!-- Small Down Info -->
 					  <control type="group">
-							<left>30</left>
+							<left>25</left>
 							<top>205</top>
 							<control type="image">
 								<left>0</left>
@@ -3239,37 +3230,30 @@
 				<focusedlayout condition="Container.Content(Episodes)" width="560" height="260">
 					<control type="group">
 				    <include>BannerListFocusAnimation</include>
-    				<control type="image">
-    					<left>-10</left>
-    					<top>-10</top>
-    					<width>761</width>
-    					<height>273</height>
-    					<aspectratio align="center" aligny="center">stretch</aspectratio>
-    					<texture background="true" border="39">dialogs/other/default.png</texture>
-    				</control>
+		        <include>BannersView_Panel</include>
 						<control type="image">
-							<left>23</left>
-							<top>23</top>
-							<width>280</width>
-							<height>170</height>
+							<left>18</left>
+							<top>18</top>
+							<width>290</width>
+							<height>182</height>
 							<aspectratio align="center" aligny="top">scale</aspectratio>
 							<texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[VarArtThumb]</texture>
-							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
+							<bordertexture border="20">thumbs/thumb_border.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
-							<left>23</left>
-							<top>23</top>
-							<width>280</width>
-							<height>170</height>
+							<left>18</left>
+							<top>18</top>
+							<width>290</width>
+							<height>182</height>
 							<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordersize>6</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
 						</control>
 						<control type="image">
-							<left>580</left>
-							<top>205</top>
+							<left>585</left>
+							<top>207</top>
 							<width>128</width>
 							<height>22</height>
 						  <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
@@ -3277,8 +3261,8 @@
 		          <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
-							<left>310</left>
-							<top>25</top>
+							<left>315</left>
+							<top>22</top>
 							<width>405</width>
 							<font>FontSize_26</font>
 							<textcolor>white</textcolor>
@@ -3287,8 +3271,8 @@
 							<label>$VAR[ListItem.Title]</label>
 						</control>
 						<control type="label">
-							<left>310</left>
-							<top>50</top>
+							<left>315</left>
+							<top>47</top>
 							<width>400</width>
 							<font>FontSize_20</font>
 							<textcolor>99white</textcolor>
@@ -3298,11 +3282,11 @@
 					    <label>$INFO[ListItem.TVShowTitle] $INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</label>
 						</control>
 						<control type="textbox">
-							<left>310</left>
-							<top>80</top>
-							<width>398</width>
-							<height>110</height>
-							<font>FontSize_20</font>
+							<left>315</left>
+							<top>76</top>
+							<width>400</width>
+							<height>120</height>
+							<font>TextboxFont_20</font>
 							<textcolor>99white</textcolor>
 				      <shadowcolor>99000000</shadowcolor>
 						  <align>justify</align>
@@ -3311,8 +3295,8 @@
 						</control>
 						<!-- Small Down Info -->
 					  <control type="group">
-							<left>30</left>
-							<top>205</top>
+							<left>25</left>
+							<top>207</top>
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
@@ -3518,7 +3502,7 @@
 				<width>310</width>
 				<height>120</height>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
-				<texture background="true" fallback="thumbs/fallback_episode_tp.png">$VAR[VideoWallThumb]</texture>
+				<texture background="true">$VAR[VideoWallThumb]</texture>
 			</control>
 			<control type="scrollbar" id="60">
 				<left>20</left>

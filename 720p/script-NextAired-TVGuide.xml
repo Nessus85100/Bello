@@ -36,57 +36,58 @@
 			<!-- Preview Thumbs -->
 			<control type="image">
 				<description>BlackBorder</description>
-				<left>63</left>
-				<top>140</top>
+				<left>60</left>
+				<top>138</top>
 				<width>295</width>
-				<height>165</height>
+				<height>168</height>
 				<aspectratio aligny="center" align="center">stretch</aspectratio>
-				<texture background="true" border="39">dialogs/other/iconborder_black.png</texture>
+				<texture background="true" border="39">thumbs/thumb_border.png</texture>
 			</control>
 			<control type="image">
 				<description>Landscape Preview Thumb</description>
-				<left>63</left>
-				<top>140</top>
+				<left>60</left>
+				<top>138</top>
 				<width>295</width>
-				<height>166</height>
-        <fadetime>100</fadetime>
+				<height>168</height>
+        <fadetime>IconCrossfadeTime</fadetime>
 				<aspectratio aligny="center" align="center">stretch</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[TVGuideLandscape]</texture>
-				<bordersize>7</bordersize>
+				<bordersize>6</bordersize>
 				<visible>Stringcompare(Skin.String(PreviewThumb),1)</visible>
 			</control>
 			<control type="image">
 				<description>ClearLogo Preview Thumb</description>
-				<left>90</left>
-				<top>175</top>
-				<width>245</width>
-				<height>95</height>
-        <fadetime>100</fadetime>
+				<left>60</left>
+				<top>138</top>
+				<width>295</width>
+				<height>168</height>
+        <fadetime>IconCrossfadeTime</fadetime>
 				<aspectratio aligny="center" align="center">keep</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[TVGuideLogo]</texture>
+				<bordersize>20</bordersize>
 				<visible>Stringcompare(Skin.String(PreviewThumb),2)</visible>
 			</control>
 			<control type="image">
 				<description>Fanart Preview Thumb</description>
-				<left>63</left>
-				<top>140</top>
+				<left>60</left>
+				<top>138</top>
 				<width>295</width>
-				<height>166</height>
-        <fadetime>100</fadetime>
+				<height>168</height>
+        <fadetime>IconCrossfadeTime</fadetime>
 				<aspectratio aligny="center" align="center">stretch</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_fanart_tp.png">$VAR[TVGuideFanart]</texture>
-				<bordersize>7</bordersize>
+				<bordersize>6</bordersize>
 				<visible>Stringcompare(Skin.String(PreviewThumb),3)</visible>
 			</control>
 			<!-- Studio -->
 			<control type="image">
 				<description>Studio Border</description>
-				<left>1082</left>
+				<left>1085</left>
 				<top>140</top>
 				<width>134</width>
 				<height>80</height>
 				<aspectratio aligny="center" align="center">stretch</aspectratio>
-				<texture background="true" border="10">dialogs/other/iconborder_black.png</texture>
+				<texture background="true" border="10">thumbs/thumb_border.png</texture>
         <fadetime>100</fadetime>
 				<visible>!Stringcompare(Skin.String(PreviewThumb),3)</visible>
 			</control>

@@ -161,14 +161,14 @@
   			</control>
   		</control>
   		<control type="image">
-  			<left>904</left>
-  			<top>347</top>
-  			<width>49</width>
-  			<height>49</height>
-  			<aspectratio align="center" aligny="center">keep</aspectratio>
+  			<left>901</left>
+  			<top>344</top>
+  			<width>55</width>
+  			<height>55</height>
+  			<aspectratio align="center" aligny="center">scale</aspectratio>
   			<texture background="true" fallback="DefaultShortcut.png">$VAR[CustomItemThumb]</texture>
-  			<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
-  			<bordersize>5</bordersize>
+  			<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
+  			<bordersize>6</bordersize>
   		</control>
 		</control>
     <!-- Control Buttons -->
