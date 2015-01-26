@@ -3538,6 +3538,218 @@
 			</control>
 		</focusedlayout>
 	</include>
+	
+	<!-- ===================================== -->
+	<!-- ==== LoveFilm Fanart View "581" ==== -->
+	<!-- ===================================== -->
+
+	<include name="LoveFilmView">
+		<control type="group">
+			<visible>Control.IsVisible(581)</visible>
+	    <include>VideoWallAnimations</include>
+			<control type="wraplist" id="581">
+				<width>1280</width>
+				<height>720</height>
+				<onleft>580</onleft>
+				<onright>580</onright>
+				<onup>9111</onup>
+				<ondown>60</ondown>
+				<preloaditems>2</preloaditems>
+				<pagecontrol>60</pagecontrol>
+				<viewtype label="31089">LoveFilm</viewtype>
+				<scrolltime tween="Cubic" easing="out">350</scrolltime>
+				<orientation>horizontal</orientation>
+				<include condition="Window.IsVisible(videolibrary)">LoveFilmVideos</include>
+				<visible>[Container.Content(movies) | Container.Content(tvshows)] + ![SubString(Container.Folderpath,plugin://) | IsEmpty(Container.Folderpath)]</visible>
+			</control>
+		</control>
+
+		<control type="group">
+      <include>BackgroundVignette</include>
+	    <include>VideoWallAnimations</include>
+			<visible>Control.IsVisible(581)</visible>
+		</control>
+
+		<control type="group">
+		  <left>25</left>
+		  <top>485</top>
+		<include>VideoWallAnimations</include>
+		  <visible>Control.IsVisible(581)</visible>
+	    <animation type="Conditional" reversible="false" condition="![Window.IsActive(favourites) | Window.IsActive(movieinformation) | Window.IsActive(shutdownmenu) | Window.IsActive(contextmenu) | Window.IsActive(playercontrols)]">
+        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+	    </animation>
+	    <animation type="Conditional" reversible="false" condition="Window.IsActive(favourites) | Window.IsActive(movieinformation) | Window.IsActive(shutdownmenu) | Window.IsActive(contextmenu) | Window.IsActive(playercontrols)">
+        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+	    </animation>
+			<control type="image">
+				<left>-25</left>
+				<top>-485</top>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<texture background="true">views/lovefilm/video_grid.png</texture>
+				<colordiffuse>CCFFFFFF</colordiffuse>
+			</control>
+		  <control type="label">
+				<left>20</left>
+				<top>0</top>
+				<height>26</height>
+				<width>840</width>
+				<textcolor>white</textcolor>
+        <shadowcolor>77000000</shadowcolor>
+				<font>FontSize_38</font>
+	      <scroll>false</scroll>
+				<align>left</align>
+				<label>$VAR[ListItem.label]</label>
+			</control>
+			<control type="image">
+				<left>21</left>
+				<top>37</top>
+				<width>18</width>
+				<height>18</height>
+        <colordiffuse>99white</colordiffuse>
+        <aspectratio align="left" aligny="center">stretch</aspectratio>
+        <texture background="true">overlays/unwatched/list/unwatched.png</texture>
+        <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
+			</control>
+			<control type="label">
+				<left>21</left>
+				<top>30</top>
+				<width>840</width>
+				<height>30</height>
+				<label>$INFO[ListItem.Genre]</label>
+				<font>FontSize_22</font>
+				<textcolor>99white</textcolor>
+				<shadowcolor>77000000</shadowcolor>
+			  <scroll>false</scroll>
+				<visible>!stringcompare(ListItem.Label,..) + IsEmpty(ListItem.Tagline)</visible>
+        <animation effect="slide" start="0,0" end="25,0" time="60" tween="sine" easing="inout" condition="stringcompare(ListItem.Overlay,OverlayUnWatched.png)">Conditional</animation>
+			</control>
+			<control type="label">
+				<left>21</left>
+				<top>30</top>
+				<width>840</width>
+				<height>30</height>
+				<label>$INFO[ListItem.Tagline]</label>
+				<font>FontSize_22</font>
+				<textcolor>99white</textcolor>
+				<shadowcolor>77000000</shadowcolor>
+			  <scroll>false</scroll>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
+        <animation effect="slide" start="0,0" end="25,0" time="60" tween="sine" easing="inout" condition="stringcompare(ListItem.Overlay,OverlayUnWatched.png)">Conditional</animation>
+			</control>
+		  <!-- Small Down Info -->
+		  <control type="group">
+				<left>20</left>
+				<top>80</top>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>34</width>
+					<height>22</height>
+			    <colordiffuse>77white</colordiffuse>
+			    <aspectratio align="left" aligny="center">stretch</aspectratio>
+					<texture>$VAR[ViewsDef3DFlags]</texture>
+					<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>38</width>
+					<height>22</height>
+	        <colordiffuse>77white</colordiffuse>
+			    <aspectratio align="left" aligny="center">stretch</aspectratio>
+					<texture background="true">flags/sets/sets.png</texture>
+					<visible>Substring(ListItem.Path,videodb://movies/sets/)</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>50</width>
+					<height>22</height>
+			    <colordiffuse>77white</colordiffuse>
+			    <aspectratio align="left" aligny="center">stretch</aspectratio>
+					<texture background="true">$INFO[ListItem.mpaa,flags/mpaa/tv/,.png]</texture>
+					<visible>Container.Content(TVShows) + !IsEmpty(ListItem.mpaa)</visible>
+				</control>
+				<control type="label">
+					<left>45</left>
+					<top>0</top>
+					<height>20</height>
+					<width>600</width>
+					<textcolor>99white</textcolor>
+	        <shadowcolor>99000000</shadowcolor>
+					<font>FontSize_22</font>
+		      <scroll>false</scroll>
+					<align>left</align>
+					<aligny>center</aligny>
+          <label>$VAR[SmallGlobalInfo]</label>
+          <animation effect="slide" start="0,0" end="-45,0" time="0" tween="sine" easing="inout" condition="IsEmpty(ListItem.VideoResolution) + !Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
+          <animation effect="slide" start="0,0" end="5,0" time="0" tween="sine" easing="inout" condition="Substring(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
+          <animation effect="slide" start="0,0" end="60,0" time="0" tween="sine" easing="inout" condition="Container.Content(TVShows) + !IsEmpty(ListItem.mpaa)">Conditional</animation>
+				</control>
+		  </control>
+			<control type="image">
+				<left>1015</left>
+				<top>-156</top>
+				<width>185</width>
+						<height>258</height>
+						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+						<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/thumb_back.png</texture>
+						<fadetime>800</fadetime>
+			</control>
+			<control type="image">
+				<left>1015</left>
+				<top>-156</top>
+				<width>185</width>
+				<height>258</height>
+				<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+				<texture background="true" fallback="thumbs/fallback_poster_tp.png" diffuse="thumbs/poster_diffuse.png">$VAR[LoveFilmPoster]</texture>
+				<fadetime>800</fadetime>
+			</control>
+			<control type="image">
+				<left>1005</left>
+				<top>-166</top>
+				<width>206</width>
+				<height>280</height>
+				<texture background="true">thumbs/poster_overlay.png</texture>
+				<aspectratio align="center" aligny="center">stretch</aspectratio>
+				<fadetime>800</fadetime>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>20</left>
+				<top>125</top>
+				<width>1170</width>
+				<height>9</height>
+				<texturesliderbackground>-</texturesliderbackground>
+				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onup>580</onup>
+				<ondown>580</ondown>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
+			  <animation effect="fade" start="100" end="0" time="250" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+				<visible>Control.IsVisible(581)</visible>
+			</control>
+		</control>
+	</include>
+
+	<include name="LoveFilmVideos">
+		<itemlayout height="720" width="1280">
+			<control type="image">
+				<include>FullscreenDimensions</include>
+				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+			</control>
+		</itemlayout>
+		<focusedlayout height="720" width="1280">
+			<control type="image">
+				<include>FullscreenDimensions</include>
+				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+			</control>
+		</focusedlayout>
+	</include>
 
 
 </includes>

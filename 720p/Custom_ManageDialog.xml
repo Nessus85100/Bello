@@ -400,6 +400,14 @@
 				<selected>!Skin.HasSetting(VideoWallFanartViewVideos)</selected>
 			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
 			</control>
+			<control type="radiobutton" id="8520">
+			  <width>425</width>
+        <include>DialogsButton</include>
+				<label>$LOCALIZE[31089]</label>
+				<onclick>Skin.ToggleSetting(LoveFilmViewVideos)</onclick>
+				<selected>!Skin.HasSetting(LoveFilmViewVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+			</control>
 			<!-- Music Views -->
 			<control type="radiobutton" id="8521">
 			  <width>425</width>
