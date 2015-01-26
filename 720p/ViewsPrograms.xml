@@ -30,7 +30,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -39,7 +39,6 @@
 						<height>232</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -67,9 +66,9 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>158</height>
+						<height>160</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -78,7 +77,6 @@
 						<height>150</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -108,16 +106,16 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>223</width>
 						<height>232</height>
+						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -145,7 +143,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/focus_blue.png</texture>
+						<texture border="30">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -154,18 +152,18 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>158</height>
+						<height>160</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>155</width>
 						<height>150</height>
+						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -193,7 +191,7 @@
 						<width>163</width>
 						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/focus_blue.png</texture>
+						<texture border="30">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>

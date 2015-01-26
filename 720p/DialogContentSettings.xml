@@ -83,8 +83,8 @@
   						<width>45</width>
   						<height>45</height>
   						<texture>$INFO[Listitem.Icon]</texture>
-  						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
-  						<bordersize>6</bordersize>
+  						<bordertexture border="4">dialogs/other/iconborder.png</bordertexture>
+  						<bordersize>4</bordersize>
   					</control>
   					<control type="label">
   						<left>50</left>
@@ -114,8 +114,8 @@
   						<width>45</width>
   						<height>45</height>
   						<texture>$INFO[Listitem.Icon]</texture>
-  						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
-  						<bordersize>6</bordersize>
+  						<bordertexture border="4">dialogs/other/iconborder.png</bordertexture>
+  						<bordersize>4</bordersize>
   					</control>
   					<control type="label">
   						<left>50</left>

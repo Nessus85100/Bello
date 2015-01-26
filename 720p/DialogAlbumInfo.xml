@@ -567,7 +567,7 @@
 					<label>31254</label>
 				  <include>TopButton</include>
 			    <include>OnClickDialogsClose</include>
-          <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.Label],return)</onclick>
+          <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Label],return)</onclick>
 				  <visible>Container.Content(artists)</visible>
 				</control>
 			</control>

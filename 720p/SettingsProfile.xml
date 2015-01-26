@@ -9,7 +9,7 @@
 	 <control type="group">
 	    <include>Window_OpenClose_Animation</include>
 	    <include>DialogZoomInOutAnimation</include>
-		  <visible>!Window.IsActive(ShutdownMenu)</visible>
+		  <visible>!Window.IsActive(ContextMenu) + !Window.IsActive(ShutdownMenu)</visible>
 		
 	  <control type="group">
 	    <include>Window_OpenClose_Animation</include>			

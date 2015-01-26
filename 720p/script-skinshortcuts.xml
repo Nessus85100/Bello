@@ -7,7 +7,7 @@
 
 	 <control type="group">
     <include>DialogAnimation</include>
-		<visible>IsEmpty(Window.Property(additionalDialog)) + !Window.IsActive(1118) + !Window.IsActive(SelectDialog) + !Window.IsActive(DialogSelect.xml) + !Window.IsActive(FileBrowser) + !Window.IsActive(VirtualKeyboard) + !Window.IsActive(progressdialog) + !Window.IsActive(okdialog) + !Window.IsActive(yesnodialog)</visible>
+		<visible>IsEmpty(Window.Property(additionalDialog)) + !Window.IsActive(1118) + !Window.IsActive(SelectDialog) + !Window.IsActive(DialogSelect.xml) + !Window.IsActive(FileBrowser)</visible>
 	  <control type="image">
 			<left>213</left>
 			<top>116</top>

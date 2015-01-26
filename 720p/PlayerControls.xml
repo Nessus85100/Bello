@@ -35,12 +35,12 @@
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-					<left>293</left>
-					<top>240</top>
-					<width>695</width>
-					<height>235</height>
+					<left>272</left>
+					<top>219</top>
+					<width>737</width>
+					<height>277</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true" border="39">views/other/panel.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -56,26 +56,26 @@
 					<scroll>false</scroll>
 					<label>$LOCALIZE[31374]</label>
 				</control>
-				<control type="wraplist" id="150">
-					<left>298</left>
+				<control type="wraplist" id="150"><!-- Quick Nav -->
+					<left>288</left>
 					<top>265</top>
-					<width>685</width>
+					<width>705</width>
 					<height>360</height>
 					<onleft>150</onleft>
 					<onright>150</onright>
           <onup>SetProperty(Movement,1)</onup>
 					<onup condition="Player.HasMedia">100</onup>
-					<onup condition="!Player.HasMedia">650</onup>
+					<onup condition="!Player.HasMedia">350</onup>
           <ondown>ClearProperty(Movement)</ondown>
-		      <ondown>25</ondown>
+		      <ondown>200</ondown>
 	        <preloaditems>3</preloaditems>
 				  <focusposition>1</focusposition>
 				  <itemgap>0</itemgap>
 				  <orientation>horizontal</orientation>
-		      <scrolltime tween="Cubic" easing="out">300</scrolltime>
+		      <scrolltime tween="Cubic" easing="out">250</scrolltime>
 					<itemlayout height="235" width="235">
 						<control type="image">
-							<left>20</left>
+							<left>30</left>
 							<top>0</top>
 							<width>175</width>
 							<height>165</height>
@@ -83,7 +83,7 @@
 							<texture background="true" border="8">osd/quicknav/nofocus_square.png</texture>
 						</control>
 						<control type="image">
-							<left>25</left>
+							<left>35</left>
 							<top>5</top>
 							<width>165</width>
 							<height>155</height>
@@ -94,7 +94,7 @@
 					</itemlayout>
 					<focusedlayout height="235" width="235">
 						<control type="image">
-							<left>20</left>
+							<left>30</left>
 							<top>0</top>
 							<width>175</width>
 							<height>165</height>
@@ -102,7 +102,7 @@
 							<texture background="true" border="8">osd/quicknav/nofocus_square.png</texture>
 						</control>
 						<control type="image">
-							<left>25</left>
+							<left>35</left>
 							<top>5</top>
 							<width>165</width>
 							<height>155</height>
@@ -111,7 +111,7 @@
 						  <bordersize>6</bordersize>
 						</control>
 						<control type="label">
-							<left>-40</left>
+							<left>-30</left>
 							<top>168</top>
 							<width>295</width>
 							<height>35</height>
@@ -132,7 +132,7 @@
 	            </animation>
 						</control>
 						<control type="image">
-							<left>20</left>
+							<left>30</left>
 							<top>0</top>
 							<width>175</width>
 							<height>165</height>
@@ -164,26 +164,26 @@
 					  <effect type="fade" start="0" end="100" delay="1000" time="1000"  />
 						<effect type="slide" start="0,0" end="0,4" tween="sine" easing="inout" delay="1000" time="1000" />
 					</animation>
-					<visible>IntegerGreaterThan(Container(250).NumItems,0) | IntegerGreaterThan(Container(350).NumItems,0) | IntegerGreaterThan(Container(450).NumItems,0)</visible>
+					<visible>IntegerGreaterThan(Container(200).NumItems,0) | IntegerGreaterThan(Container(250).NumItems,0) | IntegerGreaterThan(Container(300).NumItems,0)</visible>
 			  </control>
 			</control>
 
       <!-- Movies -->
 			<control type="group">
 			  <include>QuickNavMoviesWidgetAnimation</include>
-		    <visible allowhiddenfocus="true">[Control.HasFocus(25) | Control.HasFocus(250)] + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
+		    <visible allowhiddenfocus="true">Control.HasFocus(200) + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-					<left>265</left>
-					<top>237</top>
-					<width>751</width>
-					<height>248</height>
+					<left>244</left>
+					<top>216</top>
+					<width>793</width>
+					<height>290</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true" border="39">views/other/panel.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header title</description>
@@ -199,29 +199,22 @@
 					<scroll>false</scroll>
 					<label>$VAR[QuickNavWidgetHeaderTitle]</label>
 				</control>
-        <control type="button" id="25">
-        	<onleft>Control.Move(250,-1)</onleft>
-        	<onright>Control.Move(250,1)</onright>
-          <onup>SetProperty(Movement,1)</onup>
-		      <onup>150</onup>
-          <ondown>ClearProperty(Movement)</ondown>
-		      <ondown>35</ondown>
-          <onclick condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),4) | stringcompare(Skin.String(QuickNavWidgetMoviesType),5)">PreviousMenu</onclick>
-          <onclick condition="stringcompare(Skin.String(QuickNavWidgetMoviesType),4) | stringcompare(Skin.String(QuickNavWidgetMoviesType),5)">ActivateWindow(videos,plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[Container(250).ListItem.Label, trailer],return)</onclick>
-          <onclick condition="![stringcompare(Skin.String(QuickNavWidgetMoviesType),4) | stringcompare(Skin.String(QuickNavWidgetMoviesType),5)]">SetFocus(250)</onclick>
-          <onclick condition="![stringcompare(Skin.String(QuickNavWidgetMoviesType),4) | stringcompare(Skin.String(QuickNavWidgetMoviesType),5)]">Select</onclick>
-          <include>TopButton</include>
-        </control>
-				<control type="fixedlist" id="250">
+				<control type="fixedlist" id="200"><!-- Recent Movies -->
 					<left>271</left>
 					<top>262</top>
 					<width>738</width>
 					<height>360</height>
+					<onleft>200</onleft>
+					<onright>200</onright>
+          <onup>SetProperty(Movement,1)</onup>
+		      <onup>150</onup>
+          <ondown>ClearProperty(Movement)</ondown>
+		      <ondown>250</ondown>
 	        <preloaditems>3</preloaditems>
 				  <focusposition>0</focusposition>
 				  <movement>4</movement>
 				  <orientation>horizontal</orientation>
-          <scrolltime tween="Quadratic" easing="out">300</scrolltime>
+          <scrolltime tween="Quadratic" easing="out">250</scrolltime>
 					<itemlayout height="200" width="144">
 						<control type="image">
 							<left>19</left>
@@ -237,7 +230,7 @@
 							<width>115</width>
 							<height>170</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetThumb]</texture>
+						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$INFO[ListItem.Icon]</texture>
 						  <bordersize>5</bordersize>
 						</control>
 					</itemlayout>
@@ -256,7 +249,7 @@
 							<width>115</width>
 							<height>170</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetThumb]</texture>
+						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$INFO[ListItem.Icon]</texture>
 						  <bordersize>5</bordersize>
 						</control>
 						<control type="image">
@@ -313,26 +306,26 @@
 					  <effect type="fade" start="0" end="100" delay="1000" time="1000"  />
 						<effect type="slide" start="0,0" end="0,4" tween="sine" easing="inout" delay="1000" time="1000" />
 					</animation>
-					<visible>IntegerGreaterThan(Container(350).NumItems,0) | IntegerGreaterThan(Container(450).NumItems,0)</visible>
+					<visible>IntegerGreaterThan(Container(250).NumItems,0) | IntegerGreaterThan(Container(300).NumItems,0)</visible>
 			  </control>
 			</control>
 
       <!-- TVShows -->
 			<control type="group">
 			  <include>QuickNavTVShowsWidgetAnimation</include>
-		    <visible allowhiddenfocus="true">[Control.HasFocus(350) | Control.HasFocus(35)] + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
+		    <visible allowhiddenfocus="true">Control.HasFocus(250) + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-					<left>265</left>
-					<top>237</top>
-					<width>751</width>
-					<height>248</height>
+					<left>244</left>
+					<top>216</top>
+					<width>793</width>
+					<height>290</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true" border="39">views/other/panel.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -348,29 +341,22 @@
 					<scroll>false</scroll>
 					<label>$VAR[QuickNavWidgetHeaderTitle]</label>
 				</control>
-        <control type="button" id="35">
-        	<onleft>Control.Move(350,-1)</onleft>
-        	<onright>Control.Move(350,1)</onright>
-          <onup>SetProperty(Movement,1)</onup>
-          <onup>25</onup>
-          <ondown>ClearProperty(Movement)</ondown>
-          <ondown>45</ondown>
-          <onclick condition="stringcompare(Skin.String(QuickNavWidgetTVShowsType),4)">PreviousMenu</onclick>
-          <onclick condition="stringcompare(Skin.String(QuickNavWidgetTVShowsType),4)">ActivateWindow(videos,plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[Container(350).ListItem.Label, trailer],return)</onclick>
-          <onclick condition="!stringcompare(Skin.String(QuickNavWidgetTVShowsType),4)">SetFocus(350)</onclick>
-          <onclick condition="!stringcompare(Skin.String(QuickNavWidgetTVShowsType),4)">Select</onclick>
-          <include>TopButton</include>
-        </control>
-				<control type="fixedlist" id="350">
+				<control type="fixedlist" id="250"><!-- Recent TVShows -->
 					<left>271</left>
 					<top>262</top>
 					<width>738</width>
 					<height>360</height>
+					<onleft>250</onleft>
+					<onright>250</onright>
+          <onup>SetProperty(Movement,1)</onup>
+		      <onup>200</onup>
+          <ondown>ClearProperty(Movement)</ondown>
+		      <ondown>300</ondown>
 	        <preloaditems>3</preloaditems>
 				  <focusposition>0</focusposition>
 				  <movement>4</movement>
 				  <orientation>horizontal</orientation>
-          <scrolltime tween="Quadratic" easing="out">300</scrolltime>
+          <scrolltime tween="Quadratic" easing="out">250</scrolltime>
 					<itemlayout height="200" width="144">
 						<control type="image">
 							<left>19</left>
@@ -386,7 +372,7 @@
 							<width>115</width>
 							<height>170</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetThumb]</texture>
+						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetTVShowsThumb]</texture>
 						  <bordersize>5</bordersize>
 						</control>
 					</itemlayout>
@@ -405,7 +391,7 @@
 							<width>115</width>
 							<height>170</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetThumb]</texture>
+						  <texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[QuickNavWidgetTVShowsThumb]</texture>
 						  <bordersize>5</bordersize>
 						</control>
 						<control type="image">
@@ -468,19 +454,19 @@
       <!-- Music -->
 			<control type="group">
 			  <include>QuickNavMusicWidgetAnimation</include>
-		    <visible allowhiddenfocus="true">[Control.HasFocus(45) | Control.HasFocus(450)] + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
+		    <visible allowhiddenfocus="true">Control.HasFocus(300) + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-					<left>256</left>
-					<top>238</top>
-					<width>767</width>
-					<height>233</height>
+					<left>235</left>
+					<top>217</top>
+					<width>809</width>
+					<height>275</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true" border="39">views/other/panel.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -496,29 +482,22 @@
 					<scroll>false</scroll>
 					<label>$VAR[QuickNavWidgetHeaderTitle]</label>
 				</control>
-        <control type="button" id="45">
-        	<onleft>Control.Move(450,-1)</onleft>
-        	<onright>Control.Move(450,1)</onright>
-          <onup>SetProperty(Movement,1)</onup>
-		      <onup>35</onup>
-          <ondown>ClearProperty(Movement)</ondown>
-					<ondown>650</ondown>
-          <onclick condition="stringcompare(Skin.String(QuickNavWidgetMusicType),4)">PreviousMenu</onclick>
-          <onclick condition="stringcompare(Skin.String(QuickNavWidgetMusicType),4)">ActivateWindow(videos,plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[Container(450).ListItem.Label],return)</onclick>
-          <onclick condition="!stringcompare(Skin.String(QuickNavWidgetMusicType),4)">SetFocus(450)</onclick>
-          <onclick condition="!stringcompare(Skin.String(QuickNavWidgetMusicType),4)">Select</onclick>
-          <include>TopButton</include>
-        </control>
-				<control type="fixedlist" id="450">
+				<control type="fixedlist" id="300"><!-- Recent Music -->
 				  <left>261</left>
 					<top>263</top>
 					<width>745</width>
 					<height>360</height>
+					<onleft>300</onleft>
+					<onright>300</onright>
+          <onup>SetProperty(Movement,1)</onup>
+		      <onup>250</onup>
+          <ondown>ClearProperty(Movement)</ondown>
+					<ondown>350</ondown>
 	        <preloaditems>3</preloaditems>
 				  <focusposition>0</focusposition>
 				  <movement>3</movement>
 				  <orientation>horizontal</orientation>
-          <scrolltime tween="Quadratic" easing="out">300</scrolltime>
+          <scrolltime tween="Quadratic" easing="out">250</scrolltime>
 					<itemlayout height="200" width="184">
 						<control type="image">
 							<left>20</left>
@@ -534,7 +513,7 @@
 							<width>155</width>
 							<height>155</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[QuickNavWidgetThumb]</texture>
+						  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Icon]</texture>
 						  <bordersize>5</bordersize>
 						</control>
 					</itemlayout>
@@ -553,7 +532,7 @@
 							<width>155</width>
 							<height>155</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[QuickNavWidgetThumb]</texture>
+						  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Icon]</texture>
 						  <bordersize>5</bordersize>
 						</control>
 						<control type="label.">
@@ -630,7 +609,7 @@
 					  <effect type="fade" start="0" end="100" delay="1000" time="1000"  />
 						<effect type="slide" start="0,0" end="0,4" tween="sine" easing="inout" delay="1000" time="1000" />
 					</animation>
-					<visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
+					<visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
 			  </control>
 			</control>
 
@@ -638,19 +617,19 @@
       <!-- Video Feeds -->
 			<control type="group">
 			  <include>QuickNavMiscWidgetAnimation</include>
-		    <visible allowhiddenfocus="true">[Control.HasFocus(65) | Control.HasFocus(650)] + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(ProgressDialog)</visible>
+		    <visible allowhiddenfocus="true">Control.HasFocus(350) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(ProgressDialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-					<left>256</left>
-					<top>238</top>
-					<width>767</width>
-					<height>238</height>
+					<left>235</left>
+					<top>217</top>
+					<width>809</width>
+					<height>280</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true" border="39">views/other/panel.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 				</control>
 				<control type="label">
 			    <description>header label</description>
@@ -680,15 +659,15 @@
 					<scroll>false</scroll>
 					<label>$VAR[QuickNavWidgetHeaderTitle]</label>
 				</control>
-				<control type="fixedlist" id="650">
+				<control type="fixedlist" id="350">
 				  <left>262</left>
 					<top>290</top>
 					<width>756</width>
 					<height>360</height>
-					<onleft>650</onleft>
-					<onright>650</onright>
+					<onleft>350</onleft>
+					<onright>350</onright>
           <onup>SetProperty(Movement,1)</onup>
-		      <onup>45</onup>
+		      <onup>300</onup>
           <ondown>ClearProperty(Movement)</ondown>
 					<ondown condition="Player.HasMedia">100</ondown>
 					<ondown condition="!Player.HasMedia">150</ondown>
@@ -697,7 +676,7 @@
 				  <movement>1</movement>
 				  <itemgap>0</itemgap>
 				  <orientation>horizontal</orientation>
-          <scrolltime tween="Quadratic" easing="out">300</scrolltime>
+		      <scrolltime tween="Cubic" easing="out">250</scrolltime>
 					<itemlayout height="200" width="245">
 						<control type="image">
 							<left>20</left>
@@ -713,7 +692,7 @@
 							<width>209</width>
 							<height>120</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[QuickNavWidgetThumb]</texture>
+						  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Thumb]</texture>
 						  <bordersize>3</bordersize>
 						</control>
 					</itemlayout>
@@ -732,7 +711,7 @@
 							<width>209</width>
 							<height>120</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-						  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[QuickNavWidgetThumb]</texture>
+						  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Thumb]</texture>
 						  <bordersize>3</bordersize>
 						</control>
 						<control type="image">
@@ -796,12 +775,12 @@
 					<!-- <colordiffuse>ccffffff</colordiffuse> -->
 				</control>
 				<control type="image">
-					<left>283</left>
-					<top>244</top>
-					<width>717</width>
-					<height>228</height>
+					<left>262</left>
+					<top>223</top>
+					<width>759</width>
+					<height>270</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true" border="39">views/other/panel.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 					<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="image">
@@ -810,12 +789,12 @@
 					<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="image">
-					<left>283</left>
-					<top>244</top>
-					<width>729</width>
-					<height>228</height>
+					<left>262</left>
+					<top>223</top>
+					<width>771</width>
+					<height>270</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture background="true" border="39">views/other/panel.png</texture>
+					<texture background="true" border="39">dialogs/other/default.png</texture>
 					<visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="image">
@@ -839,40 +818,30 @@
 				</control>
 				<!-- Covers -->
 				<control type="group">
-					<left>300</left>
-					<top>261</top>
+					<left>307</left>
+					<top>268</top>
 			    <!-- Cover Movies & Episodes -->
 					<control type="group">
 						<visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes)</visible>
 						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>144</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="3,2,3,2">osd/quicknav/nofocus_poster.png</texture>
-						</control>
-						<control type="image">
 							<description>Cover image</description>
 							<left>0</left>
 							<top>0</top>
-							<width>144</width>
-							<height>194</height>
-							<aspectratio aligny="center" scalediffuse="false">stretch</aspectratio>
+							<width>129</width>
+							<height>181</height>
 							<texture background="true" fallback="thumbs/fallback_poster.png">$VAR[VideoPlayerThumb]</texture>
-							<bordersize>6</bordersize>
+							<aspectratio aligny="center" scalediffuse="false">stretch</aspectratio>
 						</control>
 						<control type="image">
 							<description>paused indicator</description>
 							<left>0</left>
 							<top>0</top>
-							<width>144</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<width>129</width>
+							<height>181</height>
 							<texture background="true">osd/paused-overlay_two.png</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 							<visible>Player.Paused</visible>
 							<include>VisibleFadeEffect</include>
-							<bordersize>6</bordersize>
 							<animation type="conditional" condition="Player.Paused" reversible="true">
 								<effect type="fade" start="0" end="60" time="150" />
 							</animation>
@@ -881,13 +850,12 @@
 							<description>ff indicator</description>
 							<left>0</left>
 							<top>0</top>
-							<width>144</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<width>129</width>
+							<height>181</height>
 							<texture background="true">osd/ff-overlay_two.png</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 							<visible>Player.Forwarding</visible>
 							<include>VisibleFadeEffect</include>
-							<bordersize>6</bordersize>
 							<animation type="conditional" condition="Player.Forwarding" reversible="true">
 								<effect type="fade" start="0" end="60" time="150" />
 							</animation>
@@ -896,13 +864,12 @@
 							<description>rw indicator</description>
 							<left>0</left>
 							<top>0</top>
-							<width>144</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<width>129</width>
+							<height>181</height>
 							<texture background="true">osd/rw-overlay_two.png</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 							<visible>Player.Rewinding</visible>
 							<include>VisibleFadeEffect</include>
-							<bordersize>6</bordersize>
 							<animation type="conditional" condition="Player.Rewinding" reversible="true">
 								<effect type="fade" start="0" end="60" time="150" />
 							</animation>
@@ -913,68 +880,55 @@
 					<control type="group">
 						<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>196</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<texture border="3,2,3,2">osd/quicknav/nofocus_square.png</texture>
-						</control>
-						<control type="image">
 							<description>Cover image</description>
 							<left>0</left>
 							<top>0</top>
-							<width>196</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture background="true" fallback="thumbs/fallback_square.png">$INFO[Player.Art(thumb)]</texture>
-						  <visible>Player.HasAudio</visible>
-							<bordersize>6</bordersize>
-						</control>
-						<control type="image">
-							<description>Cover image</description>
-							<left>0</left>
-							<top>0</top>
-							<width>196</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<width>179</width>
+							<height>181</height>
 							<texture background="true" fallback="thumbs/fallback_disc_big_tp.png">$VAR[VideoPlayerThumb]</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						  <visible>[Player.HasVideo + VideoPlayer.HasMenu]</visible>
-							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
 							<description>Cover image</description>
 							<left>0</left>
 							<top>0</top>
-							<width>196</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<width>179</width>
+							<height>181</height>
 							<texture background="true" fallback="thumbs/fallback_square.png">$VAR[VideoPlayerThumb]</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						  <visible>[Player.HasVideo + VideoPlayer.Content(LiveTV)]</visible>
-							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
 							<description>Cover image</description>
 							<left>0</left>
 							<top>0</top>
-							<width>196</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<width>179</width>
+							<height>181</height>
 							<texture background="true">$INFO[VideoPlayer.Cover]</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						  <visible>[Player.HasVideo + ![VideoPlayer.HasMenu | VideoPlayer.Content(LiveTV)]]</visible>
-							<bordersize>6</bordersize>
+						</control>
+						<control type="image">
+							<description>Cover image</description>
+							<left>0</left>
+							<top>0</top>
+							<width>179</width>
+							<height>181</height>
+							<texture background="true" fallback="thumbs/fallback_square.png">$INFO[Player.Art(thumb)]</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+						  <visible>Player.HasAudio</visible>
 						</control>
 						<control type="image">
 							<description>paused indicator</description>
 							<left>0</left>
 							<top>0</top>
-							<width>196</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<width>179</width>
+							<height>181</height>
 							<texture background="true">osd/paused-overlay_two.png</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 							<visible>Player.Paused</visible>
 							<include>VisibleFadeEffect</include>
-							<bordersize>6</bordersize>
 							<animation type="conditional" condition="Player.Paused" reversible="true">
 								<effect type="fade" start="0" end="60" time="150" />
 							</animation>
@@ -983,13 +937,12 @@
 							<description>ff indicator</description>
 							<left>0</left>
 							<top>0</top>
-							<width>196</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<width>179</width>
+							<height>181</height>
 							<texture background="true">osd/ff-overlay_two.png</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<visible>Player.Forwarding</visible>
 							<include>VisibleFadeEffect</include>
-							<bordersize>6</bordersize>
 							<animation type="conditional" condition="Player.Forwarding" reversible="true">
 								<effect type="fade" start="0" end="60" time="150" />
 							</animation>
@@ -998,13 +951,12 @@
 							<description>rw indicator</description>
 							<left>0</left>
 							<top>0</top>
-							<width>196</width>
-							<height>194</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<width>179</width>
+							<height>181</height>
 							<texture background="true">osd/rw-overlay_two.png</texture>
+							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<visible>Player.Rewinding</visible>
 							<include>VisibleFadeEffect</include>
-							<bordersize>6</bordersize>
 							<animation type="conditional" condition="Player.Rewinding" reversible="true">
 								<effect type="fade" start="0" end="60" time="150" />
 							</animation>
@@ -1383,7 +1335,7 @@
 						<onleft condition="!VideoPlayer.HasMenu">606</onleft>
 						<onright>601</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>XBMC.PlayerControl(Previous)</onclick>
@@ -1399,7 +1351,7 @@
 						<onleft>600</onleft>
 						<onright>602</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>XBMC.PlayerControl(Rewind)</onclick>
@@ -1418,7 +1370,7 @@
 						<onleft>601</onleft>
 						<onright>603</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>XBMC.PlayerControl(Play)</onclick>
@@ -1434,7 +1386,7 @@
 						<onleft>602</onleft>
 						<onright>604</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>back</onclick>
@@ -1451,7 +1403,7 @@
 						<onleft>603</onleft>
 						<onright>605</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>XBMC.PlayerControl(Forward)</onclick>
@@ -1468,7 +1420,7 @@
 						<onright condition="VideoPlayer.HasMenu">607</onright>
 						<onright condition="!VideoPlayer.HasMenu">606</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>XBMC.PlayerControl(Next)</onclick>
@@ -1487,7 +1439,7 @@
 						<onleft>605</onleft>
 						<onright>600</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 				    <visible>VideoPlayer.HasMenu</visible>
@@ -1508,7 +1460,7 @@
 						<onleft>605</onleft>
 						<onright>600</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 				    <visible>!VideoPlayer.HasMenu</visible>
@@ -1525,7 +1477,7 @@
 						<onleft>noop</onleft>
 						<onright>noop</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 				    <visible>!VideoPlayer.HasMenu</visible>
@@ -1549,7 +1501,7 @@
 						<onleft>606</onleft>
 						<onright>601</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>XBMC.PlayerControl(Previous)</onclick>
@@ -1563,7 +1515,7 @@
 						<onleft>600</onleft>
 						<onright>602</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<texturefocus>osd/miniplayer/channelDOWN_fo.png</texturefocus>
@@ -1579,7 +1531,7 @@
 						<onleft>601</onleft>
 						<onright>603</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<texturefocus>osd/miniplayer/rw_fo.png</texturefocus>
@@ -1596,7 +1548,7 @@
 						<label>-</label>
 						<onleft>602</onleft>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<texturefocus>osd/miniplayer/pause_fo.png</texturefocus>
@@ -1617,7 +1569,7 @@
 						<onleft>603</onleft>
 						<onright>605</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<texturefocus>osd/miniplayer/stop_fo.png</texturefocus>
@@ -1634,7 +1586,7 @@
 						<onleft>604</onleft>
 						<onright>606</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<texturefocus>osd/miniplayer/ff_fo.png</texturefocus>
@@ -1652,7 +1604,7 @@
 						<onleft>605</onleft>
 						<onright>600</onright>
 	          <onup>SetProperty(Movement,1)</onup>
-			      <onup>650</onup>
+			      <onup>350</onup>
 	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<texturefocus>osd/miniplayer/rec_fo.png</texturefocus>

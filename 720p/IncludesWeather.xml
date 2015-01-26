@@ -387,9 +387,9 @@
   </include>
 
 
-  <!-- ======================================================= -->
-  <!-- ================== WEATHER EXTENDED =================== -->
-  <!-- ======================================================= -->
+  <!-- ================================================================ -->
+  <!-- ================== WEATHER UNDERGROUND ADDON =================== -->
+  <!-- ================================================================ -->
   <include name="WeatherExtended">
 		<control type="button" id="50">
 			<description>Get Focus Fake Button</description>
@@ -651,7 +651,7 @@
 						<width>534</width>
 						<height>317</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel2.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
 						<left>30</left>
@@ -2670,7 +2670,9 @@
 	          <include>Weather_10DaysForecast</include>
 					</content>
 				</control>
+	
 		  </control>
 		</control>
   </include>
+
 </includes>

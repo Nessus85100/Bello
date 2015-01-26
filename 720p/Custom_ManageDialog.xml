@@ -136,7 +136,7 @@
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31243]</label>
 				<onclick>Skin.ToggleSetting(QuickNavRecentMusicButton)</onclick>
-				<selected>!Skin.HasSetting(QuickNavRecentMusicButton)</selected>
+				<selected>!Skin.HasSetting(QuickNavNewMusicButton)</selected>
 			</control>
 			<control type="radiobutton" id="8621">
 				<description>Update VideoLibrary Button</description>
@@ -332,114 +332,114 @@
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31080]</label>
-				<onclick>Skin.ToggleSetting(SlideViewVideos)</onclick>
-				<selected>!Skin.HasSetting(SlideViewVideos)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+				<onclick>Skin.ToggleSetting(HideSlideViewVideos)</onclick>
+				<selected>!Skin.HasSetting(HideSlideViewVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidevideoviews)</visible>
 			</control>
 			<control type="radiobutton" id="8512">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31081]</label>
-				<onclick>Skin.ToggleSetting(GalleryViewVideos)</onclick>
-				<selected>!Skin.HasSetting(GalleryViewVideos)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+				<onclick>Skin.ToggleSetting(HideGalleryViewVideos)</onclick>
+				<selected>!Skin.HasSetting(HideGalleryViewVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidevideoviews)</visible>
 			</control>
 			<control type="radiobutton" id="8513">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31085]</label>
-				<onclick>Skin.ToggleSetting(ThumbnailsVideos)</onclick>
-				<selected>!Skin.HasSetting(ThumbnailsVideos)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+				<onclick>Skin.ToggleSetting(HideThumbnailsVideos)</onclick>
+				<selected>!Skin.HasSetting(HideThumbnailsVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidevideoviews)</visible>
 			</control>
 			<control type="radiobutton" id="8514">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31086]</label>
-				<onclick>Skin.ToggleSetting(BannersViewVideos)</onclick>
-				<selected>!Skin.HasSetting(BannersViewVideos)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+				<onclick>Skin.ToggleSetting(HideBannersViewVideos)</onclick>
+				<selected>!Skin.HasSetting(HideBannersViewVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidevideoviews)</visible>
 			</control>
 			<control type="radiobutton" id="8515">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31084]</label>
-				<onclick>Skin.ToggleSetting(PostersViewVideos)</onclick>
-				<selected>!Skin.HasSetting(PostersViewVideos)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+				<onclick>Skin.ToggleSetting(HidePostersViewVideos)</onclick>
+				<selected>!Skin.HasSetting(HidePostersViewVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidevideoviews)</visible>
 			</control>
 			<control type="radiobutton" id="8516">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31082]</label>
-				<onclick>Skin.ToggleSetting(3DWallViewVideos)</onclick>
-				<selected>!Skin.HasSetting(3DWallViewVideos)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+				<onclick>Skin.ToggleSetting(Hide3DWallViewVideos)</onclick>
+				<selected>!Skin.HasSetting(Hide3DWallViewVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidevideoviews)</visible>
 			</control>
 			<control type="radiobutton" id="8517">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31083]</label>
-				<onclick>Skin.ToggleSetting(WallViewVideos)</onclick>
-				<selected>!Skin.HasSetting(WallViewVideos)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+				<onclick>Skin.ToggleSetting(HideWallViewVideos)</onclick>
+				<selected>!Skin.HasSetting(HideWallViewVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidevideoviews)</visible>
 			</control>
 			<control type="radiobutton" id="8518">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31088]</label>
-				<onclick>Skin.ToggleSetting(ListWallViewVideos)</onclick>
-				<selected>!Skin.HasSetting(ListWallViewVideos)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+				<onclick>Skin.ToggleSetting(HideListWallViewVideos)</onclick>
+				<selected>!Skin.HasSetting(HideListWallViewVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidevideoviews)</visible>
 			</control>
 			<control type="radiobutton" id="8519">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31087]</label>
-				<onclick>Skin.ToggleSetting(VideoWallFanartViewVideos)</onclick>
-				<selected>!Skin.HasSetting(VideoWallFanartViewVideos)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managevideoviews)</visible>
+				<onclick>Skin.ToggleSetting(HideVideoWallFanartViewVideos)</onclick>
+				<selected>!Skin.HasSetting(HideVideoWallFanartViewVideos)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidevideoviews)</visible>
 			</control>
 			<!-- Music Views -->
 			<control type="radiobutton" id="8521">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31080]</label>
-				<onclick>Skin.ToggleSetting(SlideViewMusic)</onclick>
-				<selected>!Skin.HasSetting(SlideViewMusic)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managemusicviews)</visible>
+				<onclick>Skin.ToggleSetting(HideSlideViewMusic)</onclick>
+				<selected>!Skin.HasSetting(HideSlideViewMusic)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidemusicviews)</visible>
 			</control>
 			<control type="radiobutton" id="8522">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31081]</label>
-				<onclick>Skin.ToggleSetting(GalleryViewMusic)</onclick>
-				<selected>!Skin.HasSetting(GalleryViewMusic)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managemusicviews)</visible>
+				<onclick>Skin.ToggleSetting(HideGalleryViewMusic)</onclick>
+				<selected>!Skin.HasSetting(HideGalleryViewMusic)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidemusicviews)</visible>
 			</control>
 			<control type="radiobutton" id="8523">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31085]</label>
-				<onclick>Skin.ToggleSetting(ThumbnailsMusic)</onclick>
-				<selected>!Skin.HasSetting(ThumbnailsMusic)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managemusicviews)</visible>
+				<onclick>Skin.ToggleSetting(HideThumbnailsMusic)</onclick>
+				<selected>!Skin.HasSetting(HideThumbnailsMusic)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidemusicviews)</visible>
 			</control>
 			<control type="radiobutton" id="8524">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31086]</label>
-				<onclick>Skin.ToggleSetting(BannersViewMusic)</onclick>
-				<selected>!Skin.HasSetting(BannersViewMusic)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managemusicviews)</visible>
+				<onclick>Skin.ToggleSetting(HideBannersViewMusic)</onclick>
+				<selected>!Skin.HasSetting(HideBannersViewMusic)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidemusicviews)</visible>
 			</control>
 			<control type="radiobutton" id="8525">
 			  <width>425</width>
         <include>DialogsButton</include>
 				<label>$LOCALIZE[31082]</label>
-				<onclick>Skin.ToggleSetting(3DWallViewMusic)</onclick>
-				<selected>!Skin.HasSetting(3DWallViewMusic)</selected>
-			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),managemusicviews)</visible>
+				<onclick>Skin.ToggleSetting(Hide3DWallViewMusic)</onclick>
+				<selected>!Skin.HasSetting(Hide3DWallViewMusic)</selected>
+			  <visible>StringCompare(Window(SkinSettings).Property(ManageButtons),hidemusicviews)</visible>
 			</control>
 		</control>
 

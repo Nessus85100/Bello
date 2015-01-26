@@ -118,7 +118,7 @@
       <include>ListView_Thumb</include>
 		</control>
 
-		<!-- ==== Main List ==== -->	
+		<!-- Main List -->	
 		<control type="group">
 			<include>ListViewAnimationsLeft</include>
 			<control type="list" id="50">
@@ -248,7 +248,15 @@
 						<width>231</width>
 						<height>254</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel.png</texture>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>210</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="15">dialogs/other/iconborder_black.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -257,7 +265,6 @@
 						<height>210</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -281,7 +288,7 @@
 					</control>
 					<control type="label">
 						<left>15</left>
-						<top>210</top>
+						<top>215</top>
 						<width>212</width>
 						<height>45</height>
 						<textcolor>99white</textcolor>
@@ -291,6 +298,19 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+		        <visible>!Stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="label">
+						<left>15</left>
+						<top>215</top>
+						<width>212</width>
+						<height>45</height>
+						<font>BackFont_22</font>
+						<textcolor>99white</textcolor>
+						<shadowcolor>99000000</shadowcolor>
+						<align>center</align>
+						<label>↚</label>
+		        <visible>Stringcompare(ListItem.Label,..)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="262" width="239.5">
@@ -300,16 +320,24 @@
 						<width>231</width>
 						<height>254</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>223</width>
 						<height>210</height>
+						<aspectratio align="center" aligny="center">stretch</aspectratio>
+						<texture border="15">dialogs/other/iconborder_black.png</texture>
+					</control>
+					<control type="image">
+						<left>9</left>
+						<top>9</top>
+						<width>223</width>
+						<height>210</height>
+						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 <!-- *NOT USED*					
@@ -356,7 +384,7 @@
 					</control>
 					<control type="label">
 						<left>15</left>
-						<top>210</top>
+						<top>215</top>
 						<width>212</width>
 						<height>45</height>
 						<textcolor>blue</textcolor>
@@ -366,6 +394,19 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+		        <visible>!Stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="label">
+						<left>15</left>
+						<top>215</top>
+						<width>212</width>
+						<height>45</height>
+						<font>BackFont_22</font>
+						<textcolor>blue</textcolor>
+						<shadowcolor>99000000</shadowcolor>
+						<align>center</align>
+						<label>↚</label>
+		        <visible>Stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
 						<left>5</left>
@@ -373,7 +414,7 @@
 						<width>231</width>
 						<height>254</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/focus_blue.png</texture>
+						<texture border="30">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -429,7 +470,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -438,7 +479,6 @@
 						<height>232</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -466,9 +506,9 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>158</height>
+						<height>160</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -477,7 +517,6 @@
 						<height>150</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -507,16 +546,16 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>223</width>
 						<height>232</height>
+						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -544,7 +583,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/focus_blue.png</texture>
+						<texture border="30">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -553,18 +592,18 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>158</height>
+						<height>160</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/panel.png</texture>
+						<texture border="30">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>155</width>
 						<height>150</height>
+						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
-						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -592,7 +631,7 @@
 						<width>163</width>
 						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="31">views/other/focus_blue.png</texture>
+						<texture border="30">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>

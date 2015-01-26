@@ -236,7 +236,6 @@
       <top>12</top>
       <width>630</width>
 	    <include>DialogsHeaderLabel</include>
-      <!-- <label>Remove ID to Test, Remove ID to Test, Remove ID to Test</label> -->
     </control>
 		<control type="textbox" id="9">
 		  <left>15</left>
@@ -400,7 +399,7 @@
 					<height>65</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture background="true" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
-					<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
+					<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
 					<bordersize>6</bordersize>
 				</control>
 				<control type="label">
@@ -470,7 +469,7 @@
 					<height>65</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture background="true" fallback="DefaultAddon.png">$INFO[Listitem.Icon]</texture>
-					<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
+					<bordertexture border="6">dialogs/other/iconborder.png</bordertexture>
 					<bordersize>6</bordersize>
 				</control>
 				<control type="label">
@@ -743,7 +742,7 @@
     			<width>165</width>
     			<height>165</height>
     			<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture border="31">osd/quicknav/nofocus_square.png</texture>
+					<texture border="30">osd/quicknav/nofocus_square.png</texture>
     		</control>
 				<control type="image">
 					<left>25</left>
@@ -762,7 +761,7 @@
     			<width>165</width>
     			<height>165</height>
     			<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture border="31">osd/quicknav/nofocus_square.png</texture>
+					<texture border="30">osd/quicknav/nofocus_square.png</texture>
     		</control>
 				<control type="image">
 					<left>25</left>
@@ -779,7 +778,7 @@
 					<width>165</width>
 					<height>165</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-				  <texture border="31">osd/quicknav/focus_square.png</texture>
+				  <texture border="30">osd/quicknav/focus_square.png</texture>
           <animation type="Focus">
             <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
             <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />

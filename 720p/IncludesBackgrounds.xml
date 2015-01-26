@@ -242,6 +242,7 @@
 			| Control.IsVisible(56)
 			| Control.IsVisible(560)
 			| Control.IsVisible(561)
+			| [Window.IsActive(contextmenu) + ![Window.IsActive(home) | Window.IsActive(locksettings) | Window.IsActive(profiles) | Window.IsActive(musicplaylisteditor) | Window.IsActive(filemanager) | Window.IsVisible(pvrchannelmanager)]]
 			| Window.IsActive(PlayerControls)
 			| Window.IsActive(shutdownmenu)
 			| Window.IsActive(weather)

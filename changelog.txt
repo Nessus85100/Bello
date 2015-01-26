@@ -1,12 +1,3 @@
-[B][COLOR=FF56ADDA]v3.0.1 - BETA[/COLOR][/B]
-• More work on unifying skin code and textures (WIP).
-• FIxed PVR options menu bug.
-• Fixed Save/Browse bugs in SmartPlaylistEditor dialogs.
-• Fixed broken Search on YouTube link.
-• Fixed QuickNavigation ExtendedInfo script Widgets.
-• Fixed bug in non Extended Weather window.
-• Several other tweaks and small fixes.
-
 [B][COLOR=FF56ADDA]v3.0.0 - BETA[/COLOR][/B]
 • Updated code for Kodi v14.0 Helix (including PVR section).
 • Added support for Skinshortcuts script for building HomeMenu, Submenus and Home backgrounds.

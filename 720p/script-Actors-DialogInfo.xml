@@ -364,7 +364,7 @@
           <onclick>SetProperty(script.metadata.actors.path,$INFO[ListItem.Label],home)</onclick>
           <onclick condition="Window.IsActive(movieinformation)">Dialog.Close(movieinformation)</onclick>
           <onclick>PreviousMenu</onclick>
-          <onclick>AlarmClock(ActorsPlay,ActivateWindow(videos,plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.Label],return),00:00,silent)</onclick>
+          <onclick>AlarmClock(ActorsPlay,ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Label],return),00:00,silent)</onclick>
           <onclick>AlarmClock(ActorsClear,ClearProperty(script.metadata.actors.path,home),00:01,silent)</onclick>
 				  <include>TopButton</include>
         </control>

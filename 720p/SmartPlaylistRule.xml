@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">10010</defaultcontrol>
 	<controls>
 		<control type="group">
-			<visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(selectdialog) + !Window.IsActive(Filebrowser)</visible>
+			<visible>!Window.IsActive(virtualkeyboard) + !Window.IsActive(selectdialog)</visible>
 			<include>DialogAnimation</include>
   	  <control type="image">
   			<left>311</left>

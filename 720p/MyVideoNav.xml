@@ -4,7 +4,7 @@
   <allowoverlay>yes</allowoverlay>
 	<views>50,51,52,53,54,58,580,55,56,560,561,57</views>
   <backgroundcolor>0</backgroundcolor>
-  <onload condition="[SubString(Container.FolderPath,plugin://plugin.video.youtube) + Container.HasFiles]">Container.SetViewMode(560)</onload>
+  <onload condition="[SubString(Container.FolderPath,plugin://plugin.video.youtube) + Container.HasFiles]">Container.SetViewMode(561)</onload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows) + Skin.HasSetting(NextAiredEnabled)">RunScript(script.tv.show.next.aired,backend=True)</onload>
   <onload condition="System.HasAddon(script.tvtunes) + [Library.HasContent(Movies) | Library.HasContent(TVShows)] + Skin.HasSetting(TVTunesEnabled) + !Player.HasMedia">RunScript(script.tvtunes,backend=True)</onload>
 	<onload condition="IsEmpty(Skin.String(ListViewWideThumbTVShows))">Skin.SetString(ListViewWideThumbTVShows,1)</onload>
@@ -231,10 +231,29 @@
 				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
 		    <include>CommonSlideAnimations</include>
-  			<!-- Big Labels -->
+  			<!-- Videos -->
   			<control type="label">
   			  <include>TopBigLabel</include>
-  				<label>$VAR[ContentInfoVideos]</label>
+  				<label>$LOCALIZE[3]</label>
+  	      <visible>![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+  			</control>
+  			<!-- Movies -->
+  			<control type="label">
+  			  <include>TopBigLabel</include>
+  				<label>$LOCALIZE[20342]</label>
+  	      <visible>Container.Content(Movies) | Container.Content(Sets)</visible>
+  			</control>
+  			<!-- TV Shows -->
+  			<control type="label">
+  			  <include>TopBigLabel</include>
+  				<label>$LOCALIZE[31002]</label>
+  	      <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
+  			</control>
+  			<!-- Music Videos -->
+  			<control type="label">
+  			  <include>TopBigLabel</include>
+  				<label>$LOCALIZE[20389]</label>
+  	      <visible>Container.Content(MusicVideos)</visible>
   			</control>
   			<!-- Small Labels -->
   			<control type="label">
@@ -250,22 +269,22 @@
   			<control type="label">
   			  <include>TopZoomedSmallLabel</include>
   		    <label>$LOCALIZE[24001]</label>
-  	      <visible>substring(Container.FolderPath,plugin://plugin.video,left) | substring(Container.FolderPath,addons://sources/video/,left)</visible>
+  	      <visible>substring(Container.FolderPath,plugin://plugin.video,left) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
   			</control>
   			<control type="label">
   			  <include>TopZoomedSmallLabel</include>
   		    <label>$INFO[Container.FolderName]</label>
-  	      <visible>!substring(Container.FolderPath,addons://sources/video/,left) + ![[Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !substring(Container.FolderPath,plugin://plugin.video,left)]</visible>
+  	      <visible>![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
   			</control>
   			<control type="label">
   			  <include>TopZoomedSmallLabel</include>
   		    <label>$INFO[Container.FolderName]</label>
-          <visible>[Container.Content(Movies) | Container.Content(Sets)] + !substring(Container.FolderPath,plugin://plugin.video,left)</visible>
+          <visible>Container.Content(Movies) | Container.Content(Sets)</visible>
   			</control>
   			<control type="label">
   			  <include>TopZoomedSmallLabel</include>
   		    <label>$INFO[Container.FolderName]</label>
-  	      <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !substring(Container.FolderPath,plugin://plugin.video,left)</visible>
+  	      <visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
   			</control>
   			<control type="label">
   			  <include>TopZoomedSmallLabel</include>
@@ -280,7 +299,7 @@
   			<control type="label">
   			  <include>TopZoomedSmallLabel</include>
   		    <label>$INFO[ListItem.Season,$LOCALIZE[20373] ]</label>
-  	      <visible>Container.Content(Episodes) + !IsEmpty(ListItem.Season) + !SubString(Container.FolderPath,videodb://recentlyaddedepisodes/) + !substring(Container.FolderPath,plugin://plugin.video,left)</visible>
+  	      <visible>Container.Content(Episodes) + !IsEmpty(ListItem.Season) + !SubString(Container.FolderPath,videodb://recentlyaddedepisodes/)</visible>
   			</control>
 			</control>
 	  </control>

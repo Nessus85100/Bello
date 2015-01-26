@@ -12,8 +12,8 @@
 				<height>90</height>
 				<aspectratio aligny="top" align="center">keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
-				<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
-				<bordersize>6</bordersize>
+				<bordertexture border="4">dialogs/other/iconborder.png</bordertexture>
+				<bordersize>4</bordersize>
 			</control>
 			<control type="label">
 				<description>Episode Number</description>
@@ -55,8 +55,8 @@
 				<height>90</height>
 				<aspectratio aligny="top" align="center">keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
-				<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
-				<bordersize>6</bordersize>
+				<bordertexture border="4">dialogs/other/iconborder.png</bordertexture>
+				<bordersize>4</bordersize>
 			</control>
 			<control type="label">
 				<description>Episode Number</description>

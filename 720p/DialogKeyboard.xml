@@ -7,11 +7,11 @@
 		<include>DialogAnimation</include>
 		<visible>!Window.IsVisible(NumericInput)</visible>
 		<control type="image">
-			<left>227</left>
-			<top>156</top>
-			<width>826</width>
-			<height>418</height>
-			<texture background="true" border="39">views/other/panel.png</texture>
+			<left>206</left>
+			<top>135</top>
+			<width>868</width>
+			<height>460</height>
+			<texture background="true" border="39">dialogs/other/default.png</texture>
 		</control>
 		<control type="image">
 			<description>background image</description>
