@@ -15,7 +15,6 @@
       <include condition="!Skin.HasSetting(WallViewVideos)">WallView_Videos</include> <!-- id = 54 -->
       <include condition="!Skin.HasSetting(ListWallViewVideos)">ListWallView_Videos</include> <!-- id = 58 -->
       <include condition="!Skin.HasSetting(VideoWallFanartViewVideos)">VideoWallFanartView</include> <!-- id = 580 -->
-	  <include condition="!Skin.HasSetting(LoveFilmViewVideos)">LoveFilmView</include> <!-- id = 581 -->
       <include condition="!Skin.HasSetting(PostersViewVideos)">PostersView_Videos</include> <!-- id = 55 -->
       <include condition="!Skin.HasSetting(ThumbnailsVideos)">ThumbnailsView</include> <!-- id = 56 -->
       <include condition="!Skin.HasSetting(ThumbnailsVideos)">ThumbnailsView_Videos</include> <!-- id = 560 -->
@@ -482,10 +481,6 @@
   		<value condition="!IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
       <value>$INFO[ListItem.ActualIcon,thumbs/,/folderback_episode_tp.png]</value>
   	</variable>
-	
-	<variable name="LoveFilmPoster">		
-		<value>$INFO[ListItem.Art(poster)]</value>
-	</variable>
   
     <variable name="ThumbnailsIcon">
       <value condition="!IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>

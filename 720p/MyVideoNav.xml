@@ -2,7 +2,7 @@
 <window  id="25">
 	<defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
-	<views>50,51,52,53,54,58,580,581,55,56,560,561,57</views>
+	<views>50,51,52,53,54,58,580,55,56,560,561,57</views>
   <backgroundcolor>0</backgroundcolor>
   <onload condition="[SubString(Container.FolderPath,plugin://plugin.video.youtube) + Container.HasFiles]">Container.SetViewMode(560)</onload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows) + Skin.HasSetting(NextAiredEnabled)">RunScript(script.tv.show.next.aired,backend=True)</onload>

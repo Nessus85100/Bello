@@ -219,11 +219,7 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr ""
 
-msgctxt "#31089"
-msgid "LoveFilm"
-msgstr ""
-
-#empty strings from id 31088 to 31093
+#empty strings from id 31089 to 31093
 #Skin Settings labels
 
 msgctxt "#31094"
@@ -791,11 +787,7 @@ msgctxt "#31316"
 msgid "Now Playing"
 msgstr ""
 
-msgctxt "#31317"
-msgid "Deactivate Vignette (Better for Ambilight)"
-msgstr ""
-
-#empty strings from id 31318 to 31349
+#empty strings from id 31317 to 31349
 #PVR
 
 msgctxt "#31350"

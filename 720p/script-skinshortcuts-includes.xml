@@ -3,7 +3,7 @@
 	<include name="skinshortcuts-mainmenu">
 		<item id="1">
 			<label>$LOCALIZE[31002]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultTVShows.png</icon>
 			<thumb />
 			<property name="labelID">31002</property>
@@ -11,16 +11,14 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowTitles,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">num-31002</property>
 			<property name="group">mainmenu</property>
-			<property name="background">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</property>
-			<property name="backgroundName">Fanart TV Shows</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[342]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb />
 			<property name="labelID">movies</property>
@@ -28,88 +26,84 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieTitles,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">movies</property>
 			<property name="group">mainmenu</property>
-			<property name="background">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</property>
-			<property name="backgroundName">Fanart Movies</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[10005]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb />
 			<property name="labelID">music</property>
 			<property name="defaultID">music</property>
 			<onclick>ActivateWindow(Music)</onclick>
 			<property name="path">ActivateWindow(Music)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">music</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[10006]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultVideo.png</icon>
 			<thumb />
 			<property name="labelID">videos</property>
 			<property name="defaultID">videos</property>
 			<onclick>ActivateWindow(videos,sources://video/,return)</onclick>
 			<property name="path">ActivateWindow(videos,sources://video/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">videos</property>
 			<property name="group">mainmenu</property>
-			<property name="background">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</property>
-			<property name="backgroundName">Fanart Videos</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[24001]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">24001</property>
 			<property name="defaultID">addons</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[10002]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
 			<property name="labelID">pictures</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">pictures</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[10001]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultProgram.png</icon>
 			<thumb />
 			<property name="labelID">programs</property>
 			<property name="defaultID">programs</property>
 			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Programs,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">programs</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[31000]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultLiveTV.png</icon>
 			<thumb />
 			<property name="labelID">31000</property>
@@ -117,28 +111,28 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">num-31000</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[31018]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
 			<property name="labelID">$INFO[Skin.String(TrailersAddon_Path)]</property>
 			<property name="defaultID">trailers</property>
 			<onclick>ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</onclick>
 			<property name="path">ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">info-skin-string-trailersaddon-path</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="10">
 			<label>$LOCALIZE[12600]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>special://skin/extras/icons/Weather.png</icon>
 			<thumb />
 			<property name="labelID">weather</property>
@@ -146,21 +140,21 @@
 			<visible>!IsEmpty(Weather.Plugin)</visible>
 			<onclick>ActivateWindow(Weather)</onclick>
 			<property name="path">ActivateWindow(Weather)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">weather</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="11">
 			<label>$LOCALIZE[10004]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>special://skin/extras/icons/Settings.png</icon>
 			<thumb />
 			<property name="labelID">settings</property>
 			<property name="defaultID">settings</property>
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			<property name="path">ActivateWindow(AppearanceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">settings</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -178,7 +172,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(1114)</onclick>
 			<property name="path">ActivateWindow(1114)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -192,7 +186,7 @@
 			<visible>System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
 			<onclick>RunAddon(script.tv.show.next.aired,return)</onclick>
 			<property name="path">RunAddon(script.tv.show.next.aired,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -206,7 +200,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowStudios,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowStudios,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -220,7 +214,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowGenres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -234,7 +228,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowActors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -248,7 +242,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowYears,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -261,7 +255,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -274,7 +268,7 @@
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -287,7 +281,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -300,7 +294,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -314,7 +308,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(1113)</onclick>
 			<property name="path">ActivateWindow(1113)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -327,7 +321,7 @@
 			<property name="defaultID">$INFO[Skin.String(TrailersAddon_Path)]</property>
 			<onclick>ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</onclick>
 			<property name="path">ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -341,7 +335,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieGenres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -355,7 +349,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieYears,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -369,7 +363,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieActors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -383,7 +377,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieDirectors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -397,7 +391,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieStudios,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieStudios,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -410,7 +404,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -424,7 +418,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieSets,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -437,7 +431,7 @@
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -450,7 +444,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -463,7 +457,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -477,7 +471,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(1115)</onclick>
 			<property name="path">ActivateWindow(1115)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -491,7 +485,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Albums,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -505,7 +499,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Artists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -519,7 +513,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Songs,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -533,7 +527,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Genres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -547,7 +541,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Years,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Years,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -561,7 +555,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Top100,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Top100,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -575,7 +569,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Compilations,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Compilations,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -589,7 +583,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -603,7 +597,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -616,7 +610,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(MusicFiles,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -630,7 +624,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -643,7 +637,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -657,7 +651,7 @@
 			<visible>Library.HasContent(Movies) | Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -671,7 +665,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,Movies,root)</onclick>
 			<property name="path">ActivateWindow(Videos,Movies,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -685,7 +679,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShows,root)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShows,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -698,7 +692,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -711,7 +705,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -724,7 +718,7 @@
 			<property name="defaultID">1024</property>
 			<onclick>ActivateWindow(AddonBrowser,addons://all/,return)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser,addons://all/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -737,7 +731,7 @@
 			<property name="defaultID">3</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -750,7 +744,7 @@
 			<property name="defaultID">2</property>
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -763,7 +757,7 @@
 			<property name="defaultID">0</property>
 			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Programs,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -776,7 +770,7 @@
 			<property name="defaultID">1</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -790,7 +784,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -804,7 +798,7 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -818,7 +812,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -832,7 +826,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -846,7 +840,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -860,7 +854,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -873,7 +867,7 @@
 			<property name="defaultID">20077</property>
 			<onclick>ActivateWindow(SkinSettings)</onclick>
 			<property name="path">ActivateWindow(SkinSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -886,7 +880,7 @@
 			<property name="defaultID">480</property>
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			<property name="path">ActivateWindow(AppearanceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -899,7 +893,7 @@
 			<property name="defaultID">3</property>
 			<onclick>ActivateWindow(VideosSettings)</onclick>
 			<property name="path">ActivateWindow(VideosSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -912,7 +906,7 @@
 			<property name="defaultID">31000</property>
 			<onclick>ActivateWindow(PVRSettings)</onclick>
 			<property name="path">ActivateWindow(PVRSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -925,7 +919,7 @@
 			<property name="defaultID">292</property>
 			<onclick>ActivateWindow(MusicSettings)</onclick>
 			<property name="path">ActivateWindow(MusicSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -938,7 +932,7 @@
 			<property name="defaultID">1</property>
 			<onclick>ActivateWindow(PicturesSettings)</onclick>
 			<property name="path">ActivateWindow(PicturesSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -951,7 +945,7 @@
 			<property name="defaultID">8</property>
 			<onclick>ActivateWindow(WeatherSettings)</onclick>
 			<property name="path">ActivateWindow(WeatherSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -964,7 +958,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -977,7 +971,7 @@
 			<property name="defaultID">14036</property>
 			<onclick>ActivateWindow(ServiceSettings)</onclick>
 			<property name="path">ActivateWindow(ServiceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -990,7 +984,7 @@
 			<property name="defaultID">13000</property>
 			<onclick>ActivateWindow(SystemSettings)</onclick>
 			<property name="path">ActivateWindow(SystemSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1003,7 +997,7 @@
 			<property name="defaultID">130</property>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1016,7 +1010,7 @@
 			<property name="defaultID">13200</property>
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1029,7 +1023,7 @@
 			<property name="defaultID">31016</property>
 			<onclick>ActivateWindow(FileManager,return)</onclick>
 			<property name="path">ActivateWindow(FileManager,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Container(20).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1037,7 +1031,7 @@
 	<include name="skinshortcuts-allmenus">
 		<item id="1">
 			<label>$LOCALIZE[31002]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultTVShows.png</icon>
 			<thumb />
 			<property name="labelID">31002</property>
@@ -1045,11 +1039,9 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),num-31002)">ActivateWindow(Videos,TVShowTitles,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowTitles,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">num-31002</property>
 			<property name="group">mainmenu</property>
-			<property name="background">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</property>
-			<property name="backgroundName">Fanart TV Shows</property>
 			<property name="hasSubmenu">True</property>
 			<onclick>SetProperty(submenuVisibility,num-31002,10000)</onclick>
 		</item>
@@ -1063,7 +1055,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(1114)</onclick>
 			<property name="path">ActivateWindow(1114)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -1077,7 +1069,7 @@
 			<visible>System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
 			<onclick>RunAddon(script.tv.show.next.aired,return)</onclick>
 			<property name="path">RunAddon(script.tv.show.next.aired,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -1091,7 +1083,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowStudios,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowStudios,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -1105,7 +1097,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowGenres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -1119,7 +1111,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowActors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -1133,7 +1125,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowYears,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -1146,7 +1138,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -1159,7 +1151,7 @@
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -1172,7 +1164,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -1185,13 +1177,13 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[342]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb />
 			<property name="labelID">movies</property>
@@ -1199,11 +1191,9 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieTitles,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">movies</property>
 			<property name="group">mainmenu</property>
-			<property name="background">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</property>
-			<property name="backgroundName">Fanart Movies</property>
 			<property name="hasSubmenu">True</property>
 			<onclick>SetProperty(submenuVisibility,movies,10000)</onclick>
 		</item>
@@ -1217,7 +1207,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(1113)</onclick>
 			<property name="path">ActivateWindow(1113)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1230,7 +1220,7 @@
 			<property name="defaultID">$INFO[Skin.String(TrailersAddon_Path)]</property>
 			<onclick>ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</onclick>
 			<property name="path">ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1244,7 +1234,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieGenres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1258,7 +1248,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieYears,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1272,7 +1262,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieActors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1286,7 +1276,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieDirectors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1300,7 +1290,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieStudios,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieStudios,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1313,7 +1303,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1327,7 +1317,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieSets,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1340,7 +1330,7 @@
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1353,7 +1343,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -1366,20 +1356,20 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[10005]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb />
 			<property name="labelID">music</property>
 			<property name="defaultID">music</property>
 			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),music)">ActivateWindow(Music)</onclick>
 			<property name="path">ActivateWindow(Music)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">music</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -1395,7 +1385,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(1115)</onclick>
 			<property name="path">ActivateWindow(1115)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1409,7 +1399,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Albums,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1423,7 +1413,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Artists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1437,7 +1427,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Songs,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1451,7 +1441,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Genres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1465,7 +1455,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Years,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Years,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1479,7 +1469,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Top100,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Top100,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1493,7 +1483,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Compilations,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Compilations,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1507,7 +1497,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1521,7 +1511,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1534,7 +1524,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(MusicFiles,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -1548,24 +1538,22 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[10006]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultVideo.png</icon>
 			<thumb />
 			<property name="labelID">videos</property>
 			<property name="defaultID">videos</property>
 			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),videos)">ActivateWindow(videos,sources://video/,return)</onclick>
 			<property name="path">ActivateWindow(videos,sources://video/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">videos</property>
 			<property name="group">mainmenu</property>
-			<property name="background">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</property>
-			<property name="backgroundName">Fanart Videos</property>
 			<property name="hasSubmenu">True</property>
 			<onclick>SetProperty(submenuVisibility,videos,10000)</onclick>
 		</item>
@@ -1578,7 +1566,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -1592,7 +1580,7 @@
 			<visible>Library.HasContent(Movies) | Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -1606,7 +1594,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,Movies,root)</onclick>
 			<property name="path">ActivateWindow(Videos,Movies,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -1620,7 +1608,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShows,root)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShows,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -1633,7 +1621,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -1646,20 +1634,20 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[24001]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">24001</property>
 			<property name="defaultID">addons</property>
 			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),num-24001)">ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -1674,7 +1662,7 @@
 			<property name="defaultID">1024</property>
 			<onclick>ActivateWindow(AddonBrowser,addons://all/,return)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser,addons://all/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -1687,7 +1675,7 @@
 			<property name="defaultID">3</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -1700,7 +1688,7 @@
 			<property name="defaultID">2</property>
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -1713,7 +1701,7 @@
 			<property name="defaultID">0</property>
 			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Programs,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -1726,41 +1714,41 @@
 			<property name="defaultID">1</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[10002]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
 			<property name="labelID">pictures</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">pictures</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[10001]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultProgram.png</icon>
 			<thumb />
 			<property name="labelID">programs</property>
 			<property name="defaultID">programs</property>
 			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Programs,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">programs</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[31000]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultLiveTV.png</icon>
 			<thumb />
 			<property name="labelID">31000</property>
@@ -1768,7 +1756,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),num-31000)">ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">num-31000</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -1784,7 +1772,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -1798,7 +1786,7 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -1812,7 +1800,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -1826,7 +1814,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -1840,7 +1828,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -1854,27 +1842,27 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[31018]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
 			<property name="labelID">$INFO[Skin.String(TrailersAddon_Path)]</property>
 			<property name="defaultID">trailers</property>
 			<onclick>ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</onclick>
 			<property name="path">ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">info-skin-string-trailersaddon-path</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="10">
 			<label>$LOCALIZE[12600]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>special://skin/extras/icons/Weather.png</icon>
 			<thumb />
 			<property name="labelID">weather</property>
@@ -1882,21 +1870,21 @@
 			<visible>!IsEmpty(Weather.Plugin)</visible>
 			<onclick>ActivateWindow(Weather)</onclick>
 			<property name="path">ActivateWindow(Weather)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">weather</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="11">
 			<label>$LOCALIZE[10004]</label>
-			<label2>Common Shortcut</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>special://skin/extras/icons/Settings.png</icon>
 			<thumb />
 			<property name="labelID">settings</property>
 			<property name="defaultID">settings</property>
 			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),settings)">ActivateWindow(AppearanceSettings)</onclick>
 			<property name="path">ActivateWindow(AppearanceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="submenuVisibility">settings</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
@@ -1911,7 +1899,7 @@
 			<property name="defaultID">20077</property>
 			<onclick>ActivateWindow(SkinSettings)</onclick>
 			<property name="path">ActivateWindow(SkinSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1924,7 +1912,7 @@
 			<property name="defaultID">480</property>
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			<property name="path">ActivateWindow(AppearanceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1937,7 +1925,7 @@
 			<property name="defaultID">3</property>
 			<onclick>ActivateWindow(VideosSettings)</onclick>
 			<property name="path">ActivateWindow(VideosSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1950,7 +1938,7 @@
 			<property name="defaultID">31000</property>
 			<onclick>ActivateWindow(PVRSettings)</onclick>
 			<property name="path">ActivateWindow(PVRSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1963,7 +1951,7 @@
 			<property name="defaultID">292</property>
 			<onclick>ActivateWindow(MusicSettings)</onclick>
 			<property name="path">ActivateWindow(MusicSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1976,7 +1964,7 @@
 			<property name="defaultID">1</property>
 			<onclick>ActivateWindow(PicturesSettings)</onclick>
 			<property name="path">ActivateWindow(PicturesSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -1989,7 +1977,7 @@
 			<property name="defaultID">8</property>
 			<onclick>ActivateWindow(WeatherSettings)</onclick>
 			<property name="path">ActivateWindow(WeatherSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -2002,7 +1990,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -2015,7 +2003,7 @@
 			<property name="defaultID">14036</property>
 			<onclick>ActivateWindow(ServiceSettings)</onclick>
 			<property name="path">ActivateWindow(ServiceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -2028,7 +2016,7 @@
 			<property name="defaultID">13000</property>
 			<onclick>ActivateWindow(SystemSettings)</onclick>
 			<property name="path">ActivateWindow(SystemSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -2041,7 +2029,7 @@
 			<property name="defaultID">130</property>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -2054,7 +2042,7 @@
 			<property name="defaultID">13200</property>
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -2067,7 +2055,7 @@
 			<property name="defaultID">31016</property>
 			<onclick>ActivateWindow(FileManager,return)</onclick>
 			<property name="path">ActivateWindow(FileManager,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -2083,7 +2071,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(1114)</onclick>
 			<property name="path">ActivateWindow(1114)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 		<item id="2">
@@ -2096,7 +2084,7 @@
 			<visible>System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
 			<onclick>RunAddon(script.tv.show.next.aired,return)</onclick>
 			<property name="path">RunAddon(script.tv.show.next.aired,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 		<item id="3">
@@ -2109,7 +2097,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowStudios,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowStudios,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 		<item id="4">
@@ -2122,7 +2110,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowGenres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 		<item id="5">
@@ -2135,7 +2123,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowActors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 		<item id="6">
@@ -2148,7 +2136,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowYears,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 		<item id="7">
@@ -2160,7 +2148,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 		<item id="8">
@@ -2172,7 +2160,7 @@
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 		<item id="9">
@@ -2184,7 +2172,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 		<item id="10">
@@ -2196,7 +2184,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31002</property>
 		</item>
 	</include>
@@ -2211,7 +2199,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(1114)</onclick>
 			<property name="path">ActivateWindow(1114)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2225,7 +2213,7 @@
 			<visible>System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
 			<onclick>RunAddon(script.tv.show.next.aired,return)</onclick>
 			<property name="path">RunAddon(script.tv.show.next.aired,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2239,7 +2227,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowStudios,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowStudios,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2253,7 +2241,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowGenres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2267,7 +2255,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowActors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2281,7 +2269,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShowYears,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2294,7 +2282,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2307,7 +2295,7 @@
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2320,7 +2308,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2333,7 +2321,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31002)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31002</property>
 		</item>
@@ -2349,7 +2337,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(1113)</onclick>
 			<property name="path">ActivateWindow(1113)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="2">
@@ -2361,7 +2349,7 @@
 			<property name="defaultID">$INFO[Skin.String(TrailersAddon_Path)]</property>
 			<onclick>ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</onclick>
 			<property name="path">ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="3">
@@ -2374,7 +2362,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieGenres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="4">
@@ -2387,7 +2375,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieYears,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="5">
@@ -2400,7 +2388,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieActors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="6">
@@ -2413,7 +2401,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieDirectors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="7">
@@ -2426,7 +2414,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieStudios,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieStudios,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="8">
@@ -2438,7 +2426,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="9">
@@ -2451,7 +2439,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieSets,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="10">
@@ -2463,7 +2451,7 @@
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="11">
@@ -2475,7 +2463,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 		<item id="12">
@@ -2487,7 +2475,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">movies</property>
 		</item>
 	</include>
@@ -2502,7 +2490,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(1113)</onclick>
 			<property name="path">ActivateWindow(1113)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2515,7 +2503,7 @@
 			<property name="defaultID">$INFO[Skin.String(TrailersAddon_Path)]</property>
 			<onclick>ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</onclick>
 			<property name="path">ActivateWindow(videos,plugin://$INFO[Skin.String(TrailersAddon_Path)])</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2529,7 +2517,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieGenres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2543,7 +2531,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieYears,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2557,7 +2545,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieActors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2571,7 +2559,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieDirectors,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2585,7 +2573,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieStudios,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieStudios,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2598,7 +2586,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2612,7 +2600,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
 			<property name="path">ActivateWindow(Videos,MovieSets,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2625,7 +2613,7 @@
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2638,7 +2626,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2651,7 +2639,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),movies)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">movies</property>
 		</item>
@@ -2667,7 +2655,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(1115)</onclick>
 			<property name="path">ActivateWindow(1115)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="2">
@@ -2680,7 +2668,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Albums,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="3">
@@ -2693,7 +2681,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Artists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="4">
@@ -2706,7 +2694,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Songs,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="5">
@@ -2719,7 +2707,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Genres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="6">
@@ -2732,7 +2720,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Years,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Years,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="7">
@@ -2745,7 +2733,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Top100,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Top100,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="8">
@@ -2758,7 +2746,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Compilations,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Compilations,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="9">
@@ -2771,7 +2759,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="10">
@@ -2784,7 +2772,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="11">
@@ -2796,7 +2784,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(MusicFiles,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 		<item id="12">
@@ -2809,7 +2797,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">music</property>
 		</item>
 	</include>
@@ -2824,7 +2812,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(1115)</onclick>
 			<property name="path">ActivateWindow(1115)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2838,7 +2826,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Albums,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2852,7 +2840,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Artists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2866,7 +2854,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Songs,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2880,7 +2868,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Genres,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2894,7 +2882,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Years,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Years,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2908,7 +2896,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Top100,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Top100,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2922,7 +2910,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Compilations,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Compilations,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2936,7 +2924,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2950,7 +2938,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2963,7 +2951,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(MusicFiles,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2977,7 +2965,7 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
 		</item>
@@ -2992,7 +2980,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">videos</property>
 		</item>
 		<item id="2">
@@ -3005,7 +2993,7 @@
 			<visible>Library.HasContent(Movies) | Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">videos</property>
 		</item>
 		<item id="3">
@@ -3018,7 +3006,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,Movies,root)</onclick>
 			<property name="path">ActivateWindow(Videos,Movies,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">videos</property>
 		</item>
 		<item id="4">
@@ -3031,7 +3019,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShows,root)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShows,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">videos</property>
 		</item>
 		<item id="5">
@@ -3043,7 +3031,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">videos</property>
 		</item>
 		<item id="6">
@@ -3055,7 +3043,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">videos</property>
 		</item>
 	</include>
@@ -3069,7 +3057,7 @@
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -3083,7 +3071,7 @@
 			<visible>Library.HasContent(Movies) | Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -3097,7 +3085,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,Movies,root)</onclick>
 			<property name="path">ActivateWindow(Videos,Movies,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -3111,7 +3099,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TVShows,root)</onclick>
 			<property name="path">ActivateWindow(Videos,TVShows,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -3124,7 +3112,7 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -3137,7 +3125,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
 		</item>
@@ -3152,7 +3140,7 @@
 			<property name="defaultID">1024</property>
 			<onclick>ActivateWindow(AddonBrowser,addons://all/,return)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser,addons://all/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">24001</property>
 		</item>
 		<item id="2">
@@ -3164,7 +3152,7 @@
 			<property name="defaultID">3</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">24001</property>
 		</item>
 		<item id="3">
@@ -3176,7 +3164,7 @@
 			<property name="defaultID">2</property>
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">24001</property>
 		</item>
 		<item id="4">
@@ -3188,7 +3176,7 @@
 			<property name="defaultID">0</property>
 			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Programs,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">24001</property>
 		</item>
 		<item id="5">
@@ -3200,7 +3188,7 @@
 			<property name="defaultID">1</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">24001</property>
 		</item>
 	</include>
@@ -3214,7 +3202,7 @@
 			<property name="defaultID">1024</property>
 			<onclick>ActivateWindow(AddonBrowser,addons://all/,return)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser,addons://all/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -3227,7 +3215,7 @@
 			<property name="defaultID">3</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -3240,7 +3228,7 @@
 			<property name="defaultID">2</property>
 			<onclick>ActivateWindow(Music,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Music,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -3253,7 +3241,7 @@
 			<property name="defaultID">0</property>
 			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Programs,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -3266,7 +3254,7 @@
 			<property name="defaultID">1</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">24001</property>
 		</item>
@@ -3286,7 +3274,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31000</property>
 		</item>
 		<item id="2">
@@ -3299,7 +3287,7 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31000</property>
 		</item>
 		<item id="3">
@@ -3312,7 +3300,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31000</property>
 		</item>
 		<item id="4">
@@ -3325,7 +3313,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31000</property>
 		</item>
 		<item id="5">
@@ -3338,7 +3326,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31000</property>
 		</item>
 		<item id="6">
@@ -3351,7 +3339,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">31000</property>
 		</item>
 	</include>
@@ -3366,7 +3354,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -3380,7 +3368,7 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -3394,7 +3382,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -3408,7 +3396,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -3422,7 +3410,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -3436,7 +3424,7 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),num-31000)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">31000</property>
 		</item>
@@ -3455,7 +3443,7 @@
 			<property name="defaultID">20077</property>
 			<onclick>ActivateWindow(SkinSettings)</onclick>
 			<property name="path">ActivateWindow(SkinSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="2">
@@ -3467,7 +3455,7 @@
 			<property name="defaultID">480</property>
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			<property name="path">ActivateWindow(AppearanceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="3">
@@ -3479,7 +3467,7 @@
 			<property name="defaultID">3</property>
 			<onclick>ActivateWindow(VideosSettings)</onclick>
 			<property name="path">ActivateWindow(VideosSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="4">
@@ -3491,7 +3479,7 @@
 			<property name="defaultID">31000</property>
 			<onclick>ActivateWindow(PVRSettings)</onclick>
 			<property name="path">ActivateWindow(PVRSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="5">
@@ -3503,7 +3491,7 @@
 			<property name="defaultID">292</property>
 			<onclick>ActivateWindow(MusicSettings)</onclick>
 			<property name="path">ActivateWindow(MusicSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="6">
@@ -3515,7 +3503,7 @@
 			<property name="defaultID">1</property>
 			<onclick>ActivateWindow(PicturesSettings)</onclick>
 			<property name="path">ActivateWindow(PicturesSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="7">
@@ -3527,7 +3515,7 @@
 			<property name="defaultID">8</property>
 			<onclick>ActivateWindow(WeatherSettings)</onclick>
 			<property name="path">ActivateWindow(WeatherSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="8">
@@ -3539,7 +3527,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="9">
@@ -3551,7 +3539,7 @@
 			<property name="defaultID">14036</property>
 			<onclick>ActivateWindow(ServiceSettings)</onclick>
 			<property name="path">ActivateWindow(ServiceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="10">
@@ -3563,7 +3551,7 @@
 			<property name="defaultID">13000</property>
 			<onclick>ActivateWindow(SystemSettings)</onclick>
 			<property name="path">ActivateWindow(SystemSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="11">
@@ -3575,7 +3563,7 @@
 			<property name="defaultID">130</property>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="12">
@@ -3587,7 +3575,7 @@
 			<property name="defaultID">13200</property>
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 		<item id="13">
@@ -3599,7 +3587,7 @@
 			<property name="defaultID">31016</property>
 			<onclick>ActivateWindow(FileManager,return)</onclick>
 			<property name="path">ActivateWindow(FileManager,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<visible>StringCompare(System.ProfileName,Nessus)</visible>
 			<property name="group">settings</property>
 		</item>
 	</include>
@@ -3613,7 +3601,7 @@
 			<property name="defaultID">20077</property>
 			<onclick>ActivateWindow(SkinSettings)</onclick>
 			<property name="path">ActivateWindow(SkinSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3626,7 +3614,7 @@
 			<property name="defaultID">480</property>
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			<property name="path">ActivateWindow(AppearanceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3639,7 +3627,7 @@
 			<property name="defaultID">3</property>
 			<onclick>ActivateWindow(VideosSettings)</onclick>
 			<property name="path">ActivateWindow(VideosSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3652,7 +3640,7 @@
 			<property name="defaultID">31000</property>
 			<onclick>ActivateWindow(PVRSettings)</onclick>
 			<property name="path">ActivateWindow(PVRSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3665,7 +3653,7 @@
 			<property name="defaultID">292</property>
 			<onclick>ActivateWindow(MusicSettings)</onclick>
 			<property name="path">ActivateWindow(MusicSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3678,7 +3666,7 @@
 			<property name="defaultID">1</property>
 			<onclick>ActivateWindow(PicturesSettings)</onclick>
 			<property name="path">ActivateWindow(PicturesSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3691,7 +3679,7 @@
 			<property name="defaultID">8</property>
 			<onclick>ActivateWindow(WeatherSettings)</onclick>
 			<property name="path">ActivateWindow(WeatherSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3704,7 +3692,7 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3717,7 +3705,7 @@
 			<property name="defaultID">14036</property>
 			<onclick>ActivateWindow(ServiceSettings)</onclick>
 			<property name="path">ActivateWindow(ServiceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3730,7 +3718,7 @@
 			<property name="defaultID">13000</property>
 			<onclick>ActivateWindow(SystemSettings)</onclick>
 			<property name="path">ActivateWindow(SystemSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3743,7 +3731,7 @@
 			<property name="defaultID">130</property>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3756,7 +3744,7 @@
 			<property name="defaultID">13200</property>
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>
@@ -3769,7 +3757,7 @@
 			<property name="defaultID">31016</property>
 			<onclick>ActivateWindow(FileManager,return)</onclick>
 			<property name="path">ActivateWindow(FileManager,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
+			<visible>StringCompare(System.ProfileName,Nessus) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">settings</property>
 		</item>

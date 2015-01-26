@@ -1417,9 +1417,9 @@
 						<alttexturenofocus>osd/miniplayer/play_nf.png</alttexturenofocus>
 						<onleft>601</onleft>
 						<onright>603</onright>
-						<onup>SetProperty(Movement,1)</onup>
-						<onup>650</onup>
-						<ondown>ClearProperty(Movement)</ondown>
+	          <onup>SetProperty(Movement,1)</onup>
+			      <onup>650</onup>
+	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>XBMC.PlayerControl(Play)</onclick>
 					</control>
@@ -1433,9 +1433,9 @@
 						<texturenofocus>osd/miniplayer/stop_nf.png</texturenofocus>
 						<onleft>602</onleft>
 						<onright>604</onright>
-						<onup>SetProperty(Movement,1)</onup>
-						<onup>650</onup>
-						<ondown>ClearProperty(Movement)</ondown>
+	          <onup>SetProperty(Movement,1)</onup>
+			      <onup>650</onup>
+	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>back</onclick>
 						<onclick>XBMC.PlayerControl(Stop)</onclick>
@@ -1450,9 +1450,9 @@
 						<texturenofocus>osd/miniplayer/ff_nf.png</texturenofocus>
 						<onleft>603</onleft>
 						<onright>605</onright>
-						<onup>SetProperty(Movement,1)</onup>
-						<onup>650</onup>
-						<ondown>ClearProperty(Movement)</ondown>
+	          <onup>SetProperty(Movement,1)</onup>
+			      <onup>650</onup>
+	          <ondown>ClearProperty(Movement)</ondown>
 						<ondown>150</ondown>
 						<onclick>XBMC.PlayerControl(Forward)</onclick>
 					</control>

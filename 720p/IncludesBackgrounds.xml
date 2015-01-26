@@ -228,7 +228,6 @@
 		  <description>Vignette</description>
 			<include>FullscreenDimensions</include>
 			<texture background="true">windows/bg/bg_vignette.png</texture>
-			<visible>!Skin.HasSetting(HideVisualisationVignette) + [Window.IsActive(visualisation) | Window.IsActive(musicosd) | Player.ShowInfo]</visible>
 			<include>BackgroundFade</include>
 <!--	<colordiffuse>FFCDCDCD</colordiffuse>
       <colordiffuse>D5FFFFFF</colordiffuse> -->

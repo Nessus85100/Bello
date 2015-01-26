@@ -120,14 +120,6 @@
 				<selected>Skin.HasSetting(HideOSDScrollingTitles)</selected>
 				<onclick>Skin.ToggleSetting(HideOSDScrollingTitles)</onclick>
 			</control>
-			<control type="radiobutton" id="983">
-				<description>Hide Background Vignette</description>
-			  <width>553</width>
-				<label>$LOCALIZE[31317]</label>
-        <include>DialogsRadioButton</include>
-				<selected>Skin.HasSetting(HideVisualisationVignette)</selected>
-				<onclick>Skin.ToggleSetting(HideVisualisationVignette)</onclick>
-			</control>
 		</control>
 	</control>
 	</controls>
