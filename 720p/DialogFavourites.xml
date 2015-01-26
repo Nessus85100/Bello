@@ -15,10 +15,10 @@
         <effect type="slide" start="0,0" end="0,120" time="280" tween="sine" easing="inout" />
       </animation>
 			<control type="panel" id="450">
-				<left>28</left>
-				<top>140</top>
+				<left>45</left>
+				<top>145</top>
 				<width>1220</width>
-				<height>442</height>
+				<height>440</height>
 				<onleft>450</onleft>
 				<onright>450</onright>
 				<onup>450</onup>
@@ -26,28 +26,30 @@
         <scrolltime tween="Quadratic" easing="out">250</scrolltime>
 				<viewtype label="536">icon</viewtype>
         <orientation>vertical</orientation>
-				<itemlayout height="216" width="201">
+				<itemlayout height="220" width="200">
 					<control type="image">
-						<width>219</width>
-						<height>234</height>
+						<left>0</left>
+						<top>0</top>
+						<width>190</width>
+						<height>210</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/thumbnails/thumb_panel.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
-						<left>24</left>
-						<top>24</top>
-						<width>171</width>
-						<height>161</height>
+						<left>4</left>
+						<top>4</top>
+						<width>182</width>
+						<height>167</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>24</left>
-						<top>181</top>
+						<left>10</left>
+						<top>170</top>
 						<width>170</width>
-						<height>35</height>
+						<height>33</height>
 						<textcolor>white</textcolor>
 						<shadowcolor>77000000</shadowcolor>
 						<font>FontSize_20</font>
@@ -57,28 +59,30 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="216" width="201">
+				<focusedlayout height="220" width="200">
 					<control type="image">
-						<width>219</width>
-						<height>234</height>
+						<left>0</left>
+						<top>0</top>
+						<width>190</width>
+						<height>210</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/thumbnails/thumb_panel.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
-						<left>24</left>
-						<top>24</top>
-						<width>171</width>
-						<height>161</height>
+						<left>4</left>
+						<top>4</top>
+						<width>182</width>
+						<height>167</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="15">dialogs/other/iconborder_black.png</bordertexture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="label">
-						<left>24</left>
-						<top>181</top>
+						<left>10</left>
+						<top>170</top>
 						<width>170</width>
-						<height>35</height>
+						<height>33</height>
 						<textcolor>blue</textcolor>
 						<shadowcolor>77000000</shadowcolor>
 						<font>FontSize_20</font>
@@ -88,10 +92,12 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<width>219</width>
-						<height>234</height>
+						<left>0</left>
+						<top>0</top>
+						<width>190</width>
+						<height>210</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/thumbnails/focus.png</texture>
+						<texture border="31">views/other/focus_blue.png</texture>
             <animation type="Focus">
               <effect type="zoom" start="95" end="100" time="150" tween="sine" easing="inout" center="auto" />
             </animation>

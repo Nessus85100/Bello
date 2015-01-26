@@ -431,7 +431,7 @@
 						<description>Hide Video Views</description>
 	          <include>SettingsButton</include>
 						<label>$LOCALIZE[31156]</label>
-            <onclick>SetProperty(ManageButtons,hidevideoviews)</onclick>
+            <onclick>SetProperty(ManageButtons,managevideoviews)</onclick>
 						<onclick>ActivateWindow(1118)</onclick>
 					</control>
 				  <!-- Music Views -->
@@ -439,7 +439,7 @@
 						<description>Hide Music Views</description>
 	          <include>SettingsButton</include>
 						<label>$LOCALIZE[31157]</label>
-            <onclick>SetProperty(ManageButtons,hidemusicviews)</onclick>
+            <onclick>SetProperty(ManageButtons,managemusicviews)</onclick>
 						<onclick>ActivateWindow(1118)</onclick>
 					</control>
 				</control>

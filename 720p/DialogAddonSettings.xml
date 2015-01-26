@@ -4,7 +4,7 @@
  <controls>
 
 	<control type="group">
-	 <animation type="WindowOpen" condition="Window.IsVisible(contentsettings) | Window.IsVisible(okdialog) | Window.IsVisible(progressdialog) | Window.IsVisible(1112) | Window.IsVisible(script-XBMC-Subtitles-main.xml)" reversible="false">
+	 <animation type="WindowOpen" condition="Window.IsVisible(contentsettings) | Window.IsVisible(okdialog) | Window.IsVisible(progressdialog) | Window.IsVisible(1112) | Window.IsVisible(SubtitleSearch)" reversible="false">
 		<effect type="fade" start="0" end="100" time="0" delay="300" />
 	 </animation>
 
@@ -14,12 +14,12 @@
 		<control type="image">
 			<include>FullscreenDimensions</include>
 		  <texture background="true">windows/settings/bg_addon_settings.png</texture>
-			<visible>!Window.IsVisible(MusicOSD) + !Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
+			<visible>!Window.IsVisible(MusicOSD) + !Window.IsVisible(SubtitleSearch)</visible>
 		</control>
 		<control type="image">
 			<include>FullscreenDimensions</include>
 		  <texture background="true">windows/settings/bg_addon_settings.png</texture>
-			<visible>Window.IsVisible(MusicOSD) | Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
+			<visible>Window.IsVisible(MusicOSD) | Window.IsVisible(SubtitleSearch)</visible>
 			<colordiffuse>FAFFFFFF</colordiffuse>
 		</control>		
 
@@ -95,7 +95,7 @@
 				<description>Default RadioButton</description>
 				<radioposx>558</radioposx>
 				<textwidth>560</textwidth>
-		    <include>SettingsRadioButton</include>    
+		    <include>SettingsRadioButton</include>
 			</control>
 			<control type="spincontrolex" id="5">
 				<description>Default spincontrolex</description>

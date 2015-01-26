@@ -439,7 +439,7 @@
 			<visible>Control.IsVisible(51)</visible>
 	    <include>DialogZoomInOutAnimation</include>
 	    <include>CommonSlideAnimations</include>
-			<control type="image.">
+			<control type="image">
 		    <include>FullscreenDimensions</include>
 			  <texture background="true">views/slide/top_bottom_shadows_music.png</texture>
 			</control>
@@ -467,16 +467,9 @@
 		        <colordiffuse>FFbbbbbb</colordiffuse>
 						<aspectratio aligny="center" align="center">scale</aspectratio>
 						<texture background="true" diffuse="views/slide/poster_diffuse_nf.png" fallback="thumbs/fallback_square_tp.png">$VAR[VarArtThumbSquare]</texture>
-			      <bordertexture border="15">thumbs/thumb_back.png</bordertexture>
 					</control>
 				</itemlayout>
 				<focusedlayout width="297.5" height="300">
-					<control type="image">
-						<width>298</width>
-						<height>300</height>
-					  <aspectratio aligny="center" align="center">stretch</aspectratio>
-					  <texture background="true" border="25">thumbs/thumb_back.png</texture>
-					</control>
 					<control type="image">
 						<width>298</width>
 						<height>300</height>
@@ -575,7 +568,7 @@
 				<width>310</width>
 				<height>312</height>
 				<aspectratio align="center" aligny="center">stretch</aspectratio>
-				<texture border="30">views/slide/focus.png</texture>
+				<texture border="31">views/slide/focus.png</texture>
 			</control>
 	    <control type="button" id="100">
 				<include>TopButton</include>
@@ -656,7 +649,7 @@
 						<height>380</height>
 						<align>left</align>
 						<aspectratio>stretch</aspectratio>
-					  <texture border="25">dialogs/other/iconborder_black.png</texture>
+					  <texture border="20">thumbs/thumb_border.png</texture>
 					</control>
 					<control type="label">
 						<left>47</left>
@@ -688,7 +681,7 @@
 							<height>380</height>
 							<aspectratio align="center">stretch</aspectratio>
 						  <texture background="true" fallback="thumbs/fallback_fanart_big_tp.png">$VAR[VarArtFanart]</texture>
-							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
+							<bordertexture border="20">thumbs/thumb_border.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
 					</control>
@@ -819,7 +812,7 @@
 		        <selectedcolor>88white</selectedcolor>
 					</control>
 					<control type="image">
-						<left>575</left>
+						<left>585</left>
 						<top>15</top>
 						<width>128</width>
 						<height>22</height>
@@ -839,27 +832,20 @@
 	            <effect type="slide" start="0,-35" end="0,0" time="450" tween="circle" easing="out" />
 	            <effect type="fade" start="20" end="100" time="250" delay="100" tween="sine" easing="out" />
 	          </animation>
-    				<control type="image">
-    					<left>-10</left>
-    					<top>-10</top>
-    					<width>761</width>
-    					<height>274</height>
-    					<aspectratio align="center" aligny="center">stretch</aspectratio>
-    					<texture background="true" border="39">dialogs/other/default.png</texture>
-    				</control>
+		        <include>BannersView_Panel</include>
 						<control type="image">
-							<left>21</left>
-							<top>21</top>
-							<width>212</width>
-							<height>212</height>
+							<left>18</left>
+							<top>18</top>
+							<width>220</width>
+							<height>217</height>
 							<texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[VarArtThumbSquare]</texture>
-							<aspectratio align="center" aligny="center">stretch</aspectratio>
-							<bordertexture border="20">dialogs/other/iconborder_black.png</bordertexture>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<bordertexture border="20">thumbs/thumb_border.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
-							<left>575</left>
-							<top>200</top>
+							<left>585</left>
+							<top>207</top>
 							<width>128</width>
 							<height>22</height>
 						  <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
@@ -867,8 +853,8 @@
               <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
-							<left>240</left>
-							<top>25</top>
+							<left>245</left>
+							<top>22</top>
 							<width>475</width>
 							<label>$VAR[BannersListMusicLabel]</label>
 							<font>FontSize_26</font>
@@ -876,8 +862,8 @@
 							<align>left</align>
 						</control>
 						<control type="label">
-							<left>240</left>
-							<top>50</top>
+							<left>245</left>
+							<top>47</top>
 							<width>475</width>
 							<label>$VAR[BannersListMusicSubLabel]</label>
 							<font>FontSize_20</font>
@@ -886,25 +872,26 @@
 							<align>left</align>
 						</control>
 						<control type="textbox">
-							<left>240</left>
-							<top>81</top>
+							<left>245</left>
+							<top>77</top>
 							<width>470</width>
-							<height>110</height>
+							<height>120</height>
 						  <align>justify</align>
+							<font>TextboxFont_20</font>
+							<textcolor>99white</textcolor>
+				      <shadowcolor>99000000</shadowcolor>
 							<label fallback="195">$VAR[GlobalPlotDescription]</label>
 						  <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-							<font>FontSize_20</font>
-							<textcolor>99white</textcolor>
 		          <visible>!Stringcompare(ListItem.Label,..)</visible>
 						</control>
 						<control type="label">
-							<left>240</left>
-							<top>198</top>
-							<height>30</height>
+							<left>245</left>
+							<top>207</top>
+							<height>22</height>
 							<width>355</width>
 							<textcolor>99white</textcolor>
 				      <selectedcolor>99white</selectedcolor>
-							<font>FontSize_22</font>
+							<font>FontSize_20</font>
 				      <scroll>false</scroll>
 							<align>left</align>
 							<label>$VAR[BannersListMusicBottomLabel]</label>
@@ -933,9 +920,9 @@
 	</include>	
 
 
-	<!-- ============================== -->
-	<!-- ==== Wall View Music "59" ==== -->
-	<!-- ============================== -->
+	<!-- ================================= -->
+	<!-- ==== 3D Wall View Music "59" ==== -->
+	<!-- ================================= -->
 	
 	<include name="3DWallView_Music">
 		<control type="group">
@@ -1156,7 +1143,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -1165,6 +1152,7 @@
 						<height>232</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -1192,9 +1180,9 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>160</height>
+						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -1203,6 +1191,7 @@
 						<height>150</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -1232,7 +1221,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -1241,6 +1230,7 @@
 						<height>232</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -1268,9 +1258,9 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>160</height>
+						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -1279,6 +1269,7 @@
 						<height>150</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -1308,16 +1299,16 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>223</width>
 						<height>232</height>
-						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -1345,7 +1336,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/focus_blue.png</texture>
+						<texture border="31">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -1354,18 +1345,18 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>160</height>
+						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>155</width>
 						<height>150</height>
-						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -1393,7 +1384,7 @@
 						<width>163</width>
 						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/focus_blue.png</texture>
+						<texture border="31">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -1404,16 +1395,16 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>223</width>
 						<height>232</height>
-						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -1441,7 +1432,7 @@
 						<width>231</width>
 						<height>240</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/focus_blue.png</texture>
+						<texture border="31">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>
@@ -1450,18 +1441,18 @@
 						<left>5</left>
 						<top>5</top>
 						<width>163</width>
-						<height>160</height>
+						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/panel2.png</texture>
+						<texture border="31">views/other/panel.png</texture>
 					</control>
 					<control type="image">
 						<left>9</left>
 						<top>9</top>
 						<width>155</width>
 						<height>150</height>
-						<colordiffuse>$VAR[DiffuseColorThumbnailsViews_Blue]</colordiffuse>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 					  <texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[ThumbnailsIcon]</texture>
+						<bordertexture border="6">thumbs/thumb_border.png</bordertexture>
 					  <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -1489,7 +1480,7 @@
 						<width>163</width>
 						<height>158</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30">views/other/focus_blue.png</texture>
+						<texture border="31">views/other/focus_blue.png</texture>
 	          <include>ThumbnailsFocusAnimation</include>
 					</control>
 				</focusedlayout>

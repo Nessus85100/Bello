@@ -41,14 +41,13 @@
 			<height>4</height>
 			<aspectratio>stretch</aspectratio>
 			<texture background="true">dialogs/other/header_line.png</texture>
-		</control>		
-		<control type="label">
+		</control>
+		<control type="label" id="3">
 			<description>header label</description>
 			<left>360</left>
 			<top>152</top>
 			<width>560</width>
 	    <include>DialogsHeaderLabel</include>
-		  <label>$LOCALIZE[31309]</label>
 		</control>
 		<control type="label">
 			<description>Page Count Label</description>

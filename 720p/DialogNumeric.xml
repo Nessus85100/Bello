@@ -6,11 +6,11 @@
 		<control type="group">
 			<include>DialogAnimation</include>
 			<control type="image">
-				<posx>483</posx>
-				<posy>155</posy>
-				<width>314</width>
-				<height>414</height>
-				<texture background="true" border="39">dialogs/other/default.png</texture>
+				<left>504</left>
+				<top>176</top>
+				<width>272</width>
+				<height>372</height>
+				<texture background="true" border="39">views/other/panel.png</texture>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -20,8 +20,8 @@
 
   		<control type="label" id="1">
   			<description>Heading</description>
-  			<posx>510</posx>
-  			<posy>202</posy>
+  			<left>510</left>
+  			<top>202</top>
   			<width>260</width>
   			<font>FontSize_32</font>
   			<textcolor>white</textcolor>
@@ -31,8 +31,8 @@
   		</control>
   		<control type="label" id="4">
   			<description>Edit Text</description>
-  			<posx>526</posx>
-  			<posy>248</posy>
+  			<left>526</left>
+  			<top>248</top>
   			<width>228</width>
   			<font>FontSize_34</font>
   			<textcolor>77white</textcolor>
@@ -42,14 +42,14 @@
   		</control>
 										
 			<control type="group">
-				<posx>513</posx>
-				<posy>289</posy>
+				<left>513</left>
+				<top>289</top>
 					
 				<!-- Row 1 -->
 				<control type="button" id="11">
 					<description>'1' button</description>
-					<posx>21</posx>
-					<posy>24</posy>
+					<left>21</left>
+					<top>24</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>23</onleft>
@@ -70,8 +70,8 @@
 				
 				<control type="button" id="12">
 					<description>'2' button</description>
-					<posx>76</posx>
-					<posy>24</posy>
+					<left>76</left>
+					<top>24</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>11</onleft>
@@ -92,8 +92,8 @@
 				
 				<control type="button" id="13">
 					<description>'3' button</description>
-					<posx>131</posx>
-					<posy>24</posy>
+					<left>131</left>
+					<top>24</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>12</onleft>
@@ -115,8 +115,8 @@
 				<!-- Row 2 -->
 				<control type="button" id="14">
 					<description>'4' button</description>
-					<posx>21</posx>
-					<posy>76</posy>
+					<left>21</left>
+					<top>76</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>23</onleft>
@@ -137,8 +137,8 @@
 				
 				<control type="button" id="15">
 					<description>'5' button</description>
-					<posx>76</posx>
-					<posy>76</posy>
+					<left>76</left>
+					<top>76</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>14</onleft>
@@ -159,8 +159,8 @@
 				
 				<control type="button" id="16">
 					<description>'6' button</description>
-					<posx>131</posx>
-					<posy>76</posy>
+					<left>131</left>
+					<top>76</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>15</onleft>
@@ -182,8 +182,8 @@
 				<!-- Row 3 -->
 				<control type="button" id="17">
 					<description>'7' button</description>
-					<posx>21</posx>
-					<posy>128</posy>
+					<left>21</left>
+					<top>128</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>21</onleft>
@@ -204,8 +204,8 @@
 				
 				<control type="button" id="18">
 					<description>'8' button</description>
-					<posx>76</posx>
-					<posy>128</posy>
+					<left>76</left>
+					<top>128</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>17</onleft>
@@ -226,8 +226,8 @@
 				
 				<control type="button" id="19">
 					<description>'9' button</description>
-					<posx>131</posx>
-					<posy>128</posy>
+					<left>131</left>
+					<top>128</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>18</onleft>
@@ -249,8 +249,8 @@
 				<!-- Row 4 -->
 				<control type="button" id="20">
 					<description>'Previous' button</description>
-					<posx>21</posx>
-					<posy>180</posy>
+					<left>21</left>
+					<top>180</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>21</onleft>
@@ -263,8 +263,8 @@
 				
 				<control type="button" id="10">
 					<description>'0' button</description>
-					<posx>76</posx>
-					<posy>180</posy>
+					<left>76</left>
+					<top>180</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>20</onleft>
@@ -285,8 +285,8 @@
 				
 				<control type="button" id="22">
 					<description>'Next' button</description>
-					<posx>131</posx>
-					<posy>180</posy>
+					<left>131</left>
+					<top>180</top>
 					<width>48</width>
 					<height>48</height>
 					<onleft>10</onleft>
@@ -300,8 +300,8 @@
 				<!-- Big Side Buttons -->
 				<control type="button" id="23">
 					<description>'Backspace' button</description>
-					<posx>186</posx>
-					<posy>24</posy>
+					<left>186</left>
+					<top>24</top>
 					<width>48</width>
 					<height>100</height>
 					<onleft>13</onleft>
@@ -324,8 +324,8 @@
 		
 				<control type="button" id="21">
 					<description>'Done' button</description>
-					<posx>186</posx>
-					<posy>128</posy>
+					<left>186</left>
+					<top>128</top>
 					<width>48</width>
 					<height>100</height>
 					<onleft>19</onleft>
