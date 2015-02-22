@@ -535,8 +535,8 @@
 				<description>Get More/Manual</description>
   			<left>940</left>
   			<top>488</top>
-    		<width>165</width>
-				<textwidth>220</textwidth>
+    		<width>190</width>
+				<textwidth>140</textwidth>
 	      <include>DialogsButtonsText</include>
     		<texturefocus border="49,0,49,0">dialogs/buttons/add_focus.png</texturefocus>
     		<texturenofocus border="49,0,49,0">dialogs/buttons/add_nofocus.png</texturenofocus>
@@ -634,27 +634,26 @@
 		<control type="label" id="1">
 			<description>header label</description>
 			<left>360</left>
-			<top>150</top>
+			<top>155</top>
 			<width>560</width>
 	    <include>DialogsHeaderLabel</include>
       <label>Remove ID to Test, Remove ID to Test, Remove</label>
       <animation effect="slide" start="0,0" end="-65,0" time="0" condition="Control.IsVisible(6)">Conditional</animation>
 		</control>
-		<control type="button.">
-			<left>295</left>
-			<top>165</top>
-			<width>698</width>
-			<font>FontSize_32</font>
-			<textcolor>99FFFFFF</textcolor>
-			<focusedcolor>99FFFFFF</focusedcolor>
-		  <disabledcolor>99FFFFFF</disabledcolor>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<align>left</align>
-			<aligny>top</aligny>
-    	<label>[COLOR=white]$INFO[Control.GetLabel(1),,: ][/COLOR]</label>
-			<label2>$INFO[Container(6).ListItem.Label]</label2>
-			<visible>Control.IsVisible(6)</visible>
+		<control type="label">
+			<description>Page Count Label</description>
+			<left>440</left>
+			<top>163</top>
+			<width>553</width>
+			<height>35</height>
+			<font>FontSize_16B</font>
+			<textcolor>88white</textcolor>
+  		<shadowcolor>99000000</shadowcolor>
+			<scroll>false</scroll>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>$VAR[ContainerNumItems]</label>
+		  <visible>Control.IsVisible(6)</visible>
 		</control>
 		<control type="list" id="3">
 			<left>364</left>
@@ -796,7 +795,7 @@
 			<description>Label</description>
 			<left>300</left>
 			<top>553</top>
-			<width>590</width>
+			<width>680</width>
 			<height>40</height>
 			<font>FontSize_20</font>
 			<textcolor>99grey</textcolor>
@@ -811,7 +810,7 @@
 			<description>Label</description>
 			<left>300</left>
 			<top>553</top>
-			<width>590</width>
+			<width>680</width>
 			<height>40</height>
 			<font>FontSize_20</font>
 			<textcolor>99grey</textcolor>
@@ -826,7 +825,7 @@
 			<description>Label</description>
 			<left>300</left>
 			<top>553</top>
-			<width>590</width>
+			<width>680</width>
 			<height>40</height>
 			<font>FontSize_20</font>
 			<textcolor>99grey</textcolor>
@@ -836,20 +835,6 @@
 			<aligny>center</aligny>
 			<label>$INFO[Container(6).ListItem.Label,[COLOR=white]$LOCALIZE[13512]:[/COLOR] ]</label>
 			<visible>Control.IsVisible(6) + [SubString(Container(6).ListItem.Label,thumb) | SubString(Container(6).ListItem.Label,poster) | SubString(Container(6).ListItem.Label,fanart) | SubString(Container(6).ListItem.Label,banner) | SubString(Container(6).ListItem.Label,clearart) | SubString(Container(6).ListItem.Label,clearlogo) | SubString(Container(6).ListItem.Label,landscape) | SubString(Container(6).ListItem.Label,discart)]</visible>
-		</control>
-		<control type="label">
-			<description>Page Count Label</description>
-			<right>295</right>
-			<top>553</top>
-			<width>300</width>
-			<height>40</height>
-			<font>FontSize_20</font>
-			<textcolor>44white</textcolor>
-			<shadowcolor>99000000</shadowcolor>
-			<scroll>false</scroll>
-			<align>right</align>
-			<aligny>center</aligny>
-			<label>$VAR[Container(6).NumItems,, $LOCALIZE[31025]]</label>
 		</control>
 
 	  <control type="button" id="5">

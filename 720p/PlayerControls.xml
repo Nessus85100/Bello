@@ -859,7 +859,7 @@
 							<width>144</width>
 							<height>194</height>
 							<aspectratio aligny="center" scalediffuse="false">stretch</aspectratio>
-							<texture background="true" fallback="thumbs/fallback_poster.png">$VAR[VideoPlayerThumb]</texture>
+							<texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[VideoPlayerThumb]</texture>
 							<bordersize>6</bordersize>
 						</control>
 						<control type="image">
@@ -927,7 +927,7 @@
 							<width>196</width>
 							<height>194</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture background="true" fallback="thumbs/fallback_square.png">$INFO[Player.Art(thumb)]</texture>
+							<texture background="true" fallback="thumbs/fallback_square_tp.png">$INFO[Player.Art(thumb)]</texture>
 						  <visible>Player.HasAudio</visible>
 							<bordersize>6</bordersize>
 						</control>
@@ -949,7 +949,7 @@
 							<width>196</width>
 							<height>194</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture background="true" fallback="thumbs/fallback_square.png">$VAR[VideoPlayerThumb]</texture>
+							<texture background="true" fallback="thumbs/fallback_square_tp.png">$VAR[VideoPlayerThumb]</texture>
 						  <visible>[Player.HasVideo + VideoPlayer.Content(LiveTV)]</visible>
 							<bordersize>6</bordersize>
 						</control>
@@ -1595,6 +1595,7 @@
 						<height>50</height>
 						<label>-</label>
 						<onleft>602</onleft>
+						<onright>604</onright>
 	          <onup>SetProperty(Movement,1)</onup>
 			      <onup>650</onup>
 	          <ondown>ClearProperty(Movement)</ondown>

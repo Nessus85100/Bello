@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.bello" version="3.0.1 BETA" name="Bello" provider-name="Nessus">
+<addon id="skin.bello" version="3.0.2 BETA" name="Bello" provider-name="Nessus">
   <requires>
 		<import addon="xbmc.gui" version="5.3.0"/>
 		<import addon="service.skin.widgets" version="0.0.29"/>
@@ -49,6 +49,7 @@
     <summary lang="pt">Uma Interface para o Centro de Média Kodi</summary>
     <summary lang="pt_BR">Uma interface gráfica para o Kodi Media Center</summary>
     <summary lang="ru">Обложка для Kodi</summary>
+    <summary lang="sl">Uporabniški vmesnik za medijsko središče Kodi</summary>
     <summary lang="sv">Ett grafiskt användargränssnitt för Kodi</summary>
     <summary lang="th">ส่วนติดต่อผู้ใช้ สำหรับศูนย์รวมสื่อ Kodi</summary>
     <summary lang="tr">Kodi Media Center İçin Arayüz</summary>
@@ -100,10 +101,11 @@
     <disclaimer lang="mk">Користењето на глувче не е поддржано</disclaimer>
     <disclaimer lang="ms">Penggunaan tetikus tidak disokong</disclaimer>
     <disclaimer lang="nl">Het gebruik van een muis wordt niet ondersteund</disclaimer>
-    <disclaimer lang="pl">Mysz nie jest obsługiwana</disclaimer>
+    <disclaimer lang="pl">Brak obsługi myszy</disclaimer>
     <disclaimer lang="pt">Não é possível utilizar o rato</disclaimer>
     <disclaimer lang="pt_BR">Uso de mouse não é suportado</disclaimer>
     <disclaimer lang="ru">Использование мыши не поддерживается</disclaimer>
+    <disclaimer lang="sl">Uporaba miške ni podprta</disclaimer>
     <disclaimer lang="sv">Att använda musen fungerar inte</disclaimer>
     <disclaimer lang="th">ไม่รองรับการใช้งานด้วยเมาท์</disclaimer>
     <disclaimer lang="tr">Fare kullanımı desteklenmiyor</disclaimer>

@@ -463,7 +463,7 @@
 		    </animation>
 				<left>45</left>
 				<top>75</top>
-				<width>480</width>
+				<width>640</width>
 				<height>530</height>
 				<itemgap>0</itemgap>
 				<onleft>Close</onleft>
@@ -471,7 +471,7 @@
         <preloaditems>2</preloaditems>
 				<viewtype label="535">list</viewtype>
 			  <scrolltime tween="cubic" easing="out">300</scrolltime>
-				<itemlayout height="58" width="480">
+				<itemlayout height="58" width="562">
 					<control type="label">
 						<left>5</left>
 						<top>0</top>
@@ -487,11 +487,11 @@
 					<control type="label">
 						<left>30</left>
 						<top>0</top>
-						<width>400</width>
+						<width>495</width>
 						<height>45</height>
 						<font>FontSize_24B</font>
 						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
+					  <shadowcolor>99000000</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
@@ -499,113 +499,76 @@
 					<control type="label">
 						<left>30</left>
 						<top>25</top>
-						<width>400</width>
-						<height>40</height>
+						<width>495</width>
+						<height>42</height>
 						<font>FontSize_20</font>
 						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
+					  <shadowcolor>99000000</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+					  <animation effect="slide" start="0" end="28" time="0" condition="ListItem.IsRecording">Conditional</animation>
 					</control>
-					<control type="image.">
-						<left>120</left>
-						<top>5</top>
-						<width>30</width>
-						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
+					<control type="image">
+						<left>-7</left>
+						<top>26</top>
+						<width>42</width>
+						<height>42</height>
+						<texture>windows/pvr/rec.png</texture>
 						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image.">
-						<left>120</left>
-						<top>5</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label.">
-						<left>400</left>
-						<top>0</top>
-						<width>130</width>
-						<height>40</height>
-						<font>FontSize_22</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
+				    <animation effect="fade" start="50" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 					</control>
 				</itemlayout>
-				<focusedlayout height="58" width="480">
-					<control type="label">
-						<left>5</left>
-						<top>0</top>
-						<width>100</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>․</label>
-					</control>
-					<control type="label">
-						<left>30</left>
-						<top>0</top>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-					</control>
-					<control type="label">
-						<left>30</left>
-						<top>25</top>
-						<width>400</width>
-						<height>40</height>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="image.">
-						<left>120</left>
-						<top>5</top>
-						<width>30</width>
-						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image.">
-						<left>120</left>
-						<top>5</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label.">
-						<left>400</left>
-						<top>0</top>
-						<width>130</width>
-						<height>40</height>
-						<font>FontSize_22</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
-					</control>
+				<focusedlayout height="58" width="562">
+					<control type="group">
+				    <include>PVRListFocusAnimation</include>
+  					<control type="label">
+  						<left>5</left>
+  						<top>0</top>
+  						<width>100</width>
+  						<height>45</height>
+  						<font>FontSize_24B</font>
+  						<textcolor>white</textcolor>
+  				    <shadowcolor>99000000</shadowcolor>
+  						<align>left</align>
+  						<aligny>center</aligny>
+  						<label>․</label>
+  					</control>
+  					<control type="label">
+  						<left>30</left>
+  						<top>0</top>
+  						<width>495</width>
+  						<height>45</height>
+  						<font>FontSize_24B</font>
+  						<textcolor>white</textcolor>
+  					  <shadowcolor>99000000</shadowcolor>
+  						<align>left</align>
+  						<aligny>center</aligny>
+  						<label>$INFO[ListItem.StartTime]</label>
+  					</control>
+  					<control type="label">
+  						<left>30</left>
+  						<top>25</top>
+  						<width>495</width>
+  						<height>42</height>
+  						<font>FontSize_20</font>
+  						<textcolor>white</textcolor>
+  					  <shadowcolor>99000000</shadowcolor>
+  						<align>left</align>
+  						<aligny>center</aligny>
+  						<label>$INFO[ListItem.Label]</label>
+  					  <animation effect="slide" start="0" end="28" time="0" condition="ListItem.IsRecording">Conditional</animation>
+  					</control>
+  					<control type="image">
+  						<left>-7</left>
+  						<top>26</top>
+  						<width>42</width>
+  						<height>42</height>
+  						<texture>windows/pvr/rec.png</texture>
+  						<visible>ListItem.IsRecording</visible>
+  				    <animation effect="fade" start="50" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+  					</control>
+  				</control>
 				</focusedlayout>
 			</control>
 	</include>
@@ -626,7 +589,7 @@
 		    </animation>		    
 				<left>45</left>
 				<top>75</top>
-				<width>480</width>
+				<width>640</width>
 				<height>530</height>
 				<itemgap>0</itemgap>
 				<onleft>PreviousChannelGroup</onleft>
@@ -634,140 +597,102 @@
         <preloaditems>2</preloaditems>
 				<viewtype label="535">list</viewtype>
 			  <scrolltime tween="cubic" easing="out">350</scrolltime>
-				<itemlayout height="58" width="480">
-					<control type="label">
-						<left>5</left>
-						<top>0</top>
-						<width>100</width>
+				<itemlayout height="58" width="562">
+					<control type="image">
+						<left>0</left>
+						<top>11</top>
+						<width>68</width>
 						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>․</label>
+						<texture background="true" fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio align="left" aligny="center">keep</aspectratio>
 					</control>
-					<control type="label">
-						<left>30</left>
-						<top>0</top>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<left>30</left>
-						<top>25</top>
-						<width>400</width>
-						<height>40</height>
-						<font>FontSize_20</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Title]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="image.">
-						<left>120</left>
-						<top>5</top>
-						<width>30</width>
-						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image.">
-						<left>120</left>
-						<top>5</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label.">
-						<left>400</left>
-						<top>0</top>
-						<width>130</width>
-						<height>40</height>
-						<font>FontSize_22</font>
-						<textcolor>77white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
+					<control type="group">
+						<left>73</left>
+						<control type="label">
+							<left>5</left>
+							<top>0</top>
+							<width>495</width>
+							<height>45</height>
+							<font>FontSize_24B</font>
+							<textcolor>77white</textcolor>
+						  <shadowcolor>99000000</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.Label]</label>
+						  <animation effect="slide" start="0,0" end="0,10" time="0" condition="IsEmpty(ListItem.Title) + ![ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
+						</control>
+						<control type="label">
+							<left>5</left>
+							<top>25</top>
+							<width>495</width>
+							<height>42</height>
+							<font>FontSize_20</font>
+							<textcolor>77white</textcolor>
+						  <shadowcolor>99000000</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Title]</label>
+						  <animation effect="slide" start="0" end="28" time="0" condition="ListItem.IsRecording">Conditional</animation>
+						</control>
+						<control type="image">
+							<left>-7</left>
+							<top>26</top>
+							<width>42</width>
+							<height>42</height>
+							<texture>windows/pvr/rec.png</texture>
+							<visible>ListItem.IsRecording</visible>
+					    <animation effect="fade" start="50" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="58" width="480">
-					<control type="label">
-						<left>5</left>
-						<top>0</top>
-						<width>100</width>
+				<focusedlayout height="58" width="562">
+					<control type="image">
+						<left>0</left>
+						<top>11</top>
+						<width>68</width>
 						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>․</label>
+						<texture background="true" fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio align="left" aligny="center">keep</aspectratio>
+				    <include>PVRListFocusAnimation</include>
 					</control>
-					<control type="label">
-						<left>30</left>
-						<top>0</top>
-						<width>400</width>
-						<height>45</height>
-						<font>FontSize_24B</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<left>30</left>
-						<top>25</top>
-						<width>400</width>
-						<height>40</height>
-						<font>FontSize_20</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Title]</label>
-						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
-					</control>
-					<control type="image.">
-						<left>120</left>
-						<top>5</top>
-						<width>30</width>
-						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="image.">
-						<left>120</left>
-						<top>5</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label.">
-						<left>400</left>
-						<top>0</top>
-						<width>130</width>
-						<height>40</height>
-						<font>FontSize_22</font>
-						<textcolor>white</textcolor>
-				    <shadowcolor>99000000</shadowcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.StartTime]</label>
-						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
+					<control type="group">
+						<left>73</left>
+				    <include>PVRListFocusAnimation</include>
+						<control type="label">
+							<left>5</left>
+							<top>0</top>
+							<width>495</width>
+							<height>45</height>
+							<font>FontSize_24B</font>
+							<textcolor>white</textcolor>
+						  <shadowcolor>99000000</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.Label]</label>
+						  <animation effect="slide" start="0,0" end="0,10" time="0" condition="IsEmpty(ListItem.Title) + ![ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
+						</control>
+						<control type="label">
+							<left>5</left>
+							<top>25</top>
+							<width>495</width>
+							<height>42</height>
+							<font>FontSize_20</font>
+							<textcolor>white</textcolor>
+						  <shadowcolor>99000000</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Title]</label>
+						  <animation effect="slide" start="0" end="28" time="0" condition="ListItem.IsRecording">Conditional</animation>
+						</control>
+						<control type="image">
+							<left>-7</left>
+							<top>26</top>
+							<width>42</width>
+							<height>42</height>
+							<texture>windows/pvr/rec.png</texture>
+							<visible>ListItem.IsRecording</visible>
+					    <animation effect="fade" start="50" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+						</control>
 					</control>
 				</focusedlayout>
 			</control>

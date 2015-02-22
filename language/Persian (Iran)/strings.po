@@ -20,9 +20,17 @@ msgctxt "#31000"
 msgid "Live TV"
 msgstr "تلویزیون زنده"
 
+msgctxt "#31003"
+msgid "Aired"
+msgstr "پخش شده"
+
 msgctxt "#31005"
 msgid "Track Number"
 msgstr "شماره تراک"
+
+msgctxt "#31006"
+msgid "Working..."
+msgstr "در حال کار..."
 
 msgctxt "#31011"
 msgid "On"
@@ -116,6 +124,10 @@ msgctxt "#31225"
 msgid "Weekend Forecast"
 msgstr "پیش بینی هفتگی"
 
+msgctxt "#31228"
+msgid "at"
+msgstr "از"
+
 msgctxt "#31229"
 msgid "Last Updated"
 msgstr "آخرین بروزرسانی"
@@ -123,6 +135,10 @@ msgstr "آخرین بروزرسانی"
 msgctxt "#31230"
 msgid "Data Provider"
 msgstr "ارائه دهنده خدمات داده"
+
+msgctxt "#31233"
+msgid "Chance of Precipitation"
+msgstr "احتمال بارندگی"
 
 msgctxt "#31236"
 msgid "Forecast"
@@ -155,7 +171,3 @@ msgstr "تغییر نام گروه"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "حذف گروه"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "کمک"

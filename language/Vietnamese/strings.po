@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Bài số"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Dang /làm..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Menu ngữ cảnh"
@@ -183,7 +187,3 @@ msgstr "Đổi tên nhóm"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Xoá nhóm"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Trợ giúp"

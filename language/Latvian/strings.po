@@ -32,6 +32,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Celiņa numurs"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Working..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Satura izvēlne"
@@ -167,7 +171,3 @@ msgstr "Pārsaukt grupu"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Dzēst grupu"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Palīdzība"

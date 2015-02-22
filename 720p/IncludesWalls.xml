@@ -2814,53 +2814,9 @@
 			<texture diffuse="views/wall/square3d_diffuse.png" background="true" fallback="thumbs/fallback_square.png">$INFO[ListItem(13).Icon]</texture>
 		</control>
 
-		<!-- Shadow 4 -->
-		<control type="image">
-			<left>-256</left>
-			<top>-455</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
-		<!-- Shadow 3 -->
-		<control type="image">
-			<left>-256</left>
-			<top>-205</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
-		<!-- Shadow 2 -->
-		<control type="image">
-			<left>-256</left>
-			<top>50</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
-		<!-- Shadow 1 -->
-		<control type="image">
-			<left>-256</left>
-			<top>305</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>	
-		<!-- Shadow 0 -->
-		<control type="image">
-			<left>-256</left>
-			<top>560</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
 	</include>
-	
+
+
   <!-- OnPrevious -->
 	<include name="Includes_OnPrevious_MusicWall">
 		<control type="image"> <!-- row 6-->
@@ -3150,34 +3106,8 @@
 			<texture diffuse="views/wall/square3d_diffuse.png" background="true" fallback="thumbs/fallback_square.png">$INFO[ListItem(14).Icon]</texture>
 		</control>
 
-		<!-- Shadow 4 -->
-		<control type="image">
-			<left>-256</left>
-			<top>-455</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
-		<!-- Shadow 3 -->
-		<control type="image">
-			<left>-256</left>
-			<top>-205</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
-		<!-- Shadow 2 -->
-		<control type="image">
-			<left>-256</left>
-			<top>50</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
 	</include>
+
 
   <!-- Static -->
 	<include name="Includes_Static_MusicWall">
@@ -3412,34 +3342,287 @@
 			<texture diffuse="views/wall/square3d_diffuse.png" background="true" fallback="thumbs/fallback_square.png">$INFO[ListItem(13).Icon]</texture>
 		</control>
 
-		<!-- Shadow 3 -->
-		<control type="image">
-			<left>-256</left>
-			<top>-205</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
-		<!-- Shadow 2 -->
-		<control type="image">
-			<left>-256</left>
-			<top>50</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
-		<!-- Shadow 1 -->
-		<control type="image">
-			<left>-256</left>
-			<top>305</top>
-			<width>1792</width>
-			<height>158</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">views/wall/shadow.png</texture>
-		</control>
 	</include>
+
+
+
+
+
+  <!-- 3DWall Background Movies - Posters -->
+	<include name="3DWallBG_Movies_Posters">
+		<control type="panel">
+			<animation effect="rotatex" center="720,12" start="0" end="20" time="0" condition="true">Conditional</animation>
+<!--  <animation type="Conditional" condition="true" loop="true" reversible="false">
+        <effect type="rotatex" center="720,12" start="0" end="23" time="5000"/>
+        <effect type="rotatex" center="720,12" start="0" end="-23" time="5000" delay="25000"/>
+      </animation> -->
+			<left>-320</left>
+			<top>-449</top>
+			<width>1920</width>
+	    <height>1175</height>
+			<itemlayout width="160" height="235">
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>160</width>
+    			<height>235</height>
+    			<aspectratio scalediffuse="false">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_poster.png" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(poster)]</texture>
+    		</control>
+			</itemlayout>
+      <focusedlayout width="160" height="235"/>
+			<content>$VAR[ContentType_RandomMovies]</content>
+      <!-- <content>plugin://service.library.data.provider?type=randommovies+randommovies+randommovies&amp;reload=$INFO[Window(Home).Property(randommovies)]$INFO[Window(Home).Property(randommovies)]$INFO[Window(Home).Property(randommovies)]</content> -->
+	  </control>
+	</include>
+
+  <!-- 3DWall Background Movies - Logo -->
+	<include name="3DWallBG_Movies_Logo">
+		<control type="panel">
+			<animation effect="rotatex" center="720,12" start="0" end="19" time="0" condition="true">Conditional</animation>
+			<left>-320</left>
+			<top>-195</top>
+			<width>1920</width>
+	    <height>920</height>
+			<itemlayout width="320" height="184">
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>320</width>
+    			<height>184</height>
+    			<aspectratio scalediffuse="false">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_landscape.png">thumbs/thumb_back.png</texture>
+    		</control>
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>320</width>
+    			<height>184</height>
+    			<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_landscape.png" fallback="thumbs/fallback_fanart_tp.png">$INFO[ListItem.Art(clearlogo)]</texture>
+  		    <bordersize>20</bordersize>
+    		</control>
+			</itemlayout>
+      <focusedlayout width="320" height="184"/>
+			<content>$VAR[ContentType_RandomMovies]</content>
+	  </control>
+	</include>
+
+  <!-- 3DWall Background Movies - DiscArt -->
+	<include name="3DWallBG_Movies_DiscArt">
+		<control type="panel">
+			<animation effect="rotatex" center="720,12" start="0" end="20" time="0" condition="true">Conditional</animation>
+			<left>-243</left>
+			<top>-449</top>
+			<width>1764</width>
+	    <height>1775</height>
+			<itemlayout width="252" height="235">
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>252</width>
+    			<height>235</height>
+    			<aspectratio scalediffuse="false">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_squared.png">thumbs/thumb_back.png</texture>
+    		</control>
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>252</width>
+    			<height>235</height>
+    			<aspectratio scalediffuse="false">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_squared.png" fallback="thumbs/fallback_square_tp.png">$INFO[ListItem.Art(discart)]</texture>
+  		    <bordersize>20</bordersize>
+    		</control>
+			</itemlayout>
+      <focusedlayout width="252" height="235"/>
+			<content>$VAR[ContentType_RandomMovies]</content>
+	  </control>
+	</include>
+
+
+
+
+
+  <!-- 3DWall Background TVShows - Posters -->
+	<include name="3DWallBG_TVShows_Posters">
+		<control type="panel">
+			<animation effect="rotatex" center="720,12" start="0" end="20" time="0" condition="true">Conditional</animation>
+			<left>-320</left>
+			<top>-449</top>
+			<width>1920</width>
+	    <height>1175</height>
+			<itemlayout width="160" height="235">
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>160</width>
+    			<height>235</height>
+    			<aspectratio scalediffuse="false">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_poster.png" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Art(poster)]</texture>
+    		</control>
+			</itemlayout>
+      <focusedlayout width="160" height="235"/>
+			<content>$VAR[ContentType_RandomTVShows]</content>
+      <!-- <content>plugin://service.library.data.provider?type=randomepisodes+randomepisodes+randomepisodes&amp;reload=$INFO[Window(Home).Property(randomepisodes)]$INFO[Window(Home).Property(randomepisodes)]$INFO[Window(Home).Property(randomepisodes)]</content> -->
+	  </control>
+	</include>
+
+  <!-- 3DWall Background TVShows - Logo -->
+	<include name="3DWallBG_TVShows_Logo">
+		<control type="panel">
+			<animation effect="rotatex" center="720,12" start="0" end="19" time="0" condition="true">Conditional</animation>
+			<left>-320</left>
+			<top>-195</top>
+			<width>1920</width>
+	    <height>920</height>
+			<itemlayout width="320" height="184">
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>320</width>
+    			<height>184</height>
+    			<aspectratio scalediffuse="false">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_landscape.png">thumbs/thumb_back.png</texture>
+    		</control>
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>320</width>
+    			<height>184</height>
+    			<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_landscape.png" fallback="thumbs/fallback_fanart_tp.png">$INFO[ListItem.Art(clearlogo)]</texture>
+  		    <bordersize>20</bordersize>
+    		</control>
+			</itemlayout>
+      <focusedlayout width="320" height="184"/>
+			<content>$VAR[ContentType_RandomTVShows]</content>
+	  </control>
+	</include>
+
+  <!-- 3DWall Background TVShows - Landscape -->
+	<include name="3DWallBG_TVShows_Landscape">
+		<control type="panel">
+			<animation effect="rotatex" center="720,12" start="0" end="19" time="0" condition="true">Conditional</animation>
+			<left>-320</left>
+			<top>-195</top>
+			<width>1920</width>
+	    <height>920</height>
+			<itemlayout width="320" height="184">
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>320</width>
+    			<height>184</height>
+    			<aspectratio scalediffuse="false">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_landscape.png">thumbs/thumb_back.png</texture>
+    		</control>
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>320</width>
+    			<height>184</height>
+    			<aspectratio scalediffuse="false" align="center" aligny="center">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_landscape.png" fallback="thumbs/fallback_fanart_tp.png">$INFO[ListItem.Art(landscape)]</texture>
+    		</control>
+			</itemlayout>
+      <focusedlayout width="320" height="184"/>
+			<content>$VAR[ContentType_RandomTVShows]</content>
+	  </control>
+	</include>
+
+
+
+
+
+  <!-- 3DWall Background Albums -->
+	<include name="3DWallBG_Albums">
+		<control type="panel">
+			<animation effect="rotatex" center="720,12" start="0" end="20" time="0" condition="true">Conditional</animation>
+			<left>-243</left>
+			<top>-449</top>
+			<width>1764</width>
+	    <height>1775</height>
+			<itemlayout width="252" height="235">
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>252</width>
+    			<height>235</height>
+    			<aspectratio scalediffuse="false">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_squared.png" fallback="thumbs/fallback_square.png">$INFO[ListItem.Art(thumb)]</texture>
+    		</control>
+			</itemlayout>
+      <focusedlayout width="252" height="235"/>
+			<content>$VAR[ContentType_RandomAlbums]</content>
+      <!-- <content>plugin://service.library.data.provider?type=randomalbums+randomalbums&amp;reload=$INFO[Window(Home).Property(randomalbums)]$INFO[Window(Home).Property(randomalbums)]</content> -->
+	  </control>
+	</include>
+
+
+  <!-- 3DWall Background Artists -->
+	<include name="3DWallBG_Artists">
+		<control type="panel">
+			<animation effect="rotatex" center="720,12" start="0" end="20" time="0" condition="true">Conditional</animation>
+			<left>-243</left>
+			<top>-449</top>
+			<width>1764</width>
+	    <height>1775</height>
+			<itemlayout width="252" height="235">
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>252</width>
+    			<height>235</height>
+    			<aspectratio scalediffuse="false">scale</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_squared.png" fallback="thumbs/fallback_square.png">$INFO[ListItem.Art(thumb)]</texture>
+    		</control>
+			</itemlayout>
+      <focusedlayout width="252" height="235"/>
+			<content>$VAR[ContentType_RandomArtists]</content>
+	  </control>
+	</include>
+
+
+  <!-- 3DWall Viz-Background Albums -->
+	<include name="3DWallBG_Albums_Viz">
+		<control type="panel">
+			<animation effect="rotatex" center="720,12" start="0" end="20" time="0" condition="true">Conditional</animation>
+			<left>-243</left>
+			<top>-449</top>
+			<width>1764</width>
+	    <height>1775</height>
+			<itemlayout width="252" height="235">
+    		<control type="image">
+    			<left>0</left>
+    			<top>0</top>
+    			<width>252</width>
+    			<height>235</height>
+    			<aspectratio scalediffuse="false">stretch</aspectratio>
+    			<texture background="true" diffuse="views/wall/3dBG_diffuse_squared.png" fallback="thumbs/fallback_square.png">$INFO[ListItem.Art(thumb)]</texture>
+    		</control>
+			</itemlayout>
+      <focusedlayout width="252" height="235"/>
+      <content>plugin://service.library.data.provider?type=randomalbums+randomalbums&amp;reload=$INFO[Window(Home).Property(randomalbums)]$INFO[Window(Home).Property(randomalbums)]</content>
+	  </control>
+	</include>
+
+
+  <variable name="ContentType_RandomMovies">
+      <value condition="!Window.IsVisible(3050)">special://skin/extras/playlists/RandomMovies.xsp</value>
+  </variable>
+  
+  <variable name="ContentType_RandomTVShows">
+      <value condition="!Window.IsVisible(3050)">special://skin/extras/playlists/RandomTVShows.xsp</value>
+  </variable>
+  
+  <variable name="ContentType_RandomAlbums">
+      <value condition="!Window.IsVisible(3050)">special://skin/extras/playlists/RandomAlbums.xsp</value>
+  </variable>
+  
+  <variable name="ContentType_RandomArtists">
+      <value condition="!Window.IsVisible(3050)">special://skin/extras/playlists/RandomArtists.xsp</value>
+  </variable>
 
 </includes>
 

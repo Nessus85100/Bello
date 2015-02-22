@@ -40,6 +40,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Аудио запис №"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Работи..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Системата ще се изключи след"
@@ -63,14 +67,6 @@ msgstr "Изкл."
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Включи анимирането на началното меню"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Настройки на изгледа"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Настройки"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -200,101 +196,9 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr "Списъчна стена"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Начално меню"
-
-msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Видими бутони от началното меню"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Скриване на бутони от началното меню"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Показвай текущите метеорологични условия"
-
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Показвай бутона за търсене"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Без бутона за трейлъри"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Без бутона за филми"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Без бутона за ТВ Сериали"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Без бутона за музика"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Без бутона за снимки"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Без бутона за програми"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Без бутона за добавки"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Без бутона за времето"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Без бутона за настройки"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Показвай бутона за видео"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "Показвай бутона за изход"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Показвай бутона за музикални клипове"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "Бутонът \"Музика\" да отваря..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Персонален бутон"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Персонални бутони в началното меню"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Без подменю за раздел Филми"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "Без подменю за раздел ТВ Сериали"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Без подменю за раздел Музика"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Без подменю за раздел Настройки"
 
 msgctxt "#31124"
 msgid "Flashing Lights"
@@ -303,22 +207,6 @@ msgstr "Мигащи светлини"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Редактирай информацията"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "Миниатюра на епизода"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Портретен изглед"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "Изчистено изображение"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "Изчистено лого"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -332,14 +220,6 @@ msgctxt "#31132"
 msgid "Hide Background Video"
 msgstr "Без показване на текущо възпроизвежданото видео на заден план"
 
-msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Персонален фон"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Редактирайте фона на началния екран за:"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "Една картина"
@@ -351,10 +231,6 @@ msgstr "Няколко картини"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Известия"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Включи известията за филми"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -408,10 +284,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "Показвай RSS емисиите из всяка секция на облика"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Без подменю за раздел Телевизия"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "Включи екрана за влизане"
@@ -419,18 +291,6 @@ msgstr "Включи екрана за влизане"
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Изберете добавка за трейлърите"
-
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "Бутонът \"Добавки\" да отваря..."
-
-msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Скриване на изгледи във видео раздела"
-
-msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Скриване на изгледи в музикалния раздел"
 
 msgctxt "#31158"
 msgid "Views"
@@ -467,14 +327,6 @@ msgstr "Нулирай облика"
 msgctxt "#31170"
 msgid "All Skin Settings will revert back to their default state.[CR]Are you sure you want to proceed ?"
 msgstr "Настройките на облика ще бъдат върнати към стандартните им стойности.[CR]Това ли искате?"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "Без подменю за раздел Добавки"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "Скриване на подменюта"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -808,130 +660,6 @@ msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "Изключи бързото навигиране"
 
-msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "Без бутона за обновяване на видео библиотеката"
-
-msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "Без бутона за обновяване на музикалната библиотеката"
-
-msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "Показвай бутона \"Почисти видео библиотека\""
-
-msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "Показвай бутона \"Почисти музикалната библиотека\""
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "Показвай бутона \"Режим парти\""
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Показвай бутона \"Изключи...\""
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "Показвай бутона \"Диспечър на файлове\""
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Без бутона за филми"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Без бутона за ТВ Сериали"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Без бутона за музика"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Без бутона за снимки"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Без бутона за добавки"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Без бутона за нови филми"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Без бутона за нови ТВ Сериали"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Без бутона за нови песни"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "Показвай бутона \"Настройки\""
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Показвай бутона за видео"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "Скриване на бутони от менюто за бързо навигиране"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "Видими бутони от менюто за бързо навигиране"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "Персонални бутони за бързо навигиране"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Персонален бутон"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "Без бутона за настройки на облика"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "Без бутона \"Любими\""
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "Без бутона за телевизия"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Променете външния вид на Kodi - облика, темата, звуците, шрифтовете, RSS емисията и езика."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "Управлявайте видео библиотеката, субтитрите, източниците на инф. и възпроизвеждането."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Конфигурирайте възпроизвеждането на музика, преглеждането на файлове/библиотеката и много други."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "Управлението на снимки може да бъде лесно. Настройте дисплея, ефектите, етикетите и списъците със снимки."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Синоптична прогноза - просто изберете приставка и до три града, за които да получавате информация."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Настройте мрежовия интерфейс, IP адресс, WWW и FTP сървъра, SMB клиента и UPnP конфигурацията."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "Основните функции - настройки на аудио и видео хардуера, възпроизвеждането и заключването."
-
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
 msgstr "Променете разнообразните настройки, за да нагодите \"Bello\" към вашия вкус и потребности."
@@ -979,10 +707,6 @@ msgstr "Конфигуриране на профилите"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Настройки на облика"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Помощ"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

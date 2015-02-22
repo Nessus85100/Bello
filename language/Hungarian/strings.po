@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Zeneszám"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Dolgozom..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "Kérem várjon..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "A rendszer az időzítés szerint leáll."
@@ -63,14 +71,6 @@ msgstr "Kikapcsolva"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Főmenű animációjának engedélyezése"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Nézet beállítások"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Általános beállítások"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -212,18 +212,6 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr "Lista Fal"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Főképernyő"
-
-msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Főmenü gombok mutatása"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Főmenü gombok elrejtése"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Időjárás információt mutatása"
@@ -236,82 +224,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "Most Játszott Zene Infó elrejtése"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Keresés Gomb megjelenítése"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Bemutató gomb elrejtése"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Film gomb elrejtése"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Sorozat gomb elrejtése"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Zene gomb elrejtése"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Kép gomb elrejtése"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Program gomb elrejtése"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Kiegészítők gomb elrejtése"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Időjárás gomb elrejtése"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Beállítások gomb elrejtése"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Videó gomb mutatása"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Klipp gomb mutatása"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "A Zene gomb megnyitja..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Egyéni Gomb"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Egyedi Főmenü Gombok"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Film almenük elrejtése"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "Sorozat almenük elrejtése"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Zene almenük elrejtése"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Beállítások almenük elrejtése"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "Villogó Fények"
@@ -319,22 +231,6 @@ msgstr "Villogó Fények"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Infók szerkesztése"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "Epizód thumb"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Landscape"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "Tiszta művészkép"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "ClearLOGO"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -348,14 +244,6 @@ msgctxt "#31132"
 msgid "Hide Background Video"
 msgstr "Háttér Videó elrejtése"
 
-msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Testreszabott háttér"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Háttér beállítása ehhez a médiatípushoz"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "Egy darab kép"
@@ -367,10 +255,6 @@ msgstr "Több kép"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Értesítések engedélyezése"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Film értesítések engedélyezése"
 
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
@@ -420,25 +304,9 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "RSS hírek bekapcsolása mindenhol a Felszínen"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Live TV almenü elrejtése"
-
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Ajánló Kiegészítő kiválasztása"
-
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "A Kiegészítő gomb megnyitja..."
-
-msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Videó Nézetek elrejtése"
-
-msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Zene Nézetek elrejtése"
 
 msgctxt "#31158"
 msgid "Views"
@@ -805,112 +673,8 @@ msgid "Disable Quick Navigation"
 msgstr "Gyors Navigáció letiltása"
 
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "Videótár tisztítás gomb mutatása"
-
-msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "Zenetár tisztítás gomb mutatása"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "Party Mód gomb mutatása"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Kikapcsolás gomb mutatása"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "Fájlkezelő gomb mutatása"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Film gomb elrejtése"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Sorozat gomb elrejtése"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Zene gomb elrejtése"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Kép gomb elrejtése"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Kiegészítők gomb elrejtése"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Új Filmek gomb elrejtése"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Új Sorozatok gomb elrejtése"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Új Zenék gomb elrejtése"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Videó gomb mutatása"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "QuickNav gombok elrejtése"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "QuckNav gombok mutatása"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "QuickNav gombok testreszabása"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Egyéni Gomb"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "Kefvencek Gomb Elrejtése"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Változtassa meg az Kodi kinézetés és használati módját. Beleértve a felszínt, témát, hangokat, betűkészleteket, RSS csatornát és a lokalizációs beállításokat."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "Kezelje a videó tartalmakat. Beleértve a médiatár adatbázis opciókat, feliratokat, tartalomletöltőket, és az a lejátszási opciókat."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "Változtassa meg a lejátszási opciókat, kezelje az EPG beállításit, felvételeket és a szülői felügyeletet."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Határozza meg az Kodi hogyan kezelje a zenéit. Állítsa be a hallgatási és listzási opciókat, böngésszen fájlokat vagy az adatbázist és még sok minden más."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "A képkezelés nagyon egyszerű. Megteheti hogy beállítja a kijelzőt, képhatásokat, címkéket és időzítéseket, és a listázási módokat."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Az Időjárás beállítása nagyon egyszerű az Kodi-vel. Válasszon ki egy időjárás kiegészítőt és kapjon élő adatokat akár három városra is."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Állítsa be az Kodi hálózat illesztőjét. Vezérli az IP hozzárendelést, WWW és FTP szervert, SMB klienst, és az UPnP konfigurálását."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "Vezérelje az alapvető hardver és szoftver funkciókat, beleértve az audió és veideó hardverbeállításokat, automata lejátszást és zárolást."
+msgid "Custom Item"
+msgstr "Saját elem"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -955,7 +719,3 @@ msgstr "Profil Beállítások testreszabása"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Felszín Beállítások testreszabása"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Segítség"

@@ -89,8 +89,10 @@
 					<height>280</height>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
 					<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Icon]</texture>
+					<include>SlideViewFocusAnimation</include>
 				</control>
 				<control type="group">
+					<include>SlideViewFocusAnimation</include>
 					<visible>![IsEmpty(ListItem.Property(RecentMovie1)) | IsEmpty(ListItem.Property(RecentMovie2)) | IsEmpty(ListItem.Property(RecentMovie3)) | IsEmpty(ListItem.Property(RecentMovie4))]</visible>
 					<control type="image">
 						<width>100</width>
@@ -202,8 +204,10 @@
 					<height>280</height>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
 					<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Icon]</texture>
+					<include>SlideViewFocusAnimation</include>
 				</control>
 				<control type="group">
+					<include>SlideViewFocusAnimation</include>
 					<visible>![IsEmpty(ListItem.Property(RecommendedMovie1)) | IsEmpty(ListItem.Property(RecommendedMovie2)) | IsEmpty(ListItem.Property(RecommendedMovie3)) | IsEmpty(ListItem.Property(RecommendedMovie4))]</visible>
 					<control type="image">
 						<width>100</width>
@@ -319,8 +323,10 @@
 					<height>280</height>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
 					<texture background="true" fallback="thumbs/fallback_poster.png">$INFO[ListItem.Icon]</texture>
+					<include>SlideViewFocusAnimation</include>
 				</control>
 				<control type="group">
+					<include>SlideViewFocusAnimation</include>
 					<visible>![IsEmpty(ListItem.Property(RandomMovie1)) | IsEmpty(ListItem.Property(RandomMovie2)) | IsEmpty(ListItem.Property(RandomMovie3)) | IsEmpty(ListItem.Property(RandomMovie4))]</visible>
 					<control type="image">
 						<width>100</width>

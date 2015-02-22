@@ -36,6 +36,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Número de Pista"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Trabajando..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Menú Contextual"
@@ -111,14 +115,6 @@ msgstr "Pared"
 msgctxt "#31084"
 msgid "Posters"
 msgstr "Pósters"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Apaisado"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Editar Fondo para Tipo de Medio"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -227,7 +223,3 @@ msgstr "Limpiar Biblioteca de Video"
 msgctxt "#31373"
 msgid "Clean Music Library"
 msgstr "Limpiar Biblioteca de Música"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Ayuda"

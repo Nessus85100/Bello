@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "트랙 번호"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "작업 중..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "잠시만 기다리세요..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "시스템 자동 종료:"
@@ -63,14 +71,6 @@ msgstr "끔"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "홈 메뉴 애니메이션 사용"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "보기 형식 옵션"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "일반 옵션"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -229,16 +229,12 @@ msgid "Choose RSS Video Feed Widget"
 msgstr "RSS 비디오 피드 위젯 선택"
 
 msgctxt "#31098"
-msgid "Home Menu"
-msgstr "홈 메뉴"
+msgid "Show Small Thumbs"
+msgstr "작은 썸네일 보기"
 
 msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "홈 메뉴 버튼 보기"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "홈 메뉴 버튼 숨김"
+msgid "Show Big Thumbs"
+msgstr "큰 썸네일 보기"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -252,86 +248,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "지금 재생 중 음악 정보 숨김"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "검색 버튼 보기"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "예고편 버튼 숨김"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "영화 버튼 숨김"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "TV 쇼 버튼 숨김"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "음악 버튼 숨김"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "사진 버튼 숨김"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "프로그램 버튼 숨김"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "애드온 버튼 숨김"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "날씨 버튼 숨김"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "설정 버튼 숨김"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "비디오 버튼 보기"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "종료 버튼 보기"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "뮤직비디오 버튼 보기"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "음악 버튼 동작:"
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "사용자 버튼"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "사용자 홈 메뉴 버튼"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "영화 하위 메뉴 숨김"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "TV 쇼 하위 메뉴 숨김"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "음악 하위 메뉴 숨김"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "설정 하위 메뉴 숨김"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "번개"
@@ -339,22 +255,6 @@ msgstr "번개"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "정보 수정"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "에피소드 썸네일"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "가로"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "클리어아트 (ClearArt)"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "클리어로고 (ClearLogo)"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -369,12 +269,12 @@ msgid "Hide Background Video"
 msgstr "배경화면 비디오 숨김"
 
 msgctxt "#31133"
-msgid "Custom Background"
-msgstr "사용자 배경화면"
+msgid "Custom Global Background"
+msgstr "사용자 전역 배경"
 
 msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "미디어 형식의 배경 수정"
+msgid "Complete"
+msgstr "완료"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -387,10 +287,6 @@ msgstr "복수 이미지"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "알림 사용"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "영화 알림 사용"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -444,10 +340,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "스킨 전역에서 RSS 피드 보기"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "TV 쇼 하위 메뉴 숨김"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "로그인 화면 사용"
@@ -456,17 +348,13 @@ msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "예고편 애드온 선택"
 
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "애드온 버튼 동작:"
-
 msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "비디오 보기 형식 숨김"
+msgid "Manage Video Views"
+msgstr "비디오 보기 형식 관리"
 
 msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "음악 보기 형식 숨김"
+msgid "Manage Music Views"
+msgstr "음악 보기 형식 관리"
 
 msgctxt "#31158"
 msgid "Views"
@@ -523,18 +411,6 @@ msgstr "모든 스킨 설정이 기본 상태로 초기화됩니다.[CR]확실�
 msgctxt "#31171"
 msgid "Update Art"
 msgstr "아트 업데이트"
-
-msgctxt "#31172"
-msgid "Enable Home Menu Fanart SlideShow"
-msgstr "홈 메뉴 팬아트 슬라이드쇼 사용"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "애드온 하위 메뉴 숨김"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "하위 메뉴 숨기기"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -772,6 +648,18 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr "탑 아티스트"
 
+msgctxt "#31260"
+msgid "In Progress Movies"
+msgstr "시청 중 영화"
+
+msgctxt "#31261"
+msgid "In Progress TV Shows"
+msgstr "시청 중 TV 쇼"
+
+msgctxt "#31262"
+msgid "In Progress Music"
+msgstr "감상 중인 음악"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "재생 목록 열기"
@@ -806,7 +694,7 @@ msgstr "재생 중"
 
 msgctxt "#31302"
 msgid "Paused"
-msgstr "일시정지"
+msgstr "일시 중지"
 
 msgctxt "#31303"
 msgid "Rewinding:"
@@ -905,132 +793,20 @@ msgid "Disable Quick Navigation"
 msgstr "빠른 탐색 사용 안 함"
 
 msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "비디오 라이브러리 업데이트 버튼 숨김"
+msgid "Default QuickNav Items"
+msgstr "기본 빠른 탐색 항목"
 
 msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "음악 라이브러리 업데이트 버튼 숨김"
+msgid "Custom QuickNav Items"
+msgstr "사용자 빠른 탐색 항목"
 
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "비디오 라이브러리 정리 버튼 보기"
+msgid "Custom Item"
+msgstr "사용자 항목"
 
 msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "음악 라이브러리 정리 버튼 보기"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "파티 모드 버튼 보기"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "종료 버튼 보기"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "파일 관리자 버튼 보기"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "영화 버튼 숨김"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "TV 쇼 버튼 숨김"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "음악 버튼 숨김"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "사진 버튼 숨김"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "애드온 버튼 숨김"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "새 영화 버튼 숨김"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "새 TV 쇼 버튼 숨김"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "새 음악 버튼 숨김"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "설정 버튼 보기"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "비디오 버튼 보기"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "빠른 탐색 버튼 숨김"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "빠른 탐색 버튼 보기"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "사용자 빠른 탐색 버튼"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "사용자 설정 버튼"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "스킨 설정 버튼 숨김"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "즐겨찾기 버튼 숨김"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "TV 시청 버튼 숨김"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Kodi의 모양새를 설정합니다. 스킨, 테마, 효과음, 글꼴 선택과 RSS 피드, 언어를 설정합니다."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "비디오 콘텐츠를 관리합니다. 라이브러리 데이터베이스 옵션, 자막, 자료수집기와 재생 옵션을 설정합니다."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "재생 설정, EPG 데이터 설정 관리, 녹화와 자녀보호 설정을 변경합니다."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Kodi가 음악을 어떻게 다룰지를 설정합니다. 재생 설정, 목록 옵션, 파일과 데이터베이스 탐색 등을 변경합니다."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "사진 관리 옵션을 설정합니다. 디스플레이 조정, 효과, 태그, 사진 목록 등을 설정합니다."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Kodi의 날씨 설정은 아주 쉽습니다. 날씨 애드온을 선택하면 3개 도시의 실시간 날씨를 확인할 수 있습니다."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Kodi의 네트워크 인터페이스를 설정합니다. IP 주소 할당, WWW와 FTP 서버, SMB 클라이언트, UPnP 등을 설정합니다."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "하드웨어와 소프트웨어 기능을 제어합니다. 오디오와 비디오 하드웨어, 자동 재생, 잠금 기능 등을 설정합니다."
+msgid "Custom Items"
+msgstr "사용자 항목"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -1079,10 +855,6 @@ msgstr "프로파일 설정"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "스킨 설정"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "도움말"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

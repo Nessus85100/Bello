@@ -36,6 +36,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Spornummer"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Arbejder..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Kontekstmenu"
@@ -51,10 +55,6 @@ msgstr "Til"
 msgctxt "#31012"
 msgid "Off"
 msgstr "Fra"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Generelle Indstillinger"
 
 msgctxt "#31017"
 msgid "Karaoke Song Selector"
@@ -136,26 +136,6 @@ msgctxt "#31084"
 msgid "Posters"
 msgstr "Plakater"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Hjemmemenu"
-
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Vis Søgeknap"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Landskab"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Skift Baggrund til Medietypen"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "Enkelt billede"
@@ -175,10 +155,6 @@ msgstr "Lokal undertekst tilgængelig"
 msgctxt "#31169"
 msgid "Reset Skin"
 msgstr "Nulstil Skin"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "Skjul undermenuer"
 
 msgctxt "#31203"
 msgid "New Search"
@@ -359,7 +335,3 @@ msgstr "Konfigurer Vejr-indstillinger"
 msgctxt "#31418"
 msgid "Configure System Settings"
 msgstr "Konfigurer Systemindstillinger"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Hjælp"

@@ -15,6 +15,7 @@
       <include condition="!Skin.HasSetting(WallViewVideos)">WallView_Videos</include> <!-- id = 54 -->
       <include condition="!Skin.HasSetting(ListWallViewVideos)">ListWallView_Videos</include> <!-- id = 58 -->
       <include condition="!Skin.HasSetting(VideoWallFanartViewVideos)">VideoWallFanartView</include> <!-- id = 580 -->
+      <include condition="!Skin.HasSetting(NetfilxViewVideos)">NetfilxView_Videos</include> <!-- id = 59 -->
       <include condition="!Skin.HasSetting(PostersViewVideos)">PostersView_Videos</include> <!-- id = 55 -->
       <include condition="!Skin.HasSetting(ThumbnailsVideos)">ThumbnailsView</include> <!-- id = 56 -->
       <include condition="!Skin.HasSetting(ThumbnailsVideos)">ThumbnailsView_Videos</include> <!-- id = 560 -->
@@ -321,6 +322,12 @@
 
 
   	<!-- ==== Variables ==== -->
+
+  	<variable name="ListItem.Duration">
+  		<value condition="!SubString(listitem.Duration,Mins)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+  		<value condition="SubString(listitem.Duration,Mins)">$INFO[ListItem.Duration]</value>
+  	</variable>
+  	
     <variable name="ListItem.Label">
       <value condition="ListItem.IsPlaying">[COLOR=selected]$INFO[ListItem.Label][/COLOR]</value>
       <value>$INFO[ListItem.Label]</value>
@@ -389,7 +396,7 @@
   	</variable>
   
   	<variable name="GlobalInfo">
-  		<value condition="Substring(ListItem.Path,videodb://movies/sets/,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[20434]</value>
+  		<value condition="Substring(ListItem.Path,videodb://movies/sets/,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[20457]</value>
   		<value condition="Container.Content(Movies) + !IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</value>
       <value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)">$INFO[ListItem.MPAA,$LOCALIZE[20074]: ]</value>
       <value condition="Control.IsVisible(50) + [Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101] $LOCALIZE[20360]]</value>
@@ -412,18 +419,36 @@
   		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>
   		<value condition="Container.Content(Songs)">$INFO[ListItem.Comment]</value>
   		<value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Description)]</value>
+      <value condition="SubString(ListItem.Path,videodb://movies/sets/,left)">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
   		<value condition="Container.Content(seasons) + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[Container.ShowPlot]</value>
   		<value>$INFO[ListItem.Plot]</value>
   	</variable>
-  
+
   	<variable name="SmallGlobalInfo">
-  		<value condition="Substring(ListItem.Path,videodb://movies/sets/,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[20434]</value>
+  		<value condition="Substring(ListItem.Path,videodb://movies/sets/,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[20457]</value>
   		<value condition="Container.Content(Movies) + IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Year]$INFO[ListItem.Rating, • ,]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]</value>
   		<value condition="Container.Content(Movies) + !IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</value>
   		<value condition="Container.Content(TVShows) | Container.Content(Seasons) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Year,, • ,]$INFO[ListItem.Rating,, • ,]$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
   		<value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,$LOCALIZE[31003] ]$INFO[ListItem.Rating, • ,]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]</value>
   	</variable>
-  
+
+  	<variable name="NetFlixSubLabelInfo">
+  		<value condition="Substring(ListItem.Path,videodb://movies/sets/,left) + ListItem.IsFolder + !IsEmpty(ListItem.Title)">$LOCALIZE[20457]</value>
+  		<value condition="[Container.Content(Movies) + substring(Container.FolderPath,plugin://plugin.video,left)] + !IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</value>
+  		<value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered]</value>
+  		<value>$INFO[ListItem.Year]</value>
+  	</variable>
+
+  	<variable name="NetFlixSeasonsLabel">
+  		<value condition="Container.Content(TVShows) + IntegerGreaterThan(ListItem.Property(TotalSeasons),1)">$INFO[ListItem.Property(TotalSeasons),, $LOCALIZE[33054]]</value>
+  		<value condition="Container.Content(TVShows) + !IntegerGreaterThan(ListItem.Property(TotalSeasons),1)">$INFO[ListItem.Property(TotalSeasons),, $LOCALIZE[20373]]</value>
+  	</variable>
+
+  	<variable name="NetFlixIMDBInfo">
+  		<value condition="!IsEmpty(ListItem.Top250)">$INFO[ListItem.Top250,Top 250 #]</value>
+  		<value>$INFO[ListItem.RatingAndVotes]</value>
+  	</variable>
+
   	<variable name="AddonsLabel2">
   		<value condition="stringcompare(Container.FolderPath,addons://sources/video/) + !IsEmpty(ListItem.Property(Addon.Broken))">[COLOR=red]$LOCALIZE[24098][/COLOR]</value>
   		<value condition="!stringcompare(Container.FolderPath,addons://sources/video/) + !IsEmpty(ListItem.Property(Addon.Broken))">[COLOR=red]$INFO[ListItem.Label2][/COLOR]</value>
@@ -475,7 +500,7 @@
       <value condition="!IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
       <value>$INFO[ListItem.ActualIcon,thumbs/,/folderback_square_tp.png]</value>
   	</variable>
-  	
+
   	<variable name="VideoWallThumb">
   		<value condition="!IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
   		<value condition="!IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
@@ -486,12 +511,21 @@
       <value condition="!IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
       <value>$INFO[ListItem.Icon]</value>
     </variable>
+
+  	<variable name="NetFlixLandscapeThumb">
+  		<value condition="Container.Content(TVShows) + !IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+  		<value condition="Container.Content(TVShows) + !IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
+  		<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
+      <value condition="Container.Content(Episodes) + !IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+      <value>$INFO[ListItem.ActualIcon,thumbs/,/folderback_episode_tp.png]</value>
+  	</variable>
   
   	<variable name="LandscapeVars">
   		<value condition="[Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Sets)] + !IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
   		<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
   		<value>$INFO[ListItem.ActualIcon,thumbs/,/folderback_fanart_tp.png]</value>
   	</variable>
+
   	<variable name="ClearlogoVars">
   		<value condition="[Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Sets)] + !IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
   		<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
@@ -499,7 +533,8 @@
   	</variable>
   
     <variable name="ThumbnailsOnThumbLabel">
-      <value condition="!IsEmpty(ListItem.Episode)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</value>
+      <value condition="IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + !IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
+      <value condition="Container.Content(Episodes) + !IsEmpty(ListItem.Episode)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</value>
       <value condition="!IsEmpty(ListItem.Duration)">$INFO[ListItem.Label2]</value>
     </variable>
   

@@ -246,7 +246,7 @@ msgctxt "#31099"
 msgid "Show Big Thumbs"
 msgstr ""
 
-#empty string id 31100
+#empty string with id 31100
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -304,7 +304,7 @@ msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr ""
 
-#empty string id 31138
+#empty string with id 31138
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -358,7 +358,7 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr ""
 
-#empty string id 31152
+#empty string with id 31152
 
 msgctxt "#31153"
 msgid "Enable login screen"
@@ -368,7 +368,7 @@ msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr ""
 
-#empty string id 31155
+#empty string with id 31155
 
 msgctxt "#31156"
 msgid "Manage Video Views"
@@ -677,19 +677,30 @@ msgid "Top Artists"
 msgstr ""
 
 msgctxt "#31260"
-msgid "In Progress Movies"
+msgid "Movies In Progress"
 msgstr ""
 
 msgctxt "#31261"
-msgid "In Progress TV Shows"
+msgid "TV Shows In Progress"
 msgstr ""
 
 msgctxt "#31262"
-msgid "In Progress Music"
+msgid "Music In Progress"
 msgstr ""
 
+msgctxt "#31263"
+msgid "Unwatched Movies"
+msgstr ""
 
-#empty strings from id 31263 to 31279
+msgctxt "#31264"
+msgid "Unwatched TV Shows"
+msgstr ""
+
+msgctxt "#31265"
+msgid "Unwatched Episodes"
+msgstr ""
+
+#empty strings from id 31266 to 31279
 #Playlist Editor labels
 
 msgctxt "#31280"
@@ -902,6 +913,7 @@ msgstr ""
 
 #empty strings from id 31421 to 31430
 
+#Help Messages
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."
 msgstr ""

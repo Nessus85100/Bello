@@ -563,6 +563,14 @@
 			<left>45</left>
 			<top>640</top>
 			<control type="grouplist">
+    	  <animation type="WindowOpen" reversible="false" condition="Window.Previous(Visualisation) | Window.Previous(FullscreenVideo)">
+  	      <effect type="fade" start="0" end="100" time="400" tween="sine" easing="in"  />
+  	      <effect type="slide" start="0,55" end="0,0" time="450" tween="cubic" easing="out" />
+    	  </animation>
+    	  <animation type="WindowClose" reversible="false" condition="Window.Next(Visualisation) | Window.Previous(FullscreenVideo)">
+  	      <effect type="fade" start="100" end="0" time="300" delay="250" tween="sine" easing="out" />
+  	      <effect type="slide" start="0,0" end="0,55" time="350" delay="250" tween="sine" easing="out" />
+    	  </animation>
     	  <animation type="Visible" reversible="false">
   	      <effect type="fade" start="0" end="100" time="400" tween="sine" easing="in"  />
   	      <effect type="slide" start="0,55" end="0,0" time="450" tween="cubic" easing="out" />
@@ -571,16 +579,8 @@
   	      <effect type="fade" start="100" end="0" time="400" tween="sine" easing="out" />
   	      <effect type="slide" start="0,0" end="0,55" time="450" tween="sine" easing="out" />
     	  </animation>
-    	  <animation type="Conditional" reversible="false" condition="!Window.IsActive(busydialog)">
-          <effect type="fade" start="0" end="100" time="200"/>
-          <effect type="slide" start="0,-45" end="0,0" time="300" tween="sine" easing="out" />
-    	  </animation>
-    	  <animation type="Conditional" reversible="false" condition="Window.IsActive(busydialog)">
-          <effect type="fade" start="100" end="0" time="200"/>
-          <effect type="slide" start="0,0" end="0,-45" time="300" tween="sine" easing="out" />
-    	  </animation>
 				<animation effect="slide" start="0,0" end="0,150" time="260" tween="sine" easing="inout" condition="[Window.IsActive(Favourites) + Window.IsActive(ContextMenu)]">Conditional</animation>
-			  <visible>Player.HasMedia + !SubString(Window(Videos).Property(TvTunesIsAlive),True)</visible>
+			  <visible>Player.HasMedia + !Window.IsActive(busydialog) + !SubString(Window(Videos).Property(TvTunesIsAlive),True)</visible>
 				<left>0</left>
 				<top>0</top>
 				<width>1000</width>
@@ -1080,9 +1080,9 @@
       <animation effect="fade" start="0" end="100" delay="500" time="500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
 			<control type="label">
 	      <left>-95</left>
-	      <top>20</top>
+	      <top>25</top>
 				<width>100</width>
-				<height>30</height>
+				<height>23</height>
 				<font>FontSize_14B</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>AA000000</shadowcolor>
@@ -1392,6 +1392,13 @@
 		<value condition="Player.Forwarding16x + !Player.Seeking">$LOCALIZE[31304] [COLOR=osdinfo]x16[/COLOR]</value>
 		<value condition="Player.Forwarding32x + !Player.Seeking">$LOCALIZE[31304] [COLOR=osdinfo]x32[/COLOR]</value>
 		<value condition="Player.DisplayAfterSeek + !Player.Seeking">$LOCALIZE[773]  [COLOR=osdinfo]$INFO[Player.SeekOffset][/COLOR]</value>
+	</variable>
+
+	<variable name="Vis-Background">
+		<value condition="Skin.HasSetting(Vis-Fanart)">$INFO[Player.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(Vis-ArtistSlideshow) + IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh))">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</value>
+		<value condition="Skin.HasSetting(Vis-MusicSlideshow)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
+		<value>empty_icon.png</value>
 	</variable>
 
 	<variable name="WeatherAlerts">

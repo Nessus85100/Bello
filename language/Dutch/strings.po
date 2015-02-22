@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Tracknummer"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Bezig..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "Momentje geduld a.u.b...."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Systeem automatisch afsluiten in"
@@ -63,14 +71,6 @@ msgstr "Uit"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Activeer startscherm menuanimatie"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Opmaak instellingen"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Algemene instellingen"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -229,16 +229,12 @@ msgid "Choose RSS Video Feed Widget"
 msgstr "Kies RSS Video Feed widget"
 
 msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Startscherm"
+msgid "Show Small Thumbs"
+msgstr "Toon kleine miniaturen"
 
 msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Toon startscherm menu knoppen"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Verberg startscherm menu knoppen"
+msgid "Show Big Thumbs"
+msgstr "Toon grote miniaturen"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -252,86 +248,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "Verberg de info van de muziek de nu speelt"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Toon zoekknop"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Verberg de trailerknop"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Verberg de speelfilmknop"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Verberg de TV-seriesknop"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Verberg de muziekknop"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Verberg de afbeeldingenknop"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Verberg de programma`s knop"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Verberg de Add-ons knop"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Verberg de weersinformatieknop"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Verberg de instellingenknop"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Toon de video`s knop"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "Toon afsluitknop"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Toon de muziekvideo`s knop"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "Muziek knop opent..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Aangepaste knop"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Aangepaste startmenu knoppen"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Verberg het speelfilm submenu"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "Verberg het TV-series submenu"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Verberg het muziek submenu"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Verberg het instellingen submenu"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "Knipperende lichten"
@@ -339,22 +255,6 @@ msgstr "Knipperende lichten"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Info aanpassen"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "Afleveringsminiatuur"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "LIGGEND"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "ClearLogo"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -369,12 +269,12 @@ msgid "Hide Background Video"
 msgstr "Verberg achtergrond video"
 
 msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Aangepaste achtergrond"
+msgid "Custom Global Background"
+msgstr "Aangepaste globale achtergrond"
 
 msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Achtergrond Beginschermknop Aanpassen"
+msgid "Complete"
+msgstr "Compleet"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -387,10 +287,6 @@ msgstr "Meerdere afbeeldingen"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Toon mededelingen"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Toon speelfilm mededelingen"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -444,10 +340,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "Toon RSS feed in heel de skin"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Verberg Televisie Submenu"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "Activeer aanmeldscherm"
@@ -456,17 +348,13 @@ msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Kies trailers Add-on"
 
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "Add-on opent..."
-
 msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Verberg aantal keer bekeken video`s"
+msgid "Manage Video Views"
+msgstr "Beheer video weergaven"
 
 msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Verberg beluisterde muziek"
+msgid "Manage Music Views"
+msgstr "Beheer muziek weergaven"
 
 msgctxt "#31158"
 msgid "Views"
@@ -523,18 +411,6 @@ msgstr "Alle skin instellingen zullen terugkeren naar hun standaardwaarde. [CR] 
 msgctxt "#31171"
 msgid "Update Art"
 msgstr "Art bijwerken"
-
-msgctxt "#31172"
-msgid "Enable Home Menu Fanart SlideShow"
-msgstr "Activeer startmenu fan-art diashow"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "Verberg Add-ons submenu"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "Verberg Submenu`s"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -772,6 +648,18 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr "Top artiesten"
 
+msgctxt "#31260"
+msgid "In Progress Movies"
+msgstr "films die bezig zijn"
+
+msgctxt "#31261"
+msgid "In Progress TV Shows"
+msgstr "TV Shows die bezig zijn"
+
+msgctxt "#31262"
+msgid "In Progress Music"
+msgstr "In gebruik muziek"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Open afspeellijst"
@@ -905,132 +793,20 @@ msgid "Disable Quick Navigation"
 msgstr "Verberg Snelle Navigatie"
 
 msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "Verberg knop voor update Videobibliotheek"
+msgid "Default QuickNav Items"
+msgstr "Standaard QuickNav items"
 
 msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "Verberg knop voor update Muziekbibliotheek"
+msgid "Custom QuickNav Items"
+msgstr "Aangepaste Quicknav items"
 
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "Toon knop voor legen Videobibliotheek"
+msgid "Custom Item"
+msgstr "Aangepast Item"
 
 msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "Toon knop voor legen Muziekbibliotheek"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "Toon Party modus knop"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Toon Afsluitknop"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "toon Update videobibliotheek knop"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Verberg de Speelfilmknop"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Verberg de TV-seriesknop"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Verberg de Muziekknop"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Verberg de Afbeeldingenknop"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Verberg de Add-ons knop"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Verberg Nieuwe Speelfilmsknop"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Verberg Nieuwe TV-seriesknop"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Verberg Nieuwe Muziekknop"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "Verberg Instellingenknop"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Toon de Video`s knop"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "Verberg snelle navigatie knoppen"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "Toon snelle navigatie knoppen"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "Aangepaste snelle navigatie knoppen"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Aangepaste Knop"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "Verberg Skin Instellingenknop"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "Verberg Favorietenknop"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "Verberg Televisieknop"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Configureer Kodi naar uw wensen. Inclusief skin, thema, geluid en lettertype, RSS-feeds en bestandsbeheer instellingen"
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "Beheer jouw video-inhoud. Omvat bibliotheek database opties, subtitels, scrapers, en terugspeelopties"
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "Verander de afspeelinstellingen, beheer EPG data instellingen, opname en ouderlijk toezicht."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Configureer hoe Kodi muziek behandelt. Stel afspeel- en lijstopties in, zoeken naar files of databases en veel meer."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "Fotobehandeling gaat zeer makkelijk. Je kan dit doen door de weergave, effecten, tags, timing en fotolijsten aan te passen."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Weersinformatie aanpassen is erg makkelijk met Kodi, selecteer een weerplug-in en krijg voor tot 3 steden updates over het weer"
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Stel Kodi`s netwerkinterface in. controleer IP toewijzing, WWW en FTP server, SMB cliënt en UPnP configuratie"
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "Controleer de belangrijkste hardware en software functies, inclusief audio- en videohardware instellingen, automatisch afspelen en vergrendelen."
+msgid "Custom Items"
+msgstr "Aangepaste Items"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -1079,10 +855,6 @@ msgstr "Configureer Profielen instellingen"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Configureer Skin instellingen"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Help"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

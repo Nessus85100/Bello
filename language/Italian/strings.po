@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Traccia numero"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Sto lavorando..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "Attendere prego..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Il sistema si spegnerà in"
@@ -63,14 +71,6 @@ msgstr "Spento"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Abilita Animazione Menù Principale"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Opzioni di Visualizzazione"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Opzioni Generali"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -229,16 +229,12 @@ msgid "Choose RSS Video Feed Widget"
 msgstr "Scegli il Widget per i Feed RSS"
 
 msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Menù Principale"
+msgid "Show Small Thumbs"
+msgstr "Mostra Miniature Piccole"
 
 msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Mostra Bottoni Menù Principale"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Nascondi Bottoni Menù Principale"
+msgid "Show Big Thumbs"
+msgstr "Mostra Miniature Grandi"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -252,86 +248,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "Nascondi le Informazioni della Musica in Esecuzione"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Mostra il Bottone Cerca"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Nascondi il Bottone Trailer"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Nascondi il Bottone Film"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Nascondi il Bottone Serie TV"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Nascondi il Bottone Musica"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Nascondi il Bottone Foto"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Nascondi il Bottone Programmi"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Nascondi il Bottone Add-on"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Nascondi il Bottone Meteo"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Nascondi il Bottone Impostazioni"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Mostra il Bottone Video"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "Mostra il Bottone Esci"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Mostra il Bottone Video Musicali"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "Il Bottone Musica Apre..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Bottone Personalizzato"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Bottoni Menù Principale Personalizzati"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Nascondi il Sottomenù Film"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "Nascondi il Sottomenù Serie TV"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Nascondi il Sottomenù Musica"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Nascondi il Sottomenù Impostazioni"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "Luci ad Intermittenza"
@@ -339,22 +255,6 @@ msgstr "Luci ad Intermittenza"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Edita Informazione"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "Anteprima Episodio"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Panorama"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "ClearLogo"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -369,12 +269,12 @@ msgid "Hide Background Video"
 msgstr "Nascondi il Video di Sfondo"
 
 msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Sfondo Personalizzato"
+msgid "Custom Global Background"
+msgstr "Sfondi Globali Personalizzati"
 
 msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Edita lo sfondo in base ai tipi di Media"
+msgid "Complete"
+msgstr "Completo"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -387,10 +287,6 @@ msgstr "Immagini Multiple"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Abilita Notifiche"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Abilita Notifiche Film"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -444,10 +340,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "Mostra i feed RSS in tutto lo skin"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Nascondi il sottomenù Live Tv"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "Abilita schermata di login"
@@ -456,17 +348,13 @@ msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Scegli l'Add-on per i Trailer"
 
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "Il Bottone Add-on apre..."
-
 msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Nascondi tipi di Visualizzazione Video"
+msgid "Manage Video Views"
+msgstr "Gestisci le Visualizzazioni Video"
 
 msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Nascondi tipi di Visualizzazione Musica"
+msgid "Manage Music Views"
+msgstr "Gestisci le Visualizzazioni Musica"
 
 msgctxt "#31158"
 msgid "Views"
@@ -523,18 +411,6 @@ msgstr "Tutte le Impostazioni dello Skin torneranno al loro stato originario.[CR
 msgctxt "#31171"
 msgid "Update Art"
 msgstr "Aggiorna Art"
-
-msgctxt "#31172"
-msgid "Enable Home Menu Fanart SlideShow"
-msgstr "Abilita la Presentazione delle Fanart nel Menù Principale"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "Nascondi il Sottomenù Add-on"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "Nascondi i Sottomenù"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -772,6 +648,18 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr "Artisti Migliori"
 
+msgctxt "#31260"
+msgid "In Progress Movies"
+msgstr "Film in Corso"
+
+msgctxt "#31261"
+msgid "In Progress TV Shows"
+msgstr "Serie TV in Corso"
+
+msgctxt "#31262"
+msgid "In Progress Music"
+msgstr "Musica in Corso"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Apri Playlist"
@@ -905,132 +793,20 @@ msgid "Disable Quick Navigation"
 msgstr "Disabilita Navigazione Veloce"
 
 msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "Nascondi Bottone Aggiornamento Libreria Video"
+msgid "Default QuickNav Items"
+msgstr "Elementi Predefiniti Menu' Veloce"
 
 msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "Nascondi Bottone Aggiornamento Libreria Musicale"
+msgid "Custom QuickNav Items"
+msgstr "Elementi Personalizzati Menu' Veloce"
 
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "Mostra Bottone Pulisci Libreria Video"
+msgid "Custom Item"
+msgstr "Elemento Personalizzato"
 
 msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "Mostra Bottone Pulisci Libreria Audio"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "Mostra Bottone Modalità Festa"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Mostra Bottone Spegnimento"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "Mostra Bottone Gestione File"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Nascondi Bottone Film"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Nascondi Bottone Serie TV"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Nascondi Bottone Musica"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Nascondi Bottone Foto"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Nascondi Bottone Add-on"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Nascondi Bottone Nuovi Film"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Nascondi Bottone Nuove Serie TV"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Nascondi Bottone Nuova Musica"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "Mostra il Bottone Impostazioni"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Mostra Bottone Video"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "Nascondi Bottone Navigazione Veloce"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "Mostra Bottone Navigazione Veloce"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "Bottone Navigazione Veloce Personalizzato"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Bottone Personalizzato"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "Nascondi il Bottone Impostazioni Skin"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "Nascondi Bottone Preferiti"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "Nascondi il Bottone TV da Vivo"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Regola l'aspetto di Kodi. Include skin, temi, suoni, caratteri, feed RSS ed impostazioni della lingua."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "Gestisci i tuoi contenuti video. Include opzioni db, liste dei file, sottotitoli, scraper, e opzioni di esecuzione."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "Cambia le impostazioni di riproduzione, gestisci i dati dell'EPG, le registrazioni ed il controllo genitori."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Configura come Kodi gestisce la musica. Imposta opzioni di esecuzione ed ascolto, sfoglia per file, per db e molto di più."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "La gestione delle immagini può essere molto facile. Puoi farlo regolando il display, gli effetti, le etichette ed altro ancora."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Impostare il Meteo è molto semplice con Kodi. Seleziona un plugin meteo ed ottieni aggiornamenti dal vivo."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Gestisci le connessioni di rete di Kodi. Controlla l'IP, i server FTP, i client SMB, e la configurazione UPnP."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "Controlla le funzioni hardware e software, comprese le impostazioni audio e video, le esecuzioni automatiche ed i blocchi."
+msgid "Custom Items"
+msgstr "Elementi Personalizzati"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -1079,10 +855,6 @@ msgstr "Configura le Impostazioni dei Profili"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Configura le Impostazioni dello Skin"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Aiuto"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

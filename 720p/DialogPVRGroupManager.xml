@@ -167,7 +167,7 @@
 							<height>34</height>
 		          <colordiffuse>77white</colordiffuse>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
-							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Icon]</texture>
+							<texture fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<left>45</left>
@@ -206,7 +206,7 @@
 							<width>34</width>
 							<height>34</height>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
-							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Icon]</texture>
+							<texture fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<left>45</left>
@@ -246,7 +246,7 @@
 							<height>34</height>
 		          <colordiffuse>77white</colordiffuse>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
-							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Icon]</texture>
+							<texture fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<left>45</left>
@@ -285,7 +285,7 @@
 							<width>34</width>
 							<height>34</height>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
-							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Icon]</texture>
+							<texture fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<left>45</left>

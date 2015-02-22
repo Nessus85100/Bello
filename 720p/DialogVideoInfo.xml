@@ -35,7 +35,7 @@
 				<control type="label">
 					<description>Title</description>
 				  <posy>-3</posy>
-					<width>870</width>
+					<width>855</width>
 					<font>FontSize_40</font>
 					<label>$INFO[Listitem.Title]$INFO[Listitem.Year, (,) ]</label>
 					<align>left</align>
@@ -46,7 +46,7 @@
 				</control>
 				<control type="label">
 					<description>Title</description>
-					<width>870</width>
+					<width>855</width>
 					<font>FontSize_40</font>
 					<label>$INFO[Listitem.Title]</label>
 					<align>left</align>
@@ -81,7 +81,7 @@
 					<description>Under Title</description>
 					<posx>55</posx>
 					<posy>34</posy>
-					<width>870</width>
+					<width>800</width>
 					<height>30</height>
 					<font>FontSize_22</font>
 					<label>$VAR[DialogsInfo]</label>
@@ -207,19 +207,8 @@
 							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
-						  <label>$INFO[ListItem.Duration]</label>
-						  <visible>substring(listitem.Duration,Mins)</visible>
+              <label>$VAR[ListItem.Duration]</label>
 		          <visible>!IsEmpty(ListItem.Duration)</visible>
-			      </control>
-			      <control type="label">
-							<textcolor>99white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_22</font>
-							<width min="10" max="780">auto</width>
-							<height>30</height>
-							<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
-							<visible>!substring(listitem.Duration,Mins)</visible>
-			        <visible>!IsEmpty(ListItem.Duration)</visible>
 			      </control>
 					</control>
 					<!-- Path label -->

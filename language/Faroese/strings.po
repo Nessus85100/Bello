@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Lag nummar"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Arbeiði..."
+
 msgctxt "#31011"
 msgid "On"
 msgstr "Tendra"

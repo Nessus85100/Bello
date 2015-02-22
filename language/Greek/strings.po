@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Αριθμός Κομματιού"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Απασχολημένο..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "Παρακαλώ Περιμένετε..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Αυτόματος τερματισμός συστήματος σε"
@@ -63,14 +71,6 @@ msgstr "Ανενεργό"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Ενεργοποίηση Γραφικών Κεντρικού Μενού"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Επιλογές Τύπου Προβολής"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Γενικές Επιλογές"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -228,18 +228,6 @@ msgctxt "#31097"
 msgid "Choose RSS Video Feed Widget"
 msgstr "Επιλογή Widget RSS Ροής Βίντεο"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Αρχικό Μενού"
-
-msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Εμφάνιση Πλήκτρων Κεντρικού Μενού"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Απόκρυψη Πλήκτρων Κεντρικού Μενού"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Εμφάνιση Πληροφοριών για τον Καιρό"
@@ -252,86 +240,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "Απόκρυψη Πληροφοριών Μουσικής που 'Τώρα Εκτελείται'"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Εμφάνιση Πλήκτρου Αναζήτησης"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Απόκρυψη Πλήκτρου Διαφημιστικών"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Απόκρυψη Πλήκτρου Ταινιών"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Απόκρυψη Πλήκτρου Τηλ. Σειρών"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Απόκρυψη Πλήκτρου Μουσικής"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Απόκρυψη Πλήκτρου Εικόνων"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Απόκρυψη Πλήκτρου Εφαρμογών"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Απόκρυψη Πλήκτρου Πρόσθετων"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Απόκρυψη Πλήκτρου Καιρού"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Απόκρυψη Πλήκτρου Ρυθμίσεων"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Εμφάνιση Πλήκτρου Βίντεο"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "Εμφάνιση Πλήκτρου Εξόδου"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Εμφάνιση Πλήκτρου Μουσικών Βίντεο"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "Άνοιγμα Πλήκτρου Μουσικής..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Προσαρμοσμένο Πλήκτρο"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Προσαρμοσμένα Πλήκτρα Κεντρικού Μενού"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Απόκρυψη Υπομενού Ταινιών"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "Απόκρυψη Υπομενού Τηλ. Σειρών"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Απόκρυψη Υπομενού Μουσικής"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Απόκρυψη Υπομενού Ρυθμίσεων"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "Φλας"
@@ -339,22 +247,6 @@ msgstr "Φλας"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Επεξεργασία Πληροφοριών"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "Μικρογραφία Επεισοδίου"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Τοπίο"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "Λογότυπο"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -368,14 +260,6 @@ msgctxt "#31132"
 msgid "Hide Background Video"
 msgstr "Απόκρυψη Βίντεο Υποβάθρου"
 
-msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Προσαρμοσμένο Υπόβαθρο"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Επεξεργασία υποβάθρου για"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "Μία Εικόνα"
@@ -387,10 +271,6 @@ msgstr "Πολλαπλές Εικόνες"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Ενεργοποίηση Ειδοποιήσεων"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Ενεργοποίηση Ειδοποιήσεων Ταινιών"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -444,10 +324,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "Εμφάνιση τροφοδοσίας RSS σε όλο το κέλυφος"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Απόκρυψη Υπομενού Live TV"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "Ενεργοποίηση οθόνης σύνδεσης"
@@ -455,18 +331,6 @@ msgstr "Ενεργοποίηση οθόνης σύνδεσης"
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Επιλογή Πρόσθετου Διαφημιστικών"
-
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "Το πλήκτρο Πρόσθετα ανοίγει..."
-
-msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Απόκρυψη Προβολών Βίντεο"
-
-msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Απόκρυψη Προβολών Μουσικής"
 
 msgctxt "#31158"
 msgid "Views"
@@ -523,18 +387,6 @@ msgstr "Θα γίνει επαναφορά όλων των Ρυθμίσεων Κ
 msgctxt "#31171"
 msgid "Update Art"
 msgstr "Ενημέρωση Εικόνων"
-
-msgctxt "#31172"
-msgid "Enable Home Menu Fanart SlideShow"
-msgstr "Ενεργοποίηση Παρουσίασης Διαφανειών Fanart Αρχ. Οθόνης"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "Απόκρυψη του Υπομενού Πρόσθετων"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "Απόκρυψη των Υπομενού"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -772,6 +624,14 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr "Κορυφαίοι Καλλιτέχνες"
 
+msgctxt "#31260"
+msgid "In Progress Movies"
+msgstr "Ταινίες σε εξέλιξη"
+
+msgctxt "#31261"
+msgid "In Progress TV Shows"
+msgstr "Σειρές σε εξέλιξη"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Άνοιγμα Λίστας Αναπ/γής"
@@ -904,133 +764,9 @@ msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "Απενεργοποίηση Ταχείας Πλοήγησης"
 
-msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "Απόκρυψη Πλήκτρου Ενημέρωσης Συλλογής Βίντεο"
-
-msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "Απόκρυψη Πλήκτρου Ενημέρωσης Μουσικής Συλλογής"
-
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "Εμφάνιση Πλήκτρου Εκκαθάρισης Συλλογής Βίντεο"
-
-msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "Εμφάνιση Πλήκτρου Εκκαθάρισης Μουσικής Συλλογής"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "Εμφάνιση Πλήκτρου Λειτουργίας Party"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Εμφάνιση Πλήκτρου Τερματισμού"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "Εμφάνιση Πλήκτρου Διαχείρισης Αρχείων"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Απόκρυψη Πλήκτρου Ταινιών"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Απόκρυψη Πλήκτρου Τηλ. Σειρών"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Απόκρυψη Πλήκτρου Μουσικής"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Απόκρυψη Πλήκτρου Εικόνων"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Απόκρυψη Πλήκτρου Πρόσθετων"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Απόκρυψη Πλήκτρου Νέων Ταινιών"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Απόκρυψη Πλήκτρου Νέων Τηλ. Σειρών"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Απόκρυψη Πλήκτρου Νέας Μουσικής"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "Εμφάνιση Πλήκτρου Ρυθμίσεων"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Εμφάνιση Πλήκτρου Βίντεο"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "Απόκρυψη Πλήκτρων Ταχείας Πλοήγησς"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "Εμφάνιση Πλήκτρων Ταχείας Πλοήγησης"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "Προσαρμοσμένα Πλήκτρα Ταχείας Πλοήγησης"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Προσαρμοσμένο Πλήκτρο"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "Απόκρυψη Πλήκτρου Ρυθμίσεων Κελύφους"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "Απόκρυψη Πλήκτρου Αγαπημένων"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "Απόκρυψη Πλήκτρου LiveTV"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Προσαρμόστε την εμφάνιση του Kodi. Περιλαμβάνονται ρυθμίσεις για το κέλυφος, το θέμα, τον ήχο και τη γραμματοσειρά, την τροφοδοσία RSS και την τοποθεσία."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "Διαχειριστείτε τα βίντεο σας. Περιλαμβάνονται ρυθμίσεις για τη βάση δεδομένων της συλλογής, τους υπότιτλους, τα scraper και επιλογές αναπαραγωγής."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "Αλλάξτε τις ρυθμίσεις αναπαραγωγής, διαχειριστείτε τις ρυθμίσεις δεδομένων EPG, τις εγγραφές και το γονικό έλεγχο."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Διαμορφώστε πως χειρίζεται τη μουσική σας το Kodi. Ρυθμίστε τις επιλογές αναπαραγωγής και καταλόγου αρχείων, της περιήγησης στα αρχεία ή τη βάση δεδομένων και πολλά άλλα."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "Η διαχείριση των εικόνων σας μπορεί να γίνει πολύ εύκολα. Μπορείτε να ρυθμίσετε την προβολή τους, τα εφέ, τις ετικέτες, τους χρονισμούς και τους καταλόγους εικόνων."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Η ρύθμιση του Καιρού είναι πολύ απλή με το Kodi. Επιλέξτε ένα plugin για τον καιρό και θα έχετε άμεσες ενημερώσεις για έως και τρεις πόλεις."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Ρυθμίστε το περιβάλλον δικτύου του Kodi. Ελέγξτε τις αναθέσεις IP, τους διακομιστές WWW και FTP, τον πελάτη SMB και τη ρύθμιση του UPnP."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "Ελέγξτε βασικές λειτουργίες του υλικού και του λογισμικού, συμπεριλαμβανομένων των ρυθμίσεων υλικού βίντεο και ήχου, την αυτόματη αναπαραγωγή, και το κλείδωμα."
+msgid "Custom Item"
+msgstr "Προσαρμόσιμο Αντικείμενο"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -1079,10 +815,6 @@ msgstr "Διαμόρφωση Ρυθμίσεων Προφίλ"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Διαμόρφωση Ρυθμίσεων Κελύφους"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Βοήθεια"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

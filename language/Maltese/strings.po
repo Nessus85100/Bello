@@ -35,7 +35,3 @@ msgstr "Ajkons"
 msgctxt "#31302"
 msgid "Paused"
 msgstr "PAWSA"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "għajnuna"

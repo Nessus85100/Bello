@@ -24,6 +24,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Број нумере"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Обрада..."
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "Искљ."
@@ -63,10 +67,6 @@ msgstr "поподне"
 msgctxt "#31083"
 msgid "Wall"
 msgstr "Иконе"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Уредите позадину тастера за почетни екран"
 
 msgctxt "#31135"
 msgid "Single Image"

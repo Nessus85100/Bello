@@ -420,12 +420,12 @@
 						<texture diffuse="thumbs/music_diffuse.png">thumbs/music_overlay_noglass.png</texture>
 					</control>
 					<control type="image">
-						<left>-6</left>
-						<top>-5</top>
+						<left>-8</left>
+						<top>-8</top>
 						<width>176</width>
 						<height>176</height>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
-						<texture border="30" diffuse="thumbs/music_diffuse.png">views/thumbnails/focus.png</texture>
+						<texture border="30" diffuse="thumbs/music_diffuse.png">dialogs/albuminfo/focus.png</texture>
 						<visible>Control.HasFocus(50) | Control.HasFocus(150)</visible>
 					</control>
 					<control type="group">

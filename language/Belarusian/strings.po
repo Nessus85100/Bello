@@ -36,6 +36,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Нумар трэку"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Ідзе праца..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Context Menu"
@@ -51,10 +55,6 @@ msgstr "On"
 msgctxt "#31012"
 msgid "Off"
 msgstr "Няма"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "General Options"
 
 msgctxt "#31017"
 msgid "Karaoke Song Selector"
@@ -135,18 +135,6 @@ msgstr "Posters"
 msgctxt "#31085"
 msgid "Thumbnails"
 msgstr "Thumbnails"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Landscape"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Edit Background for Media Type"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -347,7 +335,3 @@ msgstr "Configure Weather Settings"
 msgctxt "#31418"
 msgid "Configure System Settings"
 msgstr "Configure System Settings"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Help"

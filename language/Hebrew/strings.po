@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "מספר רצועה"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "עסוק..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "נא להמתין..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "כיבוי מערכת אוטומטי בעוד"
@@ -63,14 +71,6 @@ msgstr "כבוי"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "אפשר הנפשת תפריט הבית"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "אפשרויות מצב תצוגה"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "אפשרויות כלליות"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -228,18 +228,6 @@ msgctxt "#31097"
 msgid "Choose RSS Video Feed Widget"
 msgstr "בחירת יישומון הזנת RSS של וידאו"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "תפריט הבית"
-
-msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "הצג כפתורי תפריט הבית"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "הסתר כפתורי תפריט הבית"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "הצג פרטי מזג אוויר"
@@ -252,86 +240,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "הסתר פרטי מוזיקה \"מנגן כעת\""
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "הצג כפתור חיפוש"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "הסתר כפתור קדימונים"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "הסתר כפתור סרטים"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "הסתר כפתור סדרות"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "הסתר כפתור מוזיקה"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "הסתר כפתור תמונות"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "הסתר כפתור תוכנות"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "הסתר כפתור הרחבות"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "הסתר כפתור מזג אוויר"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "הסתר כפתור הגדרות"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "הצג כפתור וידאו"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "הצג כפתור יציאה"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "הצג כפתור קליפים"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "כפתור מוזיקה מעביר ל..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "כפתור מותאם אישית"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "כפתורי תפריט בית מותאמים"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "הסתר תת תפריט סרטים"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "הסתר תת תפריט סדרות"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "הסתר תת תפריט מוזיקה"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "הסתר תת תפריט הגדרות"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "אורות מהבהבים"
@@ -339,22 +247,6 @@ msgstr "אורות מהבהבים"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "עריכת פרטים"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "תמונת פרק ממוזערת"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "תמונת נוף"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "ClearLogo"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -368,14 +260,6 @@ msgctxt "#31132"
 msgid "Hide Background Video"
 msgstr "אל תציג וידאו ברקע"
 
-msgctxt "#31133"
-msgid "Custom Background"
-msgstr "רקע מותאם אישית"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "עריכת רקע סוג מדיה"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "תמונה בודדת"
@@ -387,10 +271,6 @@ msgstr "מספר תמונות"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "אפשר התראות"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "אפשר התראות סרטים"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -444,10 +324,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "הצג שורת חדשות בכל המעטפת"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "הסתר תת תפריט טלוויזיה חיה"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "אפשר מסך כניסה"
@@ -455,18 +331,6 @@ msgstr "אפשר מסך כניסה"
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "בחירת הרחבת קדימונים"
-
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "כפתור הרחבות מעביר ל..."
-
-msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "הסתר תצוגות וידאו"
-
-msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "הסתר תצוגות מוזיקה"
 
 msgctxt "#31158"
 msgid "Views"
@@ -523,18 +387,6 @@ msgstr "כל הגדרות המעטפות יאופסו לערכי ברירת המ
 msgctxt "#31171"
 msgid "Update Art"
 msgstr "עדכון גרפיקה"
-
-msgctxt "#31172"
-msgid "Enable Home Menu Fanart SlideShow"
-msgstr "אפשר מצגת פאנארט של תפריט הבית"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "הסתר תת תפריט הרחבות"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "הסתר תת תפריטים"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -904,133 +756,13 @@ msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "נטרל ניווט מהיר"
 
-msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "הסתר כפתור עדכון ספריית וידאו"
-
-msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "הסתר כפתור עדכון ספריית מוזיקה"
-
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "הצג כפתור ניקוי ספריית וידאו"
+msgid "Custom Item"
+msgstr "פריט מותאם אישית"
 
 msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "הצג כפתור ניקוי ספריית מוזיקה"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "הצג כפתור מצב מסיבה"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "הצג כפתור כיבוי"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "הצג כפתור מנהל קבצים"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "הסתר כפתור סרטים"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "הסתר כפתור סדרות"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "הסתר כפתור מוזיקה"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "הסתר כפתור תמונות"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "הסתר כפתור הרחבות"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "הסתר כפתור סרטים חדשים"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "הסתר כפתור סדרות חדשות"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "הסתר כפתור מוזיקה חדשה"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "הצג כפתור הגדרות"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "הצג כפתור וידאו"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "הסתר כפתורי ניווט מהיר"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "הצג כפתורי ניווט מהיר"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "כפתורי ניווט מהיר מותאמים אישית"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "כפתור מותאם אישית"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "הסתר כפתור הגדרות מעטפת"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "הסתר כפתור מועדפים"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "הסתר כפתור טלוויזיה חיה"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "התאמת המראה והתחושה של Kodi. כולל מעטפת, ערכת נושא, בחירת צלילים וגופן, שורת חדשות והגדרות אזוריות."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "ניהול תכני הווידאו. כולל אפשרויות מסד נתוני הספריה, כתוביות, סקרייפרים ואפשרויות ניגון."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "שינוי הגדרות ניגון, ניהול הגדרות נתוני מדריך השידורים, הקלטות ובקרת הורים."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "שינוי הגדרות מוזיקה. הגדרת אפשרויות ניגון ואופן הצגה, עיון בקבצים או במסד הנתונים והגדרות רבות נוספות."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "עיון בתמונות יכול להיות מאוד פשוט ונוח. כדי להגיע לכך ניתן להתאים הגדרות תצוגה, אפקטים, תגיות, זמנים ואופן הצגת רשימת תמונות."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "מאוד פשוט לשנות הגדרות מזג אוויר. יש לבחור הרחבת מזג אוויר ואז יתקבלו עדכוני מזג אוויר לעד שלושה מיקומים נבחרים."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "שינוי הגדרות רשת. שינוי שיטת IP והגדרתו, הגדרות שרת אינטרנט מובנה, לקוח SMB ו־UPnP."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "שליטה על הגדרות ליבה של החומרה והתוכנה, כולל הגדרת חומרת פלט שמע ותצוגה, ניגון אוטומטי ונעילה ראשית."
+msgid "Custom Items"
+msgstr "פריטים מותאמים אישית"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -1079,10 +811,6 @@ msgstr "שינוי הגדרות משתמשים"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "שינוי הגדרות מעטפת"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "עזרה"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

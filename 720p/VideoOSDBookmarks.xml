@@ -4,8 +4,8 @@
 	<controls>
 	 <control type="group">
 	  <control type="image">
-			<posx>0</posx>
-			<posy>410</posy>
+			<left>0</left>
+			<top>410</top>
 			<width>1280</width>
 			<height>220</height>
 			<fadetime>200</fadetime>
@@ -33,8 +33,8 @@
         <effect type="slide" start="0,0" end="-300,0" time="400" delay="0" tween="sine" easing="out" />
         <effect type="fade" start="100" end="0" time="400" delay="0" tween="sine" easing="out" />
 	    </animation>
-			<posx>37</posx>
-			<posy>430</posy>
+			<left>37</left>
+			<top>430</top>
 			<width>1224</width>
 			<height>200</height>
 			<onleft>11</onleft>
@@ -48,8 +48,8 @@
 			<pagecontrol>-</pagecontrol>
 			<itemlayout width="306">
 			  <control type="image">
-					<posx>7</posx>
-					<posy>7</posy>
+					<left>7</left>
+					<top>7</top>
 					<width>276</width>
 					<height>168</height>
 					<texture diffuse="thumbs/video_diffuse.png">$INFO[ListItem.Icon]</texture>
@@ -57,8 +57,8 @@
 					<include>VisibleFadeEffect</include>
 			  </control>
 			  <control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>290</width>
 					<height>182</height>
 					<texture>thumbs/video_overlay_noglass.png</texture>
@@ -66,9 +66,9 @@
 					<include>VisibleFadeEffect</include>
 			  </control>
 				<control type="label">
-					<posx>270</posx>
-					<posy>148</posy>
-					<width>225</width>
+					<left>0</left>
+					<top>150</top>
+					<width>270</width>
 					<height>15</height>
 					<font>FontSize_18B</font>
 					<textcolor>white</textcolor>
@@ -82,8 +82,8 @@
 			<focusedlayout width="306">
 			<control type="group">
 			  <control type="image">
-					<posx>7</posx>
-					<posy>7</posy>
+					<left>7</left>
+					<top>7</top>
 					<width>276</width>
 					<height>168</height>
 					<texture diffuse="thumbs/video_diffuse.png">$INFO[ListItem.Icon]</texture>
@@ -91,8 +91,8 @@
 					<include>VisibleFadeEffect</include>
 			  </control>
 			  <control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>290</width>
 					<height>182</height>
 					<texture>thumbs/video_overlay_noglass.png</texture>
@@ -100,26 +100,18 @@
 					<include>VisibleFadeEffect</include>
 			  </control>
 				<control type="image">
-					<posx>-12</posx>
-					<posy>-12</posy>
+					<left>-12</left>
+					<top>-12</top>
 					<width>314</width>
 					<height>206</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture border="35">views/thumbnails/focus.png</texture>
-          <animation type="Focus">
-            <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-            <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
-          </animation>
-          <animation type="Unfocus">
-            <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-            <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
-          </animation>
+					<texture border="35">dialogs/albuminfo/focus.png</texture>
 					<visible>Control.HasFocus(11)</visible>
 				</control>
 				<control type="label">
-					<posx>270</posx>
-					<posy>148</posy>
-					<width>225</width>
+					<left>0</left>
+					<top>150</top>
+					<width>270</width>
 					<height>15</height>
 					<font>FontSize_18B</font>
 					<textcolor>white</textcolor>
@@ -131,9 +123,9 @@
 					<visible>!Control.HasFocus(11)</visible>
 				</control>
 				<control type="label">
-					<posx>270</posx>
-					<posy>148</posy>
-					<width>225</width>
+					<left>0</left>
+					<top>150</top>
+					<width>270</width>
 					<height>15</height>
 					<font>FontSize_18B</font>
 					<textcolor>blue</textcolor>
@@ -153,13 +145,13 @@
    <!-- == Buttons == -->
    <!-- ============= -->
    <control type="group">
-		<posx>45</posx>
-		<posy>25</posy>
+		<left>45</left>
+		<top>25</top>
     <visible>!Window.IsActive(ShutdownMenu) + !Window.IsActive(ContextMenu)</visible>
     <include>OSDSlideAnimations</include>
 		<control type="grouplist" id="9000">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>0</height>
 			<width>0</width>
 			<itemgap>0</itemgap>
@@ -187,8 +179,8 @@
 			</control>
 		</control>
 		<control type="grouplist">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>70</height>
 			<width>1190</width>
 			<itemgap>15</itemgap>
@@ -223,8 +215,8 @@
 		</control>
 	<control type="label">
 		<description>Page Count Label</description>
-		<posx>2</posx>
-		<posy>48</posy>
+		<left>2</left>
+		<top>48</top>
 		<width>300</width>
 		<height>20</height>
 		<font>FontSize_18</font>

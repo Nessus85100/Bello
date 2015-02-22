@@ -1409,7 +1409,7 @@
 	              <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
               </control>
 							<control type="label">
-								<left>40</left>
+								<left>10</left>
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
@@ -1424,7 +1424,7 @@
 							<control type="label">
 								<left>87</left>
 								<top>0</top>
-								<width>340</width>
+								<width>320</width>
 								<height>45</height>
 								<font>FontSize_20</font>
 								<textcolor>77white</textcolor>
@@ -1435,9 +1435,9 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<left>572</left>
+								<left>470</left>
 								<top>0</top>
-								<width>190</width>
+								<width>200</width>
 								<height>45</height>
 								<font>FontSize_20</font>
 								<textcolor>77white</textcolor>
@@ -1448,9 +1448,9 @@
 			          <label>$INFO[ListItem.StartDate]</label>
 							</control>
 							<control type="label">
-								<left>777</left>
+								<left>680</left>
 								<top>0</top>
-								<width>190</width>
+								<width>195</width>
 								<height>45</height>
 								<font>FontSize_20</font>
 								<textcolor>77white</textcolor>
@@ -1543,7 +1543,7 @@
 	              <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
               </control>
 							<control type="label">
-								<left>40</left>
+								<left>10</left>
 								<top>0</top>
 								<width>60</width>
 								<height>45</height>
@@ -1558,7 +1558,7 @@
 							<control type="label">
 								<left>87</left>
 								<top>0</top>
-								<width>405</width>
+								<width>320</width>
 								<height>45</height>
 								<font>FontSize_20</font>
 								<textcolor>white</textcolor>
@@ -1569,9 +1569,9 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<left>572</left>
+								<left>470</left>
 								<top>0</top>
-								<width>190</width>
+								<width>200</width>
 								<height>45</height>
 								<font>FontSize_20</font>
 								<textcolor>white</textcolor>
@@ -1582,9 +1582,9 @@
 			          <label>$INFO[ListItem.StartDate]</label>
 							</control>
 							<control type="label">
-								<left>777</left>
+								<left>680</left>
 								<top>0</top>
-								<width>190</width>
+								<width>195</width>
 								<height>45</height>
 								<font>FontSize_20</font>
 								<textcolor>white</textcolor>

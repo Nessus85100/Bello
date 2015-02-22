@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Takelio numeris"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Veikia..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "Prašome palaukti..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Sistemos automatinis išjungimas"
@@ -63,14 +71,6 @@ msgstr "Išjungta"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Įjungti pagrindinio meniu animacija"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Peržiūros parinktys"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Bendros parinktys"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -229,16 +229,12 @@ msgid "Choose RSS Video Feed Widget"
 msgstr "Pasirinkite RSS vaizdo sklaidos kanalo valdiklį"
 
 msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Pagrindinis meniu"
+msgid "Show Small Thumbs"
+msgstr "Rodyti mažas miniatiūras"
 
 msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Rodyti pagrindinio meniu mygtukus"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Slėpti pagrindinio meniu mygtukus"
+msgid "Show Big Thumbs"
+msgstr "Rodyti dideles miniatiūras"
 
 msgctxt "#31101"
 msgid "Show Weather Info"
@@ -252,86 +248,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "Slėpti -Dabar grojama- muzikos info"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Rodyti paieškos mygtuką"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Slėpti -Filmo anonsai- mygtuką"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Slėpti -Filmai- mygtuką"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Slėpti -TV Šou- mygtuką"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Slėpti -Muzika- mygtuką"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Slėpti -Paveikslėliai- mygtuką"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Slėpti -Programos- mygtuką"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Slėpti -Priedai- mygtuką"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Slėpti -Orai- mygtuką"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Slėpti -Nustatymai- mygtuką"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Rodyti -Video- mygtuką"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "Rodyti išėjimo mygtuką"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Rodyti -Vaizdo klipai- mygtuką"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "Atidaryti -Muzika- mygtuką"
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Individualus mygtukas"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Individualus -Pagrindinis meniu- mygtukas"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Slėpti -Filmai- submeniu"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "Slėpti -TV Šou- submeniu"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Slėpti -Muzika- submeniu"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Slėpti -Nustatymai- submeniu"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "Mirksinti šviesa"
@@ -339,22 +255,6 @@ msgstr "Mirksinti šviesa"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Keisti info"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "Epizodo thumb"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Kraštovaizdis"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "Valyti Art"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "Valyti Logo"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -369,12 +269,12 @@ msgid "Hide Background Video"
 msgstr "Slėpti fono video"
 
 msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Individualus fonas"
+msgid "Custom Global Background"
+msgstr "Savas globalus fonas"
 
 msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Pakeisti pagrindinio ekrano foną"
+msgid "Complete"
+msgstr "Baigta"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -387,10 +287,6 @@ msgstr "Daug paveikslėlių"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Įjungti pranešimus"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Įjungti Filmo pranešimai"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -444,10 +340,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "Rodyti RSS kanalą visose temose"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Slėpti Live TV submeniu"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "Įjungti prisijungimo ekraną"
@@ -456,17 +348,13 @@ msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Pasirinkti filo anonso priedą"
 
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "Priedų mygtukas atidaro ..."
-
 msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Slėpti -Video- peržiūra"
+msgid "Manage Video Views"
+msgstr "Tvarkyti vaizdo įrašų rodinius"
 
 msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Slėpti -Muzika- peržiūra"
+msgid "Manage Music Views"
+msgstr "Tvarkyti muzikos rodinius"
 
 msgctxt "#31158"
 msgid "Views"
@@ -523,18 +411,6 @@ msgstr "Visi teminės išvaizdos nustatymai bus grąžinti į pradinę būseną.
 msgctxt "#31171"
 msgid "Update Art"
 msgstr "Atnaujinti iliustracijas"
-
-msgctxt "#31172"
-msgid "Enable Home Menu Fanart SlideShow"
-msgstr "Įjungti pradinio meniu FanArt skaidrių peržiūrą"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "Slėpti priedų submeniu"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "Slėpti submeniu"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -772,6 +648,18 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr "Populiariausi atlikėjai"
 
+msgctxt "#31260"
+msgid "In Progress Movies"
+msgstr "Nebaigti žiūrėti filmai"
+
+msgctxt "#31261"
+msgid "In Progress TV Shows"
+msgstr "Nebaigtos žiūrėti TV laidos"
+
+msgctxt "#31262"
+msgid "In Progress Music"
+msgstr "Nebaigta klausyti muzika"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Atidaryti grojaraštį"
@@ -905,132 +793,20 @@ msgid "Disable Quick Navigation"
 msgstr "Išjungti -Greita navigacija"
 
 msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "Slėpti vaizdo bibliotekos atnaujinimo mygtuką"
+msgid "Default QuickNav Items"
+msgstr "Numatytieji greitos navigacijos elementai"
 
 msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "Slėpti muzikos bibliotekos atnaujinimo mygtuką"
+msgid "Custom QuickNav Items"
+msgstr "Savi greitos navigacijos elementai"
 
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "Rodyti -Ištrinti video biblioteką- mygtuką"
+msgid "Custom Item"
+msgstr "Individualus elementas"
 
 msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "Rodyti -Ištrinti muzikos biblioteką- mygtuką"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "Rodyti -Grupės režimas- mygtuką"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Rodyti -Išjungimas- mygtuką"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "Rodyti -Failų tvarkyklė- mygtuką"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Slėpti -Filmai- mygtuką"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Slėpti -TV Šou- mygtuką"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Slėpti -Muzika- mygtuką"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Slėpti -Paveiklslėliai- mygtuką"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Slėpti -Priedai- mygtuką"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Slėpti -Nauji Filmai- mygtuką"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Slėpti -Nauji TV Šou- mygtuką"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Slėpti -Nauja Muzika- mygtuką"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "Rodyti nustatymų mygtuką"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Rodyti -Video- migtuką"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "Slėpti -Greita navigacija- mygtuką"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "Rodyti -Greita navigacija- mygtuką"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "Individulalus -Greita navigacija- mygtukas"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Individulalus mygtukas"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "Slėpti teminės išvaizdos nustatymų mygtuką"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "Slėpti mėgstamiausiųjų mygtuką"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "Sėpti LiveTV mygtuką"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Nustatyti Kodi teminę išvaizdą. Katra apima išvaizdą, temą, garsą bei šrifto pasirinktis, RSS ir lokalizacijos nustatymus."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "Tvarkyti vaizdo turinį. Katra apima bibliotekos duomenų bazės galimybes, subtitrus, skreperius, ir atkūrimo galimybes."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "Keisti atkūrimo nustatymus, valdyti EPG duomenų parametrus, įrašus bei tėvų kontrolę."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Nustatyti  muziką. Atkūrimo ir įtraukimo galimybes, naršymo failus, duomenų bazes ir daug daugiau."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "Nustatyti paveikslėlius. Galite tai padaryti reguliuojant ekrano poveikį, žymes, laiką ir/arba vaizdo įrašą."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Koreguoti orus. Pasirinkite orų priedą sukonfiguruokite jį pasiringdami miestus apie katruos norite matyti orus ir gaukite atnaujinimą bei informaciją iki 3 mėn.."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Pasirinkti Kodi tinklo sąsaja. Kontroliuoti IP priskyrimą, WWW ir FTP serverius, SMB klientus, ir UPnP konfigūraciją."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "Valdymo esmė ir programinės įrangos funkcijos, įskaitant garso ir vaizdo aparatūros sąranka, automatinis paleidimas ir fiksavimas."
+msgid "Custom Items"
+msgstr "Savi elementai"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -1079,10 +855,6 @@ msgstr "Konfigūruoti profilio parametrus"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Konfigūruoti teminės išvaizdos parametrus"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Pagalba"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

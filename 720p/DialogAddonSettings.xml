@@ -94,17 +94,19 @@
 			<control type="radiobutton" id="4">
 				<description>Default RadioButton</description>
 				<radioposx>558</radioposx>
-				<textwidth>560</textwidth>
+				<textwidth>558</textwidth>
 		    <include>SettingsRadioButton</include>
 			</control>
 			<control type="spincontrolex" id="5">
 				<description>Default spincontrolex</description>
-				<textwidth>550</textwidth>
-			  <spinleft>10</spinleft>
+				<textwidth>400</textwidth>
 		    <include>SettingsSpincontrolex</include>
 			</control>
 			<control type="sliderex" id="8">
 				<description>Default Slider</description>
+					<textwidth>400</textwidth>
+    			<sliderwidth>150</sliderwidth>
+    			<sliderheight>20</sliderheight>
 		    <include>SettingsSliderex</include>
 			</control>
 			<control type="label" id="7">

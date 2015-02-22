@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "音轨号"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "工作中..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "请稍候..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "系统自动关机于"
@@ -63,14 +71,6 @@ msgstr "关"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "启用首页菜单动画"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "视觉效果选项"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "常用选项"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -228,18 +228,6 @@ msgctxt "#31097"
 msgid "Choose RSS Video Feed Widget"
 msgstr "选择RSS视频订阅小部件"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "首页菜单"
-
-msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "显示首页菜单按钮"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "隐藏首页菜单按钮"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "显示天气预报"
@@ -252,86 +240,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "隐藏当前播放音乐信息"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "显示搜索按钮"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "隐藏预告片按钮"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "隐藏电影按钮"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "隐藏剧集按钮"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "隐藏音乐按钮"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "隐藏图片按钮"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "隐藏程序按钮"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "隐藏插件按钮"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "隐藏天气按钮"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "隐藏设置按钮"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "显示视频按钮"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "显示退出按钮"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "显示音乐电视按钮"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "音乐按钮打开..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "自定义按钮"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "定制首页菜单按钮"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "隐藏电影子菜单"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "隐藏剧集主菜单"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "隐藏音乐主菜单"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "隐藏设置主菜单"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "闪动灯光"
@@ -339,22 +247,6 @@ msgstr "闪动灯光"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "编辑信息"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "剧集缩略图"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "横向"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "ClearLogo"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -368,14 +260,6 @@ msgctxt "#31132"
 msgid "Hide Background Video"
 msgstr "隐藏背景视频"
 
-msgctxt "#31133"
-msgid "Custom Background"
-msgstr "自定义背景"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "编辑媒体背景"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "单个图片"
@@ -387,10 +271,6 @@ msgstr "多个图片"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "启用通知"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "启用电影通知"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -444,10 +324,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "在整个皮肤显示 RSS 新闻"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "隐藏直播电视子菜单"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "启用登录屏"
@@ -455,18 +331,6 @@ msgstr "启用登录屏"
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "选择预告片插件"
-
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "插件按钮打开..."
-
-msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "隐藏视频视图"
-
-msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "隐藏音乐视图"
 
 msgctxt "#31158"
 msgid "Views"
@@ -523,18 +387,6 @@ msgstr "所有皮肤设置将恢复到默认状态。[CR]你确认要继续吗�
 msgctxt "#31171"
 msgid "Update Art"
 msgstr "更新艺术图片"
-
-msgctxt "#31172"
-msgid "Enable Home Menu Fanart SlideShow"
-msgstr "启用首页菜单同人画幻灯片"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "隐藏扩展子菜单"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "隐藏子菜单"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -904,133 +756,9 @@ msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "启用快速浏览"
 
-msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "显示更新视频资料库按钮"
-
-msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "显示更新音乐资料库按钮"
-
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "显示清理视频资料库按钮"
-
-msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "显示清理音乐资料库按钮"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "显示聚会模式按钮"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "显示关机按钮"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "显示文件管理器按钮"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "隐藏电影按钮"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "隐藏剧集按钮"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "隐藏音乐按钮"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "隐藏图片按钮"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "隐藏扩展按钮"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "隐藏新增电影按钮"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "隐藏新增剧集按钮"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "隐藏新增音乐按钮"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "显示设置按钮"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "显示视频按钮"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "隐藏快速浏览按钮"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "显示快速浏览按钮"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "自定义快速浏览按钮"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "自定义按钮"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "隐藏皮肤设置按钮"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "隐藏收藏按钮"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "隐藏LiveTV按钮"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "调整Kodi的外观和感觉. 包括皮肤, 主题, 声音和字体选择, RSS订阅以及本土化设置."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "管理你的视频内容. 包括资料库选项, 字幕, 搜刮器和播放选项."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "更改播放设置, 管理节目菜单数据设置, 录制个家长控制."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "配置你的Kodi如何处理音乐. 设置播放和列表选项, 浏览文件或资料库及更多内容."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "图片处理可以很容易. 你可以通过调整显示, 效果, 标签, 计时参数和图片列表来实现."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "通过Kodi调整天气预报是很容易的. 选择一个天气插件, 并且设置动态更新最多三个城市的天气信息."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "设置Kodi的网络界面.  控制IP地址分配, WWW和FTP服务器, SMB客户端和UPnP配置."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "控制核心硬件和软件功能, 包括音频和视频硬件设置, 自动播放和锁定."
+msgid "Custom Item"
+msgstr "自定义项"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -1079,10 +807,6 @@ msgstr "配置用户设置"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "配置皮肤设置"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "帮助"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

@@ -24,6 +24,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "အပုဒ်ရေနံပါတ်"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "အလုပ်လုပ်နေသည်"
+
 msgctxt "#31011"
 msgid "On"
 msgstr "ဖွင့်"

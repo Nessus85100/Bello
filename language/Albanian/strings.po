@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Numëri Këngës"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Në Funksionim..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Menu Konteksti"

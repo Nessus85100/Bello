@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "தடதின் எண்"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "சற்று காத்திருக்கவும்..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "சூழல் மெனு"
@@ -163,7 +167,3 @@ msgstr "குழுவுக்கு வேறு பெயரிடு"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "குழுவை நீக்கு"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "உதவி"

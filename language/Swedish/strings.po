@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Spårnummer"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Arbetar..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "Vanligen vänta...."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Automatiskt nedstängning om "
@@ -63,14 +71,6 @@ msgstr "Av"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Aktivera animering för hemmeny"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Alternativ för vytyp"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Allmänna val"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -228,18 +228,6 @@ msgctxt "#31097"
 msgid "Choose RSS Video Feed Widget"
 msgstr "Välj widget för RSS-videoflöde"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Använd Watched State Overlays"
-
-msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Visa hemmenyknappar"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Göm hemmenyknappar"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Visa Väder Info"
@@ -252,86 +240,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "Dölj Nu spelas info (Musik)"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Visa sökknapp"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Dölj Trailers Knappen"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Dölj Film Knappen"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Dölj TV-Serie Knappen"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Dölj Musik Knappen"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Dölj Bild Knappen"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Dölj Program Knappen"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Dölj Tillägg Knappen"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Dölj Väder Knappen"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Dölj Inställnings Knappen"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Visa Videos Knappen"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "Visa Avsluta-knapp"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Visa Musik Video Knappen"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "Musik Knappen öppnar..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Anpassad Knapp"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Egna hemmenyknappar"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Dölj undermeny för Film "
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "Dölj undermeny för TV-Serier"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Dölj undermeny för Musik "
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Dölj undermeny för Inställningar"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "Blinkande Ljus"
@@ -339,22 +247,6 @@ msgstr "Blinkande Ljus"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Redigera Info"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "Avsnittsminiatyr"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Landscape"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "ClearLogo"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -368,14 +260,6 @@ msgctxt "#31132"
 msgid "Hide Background Video"
 msgstr "Dölj Bakgrund för Video"
 
-msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Anpassad Bakgrund"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Ändra bakgrund för mediatyp"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "Enstaka bild"
@@ -387,10 +271,6 @@ msgstr "Multibild"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Aktivera aviseringar"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Aktivera aviseringar för Film"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -444,10 +324,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "Visa RSS flöde i hela skalet"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Göm undermenyn för Live-TV"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "Aktivera logga in"
@@ -455,18 +331,6 @@ msgstr "Aktivera logga in"
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Välj Trailers Add-on"
-
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "Tillägg-knappen öppnar..."
-
-msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Göm videovyer"
-
-msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Göm musikvyer"
 
 msgctxt "#31158"
 msgid "Views"
@@ -523,18 +387,6 @@ msgstr "Alla skalinställningar kommer att återgå till standarinställningarna
 msgctxt "#31171"
 msgid "Update Art"
 msgstr "Uppdatera grafik"
-
-msgctxt "#31172"
-msgid "Enable Home Menu Fanart SlideShow"
-msgstr "Aktivera Huvudmeny Fanart SlideShow"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "Dölj undermeny för Tillägg"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "Dölj undermenyer"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -904,133 +756,9 @@ msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "Inaktivera snabbnavigering"
 
-msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "Dölj knapp för Uppdatera Videobibliotek"
-
-msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "Dölj knapp för Uppdatera Musikbibliotek"
-
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "Visa knapp för städa videobibliotek"
-
-msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "Visa knapp för städa musikbibliotek"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "Visa knapp för partyläge"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Visa knapp för avstängning"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "Visa knapp för filhanterare"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Göm knappen för film"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Göm knappen för TV-serier"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Göm knapp för musik"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Göm knapp för bilder"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Göm knapp för tillägg"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Göm knapp för nya filmer"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Göm knapp för nya TV-program"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Göm knapp för ny musik"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "Visa knapp för Inställningar "
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Visa knapp för videor"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "Göm snabbnavigeringsknappar"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "Visa snabbnavigeringsknappar"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "Egna snabbnavigeringsknappar"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Egen knapp"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "Dölj knapp för Skalinställningar"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "Dölj knapp för Favoriter"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "Dölj knapp för LiveTV"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Justera utseendet och känslan för Kodi. Inkluderar skal, tema, ljud och typsnitt, RSS flöde och lokaliseringsinställningar."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "Hantera ditt video innehåll. Inkluderar databas alternativ, undertexter, skrapor och uppspelningsalternativ."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "Ändra uppspelningsinställningar, hantera EPG inställningar, inspelningar och föräldrakontroll."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Konfigurera hur Kodi hanterar musik. Ställ in uppspelning och listalternativ, bläddra bland filer eller databaser och mycket mer."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "Bildhantering kan vara ganska lätt. Du kan göra det genom att justera bildskärmen, effekter, taggar, timing och bild listning."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Justera vädret är väldig enkelt med Kodi. Välj en väder-plugin och hämta live uppdateringar för upp till tre städer."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Ställ in Kodi's nätverksgränssnitt. Kontrollerar IP tilldelning, WWW och FTP server, SMB klient och UPnP konfiguration."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "Kontrollera hårdvaru och mjukvara funktioner, inkluderat installation för ljud- samt videohårdvara, autoplay och låsning."
+msgid "Custom Item"
+msgstr "Välj favorit för anpassat objekt"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -1079,10 +807,6 @@ msgstr "Konfigurera profilinställningar"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Konfigurera skalinställningar"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Hjälp"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

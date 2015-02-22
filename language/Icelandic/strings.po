@@ -36,6 +36,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Númer lags"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Vinnur..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Kerfið slekkur sjálfvirkt eftir"
@@ -140,53 +144,9 @@ msgctxt "#31086"
 msgid "Banner List"
 msgstr "Listi á borða"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Heimavalblað"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Sýna veðurupplýsingar"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Fela kvikmynda hnapp"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Fela sjónvarsps hnapp"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Fela tónlistar hnapp"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Fael mynda hnapp"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Fela forrita hnapp"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Fela viðbóta hnapp"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Fela veður hnapp"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Fela stillinga hnapp"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Lárétt"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Breyta bakgrunni fyrir heimahnapp"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -343,27 +303,3 @@ msgstr "Tiltekt á Kvikmyndasafni"
 msgctxt "#31373"
 msgid "Clean Music Library"
 msgstr "Tiltekt á Tónlistarsafni"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Fela kvikmynda hnapp"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Fela sjónvarsps hnapp"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Fela tónlistar hnapp"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Fael mynda hnapp"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Fela viðbóta hnapp"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Hjálp"

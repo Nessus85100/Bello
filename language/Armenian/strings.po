@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Երգի համարը"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Ընթացքում է ..."
+
 msgctxt "#31017"
 msgid "Karaoke Song Selector"
 msgstr "Կարաոկե երգի նշիչ"

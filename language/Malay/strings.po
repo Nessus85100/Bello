@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Nombor Trek"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Berfungsi..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "Tunggu Sebentar..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Sistem dimatikan secara automatik dalam"
@@ -63,14 +71,6 @@ msgstr "Dimatikan"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Benarkan Animasi Menu Rumah"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Pilihan Jenis Paparan"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Piliha Am"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -228,18 +228,6 @@ msgctxt "#31097"
 msgid "Choose RSS Video Feed Widget"
 msgstr "Pilih Widjet Suapan Video RSS"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Menu Rumah"
-
-msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Tunjuk Butang Menu Rumah"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Sembunyi Butang Menu Rumah"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Tunjuk Maklumat Cuaca"
@@ -252,86 +240,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "Sembunyi Maklumat Muzik Kini Dimainkan"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Tunjuk Butang Gelintar"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Sembunyi Butang Treler"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Sembunyi Butang Cereka"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Sembunyi Butang Rancangan TV"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Sembunyi Butang Muzik"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Sembunyi Butang Gambar"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Sembunyi Butang Program"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Sembunyi Butang Tambahan"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Sembunyi Butang Cuaca"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Sembunyi Butang Tetapan"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Tunjuk Butang Video"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "Tunjuk Butang Keluar"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Tunjuk Butang Video Muzik"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "Butang muzik buka..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Butang Suai"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Butang Menu Rumah Suai"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Sembunyi Submenu Cereka"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "Sembunyi Submenu Rancangan TV"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Sembunyi Submenu Muzik"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Sembunyi Submenu Tetapan"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "Cahaya Mendenyar"
@@ -339,22 +247,6 @@ msgstr "Cahaya Mendenyar"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Sunting Maklumat"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "Lakaran Kenit Episod"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Lanskap"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "SeniKosong"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "LogoKosong"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -368,14 +260,6 @@ msgctxt "#31132"
 msgid "Hide Background Video"
 msgstr "Sembunyi Video Latar Belakang"
 
-msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Latar Belakang Suai"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Sunting Latar Belakang untuk Jenis Media"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "Imej Tunggal"
@@ -387,10 +271,6 @@ msgstr "Imej Berbilang"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Benarkan Pemberitahuan"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Benarkan Pemberitahuan Cereka"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -444,10 +324,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "Tunjuk suapan RSS dalam keseluruhan kulit"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Sembunyi Submenu TV Langsung"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "Benarkan skrin daftar masuk"
@@ -455,18 +331,6 @@ msgstr "Benarkan skrin daftar masuk"
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Pilih Tambahan Treler"
-
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "Butang Tambahan buka..."
-
-msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Sembunyi Paparan Video"
-
-msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Sembunyi Paparan Muzik"
 
 msgctxt "#31158"
 msgid "Views"
@@ -523,18 +387,6 @@ msgstr "Semua Tetapan Kulit akan kembali ke keadaan lalai mereka.[CR]Anda pasti 
 msgctxt "#31171"
 msgid "Update Art"
 msgstr "Kemaskini Seni"
-
-msgctxt "#31172"
-msgid "Enable Home Menu Fanart SlideShow"
-msgstr "Benarkan Paparan Slaid Seni Peminat Menu Rumah"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "Sembunyi Submenu Tambahan"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "Sembunyi Submenu"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -772,6 +624,14 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr "Artis Terkenal"
 
+msgctxt "#31260"
+msgid "In Progress Movies"
+msgstr "Cereka Sedang Dimainkan"
+
+msgctxt "#31261"
+msgid "In Progress TV Shows"
+msgstr "Rancangan TV Sedang Dimainkan"
+
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Buka Senarai Main"
@@ -904,133 +764,9 @@ msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "Lumpuhkan Navigasi Pantas"
 
-msgctxt "#31376"
-msgid "Hide Update Video Library Button"
-msgstr "Sembunyi Butang Kemaskini Pustaka Video"
-
-msgctxt "#31377"
-msgid "Hide Update Music Library Button"
-msgstr "Sembunyi Butang Kemaskini Pustaka Muzik"
-
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "Tunjuk Butang Kosongkan Pustaka Video"
-
-msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "Tunjuk Butang Kosongkan Pustaka Muzik"
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "Tunjuk Butang Mod Parti"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Tunjuk Butang Matikan"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "Tunjuk Butang Pengurus Fail"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Sembunyi Butang Cereka"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Sembunyi Butang Rancangan TV"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Sembunyi Butang Muzik"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Sembunyi Butang Gambar"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Sembunyi Butang Tambahan"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Sembunyi Butang Cereka Baharu"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Sembunyi Butang Rancangan TV Baharu"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Sembunyi Butang Muzik Baharu"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "Tunjuk Butang Tetapan"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Tunjuk Butang Video"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "Sembunyi Butang Navigasi Pantas"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "Tunjuk Butang Navigasi Pantas"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "Butang Navigasi Pantas Suai"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Butang Suai"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "Sembunyi Butang Tetapan Kulit"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "Sembunyi Butang Kegemaran"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "Sembunyi Butang LiveTV"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Laras penampilan Kodi. Termasuklah kulit, tema, bunyi dan pemilihan fon, suapan RSS dan tetapan penyetempatan."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "Urus kandungan video anda. Termasuklah pilihan pangkalan data pustaka, sarikata, pengikis, dan pilihan main balik."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "Ubah tetapan main balik, urus tetapan data EPG, rakaman dan kawalan penjaga."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Konfigur bagaimana Kodi mengendali muzik. Persediaan main balik dan pilihan penyenaraian, pelayaran fail atau pangkalan data dan banyak lagi."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "Pengendalian gambar menjadi mudah. Anda boleh membuatnya dengan melaras paparan, kesan, tag, pemasaan dan penyenaraian gambar."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Pelarasan Cuaca adalah sangat mudah dengan Kodi. Pilih pemalam cuaca dan dapatkan kemaskini langsung sehingga tiga bandar."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Persediaan antaramuka rangkaian Kodi. Kawal umpukan IP, WWW dan pelayan FTP, klien SMB, dan konfigurasi UPnP."
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "Kawal fungsi perkakasan teras dan perisian, termasuklah persediaan perkakasan audio dan video, main automatik dan penguncian."
+msgid "Custom Item"
+msgstr "Item Suai"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -1079,10 +815,6 @@ msgstr "Konfigur Tetapan Profil"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Konfigur Tetapan Kulit"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Bantuan"
 
 msgctxt "#31431"
 msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."

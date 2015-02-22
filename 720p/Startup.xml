@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
-  <onload condition="System.HasAddon(script.extendedinfo)">RunScript(script.skin.info.service,info=movies)</onload>
+  <onload condition="System.HasAddon(script.extendedinfo)">RunScript(script.skin.info.service)</onload>
 	<onload condition="IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
   <onload condition="[System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMoviesType),4)]">RunScript(script.extendedinfo,info=incinemas)</onload>
   <onload condition="[System.HasAddon(script.extendedinfo) + stringcompare(Skin.String(QuickNavWidgetMoviesType),5)]">RunScript(script.extendedinfo,info=trendingmovies)</onload>

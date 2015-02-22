@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Rhif Trac"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Gweithio..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Dewislen Cyd-destun"
@@ -167,7 +171,3 @@ msgstr "Ailenwi Grŵp"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Dileu Grŵp"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Cymorth"

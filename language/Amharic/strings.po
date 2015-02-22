@@ -32,6 +32,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "ተራ ቁጥር"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "በመስራት ላይ "
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "የ አገባብ ዝርዝር"
@@ -155,7 +159,3 @@ msgstr "ቡድን እንደገና መሰየሚያ"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "ቡድን ማጥፊያ"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "እርዳታ"

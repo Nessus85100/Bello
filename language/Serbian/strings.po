@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Broj numere"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Obrada..."
+
 msgctxt "#31012"
 msgid "Off"
 msgstr "Isklj."
@@ -39,6 +43,10 @@ msgstr "Birač karaoke pesme"
 msgctxt "#31018"
 msgid "Trailers"
 msgstr "Najava"
+
+msgctxt "#31020"
+msgid "Found"
+msgstr "Pronađeno"
 
 msgctxt "#31023"
 msgid "Info"
@@ -64,13 +72,13 @@ msgctxt "#31031"
 msgid "PM"
 msgstr "popodne"
 
+msgctxt "#31033"
+msgid "Channel Group"
+msgstr "Grupa programa"
+
 msgctxt "#31083"
 msgid "Wall"
 msgstr "Ikone"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Uredite pozadinu tastera za početni ekran"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -84,6 +92,18 @@ msgctxt "#31166"
 msgid "Local subtitle available"
 msgstr "Lokalni prevod dostupan"
 
+msgctxt "#31223"
+msgid "36 Hour Forecast"
+msgstr "Prognoza za 36 časova"
+
+msgctxt "#31224"
+msgid "Hourly Forecast"
+msgstr "Prognoza za svaki čas"
+
+msgctxt "#31225"
+msgid "Weekend Forecast"
+msgstr "Prognoza za vikend"
+
 msgctxt "#31229"
 msgid "Last Updated"
 msgstr "Poslednje ažuriranje"
@@ -91,6 +111,14 @@ msgstr "Poslednje ažuriranje"
 msgctxt "#31230"
 msgid "Data Provider"
 msgstr "Добављач података"
+
+msgctxt "#31233"
+msgid "Chance of Precipitation"
+msgstr "Moguće padavine"
+
+msgctxt "#31236"
+msgid "Forecast"
+msgstr "Prognoza"
 
 msgctxt "#31285"
 msgid "Playlist Options"
@@ -112,6 +140,10 @@ msgctxt "#31316"
 msgid "Now Playing"
 msgstr "Trenutno se reprodukuje"
 
+msgctxt "#31351"
+msgid "Add Group"
+msgstr "Dodaj grupu"
+
 msgctxt "#31352"
 msgid "Rename Group"
 msgstr "Преименуј групу"
@@ -119,7 +151,3 @@ msgstr "Преименуј групу"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Обриши групу"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Pomoć"

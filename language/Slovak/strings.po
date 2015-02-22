@@ -36,6 +36,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Číslo skladby"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Pracujem..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Kontextové menu"
@@ -51,10 +55,6 @@ msgstr "Zapnuté"
 msgctxt "#31012"
 msgid "Off"
 msgstr "Vypnuté"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Všeobecné nastavenia"
 
 msgctxt "#31017"
 msgid "Karaoke Song Selector"
@@ -131,18 +131,6 @@ msgstr "Nástenka"
 msgctxt "#31084"
 msgid "Posters"
 msgstr "Plagát"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Na šírku"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Zmeniť pozadie domovskej stránky, pozadie sekciíam"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -303,7 +291,3 @@ msgstr "Nastavenia - Počasie"
 msgctxt "#31418"
 msgid "Configure System Settings"
 msgstr "Nastavenia - Systém"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Nápoveda"

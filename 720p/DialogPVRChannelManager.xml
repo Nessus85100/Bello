@@ -97,7 +97,7 @@
 							<height>34</height>
 		          <colordiffuse>77white</colordiffuse>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
-							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Property(Icon)]</texture>
 							<visible>ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="image">
@@ -108,7 +108,7 @@
 		          <colordiffuse>77white</colordiffuse>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
 							<colordiffuse>77white</colordiffuse>
-							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Property(Icon)]</texture>
 							<visible>!ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="label">
@@ -170,7 +170,7 @@
 							<width>34</width>
 							<height>34</height>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
-							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Property(Icon)]</texture>
 							<visible>ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="image">
@@ -180,7 +180,7 @@
 							<height>34</height>
 						  <aspectratio align="center" aligny="center">keep</aspectratio>
 							<colordiffuse>77white</colordiffuse>
-							<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Property(Icon)]</texture>
+							<texture fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Property(Icon)]</texture>
 							<visible>!ListItem.Property(ActiveChannel)</visible>
 						</control>
 						<control type="label">
@@ -376,7 +376,7 @@
 					<width>36</width>
 					<height>36</height>
 				  <aspectratio align="right" aligny="center">keep</aspectratio>
-					<texture fallback="windows/pvr/LiveTV.png">$INFO[ListItem.Property(Icon)]</texture>
+					<texture fallback="windows/pvr/channel_icon.png">$INFO[ListItem.Property(Icon)]</texture>
 				</control>
 				<control type="radiobutton" id="12">
 					<description>EPG activated</description>

@@ -36,6 +36,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "音軌編號"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "處理中..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "內容功能表"
@@ -115,14 +119,6 @@ msgstr "牆"
 msgctxt "#31084"
 msgid "Posters"
 msgstr "海報"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "橫向"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "編輯媒體類型的背景"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -223,7 +219,3 @@ msgstr "重新命名群組"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "刪除群組"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "說明"

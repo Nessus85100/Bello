@@ -20,6 +20,10 @@ msgctxt "#31003"
 msgid "Aired"
 msgstr "ეთერში გავიდა"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "დამუშავება..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "კონტექსტური მენიუ"

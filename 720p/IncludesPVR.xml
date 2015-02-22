@@ -249,7 +249,7 @@
 		    <top>0</top>
 		    <width>107</width>
 		    <height>84</height>
-		    <texture background="true" fallback="windows/pvr/LiveTV.png">$INFO[Container(10).ListItem.Icon]</texture>
+		    <texture fallback="windows/pvr/channel_icon_big.png">$INFO[Container(10).ListItem.Icon]</texture>
 		    <aspectratio align="left" aligny="center">keep</aspectratio>
 			</control>
 			<control type="button">

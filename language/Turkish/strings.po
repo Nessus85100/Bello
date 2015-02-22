@@ -40,6 +40,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Parça Numarası"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Çalışıyor..."
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Otomatik Sistem Kapama"
@@ -63,14 +67,6 @@ msgstr "Kapalı"
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Hareketli Ana Menüsünu Etkinleştir"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Görünüm Türü Seçenekleri"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Genel seçenekler"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -212,93 +208,9 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr "Duvar Listesi"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Ana Menü"
-
-msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Ana Menü Düğmelerini Göster"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Ana Menü Düğmelerini Gizle"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Hava Durumunu Göster"
-
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Arama Düğmesini Göster"
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Fragmanlar Düğmesini Gizle"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Filmler Düğmesini Gizle"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "TV Programları Düğmesini Gizle"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Müzik Düğmesini Gizle"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Resimler Düğmesini Gizle"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Programlar Düğmesini Gizle"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Eklentiler Düğmesini Gizle"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Hava Durumu Düğmesini Gizle"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Ayarlar Düğmesini Gizle"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Video Düğmesini Göster"
-
-msgctxt "#31115"
-msgid "Show Exit Button"
-msgstr "Çıkış Düğmesini Göster"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Müzik Videoları Düğmesini Göster"
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Özel Düğme"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Özel Ana Menü Düğmesi"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Film Alt Menüsünü Gizle"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Müzik Alt Menüsü Düğmesini Gizle"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Ayarlar Altmenüsünü Gizle"
 
 msgctxt "#31124"
 msgid "Flashing Lights"
@@ -308,10 +220,6 @@ msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Bilgiyi Düzenle"
 
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Yatay"
-
 msgctxt "#31131"
 msgid "Show Only on Home Screen"
 msgstr "Sadece Anemenüde Göster"
@@ -319,14 +227,6 @@ msgstr "Sadece Anemenüde Göster"
 msgctxt "#31132"
 msgid "Hide Background Video"
 msgstr "Arka Plan Videosunu Gizle"
-
-msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Özel Arka Plan"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Medya Türü için Arka planı değiştir"
 
 msgctxt "#31135"
 msgid "Single Image"
@@ -339,10 +239,6 @@ msgstr "Çoklu Resim"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Bildirimleri Etkinleştir"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Film Bildirimlerini Etkinleştir"
 
 msgctxt "#31139"
 msgid "Enable Add-ons Notifications"
@@ -364,10 +260,6 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "RSS Akışlarını Tüm Ciltte Göster"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Canlı TV Alt Menüsünü Gizle"
-
 msgctxt "#31153"
 msgid "Enable login screen"
 msgstr "Giriş Ekranını Etkinleştir"
@@ -375,18 +267,6 @@ msgstr "Giriş Ekranını Etkinleştir"
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Fragman Eklentisi Seç"
-
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "Eklentiler Düğmesi Şunu Açar"
-
-msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Video Görüntülenme Sayısını Gizle"
-
-msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Müzik Görüntülenme Sayısını Gizle"
 
 msgctxt "#31158"
 msgid "Views"
@@ -415,14 +295,6 @@ msgstr "Seviye Sıfırlama"
 msgctxt "#31169"
 msgid "Reset Skin"
 msgstr "Cildi Sıfırla"
-
-msgctxt "#31173"
-msgid "Hide Add-ons Submenu"
-msgstr "Eklentiler Alt Menüsünü Gizle"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "Alt Menüleri Gizle"
 
 msgctxt "#31200"
 msgid "My Movies"
@@ -752,81 +624,9 @@ msgctxt "#31375"
 msgid "Disable Quick Navigation"
 msgstr "Hızlı Navigasyonu kapat"
 
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Kapatma Düğmesini Göster"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "Dosya Yöneticisi Düğmesini Göster"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Filmler Düğmesini Gizle"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "TV Programları Düğmesini Gizle"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Müzik Düğmesini Gizle"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Resimler Düğmesini Gizle"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Eklentiler Düğmesini Gizle"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Yeni Filmler Düğmesini Gizle"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Yeni TV Programları Düğmesini Gizle"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Yeni Müzik Düğmesini Gizle"
-
-msgctxt "#31391"
-msgid "Show Settings Button"
-msgstr "Ayarlar Düğmesini Göster"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Video Düğmesini Göster"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "HızNav Düğmelerini Gizle"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "HızNav Düğmelerini Göster"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "Özel HızNav Düğmeleri"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Özel Düğme"
-
-msgctxt "#31397"
-msgid "Hide Skin Settings Button"
-msgstr "Cilt Ayarları Düğmesini Gizle"
-
-msgctxt "#31398"
-msgid "Hide Favourites Button"
-msgstr "Favoriler Düğmesini Gizle"
-
-msgctxt "#31399"
-msgid "Hide LiveTV Button"
-msgstr "Canlı TV Düğmesini Gizle"
+msgctxt "#31378"
+msgid "Custom Item"
+msgstr "Özel Öğe için Sık Kullanılan Seç"
 
 msgctxt "#31411"
 msgid "Configure Appearance Settings"
@@ -867,7 +667,3 @@ msgstr "Profil Ayarlarını Yapılandır"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Cilt Ayarlarını Yapılandır"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Yardım"

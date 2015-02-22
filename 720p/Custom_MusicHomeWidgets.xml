@@ -91,8 +91,10 @@
 					<height>240</height>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
 					<texture background="true" fallback="thumbs/fallback_square.png">$INFO[ListItem.Icon]</texture>
+					<include>SlideViewFocusAnimation</include>
 				</control>
 				<control type="group">
+					<include>SlideViewFocusAnimation</include>
 					<visible>![IsEmpty(ListItem.Property(RecentAlbum1)) | IsEmpty(ListItem.Property(RecentAlbum2)) | IsEmpty(ListItem.Property(RecentAlbum3)) | IsEmpty(ListItem.Property(RecentAlbum4))]</visible>
 					<control type="image">
 						<width>120</width>
@@ -211,8 +213,10 @@
 					<height>240</height>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
 					<texture background="true" fallback="thumbs/fallback_square.png">$INFO[ListItem.Icon]</texture>
+					<include>SlideViewFocusAnimation</include>
 				</control>
 				<control type="group">
+					<include>SlideViewFocusAnimation</include>
 					<visible>![IsEmpty(ListItem.Property(RecommendedAlbum1)) | IsEmpty(ListItem.Property(RecommendedAlbum2)) | IsEmpty(ListItem.Property(RecommendedAlbum3)) | IsEmpty(ListItem.Property(RecommendedAlbum4))]</visible>
 					<control type="image">
 						<width>120</width>
@@ -331,8 +335,10 @@
 					<height>240</height>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
 					<texture background="true" fallback="thumbs/fallback_square.png">$INFO[ListItem.Icon]</texture>
+					<include>SlideViewFocusAnimation</include>
 				</control>
 				<control type="group">
+					<include>SlideViewFocusAnimation</include>
 					<visible>![IsEmpty(ListItem.Property(RandomAlbum1)) | IsEmpty(ListItem.Property(RandomAlbum2)) | IsEmpty(ListItem.Property(RandomAlbum3)) | IsEmpty(ListItem.Property(RandomAlbum4))]</visible>
 					<control type="image">
 						<width>120</width>

@@ -1,3 +1,12 @@
+[B][COLOR=FF56ADDA]v3.0.2 - BETA[/COLOR][/B]
+• Added new Netflix View for Movies and TV Shows.
+• Added new 3D backgrounds for Home Menu.
+• Added support for Movie Sets in all video views.
+• Added channels icons in OSD PVR Channels (thanks sualfred).
+• Final work (hopefully) on unifying skin code.
+• Fixed several other small bugs.
+• Updated language files from Transifex.
+
 [B][COLOR=FF56ADDA]v3.0.1 - BETA[/COLOR][/B]
 • More work on unifying skin code and textures (WIP).
 • FIxed PVR options menu bug.

@@ -17,14 +17,16 @@
 	
 	<include name="BackgroundContent">
 	 <control type="image">
-		 <posx>-10</posx>
-		 <posy>-10</posy>
+		 <left>-10</left>
+		 <top>-10</top>
 		 <width>1300</width>
 		 <height>740</height>
 		 <aspectratio>stretch</aspectratio>
      <texture background="true">windows/bg/black.jpg</texture>
 	 </control>
 	 <control type="group">
+	  <animation effect="fade" start="0" end="100" time="1000">Visible</animation>
+	  <animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
 		<visible>![Player.HasVideo + !Skin.HasSetting(HideBGVideo)]</visible>
 		<visible>![Player.HasAudio + [[Skin.HasSetting(Vis-Fanart) + !IsEmpty(Player.Art(fanart))] | Skin.HasSetting(Vis-MusicSlideshow) | Skin.HasSetting(Vis-ArtistSlideshow)]]</visible>
 		<control type="image">
@@ -92,28 +94,68 @@
 			<visible>Skin.HasSetting(CustomBackground) + !IsEmpty(Skin.String(CustomFolderBackgroundPath)) + ![Skin.HasSetting(ShowCustomBackgroundOnHomeOnly) + !Window.IsVisible(Home)]</visible>
       <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 		</control>
-		<control type="image">
-			<description>HomeMenu Single-Background</description>
-			<include>FullscreenDimensions</include>
-	    <include>FanartFade</include>
-			<texture background="true">$INFO[Container(20).ListItem.Property(Background)]</texture>
-			<fadetime>500</fadetime>
-      <visible>![SubString(Container(20).ListItem.Property(background),\,Right) | SubString(Container(20).ListItem.Property(background),/,Right)]</visible>
+    <control type="group">
       <visible>![[StringCompare(Container(20).ListItem.Property(defaultID),weather) | Window.IsVisible(weather)] + [Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]]</visible>
       <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
-		</control>
-		<control type="multiimage">
-			<description>HomeMenu Multi-Background</description>
-			<include>FullscreenDimensions</include>
-	    <include>FanartFade</include>
-			<imagepath background="true">$INFO[Container(20).ListItem.Property(Background)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-      <loop>yes</loop>
-			<fadetime>600</fadetime>
-      <visible>SubString(Container(20).ListItem.Property(background),\,Right) | SubString(Container(20).ListItem.Property(background),/,Right)</visible>
-      <visible>![[StringCompare(Container(20).ListItem.Property(defaultID),weather) | Window.IsVisible(weather)] + [Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]]</visible>
-      <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
+  		<control type="image">
+  			<description>HomeMenu Single-Background</description>
+  			<include>FullscreenDimensions</include>
+  	    <include>FanartFade</include>
+  			<texture background="true">$INFO[Container(20).ListItem.Property(Background)]</texture>
+  			<fadetime>500</fadetime>
+        <visible>![SubString(Container(20).ListItem.Property(background),\,Right) | SubString(Container(20).ListItem.Property(background),/,Right)]</visible>
+  		</control>
+  		<control type="multiimage">
+  			<description>HomeMenu Multi-Background</description>
+  			<include>FullscreenDimensions</include>
+  	    <include>FanartFade</include>
+  			<imagepath background="true">$INFO[Container(20).ListItem.Property(Background)]</imagepath>
+  			<timeperimage>10000</timeperimage>
+  			<randomize>true</randomize>
+        <loop>yes</loop>
+  			<fadetime>600</fadetime>
+        <visible>SubString(Container(20).ListItem.Property(background),\,Right) | SubString(Container(20).ListItem.Property(background),/,Right)</visible>
+  		</control>
+  		<control type="group">
+        <include>FanartFade</include>
+        <include>3DWallBG_Movies_Posters</include>
+  			<visible>StringCompare(Container(20).ListItem.Property(background),3DWallBG_Movies_Posters)</visible>
+  		</control>
+  		<control type="group">
+        <include>FanartFade</include>
+        <include>3DWallBG_Movies_Logo</include>
+  		  <visible>StringCompare(Container(20).ListItem.Property(background),3DWallBG_Movies_Logo)</visible>
+  		</control>
+  		<control type="group">
+        <include>FanartFade</include>
+        <include>3DWallBG_Movies_DiscArt</include>
+  		  <visible>StringCompare(Container(20).ListItem.Property(background),3DWallBG_Movies_DiscArt)</visible>
+  		</control>
+  		<control type="group">
+        <include>FanartFade</include>
+        <include>3DWallBG_TVShows_Posters</include>
+  			<visible>StringCompare(Container(20).ListItem.Property(background),3DWallBG_TVShows_Posters)</visible>
+  		</control> 		
+  		<control type="group">
+        <include>FanartFade</include>
+        <include>3DWallBG_TVShows_Logo</include>
+  		  <visible>StringCompare(Container(20).ListItem.Property(background),3DWallBG_TVShows_Logo)</visible>
+  		</control>
+  		<control type="group">
+        <include>FanartFade</include>
+        <include>3DWallBG_TVShows_Landscape</include>
+  		  <visible>StringCompare(Container(20).ListItem.Property(background),3DWallBG_TVShows_Landscape)</visible>
+  		</control>
+  		<control type="group">
+        <include>FanartFade</include>
+        <include>3DWallBG_Albums</include>
+  			<visible>StringCompare(Container(20).ListItem.Property(background),3DWallBG_Albums)</visible>
+  		</control>
+  		<control type="group">
+        <include>FanartFade</include>
+        <include>3DWallBG_Artists</include>
+  			<visible>StringCompare(Container(20).ListItem.Property(background),3DWallBG_Artists)</visible>
+  		</control>
 		</control>
 	 </control>
 		<control type="videowindow">
@@ -129,44 +171,18 @@
 		  <visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + !SubString(Window(Videos).Property(TvTunesIsAlive),True)</visible>
       <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 		</control>
-		<control type="image">
-	    <include>FullscreenDimensions</include>
-	    <fadetime>1000</fadetime>
-	    <texture background="true">$INFO[Player.Art(fanart)]</texture>
-	    <animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
-		  <animation effect="fade" start="0" end="100" time="1000">Visible</animation>
-		  <animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
-		  <include condition="Skin.HasSetting(Vis-Animation)">VizBackAnimation</include>
-	    <visible>Player.HasAudio + Skin.HasSetting(Vis-Fanart)</visible>
-      <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
-		</control>
 		<control type="multiimage">
 	    <include>FullscreenDimensions</include>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
       <loop>yes</loop>
 			<fadetime>1000</fadetime>
-	    <imagepath background="true">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</imagepath>
+	    <imagepath background="true">$VAR[Vis-Background]</imagepath>
 	    <animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
 		  <animation effect="fade" start="0" end="100" time="1000">Visible</animation>
 		  <animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
 		  <include condition="Skin.HasSetting(Vis-Animation)">VizBackAnimation</include>
-	    <visible>Player.HasAudio + Skin.HasSetting(Vis-MusicSlideshow)</visible>
-      <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
-		</control>
-		<control type="multiimage">
-			<aspectratio>keep</aspectratio>
-	    <include>FullscreenDimensions</include>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-      <loop>yes</loop>
-			<fadetime>1000</fadetime>
-			<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-			<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
-			<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
-			<include condition="Skin.HasSetting(Vis-Animation)">VizBackAnimation</include>
-			<visible>Player.HasAudio + Skin.HasSetting(Vis-ArtistSlideshow) + IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh))</visible>
+	    <visible>Player.HasAudio</visible>
       <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 		</control>
 	  <include condition="[Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">BackgroundWeather</include>
@@ -180,7 +196,30 @@
 			<include>FanartFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 		  <visible>!Skin.HasSetting(HideBGFanart)</visible>
-		  <visible>![Control.IsVisible(55) + !Window.IsActive(movieinformation)] + !Control.IsVisible(580)</visible>
+		  <visible>![[Control.IsVisible(55) | Control.IsVisible(59)] + !Window.IsActive(movieinformation)] + !Control.IsVisible(580)</visible>
+      <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
+		</control>
+  	 <control type="image">
+			<include>FullscreenDimensions</include>
+      <texture background="true">windows/bg/black.jpg</texture>
+			<include>FanartFade</include>
+		  <visible>!Skin.HasSetting(HideBGFanart)</visible>
+		  <visible>[Control.IsVisible(59) + !Window.IsActive(movieinformation)]</visible>
+  		<visible>!stringcompare(ListItem.Label,..)</visible>
+      <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
+  	 </control>
+		<control type="image">
+			<description>NetFilx Fanart</description>
+  		<left>380</left>
+  		<top>0</top>
+  		<width>900</width>
+  		<height>510</height>
+  		<aspectratio>scale</aspectratio>
+      <texture background="true" diffuse="views/other/fanart_diffuse.png">$INFO[ListItem.Art(fanart)]</texture>
+			<include>FanartFade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+		  <visible>!Skin.HasSetting(HideBGFanart)</visible>
+		  <visible>[Control.IsVisible(59) + !Window.IsActive(movieinformation)]</visible>
       <animation effect="fade" start="100" end="40" time="300" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 		</control>
 		<control type="image">

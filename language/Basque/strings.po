@@ -24,6 +24,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Pista zenbakia"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Lanean..."
+
 msgctxt "#31011"
 msgid "On"
 msgstr "Piztuta"
@@ -151,7 +155,3 @@ msgstr "Garbitu bideo liburutegia"
 msgctxt "#31373"
 msgid "Clean Music Library"
 msgstr "Garbitu musika liburutegia"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Laguntza"

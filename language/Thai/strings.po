@@ -36,6 +36,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "หมายเลข แทรค"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "กำลังทำงาน..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "เมนูเนื้อหา"
@@ -116,26 +120,6 @@ msgctxt "#31084"
 msgid "Posters"
 msgstr "โปสเตอร์"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "เมนูหลัก"
-
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "แสดงปุ่มค้นหา"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "แนวนอน"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "อาร์ตพื้นใส"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "แก้ไขพื้นหลังสำหรับประเภทสื่อ"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "ภาพเดี่ยว"
@@ -155,10 +139,6 @@ msgstr "มีคำบรรยายในเครื่องใช้งา
 msgctxt "#31169"
 msgid "Reset Skin"
 msgstr "ย้อนคืนการตั้งค่าหน้าตา"
-
-msgctxt "#31174"
-msgid "Hide Submenus"
-msgstr "ซ่อน เมนูย่อย"
 
 msgctxt "#31203"
 msgid "New Search"
@@ -255,7 +235,3 @@ msgstr "เปลี่ยนชื่อกลุ่ม"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "ลบกลุ่ม"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "ส่วนช่วยเหลือ"

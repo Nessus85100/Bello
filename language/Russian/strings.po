@@ -40,6 +40,14 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Номер композиции"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Подождите…"
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "Подождите…"
+
 msgctxt "#31008"
 msgid "System auto shutdown in"
 msgstr "Выключение системы через"
@@ -63,14 +71,6 @@ msgstr "Выкл."
 msgctxt "#31013"
 msgid "Enable Home Menu Animation"
 msgstr "Включить анимацию главного меню"
-
-msgctxt "#31014"
-msgid "ViewType Options"
-msgstr "Настройки вида"
-
-msgctxt "#31015"
-msgid "General Options"
-msgstr "Общие параметры"
 
 msgctxt "#31016"
 msgid "File Manager"
@@ -212,18 +212,6 @@ msgctxt "#31088"
 msgid "List Wall"
 msgstr "Стена со списком"
 
-msgctxt "#31098"
-msgid "Home Menu"
-msgstr "Главное Меню"
-
-msgctxt "#31099"
-msgid "Show Home Menu Buttons"
-msgstr "Показать кнопки в Главном Меню"
-
-msgctxt "#31100"
-msgid "Hide Home Menu Buttons"
-msgstr "Скрыть кнопки главного меню"
-
 msgctxt "#31101"
 msgid "Show Weather Info"
 msgstr "Показывать сведения о погоде"
@@ -236,82 +224,6 @@ msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
 msgstr "Убрать информацию о проигрываемой музыке"
 
-msgctxt "#31104"
-msgid "Show Search Button"
-msgstr "Показывать Поиск "
-
-msgctxt "#31105"
-msgid "Hide Trailers Button"
-msgstr "Убрать кнопку Трейлеры"
-
-msgctxt "#31106"
-msgid "Hide Movies Button"
-msgstr "Убрать кнопку Фильмы"
-
-msgctxt "#31107"
-msgid "Hide TV Shows Button"
-msgstr "Убрать кнопку ТВ шоу"
-
-msgctxt "#31108"
-msgid "Hide Music Button"
-msgstr "Убрать кнопку Музыка"
-
-msgctxt "#31109"
-msgid "Hide Pictures Button"
-msgstr "Убрать кнопку Фото"
-
-msgctxt "#31110"
-msgid "Hide Programs Button"
-msgstr "Убрать кнопку Программы"
-
-msgctxt "#31111"
-msgid "Hide Add-ons Button"
-msgstr "Убрать кнопку Дополнения"
-
-msgctxt "#31112"
-msgid "Hide Weather Button"
-msgstr "Убрать кнопку Погода"
-
-msgctxt "#31113"
-msgid "Hide Settings Button"
-msgstr "Убрать кнопку Настройки"
-
-msgctxt "#31114"
-msgid "Show Videos Button"
-msgstr "Показать кнопку Видео"
-
-msgctxt "#31116"
-msgid "Show Music Videos Button"
-msgstr "Показать кнопку Муз. видео"
-
-msgctxt "#31117"
-msgid "Music Button opens..."
-msgstr "Кнопка Музыка открывает..."
-
-msgctxt "#31118"
-msgid "Custom Button"
-msgstr "Дополнительная кнопка"
-
-msgctxt "#31119"
-msgid "Custom Home Menu Buttons"
-msgstr "Пользовательские кнопки главного меню"
-
-msgctxt "#31120"
-msgid "Hide Movies Submenu"
-msgstr "Убрать подменю Фильмов"
-
-msgctxt "#31121"
-msgid "Hide TV Shows Submenu"
-msgstr "Убрать подменю ТВ шоу"
-
-msgctxt "#31122"
-msgid "Hide Music Submenu"
-msgstr "Убрать подменю Музыки"
-
-msgctxt "#31123"
-msgid "Hide Settings Submenu"
-msgstr "Убрать подменю Настроек"
-
 msgctxt "#31124"
 msgid "Flashing Lights"
 msgstr "Гирлянда"
@@ -319,22 +231,6 @@ msgstr "Гирлянда"
 msgctxt "#31125"
 msgid "Edit Info"
 msgstr "Изменить"
-
-msgctxt "#31126"
-msgid "Episode Thumb"
-msgstr "Эскиз для серии"
-
-msgctxt "#31127"
-msgid "Landscape"
-msgstr "Landscape"
-
-msgctxt "#31128"
-msgid "ClearArt"
-msgstr "ClearArt"
-
-msgctxt "#31129"
-msgid "ClearLogo"
-msgstr "ClearLogo"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
@@ -348,14 +244,6 @@ msgctxt "#31132"
 msgid "Hide Background Video"
 msgstr "Не показывать видео в фоне"
 
-msgctxt "#31133"
-msgid "Custom Background"
-msgstr "Собственный фон"
-
-msgctxt "#31134"
-msgid "Edit Background for Media Type"
-msgstr "Выбрать фон раздела"
-
 msgctxt "#31135"
 msgid "Single Image"
 msgstr "Одно изображение"
@@ -367,10 +255,6 @@ msgstr "Папка изображений"
 msgctxt "#31137"
 msgid "Enable Notifications"
 msgstr "Включить уведомления"
-
-msgctxt "#31138"
-msgid "Enable Movies Notifications"
-msgstr "Включить уведомления о фильмах"
 
 msgctxt "#31140"
 msgid "Enable Weather Alerts Notifications"
@@ -420,25 +304,9 @@ msgctxt "#31151"
 msgid "Show RSS feed in whole skin"
 msgstr "Показывать поток RSS на всех экранах"
 
-msgctxt "#31152"
-msgid "Hide Live TV Submenu"
-msgstr "Убрать подменю ТВ"
-
 msgctxt "#31154"
 msgid "Choose Trailers Add-on"
 msgstr "Дополнение трейлеров"
-
-msgctxt "#31155"
-msgid "Add-ons Button opens..."
-msgstr "Кнопка Дополнения открывает..."
-
-msgctxt "#31156"
-msgid "Hide Video Views"
-msgstr "Спрятать просмотры Видео"
-
-msgctxt "#31157"
-msgid "Hide Music Views"
-msgstr "Спрятать просмотры Музыки"
 
 msgctxt "#31158"
 msgid "Views"
@@ -805,108 +673,8 @@ msgid "Disable Quick Navigation"
 msgstr "Отключить упрощенную навигацию"
 
 msgctxt "#31378"
-msgid "Show Clean Video Library Button"
-msgstr "Показать кнопку \"Очистить видеотеку\""
-
-msgctxt "#31379"
-msgid "Show Clean Music Library Button"
-msgstr "Показать кнопку \"Очистить медиатеку\""
-
-msgctxt "#31380"
-msgid "Show Party Mode Button"
-msgstr "Показать кнопку Вечеринка"
-
-msgctxt "#31381"
-msgid "Show Shutdown Button"
-msgstr "Показать кнопку Выключение"
-
-msgctxt "#31382"
-msgid "Show File Manager Button"
-msgstr "Показать кнопку Менеджер файлов"
-
-msgctxt "#31383"
-msgid "Hide Movies Button"
-msgstr "Убрать кнопку Фильмы"
-
-msgctxt "#31384"
-msgid "Hide TV Shows Button"
-msgstr "Убрать кнопку ТВ шоу"
-
-msgctxt "#31385"
-msgid "Hide Music Button"
-msgstr "Убрать кнопку Музыка"
-
-msgctxt "#31386"
-msgid "Hide Pictures Button"
-msgstr "Убрать кнопку Картинки"
-
-msgctxt "#31387"
-msgid "Hide Add-ons Button"
-msgstr "Убрать кнопку Дополнения"
-
-msgctxt "#31388"
-msgid "Hide New Movies Button"
-msgstr "Убрать кнопку Новые Фильмы"
-
-msgctxt "#31389"
-msgid "Hide New TV Shows Button"
-msgstr "Убрать кнопку Новые ТВ шоу"
-
-msgctxt "#31390"
-msgid "Hide New Music Button"
-msgstr "Убрать кнопку Новая Музыка"
-
-msgctxt "#31392"
-msgid "Show Videos Button"
-msgstr "Показать кнопку Видео"
-
-msgctxt "#31393"
-msgid "Hide QuickNav Buttons"
-msgstr "Убрать кнопки упрощенной навигации"
-
-msgctxt "#31394"
-msgid "Show QuickNav Buttons"
-msgstr "Показать кнопки упрощенной навигации"
-
-msgctxt "#31395"
-msgid "Custom QuickNav Buttons"
-msgstr "Дополнительные кнопки упрощенной навигации"
-
-msgctxt "#31396"
-msgid "Custom Button"
-msgstr "Дополнительная кнопка"
-
-msgctxt "#31401"
-msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed and localisation settings."
-msgstr "Настройки внешнего вида Kodi. Обложки, темы, звуки, выбор шрифтов, опции потока RSS и локализации."
-
-msgctxt "#31402"
-msgid "Manage your video content. Includes library database options, subtitles, scrapers, and playback options."
-msgstr "Видео в Kodi: параметры воспроизведения, медиатеки, субтитры, инфоресурсы."
-
-msgctxt "#31403"
-msgid "Change playback settings, manage EPG data settings, recordings and parental control."
-msgstr "Настройки записи и воспроизведения телепередач, программа передач, родительский контроль."
-
-msgctxt "#31404"
-msgid "Configure how Kodi handles music. Setup playback and listing options, browsing files or database and many more."
-msgstr "Музыка в Kodi. Настройка параметров медиатеки, воспроизведения, визуализации и многое другое."
-
-msgctxt "#31405"
-msgid "Picture handeling can be quite easy. You can do this by adjusting display, effects, tags, timing and picture listing."
-msgstr "Просмотр фото в Kodi. Достаточно задать источник фото, эффекты и время показа."
-
-msgctxt "#31406"
-msgid "Adjusting Weather is very easy with Kodi. Select a weather plugin and get live updates for up to three cities."
-msgstr "Изменение настроек погоды в Kodi. Выберите инфоресурс погоды и задайте до 3 местоположений для прогноза."
-
-msgctxt "#31407"
-msgid "Set up Kodi's network interface. Controls IP assignment, WWW and FTP server, SMB client, and UPnP configuration."
-msgstr "Настройка сети в Kodi. Адрес IP, параметры WWW и FTP сервера и клиента SMB,  конфигурация UPnP"
-
-msgctxt "#31408"
-msgid "Control core hardware and software functions, including audio and video hardware setup, autoplay and locking."
-msgstr "Настройки аудио-, видео оборудования, устройств ввода, отладка Kodi, функции блокировки."
+msgid "Custom Item"
+msgstr "Пользовательский элемент"
 
 msgctxt "#31409"
 msgid "Choose from a variety of settings and customization options to make \"Bello\" fit your needs and taste."
@@ -951,7 +719,3 @@ msgstr "Настройки профайлов"
 msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr "Настройки обложки"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Справка"

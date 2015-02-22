@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Број на нумера"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Обработка..."
+
 msgctxt "#31009"
 msgid "Context Menu"
 msgstr "Мени за содржина"
@@ -163,7 +167,3 @@ msgstr "Преимени група"
 msgctxt "#31353"
 msgid "Delete Group"
 msgstr "Избриши група"
-
-msgctxt "#31430"
-msgid "Help"
-msgstr "Помош"

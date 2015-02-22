@@ -28,6 +28,10 @@ msgctxt "#31005"
 msgid "Track Number"
 msgstr "Рақами роҳча"
 
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Дар ҳоли иҷро..."
+
 msgctxt "#31017"
 msgid "Karaoke Song Selector"
 msgstr "Интихобкунандаи суруди караоке"
