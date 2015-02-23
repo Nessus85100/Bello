@@ -6,7 +6,7 @@
 
 		<control type="group">
 			<visible>![Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog) | Window.IsActive(FileBrowser) | Window.IsActive(SelectDialog) | Window.IsActive(DialogSelect.xml)]</visible>
-      <visible>!Window.IsActive(script-Actors-DialogInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
+      <visible>!Window.IsActive(script-Actors-DialogInfo.xml) + !Window.IsActive(script-Actors-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 	    <include>DialogAnimation</include>
 
 			<control type="group">
@@ -35,7 +35,7 @@
 				<control type="label">
 					<description>Title</description>
 				  <posy>-3</posy>
-					<width>870</width>
+					<width>855</width>
 					<font>FontSize_40</font>
 					<label>$INFO[Listitem.Title]$INFO[Listitem.Year, (,) ]</label>
 					<align>left</align>
@@ -46,7 +46,7 @@
 				</control>
 				<control type="label">
 					<description>Title</description>
-					<width>870</width>
+					<width>855</width>
 					<font>FontSize_40</font>
 					<label>$INFO[Listitem.Title]</label>
 					<align>left</align>
@@ -81,7 +81,7 @@
 					<description>Under Title</description>
 					<posx>55</posx>
 					<posy>34</posy>
-					<width>870</width>
+					<width>800</width>
 					<height>30</height>
 					<font>FontSize_22</font>
 					<label>$VAR[DialogsInfo]</label>
@@ -207,19 +207,8 @@
 							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
-						  <label>$INFO[ListItem.Duration]</label>
-						  <visible>substring(listitem.Duration,Mins)</visible>
+              <label>$VAR[ListItem.Duration]</label>
 		          <visible>!IsEmpty(ListItem.Duration)</visible>
-			      </control>
-			      <control type="label">
-							<textcolor>99white</textcolor>
-							<shadowcolor>99000000</shadowcolor>
-							<font>FontSize_22</font>
-							<width min="10" max="780">auto</width>
-							<height>30</height>
-							<label>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
-							<visible>!substring(listitem.Duration,Mins)</visible>
-			        <visible>!IsEmpty(ListItem.Duration)</visible>
 			      </control>
 					</control>
 					<!-- Path label -->
@@ -526,37 +515,39 @@
 				<ondown condition="System.HasAddon(script.metadata.actors) + IsEmpty(Window(Home).Property(script.metadata.actors.isactive)) + !Container.Content(musicvideos)">SetProperty(MetadataActors.Type,actor,movieinformation)</ondown>
 				<ondown condition="System.HasAddon(script.metadata.actors) + IsEmpty(Window(Home).Property(script.metadata.actors.isactive)) + !Container.Content(musicvideos)">RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</ondown>
 				<itemlayout width="143" height="250">
-					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
-						<width>127</width>
-						<height>175</height>
-						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/thumb_back.png</texture>
-					</control>
-					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
-						<width>127</width>
-						<height>175</height>
-						<aspectratio align="center" aligny="top" scalediffuse="false">scale</aspectratio>
-						<texture background="true" diffuse="thumbs/poster_diffuse.png">$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
-						<width>142</width>
-						<height>189</height>
-						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/poster_overlay_noglass.png</texture>
+					<control type="group">
+						<animation reversible="true" effect="slide" end="32,0" time="150" condition="Control.HasFocus(50)">Conditional</animation>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>127</width>
+							<height>175</height>
+							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+							<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/thumb_back.png</texture>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>127</width>
+							<height>175</height>
+							<aspectratio align="center" aligny="top" scalediffuse="false">scale</aspectratio>
+							<texture background="true" diffuse="thumbs/poster_diffuse.png">$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="image">
+							<posx>3</posx>
+							<posy>3</posy>
+							<width>142</width>
+							<height>189</height>
+							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+							<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/poster_overlay_noglass.png</texture>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="143" height="250">
 					<control type="group">
-						<animation reversible="false" effect="zoom" start="100" end="125" center="10,10" time="150">Focus</animation>
-						<animation reversible="false" effect="zoom" start="125" end="100" center="10,10" time="150">UnFocus</animation>
+						<animation reversible="true" effect="zoom" start="100" end="125" center="10,10" time="150" condition="Control.HasFocus(50)">Conditional</animation>
 						<control type="image">
-							<posx>10</posx>
+						<posx>10</posx>
 							<posy>10</posy>
 							<width>127</width>
 							<height>175</height>
@@ -591,7 +582,7 @@
 				    <textcolor>white</textcolor>
 						<shadowcolor>99000000</shadowcolor>
 		        <selectedcolor>white</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Label] ($INFO[ListItem.Label2]) </label>
 						<visible>Control.HasFocus(50)</visible>
 						<animation effect="fade" start="0" end="100" time="200" condition="Control.HasFocus(50)">Conditional</animation>
 						<animation reversible="false" effect="fade" start="0" end="100" time="400">Focus</animation>
@@ -640,7 +631,7 @@
 	  <control type="group">
 			<posx>45</posx>
 			<posy>25</posy>
-			<visible>!Window.IsActive(script-Actors-DialogInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
+			<visible>!Window.IsActive(script-Actors-DialogInfo.xml) + !Window.IsActive(script-Actors-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 	    <animation type="WindowOpen" reversible="false">
         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
         <effect type="slide" start="0,-55" end="0,0" time="350" tween="cubic" easing="out" />

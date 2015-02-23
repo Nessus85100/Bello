@@ -294,35 +294,37 @@
 				<ondown>Action(select)</ondown>
 			  <visible>StringCompare(Window.Property(showactors),1)</visible>
 				<itemlayout width="143" height="250">
-					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
-						<width>127</width>
-						<height>175</height>
-						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/thumb_back.png</texture>
-					</control>
-					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
-						<width>127</width>
-						<height>175</height>
-						<aspectratio align="center" aligny="top" scalediffuse="false">scale</aspectratio>
-						<texture background="true" diffuse="thumbs/poster_diffuse.png">$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
-						<width>142</width>
-						<height>189</height>
-						<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-						<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/poster_overlay_noglass.png</texture>
+					<control type="group">
+						<animation reversible="true" effect="slide" end="32,0" time="150" condition="Control.HasFocus(150)">Conditional</animation>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>127</width>
+							<height>175</height>
+							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+							<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/thumb_back.png</texture>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>127</width>
+							<height>175</height>
+							<aspectratio align="center" aligny="top" scalediffuse="false">scale</aspectratio>
+							<texture background="true" diffuse="thumbs/poster_diffuse.png">$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="image">
+							<posx>3</posx>
+							<posy>3</posy>
+							<width>142</width>
+							<height>189</height>
+							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
+							<texture background="true" diffuse="thumbs/poster_diffuse.png">thumbs/poster_overlay_noglass.png</texture>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="143" height="250">
 					<control type="group">
-						<animation reversible="false" effect="zoom" start="100" end="125" center="10,10" time="150">Focus</animation>
-						<animation reversible="false" effect="zoom" start="125" end="100" center="10,10" time="150">UnFocus</animation>
+						<animation reversible="true" effect="zoom" start="100" end="125" center="10,10" time="150" condition="Control.HasFocus(150)">Conditional</animation>
 						<control type="image">
 							<posx>10</posx>
 							<posy>10</posy>
