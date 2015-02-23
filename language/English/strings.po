@@ -911,7 +911,11 @@ msgctxt "#31420"
 msgid "Configure Skin Settings"
 msgstr ""
 
-#empty strings from id 31421 to 31430
+msgctxt "#31421"
+msgid "Persistent Seek Bar"
+msgstr ""
+
+#empty strings from id 31422 to 31430
 
 #Help Messages
 msgctxt "#31431"

@@ -196,6 +196,12 @@
 						<onclick>Skin.ToggleSetting(ShowVideoInfo)</onclick>
 						<selected>Skin.HasSetting(ShowVideoInfo)</selected>
 					</control>
+					<control type="radiobutton" id="8109">
+	          <include>SettingsRadioButton</include>
+						<label>31421</label>
+						<onclick>Skin.ToggleSetting(PersistSeekBar)</onclick>
+						<selected>Skin.HasSetting(PersistSeekBar)</selected>
+					</control>
 				</control>
 				
 				<!-- ================= -->
