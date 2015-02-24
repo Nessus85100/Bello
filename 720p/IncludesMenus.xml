@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes> 
 
-	<!-- ========================= -->
-	<!-- == Home Window SubMenu == -->
-	<!-- ========================= -->
+	<!-- ========================== -->
+	<!-- == Home Window SubMenus == -->
+	<!-- ========================== -->
 
   <!-- Wrap List Vars -->
 	<include name="SubMenuWraplistVarsDown">
@@ -11,7 +11,7 @@
 		<left>350</left>
 		<top>380</top>
 		<width>600</width>
-		<height>155</height>
+		<height>158</height>
 		<onup>23</onup>
 		<ondown>23</ondown>
 		<onleft>20</onleft>
@@ -20,12 +20,12 @@
 		<focusposition>0</focusposition>
 		<scrolltime>200</scrolltime>
 		<animation type="Conditional" condition="Control.HasFocus(23)">
-        <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
-        <effect type="slide" start="0,-35" end="0,0" time="350" tween="cubic" easing="out" />
+      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+      <effect type="slide" start="0,-35" end="0,0" time="350" tween="cubic" easing="out" />
 		</animation>
 		<animation type="Conditional" condition="!Control.HasFocus(23)">
-        <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-        <effect type="slide" start="0,0" end="0,-35" time="350" tween="sine" easing="out" />
+      <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
+      <effect type="slide" start="0,0" end="0,-35" time="350" tween="sine" easing="out" />
 		</animation>     
 	</include>
   <!-- Item Layout Vars -->
@@ -33,7 +33,7 @@
 		<left>0</left>
 		<top>0</top>
 		<width>580</width>
-		<height>50</height>
+		<height>48</height>
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>FontSize_46</font>
@@ -41,7 +41,7 @@
 		<shadowcolor>99000000</shadowcolor>
 		<label>$INFO[ListItem.Label]</label>
 		<animation type="Conditional" condition="true" reversible="false">
-			<effect type="fade" end="40" time="0"/>
+			<effect type="fade" end="50" time="0" />
 			<effect type="zoom" end="75" time="0" center="auto"/>
 		</animation>
 	</include>
@@ -50,13 +50,13 @@
 		<left>0</left>
 		<top>0</top>
 		<width>580</width>
-		<height>50</height>
+		<height>48</height>
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>FontSize_46</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>99000000</shadowcolor>
-		<label>$INFO[ListItem.label]</label>
+		<label>$INFO[ListItem.Label]</label>
 		<animation type="Focus" condition="Container(23).OnNext | Container(23).OnPrevious" reversible="false">
 			<effect type="fade" start="40" end="100" time="200" tween="sine" easing="in" />
 			<effect type="zoom" start="75" end="100" time="200" center="auto" tween="sine" easing="in" />
@@ -110,12 +110,12 @@
 			<description>SubMenu Container Movies</description>
 			<visible>![Window.IsActive(1110) | Window.IsActive(1113) | Window.IsActive(1114) | Window.IsActive(1115) | Window.IsActive(ShutdownMenu) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Window.IsActive(Favourites) | Window.IsActive(script-skinshortcuts.xml) | Window.IsActive(script-globalsearch-main.xml) | Window.IsActive(script-Actors-DialogInfo.xml) | Window.IsActive(script-Actors-DialogVideoInfo.xml) | Container(20).OnNext | Container(20).OnPrevious]</visible>
 			<include>SubMenuWraplistVarsDown</include>
-			<itemlayout width="580" height="46">
+			<itemlayout width="580" height="52">
 				<control type="label">
 					<include>SubMenuItemLayoutVarsDown</include>
 				</control>
 			</itemlayout>
-			<focusedlayout width="580" height="55">
+			<focusedlayout width="580" height="52">
 				<control type="label">
 					<include>SubMenuFocusedLayoutVarsDown</include>
 				</control>
