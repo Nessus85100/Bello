@@ -67,7 +67,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 			    <colordiffuse>99ffffff</colordiffuse>
-					<texture fallback="flags/mpaa/film/rating-nr.png">$VAR[MPAAFilmRating]</texture>
+					<texture fallback="flags/mpaa/film/us/rating-nr.png">$VAR[MPAAFilmRating]</texture>
 				</control>
 				<control type="label">
 					<description>Under Title</description>

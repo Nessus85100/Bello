@@ -1,3 +1,10 @@
+[B][COLOR=FF56ADDA]v3.0.3[/COLOR][/B]
+• Added support for German rating flags (thanks sualfred).
+• Fixed script Metadata Actors dialogs overlap (thanks sualfred).
+• Added missing ThumbnailsView id to Music Playlist views causing a label overlap (thanks sualfred).
+• Fixed Home Submenus loosing focus when there are less then 4 items.
+• Removed BETA tag from skin version.
+
 [B][COLOR=FF56ADDA]v3.0.2 - BETA[/COLOR][/B]
 • Added new Netflix View for Movies and TV Shows.
 • Added new 3D backgrounds for Home Menu.
