@@ -648,18 +648,6 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr "Top artistes"
 
-msgctxt "#31260"
-msgid "In Progress Movies"
-msgstr "Films en cours"
-
-msgctxt "#31261"
-msgid "In Progress TV Shows"
-msgstr "Séries TV en cours"
-
-msgctxt "#31262"
-msgid "In Progress Music"
-msgstr "Musique en cours"
-
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Ouvrir Playliste"

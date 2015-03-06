@@ -16,6 +16,10 @@ msgstr ""
 "Language: sr_RS\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "ТВ уживо"
+
 msgctxt "#31003"
 msgid "Aired"
 msgstr "Емитовано"
@@ -39,6 +43,10 @@ msgstr "Бирач караоке песме"
 msgctxt "#31018"
 msgid "Trailers"
 msgstr "Најава"
+
+msgctxt "#31020"
+msgid "Found"
+msgstr "Пронађено"
 
 msgctxt "#31023"
 msgid "Info"
@@ -64,6 +72,10 @@ msgctxt "#31031"
 msgid "PM"
 msgstr "поподне"
 
+msgctxt "#31033"
+msgid "Channel Group"
+msgstr "Група програма"
+
 msgctxt "#31083"
 msgid "Wall"
 msgstr "Иконе"
@@ -80,9 +92,29 @@ msgctxt "#31166"
 msgid "Local subtitle available"
 msgstr "Локални превод доступан"
 
+msgctxt "#31223"
+msgid "36 Hour Forecast"
+msgstr "Прогноза за 36 часова"
+
+msgctxt "#31224"
+msgid "Hourly Forecast"
+msgstr "Часовна прогноза"
+
+msgctxt "#31225"
+msgid "Weekend Forecast"
+msgstr "Прогноза за викенд"
+
 msgctxt "#31229"
 msgid "Last Updated"
 msgstr "Последње ажурирање"
+
+msgctxt "#31233"
+msgid "Chance of Precipitation"
+msgstr "Шансе за падавине"
+
+msgctxt "#31236"
+msgid "Forecast"
+msgstr "Прогноза"
 
 msgctxt "#31285"
 msgid "Playlist Options"
@@ -103,3 +135,15 @@ msgstr "Постојеће визуализације"
 msgctxt "#31316"
 msgid "Now Playing"
 msgstr "Тренутно се репродукује"
+
+msgctxt "#31351"
+msgid "Add Group"
+msgstr "Додај групу"
+
+msgctxt "#31352"
+msgid "Rename Group"
+msgstr "Преименуј групу"
+
+msgctxt "#31353"
+msgid "Delete Group"
+msgstr "Обриши групу"

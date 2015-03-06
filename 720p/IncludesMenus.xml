@@ -127,9 +127,9 @@
 	</include>
 
 
-	<!-- ================================== -->
-	<!-- 	== Context Menu Cont	ent Info == -->
-	<!-- ================================== -->
+	<!-- ================================ -->
+	<!-- 	== Context Menu Content Info == -->
+	<!-- ================================ -->
 	<include name="ContextMenuContentInfo">
 	  <control type="group">
 			<left>45</left>

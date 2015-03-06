@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.bello" version="3.0.3" name="Bello" provider-name="Nessus">
+<addon id="skin.bello" version="3.0.4" name="Bello" provider-name="Nessus">
   <requires>
 		<import addon="xbmc.gui" version="5.3.0"/>
 		<import addon="service.skin.widgets" version="0.0.29"/>
@@ -24,7 +24,7 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="af">'n GUI vir Kodi Media Sentrum</summary>
     <summary lang="ar">واجهة رسومية لمركز الوسائط Kodi</summary>
-    <summary lang="bg">Облик за Kodi</summary>
+    <summary lang="bg">Потребителски интерфейс за Kodi</summary>
     <summary lang="ca">Una interfície gràfica per a l'Kodi</summary>
     <summary lang="da">En GUI til Kodi Media Center</summary>
     <summary lang="de">Ein GUI für das Kodi Media Center</summary>
@@ -55,7 +55,7 @@
     <summary lang="tr">Kodi Media Center İçin Arayüz</summary>
     <summary lang="zh">Kodi媒体中心的一个图形用户界面</summary>
     <summary lang="zh_TW">一個 Kodi 多媒體中心的圖形介面</summary>
-    <description lang="bg">Bello е облик за Kodi. Целта му е да Ви удовлетвори в максимална степен, чрез своя уникален, бърз и консистентен интерфейс. Като същевременно не Ви лишава от най-новите функции на Kodi.</description>
+    <description lang="bg">Bello е потребителски интерфейс за Kodi. Целта му е да Ви удовлетвори в максимална степен, чрез своя уникален, бърз и удобен интерфейс, като същевременно не Ви лишава от най-новите функционалности на Kodi.</description>
     <description lang="de">Bello ist eine Benutzeroberfläche für das Kodi Media Center. Das Ziel von Bello ist es, Ihr Unterhaltungserlebnis mit der schnellen, einzigartigen und einheitlichen Oberfläche zusammen mit den neusten Kodi-Features zu maximieren.</description>
     <description lang="el">Το Bello είναι ένα Γραφικό Περιβάλλον Εργασίας (GUI) για το Κέντρο Πολυμέσων Kodi. Στόχος του Bello είναι να μεγιστοποιήσει την ψυχαγωγική σας εμπειρία μέσω του γρήγορου, μοναδικού και ενοποιημένου περιβάλλοντός του, που περιλαμβάνει όλες τις νέες λειτουργίες του Kodi.</description>
     <description lang="en">Bello is a GUI for Kodi Media Center. The goal of Bello is to maximize your Kodi entertainment experience with it's fast, unique and unified interface along with all the latest features of Kodi.</description>

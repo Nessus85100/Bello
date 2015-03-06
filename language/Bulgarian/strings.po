@@ -22,7 +22,7 @@ msgstr "Телевизия"
 
 msgctxt "#31001"
 msgid "TV Guide"
-msgstr "ТВ гид"
+msgstr "ТВ справочник"
 
 msgctxt "#31002"
 msgid "TV Shows"
@@ -142,7 +142,7 @@ msgstr "Затвори"
 
 msgctxt "#31037"
 msgid "Change Rating"
-msgstr "Промени рейтинга"
+msgstr "Промени оценката"
 
 msgctxt "#31038"
 msgid "Esc"
@@ -190,7 +190,7 @@ msgstr "Списък с банери"
 
 msgctxt "#31087"
 msgid "VideoWall Fanart"
-msgstr "Видео стена от Fanart"
+msgstr "Видео стена от фен-арт"
 
 msgctxt "#31088"
 msgid "List Wall"
@@ -210,7 +210,7 @@ msgstr "Редактирай информацията"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
-msgstr "Без фанарт, в който и да е раздел"
+msgstr "Без фен-арт, в който и да е раздел"
 
 msgctxt "#31131"
 msgid "Show Only on Home Screen"
@@ -606,11 +606,11 @@ msgstr "Настройки за визуализацията"
 
 msgctxt "#31311"
 msgid "Enable Music Fanart SlideShow"
-msgstr "Ползвай слайдшоу от музикалния фанарт"
+msgstr "Ползвай презентация от музикалния фен-арт"
 
 msgctxt "#31312"
 msgid "Enable Artist SlideShow"
-msgstr "Включи Artist SlideShow"
+msgstr "Включи презентацията на изпълнителя"
 
 msgctxt "#31313"
 msgid "Animated Backgrounds"

@@ -242,11 +242,11 @@ msgstr "Wetterinformationen anzeigen"
 
 msgctxt "#31102"
 msgid "Hide Now Playing Video Info"
-msgstr "Verstecke 'Läuft gerade' Video-Info"
+msgstr "Verberge 'Läuft gerade' Video-Info"
 
 msgctxt "#31103"
 msgid "Hide Now Playing Music Info"
-msgstr "Verstecke 'Läuft gerade' Musik-Info"
+msgstr "Verberge 'Läuft gerade' Musik-Info"
 
 msgctxt "#31124"
 msgid "Flashing Lights"
@@ -647,18 +647,6 @@ msgstr "Beliebte Fernsehshows"
 msgctxt "#31259"
 msgid "Top Artists"
 msgstr "Top-Künstler"
-
-msgctxt "#31260"
-msgid "In Progress Movies"
-msgstr "begonnene Filme"
-
-msgctxt "#31261"
-msgid "In Progress TV Shows"
-msgstr "Laufende Fernsehshows"
-
-msgctxt "#31262"
-msgid "In Progress Music"
-msgstr "Laufende Musik"
 
 msgctxt "#31280"
 msgid "Open Playlist"

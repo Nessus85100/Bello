@@ -112,9 +112,25 @@ msgctxt "#31136"
 msgid "Multi Image"
 msgstr "Imagini multiple"
 
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Activează mod chioșc"
+
 msgctxt "#31166"
 msgid "Local subtitle available"
 msgstr "Există subtitrare locală"
+
+msgctxt "#31200"
+msgid "My Movies"
+msgstr "Filmele mele"
+
+msgctxt "#31201"
+msgid "My TV Shows"
+msgstr "Serialele mele"
+
+msgctxt "#31219"
+msgid "Logo"
+msgstr "Emblemă"
 
 msgctxt "#31223"
 msgid "36 Hour Forecast"
@@ -147,6 +163,26 @@ msgstr "Previziune"
 msgctxt "#31237"
 msgid "View"
 msgstr "Vizualizează"
+
+msgctxt "#31244"
+msgid "New Movies"
+msgstr "Filme noi"
+
+msgctxt "#31246"
+msgid "New Music"
+msgstr "Muzică nouă"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Filme aleatoare"
+
+msgctxt "#31250"
+msgid "All Movies"
+msgstr "Toate filmele"
+
+msgctxt "#31251"
+msgid "All TV Shows"
+msgstr "Toate serialele"
 
 msgctxt "#31285"
 msgid "Playlist Options"

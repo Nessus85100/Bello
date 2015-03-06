@@ -624,14 +624,6 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr "Artis Terkenal"
 
-msgctxt "#31260"
-msgid "In Progress Movies"
-msgstr "Cereka Sedang Dimainkan"
-
-msgctxt "#31261"
-msgid "In Progress TV Shows"
-msgstr "Rancangan TV Sedang Dimainkan"
-
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Buka Senarai Main"

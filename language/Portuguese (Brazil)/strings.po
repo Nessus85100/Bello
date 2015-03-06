@@ -649,16 +649,28 @@ msgid "Top Artists"
 msgstr "Principais Artistas"
 
 msgctxt "#31260"
-msgid "In Progress Movies"
-msgstr "Filmes em Reprodução"
+msgid "Movies In Progress"
+msgstr "Filmes em Progresso"
 
 msgctxt "#31261"
-msgid "In Progress TV Shows"
-msgstr "Seriados em exibição"
+msgid "TV Shows In Progress"
+msgstr "Shows de Tv em progresso"
 
 msgctxt "#31262"
-msgid "In Progress Music"
-msgstr "Música Sendo Reproduzida"
+msgid "Music In Progress"
+msgstr "Música em progresso"
+
+msgctxt "#31263"
+msgid "Unwatched Movies"
+msgstr "Filmes não-vistos"
+
+msgctxt "#31264"
+msgid "Unwatched TV Shows"
+msgstr "Seriados não-vistos"
+
+msgctxt "#31265"
+msgid "Unwatched Episodes"
+msgstr "Episódios não vistos"
 
 msgctxt "#31280"
 msgid "Open Playlist"

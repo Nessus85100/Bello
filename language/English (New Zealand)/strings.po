@@ -540,14 +540,6 @@ msgctxt "#31254"
 msgid "Search on YouTube"
 msgstr "Search on YouTube"
 
-msgctxt "#31260"
-msgid "In Progress Movies"
-msgstr "In Progress Movies"
-
-msgctxt "#31261"
-msgid "In Progress TV Shows"
-msgstr "In Progress TV Shows"
-
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Open Playlist"

@@ -168,6 +168,10 @@ msgctxt "#31237"
 msgid "View"
 msgstr "Pogled"
 
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "Nedavno dodani filmi"
+
 msgctxt "#31244"
 msgid "New Movies"
 msgstr "Novi filmi"

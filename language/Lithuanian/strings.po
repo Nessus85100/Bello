@@ -649,16 +649,28 @@ msgid "Top Artists"
 msgstr "Populiariausi atlikėjai"
 
 msgctxt "#31260"
-msgid "In Progress Movies"
+msgid "Movies In Progress"
 msgstr "Nebaigti žiūrėti filmai"
 
 msgctxt "#31261"
-msgid "In Progress TV Shows"
-msgstr "Nebaigtos žiūrėti TV laidos"
+msgid "TV Shows In Progress"
+msgstr "Negaigtos žiūrėti TV laidos"
 
 msgctxt "#31262"
-msgid "In Progress Music"
+msgid "Music In Progress"
 msgstr "Nebaigta klausyti muzika"
+
+msgctxt "#31263"
+msgid "Unwatched Movies"
+msgstr "Neperžiūrėti filmai"
+
+msgctxt "#31264"
+msgid "Unwatched TV Shows"
+msgstr "Neperžiūrėtos TV laidos"
+
+msgctxt "#31265"
+msgid "Unwatched Episodes"
+msgstr "Neperžiūrėti epizodai"
 
 msgctxt "#31280"
 msgid "Open Playlist"

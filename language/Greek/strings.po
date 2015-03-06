@@ -624,14 +624,6 @@ msgctxt "#31259"
 msgid "Top Artists"
 msgstr "Κορυφαίοι Καλλιτέχνες"
 
-msgctxt "#31260"
-msgid "In Progress Movies"
-msgstr "Ταινίες σε εξέλιξη"
-
-msgctxt "#31261"
-msgid "In Progress TV Shows"
-msgstr "Σειρές σε εξέλιξη"
-
 msgctxt "#31280"
 msgid "Open Playlist"
 msgstr "Άνοιγμα Λίστας Αναπ/γής"

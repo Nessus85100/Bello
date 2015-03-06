@@ -1,3 +1,6 @@
+[B]v3.0.4[/B]
+• Updated language files from Transifex
+
 [B][COLOR=FF56ADDA]v3.0.3[/COLOR][/B]
 • Added support for German rating flags (thanks sualfred).
 • Fixed script Metadata Actors dialogs overlap (thanks sualfred).

@@ -25,7 +25,7 @@
 
 		<control type="group">
 	    <include>QuickNavOpenCloseAnimation</include>	
-      <!-- Quick Nav -->
+      <!-- Quick Nav (150) -->
 			<control type="group">
 			  <include>QuickNavAnimation</include>
 		    <visible allowhiddenfocus="true">Control.HasFocus(150) + !Skin.HasSetting(DisableQuickNav)</visible>
@@ -155,7 +155,7 @@
 				</control>
 				<control type="image">
 					<left>629</left>
-					<top>482</top>
+					<top>480</top>
 					<width>25</width>
 					<height>22</height>
 				  <colordiffuse>99ffffff</colordiffuse>
@@ -168,7 +168,7 @@
 			  </control>
 			</control>
 
-      <!-- Movies -->
+      <!-- Movies (250) -->
 			<control type="group">
 			  <include>QuickNavMoviesWidgetAnimation</include>
 		    <visible allowhiddenfocus="true">[Control.HasFocus(25) | Control.HasFocus(250)] + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
@@ -304,7 +304,7 @@
 				</control>
 				<control type="image">
 					<left>629</left>
-					<top>498</top>
+					<top>490</top>
 					<width>25</width>
 					<height>22</height>
 				  <colordiffuse>99ffffff</colordiffuse>
@@ -317,7 +317,7 @@
 			  </control>
 			</control>
 
-      <!-- TVShows -->
+      <!-- TVShows (350) -->
 			<control type="group">
 			  <include>QuickNavTVShowsWidgetAnimation</include>
 		    <visible allowhiddenfocus="true">[Control.HasFocus(350) | Control.HasFocus(35)] + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
@@ -452,7 +452,7 @@
 				</control>
 				<control type="image">
 					<left>629</left>
-					<top>498</top>
+					<top>490</top>
 					<width>25</width>
 					<height>22</height>
 				  <colordiffuse>99ffffff</colordiffuse>
@@ -461,11 +461,11 @@
 					  <effect type="fade" start="0" end="100" delay="1000" time="1000"  />
 						<effect type="slide" start="0,0" end="0,4" tween="sine" easing="inout" delay="1000" time="1000" />
 					</animation>
-					<visible>IntegerGreaterThan(Container(300).NumItems,0)</visible>
+					<visible>IntegerGreaterThan(Container(450).NumItems,0) | IntegerGreaterThan(Container(650).NumItems,0)</visible>
 			  </control>
 			</control>
 
-      <!-- Music -->
+      <!-- Music (450) -->
 			<control type="group">
 			  <include>QuickNavMusicWidgetAnimation</include>
 		    <visible allowhiddenfocus="true">[Control.HasFocus(45) | Control.HasFocus(450)] + !Skin.HasSetting(DisableQuickNav) + !Window.IsActive(progressdialog)</visible>
@@ -621,7 +621,7 @@
 				</control>
 				<control type="image">
 					<left>629</left>
-					<top>482</top>
+					<top>475</top>
 					<width>25</width>
 					<height>22</height>
 				  <colordiffuse>99ffffff</colordiffuse>
@@ -635,7 +635,7 @@
 			</control>
 
 
-      <!-- Video Feeds -->
+      <!-- Video Feeds (650) -->
 			<control type="group">
 			  <include>QuickNavMiscWidgetAnimation</include>
 		    <visible allowhiddenfocus="true">[Control.HasFocus(65) | Control.HasFocus(650)] + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(ProgressDialog)</visible>
@@ -772,7 +772,7 @@
 				</control>
 				<control type="image">
 					<left>629</left>
-					<top>482</top>
+					<top>480</top>
 					<width>25</width>
 					<height>22</height>
 				  <colordiffuse>99ffffff</colordiffuse>

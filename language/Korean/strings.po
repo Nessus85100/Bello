@@ -649,16 +649,28 @@ msgid "Top Artists"
 msgstr "탑 아티스트"
 
 msgctxt "#31260"
-msgid "In Progress Movies"
-msgstr "시청 중 영화"
+msgid "Movies In Progress"
+msgstr "감상중인 영화"
 
 msgctxt "#31261"
-msgid "In Progress TV Shows"
-msgstr "시청 중 TV 쇼"
+msgid "TV Shows In Progress"
+msgstr "감상중인 TV 쇼"
 
 msgctxt "#31262"
-msgid "In Progress Music"
-msgstr "감상 중인 음악"
+msgid "Music In Progress"
+msgstr "감상중인 음악"
+
+msgctxt "#31263"
+msgid "Unwatched Movies"
+msgstr "미시청 영화"
+
+msgctxt "#31264"
+msgid "Unwatched TV Shows"
+msgstr "미시청 TV 쇼"
+
+msgctxt "#31265"
+msgid "Unwatched Episodes"
+msgstr "미시청 에피소드"
 
 msgctxt "#31280"
 msgid "Open Playlist"

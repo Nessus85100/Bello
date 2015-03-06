@@ -258,7 +258,7 @@ msgstr "Edytuj informacje"
 
 msgctxt "#31130"
 msgid "Disable Fanart in all sections"
-msgstr "Dezaktywuj tapety we wszystkich sekcjach"
+msgstr "Ukrywaj fototapety"
 
 msgctxt "#31131"
 msgid "Show Only on Home Screen"
@@ -298,7 +298,7 @@ msgstr "Pokazuj powiadomienia o alarmach pogodowych"
 
 msgctxt "#31141"
 msgid "Choose Lyrics Add-on"
-msgstr "Wybierz dodatek Tekst utworu"
+msgstr "Wybierz dodatek tekstu utworów"
 
 msgctxt "#31142"
 msgid "Choose Subtitles Add-on"
@@ -362,7 +362,7 @@ msgstr "Widoki"
 
 msgctxt "#31159"
 msgid "Show FullScreenInfo instead of the SeekBar"
-msgstr "Pokazuj informacje ekranowe zamiast paska przeszukiwania"
+msgstr "Pokazuj informacje ekranowe zamiast paska przewijania"
 
 msgctxt "#31160"
 msgid "Download [COLOR=selected]logo.png[/COLOR] for all Movies"
@@ -510,7 +510,7 @@ msgstr "Prognoza 36 godzinna"
 
 msgctxt "#31224"
 msgid "Hourly Forecast"
-msgstr "Prognoza godzinna"
+msgstr "Prognoza godzinowa"
 
 msgctxt "#31225"
 msgid "Weekend Forecast"
@@ -649,16 +649,28 @@ msgid "Top Artists"
 msgstr "Wykonawcy na topie"
 
 msgctxt "#31260"
-msgid "In Progress Movies"
-msgstr "Filmy w toku"
+msgid "Movies In Progress"
+msgstr "Filmy w trakcie oglądania"
 
 msgctxt "#31261"
-msgid "In Progress TV Shows"
-msgstr "Seriale w toku"
+msgid "TV Shows In Progress"
+msgstr "Seriale w trakcie oglądania"
 
 msgctxt "#31262"
-msgid "In Progress Music"
-msgstr "Muzyka w toku"
+msgid "Music In Progress"
+msgstr "Muzyka w trakcie słuchania"
+
+msgctxt "#31263"
+msgid "Unwatched Movies"
+msgstr "Filmy nieobejrzane"
+
+msgctxt "#31264"
+msgid "Unwatched TV Shows"
+msgstr "Seriale nieobejrzane"
+
+msgctxt "#31265"
+msgid "Unwatched Episodes"
+msgstr "Odcinki nieobejrzane"
 
 msgctxt "#31280"
 msgid "Open Playlist"
@@ -730,7 +742,7 @@ msgstr "Ustawienia wizualizacji"
 
 msgctxt "#31311"
 msgid "Enable Music Fanart SlideShow"
-msgstr "Aktywuj pokaz slajdów tapet muzycznych"
+msgstr "Wizualizuj odtwarzanie muzyki pokazem fototapet"
 
 msgctxt "#31312"
 msgid "Enable Artist SlideShow"
