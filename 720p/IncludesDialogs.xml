@@ -415,7 +415,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-		      <animation effect="slide" start="0,35" end="0,12" time="0" reversible="false" condition="IsEmpty(ListItem.Property(Addon.Creator)">Conditional</animation>
+		      <animation effect="slide" start="0,35" end="0,12" time="0" reversible="false" condition="IsEmpty(ListItem.Property(Addon.Creator))">Conditional</animation>
 		      <animation effect="slide" start="0,35" end="0,-12" time="0" reversible="false" condition="!IsEmpty(ListItem.Label2)">Conditional</animation>
 				</control>
 				<control type="label">
@@ -486,7 +486,7 @@
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
           <scroll>true</scroll>
-		      <animation effect="slide" start="0,35" end="0,12" time="0" reversible="false" condition="IsEmpty(ListItem.Property(Addon.Creator)">Conditional</animation>
+		      <animation effect="slide" start="0,35" end="0,12" time="0" reversible="false" condition="IsEmpty(ListItem.Property(Addon.Creator))">Conditional</animation>
 		      <animation effect="slide" start="0,35" end="0,-12" time="0" reversible="false" condition="!IsEmpty(ListItem.Label2)">Conditional</animation>
 				</control>
 				<control type="label">

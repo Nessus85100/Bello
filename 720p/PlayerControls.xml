@@ -638,7 +638,7 @@
       <!-- Video Feeds (650) -->
 			<control type="group">
 			  <include>QuickNavMiscWidgetAnimation</include>
-		    <visible allowhiddenfocus="true">[Control.HasFocus(65) | Control.HasFocus(650)] + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(ProgressDialog)</visible>
+		    <visible allowhiddenfocus="true">Control.HasFocus(650) + !Skin.HasSetting(DisableQuickNav) + !Window.IsVisible(ProgressDialog)</visible>
 				<control type="image">
 			    <include>FullscreenDimensions</include>
 				  <texture background="true">views/list/shine.png</texture>

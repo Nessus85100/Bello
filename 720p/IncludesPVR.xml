@@ -86,7 +86,6 @@
   			<onright>50</onright>
   			<onup>9111</onup>
   			<ondown>9111</ondown>
-        <include>GeneralOptionsTopMenuAnimation</include>
 				<control type="togglebutton" id="31">
 					<description>Channels</description>
           <label>$VAR[PVRChannelsGroupLabel]</label>
@@ -168,7 +167,6 @@
 				<align>left</align>
 				<itemgap>12</itemgap>
 				<orientation>horizontal</orientation>
-	      <include>Logo</include>
 				<control type="label">
 				  <include>TopBigLabel</include>
 				  <label>$LOCALIZE[31000]</label>

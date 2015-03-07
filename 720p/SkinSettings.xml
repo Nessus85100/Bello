@@ -254,7 +254,7 @@
 
 				<!-- ================== -->
 				<!-- == Custom Items == -->
-				<!-- ==================
+				<!-- ================== -->
 				<control type="grouplist" id="8300">
 					<include>CloseAnimation</include>
 					<visible>Container(8800).Hasfocus(3)</visible>

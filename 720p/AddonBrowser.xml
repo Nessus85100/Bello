@@ -29,7 +29,6 @@
 				<aligny>center</aligny>
 				<itemgap>20</itemgap>
 				<orientation>horizontal</orientation>
-        <include>TopOptionsSlideAnimations</include>
 				<control type="label">
 				  <include>TopBigLabel</include>
 					<label>$LOCALIZE[33063] $LOCALIZE[33061]</label>
@@ -51,7 +50,6 @@
   			<onup>9111</onup>
   			<ondown>9111</ondown>
   			<onback>50</onback>
-        <include>TopOptionsSlideAnimations</include>
 				<control type="button" id="2">
 					<description>View as</description>
 				  <label>-</label>

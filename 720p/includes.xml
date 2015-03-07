@@ -1214,8 +1214,8 @@
 		<value condition="[Control.HasFocus(45) | Control.HasFocus(450)] + stringcompare(Skin.String(QuickNavWidgetMusicType),2)">$LOCALIZE[2] $LOCALIZE[575]</value>
 		<value condition="[Control.HasFocus(45) | Control.HasFocus(450)] + stringcompare(Skin.String(QuickNavWidgetMusicType),3)">$LOCALIZE[31249]</value>
 		<value condition="[Control.HasFocus(45) | Control.HasFocus(450)] + stringcompare(Skin.String(QuickNavWidgetMusicType),4)">$LOCALIZE[31259]</value>
-		<value condition="[[Control.HasFocus(65) | Control.HasFocus(650)] + !stringcompare(Skin.String(RSSVideoFeedName),Custom)]">$INFO[Skin.String(RSSVideoFeedName)]</value>
-		<value condition="[[Control.HasFocus(65) | Control.HasFocus(650)] + stringcompare(Skin.String(RSSVideoFeedName),Custom)]">$INFO[Skin.String(SearchStringName)]</value>
+		<value condition="[Control.HasFocus(650) + !stringcompare(Skin.String(RSSVideoFeedName),Custom)]">$INFO[Skin.String(RSSVideoFeedName)]</value>
+		<value condition="[Control.HasFocus(650) + stringcompare(Skin.String(RSSVideoFeedName),Custom)]">$INFO[Skin.String(SearchStringName)]</value>
 	</variable>
 
 	<variable name="QuickNavWidgetListItemLabel">
@@ -1223,7 +1223,7 @@
 		<value condition="[Control.HasFocus(35) | Control.HasFocus(350)] + !IsEmpty(Container(350).ListItem.TVShowTitle)">$INFO[Container(350).ListItem.TVShowTitle]</value>
 		<value condition="[Control.HasFocus(35) | Control.HasFocus(350)] + !IsEmpty(Container(350).ListItem.Label)">$INFO[Container(350).ListItem.Label]</value>
 		<value condition="[Control.HasFocus(45) | Control.HasFocus(450)] + !IsEmpty(Container(450).ListItem.Label)">$INFO[Container(450).ListItem.Label]$INFO[Container(450).ListItem.Year, (,)]</value>
-		<value condition="[Control.HasFocus(65) | Control.HasFocus(650)] + !IsEmpty(Container(650).ListItem.Label)">$INFO[Container(650).ListItem.Label]</value>
+		<value condition="Control.HasFocus(650) + !IsEmpty(Container(650).ListItem.Label)">$INFO[Container(650).ListItem.Label]</value>
 	</variable>
 
 	<variable name="QuickNavWidgetListItemLabel2">
@@ -1248,8 +1248,8 @@
     <value condition="Control.HasFocus(35) | Control.HasFocus(350)">$INFO[Container(350).ListItem.Property(FanartImage)]</value>
     <value condition="[Control.HasFocus(45) | Control.HasFocus(450)] + !IsEmpty(Container(450).ListItem.Art(fanart))">$INFO[Container(450).ListItem.Art(fanart)]</value>
     <value condition="Control.HasFocus(45) | Control.HasFocus(450)">$INFO[Container(450).ListItem.Property(FanartImage)]</value>
-    <value condition="[Control.HasFocus(65) | Control.HasFocus(650)] + !IsEmpty(Container(650).ListItem.Art(fanart))">$INFO[Container(650).ListItem.Art(fanart)]</value>
-    <value condition="Control.HasFocus(65) | Control.HasFocus(650)">$INFO[Container(650).ListItem.Property(FanartImage)]</value>
+    <value condition="Control.HasFocus(650) + !IsEmpty(Container(650).ListItem.Art(fanart))">$INFO[Container(650).ListItem.Art(fanart)]</value>
+    <value condition="Control.HasFocus(650)">$INFO[Container(650).ListItem.Property(FanartImage)]</value>
 	</variable>
 
 	<variable name="CustomDialogOKHeadLabel">
