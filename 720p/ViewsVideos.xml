@@ -3509,7 +3509,7 @@
 				<font>FontSize_38</font>
 	      <scroll>false</scroll>
 				<align>left</align>
-				<label>$VAR[ListItem.label]</label>
+				<label>$VAR[ListItem.Label]</label>
 			</control>
 			<control type="image">
 				<left>21</left>
@@ -3934,7 +3934,7 @@
   				<font>FontSize_28B</font>
   	      <scroll>false</scroll>
   				<align>left</align>
-  				<label>$VAR[ListItem.label]</label>
+  				<label>$VAR[ListItem.Label]</label>
   				<visible>![Skin.HasSetting(ShowLogoAsTtile) + ![IsEmpty(ListItem.Art(clearlogo)) | Substring(ListItem.Path,videodb://movies/sets/,left)]] + !stringcompare(ListItem.Label,..)</visible>
   			</control>
   		  <!-- Sublabel Info -->
