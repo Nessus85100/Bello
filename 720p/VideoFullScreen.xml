@@ -606,7 +606,7 @@
 				<effect type="zoom" time="350" center="640,360" start="100" end="150" tween="cubic" easing="in"/>
 				<effect type="fade" time="350" start="100" easing="in" end="0"/>
 			</animation>
-			<animation type="Conditional" condition="Player.Paused + ![Player.Caching | Player.Seeking | Player.DisplayAfterSeek | Player.SeekOffset | Player.Forwarding | Player.Rewinding | Player.ShowInfo]">
+			<animation type="Conditional" condition="Player.Paused + ![Player.Caching | Player.Seeking | Player.DisplayAfterSeek | Player.SeekOffset | Player.Forwarding | Player.Rewinding | Player.ShowInfo] + !Skin.HasSetting(PersistSeekBar)">
 				<effect type="zoom" time="350" delay="13000" center="640,360" start="100" end="0" tween="cubic" easing="in"/>
 				<effect type="fade" time="350" delay="13000" start="100" easing="in" end="0"/>
 			</animation>
